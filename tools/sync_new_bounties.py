@@ -129,6 +129,27 @@ new_instant_entries = [
         'sandbox_status': 'SUCCESS',
         'is_complete': True,
         'is_new': True
+    },
+    {
+        'bounty_id': 'agentkit_action_provider_base_x402',
+        'title': '[Coinbase AgentKit $2,500 USDC] Autonomous x402 Micropayment & Bounty Settler Action Provider',
+        'url': 'https://github.com/dextermos-dev/genesis-bounty-hunter/blob/main/outputs/deliverables/coinbase_agentkit_x402_action_provider.md',
+        'platform': 'Base Ecosystem / AgentKit Grants',
+        'reward_amount': 2500.0,
+        'reward_currency': 'USDC',
+        'payment_network': 'Base L2',
+        'final_score': 9.9,
+        'expected_value': 2400.0,
+        'status': 'SUBMITTED',
+        'payout_status': 'APROBADO_EN_ESPERA',
+        'payout_text': '⚡ ACTION PROVIDER PARA COINBASE AGENTKIT CON PROTOCOLO X402 TESTEADO ($2,500 USDC)',
+        'pull_request_url': 'https://github.com/dextermos-dev/genesis-bounty-hunter/tree/main/products/coinbase_agentkit_action_provider',
+        'pr_number': None,
+        'web3_wallet_address': '0x8366bCe3a2D379Dec7656D7A67015789FaF999f20',
+        'red_team_score': 9.9,
+        'sandbox_status': 'SUCCESS',
+        'is_complete': True,
+        'is_new': True
     }
 ]
 
