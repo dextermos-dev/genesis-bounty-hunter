@@ -1,0 +1,39 @@
+{
+  "token_name": "Solana Institutional USD",
+  "symbol": "USDX",
+  "decimals": 6,
+  "total_supply": 10250000.0,
+  "program_id": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+  "compliance_preset": "SSS-2",
+  "blacklist": [
+    "0xSanctionedActor_001",
+    "0xMaliciousDrainer_002"
+  ],
+  "balances": {
+    "0x8366bCe3a2D379Dec7656D7A67015789FaF999f20": 5200000.0,
+    "0xEnterpriseTreasury": 5000000.0,
+    "0xMerchantPartner": 50000.0
+  },
+  "audit_trail": [
+    {
+      "action": "INIT_SSS2",
+      "timestamp": "2026-09-29T07:37:02.488699",
+      "officer": "0xComplianceAdmin",
+      "note": "Initialized SSS-2 Compliant Token-2022 Mint"
+    },
+    {
+      "action": "MINT",
+      "recipient": "0x8366bCe3a2D379Dec7656D7A67015789FaF999f20",
+      "amount": 250000.0,
+      "timestamp": "2026-09-29T07:37:02.489075"
+    },
+    {
+      "action": "TRANSFER_HOOK_PASSED",
+      "sender": "0x8366bCe3a2D379Dec7656D7A67015789FaF999f20",
+      "recipient": "0xMerchantPartner",
+      "amount": 50000.0,
+      "fee": 0.0,
+      "timestamp": "2026-09-29T07:37:02.489166"
+    }
+  ]
+}

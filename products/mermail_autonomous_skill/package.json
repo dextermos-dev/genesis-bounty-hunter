@@ -1,0 +1,24 @@
+{
+  "name": "@dextermos/mermail-autonomous-treasury-skill",
+  "version": "1.0.0",
+  "description": "Enterprise Model Context Protocol (MCP) Skill for Mermail AI Agent Inboxes: Zero-Leak Financial Reconciliation & RFP Procurement Gateway",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "node tests/validator.js",
+    "demo": "node dist/demo.js"
+  },
+  "keywords": [
+    "mermail",
+    "agent-skill",
+    "mcp",
+    "model-context-protocol",
+    "solana",
+    "superteam",
+    "defi",
+    "autonomous-agent"
+  ],
+  "author": "Dexter Mos (@dextermos)",
+  "license": "MIT"
+}
