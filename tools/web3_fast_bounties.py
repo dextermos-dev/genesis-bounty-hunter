@@ -49,7 +49,7 @@ export const LandingPageModern: React.FC = () => (
             "wallet": RECEIVER_WALLET,
             "proposal_text": "Integrated Rust Soroban credit-escrow contract invocation into pay-per-token LLM gateway billing pipeline with nonReentrant safety checks.",
             "deliverable_code": """// Soroban Escrow Contract Integration (Rust)
-// Branch: https://github.com/dextermos/genesis-bounty-hunter/tree/bounty/soroban-escrow-5
+// Branch: https://github.com/dextermos-dev/genesis-bounty-hunter/tree/bounty/soroban-escrow-5
 #![no_std]
 use soroban_sdk::{contract, contractimpl, Address, Env};
 
@@ -65,14 +65,14 @@ pub struct CreditEscrow;
             "reward_currency": "USDC",
             "payment_network": "Base / Ethereum",
             "url": "https://github.com/pipeshiftprotocol/pipeshift/issues/2",
-            "pull_request_url": "https://github.com/dextermos/genesis-bounty-hunter/tree/bounty/pipeshift-2",
+            "pull_request_url": "https://github.com/dextermos-dev/genesis-bounty-hunter/tree/bounty/pipeshift-2",
             "payout_time_hours": "Directo a Wallet (Instantáneo vía Smart Contract)",
             "escrow_status": "⚡ RAMA GIT PUBLICADA EN GITHUB - EN REVISIÓN",
             "status": "APLICADO_AUTOMATICO",
             "wallet": RECEIVER_WALLET,
             "proposal_text": "Added OpenZeppelin ReentrancyGuard and restricted settle() function.",
             "deliverable_code": """// PipeShift Settlement Contract (Solidity)
-// Branch: https://github.com/dextermos/genesis-bounty-hunter/tree/bounty/pipeshift-2
+// Branch: https://github.com/dextermos-dev/genesis-bounty-hunter/tree/bounty/pipeshift-2
 """
         },
         {
@@ -244,7 +244,7 @@ Payout Wallet: 0x8366bCe3a2D379Dec7656D7A67015789FaF999f20"""
             "reward_currency": "USDC",
             "payment_network": "Solana",
             "url": "https://superteam.fun/earn/listing/rebuild-production-backend-systems-as-on-chain-rust-programs/",
-            "pull_request_url": "https://github.com/dextermos/genesis-bounty-hunter/tree/main/solana_backend_programs/subscription_metered_engine",
+            "pull_request_url": "https://github.com/dextermos-dev/genesis-bounty-hunter/tree/main/solana_backend_programs/subscription_metered_engine",
             "payout_time_hours": "Directo a Wallet tras Evaluación",
             "escrow_status": "⚡ CÓDIGO RUST Y ANCHOR PUBLICADO EN REPOSITORIO - LISTO",
             "status": "GANADO_MERGED",
@@ -280,7 +280,7 @@ Payout Wallet: 0x8366bCe3a2D379Dec7656D7A67015789FaF999f20"""
             "reward_currency": "USDC",
             "payment_network": "Solana",
             "url": "https://superteam.fun/earn/listing/imperial-ai-agent-hackathon-build-the-agent-economy/",
-            "pull_request_url": "https://github.com/dextermos/genesis-bounty-hunter/tree/main/solana_agent_economy",
+            "pull_request_url": "https://github.com/dextermos-dev/genesis-bounty-hunter/tree/main/solana_agent_economy",
             "payout_time_hours": "Directo a Wallet tras Evaluación",
             "escrow_status": "⚡ PROYECTO COMPLETO, PITCH DECK Y CÓDIGO GENERADOS - LISTO",
             "status": "GANADO_MERGED",
@@ -299,7 +299,7 @@ Payout Wallet: 0x8366bCe3a2D379Dec7656D7A67015789FaF999f20"""
             "reward_currency": "USDC",
             "payment_network": "Base / Solana",
             "url": "https://superteam.fun/earn/listing/build-and-demo-a-mermail-agent-skill/",
-            "pull_request_url": "https://github.com/dextermos/genesis-bounty-hunter/tree/main/products/mermail_autonomous_skill",
+            "pull_request_url": "https://github.com/dextermos-dev/genesis-bounty-hunter/tree/main/products/mermail_autonomous_skill",
             "payout_time_hours": "Directo a Wallet tras Evaluación",
             "escrow_status": "⚡ PAQUETE DE HABILIDAD MCP, VALIDADOR Y DEMO COMPLETADOS AL 100%",
             "status": "GANADO_MERGED",
@@ -318,7 +318,7 @@ Payout Wallet: 0x8366bCe3a2D379Dec7656D7A67015789FaF999f20"""
             "reward_currency": "USDC",
             "payment_network": "Solana",
             "url": "https://superteam.fun/earn/listing/product-feedback-spout-finance/",
-            "pull_request_url": "https://github.com/dextermos/genesis-bounty-hunter/tree/main/outputs/deliverables/spout_finance_beta_intelligence_report.md",
+            "pull_request_url": "https://github.com/dextermos-dev/genesis-bounty-hunter/tree/main/outputs/deliverables/spout_finance_beta_intelligence_report.md",
             "payout_time_hours": "Directo a Wallet (28 de Septiembre)",
             "escrow_status": "⚡ INFORME DE INTELIGENCIA DE PROTOCOLO Y ANÁLISIS DEFI COMPLETADOS",
             "status": "GANADO_MERGED",
@@ -430,7 +430,7 @@ Payout Wallet: 0x8366bCe3a2D379Dec7656D7A67015789FaF999f20"""
             "reward_currency": "USDC",
             "payment_network": "Base L2",
             "url": "https://bountycaster.xyz/bounties/base-tipper",
-            "pull_request_url": "https://github.com/dextermos/genesis-bounty-hunter/tree/main/products/fast_bounties/bountycaster_base_tipper",
+            "pull_request_url": "https://github.com/dextermos-dev/genesis-bounty-hunter/tree/main/products/fast_bounties/bountycaster_base_tipper",
             "payout_time_hours": "⚡ Rápido (< 24 Horas Directo a Wallet)",
             "escrow_status": "⚡ SOLIDITY SMART CONTRACT EN BASE CON TESTS Y MANIFIESTO FRAME - LISTO",
             "status": "APLICADO_AUTOMATICO",
@@ -466,7 +466,7 @@ Payout Wallet: 0x8366bCe3a2D379Dec7656D7A67015789FaF999f20"""
             "reward_currency": "USDC",
             "payment_network": "Solana",
             "url": "https://superteam.fun/earn/listing/solana-stablecoin-standard",
-            "pull_request_url": "https://github.com/dextermos/genesis-bounty-hunter/tree/main/products/solana_stablecoin_standard",
+            "pull_request_url": "https://github.com/dextermos-dev/genesis-bounty-hunter/tree/main/products/solana_stablecoin_standard",
             "payout_time_hours": "Directo a Wallet tras Deliberación",
             "escrow_status": "⚡ SSS-1 & SSS-2 COMPLIANCE HOOK SDK IMPLEMENTADO (TESTS 100% PASS) - LISTO",
             "status": "APLICADO_AUTOMATICO",
@@ -485,7 +485,7 @@ Payout Wallet: 0x8366bCe3a2D379Dec7656D7A67015789FaF999f20"""
             "reward_currency": "USDC",
             "payment_network": "Base / Ethereum",
             "url": "https://cantina.xyz/bounties/modular-vault-audit",
-            "pull_request_url": "https://github.com/dextermos/genesis-bounty-hunter/tree/main/outputs/deliverables/cantina_defi_security_audit_report.md",
+            "pull_request_url": "https://github.com/dextermos-dev/genesis-bounty-hunter/tree/main/outputs/deliverables/cantina_defi_security_audit_report.md",
             "payout_time_hours": "⚡ Directo a Wallet tras Cierre de Pool",
             "escrow_status": "⚡ INFORME DE AUDITORÍA CON PROOF-OF-CONCEPT EN FOUNDRY Y GIT DIFF - LISTO",
             "status": "APLICADO_AUTOMATICO",
@@ -504,7 +504,7 @@ Payout Wallet: 0x8366bCe3a2D379Dec7656D7A67015789FaF999f20"""
             "reward_currency": "USDC",
             "payment_network": "Base L2",
             "url": "https://bountycaster.xyz/bounties/frame-v2-batch-tipper",
-            "pull_request_url": "https://github.com/dextermos/genesis-bounty-hunter/tree/main/products/fast_bounties/bountycaster_base_tipper",
+            "pull_request_url": "https://github.com/dextermos-dev/genesis-bounty-hunter/tree/main/products/fast_bounties/bountycaster_base_tipper",
             "payout_time_hours": "⚡ Rápido (< 24 Horas Directo a Wallet)",
             "escrow_status": "⚡ FRAME V2 INTERFACE & SOLIDITY GAS OPTIMIZATION - LISTO",
             "status": "APLICADO_AUTOMATICO",
@@ -522,7 +522,7 @@ Payout Wallet: 0x8366bCe3a2D379Dec7656D7A67015789FaF999f20"""
             "reward_currency": "USDC",
             "payment_network": "Solana",
             "url": "https://superteam.fun/earn/listing/next-stop-breakpoint-rwa",
-            "pull_request_url": "https://github.com/dextermos/genesis-bounty-hunter/tree/main/outputs/deliverables/solana_rwa_tokenization_breakpoint_essay.md",
+            "pull_request_url": "https://github.com/dextermos-dev/genesis-bounty-hunter/tree/main/outputs/deliverables/solana_rwa_tokenization_breakpoint_essay.md",
             "payout_time_hours": "Directo a Wallet tras Deliberación",
             "escrow_status": "⚡ ARQUITECTURA RWA TOKEN-2022 & MODELADO MERTON JUMP-DIFFUSION - LISTO",
             "status": "APLICADO_AUTOMATICO",
