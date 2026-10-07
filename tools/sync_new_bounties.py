@@ -150,6 +150,27 @@ new_instant_entries = [
         'sandbox_status': 'SUCCESS',
         'is_complete': True,
         'is_new': True
+    },
+    {
+        'bounty_id': 'elizaos_m2m_zero_gas_plugin',
+        'title': '[ElizaOS $500 USDC] Zero-Gas M2M Micropayment & Escrow Settlement Engine (Issue #17201)',
+        'url': 'https://github.com/dextermos-dev/genesis-bounty-hunter/blob/main/outputs/deliverables/elizaos_m2m_zero_gas_payment_plugin.md',
+        'platform': 'ElizaOS / Base AI Agent Grants',
+        'reward_amount': 500.0,
+        'reward_currency': 'USDC',
+        'payment_network': 'Base L2',
+        'final_score': 9.8,
+        'expected_value': 480.0,
+        'status': 'SUBMITTED',
+        'payout_status': 'APROBADO_EN_ESPERA',
+        'payout_text': '⚡ PLUGIN DE PAGOS M2M SIN GAS CON PAYMASTER ERC-4337 TESTEADO ($500 USDC)',
+        'pull_request_url': 'https://github.com/dextermos-dev/genesis-bounty-hunter/tree/main/products/elizaos_m2m_plugin',
+        'pr_number': None,
+        'web3_wallet_address': '0x8366bCe3a2D379Dec7656D7A67015789FaF999f20',
+        'red_team_score': 9.9,
+        'sandbox_status': 'SUCCESS',
+        'is_complete': True,
+        'is_new': True
     }
 ]
 
