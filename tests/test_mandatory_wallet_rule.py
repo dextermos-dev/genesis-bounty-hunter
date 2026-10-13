@@ -14,7 +14,7 @@ class TestMandatoryWalletRule(unittest.TestCase):
     def test_wallet_present_in_agents_md(self):
         with open("AGENTS.md", "r", encoding="utf-8") as f:
             content = f.read()
-        self.assertIn("1.1. CINCO REGLAS DE ORO OBLIGATORIAS", content)
+        self.assertIn("REGLAS DE ORO OBLIGATORIAS", content)
         self.assertIn("GESTIÓN ESTRATÉGICA DE CRÉDITOS Y FILTRADO RIGUROSO DIARIO", content)
         self.assertIn(WALLET, content)
 

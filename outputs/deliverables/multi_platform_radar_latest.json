@@ -1,1 +1,620 @@
-[]
+[
+  {
+    "id": "gh_5792618033",
+    "title": "[Bounty] Bring a real backlog: get an established open-source project to fund its first Agent Bounties bounty",
+    "url": "https://github.com/NSPG13/agent-bounties/issues/1632",
+    "repo": "NSPG13/agent-bounties",
+    "created_at": "2026-10-10T15:27:19Z",
+    "comments": 1,
+    "labels": [
+      "bounty",
+      "payments",
+      "funded-live",
+      "claimed-live"
+    ],
+    "platform": "Algora / GitHub PRs",
+    "free_tier": true,
+    "payment_verified": true,
+    "body_snippet": "<!-- agent-bounties/github-discovery-v1:start --> <!-- agent-bounties/github-discovery-v1 {\"discovery_id\":\"eip155:8453:agent-bounties/autonomous-v1:0xbf99f1c2c690c8bcd45e341006bf7b7dd6c41cdc\"} --> ## Canonical bounty discovery  You already maintain o"
+  },
+  {
+    "id": "gh_5742162145",
+    "title": "[Bounty] 💰 Donate $10-$100 USDT/USDC — Support VeloDAG Core Rust Dev",
+    "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/1828",
+    "repo": "zhangjiayang6835-cyber/bounty-plaza",
+    "created_at": "2026-10-07T08:52:34Z",
+    "comments": 5,
+    "labels": [
+      "bounty",
+      "real"
+    ],
+    "platform": "Algora / GitHub PRs",
+    "free_tier": true,
+    "payment_verified": true,
+    "body_snippet": "### 赏金平台 / Platform GitHub  ### 原始链接 / Source URL https://github.com/quantumchain-core/velodag-core/issues/2  ### 漏洞描述 / Description 💰 Donate $10-$100 USDT/USDC — Support VeloDAG Core Rust Dev  ### Looking for small bug bounties & sponsors  Building "
+  },
+  {
+    "id": "gh_5651834741",
+    "title": "[Bounty] [Bounty] Fix one deterministic agent-card discovery regression",
+    "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/1715",
+    "repo": "zhangjiayang6835-cyber/bounty-plaza",
+    "created_at": "2026-09-30T19:23:25Z",
+    "comments": 3,
+    "labels": [
+      "bounty",
+      "real"
+    ],
+    "platform": "Algora / GitHub PRs",
+    "free_tier": true,
+    "payment_verified": true,
+    "body_snippet": "### 赏金平台 / Platform GitHub  ### 原始链接 / Source URL https://github.com/NSPG13/agent-bounties/issues/1531  ### 漏洞描述 / Description [Bounty] Fix one deterministic agent-card discovery regression  <!-- agent-bounties/github-discovery-v1:start --> <!-- agen"
+  },
+  {
+    "id": "gh_5586145252",
+    "title": "[Bounty] Record the real network fee in the ledger, not only the capped estimate",
+    "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/1660",
+    "repo": "zhangjiayang6835-cyber/bounty-plaza",
+    "created_at": "2026-09-25T17:23:04Z",
+    "comments": 14,
+    "labels": [
+      "bounty",
+      "real"
+    ],
+    "platform": "Algora / GitHub PRs",
+    "free_tier": true,
+    "payment_verified": true,
+    "body_snippet": "### 赏金平台 / Platform GitHub  ### 原始链接 / Source URL https://github.com/Grainlify/grainlify-bounty-agent/issues/1  ### 漏洞描述 / Description Record the real network fee in the ledger, not only the capped estimate  **The problem**  When the agent pays for i"
+  },
+  {
+    "id": "gh_5556777041",
+    "title": "[Bounty] [Bounty] Fix one deterministic RPC failover regression",
+    "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/1635",
+    "repo": "zhangjiayang6835-cyber/bounty-plaza",
+    "created_at": "2026-09-23T17:06:28Z",
+    "comments": 24,
+    "labels": [
+      "bounty",
+      "real"
+    ],
+    "platform": "Algora / GitHub PRs",
+    "free_tier": true,
+    "payment_verified": true,
+    "body_snippet": "### 赏金平台 / Platform GitHub  ### 原始链接 / Source URL https://github.com/NSPG13/agent-bounties/issues/1500  ### 漏洞描述 / Description [Bounty] Fix one deterministic RPC failover regression  <!-- agent-bounties/github-discovery-v1:start --> <!-- agent-bounti"
+  },
+  {
+    "id": "gh_5556776923",
+    "title": "[Bounty] [Bounty] Fix one deterministic agent-card discovery regression",
+    "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/1634",
+    "repo": "zhangjiayang6835-cyber/bounty-plaza",
+    "created_at": "2026-09-23T17:06:27Z",
+    "comments": 5,
+    "labels": [
+      "bounty",
+      "real"
+    ],
+    "platform": "Algora / GitHub PRs",
+    "free_tier": true,
+    "payment_verified": true,
+    "body_snippet": "### 赏金平台 / Platform GitHub  ### 原始链接 / Source URL https://github.com/NSPG13/agent-bounties/issues/1502  ### 漏洞描述 / Description [Bounty] Fix one deterministic agent-card discovery regression  <!-- agent-bounties/github-discovery-v1:start --> <!-- agen"
+  },
+  {
+    "id": "gh_5556776776",
+    "title": "[Bounty] [Bounty] Flower-shaped rainwater collector for a tinaco",
+    "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/1633",
+    "repo": "zhangjiayang6835-cyber/bounty-plaza",
+    "created_at": "2026-09-23T17:06:26Z",
+    "comments": 6,
+    "labels": [
+      "bounty",
+      "real"
+    ],
+    "platform": "Algora / GitHub PRs",
+    "free_tier": true,
+    "payment_verified": true,
+    "body_snippet": "### 赏金平台 / Platform GitHub  ### 原始链接 / Source URL https://github.com/NSPG13/agent-bounties/issues/1505  ### 漏洞描述 / Description [Bounty] Flower-shaped rainwater collector for a tinaco  <!-- agent-bounties/github-discovery-v1:start --> <!-- agent-bount"
+  },
+  {
+    "id": "gh_5408447211",
+    "title": "[Bounty] [Bounty: $1,250] Optimize Subgraph Isomorphism to Strict O(N) Deterministic Spac",
+    "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/1336",
+    "repo": "zhangjiayang6835-cyber/bounty-plaza",
+    "created_at": "2026-09-10T06:04:26Z",
+    "comments": 60,
+    "labels": [
+      "bounty",
+      "real"
+    ],
+    "platform": "Algora / GitHub PRs",
+    "free_tier": true,
+    "payment_verified": true,
+    "body_snippet": "### 赏金平台 / Platform GitHub  ### 原始链接 / Source URL https://github.com/Senthemodder/aquarium-of-gullibles/issues/1  ### 漏洞描述 / Description [Bounty: $1,250] Optimize Subgraph Isomorphism to Strict O(N) Deterministic Space-Time Complexity  ### Severity: "
+  },
+  {
+    "id": "gh_5408447058",
+    "title": "[Bounty] [Bounty: $850] Bedrock Physics: 1-Tick Kinematic Ghost Teleportation and Swept A",
+    "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/1334",
+    "repo": "zhangjiayang6835-cyber/bounty-plaza",
+    "created_at": "2026-09-10T06:04:25Z",
+    "comments": 47,
+    "labels": [
+      "bounty",
+      "real"
+    ],
+    "platform": "Algora / GitHub PRs",
+    "free_tier": true,
+    "payment_verified": true,
+    "body_snippet": "### 赏金平台 / Platform GitHub  ### 原始链接 / Source URL https://github.com/Senthemodder/aquarium-of-gullibles/issues/2  ### 漏洞描述 / Description [Bounty: $850] Bedrock Physics: 1-Tick Kinematic Ghost Teleportation and Swept AABB Dropout  ### Bounty:  USDC (E"
+  },
+  {
+    "id": "gh_5408447125",
+    "title": "[Bounty] [Bounty: $650] JSON UI: Dynamic Container Inventory Text Slicing Overflow in hud",
+    "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/1335",
+    "repo": "zhangjiayang6835-cyber/bounty-plaza",
+    "created_at": "2026-09-10T06:04:25Z",
+    "comments": 42,
+    "labels": [
+      "bounty",
+      "real"
+    ],
+    "platform": "Algora / GitHub PRs",
+    "free_tier": true,
+    "payment_verified": true,
+    "body_snippet": "### 赏金平台 / Platform GitHub  ### 原始链接 / Source URL https://github.com/Senthemodder/aquarium-of-gullibles/issues/3  ### 漏洞描述 / Description [Bounty: $650] JSON UI: Dynamic Container Inventory Text Slicing Overflow in hud_screen.json  ### Bounty:  USDC ("
+  },
+  {
+    "id": "gh_5809781909",
+    "title": "📋 2026-10-12 本週補助／競賽機會更新",
+    "url": "https://github.com/10041862top/17/issues/8",
+    "repo": "10041862top/17",
+    "created_at": "2026-10-12T07:10:00Z",
+    "comments": 0,
+    "labels": [
+      "weekly-update"
+    ],
+    "platform": "Algora / GitHub PRs",
+    "free_tier": true,
+    "payment_verified": true,
+    "body_snippet": "# 當前可申請機會（更新：2026-10-12）  > 由 GitHub Action 每週一自動更新。⚡ 為自動偵測，人工確認前請以官網為準。  ## 補助類  ### 常態受理（可隨時申請）  - **經濟部 SBIR 中小企業創新研發計畫** | [https://www.sbir.org.tw/](https://www.sbir.org.tw/) - **經濟部 AI+ 產業計畫（製造業數位轉型）** — ⚡ 頁面顯示仍在受理申請（自動偵測） | [https://eii.nat.go"
+  },
+  {
+    "id": "gh_5809781846",
+    "title": "交付：dsh-memory P0 缺陷审计——声明为 private 的记忆被同构聚合（writelimit CONVERGE）以明文并入更早的 internal 节点，无令牌访客即可读到，_writelimit.json 另存 private 正文骨架（修前 8/16 → 参考补丁 16/16，9 条定点变异各自转红）",
+    "url": "https://github.com/FuRongJun-1999/dsh-bounty/issues/42",
+    "repo": "FuRongJun-1999/dsh-bounty",
+    "created_at": "2026-10-12T07:09:59Z",
+    "comments": 0,
+    "labels": [],
+    "platform": "Algora / GitHub PRs",
+    "free_tier": true,
+    "payment_verified": true,
+    "body_snippet": "## 这是什么  交付一条对 `FuRongJun-1999/dsh-memory`（HEAD `dcb8fbf`）的 P0 缺陷审计。调用方经 `mdcg_remember(gated=true)` 写入一条显式声明 `sensitivity=\"private\"` 的短记忆，只要 24 小时内 contextual 层已有一条“只差数字”的同模板记忆（例如“门禁卡新口令已更新为 1111”与“门禁卡新口令已更新为 739154”），写入侧限流的同构聚合（`writelimit.check` →"
+  },
+  {
+    "id": "gh_5809765383",
+    "title": "[md_cg/writelimit] 声明 sensitivity=private 的短记忆被同构聚合（CONVERGE）以明文并入更早的 internal 节点，访客可读；_writelimit.json 另存 private 正文骨架",
+    "url": "https://github.com/FuRongJun-1999/dsh-memory/issues/148",
+    "repo": "FuRongJun-1999/dsh-memory",
+    "created_at": "2026-10-12T07:08:22Z",
+    "comments": 0,
+    "labels": [],
+    "platform": "Algora / GitHub PRs",
+    "free_tier": true,
+    "payment_verified": true,
+    "body_snippet": "## 现象  `mdcg_remember(gated=true, sensitivity=\"private\")` 写入一条短记忆时，若 24 小时内 contextual 层已有一条只差数字的同模板记忆（如“门禁卡新口令已更新为 1111”），writelimit 的同构聚合会把这条 private 正文作为【聚合】行追加进那条 internal 节点，按目标的 frontmatter 明文落盘。`MDCG_AUTONOMY=full` 时当场生效；缺省 confirm 档在属主 accept"
+  },
+  {
+    "id": "gh_5809716960",
+    "title": "🎯 Bounty Alert: 12 New Opportunityies found",
+    "url": "https://github.com/dev-kp-eloper/BountyScout/issues/1579",
+    "repo": "dev-kp-eloper/BountyScout",
+    "created_at": "2026-10-12T07:03:51Z",
+    "comments": 0,
+    "labels": [
+      "bounty-alert"
+    ],
+    "platform": "Algora / GitHub PRs",
+    "free_tier": true,
+    "payment_verified": true,
+    "body_snippet": "### Active Bounty Scan Results  **Scan Time:** 2026-10-12 07:03 UTC  #### 1. [OpenClaude great again](https://github.com/Twigpine/openclaude/issues/2271) - **Repository:** [Twigpine/openclaude](https://github.com/Twigpine/openclaude) - **Comments:** "
+  },
+  {
+    "id": "gh_5809712899",
+    "title": "OpenClaude great again",
+    "url": "https://github.com/Twigpine/openclaude/issues/2271",
+    "repo": "Twigpine/openclaude",
+    "created_at": "2026-10-12T07:03:29Z",
+    "comments": 4,
+    "labels": [],
+    "platform": "Algora / GitHub PRs",
+    "free_tier": true,
+    "payment_verified": true,
+    "body_snippet": "Hi @kevincodex1, I’ve been involved with OpenClaude since the very first week of its release. I stepped away for a period but have now returned with a clear focus on resolving outstanding issues and elevating the project further.  Here is the priorit"
+  },
+  {
+    "id": "gh_5809563420",
+    "title": "Proposal: Official MCP server for Superteam Earn",
+    "url": "https://github.com/SuperteamDAO/earn/issues/1522",
+    "repo": "SuperteamDAO/earn",
+    "created_at": "2026-10-12T06:48:49Z",
+    "comments": 0,
+    "labels": [],
+    "platform": "Algora / GitHub PRs",
+    "free_tier": true,
+    "payment_verified": true,
+    "body_snippet": "## Summary  I'd like to propose (and build) a **Model Context Protocol (MCP) server for Superteam Earn**, so developers can discover bounties, projects, grants and hackathons — and optionally submit work as an agent — directly from AI tools like Clau"
+  },
+  {
+    "id": "gh_5809441641",
+    "title": "Railway 赏金：有 8 条值得抢",
+    "url": "https://github.com/HCTDIP/corps-jobs/issues/79",
+    "repo": "HCTDIP/corps-jobs",
+    "created_at": "2026-10-12T06:36:18Z",
+    "comments": 0,
+    "labels": [],
+    "platform": "Algora / GitHub PRs",
+    "free_tier": true,
+    "payment_verified": true,
+    "body_snippet": "云端雷达发现可抢条目。  ``` [railway-radar] 2026-10-12 06:36Z total=28 hot=3 new=5   🆕 Digest-pinned GHCR image: empty-service setup and deployment triggers $10 0 replies 8h by richbobdee   🆕 Fred API   🆕 YapHub Discord login blocked by HTTP 429 on Railway US E"
+  },
+  {
+    "id": "gh_5809413949",
+    "title": "Bounty Scout — 2026-10-12",
+    "url": "https://github.com/ariahendrawan-sudo/project-a/issues/12",
+    "repo": "ariahendrawan-sudo/project-a",
+    "created_at": "2026-10-12T06:33:31Z",
+    "comments": 0,
+    "labels": [
+      "bounty-scout"
+    ],
+    "platform": "Algora / GitHub PRs",
+    "free_tier": true,
+    "payment_verified": true,
+    "body_snippet": "# Bounty Scout — week of 2026-10-12  Target: at least US$10/week. One merged bounty of US$50 covers ~5 weeks.  | # | Score | Amount | Stars | Comments | Repository | Issue | |---|------:|-------:|------:|---------:|------------|-------| | – | – | – |"
+  },
+  {
+    "id": "gh_5809359445",
+    "title": "commit-monitor: new leads 2026-10-12_0627Z",
+    "url": "https://github.com/ahmedfuzayl-gif/commit-monitor/issues/134",
+    "repo": "ahmedfuzayl-gif/commit-monitor",
+    "created_at": "2026-10-12T06:27:48Z",
+    "comments": 0,
+    "labels": [],
+    "platform": "Algora / GitHub PRs",
+    "free_tier": true,
+    "payment_verified": true,
+    "body_snippet": "# commit-monitor digest 2026-10-12_0627  38 configured target(s); 38 attempted; 4 coverage error(s).  1409 security-relevant commit lead(s), ranked:  ## [17] [SECURITY FIX] disclosed-fix variant analysis — github:nextcloud/server `cfb3c4f99f` - **fix"
+  },
+  {
+    "id": "gh_5809123431",
+    "title": "bounty-watch 2026-10-12: 0 new, 0 resumed, 6 watchlist changes",
+    "url": "https://github.com/abdulsalam-create/bounty-watch/issues/106",
+    "repo": "abdulsalam-create/bounty-watch",
+    "created_at": "2026-10-12T06:02:14Z",
+    "comments": 0,
+    "labels": [
+      "bounty-watch"
+    ],
+    "platform": "Algora / GitHub PRs",
+    "free_tier": true,
+    "payment_verified": true,
+    "body_snippet": "# bounty-watch report 2026-10-12  ## Watchlist changes (6) - **Linktree** (`bc:linktree-mbb-og`) https://bugcrowd.com/engagements/linktree-mbb-og   - https://linktr.ee: new JS bundles: 3kwo3q4n1e973.js; removed JS bundles: 0noj6eyhpo46-.js _[deploy]_"
+  },
+  {
+    "id": "gh_5809671567",
+    "title": "Morpho Blue Base: prove conservative liquidator net PnL and $10 flash-liquidity feasibility",
+    "url": "https://github.com/ahmedelgaml70/protocol/issues/7",
+    "repo": "ahmedelgaml70/protocol",
+    "created_at": "2026-10-12T06:59:26Z",
+    "comments": 1,
+    "labels": [],
+    "platform": "Algora / GitHub PRs",
+    "free_tier": true,
+    "payment_verified": true,
+    "body_snippet": "## Observed evidence, October 12, 2026  Official free Morpho GraphQL indexed `Liquidation` transactions on Base 8453. The latest bounded 100-row sample covers Oct 8–Oct 11, 2026: **100 uniquely indexed Liquidate events, 37 transaction hashes, 19 inde"
+  },
+  {
+    "id": "gh_5809435193",
+    "title": "List Verdikt-backed services in solana-foundation/pay-skills",
+    "url": "https://github.com/verdikthq/plugins/issues/14",
+    "repo": "verdikthq/plugins",
+    "created_at": "2026-10-12T06:35:37Z",
+    "comments": 0,
+    "labels": [],
+    "platform": "Algora / GitHub PRs",
+    "free_tier": true,
+    "payment_verified": true,
+    "body_snippet": "## Why  [`solana-foundation/pay-skills`](https://github.com/solana-foundation/pay-skills) is a community registry of paid APIs that the `pay` CLI and AI agents search, route to and pay through (`pay skills search`). Our README already names pay.sh as"
+  },
+  {
+    "id": "gh_5809367086",
+    "title": "Frontend: Implement Marketplace Escrow Trading Terminal with Atomic Settlement and Countdown Timers",
+    "url": "https://github.com/AegisMint-Labs/aegismint-contract/issues/12",
+    "repo": "AegisMint-Labs/aegismint-contract",
+    "created_at": "2026-10-12T06:28:37Z",
+    "comments": 0,
+    "labels": [
+      "frontend",
+      "escrow"
+    ],
+    "platform": "Algora / GitHub PRs",
+    "free_tier": true,
+    "payment_verified": true,
+    "body_snippet": "### Description: Problem 1. There is no user-facing interface to interact with `contracts/marketplace_escrow`, preventing buyers and sellers from viewing, creating, or settling orders. 2. Users have no visibility into escrow timeout blocks and expira"
+  },
+  {
+    "id": "gh_5809363586",
+    "title": "Build Soroban property-based and invariant fuzzing test suite using proptest",
+    "url": "https://github.com/AegisMint-Labs/aegismint-contract/issues/8",
+    "repo": "AegisMint-Labs/aegismint-contract",
+    "created_at": "2026-10-12T06:28:15Z",
+    "comments": 0,
+    "labels": [
+      "smart-contracts",
+      "tests",
+      "security"
+    ],
+    "platform": "Algora / GitHub PRs",
+    "free_tier": true,
+    "payment_verified": true,
+    "body_snippet": "### Description: Problem 1. Existing tests across `contracts/marketplace_escrow/src/lib.rs` and `contracts/rwa_token/src/lib.rs` only test static, hard-coded integer amounts (e.g., 50,000, 100,000), leaving arithmetic boundary conditions (e.g., `i128"
+  },
+  {
+    "id": "gh_5809253294",
+    "title": "AI Agent Radar 周榜 · 2026-W42",
+    "url": "https://github.com/apiiskan/ai-agent-radar/issues/94",
+    "repo": "apiiskan/ai-agent-radar",
+    "created_at": "2026-10-12T06:16:21Z",
+    "comments": 0,
+    "labels": [
+      "radar-weekly"
+    ],
+    "platform": "Algora / GitHub PRs",
+    "free_tier": true,
+    "payment_verified": true,
+    "body_snippet": "# AI Agent Radar 周榜 · 截至 2026-10-12  ## 综合热度 Top 20  1. [feder-cr/invisible\\_playwright\\_mcp](https://github.com/feder-cr/invisible_playwright_mcp) — 提供 MCP 集成，让 AI Agent 能连接和调用外部工具。    综合分 `87.42`；热度：近 1 日新增 47 stars；热度：7 日新增 47 stars；热度：7 日新增 6 for"
+  },
+  {
+    "id": "gh_5808941819",
+    "title": "Watched pages changed 2026-10-12",
+    "url": "https://github.com/Calmer26/FreeTier_Radar/issues/13",
+    "repo": "Calmer26/FreeTier_Radar",
+    "created_at": "2026-10-12T05:41:23Z",
+    "comments": 0,
+    "labels": [
+      "page-changed"
+    ],
+    "platform": "Algora / GitHub PRs",
+    "free_tier": true,
+    "payment_verified": true,
+    "body_snippet": "Watched pages changed. Compare the quoted lines with the JSON record; update it (and add an entry to its `changes`) or close this issue.  ### Alibaba Cloud Model Studio free quota Page: https://www.alibabacloud.com/help/en/model-studio/new-free-quota"
+  },
+  {
+    "id": "gh_5808830927",
+    "title": "Add origin: rae-fleet-router.fly.dev — RAEN fleet bundle + 5 x402 endpoints with OpenAPI + .well-known/x402",
+    "url": "https://github.com/Merit-Systems/x402scan/issues/1280",
+    "repo": "Merit-Systems/x402scan",
+    "created_at": "2026-10-12T05:28:03Z",
+    "comments": 0,
+    "labels": [],
+    "platform": "Algora / GitHub PRs",
+    "free_tier": true,
+    "payment_verified": true,
+    "body_snippet": "Please index our x402 origin.  **Origin:** https://rae-fleet-router.fly.dev  **Discovery:** - /.well-known/x402.json → 200 ✅ (x402 V2.0.0, 5 endpoints including /api/fleet-bundle, /api/tip, /api/bundle/market-starter, /api/bundle/market-intel-trio, /"
+  },
+  {
+    "id": "gh_5808787689",
+    "title": "AI Agent Radar 日报 · 2026-10-12",
+    "url": "https://github.com/apiiskan/ai-agent-radar/issues/93",
+    "repo": "apiiskan/ai-agent-radar",
+    "created_at": "2026-10-12T05:22:35Z",
+    "comments": 0,
+    "labels": [
+      "radar-daily"
+    ],
+    "platform": "Algora / GitHub PRs",
+    "free_tier": true,
+    "payment_verified": true,
+    "body_snippet": "# AI Agent Radar 日报 · 2026-10-12  ## 今日摘要  共排名 300 个项目，展示前 10 个，收录 0 条资讯。  ## 今日新发现  1. [kazoya/rctc-skill](https://github.com/kazoya/rctc-skill) — 提供可复用的 Agent Skill，用于扩展 AI 助手能力。    综合分 `47.55`；热度：未检测到近 1 日或 7 日增长；实用性：包含 README；实用性：许可证为 MIT；实用性：包含 "
+  },
+  {
+    "id": "gh_5808687849",
+    "title": "Match a bridge out's arrival within a band around the estimate, not any smaller transfer",
+    "url": "https://github.com/Munyon-Canyon/monaco/issues/5415",
+    "repo": "Munyon-Canyon/monaco",
+    "created_at": "2026-10-12T05:09:56Z",
+    "comments": 0,
+    "labels": [],
+    "platform": "Algora / GitHub PRs",
+    "free_tier": true,
+    "payment_verified": true,
+    "body_snippet": "**Milestone:** M24 — Multichain · **Blocked by:** #5408 · **Tracking:** #4917 · **Base branch:** `staging` · **Touches:** `apps/backend/internal/modules/trading/adapters/evm_arrivals.go`, `apps/backend/internal/modules/trading/adapters/evm_arrivals*_"
+  },
+  {
+    "id": "gh_5808658142",
+    "title": "Adapter: Flashnet Orchestra (Cash App over Lightning, Bitcoin and Tron deposits, Cash App payouts)",
+    "url": "https://github.com/yosriady/openrampkit/issues/30",
+    "repo": "yosriady/openrampkit",
+    "created_at": "2026-10-12T05:06:01Z",
+    "comments": 0,
+    "labels": [
+      "enhancement",
+      "adapter"
+    ],
+    "platform": "Algora / GitHub PRs",
+    "free_tier": true,
+    "payment_verified": true,
+    "body_snippet": "### Why Flashnet  [Flashnet](https://www.flashnet.xyz/) runs non-custodial Bitcoin and stablecoin routing. Its **Orchestra API** takes a source, a destination and an amount, and handles routing, bridging and settlement. One adapter gives us three thi"
+  },
+  {
+    "id": "gh_5803736589",
+    "title": "A \"Built with UseAgent\" badge and an Open in UseAgent link for your project",
+    "url": "https://github.com/useagenthq/useagent/issues/128",
+    "repo": "useagenthq/useagent",
+    "created_at": "2026-10-11T18:07:20Z",
+    "comments": 1,
+    "labels": [
+      "documentation",
+      "good first issue",
+      "help wanted",
+      "hacktoberfest"
+    ],
+    "platform": "Algora / GitHub PRs",
+    "free_tier": true,
+    "payment_verified": true,
+    "body_snippet": "When someone builds something with UseAgent, the next person should be able to find out how. Make a small \"Built with UseAgent\" badge that any project can drop into its README, plus a docs page that explains how to use it.  **Where to start** - Put t"
+  },
+  {
+    "id": "gh_5803736356",
+    "title": "Suggest a few starter tasks on an empty New thread page",
+    "url": "https://github.com/useagenthq/useagent/issues/126",
+    "repo": "useagenthq/useagent",
+    "created_at": "2026-10-11T18:07:19Z",
+    "comments": 0,
+    "labels": [
+      "enhancement",
+      "good first issue",
+      "help wanted",
+      "hacktoberfest"
+    ],
+    "platform": "Algora / GitHub PRs",
+    "free_tier": true,
+    "payment_verified": true,
+    "body_snippet": "A brand-new account opens on \"What do you want done?\" and an empty box. Many people don't know what to ask an agent the first time and leave. Show a few starter tasks under the composer until the person has run something.  **Where to start** - `front"
+  },
+  {
+    "id": "gh_5803736081",
+    "title": "Show a preview card when an app.useagent.org link is shared",
+    "url": "https://github.com/useagenthq/useagent/issues/124",
+    "repo": "useagenthq/useagent",
+    "created_at": "2026-10-11T18:07:17Z",
+    "comments": 2,
+    "labels": [
+      "enhancement",
+      "good first issue",
+      "help wanted",
+      "hacktoberfest"
+    ],
+    "platform": "Algora / GitHub PRs",
+    "free_tier": true,
+    "payment_verified": true,
+    "body_snippet": "Paste an app.useagent.org link into WhatsApp, LinkedIn, Discord or X and you get a bare link or a plain title, with no picture and no line about what UseAgent is. Add a proper preview card, so a shared sign-up link looks worth clicking.  **Where to s"
+  },
+  {
+    "id": "gh_5803735965",
+    "title": "Keep the page you opened after you sign in",
+    "url": "https://github.com/useagenthq/useagent/issues/123",
+    "repo": "useagenthq/useagent",
+    "created_at": "2026-10-11T18:07:16Z",
+    "comments": 1,
+    "labels": [
+      "enhancement",
+      "good first issue",
+      "help wanted",
+      "hacktoberfest"
+    ],
+    "platform": "Algora / GitHub PRs",
+    "free_tier": true,
+    "payment_verified": true,
+    "body_snippet": "Open any app.useagent.org page while signed out and you land on the sign-in page. After you sign in, you're dropped on the home page, and the page you opened is gone, along with anything in its link (a task prompt, a repo, a filter). Only invitation "
+  },
+  {
+    "id": "gh_5801347289",
+    "title": "Independent agent review: try to disprove retained discussion retry integrity",
+    "url": "https://github.com/wesseltl/opengrail/issues/3",
+    "repo": "wesseltl/opengrail",
+    "created_at": "2026-10-11T13:09:40Z",
+    "comments": 1,
+    "labels": [
+      "help wanted"
+    ],
+    "platform": "Algora / GitHub PRs",
+    "free_tier": true,
+    "payment_verified": true,
+    "body_snippet": "This is a bounded contributor task for a human operating an external agent, or for a human reviewer. It is an invitation to propose evidence or a small change, not a report that a defect is known.  **Reviewed source baseline:** [`e727f28ad9772abd8f8c"
+  },
+  {
+    "id": "gh_5801347206",
+    "title": "Agent starter task: validate one onboarding example and a rejected counterpart",
+    "url": "https://github.com/wesseltl/opengrail/issues/2",
+    "repo": "wesseltl/opengrail",
+    "created_at": "2026-10-11T13:09:40Z",
+    "comments": 0,
+    "labels": [
+      "help wanted",
+      "good first issue"
+    ],
+    "platform": "Algora / GitHub PRs",
+    "free_tier": true,
+    "payment_verified": true,
+    "body_snippet": "This is a bounded contributor task for a human operating an external agent, or for a human reviewer. It is an invitation to propose evidence or a small change, not a report that a defect is known.  **Reviewed source baseline:** [`e727f28ad9772abd8f8c"
+  },
+  {
+    "id": "gh_5801347095",
+    "title": "Agent starter task: improve one keyboard or mobile discussion interaction",
+    "url": "https://github.com/wesseltl/opengrail/issues/1",
+    "repo": "wesseltl/opengrail",
+    "created_at": "2026-10-11T13:09:39Z",
+    "comments": 0,
+    "labels": [
+      "help wanted",
+      "good first issue"
+    ],
+    "platform": "Algora / GitHub PRs",
+    "free_tier": true,
+    "payment_verified": true,
+    "body_snippet": "This is a bounded contributor task for a human operating an external agent, or for a human reviewer. It is an invitation to propose evidence or a small change, not a report that a defect is known.  **Reviewed source baseline:** [`e727f28ad9772abd8f8c"
+  },
+  {
+    "id": "gh_5792330803",
+    "title": "[Feature] Skill monetization framework: paid tiers, sponsorships, revenue sharing",
+    "url": "https://github.com/aniruddhaadak80/skills/issues/291",
+    "repo": "aniruddhaadak80/skills",
+    "created_at": "2026-10-10T14:54:05Z",
+    "comments": 0,
+    "labels": [
+      "documentation",
+      "enhancement",
+      "help wanted",
+      "engineering-leadership",
+      "freelance-business",
+      "hacktoberfest"
+    ],
+    "platform": "Algora / GitHub PRs",
+    "free_tier": true,
+    "payment_verified": true,
+    "body_snippet": "## Summary Implement skill monetization framework: paid skills, sponsorships, and contributor revenue sharing.  ## Motivation Sustainable funding for high-quality skills: - Enterprise features (certification, private registry, SLA) - Sponsored skills"
+  },
+  {
+    "id": "gh_5783648102",
+    "title": "More task types: escort, defend, rescue, recover from a corpse",
+    "url": "https://github.com/multipilled/skyrim-alife/issues/5",
+    "repo": "multipilled/skyrim-alife",
+    "created_at": "2026-10-09T19:37:38Z",
+    "comments": 0,
+    "labels": [
+      "enhancement",
+      "help wanted"
+    ],
+    "platform": "Algora / GitHub PRs",
+    "free_tier": true,
+    "payment_verified": true,
+    "body_snippet": "The task framework (`docs/TASKS.md`) runs bounty, assault, delivery and fetch. Add escort (caravans), defend a place, rescue a captive, and recover an item from a corpse, plus top-10 hunts and rankings later.  **Where to start:** `src/core/Tasks.cpp`"
+  },
+  {
+    "id": "gh_5767827320",
+    "title": "External reviewer wanted for PR #43 — Review Operations v1",
+    "url": "https://github.com/nightfall-wizard/wizard-verification-protocol/issues/44",
+    "repo": "nightfall-wizard/wizard-verification-protocol",
+    "created_at": "2026-10-08T19:37:42Z",
+    "comments": 1,
+    "labels": [
+      "help wanted",
+      "external-review",
+      "review-wanted"
+    ],
+    "platform": "Algora / GitHub PRs",
+    "free_tier": true,
+    "payment_verified": true,
+    "body_snippet": "# External reviewer wanted for PR #43  I am looking for an independent unpaid reviewer for PR #43:  https://github.com/nightfall-wizard/wizard-verification-protocol/pull/43  ## Scope  Please review only the External Review Operations v1 process:  - r"
+  }
+]

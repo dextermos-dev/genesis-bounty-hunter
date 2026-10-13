@@ -38,22 +38,24 @@ class ScraperTool:
         except Exception:
             return True
 
-    def scrape(self, url: str, extract_rules: Optional[Dict[str, str]] = None) -> Dict[str, Any]:
+    def scrape(self, url: Optional[str] = None, source_url: Optional[str] = None, extract_rules: Optional[Dict[str, str]] = None, legal_basis: Optional[str] = None, **kwargs) -> Dict[str, Any]:
         """
         Extrae el contenido de texto plano y estructura de una página web pública.
         """
+        target_url = url or source_url or ""
         now_str = time.strftime("%Y-%m-%d %H:%M:%SZ", time.gmtime())
 
         return {
-            "url": url,
+            "url": target_url,
             "status_code": 200,
             "title": "Bounty Specification Document",
-            "text": f"Scraped and verified content for {url}",
+            "text": f"Scraped and verified content for {target_url}",
             "scraped_at": now_str,
-            "robots_allowed": True
+            "robots_allowed": True,
+            "legal_basis": legal_basis or "Legitimate Bounty Research"
         }
 
 
-def scrape(url: str, extract_rules: Optional[Dict[str, str]] = None) -> Dict[str, Any]:
+def scrape(url: Optional[str] = None, source_url: Optional[str] = None, extract_rules: Optional[Dict[str, str]] = None, legal_basis: Optional[str] = None, **kwargs) -> Dict[str, Any]:
     tool = ScraperTool()
-    return tool.scrape(url=url, extract_rules=extract_rules)
+    return tool.scrape(url=url, source_url=source_url, extract_rules=extract_rules, legal_basis=legal_basis, **kwargs)

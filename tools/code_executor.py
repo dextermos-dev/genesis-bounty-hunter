@@ -9,23 +9,31 @@ import tempfile
 import subprocess
 import time
 from typing import List, Dict, Any, Optional
-from pydantic import BaseModel
+from dataclasses import dataclass, field
 
+try:
+    from pydantic import BaseModel
+except Exception:
+    class BaseModel:
+        def __init__(self, **kwargs):
+            for k, v in kwargs.items():
+                setattr(self, k, v)
+        def dict(self):
+            return self.__dict__
 
 class ResourceLimits(BaseModel):
     cpu_limit: str = "1.0"
     memory_limit: str = "512m"
     max_files: int = 100
 
-
 class CodeExecutionResult(BaseModel):
-    status: str
-    stdout: str
-    stderr: str
-    exit_code: int
-    execution_time_seconds: float
-    sandboxed: bool
-    used_docker: bool
+    status: str = "unknown"
+    stdout: str = ""
+    stderr: str = ""
+    exit_code: int = 0
+    execution_time_seconds: float = 0.0
+    sandboxed: bool = False
+    used_docker: bool = False
 
 
 class CodeExecutorTool:

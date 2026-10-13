@@ -60,7 +60,7 @@ class BountyHunterOrchestrator:
             "tavily": os.getenv("TAVILY_API_KEY", "")
         }
 
-        self.wallet_address = os.getenv("WEB3_WALLET_ADDRESS", "0x8366bCe3a2D379De7656D7A67015789FaF999f20")
+        self.wallet_address = os.getenv("WEB3_WALLET_ADDRESS") or "0x8366bCe3a2D379Dec7656D7A67015789FaF999f20"
 
         self.radar = RadarAgent(config=self.config)
         self.verificador = VerificadorAgent(config=self.config)
@@ -212,6 +212,8 @@ class BountyHunterOrchestrator:
         try:
             from dashboard.data_builder import update_dashboard_data_file
             update_dashboard_data_file()
+            import subprocess
+            subprocess.run([sys.executable, "tools/clean_and_categorize_pipeline.py"], check=False)
         except Exception as e:
             print(f"[!] Aviso: No se pudo actualizar dashboard/data.json automáticamente: {e}")
 

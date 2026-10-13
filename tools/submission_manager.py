@@ -12,9 +12,54 @@ import json
 import os
 import time
 import hashlib
-import requests
+import urllib.request
+import urllib.error
 from typing import Dict, Any, Optional
 from pydantic import BaseModel
+
+try:
+    import requests
+except ImportError:
+    class RequestsFallback:
+        class Response:
+            def __init__(self, status_code, content, json_data=None):
+                self.status_code = status_code
+                self.content = content
+                self.text = content.decode("utf-8", errors="ignore") if isinstance(content, bytes) else str(content)
+                self._json_data = json_data
+            def json(self):
+                if self._json_data is not None:
+                    return self._json_data
+                return json.loads(self.text) if self.text else {}
+
+        @staticmethod
+        def _request(method, url, headers=None, json_data=None, data=None, timeout=10):
+            headers = headers or {}
+            body = None
+            if json_data is not None:
+                body = json.dumps(json_data).encode("utf-8")
+                headers["Content-Type"] = "application/json"
+            elif data is not None:
+                body = data.encode("utf-8") if isinstance(data, str) else data
+            req = urllib.request.Request(url, data=body, headers=headers, method=method)
+            try:
+                with urllib.request.urlopen(req, timeout=timeout) as resp:
+                    resp_content = resp.read()
+                    return RequestsFallback.Response(resp.status, resp_content)
+            except urllib.error.HTTPError as e:
+                err_content = e.read()
+                return RequestsFallback.Response(e.code, err_content)
+            except Exception as e:
+                return RequestsFallback.Response(500, str(e).encode("utf-8"))
+
+        def get(self, url, headers=None, timeout=10):
+            return self._request("GET", url, headers=headers, timeout=timeout)
+        def post(self, url, data=None, json=None, headers=None, timeout=10):
+            return self._request("POST", url, headers=headers, json_data=json, data=data, timeout=timeout)
+        def put(self, url, data=None, json=None, headers=None, timeout=10):
+            return self._request("PUT", url, headers=headers, json_data=json, data=data, timeout=timeout)
+
+    requests = RequestsFallback()
 
 PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 
