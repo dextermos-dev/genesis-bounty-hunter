@@ -128,3 +128,11 @@ def get_origin(tp):
 
 def get_type_hints(obj, globalns=None, localns=None, include_extras=False):
     return typing.get_type_hints(obj, globalns=globalns, localns=localns)
+
+TypeForm = _SpecialForm("TypeForm")
+
+def __getattr__(name: str):
+    if hasattr(typing, name):
+        return getattr(typing, name)
+    return _SpecialForm(name)
+
