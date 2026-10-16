@@ -9,7 +9,10 @@ import urllib.request
 import urllib.error
 from typing import Dict, Any, Optional
 
+from dotenv import load_dotenv
+
 PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+load_dotenv()
 
 
 class TelegramNotifierTool:
@@ -64,5 +67,5 @@ def notify_bounty_event(title: str, reward_usd: float, issue_url: str, pr_url: O
     )
     if pr_url:
         msg += f"🚀 *Pull Request Oficial*: [Abrir PR en GitHub]({pr_url})\n"
-    msg += f"💳 *Wallet Receptor*: `0x8366bCe3a2D379De7656D7A67015789FaF999f20`"
+    msg += f"💳 *Wallet Receptor*: `0x8366bCe3a2D379Dec7656D7A67015789FaF999f20`"
     return tool.send_notification(msg)
