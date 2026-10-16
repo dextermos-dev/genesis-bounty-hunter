@@ -1,11 +1,26 @@
 {
-  "total_bounties_count": 144,
+  "total_bounties_count": 145,
   "earned_onchain_usd": 610.0,
-  "in_review_usd": 30465.0,
-  "total_claimed_usd": 103622.1,
+  "in_review_usd": 30540.0,
+  "total_claimed_usd": 103697.1,
   "total_pipeline_value_usd": 103557.1,
-  "submitted_prs_count": 29,
+  "submitted_prs_count": 30,
   "bounties": [
+    {
+      "id": "slippay-179",
+      "title": "docs(security): add SECURITY.md with a disclosure and incident policy",
+      "repo": "slippay-labs/slippay",
+      "platform": "GitHub / Stellar Wave",
+      "bounty_type": "Documentation & Security",
+      "reward": "$75 USDC",
+      "reward_amount": 75.0,
+      "status": "In Review",
+      "pr_url": "https://github.com/slippay-labs/slippay/pull/264",
+      "issue_url": "https://github.com/slippay-labs/slippay/issues/179",
+      "settlement_wallet": "0x8366bCe3a2D379Dec7656D7A67015789FaF999f20",
+      "created_at": "2026-10-16T13:06:59.147781+00:00",
+      "notes": "PR #264 opened, created comprehensive SECURITY.md, linked from README & CONTRIBUTING."
+    },
     {
       "id": "slippay-172",
       "title": "chore(repo): untrack the eight committed __pycache__ bytecode files",
