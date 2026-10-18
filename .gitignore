@@ -20,3 +20,6 @@ outputs/*.json
 
 # System
 .DS_Store
+
+# Temporary work directories & clones
+scratch/

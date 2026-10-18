@@ -14,7 +14,7 @@ PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 
 
 class PayoutVerifierTool:
-    def __init__(self, wallet_address: str = "0x8366bCe3a2D379De7656D7A67015789FaF999f20"):
+    def __init__(self, wallet_address: str = "0x8366bCe3a2D379Dec7656D7A67015789FaF999f20"):
         self.wallet_address = wallet_address.lower()
         self.networks = {
             "ethereum": "https://api.etherscan.io/api",
