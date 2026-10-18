@@ -337,5 +337,13 @@
     "title": "PR #161 Publicado en DevNiola/Prism ( USDC)",
     "details": "Manifiestos de producci\u00f3n Kubernetes y overlays Kustomize entregados para Issue #145.",
     "severity": "success"
+  },
+  {
+    "timestamp": "10:46:57",
+    "date": "2026-10-18",
+    "type": "PR_SUBMITTED",
+    "title": "PR #162 Publicado en DevNiola/Prism ( USDC)",
+    "details": "Gu\u00eda exhaustiva de despliegue self-hosting entregada para Issue #144.",
+    "severity": "success"
   }
 ]

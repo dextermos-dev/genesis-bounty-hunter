@@ -1,11 +1,27 @@
 {
-  "total_bounties_count": 160,
+  "total_bounties_count": 161,
   "earned_onchain_usd": 685.0,
-  "in_review_usd": 1140.0,
+  "in_review_usd": 1210.0,
   "total_claimed_usd": 103697.1,
-  "total_pipeline_value_usd": 1825.0,
-  "submitted_prs_count": 24,
+  "total_pipeline_value_usd": 1895.0,
+  "submitted_prs_count": 25,
   "bounties": [
+    {
+      "id": "prism-issue-144",
+      "title": "docs(deployment): add comprehensive self-hosting deployment guide (closes #144)",
+      "repository": "DevNiola/Prism",
+      "maintainer": "@DevNiola",
+      "platform": "GitHub / Stellar Wave",
+      "bounty_type": "Documentation / DevOps",
+      "reward": "70 USDC",
+      "reward_amount": 70.0,
+      "status": "In Review",
+      "pr_url": "https://github.com/DevNiola/Prism/pull/162",
+      "issue_url": "https://github.com/DevNiola/Prism/issues/144",
+      "settlement_wallet": "0x8366bCe3a2D379Dec7656D7A67015789FaF999f20",
+      "created_at": "2026-10-18T08:46:57.844065+00:00",
+      "notes": "PR #162 opened. Self-hosting deployment guide with Docker Compose, Redis hardening, Nginx SSL reverse proxy, Certbot automation, and Mintlify integration."
+    },
     {
       "id": "prism-issue-145",
       "title": "feat(k8s): add production Kubernetes manifests and Kustomize overlays (closes #145)",
@@ -3504,18 +3520,18 @@
       "in_review": false
     }
   ],
-  "active_bounties_count": 22,
+  "active_bounties_count": 23,
   "archived_bounties_count": 115,
-  "active_pipeline_value_usd": 30615.0,
+  "active_pipeline_value_usd": 30685.0,
   "archived_pipeline_usd": 72367.1,
   "settlement_wallet": "0x8366bCe3a2D379Dec7656D7A67015789FaF999f20",
   "sprint_won_usd": 685.0,
-  "sprint_in_review_usd": 1140.0,
-  "sprint_total_usd": 1825.0,
-  "sprint_prs_count": 24,
-  "all_github_prs_count": 28,
-  "all_github_prs_usd": 4470.0,
+  "sprint_in_review_usd": 1210.0,
+  "sprint_total_usd": 1895.0,
+  "sprint_prs_count": 25,
+  "all_github_prs_count": 29,
+  "all_github_prs_usd": 4540.0,
   "submitted_grants_usd": 30400.0,
   "submitted_grants_count": 19,
-  "grand_total_pipeline_usd": 35225.0
+  "grand_total_pipeline_usd": 35295.0
 }
