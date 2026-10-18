@@ -1,5 +1,19 @@
 [
   {
+    "timestamp": "10:19:38",
+    "type": "GITHUB_PR",
+    "title": "PR #156 Abierto en DevNiola/Prism (Issue #146 - $70 USDC)",
+    "details": "Workflow de seguridad automatizado implementado (.github/workflows/security.yml) con cargo-audit, pnpm audit, CodeQL y Trivy. Wallet: 0x8366bCe3a2D379Dec7656D7A67015789FaF999f20.",
+    "severity": "success"
+  },
+  {
+    "timestamp": "10:19:38",
+    "type": "GITHUB_PR",
+    "title": "PR #157 Abierto en DevNiola/Prism (Issue #148 - $75 USDC)",
+    "details": "Workflow de benchmark con Criterion y detección de regresiones de rendimiento implementado (.github/workflows/benchmark.yml, decode_benchmarks.rs). Monopolio total 8/8 PRs en Prism. Wallet: 0x8366bCe3a2D379Dec7656D7A67015789FaF999f20.",
+    "severity": "success"
+  },
+  {
     "timestamp": "10:03:09",
     "type": "GITHUB_PR",
     "title": "PR #155 Abierto en DevNiola/Prism (Issue #136)",
