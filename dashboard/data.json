@@ -1,11 +1,27 @@
 {
-  "total_bounties_count": 152,
+  "total_bounties_count": 153,
   "earned_onchain_usd": 685.0,
-  "in_review_usd": 575.0,
+  "in_review_usd": 645.0,
   "total_claimed_usd": 103697.1,
-  "total_pipeline_value_usd": 1260.0,
-  "submitted_prs_count": 16,
+  "total_pipeline_value_usd": 1330.0,
+  "submitted_prs_count": 17,
   "bounties": [
+    {
+      "id": "prism-issue-141",
+      "title": "chore(devops): add pre-commit hooks for code formatting and linting (closes #141)",
+      "repository": "DevNiola/Prism",
+      "maintainer": "@DevNiola",
+      "platform": "GitHub / Stellar Wave",
+      "bounty_type": "DevOps & Code Quality",
+      "reward": "70 USDC",
+      "reward_amount": 70.0,
+      "status": "In Review",
+      "pr_url": "https://github.com/DevNiola/Prism/pull/154",
+      "issue_url": "https://github.com/DevNiola/Prism/issues/141",
+      "settlement_wallet": "0x8366bCe3a2D379Dec7656D7A67015789FaF999f20",
+      "created_at": "2026-10-18T07:52:21.459967+00:00",
+      "notes": "PR #154 opened. Monopolio absoluto en DevNiola/Prism (5/5 PRs del repo). .pre-commit-config.yaml con rustfmt, clippy, prettier y eslint. Scripts en package.json (format:check, format:write, hooks:install, hooks:run), prettier devDependency y documentación en CONTRIBUTING.md."
+    },
     {
       "id": "prism-issue-135",
       "title": "feat(devops): add docker-compose and Makefile for local development (closes #135)",
