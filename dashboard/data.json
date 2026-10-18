@@ -1,11 +1,27 @@
 {
-  "total_bounties_count": 153,
+  "total_bounties_count": 154,
   "earned_onchain_usd": 685.0,
-  "in_review_usd": 645.0,
+  "in_review_usd": 715.0,
   "total_claimed_usd": 103697.1,
-  "total_pipeline_value_usd": 1330.0,
-  "submitted_prs_count": 17,
+  "total_pipeline_value_usd": 1400.0,
+  "submitted_prs_count": 18,
   "bounties": [
+    {
+      "id": "prism-issue-136",
+      "title": "feat(devops): add automated release workflow with semantic versioning (closes #136)",
+      "repository": "DevNiola/Prism",
+      "maintainer": "@DevNiola",
+      "platform": "GitHub / Stellar Wave",
+      "bounty_type": "DevOps & Automation",
+      "reward": "70 USDC",
+      "reward_amount": 70.0,
+      "status": "In Review",
+      "pr_url": "https://github.com/DevNiola/Prism/pull/155",
+      "issue_url": "https://github.com/DevNiola/Prism/issues/136",
+      "settlement_wallet": "0x8366bCe3a2D379Dec7656D7A67015789FaF999f20",
+      "created_at": "2026-10-18T08:03:09.026139+00:00",
+      "notes": "PR #155 opened. Monopolio absoluto en DevNiola/Prism (6/6 PRs del repo). Semantic versioning con conventional commits, changelog generation (.releaserc.json), vX.Y.Z tags y automated GitHub Actions release workflow (.github/workflows/release.yml)."
+    },
     {
       "id": "prism-issue-141",
       "title": "chore(devops): add pre-commit hooks for code formatting and linting (closes #141)",

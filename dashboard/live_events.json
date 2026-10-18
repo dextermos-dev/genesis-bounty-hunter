@@ -1,5 +1,12 @@
 [
   {
+    "timestamp": "10:03:09",
+    "type": "GITHUB_PR",
+    "title": "PR #155 Abierto en DevNiola/Prism (Issue #136)",
+    "details": "Workflow de releases automatizadas y versionado semántico implementado (.github/workflows/release.yml, .releaserc.json, CHANGELOG.md). Monopolio total 6/6 PRs en Prism. Settlement Wallet: 0x8366bCe3a2D379Dec7656D7A67015789FaF999f20.",
+    "severity": "success"
+  },
+  {
     "timestamp": "09:52:21",
     "type": "GITHUB_PR",
     "title": "PR #154 Abierto en DevNiola/Prism (Issue #141)",
