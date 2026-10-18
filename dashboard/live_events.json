@@ -1,5 +1,12 @@
 [
   {
+    "timestamp": "09:37:55",
+    "type": "GITHUB_PR",
+    "title": "PR #152 Abierto en DevNiola/Prism (Issue #142)",
+    "details": "Stale Bot configurado con .github/stale.yml y workflow .github/workflows/stale.yml (actions/stale@v9, cron diario, exenciones pinned/security). Monopolio de 3/3 PRs en el repositorio. Settlement Wallet: 0x8366bCe3a2D379Dec7656D7A67015789FaF999f20.",
+    "severity": "success"
+  },
+  {
     "timestamp": "09:33:43",
     "type": "GITHUB_PR",
     "title": "PR #151 Abierto en DevNiola/Prism (Issue #143)",
