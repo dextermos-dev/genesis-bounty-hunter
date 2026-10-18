@@ -1,5 +1,19 @@
 [
   {
+    "timestamp": "09:25:20",
+    "type": "GITHUB_PR",
+    "title": "PR #150 Abierto en DevNiola/Prism (10ª Ola Stellar Wave)",
+    "details": "Dependabot v2 (.github/dependabot.yml) implementado con validación de schema oficial. Primer PR en la historia del repositorio (100% monopolio). Settlement wallet vinculada: 0x8366bCe3a2D379Dec7656D7A67015789FaF999f20.",
+    "severity": "success"
+  },
+  {
+    "timestamp": "09:15:00",
+    "type": "BOUNTY_MERGE",
+    "title": "PR #264 Aprobado & Mergeado en SlipPay (.00 USDC)",
+    "details": "Mantenedor @Obaara293 mergeó la política de seguridad con felicitaciones por los tests deterministas. Fondos consolidados en el pipeline ganado (.00 USDC).",
+    "severity": "success"
+  },
+  {
     "timestamp": "06:59:11",
     "date": "2026-10-13",
     "type": "RADAR_SCAN",
