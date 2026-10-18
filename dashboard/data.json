@@ -1,11 +1,27 @@
 {
-  "total_bounties_count": 149,
+  "total_bounties_count": 150,
   "earned_onchain_usd": 685.0,
-  "in_review_usd": 360.0,
+  "in_review_usd": 430.0,
   "total_claimed_usd": 103697.1,
-  "total_pipeline_value_usd": 1045.0,
-  "submitted_prs_count": 13,
+  "total_pipeline_value_usd": 1115.0,
+  "submitted_prs_count": 14,
   "bounties": [
+    {
+      "id": "prism-issue-143",
+      "title": "chore(devops): add issue templates, PR checklist, and disable blank issues (closes #143)",
+      "repository": "DevNiola/Prism",
+      "maintainer": "@DevNiola",
+      "platform": "GitHub / Stellar Wave",
+      "bounty_type": "DevOps & Community Standard",
+      "reward": "70 USDC",
+      "reward_amount": 70.0,
+      "status": "In Review",
+      "pr_url": "https://github.com/DevNiola/Prism/pull/151",
+      "issue_url": "https://github.com/DevNiola/Prism/issues/143",
+      "settlement_wallet": "0x8366bCe3a2D379Dec7656D7A67015789FaF999f20",
+      "created_at": "2026-10-18T07:33:43.017256+00:00",
+      "notes": "PR #151 opened. Monopolio absoluto en DevNiola/Prism. Implementa bug_report.md con contexto Soroban, feature_request.md con selector de componentes, config.yml deshabilitando blank issues y PULL_REQUEST_TEMPLATE.md con checklist de calidad de 8 puntos."
+    },
     {
       "id": "prism-issue-140",
       "title": "chore(devops): add dependabot configuration for dependency updates (closes #140)",

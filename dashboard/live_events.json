@@ -1,5 +1,12 @@
 [
   {
+    "timestamp": "09:33:43",
+    "type": "GITHUB_PR",
+    "title": "PR #151 Abierto en DevNiola/Prism (Issue #143)",
+    "details": "Plantillas de Issue (Bug Report con contexto Soroban, Feature Request), config.yml (blank issues deshabilitados) y PR Checklist estandarizados en PR #151. Settlement Wallet vinculada: 0x8366bCe3a2D379Dec7656D7A67015789FaF999f20.",
+    "severity": "success"
+  },
+  {
     "timestamp": "09:25:20",
     "type": "GITHUB_PR",
     "title": "PR #150 Abierto en DevNiola/Prism (10ª Ola Stellar Wave)",
