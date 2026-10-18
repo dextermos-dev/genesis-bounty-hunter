@@ -1,5 +1,19 @@
 [
   {
+    "timestamp": "10:26:25",
+    "type": "GITHUB_PR",
+    "title": "PR #158 Abierto en DevNiola/Prism (Issue #137 - $70 USDC)",
+    "details": "Workflow de publicación en crates.io (.github/workflows/publish-crates.yml) para grat-core, grat-wasm y grat CLI con verificación API. Wallet: 0x8366bCe3a2D379Dec7656D7A67015789FaF999f20.",
+    "severity": "success"
+  },
+  {
+    "timestamp": "10:26:25",
+    "type": "GITHUB_PR",
+    "title": "PR #159 Abierto en DevNiola/Prism (Issue #138 - $70 USDC)",
+    "details": "Workflow de publicación en NPM automatizado (.github/workflows/publish-npm.yml) para grat-server con provenance. 10/10 PRs en Prism. Wallet: 0x8366bCe3a2D379Dec7656D7A67015789FaF999f20.",
+    "severity": "success"
+  },
+  {
     "timestamp": "10:19:38",
     "type": "GITHUB_PR",
     "title": "PR #156 Abierto en DevNiola/Prism (Issue #146 - $70 USDC)",
