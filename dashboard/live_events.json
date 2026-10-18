@@ -361,5 +361,13 @@
     "title": "PR #164 Publicado en DevNiola/Prism ( USDC)",
     "details": "Dockerfile multi-stage de producci\u00f3n para apps/web entregado para Issue #134.",
     "severity": "success"
+  },
+  {
+    "timestamp": "10:54:37",
+    "date": "2026-10-18",
+    "type": "PR_SUBMITTED",
+    "title": "PR #165 Publicado en DevNiola/Prism ( USDC)",
+    "details": "Workflow de empaquetado y publicaci\u00f3n de extensi\u00f3n VS Code entregado para Issue #139.",
+    "severity": "success"
   }
 ]
