@@ -1,5 +1,197 @@
 [
   {
+    "timestamp": "10:29:53",
+    "date": "2026-10-19",
+    "type": "SANDBOX_STATUS",
+    "title": "Integridad del Sandbox",
+    "details": "22/22 Bounties con compilación y suite de pruebas 100% en verde.",
+    "severity": "success"
+  },
+  {
+    "timestamp": "10:29:53",
+    "date": "2026-10-19",
+    "type": "GITHUB_CI",
+    "title": "Integración Continua Vercel / Gitcoin",
+    "details": "PR #474 en gitcoinco/gitcoin_co_30 recibida correctamente por Allo Capital CI.",
+    "severity": "info"
+  },
+  {
+    "timestamp": "10:29:53",
+    "date": "2026-10-19",
+    "type": "SYSTEM_SYNC",
+    "title": "Sincronización Autónoma Nivel B",
+    "details": "Monitoreando 18 Pull Requests publicadas en GitHub y Wallet 0x8366bCe3...",
+    "severity": "success"
+  },
+  {
+    "timestamp": "10:24:25",
+    "date": "2026-10-19",
+    "type": "PIPELINE_PURGE",
+    "title": "Bounty Asignado a Competidor Removido: prism-issue-149",
+    "details": "Issue DevNiola/Prism#149 asignado por mantenedores a @CodedTricks. Removido del dashboard para integridad contable.",
+    "severity": "warning"
+  },
+  {
+    "timestamp": "10:24:24",
+    "date": "2026-10-19",
+    "type": "PIPELINE_PURGE",
+    "title": "Bounty Asignado a Competidor Removido: prism-issue-148",
+    "details": "Issue DevNiola/Prism#148 asignado por mantenedores a @DevvJenny. Removido del dashboard para integridad contable.",
+    "severity": "warning"
+  },
+  {
+    "timestamp": "10:24:24",
+    "date": "2026-10-19",
+    "type": "PIPELINE_PURGE",
+    "title": "Bounty Asignado a Competidor Removido: prism-issue-147",
+    "details": "Issue DevNiola/Prism#147 asignado por mantenedores a @Mrcee-arch. Removido del dashboard para integridad contable.",
+    "severity": "warning"
+  },
+  {
+    "timestamp": "10:24:24",
+    "date": "2026-10-19",
+    "type": "PIPELINE_PURGE",
+    "title": "Bounty Asignado a Competidor Removido: prism-issue-146",
+    "details": "Issue DevNiola/Prism#146 asignado por mantenedores a @Mrcee-arch. Removido del dashboard para integridad contable.",
+    "severity": "warning"
+  },
+  {
+    "timestamp": "10:24:23",
+    "date": "2026-10-19",
+    "type": "PIPELINE_PURGE",
+    "title": "Bounty Asignado a Competidor Removido: prism-issue-145",
+    "details": "Issue DevNiola/Prism#145 asignado por mantenedores a @DevvJenny. Removido del dashboard para integridad contable.",
+    "severity": "warning"
+  },
+  {
+    "timestamp": "10:24:23",
+    "date": "2026-10-19",
+    "type": "PIPELINE_PURGE",
+    "title": "Bounty Asignado a Competidor Removido: prism-issue-144",
+    "details": "Issue DevNiola/Prism#144 asignado por mantenedores a @BABAT-CODE. Removido del dashboard para integridad contable.",
+    "severity": "warning"
+  },
+  {
+    "timestamp": "10:24:22",
+    "date": "2026-10-19",
+    "type": "PIPELINE_PURGE",
+    "title": "Bounty Asignado a Competidor Removido: prism-issue-143",
+    "details": "Issue DevNiola/Prism#143 asignado por mantenedores a @CodedTricks. Removido del dashboard para integridad contable.",
+    "severity": "warning"
+  },
+  {
+    "timestamp": "10:24:22",
+    "date": "2026-10-19",
+    "type": "PIPELINE_PURGE",
+    "title": "Bounty Asignado a Competidor Removido: prism-issue-142",
+    "details": "Issue DevNiola/Prism#142 asignado por mantenedores a @Mrcee-arch. Removido del dashboard para integridad contable.",
+    "severity": "warning"
+  },
+  {
+    "timestamp": "10:24:22",
+    "date": "2026-10-19",
+    "type": "PIPELINE_PURGE",
+    "title": "Bounty Asignado a Competidor Removido: prism-issue-141",
+    "details": "Issue DevNiola/Prism#141 asignado por mantenedores a @BABAT-CODE. Removido del dashboard para integridad contable.",
+    "severity": "warning"
+  },
+  {
+    "timestamp": "10:24:21",
+    "date": "2026-10-19",
+    "type": "PIPELINE_PURGE",
+    "title": "Bounty Asignado a Competidor Removido: prism-issue-140",
+    "details": "Issue DevNiola/Prism#140 asignado por mantenedores a @CodeMasked. Removido del dashboard para integridad contable.",
+    "severity": "warning"
+  },
+  {
+    "timestamp": "10:24:21",
+    "date": "2026-10-19",
+    "type": "PIPELINE_PURGE",
+    "title": "Bounty Asignado a Competidor Removido: prism-issue-139",
+    "details": "Issue DevNiola/Prism#139 asignado por mantenedores a @NancieDev. Removido del dashboard para integridad contable.",
+    "severity": "warning"
+  },
+  {
+    "timestamp": "10:24:20",
+    "date": "2026-10-19",
+    "type": "PIPELINE_PURGE",
+    "title": "Bounty Asignado a Competidor Removido: prism-issue-136",
+    "details": "Issue DevNiola/Prism#136 asignado por mantenedores a @Mrcee-arch. Removido del dashboard para integridad contable.",
+    "severity": "warning"
+  },
+  {
+    "timestamp": "10:24:20",
+    "date": "2026-10-19",
+    "type": "PIPELINE_PURGE",
+    "title": "Bounty Asignado a Competidor Removido: prism-issue-135",
+    "details": "Issue DevNiola/Prism#135 asignado por mantenedores a @NancieDev. Removido del dashboard para integridad contable.",
+    "severity": "warning"
+  },
+  {
+    "timestamp": "10:24:19",
+    "date": "2026-10-19",
+    "type": "PIPELINE_PURGE",
+    "title": "Bounty Asignado a Competidor Removido: prism-issue-134",
+    "details": "Issue DevNiola/Prism#134 asignado por mantenedores a @BABAT-CODE. Removido del dashboard para integridad contable.",
+    "severity": "warning"
+  },
+  {
+    "timestamp": "10:24:19",
+    "date": "2026-10-19",
+    "type": "PIPELINE_PURGE",
+    "title": "Bounty Asignado a Competidor Removido: prism-issue-133",
+    "details": "Issue DevNiola/Prism#133 asignado por mantenedores a @BABAT-CODE. Removido del dashboard para integridad contable.",
+    "severity": "warning"
+  },
+  {
+    "timestamp": "10:24:18",
+    "date": "2026-10-19",
+    "type": "PIPELINE_PURGE",
+    "title": "Bounty Asignado a Competidor Removido: prism-issue-138",
+    "details": "Issue DevNiola/Prism#138 asignado por mantenedores a @CodedTricks. Removido del dashboard para integridad contable.",
+    "severity": "warning"
+  },
+  {
+    "timestamp": "10:24:17",
+    "date": "2026-10-19",
+    "type": "PIPELINE_PURGE",
+    "title": "Bounty Asignado a Competidor Removido: prism-issue-137",
+    "details": "Issue DevNiola/Prism#137 asignado por mantenedores a @CodedTricks. Removido del dashboard para integridad contable.",
+    "severity": "warning"
+  },
+  {
+    "timestamp": "10:24:17",
+    "date": "2026-10-19",
+    "type": "PIPELINE_PURGE",
+    "title": "Bounty Asignado a Competidor Removido: prism-issue-132",
+    "details": "Issue DevNiola/Prism#132 asignado por mantenedores a @NancieDev. Removido del dashboard para integridad contable.",
+    "severity": "warning"
+  },
+  {
+    "timestamp": "10:23:59",
+    "date": "2026-10-19",
+    "type": "SANDBOX_STATUS",
+    "title": "Integridad del Sandbox",
+    "details": "22/22 Bounties con compilación y suite de pruebas 100% en verde.",
+    "severity": "success"
+  },
+  {
+    "timestamp": "10:23:59",
+    "date": "2026-10-19",
+    "type": "GITHUB_CI",
+    "title": "Integración Continua Vercel / Gitcoin",
+    "details": "PR #474 en gitcoinco/gitcoin_co_30 recibida correctamente por Allo Capital CI.",
+    "severity": "info"
+  },
+  {
+    "timestamp": "10:23:58",
+    "date": "2026-10-19",
+    "type": "SYSTEM_SYNC",
+    "title": "Sincronización Autónoma Nivel B",
+    "details": "Monitoreando 18 Pull Requests publicadas en GitHub y Wallet 0x8366bCe3...",
+    "severity": "success"
+  },
+  {
     "timestamp": "09:29:28",
     "date": "2026-10-19",
     "type": "SANDBOX_STATUS",
@@ -45,198 +237,6 @@
     "type": "SYSTEM_SYNC",
     "title": "Sincronización Autónoma Nivel B",
     "details": "Monitoreando 18 Pull Requests publicadas en GitHub y Wallet 0x8366bCe3...",
-    "severity": "success"
-  },
-  {
-    "timestamp": "08:29:04",
-    "date": "2026-10-19",
-    "type": "SANDBOX_STATUS",
-    "title": "Integridad del Sandbox",
-    "details": "22/22 Bounties con compilación y suite de pruebas 100% en verde.",
-    "severity": "success"
-  },
-  {
-    "timestamp": "08:29:03",
-    "date": "2026-10-19",
-    "type": "GITHUB_CI",
-    "title": "Integración Continua Vercel / Gitcoin",
-    "details": "PR #474 en gitcoinco/gitcoin_co_30 recibida correctamente por Allo Capital CI.",
-    "severity": "info"
-  },
-  {
-    "timestamp": "08:29:03",
-    "date": "2026-10-19",
-    "type": "SYSTEM_SYNC",
-    "title": "Sincronización Autónoma Nivel B",
-    "details": "Monitoreando 18 Pull Requests publicadas en GitHub y Wallet 0x8366bCe3...",
-    "severity": "success"
-  },
-  {
-    "timestamp": "07:28:55",
-    "date": "2026-10-19",
-    "type": "PIPELINE_PURGE",
-    "title": "Bounty Asignado a Competidor Removido: prism-issue-149",
-    "details": "Issue DevNiola/Prism#149 asignado por mantenedores a @CodedTricks. Removido del dashboard para integridad contable.",
-    "severity": "warning"
-  },
-  {
-    "timestamp": "07:28:55",
-    "date": "2026-10-19",
-    "type": "PIPELINE_PURGE",
-    "title": "Bounty Asignado a Competidor Removido: prism-issue-148",
-    "details": "Issue DevNiola/Prism#148 asignado por mantenedores a @DevvJenny. Removido del dashboard para integridad contable.",
-    "severity": "warning"
-  },
-  {
-    "timestamp": "07:28:54",
-    "date": "2026-10-19",
-    "type": "PIPELINE_PURGE",
-    "title": "Bounty Asignado a Competidor Removido: prism-issue-147",
-    "details": "Issue DevNiola/Prism#147 asignado por mantenedores a @Mrcee-arch. Removido del dashboard para integridad contable.",
-    "severity": "warning"
-  },
-  {
-    "timestamp": "07:28:54",
-    "date": "2026-10-19",
-    "type": "PIPELINE_PURGE",
-    "title": "Bounty Asignado a Competidor Removido: prism-issue-146",
-    "details": "Issue DevNiola/Prism#146 asignado por mantenedores a @Mrcee-arch. Removido del dashboard para integridad contable.",
-    "severity": "warning"
-  },
-  {
-    "timestamp": "07:28:53",
-    "date": "2026-10-19",
-    "type": "PIPELINE_PURGE",
-    "title": "Bounty Asignado a Competidor Removido: prism-issue-145",
-    "details": "Issue DevNiola/Prism#145 asignado por mantenedores a @DevvJenny. Removido del dashboard para integridad contable.",
-    "severity": "warning"
-  },
-  {
-    "timestamp": "07:28:53",
-    "date": "2026-10-19",
-    "type": "PIPELINE_PURGE",
-    "title": "Bounty Asignado a Competidor Removido: prism-issue-144",
-    "details": "Issue DevNiola/Prism#144 asignado por mantenedores a @BABAT-CODE. Removido del dashboard para integridad contable.",
-    "severity": "warning"
-  },
-  {
-    "timestamp": "07:28:53",
-    "date": "2026-10-19",
-    "type": "PIPELINE_PURGE",
-    "title": "Bounty Asignado a Competidor Removido: prism-issue-143",
-    "details": "Issue DevNiola/Prism#143 asignado por mantenedores a @CodedTricks. Removido del dashboard para integridad contable.",
-    "severity": "warning"
-  },
-  {
-    "timestamp": "07:28:52",
-    "date": "2026-10-19",
-    "type": "PIPELINE_PURGE",
-    "title": "Bounty Asignado a Competidor Removido: prism-issue-142",
-    "details": "Issue DevNiola/Prism#142 asignado por mantenedores a @Mrcee-arch. Removido del dashboard para integridad contable.",
-    "severity": "warning"
-  },
-  {
-    "timestamp": "07:28:52",
-    "date": "2026-10-19",
-    "type": "PIPELINE_PURGE",
-    "title": "Bounty Asignado a Competidor Removido: prism-issue-141",
-    "details": "Issue DevNiola/Prism#141 asignado por mantenedores a @BABAT-CODE. Removido del dashboard para integridad contable.",
-    "severity": "warning"
-  },
-  {
-    "timestamp": "07:28:51",
-    "date": "2026-10-19",
-    "type": "PIPELINE_PURGE",
-    "title": "Bounty Asignado a Competidor Removido: prism-issue-138",
-    "details": "Issue DevNiola/Prism#138 asignado por mantenedores a @CodedTricks. Removido del dashboard para integridad contable.",
-    "severity": "warning"
-  },
-  {
-    "timestamp": "07:28:51",
-    "date": "2026-10-19",
-    "type": "PIPELINE_PURGE",
-    "title": "Bounty Asignado a Competidor Removido: prism-issue-137",
-    "details": "Issue DevNiola/Prism#137 asignado por mantenedores a @CodedTricks. Removido del dashboard para integridad contable.",
-    "severity": "warning"
-  },
-  {
-    "timestamp": "07:28:50",
-    "date": "2026-10-19",
-    "type": "PIPELINE_PURGE",
-    "title": "Bounty Asignado a Competidor Removido: prism-issue-136",
-    "details": "Issue DevNiola/Prism#136 asignado por mantenedores a @Mrcee-arch. Removido del dashboard para integridad contable.",
-    "severity": "warning"
-  },
-  {
-    "timestamp": "07:28:50",
-    "date": "2026-10-19",
-    "type": "PIPELINE_PURGE",
-    "title": "Bounty Asignado a Competidor Removido: prism-issue-134",
-    "details": "Issue DevNiola/Prism#134 asignado por mantenedores a @BABAT-CODE. Removido del dashboard para integridad contable.",
-    "severity": "warning"
-  },
-  {
-    "timestamp": "07:28:50",
-    "date": "2026-10-19",
-    "type": "PIPELINE_PURGE",
-    "title": "Bounty Asignado a Competidor Removido: prism-issue-133",
-    "details": "Issue DevNiola/Prism#133 asignado por mantenedores a @BABAT-CODE. Removido del dashboard para integridad contable.",
-    "severity": "warning"
-  },
-  {
-    "timestamp": "07:28:35",
-    "date": "2026-10-19",
-    "type": "SANDBOX_STATUS",
-    "title": "Integridad del Sandbox",
-    "details": "22/22 Bounties con compilación y suite de pruebas 100% en verde.",
-    "severity": "success"
-  },
-  {
-    "timestamp": "07:28:35",
-    "date": "2026-10-19",
-    "type": "GITHUB_CI",
-    "title": "Integración Continua Vercel / Gitcoin",
-    "details": "PR #474 en gitcoinco/gitcoin_co_30 recibida correctamente por Allo Capital CI.",
-    "severity": "info"
-  },
-  {
-    "timestamp": "07:28:34",
-    "date": "2026-10-19",
-    "type": "SYSTEM_SYNC",
-    "title": "Sincronización Autónoma Nivel B",
-    "details": "Monitoreando 18 Pull Requests publicadas en GitHub y Wallet 0x8366bCe3...",
-    "severity": "success"
-  },
-  {
-    "timestamp": "05:44:47",
-    "date": "2026-10-19",
-    "type": "SANDBOX_STATUS",
-    "title": "Integridad del Sandbox",
-    "details": "22/22 Bounties con compilación y suite de pruebas 100% en verde.",
-    "severity": "success"
-  },
-  {
-    "timestamp": "05:44:47",
-    "date": "2026-10-19",
-    "type": "GITHUB_CI",
-    "title": "Integración Continua Vercel / Gitcoin",
-    "details": "PR #474 en gitcoinco/gitcoin_co_30 recibida correctamente por Allo Capital CI.",
-    "severity": "info"
-  },
-  {
-    "timestamp": "05:44:46",
-    "date": "2026-10-19",
-    "type": "SYSTEM_SYNC",
-    "title": "Sincronización Autónoma Nivel B",
-    "details": "Monitoreando 18 Pull Requests publicadas en GitHub y Wallet 0x8366bCe3...",
-    "severity": "success"
-  },
-  {
-    "timestamp": "17:54:23",
-    "date": "2026-10-18",
-    "type": "SANDBOX_STATUS",
-    "title": "Integridad del Sandbox",
-    "details": "22/22 Bounties con compilación y suite de pruebas 100% en verde.",
     "severity": "success"
   }
 ]

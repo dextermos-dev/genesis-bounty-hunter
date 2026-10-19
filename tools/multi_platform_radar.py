@@ -42,7 +42,10 @@ def scan_algora_and_github_bounties() -> list:
         'is:issue is:open "algora.io" OR "polar.sh" bounty sort:created-desc',
         'is:issue is:open "bountycaster" OR "bounty" "Base" "USDC" sort:created-desc',
         'is:issue is:open "collaborators.build" OR "gitreward" bounty sort:created-desc',
-        'is:issue is:open label:"help wanted" "bounty $" sort:created-desc'
+        'is:issue is:open label:"help wanted" "bounty $" sort:created-desc',
+        'is:issue is:open label:bounty "soroban" sort:created-desc',
+        'is:issue is:open "cctp" OR "cross-chain" bounty sort:created-desc',
+        'is:issue is:open "AgentKit" OR "OnchainKit" bounty sort:created-desc'
     ]
     
     found_bounties = []

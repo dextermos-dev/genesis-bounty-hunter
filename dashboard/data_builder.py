@@ -86,7 +86,7 @@ def build_dashboard_dataset() -> dict:
     sprint_prs = [
         b for b in bounties_list
         if b.get("sprint")
-        or any(k in (b.get("id") or b.get("bounty_id") or "").lower() for k in ["prism", "slippay", "defiwise", "susu"])
+        or any(k in (b.get("id") or b.get("bounty_id") or "").lower() for k in ["prism", "slippay", "defiwise", "susu", "streampay"])
     ]
     in_review_prs = [
         b for b in sprint_prs
