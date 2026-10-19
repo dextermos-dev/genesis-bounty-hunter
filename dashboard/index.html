@@ -3,765 +3,460 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bounty Hunter AI v2.0 — Executive Mission Control Dashboard (Nivel Dios)</title>
-  <!-- Google Fonts: Outfit & Inter -->
+  <title>Bounty Hunter AI · Command Center Nivel Dios (100% Realista)</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <!-- Font Awesome Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link rel="stylesheet" href="styles.css?v=2.7">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
+
   <div class="app-container">
-    <div class="sidebar-overlay" id="sidebar-overlay"></div>
-    <!-- Sidebar Navigation -->
-    <aside class="sidebar" id="sidebar">
-      <div class="brand">
-        <div class="logo-icon">
-          <i class="fa-solid fa-crosshairs"></i>
-        </div>
-        <div class="brand-text">
-          <h2>BOUNTY HUNTER</h2>
-          <span class="version-tag">AI ORCHESTRATOR v2.0</span>
-        </div>
-        <button class="btn-close-sidebar" id="btn-close-sidebar"><i class="fa-solid fa-xmark"></i></button>
-      </div>
 
-      <div class="autonomy-badge level-b">
-        <div class="pulse-dot"></div>
-        <div class="autonomy-info">
-          <span class="label">NIVEL DE AUTONOMÍA</span>
-          <strong class="value">NIVEL B — AUTOPR</strong>
+    <!-- Top Navigation Bar -->
+    <header class="top-nav">
+      <div class="brand-section">
+        <div class="brand-logo-glow">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+          </svg>
+        </div>
+        <div class="brand-titles">
+          <h1>BOUNTY HUNTER AI</h1>
+          <div class="tagline">
+            <span class="pulse-dot"></span>
+            <span>AUDITORÍA EN VIVO 100% REALISTA · BASE L2 (8453)</span>
+          </div>
         </div>
       </div>
 
-      <nav class="nav-menu">
-        <a href="#balance-section" class="nav-item active"><i class="fa-solid fa-wallet"></i> Dinero Ganado & Wallet</a>
-        <a href="#platforms-section" class="nav-item"><i class="fa-solid fa-network-wired"></i> Plataformas Conectadas</a>
-        <a href="#superiority-section" class="nav-item"><i class="fa-solid fa-trophy"></i> Superioridad Competitiva</a>
-        <a href="#live-feed-section" class="nav-item"><i class="fa-solid fa-terminal"></i> Feed de Eventos en Vivo</a>
-        <a href="#pipeline" class="nav-item"><i class="fa-solid fa-list-check"></i> <span id="sidebar-bounties-nav">102 Bounties Reales</span></a>
-        <a href="#diagnostics" class="nav-item"><i class="fa-solid fa-square-check"></i> Diagnóstico del Sistema</a>
-        <a href="#analytics" class="nav-item"><i class="fa-solid fa-coins"></i> Analytics Financiero</a>
-      </nav>
-
-      <div class="sidebar-footer">
-        <div class="system-status">
-          <i class="fa-solid fa-circle-check text-success"></i>
-          <span>Orquestador Activo</span>
+      <div class="nav-actions">
+        <!-- Settlement Wallet Pill -->
+        <div class="wallet-badge-pill" id="walletCopyBtn" title="Haga clic para copiar la Settlement Wallet oficial">
+          <span style="opacity: 0.6;">Settlement Wallet:</span>
+          <strong>0x8366...9f20</strong>
+          <svg class="copy-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+            <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+          </svg>
         </div>
-        <small class="timestamp" id="last-sync-time">Auto-Sync: Activo</small>
+
+        <!-- Sync Button -->
+        <button class="nav-btn primary" id="syncBtn">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"/>
+          </svg>
+          <span>Sincronizar</span>
+        </button>
+
+        <!-- Export Button -->
+        <button class="nav-btn" id="exportBtn" title="Exportar dossier de auditoría en JSON">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/>
+          </svg>
+          <span>Exportar</span>
+        </button>
+
+        <!-- Dynamic Time Text -->
+        <span id="lastSyncText" style="font-size: 0.75rem; color: var(--text-dim); font-family: var(--font-mono);">
+          Auditado BaseScan: En vivo
+        </span>
       </div>
-    </aside>
+    </header>
 
-    <!-- Main Content Area -->
-    <main class="main-content">
-      <!-- Top Bar Header -->
-      <header class="topbar">
-        <div style="display: flex; align-items: center; gap: 14px;">
-          <button class="mobile-toggle-btn" id="btn-mobile-toggle" aria-label="Abrir Menú">
-            <i class="fa-solid fa-bars"></i>
-          </button>
-          <div class="page-title">
-            <h1>Executive Control Dashboard <span class="badge badge-info" style="font-size: 14px;">Nivel Dios</span></h1>
-            <p class="subtitle">Estado real de ganancias, entregas en revisión en GitHub y saldo en billetera MetaMask</p>
+    <!-- Hero Stats Grid (5 Cards - 100% Realista) -->
+    <section class="hero-stats-grid">
+
+      <!-- Card 1: Saldo Real en Wallet -->
+      <div class="stat-card" style="border-color: rgba(255,255,255,0.15);">
+        <div class="stat-header">
+          <span class="stat-label">Saldo Real en Wallet</span>
+          <div class="stat-icon" style="background: rgba(255,255,255,0.06); color: var(--text-muted);">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M20 12V8H6a2 2 0 0 1-2-2c0-1.1.9-2 2-2h12v4"></path>
+              <path d="M4 6v12c0 1.1.9 2 2 2h14v-4"></path>
+              <circle cx="18" cy="14" r="1.5"></circle>
+            </svg>
           </div>
         </div>
-
-        <div class="topbar-actions">
-          <button class="btn btn-secondary" id="btn-refresh">
-            <i class="fa-solid fa-rotate"></i> Actualizar En VIVO
-          </button>
-          <button class="btn btn-primary" id="btn-export">
-            <i class="fa-solid fa-file-export"></i> Exportar Reporte Completo
-          </button>
+        <div class="stat-value" id="kpiInWallet" style="color: #94A3B8;">
+          $0.00 <span class="currency">USDC</span>
         </div>
-      </header>
-
-      <!-- DEDICATED FINANCIAL BALANCE BOX WITH TRANSPARENT METAMASK VS GITHUB STATUS -->
-      <section class="financial-balance-box" id="balance-section" style="background: linear-gradient(135deg, rgba(15, 23, 42, 0.95) 0%, rgba(30, 41, 59, 0.95) 100%); border: 2px solid rgba(16, 185, 129, 0.5); border-radius: 16px; padding: 24px; margin-bottom: 24px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);">
-        <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; margin-bottom: 20px; border-bottom: 1px solid rgba(255, 255, 255, 0.12); padding-bottom: 16px;">
-          <div>
-            <span style="color: var(--accent-emerald); font-weight: 800; letter-spacing: 1.5px; font-size: 13px; text-transform: uppercase;"><i class="fa-solid fa-sack-dollar"></i> RESUMEN EJECUTIVO CONSOLIDADO & ESTADO DE COBROS</span>
-            <h2 style="font-size: 28px; color: #ffffff; margin-top: 4px; font-weight: 800;"><i class="fa-solid fa-vault text-gold"></i> Panel de Control Financiero</h2>
-          </div>
-          <div style="background: rgba(0, 0, 0, 0.5); border: 1px solid rgba(103, 232, 249, 0.3); padding: 10px 18px; border-radius: 10px; font-size: 13px;">
-            <span class="text-dim"><i class="fa-solid fa-wallet"></i> Settlement Wallet (Base L2):</span>
-            <strong style="color: #67e8f9; font-family: monospace; margin-left: 6px; font-size: 14px;">0x8366bCe3a2D379Dec7656D7A67015789FaF999f20</strong>
-          </div>
-        </div>
-
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px;">
-          <!-- CARD 1: GANADO Y FUSIONADO -->
-          <div style="background: rgba(16, 185, 129, 0.12); border: 2px solid rgba(16, 185, 129, 0.8); padding: 18px; border-radius: 14px; position: relative; overflow: hidden;">
-            <div style="position: absolute; top: 10px; right: 12px; background: rgba(16, 185, 129, 0.25); color: #34d399; font-size: 10px; font-weight: 800; padding: 2px 8px; border-radius: 6px; text-transform: uppercase;">100% Ganado</div>
-            <small style="color: #34d399; font-weight: 800; text-transform: uppercase; letter-spacing: 0.5px; font-size: 11px;"><i class="fa-solid fa-trophy"></i> 1. GANADO & MERGEADO (OFICIAL)</small>
-            <h3 style="font-size: 32px; color: #10b981; margin: 8px 0; font-weight: 900;" id="kpi-earned-onchain">$685.00 <small style="font-size: 16px; color: #94a3b8;">USDC</small></h3>
-            <p style="font-size: 12px; color: #cbd5e1; margin: 0;"><i class="fa-solid fa-circle-check text-emerald"></i> <strong id="kpi-won-prs-count">8 PRs Aprobadas</strong> (7 Parabola + 1 SlipPay).</p>
-          </div>
-
-          <!-- CARD 2: PENDIENTE DE REVISIÓN -->
-          <div style="background: rgba(245, 158, 11, 0.12); border: 2px solid rgba(245, 158, 11, 0.8); padding: 18px; border-radius: 14px; position: relative; overflow: hidden;">
-            <div style="position: absolute; top: 10px; right: 12px; background: rgba(245, 158, 11, 0.25); color: #fbbf24; font-size: 10px; font-weight: 800; padding: 2px 8px; border-radius: 6px; text-transform: uppercase;">Top 1 Triage</div>
-            <small style="color: #fbbf24; font-weight: 800; text-transform: uppercase; letter-spacing: 0.5px; font-size: 11px;"><i class="fa-solid fa-clock-rotate-left"></i> 2. EN REVISIÓN ACTIVA EN GITHUB</small>
-            <h3 style="font-size: 32px; color: #f59e0b; margin: 8px 0; font-weight: 900;" id="kpi-in-review">$360.00 <small style="font-size: 16px; color: #94a3b8;">USDC</small></h3>
-            <p style="font-size: 12px; color: #cbd5e1; margin: 0;"><i class="fa-solid fa-code-pull-request text-gold"></i> <strong id="kpi-prs-count">5 Entregas</strong> (SlipPay Labs + Prism).</p>
-          </div>
-
-          <!-- CARD 3: GRANTS & HACKATHONS PRESENTADOS -->
-          <div style="background: rgba(147, 51, 234, 0.12); border: 2px solid rgba(147, 51, 234, 0.8); padding: 18px; border-radius: 14px; position: relative; overflow: hidden;">
-            <div style="position: absolute; top: 10px; right: 12px; background: rgba(147, 51, 234, 0.25); color: #c084fc; font-size: 10px; font-weight: 800; padding: 2px 8px; border-radius: 6px; text-transform: uppercase;" id="badge-total-active-count">19 Submissions</div>
-            <small style="color: #c084fc; font-weight: 800; text-transform: uppercase; letter-spacing: 0.5px; font-size: 11px;"><i class="fa-solid fa-award"></i> 3. GRANTS & HACKATHONS</small>
-            <h3 style="font-size: 32px; color: #c084fc; margin: 8px 0; font-weight: 900;" id="kpi-monthly-val">$30,400.00 <small style="font-size: 16px; color: #94a3b8;">USDC</small></h3>
-            <p style="font-size: 12px; color: #cbd5e1; margin: 0;"><i class="fa-solid fa-file-signature text-purple"></i> <strong id="kpi-monthly-prs-count">19 Propuestas</strong> (Webacy $10k, Seeker $5k, etc.).</p>
-          </div>
-
-          <!-- CARD 4: GRAN TOTAL PIPELINE PRESENTADO -->
-          <div style="background: rgba(0, 242, 254, 0.12); border: 2px solid rgba(0, 242, 254, 0.8); padding: 18px; border-radius: 14px; position: relative; overflow: hidden;">
-            <div style="position: absolute; top: 10px; right: 12px; background: rgba(0, 242, 254, 0.25); color: #38bdf8; font-size: 10px; font-weight: 800; padding: 2px 8px; border-radius: 6px; text-transform: uppercase;">Pipeline Total</div>
-            <small style="color: #38bdf8; font-weight: 800; text-transform: uppercase; letter-spacing: 0.5px; font-size: 11px;"><i class="fa-solid fa-vault"></i> 4. TOTAL PRESENTADO ACUMULADO</small>
-            <h3 style="font-size: 32px; color: #00f2fe; margin: 8px 0; font-weight: 900;" id="kpi-total-pipeline">$34,800.00 <small style="font-size: 16px; color: #94a3b8;">USDC</small></h3>
-            <p style="font-size: 12px; color: #cbd5e1; margin: 0;"><i class="fa-solid fa-layer-group text-cyan"></i> <strong id="kpi-total-pipeline-count">27 PRs + 19 Grants</strong> en curso.</p>
-          </div>
-        </div>
-
-        <div style="margin-top: 16px; background: rgba(0, 0, 0, 0.4); border: 1px dashed rgba(16, 185, 129, 0.4); padding: 14px 18px; border-radius: 12px; font-size: 13px; color: #cbd5e1; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px;">
-          <div style="display: flex; align-items: center; gap: 12px;">
-            <i class="fa-solid fa-circle-check text-emerald" style="font-size: 20px;"></i>
-            <span><strong>Estado de Dispersión On-Chain:</strong> Se han ganado oficialmente <strong>$685.00 USDC</strong> a través de 8 Pull Requests fusionadas. Los organizadores (@Abdul-dev-creator de Parabola y @Obaara293 de SlipPay) liquidan periódicamente por remesas agrupadas directo a tu Settlement Wallet (<code>0x8366bCe3...9f20</code>).</span>
-          </div>
-          <span class="badge badge-success" style="background: rgba(16, 185, 129, 0.2); color: #34d399; font-weight: 800; padding: 6px 12px; border-radius: 20px;">
-            <i class="fa-solid fa-shield-halved"></i> 100% AUDITADO SIN FLAKINESS
+        <div class="stat-footer">
+          <span class="stat-badge" style="background: rgba(255,255,255,0.06); color: #94A3B8; border: 1px solid rgba(255,255,255,0.1);">
+            ON-CHAIN EN ESPERA
           </span>
+          <span>0 TXs Recibidas</span>
         </div>
-      </section>
-
-      <!-- PROMINENT DEDICATED TABLE FOR WON & IN-REVIEW BOUNTIES -->
-      <section class="content-panel" id="executive-portfolio-section" style="margin-bottom: 24px; border: 2px solid rgba(16, 185, 129, 0.6); background: linear-gradient(135deg, rgba(15, 23, 42, 0.98) 0%, rgba(30, 41, 59, 0.98) 100%); border-radius: 16px; padding: 22px; box-shadow: 0 10px 30px rgba(0,0,0,0.4);">
-        <div class="panel-header" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; border-bottom: 1px solid rgba(255, 255, 255, 0.12); padding-bottom: 14px; margin-bottom: 18px;">
-          <div>
-            <span style="color: #34d399; font-weight: 800; font-size: 12px; text-transform: uppercase; letter-spacing: 1.2px;"><i class="fa-solid fa-trophy"></i> PORTAFOLIO PRIORITARIO EN VIVO</span>
-            <h2 id="hdr-portfolio-title" style="font-size: 22px; color: #ffffff; margin-top: 4px; font-weight: 800;"><i class="fa-solid fa-list-check text-emerald"></i> Bounties Ganados ($685 USDC) y en Revisión Activa ($360 USDC)</h2>
-          </div>
-          <div style="display: flex; gap: 8px;">
-            <span id="hdr-badge-won" class="badge badge-success" style="font-size: 12px; padding: 6px 12px; font-weight: 800;">8 Ganados ($685)</span>
-            <span id="hdr-badge-review" class="badge badge-warning" style="font-size: 12px; padding: 6px 12px; font-weight: 800; background: rgba(245, 158, 11, 0.2); color: #fbbf24; border: 1px solid #f59e0b;">5 En Triage ($360)</span>
-          </div>
-        </div>
-
-        <div id="executive-portfolio-container">
-          <!-- Dynamically populated via app.js -->
-        </div>
-      </section>
-
-
-      <!-- LIVE CYBERPUNK EVENT CONSOLE ("NIVEL DIOS" — LOG EN TIEMPO REAL 24/7) -->
-      <section class="content-panel" id="live-feed-section" style="margin-bottom: 24px; border: 2px solid rgba(16, 185, 129, 0.6); background: linear-gradient(135deg, rgba(10, 15, 29, 0.98) 0%, rgba(15, 23, 42, 0.98) 100%); border-radius: 16px; padding: 20px; box-shadow: 0 10px 30px rgba(16, 185, 129, 0.15);">
-        <div class="panel-header" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; border-bottom: 1px solid rgba(255, 255, 255, 0.12); padding-bottom: 14px; margin-bottom: 14px;">
-          <div style="display: flex; align-items: center; gap: 12px;">
-            <div style="width: 12px; height: 12px; border-radius: 50%; background: #10b981; box-shadow: 0 0 12px #10b981; animation: pulse 1.5s infinite;"></div>
-            <div>
-              <span style="color: #34d399; font-weight: 800; font-size: 11px; text-transform: uppercase; letter-spacing: 1.2px;"><i class="fa-solid fa-tower-broadcast"></i> TELEMETRÍA EN DIRECTO 24/7</span>
-              <h2 style="font-size: 20px; color: #ffffff; margin-top: 2px; font-weight: 800;"><i class="fa-solid fa-terminal text-emerald"></i> Log de Actividad y Rastreo en Tiempo Real</h2>
-            </div>
-          </div>
-
-          <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
-            <div class="terminal-filter-tabs" style="display: flex; gap: 6px; background: rgba(0, 0, 0, 0.4); padding: 4px; border-radius: 8px; border: 1px solid rgba(255, 255, 255, 0.08);">
-              <button class="term-tab active" data-filter="ALL" style="background: rgba(16, 185, 129, 0.2); color: #34d399; border: 1px solid #10b981; padding: 4px 10px; border-radius: 6px; font-size: 11px; font-weight: 700; cursor: pointer;">TODOS</button>
-              <button class="term-tab" data-filter="ONCHAIN" style="background: transparent; color: #94a3b8; border: none; padding: 4px 10px; border-radius: 6px; font-size: 11px; font-weight: 700; cursor: pointer;">ON-CHAIN / COBROS</button>
-              <button class="term-tab" data-filter="BOTS" style="background: transparent; color: #94a3b8; border: none; padding: 4px 10px; border-radius: 6px; font-size: 11px; font-weight: 700; cursor: pointer;">BOTS & PRs</button>
-              <button class="term-tab" data-filter="GRANTS" style="background: transparent; color: #94a3b8; border: none; padding: 4px 10px; border-radius: 6px; font-size: 11px; font-weight: 700; cursor: pointer;">GRANTS & REVENUE</button>
-              <button class="term-tab" data-filter="BENCHMARK" style="background: transparent; color: #94a3b8; border: none; padding: 4px 10px; border-radius: 6px; font-size: 11px; font-weight: 700; cursor: pointer;">BENCHMARK</button>
-            </div>
-
-            <button id="btn-toggle-pause-log" class="btn btn-secondary" style="padding: 5px 10px; font-size: 11px; background: rgba(0,0,0,0.5); border: 1px solid rgba(255,255,255,0.15);" title="Pausar/Reanudar streaming de logs">
-              <i class="fa-solid fa-pause"></i> Pausar
-            </button>
-            <button id="btn-clear-term-log" class="btn btn-secondary" style="padding: 5px 10px; font-size: 11px; background: rgba(0,0,0,0.5); border: 1px solid rgba(255,255,255,0.15);" title="Limpiar pantalla">
-              <i class="fa-solid fa-trash-can"></i> Limpiar
-            </button>
-          </div>
-        </div>
-
-        <div id="live-event-terminal" style="background: #060911; border: 1px solid rgba(16, 185, 129, 0.3); border-radius: 12px; padding: 14px; font-family: 'JetBrains Mono', 'Fira Code', monospace; font-size: 12.5px; height: 260px; overflow-y: auto; display: flex; flex-direction: column; gap: 6px; box-shadow: inset 0 2px 10px rgba(0,0,0,0.8);">
-          <!-- Dynamically populated via app.js -->
-        </div>
-        
-        <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 10px; font-size: 11.5px; color: #64748b;">
-          <div><i class="fa-solid fa-circle text-emerald" style="font-size: 8px;"></i> <span id="term-event-count">Sincronizando feed...</span></div>
-          <div><label style="cursor: pointer; display: inline-flex; align-items: center; gap: 6px;"><input type="checkbox" id="chk-autoscroll" checked> Auto-Scroll Activo</label></div>
-        </div>
-      </section>
-
-      <!-- 5 MOTORES DE MONETIZACIÓN DIVERSIFICADOS (INFLOW DIVERSIFICATION ENGINE) -->
-      <section class="content-panel" id="fast-monetization-section" style="margin-bottom: 24px; border: 2px solid rgba(0, 242, 254, 0.6); background: linear-gradient(135deg, rgba(15, 23, 42, 0.95) 0%, rgba(30, 41, 59, 0.95) 100%); border-radius: 16px; padding: 22px; box-shadow: 0 10px 30px rgba(0, 242, 254, 0.15);">
-        <div class="panel-header" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; border-bottom: 1px solid rgba(255, 255, 255, 0.12); padding-bottom: 14px; margin-bottom: 18px;">
-          <div>
-            <span style="color: #00f2fe; font-weight: 800; font-size: 12px; text-transform: uppercase; letter-spacing: 1.2px;"><i class="fa-solid fa-bolt-lightning"></i> DIVERSIFICACIÓN MULTI-CANAL PARA INGRESOS CONTINUOS</span>
-            <h2 style="font-size: 22px; color: #ffffff; margin-top: 4px; font-weight: 800;"><i class="fa-solid fa-gauge-high text-cyan"></i> 5 Motores Autónomos de Monetización y Cobro</h2>
-          </div>
-          <span class="badge badge-info" style="background: rgba(0, 242, 254, 0.15); color: #00f2fe; border: 1px solid #00f2fe; font-weight: 800; padding: 6px 12px; border-radius: 20px;">
-            <i class="fa-solid fa-wallet"></i> SETTLEMENT DIRECTO EN USDC (0x8366b...9f20)
-          </span>
-        </div>
-
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px;">
-          <!-- MOTOR 1: GRANTS & HACKATHONS -->
-          <div style="background: rgba(0, 0, 0, 0.4); border: 1px solid rgba(245, 158, 11, 0.4); border-radius: 14px; padding: 18px; display: flex; flex-direction: column; justify-content: space-between;">
-            <div>
-              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
-                <span style="color: #fbbf24; font-weight: 800; font-size: 11px;"><i class="fa-solid fa-award"></i> MOTOR 1: GRANTS & HACKATHONS</span>
-                <span class="badge badge-info" style="font-size: 10px; background: rgba(245, 158, 11, 0.2); color: #fbbf24;">En Deliberación</span>
-              </div>
-              <h4 style="color: #ffffff; margin: 0 0 8px 0; font-size: 15px;">Premios de Alto Impacto</h4>
-              <p style="color: #94a3b8; font-size: 12px; line-height: 1.4; margin: 0 0 12px 0;">Webacy Startup Accelerator ($10k) en resolución 72h + Solana Seeker Hackathon ($5k) en deliberación 8-15 Octubre.</p>
-            </div>
-            <div style="border-top: 1px solid rgba(255,255,255,0.08); padding-top: 10px; display: flex; justify-content: space-between; align-items: center;">
-              <small style="color: #fbbf24; font-weight: 700;">$15,000.00 USDC Activos</small>
-              <code style="font-size: 10px; color: #fde68a;">Grants Engine</code>
-            </div>
-          </div>
-
-          <!-- MOTOR 2: BOTS INSTANTÁNEOS -->
-          <div style="background: rgba(0, 0, 0, 0.4); border: 1px solid rgba(0, 242, 254, 0.3); border-radius: 14px; padding: 18px; display: flex; flex-direction: column; justify-content: space-between;">
-            <div>
-              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
-                <span style="color: #00f2fe; font-weight: 800; font-size: 11px;"><i class="fa-solid fa-robot"></i> MOTOR 2: BOTS INSTANTÁNEOS</span>
-                <span class="badge badge-success" style="font-size: 10px;">1-15 min merge</span>
-              </div>
-              <h4 style="color: #ffffff; margin: 0 0 8px 0; font-size: 15px;">Micro-Bounties On-Chain</h4>
-              <p style="color: #94a3b8; font-size: 12px; line-height: 1.4; margin: 0 0 12px 0;">Resolución de issues en GitHub con <code>algora-bot</code>, <code>bountycaster</code> y <code>polar-sh</code> con dispersión automática post-merge.</p>
-            </div>
-            <div style="border-top: 1px solid rgba(255,255,255,0.08); padding-top: 10px; display: flex; justify-content: space-between; align-items: center;">
-              <small style="color: #38bdf8; font-weight: 700;">$50 - $300 USDC / Issue</small>
-              <code style="font-size: 10px; color: #a5f3fc;">instant_bot_harvester.py</code>
-            </div>
-          </div>
-
-          <!-- MOTOR 3: SERVICIOS EN ESCROW -->
-          <div style="background: rgba(0, 0, 0, 0.4); border: 1px solid rgba(16, 185, 129, 0.3); border-radius: 14px; padding: 18px; display: flex; flex-direction: column; justify-content: space-between;">
-            <div>
-              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
-                <span style="color: #10b981; font-weight: 800; font-size: 11px;"><i class="fa-solid fa-shield-halved"></i> MOTOR 3: MICRO-SERVICIOS</span>
-                <span class="badge badge-success" style="font-size: 10px;">24 - 48 Horas</span>
-              </div>
-              <h4 style="color: #ffffff; margin: 0 0 8px 0; font-size: 15px;">Servicios Técnicos en Escrow</h4>
-              <p style="color: #94a3b8; font-size: 12px; line-height: 1.4; margin: 0 0 12px 0;">Auditorías express de Smart Contracts ($500 USDC), plugins AI ($400 USDC) y suites LiteSVM ($350 USDC) con custodia pre-depositada.</p>
-            </div>
-            <div style="border-top: 1px solid rgba(255,255,255,0.08); padding-top: 10px; display: flex; justify-content: space-between; align-items: center;">
-              <small style="color: #34d399; font-weight: 700;">$250 - $800 USDC / Serv</small>
-              <code style="font-size: 10px; color: #6ee7b7;">express_services_engine.py</code>
-            </div>
-          </div>
-
-          <!-- MOTOR 4: API RFC-x402 M2M -->
-          <div style="background: rgba(0, 0, 0, 0.4); border: 1px solid rgba(192, 132, 252, 0.3); border-radius: 14px; padding: 18px; display: flex; flex-direction: column; justify-content: space-between;">
-            <div>
-              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
-                <span style="color: #c084fc; font-weight: 800; font-size: 11px;"><i class="fa-solid fa-microchip"></i> MOTOR 4: API RFC-x402 M2M</span>
-                <span class="badge badge-info" style="font-size: 10px;">Cobro Inmediato</span>
-              </div>
-              <h4 style="color: #ffffff; margin: 0 0 8px 0; font-size: 15px;">Pay-Per-Request en Base L2</h4>
-              <p style="color: #94a3b8; font-size: 12px; line-height: 1.4; margin: 0 0 12px 0;">Endpoints HTTP (RFC-x402). Otros agentes pagan en USDC por escaneo URL ($0.50), validación wallet ($1.00) y auditoría Anchor ($5.00).</p>
-            </div>
-            <div style="border-top: 1px solid rgba(255,255,255,0.08); padding-top: 10px; display: flex; justify-content: space-between; align-items: center;">
-              <small style="color: #c084fc; font-weight: 700;">$0.50 - $5.00 / Request</small>
-              <code style="font-size: 10px; color: #e9d5ff;">live_x402_api_server.py</code>
-            </div>
-          </div>
-
-          <!-- MOTOR 5: GASLESS FEE RELAYING -->
-          <div style="background: rgba(0, 0, 0, 0.4); border: 1px solid rgba(244, 63, 94, 0.3); border-radius: 14px; padding: 18px; display: flex; flex-direction: column; justify-content: space-between;">
-            <div>
-              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
-                <span style="color: #fb7185; font-weight: 800; font-size: 11px;"><i class="fa-solid fa-gas-pump"></i> MOTOR 5: FEE RELAYING</span>
-                <span class="badge badge-info" style="font-size: 10px; background: rgba(244, 63, 94, 0.2); color: #fb7185;">Base L2 Listener</span>
-              </div>
-              <h4 style="color: #ffffff; margin: 0 0 8px 0; font-size: 15px;">Relay de Micro-Transacciones</h4>
-              <p style="color: #94a3b8; font-size: 12px; line-height: 1.4; margin: 0 0 12px 0;">Monitoreo y empaquetado de subtasks ERC-4337 y recolección de micro-fees automáticas por ejecución de lotes on-chain.</p>
-            </div>
-            <div style="border-top: 1px solid rgba(255,255,255,0.08); padding-top: 10px; display: flex; justify-content: space-between; align-items: center;">
-              <small style="color: #fb7185; font-weight: 700;">$20 - $150 USDC / Lote</small>
-              <code style="font-size: 10px; color: #fecdd3;">orchestrator_subtasks</code>
-            </div>
-          </div>
-        </div>
-      </section>
-
-
-      <!-- SECCIÓN: PLATAFORMAS Y REDES DE RECOMPENSAS CONECTADAS ("NIVEL DIOS") -->
-      <section class="content-panel" id="platforms-section" style="margin-bottom: 24px; border: 1px solid rgba(0, 242, 254, 0.3); background: rgba(15, 23, 42, 0.65);">
-        <div class="panel-header" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;">
-          <div>
-            <span style="color: var(--accent-cyan); font-weight: 800; font-size: 12px; text-transform: uppercase; letter-spacing: 1px;"><i class="fa-solid fa-network-wired"></i> ECOSISTEMA MULTI-PLATAFORMA</span>
-            <h2 style="margin-top: 4px;"><i class="fa-solid fa-earth-americas text-cyan"></i> Plataformas Conectadas & Verificadas</h2>
-          </div>
-          <span class="badge badge-success" style="background: rgba(16, 185, 129, 0.2); color: #34d399; font-weight: bold;">
-            <i class="fa-solid fa-shield-halved"></i> 100% GRATUITAS (CERO CUOTAS / COBRO DIRECTO)
-          </span>
-        </div>
-
-        <div class="platforms-grid">
-          <!-- Platform 1: Algora.io -->
-          <div class="platform-card">
-            <div class="platform-header">
-              <div class="platform-brand">
-                <div class="platform-icon algora"><i class="fa-solid fa-bolt"></i></div>
-                <div>
-                  <strong style="font-size: 15px; color: #f8fafc;">Algora.io</strong>
-                  <div style="font-size: 11px; color: #94a3b8;">GitHub Instant Escrow</div>
-                </div>
-              </div>
-              <span class="badge badge-info" style="font-size: 10px; font-weight: 800;">⚡ INSTANT MERGE</span>
-            </div>
-            <div class="platform-stats">
-              <span class="text-dim" style="font-size: 12px;">En Revisión:</span>
-              <strong style="color: var(--accent-gold); font-size: 14px;">$150.00 USDC</strong>
-            </div>
-            <div class="superiority-tag">
-              <i class="fa-solid fa-circle-check text-emerald"></i> <span>HMAC-SHA256 & Anti-Replay Guard</span>
-            </div>
-          </div>
-
-          <!-- Platform 2: Opire.dev -->
-          <div class="platform-card">
-            <div class="platform-header">
-              <div class="platform-brand">
-                <div class="platform-icon opire"><i class="fa-solid fa-terminal"></i></div>
-                <div>
-                  <strong style="font-size: 15px; color: #f8fafc;">Opire.dev</strong>
-                  <div style="font-size: 11px; color: #94a3b8;">GitHub /claim Bounties</div>
-                </div>
-              </div>
-              <span class="badge badge-info" style="font-size: 10px; font-weight: 800; background: rgba(245, 158, 11, 0.2); color: #fbbf24; border: 1px solid rgba(245, 158, 11, 0.4);">⚡ /CLAIM COMANDO</span>
-            </div>
-            <div class="platform-stats">
-              <span class="text-dim" style="font-size: 12px;">En Revisión:</span>
-              <strong style="color: var(--accent-gold); font-size: 14px;">$100.00 USDC</strong>
-            </div>
-            <div class="superiority-tag">
-              <i class="fa-solid fa-circle-check text-emerald"></i> <span>Parser Regex Nativo Sin Dependencias</span>
-            </div>
-          </div>
-
-          <!-- Platform 3: Bountycaster -->
-          <div class="platform-card">
-            <div class="platform-header">
-              <div class="platform-brand">
-                <div class="platform-icon bountycaster"><i class="fa-solid fa-cube"></i></div>
-                <div>
-                  <strong style="font-size: 15px; color: #f8fafc;">Bountycaster</strong>
-                  <div style="font-size: 11px; color: #94a3b8;">Base L2 / Farcaster</div>
-                </div>
-              </div>
-              <span class="badge badge-info" style="font-size: 10px; font-weight: 800; background: rgba(59, 130, 246, 0.2); color: #60a5fa; border: 1px solid rgba(59, 130, 246, 0.4);">⚡ &lt; 24H DIRECT</span>
-            </div>
-            <div class="platform-stats">
-              <span class="text-dim" style="font-size: 12px;">En Revisión:</span>
-              <strong style="color: var(--accent-gold); font-size: 14px;">$500.00 USDC</strong>
-            </div>
-            <div class="superiority-tag">
-              <i class="fa-solid fa-circle-check text-emerald"></i> <span>Frame v2 Mini-App & Smart Contracts</span>
-            </div>
-          </div>
-
-          <!-- Platform 4: Gibwork -->
-          <div class="platform-card">
-            <div class="platform-header">
-              <div class="platform-brand">
-                <div class="platform-icon gibwork"><i class="fa-brands fa-ethereum"></i></div>
-                <div>
-                  <strong style="font-size: 15px; color: #f8fafc;">Gibwork</strong>
-                  <div style="font-size: 11px; color: #94a3b8;">Solana SPL Escrow</div>
-                </div>
-              </div>
-              <span class="badge badge-info" style="font-size: 10px; font-weight: 800; background: rgba(168, 85, 247, 0.2); color: #c084fc; border: 1px solid rgba(168, 85, 247, 0.4);">🟣 SOLANA ON-CHAIN</span>
-            </div>
-            <div class="platform-stats">
-              <span class="text-dim" style="font-size: 12px;">En Revisión:</span>
-              <strong style="color: var(--accent-gold); font-size: 14px;">$420.00 USDC</strong>
-            </div>
-            <div class="superiority-tag">
-              <i class="fa-solid fa-circle-check text-emerald"></i> <span>Token-2022 Transfer Hook Integration</span>
-            </div>
-          </div>
-
-          <!-- Platform 5: Superteam Earn -->
-          <div class="platform-card">
-            <div class="platform-header">
-              <div class="platform-brand">
-                <div class="platform-icon superteam"><i class="fa-solid fa-award"></i></div>
-                <div>
-                  <strong style="font-size: 15px; color: #f8fafc;">Superteam Earn</strong>
-                  <div style="font-size: 11px; color: #94a3b8;">Solana Grants & Challenges</div>
-                </div>
-              </div>
-              <span class="badge badge-success" style="font-size: 10px; font-weight: 800;">🏛️ JURADO & SSS</span>
-            </div>
-            <div class="platform-stats">
-              <span class="text-dim" style="font-size: 12px;">En Revisión:</span>
-              <strong style="color: var(--accent-gold); font-size: 14px;">$7,600.00 USDC</strong>
-            </div>
-            <div class="superiority-tag">
-              <i class="fa-solid fa-circle-check text-emerald"></i> <span>Solana Stablecoin Standard SDK ($5,000)</span>
-            </div>
-          </div>
-
-          <!-- Platform 6: Cantina Web3 Security -->
-          <div class="platform-card">
-            <div class="platform-header">
-              <div class="platform-brand">
-                <div class="platform-icon spectral" style="background: rgba(239, 68, 68, 0.15); color: #f87171; border: 1px solid rgba(239, 68, 68, 0.4);"><i class="fa-solid fa-bug"></i></div>
-                <div>
-                  <strong style="font-size: 15px; color: #f8fafc;">Cantina Security</strong>
-                  <div style="font-size: 11px; color: #94a3b8;">Competitive Audit Contests</div>
-                </div>
-              </div>
-              <span class="badge badge-info" style="font-size: 10px; font-weight: 800; background: rgba(239, 68, 68, 0.2); color: #f87171; border: 1px solid rgba(239, 68, 68, 0.4);">🛡️ EXPLOIT POC</span>
-            </div>
-            <div class="platform-stats">
-              <span class="text-dim" style="font-size: 12px;">En Revisión:</span>
-              <strong style="color: var(--accent-gold); font-size: 14px;">$2,500.00 USDC</strong>
-            </div>
-            <div class="superiority-tag">
-              <i class="fa-solid fa-circle-check text-emerald"></i> <span>Foundry PoC de Base Sequencer Outage</span>
-            </div>
-          </div>
-
-          <!-- Platform 7: Spectral Finance -->
-          <div class="platform-card">
-            <div class="platform-header">
-              <div class="platform-brand">
-                <div class="platform-icon spectral"><i class="fa-solid fa-shield-halved"></i></div>
-                <div>
-                  <strong style="font-size: 15px; color: #f8fafc;">Spectral Finance</strong>
-                  <div style="font-size: 11px; color: #94a3b8;">Hyperliquid & SIWE Lux</div>
-                </div>
-              </div>
-              <span class="badge badge-info" style="font-size: 10px; font-weight: 800; background: rgba(244, 63, 94, 0.2); color: #fb7185; border: 1px solid rgba(244, 63, 94, 0.4);">🚀 CORE DEV REVIEW</span>
-            </div>
-            <div class="platform-stats">
-              <span class="text-dim" style="font-size: 12px;">En Revisión:</span>
-              <strong style="color: var(--accent-gold); font-size: 14px;">$1,900.00 USD</strong>
-            </div>
-            <div class="superiority-tag">
-              <i class="fa-solid fa-circle-check text-emerald"></i> <span>Arquitectura Elixir / OTP Concurrente</span>
-            </div>
-          </div>
-
-          <!-- Platform 8: Spout Finance -->
-          <div class="platform-card">
-            <div class="platform-header">
-              <div class="platform-brand">
-                <div class="platform-icon spout"><i class="fa-solid fa-chart-pie"></i></div>
-                <div>
-                  <strong style="font-size: 15px; color: #f8fafc;">Spout Finance</strong>
-                  <div style="font-size: 11px; color: #94a3b8;">DeFi Intelligence Challenge</div>
-                </div>
-              </div>
-              <span class="badge badge-info" style="font-size: 10px; font-weight: 800; background: rgba(234, 179, 8, 0.2); color: #facc15; border: 1px solid rgba(234, 179, 8, 0.4);">🏆 VEREDICTO EN CURSO</span>
-            </div>
-            <div class="platform-stats">
-              <span class="text-dim" style="font-size: 12px;">En Revisión:</span>
-              <strong style="color: var(--accent-gold); font-size: 14px;">$1,000.00 USDC</strong>
-            </div>
-            <div class="superiority-tag">
-              <i class="fa-solid fa-circle-check text-emerald"></i> <span>Detección de Incongruencia Legal en Tramo Junior</span>
-            </div>
-          </div>
-
-          <!-- Platform 9: Gitcoin / Polar / MallonePay -->
-          <div class="platform-card">
-            <div class="platform-header">
-              <div class="platform-brand">
-                <div class="platform-icon gitcoin"><i class="fa-solid fa-code-branch"></i></div>
-                <div>
-                  <strong style="font-size: 15px; color: #f8fafc;">Gitcoin & Open Source</strong>
-                  <div style="font-size: 11px; color: #94a3b8;">MallonePay, Allo & Repos</div>
-                </div>
-              </div>
-              <span class="badge badge-success" style="font-size: 10px; font-weight: 800;">🎉 MERGED EN PROD</span>
-            </div>
-            <div class="platform-stats">
-              <span class="text-dim" style="font-size: 12px;">En Revisión:</span>
-              <strong style="color: var(--accent-gold); font-size: 14px;">$32,952.10 USDC</strong>
-            </div>
-            <div class="superiority-tag">
-              <i class="fa-solid fa-circle-check text-emerald"></i> <span>PR #127 Merged en MallonePay + 80+ PRs</span>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- SECCIÓN: MATRIZ DE SUPERIORIDAD COMPETITIVA ("POR QUÉ GANAMOS A LA COMPETENCIA") -->
-      <section class="content-panel" id="superiority-section" style="margin-bottom: 24px; border: 1px solid rgba(16, 185, 129, 0.3); background: rgba(16, 185, 129, 0.04);">
-        <div class="panel-header" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;">
-          <div>
-            <span style="color: var(--accent-emerald); font-weight: 800; font-size: 12px; text-transform: uppercase; letter-spacing: 1px;"><i class="fa-solid fa-trophy"></i> VENTAJA TÉCNICA ESTRATÉGICA</span>
-            <h2 style="margin-top: 4px;"><i class="fa-solid fa-medal text-emerald"></i> Superioridad Competitiva Frente a Otros Participantes</h2>
-          </div>
-          <span class="badge badge-success" style="font-size: 12px; font-weight: bold; background: rgba(16, 185, 129, 0.2); color: #34d399;">
-            <i class="fa-solid fa-check-double"></i> CUMPLIMIENTO DEL 100% DE CRITERIOS
-          </span>
-        </div>
-
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px; margin-top: 14px;">
-          <div style="background: rgba(15, 23, 42, 0.7); border: 1px solid rgba(255, 255, 255, 0.08); padding: 16px; border-radius: 12px;">
-            <div style="color: #38bdf8; font-weight: 800; font-size: 14px; margin-bottom: 6px;"><i class="fa-solid fa-vial-circle-check"></i> 1. Cobertura de Tests 100%</div>
-            <p style="font-size: 12px; color: #94a3b8; margin: 0;">Mientras otros participantes envían código sin pruebas o con mocks ficticios, todas nuestras soluciones incluyen suites unitarias y de integración 100% ejecutables en entornos limpios.</p>
-          </div>
-
-          <div style="background: rgba(15, 23, 42, 0.7); border: 1px solid rgba(255, 255, 255, 0.08); padding: 16px; border-radius: 12px;">
-            <div style="color: #34d399; font-weight: 800; font-size: 14px; margin-bottom: 6px;"><i class="fa-solid fa-shield-virus"></i> 2. Cero Vulnerabilidades & Replay Guard</div>
-            <p style="font-size: 12px; color: #94a3b8; margin: 0;">Cada webhook, handler y smart contract cuenta con validación de timestamps, nonce tracking y protección anti-reentrancy conforme a estándares OWASP y OpenZeppelin.</p>
-          </div>
-
-          <div style="background: rgba(15, 23, 42, 0.7); border: 1px solid rgba(255, 255, 255, 0.08); padding: 16px; border-radius: 12px;">
-            <div style="color: #c084fc; font-weight: 800; font-size: 14px; margin-bottom: 6px;"><i class="fa-solid fa-square-root-variable"></i> 3. Modelado Matemático Riguroso</div>
-            <p style="font-size: 12px; color: #94a3b8; margin: 0;">En desafíos de investigación (Spout, Flint, Aeonian), proporcionamos formulación matemática explícita y detección de contradicciones legales que ningún otro participante ha reportado.</p>
-          </div>
-
-          <div style="background: rgba(15, 23, 42, 0.7); border: 1px solid rgba(255, 255, 255, 0.08); padding: 16px; border-radius: 12px;">
-            <div style="color: #fbbf24; font-weight: 800; font-size: 14px; margin-bottom: 6px;"><i class="fa-solid fa-file-circle-check"></i> 4. Entrega Lista para Merge</div>
-            <p style="font-size: 12px; color: #94a3b8; margin: 0;">Formato limpio de PRs con comandos de claim exactos, instrucciones de reproducción paso a paso y vinculación directa a la wallet oficial <code>0x8366bCe3...9f20</code>.</p>
-          </div>
-        </div>
-      </section>
-
-      <!-- System Diagnostic Verification Banner -->
-      <section class="diagnostic-banner" id="diagnostics">
-        <div class="diagnostic-header">
-          <div class="diagnostic-status-pill text-emerald" id="diag-status-pill">
-            <i class="fa-solid fa-circle-check"></i> DIAGNÓSTICO DEL SISTEMA: 100% CORRECTO
-          </div>
-          <span class="diagnostic-subtitle" id="diagnostic-summary-text">28 Pull Requests publicadas en vivo en GitHub | 4 Borradores listos en Sandbox</span>
-        </div>
-
-        <div class="diagnostic-checks-grid">
-          <div class="check-item ok">
-            <i class="fa-solid fa-vault"></i>
-            <div>
-              <strong>Bounties Totales</strong>
-              <small id="diag-bounties-count">32 Bounties Registrados</small>
-            </div>
-          </div>
-          <div class="check-item ok">
-            <i class="fa-solid fa-money-bill-wave"></i>
-            <div>
-              <strong>Valor En Revisión</strong>
-              <small id="diag-submitted-val">$9,540.00 USDC</small>
-            </div>
-          </div>
-          <div class="check-item ok">
-            <i class="fa-solid fa-box-open"></i>
-            <div>
-              <strong>Pruebas Sandbox</strong>
-              <small id="diag-sandbox-count">32/32 Éxito (0 Fallos)</small>
-            </div>
-          </div>
-          <div class="check-item ok">
-            <i class="fa-solid fa-shield-virus"></i>
-            <div>
-              <strong>Auditoría Red Team</strong>
-              <small>Score 8.5/10 (Pasa)</small>
-            </div>
-          </div>
-          <div class="check-item ok">
-            <i class="fa-solid fa-wallet"></i>
-            <div>
-              <strong>Billetera Web3</strong>
-              <small>0x8366b...9f20 Vinculada</small>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Main Data Table & Live Pipeline -->
-      <section class="content-panel" id="pipeline">
-        <div class="panel-header" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: nowrap; gap: 12px;">
-          <div class="panel-title-area" style="white-space: nowrap;">
-            <h2 id="pipeline-title-text"><i class="fa-solid fa-list-ul"></i> Tracking Completo de Bounties</h2>
-            <span class="badge badge-info" id="badge-total-bounties">32 Bounties Totales</span>
-          </div>
-
-          <div class="panel-filters" style="display: flex; gap: 8px; align-items: center; flex-wrap: nowrap; width: auto; max-width: 100%;">
-            <div class="search-box" style="min-width: 180px; max-width: 240px;">
-              <i class="fa-solid fa-magnifying-glass"></i>
-              <input type="text" id="search-input" placeholder="Buscar por título, ID o repo...">
-            </div>
-            
-            <select id="filter-status" class="select-filter" style="font-weight: 600; min-width: 190px;">
-              <option value="OCTOBER_ACTIVE" selected>🌟 Activos en Evaluación (Octubre 2026)</option>
-              <option value="ALL">📦 Todos los Bounties Registrados (132)</option>
-              <option value="ARCHIVED">🏛️ Histórico / Archivados (Ciclos Pasados)</option>
-              <option value="FAST_PAYOUT">⚡ Solo Cobro Rápido & Micro-Bounties</option>
-              <option value="COBRADO">🎉 Finalizados / Cobrados On-Chain</option>
-            </select>
-
-            <select id="sort-by" class="select-filter" style="border-color: rgba(0, 242, 254, 0.4); background: rgba(15, 23, 42, 0.9); font-weight: bold; min-width: 190px;">
-              <option value="NEWEST">⚡ Ordenar: Más Recientes Primero</option>
-              <option value="REWARD_DESC">💰 Ordenar: Mayor Recompensa ($)</option>
-              <option value="EV_DESC">📈 Ordenar: Mayor Valor Esperado (EV)</option>
-              <option value="TITLE">🔤 Ordenar: Nombre del Proyecto</option>
-            </select>
-          </div>
-        </div>
-
-        <div class="table-responsive">
-          <table class="data-table" id="bounty-table">
-            <thead>
-              <tr>
-                <th style="cursor: pointer;" onclick="toggleSort('id')">Bounty ID <i class="fa-solid fa-sort"></i></th>
-                <th style="cursor: pointer;" onclick="toggleSort('title')">Título del Bounty <i class="fa-solid fa-sort"></i></th>
-                <th style="cursor: pointer;" onclick="toggleSort('reward')">Recompensa <i class="fa-solid fa-sort"></i></th>
-                <th>Red de Pago</th>
-                <th>Issue Original (GitHub)</th>
-                <th>Pull Request Oficial</th>
-                <th>¿Falta Algo? / Diagnóstico</th>
-                <th>Estado de Pago</th>
-                <th>Acciones</th>
-              </tr>
-            </thead>
-            <tbody id="bounty-table-body">
-              <!-- Rendered via app.js -->
-            </tbody>
-          </table>
-        </div>
-      </section>
-
-      <!-- SECCIÓN DE PROYECTOS COBRADOS ON-CHAIN EN METAMASK -->
-      <section class="content-panel" id="paid-projects-section" style="margin-bottom: 24px; border: 1px solid rgba(16, 185, 129, 0.4); background: rgba(16, 185, 129, 0.03);">
-        <div class="panel-header" style="display: flex; justify-content: space-between; align-items: center;">
-          <h2><i class="fa-solid fa-circle-check text-emerald"></i> Proyectos Cobrados On-Chain en MetaMask</h2>
-          <span class="badge badge-success" style="background: rgba(16, 185, 129, 0.2); color: #34d399; font-weight: 700;">
-            <i class="fa-solid fa-vault"></i> WALLET MONITOREADA 24/7 (0x8366bCe3...9f20)
-          </span>
-        </div>
-
-        <div id="paid-projects-list" style="padding: 12px;">
-          <!-- Renderizado dinámico desde app.js -->
-        </div>
-      </section>
-
-      <!-- Financial Analytics & Red Team Breakdown -->
-      <div class="grid-2-col" id="analytics">
-        <section class="content-panel">
-          <div class="panel-header">
-            <h2><i class="fa-solid fa-chart-pie"></i> Desglose de Valor Esperado (EV) Top Bounties</h2>
-          </div>
-          <div class="chart-container">
-            <canvas id="evChart" height="220"></canvas>
-          </div>
-        </section>
-
-        <!-- DEDICATED FINANCIAL ACCOUNTING & TAX REPORTING CENTER -->
-        <section class="content-panel" id="analytics" style="grid-column: 1 / -1; background: linear-gradient(135deg, rgba(15, 23, 42, 0.95) 0%, rgba(30, 41, 59, 0.95) 100%); border: 2px solid rgba(0, 242, 254, 0.4); border-radius: 16px; padding: 24px; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
-          <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; margin-bottom: 20px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 16px;">
-            <div>
-              <span style="color: #38bdf8; font-weight: 800; letter-spacing: 1.5px; font-size: 12px; text-transform: uppercase;"><i class="fa-solid fa-calculator"></i> CONTABILIDAD Y AUDITORÍA FISCAL WEB3</span>
-              <h2 style="font-size: 24px; color: #ffffff; margin-top: 4px; font-weight: 800;"><i class="fa-solid fa-file-invoice-dollar text-gold"></i> Centro de Reportes Financieros y Contables</h2>
-            </div>
-            <div style="display: flex; gap: 10px; flex-wrap: wrap;">
-              <button class="btn btn-primary" id="btn-export-csv" style="background: linear-gradient(135deg, #10b981 0%, #059669 100%); border: none; font-weight: bold;">
-                <i class="fa-solid fa-file-csv"></i> Descargar CSV para Excel / Contabilidad
-              </button>
-              <button class="btn btn-secondary" id="btn-export-ledger-json">
-                <i class="fa-solid fa-file-code"></i> Reporte JSON Financiero
-              </button>
-            </div>
-          </div>
-
-          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 18px; margin-bottom: 20px;">
-            <div style="background: rgba(0,0,0,0.4); border: 1px solid rgba(56, 189, 248, 0.3); padding: 18px; border-radius: 12px;">
-              <small class="text-dim" style="font-weight: 700; text-transform: uppercase;"><i class="fa-solid fa-network-wired"></i> DESGLOSE POR RED BLOCKCHAIN</small>
-              <ul style="list-style: none; padding: 0; margin-top: 10px; font-size: 13px; display: flex; flex-direction: column; gap: 8px;">
-                <li style="display: flex; justify-content: space-between;"><span>Ethereum (Layer 1):</span><strong style="color: #f59e0b;">$8,090.00 USDC</strong></li>
-                <li style="display: flex; justify-content: space-between;"><span>Base (Layer 2 - Low Gas):</span><strong style="color: #10b981;">$1,900.00 USDC</strong></li>
-                <li style="display: flex; justify-content: space-between;"><span>Polygon (Layer 2):</span><strong style="color: #c084fc;">$350.00 USDC</strong></li>
-              </ul>
-            </div>
-
-            <div style="background: rgba(0,0,0,0.4); border: 1px solid rgba(16, 185, 129, 0.3); padding: 18px; border-radius: 12px;">
-              <small class="text-dim" style="font-weight: 700; text-transform: uppercase;"><i class="fa-solid fa-coins"></i> RESUMEN DE BENEFICIO NETO</small>
-              <ul style="list-style: none; padding: 0; margin-top: 10px; font-size: 13px; display: flex; flex-direction: column; gap: 8px;">
-                <li style="display: flex; justify-content: space-between;"><span>Ingresos Brutos Potenciales:</span><strong style="color: #00f2fe;">$10,340.00 USDC</strong></li>
-                <li style="display: flex; justify-content: space-between;"><span>Gastos de Gas L2 Estimados:</span><strong style="color: #ef4444;">-$1.45 USD</strong></li>
-                <li style="display: flex; justify-content: space-between;"><span>Margen de Beneficio Neto:</span><strong style="color: #10b981;">99.98%</strong></li>
-              </ul>
-            </div>
-
-            <div style="background: rgba(0,0,0,0.4); border: 1px solid rgba(245, 158, 11, 0.3); padding: 18px; border-radius: 12px;">
-              <small class="text-dim" style="font-weight: 700; text-transform: uppercase;"><i class="fa-solid fa-building-columns"></i> DATOS FISCALES DE REGISTRO</small>
-              <ul style="list-style: none; padding: 0; margin-top: 10px; font-size: 13px; display: flex; flex-direction: column; gap: 8px;">
-                <li style="display: flex; justify-content: space-between;"><span>Activo Principal:</span><strong>USDC (Stablecoin 1:1 USD)</strong></li>
-                <li style="display: flex; justify-content: space-between;"><span>Wallet Registrada:</span><code style="color: #67e8f9;">0x8366...9f20</code></li>
-                <li style="display: flex; justify-content: space-between;"><span>Formato Contable:</span><strong>CSV / Excel Compliant</strong></li>
-              </ul>
-            </div>
-          </div>
-        </section>
-
-        <section class="content-panel">
-          <div class="panel-header">
-            <h2><i class="fa-solid fa-diagram-project"></i> Lista de Comprobación de Integridad</h2>
-          </div>
-          <div class="traceability-list" id="traceability-list">
-            <div class="trace-item">
-              <div class="trace-badge">GITHUB TOKEN</div>
-              <div class="trace-content">
-                <strong>Autenticación API de GitHub (.env)</strong>
-                <p>GITHUB_TOKEN activo para forkeo, comentarios (/claim) y Pull Requests.</p>
-              </div>
-              <div class="trace-status text-emerald"><i class="fa-solid fa-circle-check"></i> CONFIGURADO</div>
-            </div>
-            <div class="trace-item">
-              <div class="trace-badge">WEB3 WALLET</div>
-              <div class="trace-content">
-                <strong>Billetera de Cobro (0x8366b...9f20)</strong>
-                <p>Dirección pública de MetaMask adjunta en la descripción de todas las PRs.</p>
-              </div>
-              <div class="trace-status text-emerald"><i class="fa-solid fa-circle-check"></i> VINCULADA</div>
-            </div>
-            <div class="trace-item">
-              <div class="trace-badge">SANDBOX BUILD</div>
-              <div class="trace-content">
-                <strong>Compilación & Pruebas en Aislamiento</strong>
-                <p>100% de los 32 bounties ejecutados sin errores sintácticos ni fallos.</p>
-              </div>
-              <div class="trace-status text-emerald"><i class="fa-solid fa-circle-check"></i> 32/32 OK</div>
-            </div>
-            <div class="trace-item">
-              <div class="trace-badge">AUDITORÍA RED TEAM</div>
-              <div class="trace-content">
-                <strong>Auditoría Adversaria Interna (Score: 8.5/10)</strong>
-                <p>0 vulnerabilidades detectadas, 0 secretos expuestos.</p>
-              </div>
-              <div class="trace-status text-emerald"><i class="fa-solid fa-circle-check"></i> APROBADO</div>
-            </div>
-          </div>
-        </section>
       </div>
 
-    </main>
-  </div>
-
-  <!-- Detail Modal -->
-  <div class="modal-overlay" id="detail-modal">
-    <div class="modal-card">
-      <div class="modal-header">
-        <h3 id="modal-title">Detalles del Bounty</h3>
-        <button class="btn-close" id="btn-close-modal"><i class="fa-solid fa-xmark"></i></button>
+      <!-- Card 2: Adjudicado (Merged Pendiente de Pago) -->
+      <div class="stat-card wallet-star">
+        <div class="stat-header">
+          <span class="stat-label">Adjudicado (En Dispersión)</span>
+          <div class="stat-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+              <polyline points="22 4 12 14.01 9 11.01"></polyline>
+            </svg>
+          </div>
+        </div>
+        <div class="stat-value" id="kpiAdjudicated" style="color: var(--accent-emerald);">
+          $1,485.00 <span class="currency">USDC</span>
+        </div>
+        <div class="stat-footer">
+          <span class="stat-badge badge-emerald">
+            <span class="pulse-dot"></span> 9 PRS MERGED (100% WIN)
+          </span>
+          <span>1 MallonePay + 7 Parabola + 1 SlipPay</span>
+        </div>
       </div>
-      <div class="modal-body" id="modal-body">
-        <!-- Rendered via JS -->
+
+      <!-- Card 3: En Revisión GitHub -->
+      <div class="stat-card review-card">
+        <div class="stat-header">
+          <span class="stat-label">En Revisión (GitHub)</span>
+          <div class="stat-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <circle cx="18" cy="18" r="3"></circle>
+              <circle cx="6" cy="6" r="3"></circle>
+              <path d="M13 6h3a2 2 0 0 1 2 2v7"></path>
+              <line x1="6" y1="9" x2="6" y2="21"></line>
+            </svg>
+          </div>
+        </div>
+        <div class="stat-value" id="kpiInReview">
+          $1,490.00 <span class="currency">USDC</span>
+        </div>
+        <div class="stat-footer">
+          <span class="stat-badge badge-cyan">21 PRs ACTIVAS</span>
+          <span>18 Prism + 3 SlipPay</span>
+        </div>
+      </div>
+
+      <!-- Card 4: Sprint Total -->
+      <div class="stat-card sprint-card">
+        <div class="stat-header">
+          <span class="stat-label">Total Sprint Activo</span>
+          <div class="stat-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+            </svg>
+          </div>
+        </div>
+        <div class="stat-value" id="kpiSprintTotal">
+          $2,175.00 <span class="currency">USDC</span>
+        </div>
+        <div class="stat-footer">
+          <span class="stat-badge badge-purple">29 PRs EN TOTAL</span>
+          <span>Monopolio Activo</span>
+        </div>
+      </div>
+
+      <!-- Card 5: Pipeline Global -->
+      <div class="stat-card pipeline-card">
+        <div class="stat-header">
+          <span class="stat-label">Pipeline Global</span>
+          <div class="stat-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="2" y1="12" x2="22" y2="12"></line>
+              <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+            </svg>
+          </div>
+        </div>
+        <div class="stat-value" id="kpiPipelineTotal">
+          $35,575.00 <span class="currency">USDC</span>
+        </div>
+        <div class="stat-footer">
+          <span class="stat-badge badge-amber">164 OPORTUNIDADES</span>
+          <span>Grants & Escrow</span>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Interactive Charts Section -->
+    <section class="charts-grid">
+      <!-- Main Chart: Adjudicated vs Real Wallet -->
+      <div class="chart-card">
+        <div class="chart-header">
+          <div class="chart-title-group">
+            <h3>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#00F5A0" stroke-width="2.5">
+                <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+                <polyline points="17 6 23 6 23 12"></polyline>
+              </svg>
+              Curva de Recompensas Adjudicadas ($1,485 USDC) vs Saldo en Wallet ($0.00)
+            </h3>
+            <p>9 PRs fusionadas en GitHub pendientes de dispersión on-chain por los mantenedores hacia 0x8366...9f20</p>
+          </div>
+          <span class="stat-badge badge-amber" style="font-family: var(--font-mono); font-size: 0.85rem;">
+            Adjudicado: $1,485.00 · En Wallet: $0.00
+          </span>
+        </div>
+        <div class="chart-canvas-container">
+          <canvas id="walletGrowthChart"></canvas>
+        </div>
+      </div>
+
+      <!-- Secondary Chart: Distribution -->
+      <div class="chart-card">
+        <div class="chart-header">
+          <div class="chart-title-group">
+            <h3>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#00D2FF" stroke-width="2.5">
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="M12 2a10 10 0 0 1 10 10"></path>
+              </svg>
+              Distribución de Capital Realista
+            </h3>
+            <p>Transparencia por estado financiero y técnico</p>
+          </div>
+        </div>
+        <div class="chart-canvas-container">
+          <canvas id="distributionChart"></canvas>
+        </div>
+      </div>
+    </section>
+
+    <!-- Navigation Tabs Bar -->
+    <nav class="tabs-nav-bar">
+      <button class="tab-btn active" data-tab="wallet">
+        <span>⏳ Adjudicado / Ganado</span>
+        <span class="tab-count">9 PRs ($1,485)</span>
+      </button>
+      <button class="tab-btn" data-tab="sprint">
+        <span>🚀 Sprint en Revisión</span>
+        <span class="tab-count">21 PRs ($1,490)</span>
+      </button>
+      <button class="tab-btn" data-tab="pipeline">
+        <span>🌐 Pipeline Global</span>
+        <span class="tab-count">164</span>
+      </button>
+      <button class="tab-btn" data-tab="events">
+        <span>📡 Feed de Eventos</span>
+        <span class="tab-count">Live</span>
+      </button>
+      <button class="tab-btn" data-tab="engines">
+        <span>⚙️ Motores de Ingresos</span>
+        <span class="tab-count">5</span>
+      </button>
+    </nav>
+
+    <!-- TAB 1: Adjudicado (Merged en GitHub pero pendiente de dispersión on-chain) -->
+    <div class="tab-panel active" id="panel-wallet">
+      <div class="wallet-hero-banner" style="background: linear-gradient(135deg, rgba(245, 158, 11, 0.12) 0%, rgba(0, 245, 160, 0.08) 100%); border-color: rgba(245, 158, 11, 0.35);">
+        <div class="wallet-hero-info">
+          <h2>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#F59E0B" stroke-width="2.5">
+              <circle cx="12" cy="12" r="10"></circle>
+              <polyline points="12 6 12 12 16 14"></polyline>
+            </svg>
+            9 PRs Aprobadas & Fusionadas en GitHub ($1,485.00 USDC)
+          </h2>
+          <p>
+            Los mantenedores de MallonePay (<code>@scarface-dev1</code>), Parabola (<code>@Abdul-dev-creator</code>) y SlipPay (<code>@Obaara293</code>) han aprobado y fusionado las 9 soluciones. 
+            <strong>Realismo Financiero:</strong> El saldo actual en MetaMask/BaseScan es de <code>$0.00 USDC</code> a la espera de que los organizadores emitan la dispersión on-chain a nuestra Settlement Wallet.
+          </p>
+        </div>
+        <div class="wallet-address-box">
+          <span>0x8366bCe3a2D379Dec7656D7A67015789FaF999f20</span>
+          <a href="https://basescan.org/address/0x8366bCe3a2D379Dec7656D7A67015789FaF999f20" target="_blank" style="color:var(--accent-cyan); text-decoration:none;" title="Verificar saldo en BaseScan">
+            ↗ BaseScan (Saldo $0.00)
+          </a>
+        </div>
+      </div>
+
+      <div class="table-wrapper">
+        <table class="bounty-table">
+          <thead>
+            <tr>
+              <th style="width: 130px;">Hito</th>
+              <th>Entregable & Repositorio</th>
+              <th style="width: 140px;">Pull Request</th>
+              <th style="width: 160px;">Importe Adjudicado</th>
+              <th style="width: 130px;">Fecha Merge</th>
+              <th style="width: 180px;">Estado Financiero</th>
+            </tr>
+          </thead>
+          <tbody id="walletTableBody">
+            <!-- Rendered dynamically by app.js -->
+          </tbody>
+        </table>
       </div>
     </div>
+
+    <!-- TAB 2: Sprint en Revisión (21 PRs) -->
+    <div class="tab-panel" id="panel-sprint">
+      <div class="table-wrapper">
+        <div class="table-controls">
+          <div>
+            <h3 style="font-size: 1.1rem; font-weight: 700; color: #fff;">Sprint Activo: 21 Pull Requests en Revisión</h3>
+            <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 2px;">
+              Monopolio 100% sin asignación ajena en DevNiola/Prism (18) y slippay-labs/slippay (3)
+            </p>
+          </div>
+          <span class="stat-badge badge-cyan" style="font-family: var(--font-mono); font-size: 0.9rem;">
+            Valor en Juego: $1,490.00 USDC
+          </span>
+        </div>
+        <table class="bounty-table">
+          <thead>
+            <tr>
+              <th style="width: 110px;">Proyecto</th>
+              <th>Issue & Solución Entregada</th>
+              <th style="width: 140px;">Pull Request</th>
+              <th style="width: 160px;">Recompensa</th>
+              <th style="width: 180px;">Estado CI</th>
+            </tr>
+          </thead>
+          <tbody id="sprintTableBody">
+            <!-- Rendered dynamically by app.js -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- TAB 3: Pipeline Global (164 Bounties) -->
+    <div class="tab-panel" id="panel-pipeline">
+      <div class="table-wrapper">
+        <div class="table-controls">
+          <div class="search-input-box">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+            <input type="text" id="pipelineSearchInput" placeholder="Buscar por título, repo o tag...">
+          </div>
+
+          <div class="filter-pills">
+            <button class="filter-pill active" data-platform="ALL">Todos (164)</button>
+            <button class="filter-pill" data-platform="GITHUB">GitHub</button>
+            <button class="filter-pill" data-platform="BASE">Base L2</button>
+            <button class="filter-pill" data-platform="SOLANA">Solana</button>
+            <button class="filter-pill" data-platform="SUPERTEAM">Superteam</button>
+            <button class="filter-pill" data-platform="ALGORA">Algora</button>
+          </div>
+        </div>
+
+        <table class="bounty-table">
+          <thead>
+            <tr>
+              <th style="width: 130px;">Estado</th>
+              <th>Título de la Oportunidad & Plataforma</th>
+              <th style="width: 160px;">Recompensa</th>
+              <th style="width: 140px;">Acción</th>
+            </tr>
+          </thead>
+          <tbody id="pipelineTableBody">
+            <!-- Rendered dynamically by app.js -->
+          </tbody>
+        </table>
+
+        <div class="table-footer">
+          <span id="pipelineCountNotice">Cargando...</span>
+          <div class="pagination-controls">
+            <button class="page-btn" id="prevPageBtn">Anterior</button>
+            <span id="pageIndicator" style="padding: 6px 10px; font-family: var(--font-mono);">Página 1</span>
+            <button class="page-btn" id="nextPageBtn">Siguiente</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TAB 4: Live Events Feed -->
+    <div class="tab-panel" id="panel-events">
+      <div class="events-stream" id="liveEventsContainer">
+        <!-- Rendered dynamically by app.js -->
+      </div>
+    </div>
+
+    <!-- TAB 5: Motores de Monetización Diversificada -->
+    <div class="tab-panel" id="panel-engines">
+      <div class="engines-grid">
+        <div class="engine-card">
+          <div class="engine-card-header">
+            <span class="engine-name">Motor 1: Grants de Alto Valor</span>
+            <span class="engine-rate">$5k - $15k USDC</span>
+          </div>
+          <p class="engine-desc">Postulaciones y dossiers de software para programas institucionales (Webacy Startup Accelerator, Solana Seeker, Base Grants).</p>
+          <div class="engine-status-row">
+            <span style="color:var(--text-dim);">ESTADO:</span>
+            <span class="stat-badge badge-purple">DOSSIERS EN REVISIÓN</span>
+          </div>
+        </div>
+
+        <div class="engine-card">
+          <div class="engine-card-header">
+            <span class="engine-name">Motor 2: Micro-Bounties Bot</span>
+            <span class="engine-rate">$50 - $300 USDC</span>
+          </div>
+          <p class="engine-desc">Escaneo y resolución en GitHub con bots de liquidación on-chain (algora-bot, bountycaster, polar-sh, opire) en 1-15 min post-merge.</p>
+          <div class="engine-status-row">
+            <span style="color:var(--text-dim);">ESTADO:</span>
+            <span class="stat-badge badge-emerald">GUARDIA ACTIVA</span>
+          </div>
+        </div>
+
+        <div class="engine-card">
+          <div class="engine-card-header">
+            <span class="engine-name">Motor 3: Micro-Servicios en Escrow</span>
+            <span class="engine-rate">$250 - $800 USDC</span>
+          </div>
+          <p class="engine-desc">Catálogo cerrado de auditorías Rust/Anchor y migraciones de SDKs con custodia y entrega garantizada en 24-48 horas.</p>
+          <div class="engine-status-row">
+            <span style="color:var(--text-dim);">ESTADO:</span>
+            <span class="stat-badge badge-cyan">CATÁLOGO LISTO</span>
+          </div>
+        </div>
+
+        <div class="engine-card">
+          <div class="engine-card-header">
+            <span class="engine-name">Motor 4: API RFC-x402 M2M</span>
+            <span class="engine-rate">$0.50 - $5.00 USDC</span>
+          </div>
+          <p class="engine-desc">Endpoints HTTP en Base L2 monetizados bajo estándar RFC-x402 Pay-Per-Request para llamadas máquina a máquina entre agentes de IA.</p>
+          <div class="engine-status-row">
+            <span style="color:var(--text-dim);">ESTADO:</span>
+            <span class="stat-badge badge-emerald">ENDPOINTS ACTIVOS</span>
+          </div>
+        </div>
+
+        <div class="engine-card">
+          <div class="engine-card-header">
+            <span class="engine-name">Motor 5: Gasless Relay & Fees</span>
+            <span class="engine-rate">$20 - $150 USDC</span>
+          </div>
+          <p class="engine-desc">Empaquetado y relay de subtasks ERC-4337 con recolección automática de micro-comisiones en Base L2.</p>
+          <div class="engine-status-row">
+            <span style="color:var(--text-dim);">ESTADO:</span>
+            <span class="stat-badge badge-amber">RELAY PREPARADO</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Settlement Verification Banner Footer -->
+    <footer style="margin-top: 48px; padding: 24px; background: var(--bg-card); border: 1px solid var(--border-subtle); border-radius: var(--radius-lg); text-align: center; color: var(--text-dim); font-size: 0.85rem;">
+      <p style="margin-bottom: 6px;">
+        <strong style="color: var(--text-muted);">Settlement Wallet Invariable:</strong>
+        <span style="font-family: var(--font-mono); color: var(--accent-emerald);">0x8366bCe3a2D379Dec7656D7A67015789FaF999f20</span>
+      </p>
+      <p>Compatible con liquidaciones ERC-20 USDC en Base L2 (Chain ID 8453) y Ethereum Mainnet. Saldo real en wallet: $0.00 USDC · Recompensas formalmente ganadas en cola de dispersión: $1,485.00 USDC.</p>
+    </footer>
+
   </div>
 
-  <!-- Chart.js CDN for visual rendering -->
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <script src="app.js?v=2.7"></script>
+  <!-- Toast Notification Box -->
+  <div class="toast-notice" id="toastNotice">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#00F5A0" stroke-width="2.5">
+      <polyline points="20 6 9 17 4 12"></polyline>
+    </svg>
+    <span class="toast-msg">Mensaje</span>
+  </div>
+
+  <script src="./app.js"></script>
 </body>
 </html>
