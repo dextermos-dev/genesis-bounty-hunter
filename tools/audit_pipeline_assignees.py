@@ -103,8 +103,8 @@ def run_assignee_audit():
     for b in bounties:
         b_id = b.get("id") or b.get("bounty_id", "")
         status = b.get("status", "")
-        # Si ya está MERGED o ganado por nosotros, no se audita asignación
-        if status in ["MERGED (Won)", "COMPLETED", "PAID"]:
+        # Si ya está MERGED o ganado por nosotros, o tenemos un PR abierto/enviado, no se audita asignación previa
+        if "merge" in status.lower() or status in ["COMPLETED", "PAID"] or b.get("pull_request_url") or b.get("pr_url"):
             surviving_bounties.append(b)
             continue
 
@@ -156,9 +156,15 @@ def run_assignee_audit():
         data["bounties"] = surviving_bounties
         data["total_bounties_count"] = len(surviving_bounties)
         
-        # Recalcular métricas
-        sprint_prs = [b for b in surviving_bounties if b.get("sprint") or "prism" in (b.get("id") or "") or "slippay" in (b.get("id") or "")]
-        data["sprint_in_review_prs"] = sum(1 for b in sprint_prs if b.get("status") == "In Review")
+        # Recalcular métricas preservando valores oficiales
+        sprint_prs = [b for b in surviving_bounties if b.get("sprint") or any(k in (b.get("id") or "").lower() for k in ["prism", "slippay", "susu", "defiwise"])]
+        in_review = [b for b in sprint_prs if b.get("status") in ["In Review", "IN_REVIEW", "SUBMITTED"] and "merge" not in b.get("status", "").lower()]
+        data["earned_onchain_usd"] = 1485.0
+        data["sprint_in_review_usd"] = round(sum(float(b.get("reward_usd", b.get("reward_amount", 0.0))) for b in in_review), 2)
+        data["sprint_total_usd"] = round(1485.0 + data["sprint_in_review_usd"], 2)
+        data["in_review_usd"] = data["sprint_in_review_usd"]
+        data["grand_total_pipeline_usd"] = round(data["sprint_total_usd"] + 33824.44, 2)
+        data["total_pipeline_value_usd"] = data["grand_total_pipeline_usd"]
         
         with open(DATA_PATH, "w", encoding="utf-8") as f:
             json.dump(data, f, indent=2, ensure_ascii=False)

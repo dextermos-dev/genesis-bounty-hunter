@@ -194,11 +194,24 @@
     "body_snippet": "### 赏金平台 / Platform GitHub  ### 原始链接 / Source URL https://github.com/Parabola-org/parabola/issues/8  ### 漏洞描述 / Description [Bounty: $90] Skip the Arc approve transaction when the existing allowance already covers the burn  **Context** `burn()` in `s"
   },
   {
-    "id": "gh_5918932291",
-    "title": "[box bounty bt-48ec2a94776d] Make node --test pass",
-    "url": "https://github.com/shouteck/box-bounty-sandbox/issues/28",
+    "id": "gh_5919661720",
+    "title": "Argo bounty: 19–25 Oct 2026, proposed",
+    "url": "https://github.com/LoneWonderer1976/argo/issues/7",
+    "repo": "LoneWonderer1976/argo",
+    "created_at": "2026-10-19T07:23:56Z",
+    "comments": 0,
+    "labels": [],
+    "platform": "Algora / GitHub PRs",
+    "free_tier": true,
+    "payment_verified": true,
+    "body_snippet": "<!-- argo-bounty: 2026-10-19 --> **The bounty proposed for 19–25 Oct 2026.** Thomas cannot see it until you approve it.  🎯 **One ride of 8 miles or more** Reward: **£3.00 extra**  His last 12 weeks would have hit it in **2**. Drawn from the menu: tar"
+  },
+  {
+    "id": "gh_5919633560",
+    "title": "[box bounty bt-930fd7566866] count.js: add --names flag printing only fruit names",
+    "url": "https://github.com/shouteck/box-bounty-sandbox/issues/30",
     "repo": "shouteck/box-bounty-sandbox",
-    "created_at": "2026-10-19T06:23:30Z",
+    "created_at": "2026-10-19T07:21:39Z",
     "comments": 0,
     "labels": [
       "box-bounty"
@@ -206,97 +219,203 @@
     "platform": "Algora / GitHub PRs",
     "free_tier": true,
     "payment_verified": true,
-    "body_snippet": "# Bounty: Make node --test pass  id bt-48ec2a94776d · created 2026-10-19T06:23:12.408Z by box-bounty@0.1.0  ## What is wanted  # Make `node --test` pass  The repository's check, `node --test` run from the repository root, fails. Make it pass.  ## Wha"
+    "body_snippet": "# Bounty: count.js: add --names flag printing only fruit names  id bt-930fd7566866 · created 2026-10-19T07:21:23.112Z by box-bounty@0.1.0  ## What is wanted  Add a `--names` flag to `src/count.js`.  Current behaviour, observed from the repository roo"
   },
   {
-    "id": "gh_5918859766",
-    "title": "[intake 输入] [测评报告] dsh-at-file 0.6.3 边界测评：工作区索引拒绝符号链接（正确），mention 的词法围栏可被 junction 绕过（P3）",
-    "url": "https://github.com/FuRongJun-1999/dsh-bounty/issues/1046",
+    "id": "gh_5919564578",
+    "title": "[intake 输入][测评报告] Windows 五方向增量测评：dsh-files 热移除路由残留，搜索池 0.5.0 补证，记忆一致性与灵枢闭环复核",
+    "url": "https://github.com/FuRongJun-1999/dsh-bounty/issues/1047",
     "repo": "FuRongJun-1999/dsh-bounty",
-    "created_at": "2026-10-19T06:16:42Z",
+    "created_at": "2026-10-19T07:16:02Z",
     "comments": 0,
     "labels": [],
     "platform": "Algora / GitHub PRs",
     "free_tier": true,
     "payment_verified": true,
-    "body_snippet": "<!-- intake:v1 {\"project\": \"awesome_dsh_plugin\", \"difficulty\": \"easy\", \"impact\": \"C\", \"target\": \"omdsh-dev/dsh-at-file\", \"form\": \"intake\"} --> # [intake 输入] [test/Windows] dsh-at-file 0.6.3 边界测评：工作区索引拒绝符号链接（正确），mention 的词法围栏可被 junction 绕过（P3）  ## 0. "
+    "body_snippet": "<!-- intake:v1 {\"project\":\"bench\",\"difficulty\":\"medium\",\"impact\":\"B\",\"target\":\"taxueseek/dsh-files\",\"form\":\"intake\"} -->  本件为外部贡献申报，不是自行设立悬赏，不 /claim。计分、档位、是否归并均请维护者裁定。体验快测/方法试验，不给总分、不进能力榜；独立人工复核待进行。  主要交付为 dsh-files 同进程生命周期缺陷的复现、正反对照与修法定位。其余为已有报告的增量"
   },
   {
-    "id": "gh_5918856242",
-    "title": "Bot kills grow a life-streak bounty at full value, so a streak built on bots pays its collector 20x a normal kill and bypasses BotXpMultiplier",
-    "url": "https://github.com/ktsu-dev/CounterStrikeProgression/issues/39",
-    "repo": "ktsu-dev/CounterStrikeProgression",
-    "created_at": "2026-10-19T06:16:22Z",
-    "comments": 0,
-    "labels": [
-      "bug"
-    ],
-    "platform": "Algora / GitHub PRs",
-    "free_tier": true,
-    "payment_verified": true,
-    "body_snippet": "## What's wrong  `BountyBoard.Kill` adds to the killer's life streak whatever the victim was, bots included. It only excludes a *killer* that is a bot:  - `CounterStrikeProgression.Core/Tracking/BountyBoard.cs:87`: `bool scores = !killerIsBot && !tea"
-  },
-  {
-    "id": "gh_5918807031",
-    "title": "Police Pursuit",
-    "url": "https://github.com/germanalvarez15/nfsmw-vita/issues/2",
-    "repo": "germanalvarez15/nfsmw-vita",
-    "created_at": "2026-10-19T06:11:44Z",
+    "id": "gh_5919563750",
+    "title": "[Bug][P2] dsh-files 0.6.0：Loader 移除不注销附件路由，重载后旧配置继续生效",
+    "url": "https://github.com/taxueseek/dsh-files/issues/17",
+    "repo": "taxueseek/dsh-files",
+    "created_at": "2026-10-19T07:15:58Z",
     "comments": 0,
     "labels": [],
     "platform": "Algora / GitHub PRs",
     "free_tier": true,
     "payment_verified": true,
-    "body_snippet": "When a pursuit is triggered, there is no status bar on the bottom (the one that lists the progress for evading or getting busted). Similarly, there is no progress window (time, bounty, milestones, cost to state) on the top right as well."
+    "body_snippet": "被测提交：`1cb5a782711bc4c68b6ddcc7476a8293a806dbc6`。真实 DSH 0.2.1-rc.2 / Node 24.21.0 / Windows 10 19045。  移除插件后，三条 `/plugins/dsh-files/attachments*` 路由仍返回原数据；重新加载把下载上限改为 1 字节后，21 字节附件仍下载成功（200，预期 413）。日志出现 duplicate exact route，被捕获为 warn，而插件 fiber 仍 acti"
   },
   {
-    "id": "gh_5918767644",
-    "title": "[radar] SN open bounty 2026-10-19T06:08",
-    "url": "https://github.com/relayhop/sn-monetization-runtime/issues/1310",
-    "repo": "relayhop/sn-monetization-runtime",
-    "created_at": "2026-10-19T06:08:07Z",
-    "comments": 0,
+    "id": "gh_5919377143",
+    "title": "[BOUNTY] Medium: reset_validator_registry admits under-collateralized/zero-token-stake PDAs and clobbers cold registry authority, and deactivate_validator succeeds silently on inactive accounts",
+    "url": "https://github.com/paraloom-labs/paraloom-core/issues/1044",
+    "repo": "paraloom-labs/paraloom-core",
+    "created_at": "2026-10-19T07:01:29Z",
+    "comments": 1,
+    "labels": [],
+    "platform": "Algora / GitHub PRs",
+    "free_tier": true,
+    "payment_verified": true,
+    "body_snippet": "## Summary  **Severity:** Medium ( USDC — Stage 1 Bug Bounty)   **Affected Component:** `programs/paraloom/src/lib.rs` (`reset_validator_registry`, `migrate_validator_account`, and `deactivate_validator`)    Three state-integrity and access-control b"
+  },
+  {
+    "id": "gh_5919376997",
+    "title": "[BOUNTY] Medium: verified_transacts retains settled nullifiers and handle_cosign_request skips spent-nullifier checks, while TransactVerificationRequest overwrites cached entries on already_verified hits",
+    "url": "https://github.com/paraloom-labs/paraloom-core/issues/1043",
+    "repo": "paraloom-labs/paraloom-core",
+    "created_at": "2026-10-19T07:01:28Z",
+    "comments": 1,
+    "labels": [],
+    "platform": "Algora / GitHub PRs",
+    "free_tier": true,
+    "payment_verified": true,
+    "body_snippet": "## Summary  **Severity:** Medium ( USDC — Stage 1 Bug Bounty)   **Affected Component:** `src/node/mod.rs` (Settlement co-signing, `verified_transacts` cache lifecycle, and gossip `TransactVerificationRequest` handler)    Three interacting flaws in `s"
+  },
+  {
+    "id": "gh_5919316796",
+    "title": "[Security] passkey-signer/crypto: Unenforced WebAuthn Level 3 authData flag/length invariants and unvalidated zero/non-canonical P-256 ECDSA parameters",
+    "url": "https://github.com/Neziahtech/streampay/issues/322",
+    "repo": "Neziahtech/streampay",
+    "created_at": "2026-10-19T06:56:31Z",
+    "comments": 2,
     "labels": [
-      "radar",
-      "sn",
-      "bounty"
+      "security",
+      "needs-triage",
+      "severity:medium",
+      "scope:other",
+      "repro-missing",
+      "possible-duplicate"
     ],
     "platform": "Algora / GitHub PRs",
     "free_tier": true,
     "payment_verified": true,
-    "body_snippet": "New SN OPEN_BOUNTY detected:  ``` 1597420\tStacker_Stocks\t2\t63\t10000\t14\t17.3\t9274\t28691\trecent@Stacker_Stocks|top@Stacker_Stocks\tOPEN_BOUNTY\tStacker Stocks Weekly Close Contest 🟩 or 🟥- Week #15 Win up to 30k Sats! ```"
+    "body_snippet": "## Summary  In `contracts/passkey-signer/src/crypto.rs` and `contracts/passkey-signer/src/lib.rs`, WebAuthn Level 3 assertion verification omits critical structural and cryptographic checks:  1. **Unenforced WebAuthn Level 3 §6.1 `authenticatorData` "
   },
   {
-    "id": "gh_5918703028",
-    "title": "Security report: tari-ootle uTXO stream repeats resource-wide SQLite scans for every requested shard (GHSA-cxj9-vwm7-5wjg)",
-    "url": "https://github.com/tari-project/special_contributions/issues/258",
-    "repo": "tari-project/special_contributions",
-    "created_at": "2026-10-19T06:02:02Z",
-    "comments": 0,
+    "id": "gh_5919309077",
+    "title": "[Security] streampay/amendments: Unverified sender/recipient ownership in apply_amendment & partial_cancel allows arbitrary MAX_AMENDMENTS DoS and unauthorized stream cancellation",
+    "url": "https://github.com/Neziahtech/streampay/issues/321",
+    "repo": "Neziahtech/streampay",
+    "created_at": "2026-10-19T06:55:53Z",
+    "comments": 2,
     "labels": [
-      "retro-bounty",
-      "bounty-M"
+      "security",
+      "needs-triage",
+      "severity:medium",
+      "scope:other",
+      "repro-missing",
+      "possible-duplicate"
     ],
     "platform": "Algora / GitHub PRs",
     "free_tier": true,
     "payment_verified": true,
-    "body_snippet": "Retro bounty for @SLRHR for reporting a security vulnerability in `tari-ootle` through GitHub Security Advisories: [GHSA-cxj9-vwm7-5wjg](https://github.com/tari-project/tari-ootle/security/advisories/GHSA-cxj9-vwm7-5wjg).  The report showed that uTXO"
+    "body_snippet": "## Summary  In `contracts/streampay/src/amendments.rs`, both `apply_amendment` and `partial_cancel` fail to verify caller identity against stored stream ownership and fail to persist/chain amended stream terms:  1. **Missing Stream Ownership Verifica"
   },
   {
-    "id": "gh_5918681773",
-    "title": "claw: name the breaker of a master red, so fix_claim can refuse a self-fix bounty",
-    "url": "https://github.com/gHashTag/t27/issues/10904",
-    "repo": "gHashTag/t27",
-    "created_at": "2026-10-19T05:59:53Z",
+    "id": "gh_5919230318",
+    "title": "Notoriety: Marked after a Bounty Hunter kill",
+    "url": "https://github.com/dmavs412/twilights-eve-wow/issues/179",
+    "repo": "dmavs412/twilights-eve-wow",
+    "created_at": "2026-10-19T06:49:21Z",
     "comments": 0,
     "labels": [
-      "priority/high",
-      "queen-shaped"
+      "ready-for-agent"
     ],
     "platform": "Algora / GitHub PRs",
     "free_tier": true,
     "payment_verified": true,
-    "body_snippet": "## What  `specs/claw/fix_claim.t27` (#10886) refuses a bounty when the author of a fix is the breaker of the red it fixes. It takes the breaker as an input. No spec yet says who the breaker is, so today the caller decides by hand, and an unknown brea"
+    "body_snippet": "Part of #175. Blocked by the Bounty Rank ticket.  ## What  Marked: what dying to your own Bounty Hunter costs, and getting it back.  ## Decisions already made  - **Who killed you:** `die` (`world/death.rs`) can't tell today who landed the last hit. R"
+  },
+  {
+    "id": "gh_5919229948",
+    "title": "Notoriety: Bounty Rank, affixes and Blood Coin",
+    "url": "https://github.com/dmavs412/twilights-eve-wow/issues/178",
+    "repo": "dmavs412/twilights-eve-wow",
+    "created_at": "2026-10-19T06:49:19Z",
+    "comments": 0,
+    "labels": [
+      "ready-for-agent"
+    ],
+    "platform": "Algora / GitHub PRs",
+    "free_tier": true,
+    "payment_verified": true,
+    "body_snippet": "Part of #175. Blocked by the Bounty Hunters ticket.  ## What  Bounty Rank, its power curve, affixes, and the Blood Coin drop and vendor.  ## Decisions already made  - **Rank:** a saved `Char` field (`#[serde(default)]`). It goes up by 1 when the owne"
+  },
+  {
+    "id": "gh_5919498237",
+    "title": "[P1] hy-emit: parallel declarations, identifier copies/moves, parenthesized make/struct literals, new(T), and type aliases drop BindingKind and struct/foreign receiver hints",
+    "url": "https://github.com/limitlessprojects/Go-Hybrid/issues/814",
+    "repo": "limitlessprojects/Go-Hybrid",
+    "created_at": "2026-10-19T07:10:37Z",
+    "comments": 0,
+    "labels": [],
+    "platform": "Algora / GitHub PRs",
+    "free_tier": true,
+    "payment_verified": true,
+    "body_snippet": "## Summary  **Severity:** P1 — accepted Hybrid programs (`hyb check` exits `0` with `0 diagnostics`) emit invalid Go that fails `go build` whenever `BindingKind` (`Chan`, `Set`, `Bytes`, `Foreign`, `ForeignTy`) or struct/foreign receiver typing (`var"
+  },
+  {
+    "id": "gh_5919398217",
+    "title": "[P1] hy-emit: SPEC X4 constant-conversion folding misses nested conversions, const identifiers, and type-alias/word targets, and Call emission drops parenthesized conversion/set callees",
+    "url": "https://github.com/limitlessprojects/Go-Hybrid/issues/808",
+    "repo": "limitlessprojects/Go-Hybrid",
+    "created_at": "2026-10-19T07:03:07Z",
+    "comments": 0,
+    "labels": [],
+    "platform": "Algora / GitHub PRs",
+    "free_tier": true,
+    "payment_verified": true,
+    "body_snippet": "## Summary  **Severity:** P1 — accepted Hybrid programs (`hyb check` exits `0` with `0 diagnostics`) emit invalid Go that fails `go build` across four closely related `hy-emit` conversion paths:  1. **Nested fixed-width & platform-word integer conver"
+  },
+  {
+    "id": "gh_5919189813",
+    "title": "haven_settle_mcp_tool says settled:true when an EIP-3009 merchant's paid tool call errors — funds stranded on the delegate, nextAction none",
+    "url": "https://github.com/d-hinders/Haven-AI/issues/4062",
+    "repo": "d-hinders/Haven-AI",
+    "created_at": "2026-10-19T06:46:07Z",
+    "comments": 0,
+    "labels": [
+      "bug",
+      "money-path",
+      "area:sdk",
+      "area:mcp",
+      "area:docs"
+    ],
+    "platform": "Algora / GitHub PRs",
+    "free_tier": true,
+    "payment_verified": true,
+    "body_snippet": "Found in a live mainnet purchase run (2026-10-19, prod agent `1c92bc52`, hosted MCP `0.10.0-alpha.0`). The same code is on `origin/dev` @ `6a20b3aa`.  ## What happens  `haven_settle_mcp_tool` on the EIP-3009 (funding-leg) shape returned `settled: tru"
+  },
+  {
+    "id": "gh_5919068971",
+    "title": "[사례] jev-trader: 블록마다 주문 방향 판단 (dry-run)",
+    "url": "https://github.com/tourbut/decision-lib/issues/20",
+    "repo": "tourbut/decision-lib",
+    "created_at": "2026-10-19T06:36:02Z",
+    "comments": 0,
+    "labels": [
+      "case",
+      "jev"
+    ],
+    "platform": "Algora / GitHub PRs",
+    "free_tier": true,
+    "payment_verified": true,
+    "body_snippet": "## 한 줄 요약 Monad Kuru MON-USDC 주문장을 관찰해 블록마다 매수/매도 방향을 판단하는 실험. 공개 배포는 dry-run·mock 모델.  ## 출처 - https://github.com/jarrodwatts/jev-trader - MyKnows 위키: comparisons/system-one-jev-use-cases.md  ## 의사결정 구조 - 입력: 주문장 상태 - 질문: `choice` buy/sell (판단이 늦으면 "
+  },
+  {
+    "id": "gh_5919056652",
+    "title": "[M5][P1] Revisit ADR-0003 gas UX before the real-money MVP",
+    "url": "https://github.com/ChiJiun/verified-human-attention-market/issues/70",
+    "repo": "ChiJiun/verified-human-attention-market",
+    "created_at": "2026-10-19T06:34:54Z",
+    "comments": 0,
+    "labels": [],
+    "platform": "Algora / GitHub PRs",
+    "free_tier": true,
+    "payment_verified": true,
+    "body_snippet": "## Context  ADR-0003 (user pays testnet gas) explicitly requires a revisit before any real-money MVP: small USDC rewards are irrational if participants must first obtain ETH on Base. The web app also does not estimate or display the gas requirement i"
   },
   {
     "id": "gh_5918668134",
@@ -356,68 +475,6 @@
     "free_tier": true,
     "payment_verified": true,
     "body_snippet": "**Original Reporter & Bounty Claimant:** `@huynhnhatquandongnai-source` **Payout Wallet (USDC / USDT - BEP20 / EVM / Stellar):** `0xb9f3765aeb1974c27a193463f655a1a57b3aec94`  ---  ### Summary In contracts/streaming-payments/src/lib.rs (lines 1243-126"
-  },
-  {
-    "id": "gh_5918667150",
-    "title": "[Security] passkey-signer: Cross-account challenge nonce poisoning via unscoped RegistryKey::UsedChallenge, silent credential overwrite bypassing CredentialAlreadyRegistered, and JSON string-value key injection in find_json_string_value",
-    "url": "https://github.com/Neziahtech/streampay/issues/306",
-    "repo": "Neziahtech/streampay",
-    "created_at": "2026-10-19T05:58:20Z",
-    "comments": 3,
-    "labels": [
-      "security",
-      "needs-triage",
-      "severity:medium",
-      "scope:other",
-      "repro-missing",
-      "possible-duplicate"
-    ],
-    "platform": "Algora / GitHub PRs",
-    "free_tier": true,
-    "payment_verified": true,
-    "body_snippet": "**Original Reporter & Bounty Claimant:** `@huynhnhatquandongnai-source` **Payout Wallet (USDC / USDT - BEP20 / EVM / Stellar):** `0xb9f3765aeb1974c27a193463f655a1a57b3aec94`  ---  ### Summary In contracts/passkey-signer (src/registry.rs, src/lib.rs, "
-  },
-  {
-    "id": "gh_5918643855",
-    "title": "[P0 Soundness] check_deferred_uses (inspect_later_defer_fate / update_pre_defer_peers / update_post_defer_watch) ignores lexical scopes, conditional branches, and container/copy alias stores, bypassing HYB-E3003 (go run -race data race)",
-    "url": "https://github.com/limitlessprojects/Go-Hybrid/issues/799",
-    "repo": "limitlessprojects/Go-Hybrid",
-    "created_at": "2026-10-19T05:55:53Z",
-    "comments": 1,
-    "labels": [],
-    "platform": "Algora / GitHub PRs",
-    "free_tier": true,
-    "payment_verified": true,
-    "body_snippet": "**Original Reporter & Bounty Claimant:** `@huynhnhatquandongnai-source` **Payout Wallet (USDC / USDT - BEP20 / EVM):** `0xb9f3765aeb1974c27a193463f655a1a57b3aec94`  ---  ### Summary In compiler/crates/hy-check/src/closures.rs (lines 1544-1842), check"
-  },
-  {
-    "id": "gh_5918395040",
-    "title": "[soundness] make(<-chan T) and make(chan<- T) pass hyb check — emitted Go fails with \"cannot make receive-only/send-only channel\" (HYB-E2005 / BUILDABLE)",
-    "url": "https://github.com/limitlessprojects/Go-Hybrid/issues/793",
-    "repo": "limitlessprojects/Go-Hybrid",
-    "created_at": "2026-10-19T05:30:15Z",
-    "comments": 0,
-    "labels": [],
-    "platform": "Algora / GitHub PRs",
-    "free_tier": true,
-    "payment_verified": true,
-    "body_snippet": "### The smallest .hy program that demonstrates it  Tested against `main` at commit `c0326e2`:  ```hy type in_chan = <-chan int type out_chan = chan<- int  fn main() {     ch1 := make(<-chan int, 1)     ch2 := make(chan<- int, 1)     c1 := make(in_cha"
-  },
-  {
-    "id": "gh_5918296137",
-    "title": "Send the executed price and units filled on a proposal's trade",
-    "url": "https://github.com/Munyon-Canyon/monaco/issues/5625",
-    "repo": "Munyon-Canyon/monaco",
-    "created_at": "2026-10-19T05:20:36Z",
-    "comments": 0,
-    "labels": [
-      "backend",
-      "feature"
-    ],
-    "platform": "Algora / GitHub PRs",
-    "free_tier": true,
-    "payment_verified": true,
-    "body_snippet": "**Milestone:** UI v3 — SwiftUI redesign · **Blocked by:** none · **Tracking:** #5564 · **Base branch:** `staging` · **Touches:** `apps/backend/internal/modules/governance/**`, `apps/backend/internal/modules/trading/**`, `apps/backend/api/spec/governa"
   },
   {
     "id": "gh_5917632046",

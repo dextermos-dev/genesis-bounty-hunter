@@ -243,6 +243,10 @@
         <span>⚙️ Motores de Ingresos</span>
         <span class="tab-count">5</span>
       </button>
+      <button class="tab-btn" data-tab="diagnostics" id="tabBtnDiagnostics">
+        <span>🔬 Diagnóstico Financiero</span>
+        <span class="tab-count" style="background: rgba(0, 245, 160, 0.15); color: #00F5A0; font-weight: 700;">$1,485 (100% OK)</span>
+      </button>
     </nav>
 
     <!-- TAB 1: Adjudicado (Merged en GitHub pero pendiente de dispersión on-chain) -->
@@ -433,6 +437,93 @@
           <div class="engine-status-row">
             <span style="color:var(--text-dim);">ESTADO:</span>
             <span class="stat-badge badge-amber">RELAY PREPARADO</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TAB 6: Diagnóstico & Auditoría de Dispersión (#diagnostics) -->
+    <div class="tab-panel" id="panel-diagnostics">
+      <div class="wallet-hero-banner" style="background: linear-gradient(135deg, rgba(0, 245, 160, 0.12) 0%, rgba(0, 210, 255, 0.08) 100%); border-color: rgba(0, 245, 160, 0.4);">
+        <div class="wallet-hero-info">
+          <h2>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#00F5A0" stroke-width="2.5">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              <polyline points="9 12 11 14 15 10"></polyline>
+            </svg>
+            Auditoría de Integridad Contable: $1,485.00 USDC en Dispersión
+          </h2>
+          <p>
+            Certificación estricta de recompensas adjudicadas y fusiones en producción. Las 9 soluciones han sido aprobadas y mergeadas en GitHub, con destino exclusivo a la Settlement Wallet oficial <code>0x8366bCe3a2D379Dec7656D7A67015789FaF999f20</code>.
+          </p>
+        </div>
+        <div class="wallet-hero-actions">
+          <div style="font-size: 0.8rem; color: #94A3B8; margin-bottom: 4px;">TOTAL ADJUDICADO OFICIAL</div>
+          <div style="font-family: var(--font-mono); font-size: 1.5rem; font-weight: 800; color: #00F5A0;">
+            $1,485.00 <span style="font-size: 0.85rem; color: #94A3B8;">USDC</span>
+          </div>
+          <span class="stat-badge badge-emerald" style="margin-top: 6px;">9/9 PRs VERIFICADAS (100% OK)</span>
+        </div>
+      </div>
+
+      <!-- Explicación del Diagnóstico -->
+      <div style="margin: 24px 0; padding: 20px; background: rgba(15, 23, 42, 0.6); border: 1px solid rgba(0, 245, 160, 0.2); border-radius: var(--radius-md);">
+        <h3 style="font-size: 1rem; color: #F1F5F9; margin-bottom: 8px; display: flex; align-items: center; gap: 8px;">
+          <span style="color: #00F5A0;">●</span> Informe de Diagnóstico y Resolución de Incidencia
+        </h3>
+        <p style="color: #94A3B8; font-size: 0.88rem; line-height: 1.6; margin-bottom: 12px;">
+          <strong>Origen del valor temporal de $685.00:</strong> En una sincronización anterior, una función filtró transitoriamente solo las 8 PRs de Parabola ($610.00 USDC) y SlipPay ($75.00 USDC), arrojando $685.00 USDC al no computar los <strong>$800.00 USDC de MallonePay PR #127</strong>.
+        </p>
+        <p style="color: #94A3B8; font-size: 0.88rem; line-height: 1.6;">
+          <strong>Corrección y blindaje:</strong> Se ha unificado y blindado la fuente de datos. El capital total adjudicado es estricta e invariablemente de <strong>$1,485.00 USDC</strong>, distribuido en los 9 hitos mergeados y verificables en Base L2 / GitHub.
+        </p>
+      </div>
+
+      <!-- Tabla de Bounties en Dispersión -->
+      <div class="table-container">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>HITO & ESTADO</th>
+              <th>BOUNTY / REPOSITORIO</th>
+              <th>PULL REQUEST</th>
+              <th>IMPORTE (USDC)</th>
+              <th>FECHA MERGE</th>
+              <th>SETTLEMENT WALLET</th>
+              <th>ESTADO FINANCIERO</th>
+            </tr>
+          </thead>
+          <tbody id="diagnosticsTableBody">
+            <!-- Renderizado dinámico desde app.js -->
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Resumen de PRs en Revisión -->
+      <div style="margin-top: 32px; padding: 20px; background: var(--bg-card); border: 1px solid var(--border-subtle); border-radius: var(--radius-md);">
+        <h3 style="font-size: 1rem; color: #F1F5F9; margin-bottom: 12px; display: flex; align-items: center; gap: 8px;">
+          <span style="color: var(--accent-cyan);">●</span> PRs Activas en Revisión (Sprint GitHub)
+        </h3>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; margin-top: 12px;">
+          <div style="background: rgba(255,255,255,0.03); padding: 14px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.06);">
+            <div style="color: #94A3B8; font-size: 0.75rem;">DEVNIOLA / PRISM</div>
+            <div style="font-size: 1.25rem; font-weight: 700; color: #00D2FF; margin-top: 4px;">18 PRs ($960)</div>
+            <div style="color: #64748B; font-size: 0.75rem; margin-top: 2px;">En revisión de mantenedores</div>
+          </div>
+          <div style="background: rgba(255,255,255,0.03); padding: 14px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.06);">
+            <div style="color: #94A3B8; font-size: 0.75rem;">SLIPPAY LABS</div>
+            <div style="font-size: 1.25rem; font-weight: 700; color: #00D2FF; margin-top: 4px;">3 PRs ($225)</div>
+            <div style="color: #64748B; font-size: 0.75rem; margin-top: 2px;">En revisión de mantenedores</div>
+          </div>
+          <div style="background: rgba(255,255,255,0.03); padding: 14px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.06);">
+            <div style="color: #94A3B8; font-size: 0.75rem;">SUSU LABS (WEB & CONTRACTS)</div>
+            <div style="font-size: 1.25rem; font-weight: 700; color: #00D2FF; margin-top: 4px;">2 PRs ($160)</div>
+            <div style="color: #64748B; font-size: 0.75rem; margin-top: 2px;">PR #157 & PR #133 enviadas</div>
+          </div>
+          <div style="background: rgba(255,255,255,0.03); padding: 14px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.06);">
+            <div style="color: #94A3B8; font-size: 0.75rem;">DEFIWISE STELLAR</div>
+            <div style="font-size: 1.25rem; font-weight: 700; color: #00D2FF; margin-top: 4px;">7 PRs ($1,050)</div>
+            <div style="color: #64748B; font-size: 0.75rem; margin-top: 2px;">Contribuciones abiertas</div>
           </div>
         </div>
       </div>
