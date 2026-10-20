@@ -1,181 +1,20 @@
 [
   {
-    "id": "gh_5918858610",
-    "title": "[Security]: Front-runnable unauthenticated policy_init allows arbitrary caller to hijack PolicyDataKey::Admin, set zero timelock, and blacklist all stream assets",
-    "url": "https://github.com/Neziahtech/streampay/issues/312",
-    "repo": "Neziahtech/streampay",
-    "created_at": "2026-10-19T06:16:36Z",
-    "comments": 1,
+    "id": "gh_5922300294",
+    "title": "[BOUNTY] $5.00+ USDC: Adversarial Prompt Injection Bypass on CanaryGuard Firewall",
+    "url": "https://github.com/ak10082247-max/canaryguard-402/issues/2",
+    "repo": "ak10082247-max/canaryguard-402",
+    "created_at": "2026-10-19T10:36:17Z",
+    "comments": 4,
     "labels": [
-      "security",
-      "needs-triage",
+      "help wanted",
       "bounty",
-      "severity:high",
-      "scope:contract",
-      "possible-duplicate"
+      "security"
     ],
     "platform": "Algora / GitHub PRs",
     "free_tier": true,
     "payment_verified": true,
-    "body_snippet": "### Summary  The contract constructor `StreamingPayments::__constructor(governor)` only stores `stream::DataKey::Governor`. The asset allowlist policy module is not initialized during deployment.  The initialization entrypoint `StreamingPayments::pol"
-  },
-  {
-    "id": "gh_5918187070",
-    "title": "[Security]: RpcManager fails to record network errors (breaking failover & 3 unit tests) + streampay-state rejects Paused streams and JSON-RPC error objects",
-    "url": "https://github.com/Neziahtech/streampay/issues/302",
-    "repo": "Neziahtech/streampay",
-    "created_at": "2026-10-19T05:09:04Z",
-    "comments": 3,
-    "labels": [
-      "security",
-      "needs-triage",
-      "bounty",
-      "severity:high",
-      "scope:infra",
-      "possible-duplicate"
-    ],
-    "platform": "Algora / GitHub PRs",
-    "free_tier": true,
-    "payment_verified": true,
-    "body_snippet": "### Summary  The newly merged **RPC Failover Manager** (`indexer/src/rpc-manager.ts`) and **Contract State Export & Verification CLI** (`tools/streampay-state/src/export.rs`, `verify.rs`, `model.rs`) contain **5 critical/high reliability and correctn"
-  },
-  {
-    "id": "gh_5918131003",
-    "title": "[Security]: PasskeySigner unscoped UsedChallenge nonce griefing, top-level JSON key spoofing in cbor.rs, and COSE/DER parsing bugs",
-    "url": "https://github.com/Neziahtech/streampay/issues/300",
-    "repo": "Neziahtech/streampay",
-    "created_at": "2026-10-19T05:03:06Z",
-    "comments": 3,
-    "labels": [
-      "security",
-      "needs-triage",
-      "bounty",
-      "severity:high",
-      "scope:contract",
-      "possible-duplicate"
-    ],
-    "platform": "Algora / GitHub PRs",
-    "free_tier": true,
-    "payment_verified": true,
-    "body_snippet": "### Severity (self-assessed)  High  ### Affected component  contract (Rust)  ### Impact class  Invariant break  ### Summary  In `contracts/passkey-signer/src/` (`lib.rs`, `registry.rs`, `cbor.rs`, and `frontend/lib/passkey.ts`), `PasskeySigner::verif"
-  },
-  {
-    "id": "gh_5917323025",
-    "title": "[Security]: Unscoped NftDataKey::Allowance(spender) persists across StreamNft::transfer, enabling prior spender to seize or burn new holder's NFT",
-    "url": "https://github.com/Neziahtech/streampay/issues/295",
-    "repo": "Neziahtech/streampay",
-    "created_at": "2026-10-19T03:35:48Z",
-    "comments": 2,
-    "labels": [
-      "security",
-      "needs-triage",
-      "bounty",
-      "severity:high",
-      "scope:contract",
-      "possible-duplicate"
-    ],
-    "platform": "Algora / GitHub PRs",
-    "free_tier": true,
-    "payment_verified": true,
-    "body_snippet": "### Severity (self-assessed)  High  ### Affected component  contract (Rust)  ### Impact class  Invariant break  ### Summary  **Original Reporter & Bounty Claimant:** `@huynhnhatquandongnai-source` | **Payout Wallet (USDC/USDT EVM/BEP20):** `0xb9f3765"
-  },
-  {
-    "id": "gh_5917310230",
-    "title": "[Security]: Signed i128 underflow in cancel_amounts_at and unguarded past timestamp in submit_oracle_time over-refunds creator on cancellation",
-    "url": "https://github.com/Neziahtech/streampay/issues/294",
-    "repo": "Neziahtech/streampay",
-    "created_at": "2026-10-19T03:34:14Z",
-    "comments": 2,
-    "labels": [
-      "security",
-      "needs-triage",
-      "bounty",
-      "severity:high",
-      "scope:contract",
-      "possible-duplicate"
-    ],
-    "platform": "Algora / GitHub PRs",
-    "free_tier": true,
-    "payment_verified": true,
-    "body_snippet": "### Severity (self-assessed)  High  ### Affected component  contract (Rust)  ### Impact class  Funds drainable  ### Summary  **Original Reporter & Bounty Claimant:** `@huynhnhatquandongnai-source` | **Payout Wallet (USDC/USDT EVM/BEP20):** `0xb9f3765"
-  },
-  {
-    "id": "gh_5916587370",
-    "title": "[Security]: relayer routines ignore circuit-breaker pause guards and drop settlement telemetry",
-    "url": "https://github.com/Neziahtech/streampay/issues/292",
-    "repo": "Neziahtech/streampay",
-    "created_at": "2026-10-19T02:09:29Z",
-    "comments": 3,
-    "labels": [
-      "security",
-      "needs-triage",
-      "bounty",
-      "severity:high",
-      "scope:contract"
-    ],
-    "platform": "Algora / GitHub PRs",
-    "free_tier": true,
-    "payment_verified": true,
-    "body_snippet": "### Severity (self-assessed)  High  ### Affected component  contract (Rust)  ### Impact class  Invariant break  ### Summary  Running set_sponsor_active or rotate_operator_key together with relayer withdrawal routines ignores circuit-breaker pause gua"
-  },
-  {
-    "id": "gh_5916578881",
-    "title": "[Security]: create_streams_batch and create_single_batch_entry lack PolicyDataKey validation and misclassify funding debits",
-    "url": "https://github.com/Neziahtech/streampay/issues/291",
-    "repo": "Neziahtech/streampay",
-    "created_at": "2026-10-19T02:08:37Z",
-    "comments": 3,
-    "labels": [
-      "security",
-      "needs-triage",
-      "bounty",
-      "severity:high",
-      "scope:contract"
-    ],
-    "platform": "Algora / GitHub PRs",
-    "free_tier": true,
-    "payment_verified": true,
-    "body_snippet": "### Severity (self-assessed)  High  ### Affected component  contract (Rust)  ### Impact class  Invariant break  ### Summary  Calling create_streams_batch (delegating into create_single_batch_entry) constructs BatchStreamEntry records lacking PolicyDa"
-  },
-  {
-    "id": "gh_5911088923",
-    "title": "[Security]: freeze-logic trigger",
-    "url": "https://github.com/Neziahtech/streampay/issues/255",
-    "repo": "Neziahtech/streampay",
-    "created_at": "2026-10-18T15:25:45Z",
-    "comments": 5,
-    "labels": [
-      "security",
-      "needs-triage",
-      "bounty",
-      "severity:high",
-      "scope:contract",
-      "possible-duplicate"
-    ],
-    "platform": "Algora / GitHub PRs",
-    "free_tier": true,
-    "payment_verified": true,
-    "body_snippet": "### Severity (self-assessed)  High  ### Affected component  contract (Rust)  ### Impact class  Invariant break  ### Summary  The emergency freeze is enforced via require_not_frozen on all five direct-lane entrypoints (create_stream, create_streams, w"
-  },
-  {
-    "id": "gh_5911005942",
-    "title": "[Security]: Policy/allowlist bypass via scheduled lane: schedule_stream / execute_scheduled skip check_asset_allowed and validate_stream_args",
-    "url": "https://github.com/Neziahtech/streampay/issues/249",
-    "repo": "Neziahtech/streampay",
-    "created_at": "2026-10-18T15:16:24Z",
-    "comments": 2,
-    "labels": [
-      "security",
-      "needs-triage",
-      "bounty",
-      "severity:critical",
-      "scope:contract",
-      "possible-duplicate"
-    ],
-    "platform": "Algora / GitHub PRs",
-    "free_tier": true,
-    "payment_verified": true,
-    "body_snippet": "### Severity (self-assessed)  Critical  ### Affected component  contract (Rust)  ### Impact class  Funds drainable  ### Summary  The policy module is the on-chain allowlist: create_stream enforces check_asset_allowed and reverts PolicyAssetNotAllowed"
+    "body_snippet": "### 🎯 Objective CanaryGuard defends autonomous AI agents using deterministic, sub-millisecond heuristic filtering. To win the bounty, submit an adversarial prompt injection or instruction override payload that slips past Strict Mode with status `\"cle"
   },
   {
     "id": "gh_5874536479",
@@ -194,479 +33,724 @@
     "body_snippet": "### 赏金平台 / Platform GitHub  ### 原始链接 / Source URL https://github.com/Parabola-org/parabola/issues/8  ### 漏洞描述 / Description [Bounty: $90] Skip the Arc approve transaction when the existing allowance already covers the burn  **Context** `burn()` in `s"
   },
   {
-    "id": "gh_5920468476",
-    "title": "Add nested test repos to .gitignore — agent-undo/, bounty-bot-e2e/, handwired/, memwatch/ untracked",
-    "url": "https://github.com/yunaremaia/driftcheck/issues/512",
-    "repo": "yunaremaia/driftcheck",
-    "created_at": "2026-10-19T08:27:58Z",
+    "id": "gh_5874536197",
+    "title": "[Bounty] [Bounty: $90] Reject amounts whose precision exceeds the destination chain's USD",
+    "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/1906",
+    "repo": "zhangjiayang6835-cyber/bounty-plaza",
+    "created_at": "2026-10-15T21:54:19Z",
+    "comments": 3,
+    "labels": [
+      "bounty",
+      "real"
+    ],
+    "platform": "Algora / GitHub PRs",
+    "free_tier": true,
+    "payment_verified": true,
+    "body_snippet": "### 赏金平台 / Platform GitHub  ### 原始链接 / Source URL https://github.com/Parabola-org/parabola/issues/10  ### 漏洞描述 / Description [Bounty: $90] Reject amounts whose precision exceeds the destination chain's USDC decimals  **Context** Arc USDC has 6 decima"
+  },
+  {
+    "id": "gh_5860484466",
+    "title": "[Bounty] [BOUNTY ~$30 x4] Post and fund a real task on Verdikta, publish a write-up (paid",
+    "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/1892",
+    "repo": "zhangjiayang6835-cyber/bounty-plaza",
+    "created_at": "2026-10-15T05:09:29Z",
+    "comments": 2,
+    "labels": [
+      "bounty",
+      "real"
+    ],
+    "platform": "Algora / GitHub PRs",
+    "free_tier": true,
+    "payment_verified": true,
+    "body_snippet": "### 赏金平台 / Platform GitHub  ### 原始链接 / Source URL https://github.com/verdikta/verdikta-applications/issues/76  ### 漏洞描述 / Description [BOUNTY ~$30 x4] Post and fund a real task on Verdikta, publish a write-up (paid on Poidh, Base)  Four solo bounties"
+  },
+  {
+    "id": "gh_5858181549",
+    "title": "[BOUNTY ~$30 x4] Post and fund a real task on Verdikta, publish a write-up (paid on Poidh, Base)",
+    "url": "https://github.com/verdikta/verdikta-applications/issues/76",
+    "repo": "verdikta/verdikta-applications",
+    "created_at": "2026-10-15T00:58:41Z",
+    "comments": 9,
+    "labels": [
+      "bounty"
+    ],
+    "platform": "Algora / GitHub PRs",
+    "free_tier": true,
+    "payment_verified": true,
+    "body_snippet": "Four solo bounties on [Poidh](https://poidh.xyz) (Base chain), about 0.0125 ETH (~$30) each, for builders who post and fund a real task on Verdikta Bounties, get it completed by the AI jury, and publish a 300-word write-up. Part of the **Bring a Task"
+  },
+  {
+    "id": "gh_5792618033",
+    "title": "Create the first funded bounty for an established open-source project",
+    "url": "https://github.com/NSPG13/agent-bounties/issues/1632",
+    "repo": "NSPG13/agent-bounties",
+    "created_at": "2026-10-10T15:27:19Z",
+    "comments": 6,
+    "labels": [
+      "bounty",
+      "ai-agent-welcome",
+      "payments",
+      "funded-live",
+      "claimable-live",
+      "ready-to-earn",
+      "skill:browser",
+      "skill:research"
+    ],
+    "platform": "Algora / GitHub PRs",
+    "free_tier": true,
+    "payment_verified": true,
+    "body_snippet": "<!-- agent-bounties/github-discovery-v1:start --> <!-- agent-bounties/github-discovery-v1 {\"discovery_id\":\"eip155:8453:agent-bounties/autonomous-v1:0xbf99f1c2c690c8bcd45e341006bf7b7dd6c41cdc\"} --> ## Canonical bounty discovery  Use your existing stan"
+  },
+  {
+    "id": "gh_5742162145",
+    "title": "[Bounty] 💰 Donate $10-$100 USDT/USDC — Support VeloDAG Core Rust Dev",
+    "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/1828",
+    "repo": "zhangjiayang6835-cyber/bounty-plaza",
+    "created_at": "2026-10-07T08:52:34Z",
+    "comments": 5,
+    "labels": [
+      "bounty",
+      "real"
+    ],
+    "platform": "Algora / GitHub PRs",
+    "free_tier": true,
+    "payment_verified": true,
+    "body_snippet": "### 赏金平台 / Platform GitHub  ### 原始链接 / Source URL https://github.com/quantumchain-core/velodag-core/issues/2  ### 漏洞描述 / Description 💰 Donate $10-$100 USDT/USDC — Support VeloDAG Core Rust Dev  ### Looking for small bug bounties & sponsors  Building "
+  },
+  {
+    "id": "gh_5651834741",
+    "title": "[Bounty] [Bounty] Fix one deterministic agent-card discovery regression",
+    "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/1715",
+    "repo": "zhangjiayang6835-cyber/bounty-plaza",
+    "created_at": "2026-09-30T19:23:25Z",
+    "comments": 3,
+    "labels": [
+      "bounty",
+      "real"
+    ],
+    "platform": "Algora / GitHub PRs",
+    "free_tier": true,
+    "payment_verified": true,
+    "body_snippet": "### 赏金平台 / Platform GitHub  ### 原始链接 / Source URL https://github.com/NSPG13/agent-bounties/issues/1531  ### 漏洞描述 / Description [Bounty] Fix one deterministic agent-card discovery regression  <!-- agent-bounties/github-discovery-v1:start --> <!-- agen"
+  },
+  {
+    "id": "gh_5586145252",
+    "title": "[Bounty] Record the real network fee in the ledger, not only the capped estimate",
+    "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/1660",
+    "repo": "zhangjiayang6835-cyber/bounty-plaza",
+    "created_at": "2026-09-25T17:23:04Z",
+    "comments": 14,
+    "labels": [
+      "bounty",
+      "real"
+    ],
+    "platform": "Algora / GitHub PRs",
+    "free_tier": true,
+    "payment_verified": true,
+    "body_snippet": "### 赏金平台 / Platform GitHub  ### 原始链接 / Source URL https://github.com/Grainlify/grainlify-bounty-agent/issues/1  ### 漏洞描述 / Description Record the real network fee in the ledger, not only the capped estimate  **The problem**  When the agent pays for i"
+  },
+  {
+    "id": "gh_5556777041",
+    "title": "[Bounty] [Bounty] Fix one deterministic RPC failover regression",
+    "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/1635",
+    "repo": "zhangjiayang6835-cyber/bounty-plaza",
+    "created_at": "2026-09-23T17:06:28Z",
+    "comments": 24,
+    "labels": [
+      "bounty",
+      "real"
+    ],
+    "platform": "Algora / GitHub PRs",
+    "free_tier": true,
+    "payment_verified": true,
+    "body_snippet": "### 赏金平台 / Platform GitHub  ### 原始链接 / Source URL https://github.com/NSPG13/agent-bounties/issues/1500  ### 漏洞描述 / Description [Bounty] Fix one deterministic RPC failover regression  <!-- agent-bounties/github-discovery-v1:start --> <!-- agent-bounti"
+  },
+  {
+    "id": "gh_5938633688",
+    "title": "Hangar Planner: suggestion mode",
+    "url": "https://github.com/fleetyards/fleetyards/issues/5860",
+    "repo": "fleetyards/fleetyards",
+    "created_at": "2026-10-20T08:38:56Z",
     "comments": 0,
+    "labels": [
+      "size/L"
+    ],
+    "platform": "Algora / GitHub PRs",
+    "free_tier": true,
+    "payment_verified": true,
+    "body_snippet": "Follow-up to #2644. The hangar planner organises a plan as **slots**: purposes the user wants covered, each with zero, one or several candidate ships. This issue adds a suggestion mode. The planner asks what the user wants to do, creates slots from t"
+  },
+  {
+    "id": "gh_5938579185",
+    "title": "[Bounty proposal] fix(conversations): normalize mixed naive, aware, and ISO timestamps in calendar_linking and meeting_context ( proposed)",
+    "url": "https://github.com/BasedHardware/omi/issues/22808",
+    "repo": "BasedHardware/omi",
+    "created_at": "2026-10-20T08:34:38Z",
+    "comments": 1,
     "labels": [],
     "platform": "Algora / GitHub PRs",
     "free_tier": true,
     "payment_verified": true,
-    "body_snippet": "## Problem\\n\\nThe driftcheck repository has several nested git repositories and untracked files that are not covered by :\\n\\n\\n\\nThese are local clones used for testing driftcheck's git mode detection. Without  entries, there is a risk of accidentall"
+    "body_snippet": "### Summary In \backend/utils/conversations/calendar_linking.py and \backend/utils/conversations/meeting_context.py, several timestamp subtraction, comparison, and parsing paths raise TypeError or silently drop valid records when timestamps mix offset-"
   },
   {
-    "id": "gh_5920435909",
-    "title": "contract: implement anti-frontrunning commit-reveal mechanism for competitive payroll bounty claims",
-    "url": "https://github.com/Orbit-xyz/Orbit/issues/212",
+    "id": "gh_5938342051",
+    "title": "CRITICAL: Attribution & Wave Bounty Dispute on PR #218 (Issues #209-#212) — Forensic Audit Trail",
+    "url": "https://github.com/Orbit-xyz/Orbit/issues/220",
     "repo": "Orbit-xyz/Orbit",
-    "created_at": "2026-10-19T08:25:33Z",
+    "created_at": "2026-10-20T08:16:17Z",
+    "comments": 0,
+    "labels": [],
+    "platform": "Algora / GitHub PRs",
+    "free_tier": true,
+    "payment_verified": true,
+    "body_snippet": "## 🚨 URGENT: Formal Attribution & Frontrunning Dispute on PR #218 (Issues #209, #210, #211, #212)  **Attention:** @Prudentdev-xyz, @Abdqoharr, and the @drips-wave Core Team.  This is a formal, high-priority dispute regarding the rapid merge of **PR #"
+  },
+  {
+    "id": "gh_5938318935",
+    "title": "[intake 输入] lingshu #836：自我模型保存失败后的合并基线恢复交付",
+    "url": "https://github.com/FuRongJun-1999/dsh-bounty/issues/1243",
+    "repo": "FuRongJun-1999/dsh-bounty",
+    "created_at": "2026-10-20T08:14:29Z",
+    "comments": 0,
+    "labels": [],
+    "platform": "Algora / GitHub PRs",
+    "free_tier": true,
+    "payment_verified": true,
+    "body_snippet": "日期：2026-10-20  <!-- intake:v1 {\"project\":\"lingshu\",\"difficulty\":\"hard\",\"impact\":\"B\",\"target\":\"FuRongJun-1999/lingshu\",\"form\":\"intake\"} -->  本件为已完成修复的 intake 输入，一份独立 PR 对应本 Issue。hard/B 为建议，难度、影响、 验收和结算由维护者裁定；human review pending。  ## 唯一交付与意图  - 唯一修复 "
+  },
+  {
+    "id": "gh_5938317076",
+    "title": "[tz-radar] FRESH_LOW_COMP 2026-10-20T08:14",
+    "url": "https://github.com/relayhop/ClaudeEarnSelf-runtime/issues/1135",
+    "repo": "relayhop/ClaudeEarnSelf-runtime",
+    "created_at": "2026-10-20T08:14:20Z",
+    "comments": 0,
+    "labels": [
+      "radar",
+      "timezone"
+    ],
+    "platform": "Algora / GitHub PRs",
+    "free_tier": true,
+    "payment_verified": true,
+    "body_snippet": "Timezone radar — 亞洲日間 first-mover 機會:  ``` FRESH_LOW_COMP\tgithub\t2.3\t0\t0\thttps://github.com/relayhop/sn-monetization-runtime/issues/1315\t[radar] SN open bounty 2026-10-20T05:55 ```"
+  },
+  {
+    "id": "gh_5938237730",
+    "title": "test",
+    "url": "https://github.com/skull-X/Testing/issues/23",
+    "repo": "skull-X/Testing",
+    "created_at": "2026-10-20T08:08:41Z",
+    "comments": 5,
+    "labels": [
+      "rewarded",
+      "low"
+    ],
+    "platform": "Algora / GitHub PRs",
+    "free_tier": true,
+    "payment_verified": true,
+    "body_snippet": "test"
+  },
+  {
+    "id": "gh_5938191259",
+    "title": "[FEATURE] Red Team Access for verified bug bounty hunters (HackerOne, Bugcrowd, Intigriti)",
+    "url": "https://github.com/anthropics/claude-code/issues/103689",
+    "repo": "anthropics/claude-code",
+    "created_at": "2026-10-20T08:05:30Z",
     "comments": 0,
     "labels": [
       "enhancement",
-      "difficulty: hard",
-      "area: contract",
-      "security",
-      "Stellar Wave",
-      "complexity: high"
+      "area:model",
+      "area:security"
     ],
     "platform": "Algora / GitHub PRs",
     "free_tier": true,
     "payment_verified": true,
-    "body_snippet": "## Problem  When competitive payroll bounties or task rewards are published on-chain, frontrunning bots monitoring the public Stellar mempool can observe valid proof submissions, extract the solution payload, and submit their own claim with a higher "
+    "body_snippet": "### Preflight Checklist  - [x] I have searched [existing requests](https://github.com/anthropics/claude-code/issues?q=is%3Aissue%20label%3Aenhancement) and this feature hasn't been requested yet - [x] This is a single feature request (not multiple fe"
   },
   {
-    "id": "gh_5920338929",
-    "title": "[EXAMPLE] How a bounty works: a walkthrough (not claimable)",
-    "url": "https://github.com/IamTalha-Sajid/telegraph-bounty/issues/1",
-    "repo": "IamTalha-Sajid/telegraph-bounty",
-    "created_at": "2026-10-19T08:18:12Z",
-    "comments": 0,
-    "labels": [
-      "documentation",
-      "status:triage",
-      "reward:unfunded"
-    ],
-    "platform": "Algora / GitHub PRs",
-    "free_tier": true,
-    "payment_verified": true,
-    "body_snippet": "> **This is an example, not a real bounty.** It uses a fictional Intent, it cannot be claimed, and the conversation is locked. Read it to learn the flow, then browse [real open bounties](https://github.com/IamTalha-Sajid/telegraph-bounty/issues?q=is%"
-  },
-  {
-    "id": "gh_5920283224",
-    "title": "[wildcard] Flip GUARANTEES Row 11 from 'No claim yet' to Guaranteed: Linear Atomic Pointer Swaps (atomic.Box[T]) with Exchange-Enforced Pointee Ownership",
-    "url": "https://github.com/limitlessprojects/Go-Hybrid/issues/833",
-    "repo": "limitlessprojects/Go-Hybrid",
-    "created_at": "2026-10-19T08:14:00Z",
-    "comments": 0,
-    "labels": [],
-    "platform": "Algora / GitHub PRs",
-    "free_tier": true,
-    "payment_verified": true,
-    "body_snippet": "### The idea, in a paragraph  Directly answering **Active Solicitation Prompt 4** in `MOONSHOT.md` (*\"'Impossible' guarantees... pick a guarantee GUARANTEES.md explicitly does not make and argue it is reachable\"*) and resolving the open `[TBD]` gap r"
-  },
-  {
-    "id": "gh_5919982035",
-    "title": "[Opportunity] [$50] Don't delete connected calendars, just flag as deleted — $50.0",
-    "url": "https://github.com/thirdshiftworks/opportunity-scanner/issues/5",
-    "repo": "thirdshiftworks/opportunity-scanner",
-    "created_at": "2026-10-19T07:50:30Z",
-    "comments": 0,
-    "labels": [
-      "new"
-    ],
-    "platform": "Algora / GitHub PRs",
-    "free_tier": true,
-    "payment_verified": true,
-    "body_snippet": "New credible find from the nightly Third Shift Works opportunity scan.  - **Platform:** GitHub (bounty labels) - **Amount:** $50.0 - **Credibility score:** 57/100 - **Listing:** https://github.com/topcoder-archive/taas-apis/issues/592 - **Estimated e"
-  },
-  {
-    "id": "gh_5919979383",
-    "title": "Selected-span self-checks omit the run's system/developer instructions",
-    "url": "https://github.com/neatlogs/neatroots/issues/583",
-    "repo": "neatlogs/neatroots",
-    "created_at": "2026-10-19T07:50:17Z",
+    "id": "gh_5938158219",
+    "title": "[GoodBounty-QA]: Testing of reserve swapping with delegation marked wallets",
+    "url": "https://github.com/GoodDollar/GoodWeb3-Mono/issues/275",
+    "repo": "GoodDollar/GoodWeb3-Mono",
+    "created_at": "2026-10-20T08:03:04Z",
     "comments": 1,
-    "labels": [],
-    "platform": "Algora / GitHub PRs",
-    "free_tier": true,
-    "payment_verified": true,
-    "body_snippet": "### What happened, and what you expected  Selecting an LLM span for `judge` / `POST /api/steer/check` removes its system/developer instruction from the evidence sent to the decision model. Judging the same run without `span_ids` retains the instructi"
-  },
-  {
-    "id": "gh_5919975760",
-    "title": "[intake 输入] 【测评报告】STARDUSTLC666 插件横测（dsh-slack / dsh-voice · 方法试验）：出厂 groq 引擎下 asrBaseUrl 被静默忽略，用户自建网关的 ASR 密钥被发往 api.groq.com",
-    "url": "https://github.com/FuRongJun-1999/dsh-bounty/issues/1052",
-    "repo": "FuRongJun-1999/dsh-bounty",
-    "created_at": "2026-10-19T07:49:59Z",
-    "comments": 0,
-    "labels": [],
-    "platform": "Algora / GitHub PRs",
-    "free_tier": true,
-    "payment_verified": true,
-    "body_snippet": "<!-- intake:v1 {\"project\":\"awesome_dsh_plugin\",\"difficulty\":\"medium\",\"impact\":\"C\",\"target\":\"FuRongJun-1999/dsh-bounty\",\"form\":\"intake\"} -->  【intake 输入】测评报告 —— 本件是**投稿测评**（外部贡献申报），不是悬赏：**不 /claim、不自行加 bounty 标签**，计分与档位由维护者裁定（marker 的 difficulty/impac"
-  },
-  {
-    "id": "gh_5919974830",
-    "title": "[intake 输入] lingshu #820：证据账本与真值维护事务归属修复交付",
-    "url": "https://github.com/FuRongJun-1999/dsh-bounty/issues/1051",
-    "repo": "FuRongJun-1999/dsh-bounty",
-    "created_at": "2026-10-19T07:49:54Z",
-    "comments": 0,
-    "labels": [],
-    "platform": "Algora / GitHub PRs",
-    "free_tier": true,
-    "payment_verified": true,
-    "body_snippet": "日期：2026-10-19  <!-- intake:v1 {\"project\":\"lingshu\",\"difficulty\":\"hard\",\"impact\":\"B\",\"target\":\"FuRongJun-1999/lingshu\",\"form\":\"intake\"} -->  本件为已完成修复的 intake 输入，一份独立 PR 对应本 Issue。hard/B 是交付建议，难度、影响、验收和结算均由维护者裁定；**human review pending**。  ## 交付物与意图  - "
-  },
-  {
-    "id": "gh_5919959012",
-    "title": "[intake 输入] lingshu #819：容量设置失败与 FIFO 原子提交修复交付",
-    "url": "https://github.com/FuRongJun-1999/dsh-bounty/issues/1050",
-    "repo": "FuRongJun-1999/dsh-bounty",
-    "created_at": "2026-10-19T07:48:35Z",
-    "comments": 0,
-    "labels": [],
-    "platform": "Algora / GitHub PRs",
-    "free_tier": true,
-    "payment_verified": true,
-    "body_snippet": "日期：2026-10-19  <!-- intake:v1 {\"project\":\"lingshu\",\"difficulty\":\"hard\",\"impact\":\"B\",\"target\":\"FuRongJun-1999/lingshu\",\"form\":\"intake\"} -->  本件为已完成修复的 intake 输入，一份独立 PR 对应本 Issue。hard/B 是交付建议，难度、影响、验收和结算均由维护者裁定；**human review pending**。  ## 交付物与意图  - "
-  },
-  {
-    "id": "gh_5919879881",
-    "title": "[BOUNTY] Medium: cosign_settlement approves native Transact payloads against SPL-verified spends (missing req.mint.is_none()) and build_settlement_message accepts non-canonical bridge_vault",
-    "url": "https://github.com/paraloom-labs/paraloom-core/issues/1049",
-    "repo": "paraloom-labs/paraloom-core",
-    "created_at": "2026-10-19T07:42:07Z",
-    "comments": 1,
-    "labels": [],
-    "platform": "Algora / GitHub PRs",
-    "free_tier": true,
-    "payment_verified": true,
-    "body_snippet": "### Summary In `src/node/mod.rs` (`cosign_settlement`, lines 980-1016) and `src/bridge/solana/cosign_message.rs` (`build_settlement_message`, lines 168-190), two validation gaps exist in the settlement co-signing path:  1. **Missing `req.mint.is_none"
-  },
-  {
-    "id": "gh_5920131913",
-    "title": "[P1] hy-check: HYB-E2009 misses nil/boolean/pointer/const range bounds, mismatched integer bound types, and overflowing constant range bounds in for .. in lo..hi",
-    "url": "https://github.com/limitlessprojects/Go-Hybrid/issues/827",
-    "repo": "limitlessprojects/Go-Hybrid",
-    "created_at": "2026-10-19T08:02:28Z",
-    "comments": 0,
-    "labels": [],
-    "platform": "Algora / GitHub PRs",
-    "free_tier": true,
-    "payment_verified": true,
-    "body_snippet": "## Severity **P1 — High ($800)** — Valid-looking Hybrid programs with invalid `for i in lo..hi` / `for i in lo..=hi` integer range bounds pass `hyb check` with **0 diagnostics** and then fail `go build` on the emitted Go code (`Tier 0 BUILDABLE` inva"
-  },
-  {
-    "id": "gh_5920122690",
-    "title": "Third-party publisher returns 402 \"Insufficient prepaid balance\" despite sufficient promotional credit; create-publisher defaults pricing to per_byte",
-    "url": "https://github.com/serenorg/seren/issues/237",
-    "repo": "serenorg/seren",
-    "created_at": "2026-10-19T08:01:42Z",
-    "comments": 0,
     "labels": [
-      "feature",
-      "critical",
-      "P1"
+      "GoodBounties - QA"
     ],
     "platform": "Algora / GitHub PRs",
     "free_tier": true,
     "payment_verified": true,
-    "body_snippet": "## Summary Paid calls to a newly created third-party publisher (`daertho`) always return **402 \"Insufficient prepaid balance\"**, although the caller has $100.10 of SerenBucks and the quote is $0.008. The caller's whole balance is **promotional** cred"
+    "body_snippet": "# Reserve QA: Mono #274 + Protocol UI #645  Test the prepared GoodProtocolUI app locally and submit a short report for both PRs. No code changes or new test tools are part of this assignment.  QA-Bounty: 200.000G$  A generic template can be seen here"
   },
   {
-    "id": "gh_5920031748",
-    "title": "[P1] hy-check: HYB-E6006 misses parenthesized/type-aliased conversion targets, bool(const), constant expressions/identifiers, and file-level const initializers",
-    "url": "https://github.com/limitlessprojects/Go-Hybrid/issues/823",
-    "repo": "limitlessprojects/Go-Hybrid",
-    "created_at": "2026-10-19T07:54:32Z",
-    "comments": 0,
-    "labels": [],
+    "id": "gh_5938035451",
+    "title": "Clean up the owned sidecar when readiness fails",
+    "url": "https://github.com/WeighInNG/WeighIn/issues/218",
+    "repo": "WeighInNG/WeighIn",
+    "created_at": "2026-10-20T07:53:46Z",
+    "comments": 1,
+    "labels": [
+      "Stellar Wave"
+    ],
     "platform": "Algora / GitHub PRs",
     "free_tier": true,
     "payment_verified": true,
-    "body_snippet": "## Severity **P1 — High ($800)** — Valid-looking Hybrid programs with invalid constant type conversions pass `hyb check` with **0 diagnostics** and then fail `go build` on the emitted Go code (`Tier 0 BUILDABLE` invariant breach).  ## Summary `Checke"
+    "body_snippet": "## Problem  A readiness failure prints logs and exits but leaves the newly created Docker container running.  ## Current repository evidence  - [scripts/start-local-network.sh:1](https://github.com/WeighInNG/WeighIn/blob/f679238a096b49df0edfaf7d02d5b"
   },
   {
-    "id": "gh_5919912749",
-    "title": "Account readiness check: verify a client can fund an escrow before signing",
-    "url": "https://github.com/Talenttrust/Talenttrust-Backend/issues/1600",
-    "repo": "Talenttrust/Talenttrust-Backend",
-    "created_at": "2026-10-19T07:44:53Z",
+    "id": "gh_5938034609",
+    "title": "Allow configurable local sidecar names and ports for concurrent runs",
+    "url": "https://github.com/WeighInNG/WeighIn/issues/217",
+    "repo": "WeighInNG/WeighIn",
+    "created_at": "2026-10-20T07:53:42Z",
     "comments": 2,
     "labels": [
-      "Stellar Wave",
-      "api",
-      "contracts",
-      "area:stellar",
-      "priority:medium",
-      "type:feature"
+      "Stellar Wave"
     ],
     "platform": "Algora / GitHub PRs",
     "free_tier": true,
     "payment_verified": true,
-    "body_snippet": "**Complexity:** Medium (≈ 250–350 LOC incl. tests)  ### Problem  `deposit_funds` on-chain transfers the escrow token from the client to the contract ([`lib.rs#L257-L263`](https://github.com/Talenttrust/Talenttrust-Contracts/blob/402c6b2ed37db4ba4c799"
+    "body_snippet": "## Problem  The helper script hardcodes one name and host port, preventing independent local proof runs from coexisting.  ## Current repository evidence  - [scripts/start-local-network.sh:1](https://github.com/WeighInNG/WeighIn/blob/f679238a096b49df0"
   },
   {
-    "id": "gh_5919908987",
-    "title": "[New Service] Grey Ridge Signals — x402 Data & Security APIs",
-    "url": "https://github.com/haoruilee/awesome-agent-native-services/issues/231",
-    "repo": "haoruilee/awesome-agent-native-services",
-    "created_at": "2026-10-19T07:44:34Z",
+    "id": "gh_5938561116",
+    "title": "[BUG]: Wallet dashboard misreads GMX perpetual sizeInUsd by 10^12",
+    "url": "https://github.com/EmberAGI/arbitrum-vibekit/issues/683",
+    "repo": "EmberAGI/arbitrum-vibekit",
+    "created_at": "2026-10-20T08:33:15Z",
     "comments": 0,
     "labels": [],
     "platform": "Algora / GitHub PRs",
     "free_tier": true,
     "payment_verified": true,
-    "body_snippet": "### Service name Grey Ridge Signals — x402 Data & Security APIs  ### Official website https://x402-data-api.sigrunner.workers.dev/  ### Official repository https://github.com/rezearcher/x402-data-api  ### Official tagline \"Agent-native, pay-per-call "
+    "body_snippet": "Thanks for taking the time to report a bug! Please search existing issues first to avoid duplicates.  ## 🐛 Bug Description  The web wallet reads the perpetuals `sizeInUsd` field with an 18-decimal fixed-point scale, but `onchain-actions` produces tha"
   },
   {
-    "id": "gh_5919903383",
-    "title": "Token registry: supported assets with SAC ids, decimals and formatted amounts",
-    "url": "https://github.com/Talenttrust/Talenttrust-Backend/issues/1593",
-    "repo": "Talenttrust/Talenttrust-Backend",
-    "created_at": "2026-10-19T07:44:06Z",
-    "comments": 1,
+    "id": "gh_5938522940",
+    "title": "Submit: 402post",
+    "url": "https://github.com/vaibhav4046/mcp-marketplace/issues/8",
+    "repo": "vaibhav4046/mcp-marketplace",
+    "created_at": "2026-10-20T08:30:20Z",
+    "comments": 0,
+    "labels": [],
+    "platform": "Algora / GitHub PRs",
+    "free_tier": true,
+    "payment_verified": true,
+    "body_snippet": "**Name:** 402post **Slug (lowercase-dash-case):** 402post **One-line tagline:** Paid classified listings for AI agents, paid per request with x402. **Repository URL:** none, closed source (hosted remote server). Homepage: https://402post.com **Author"
+  },
+  {
+    "id": "gh_5938518451",
+    "title": "Submit: 402cron",
+    "url": "https://github.com/vaibhav4046/mcp-marketplace/issues/7",
+    "repo": "vaibhav4046/mcp-marketplace",
+    "created_at": "2026-10-20T08:29:58Z",
+    "comments": 0,
+    "labels": [],
+    "platform": "Algora / GitHub PRs",
+    "free_tier": true,
+    "payment_verified": true,
+    "body_snippet": "**Name:** 402cron **Slug (lowercase-dash-case):** 402cron **One-line tagline:** Paid cron for AI agents: signed webhook delivery, paid per run in USDC. **Repository URL:** none, closed source (hosted remote server). Homepage: https://402cron.com **Au"
+  },
+  {
+    "id": "gh_5938513348",
+    "title": "Submit: 402registry",
+    "url": "https://github.com/vaibhav4046/mcp-marketplace/issues/6",
+    "repo": "vaibhav4046/mcp-marketplace",
+    "created_at": "2026-10-20T08:29:34Z",
+    "comments": 0,
+    "labels": [],
+    "platform": "Algora / GitHub PRs",
+    "free_tier": true,
+    "payment_verified": true,
+    "body_snippet": "**Name:** 402registry **Slug (lowercase-dash-case):** 402registry **One-line tagline:** Checks whether AI crawlers can see your website. Pay per check, no account. **Repository URL:** none, closed source (hosted remote server). Homepage: https://402r"
+  },
+  {
+    "id": "gh_5938502254",
+    "title": "Submit: AISkills402",
+    "url": "https://github.com/vaibhav4046/mcp-marketplace/issues/5",
+    "repo": "vaibhav4046/mcp-marketplace",
+    "created_at": "2026-10-20T08:28:42Z",
+    "comments": 0,
+    "labels": [],
+    "platform": "Algora / GitHub PRs",
+    "free_tier": true,
+    "payment_verified": true,
+    "body_snippet": "**Name:** AISkills402 **Slug (lowercase-dash-case):** aiskills402 **One-line tagline:** Tested AI agent skill files, bought by agents over x402 for cents. **Repository URL:** none, closed source (hosted remote server). Homepage: https://aiskills402.c"
+  },
+  {
+    "id": "gh_5938225936",
+    "title": "Optional pre-admission scan for third-party MCP servers (free preview)",
+    "url": "https://github.com/calbebop/batesian/issues/545",
+    "repo": "calbebop/batesian",
+    "created_at": "2026-10-20T08:07:51Z",
+    "comments": 0,
+    "labels": [],
+    "platform": "Algora / GitHub PRs",
+    "free_tier": true,
+    "payment_verified": true,
+    "body_snippet": "Hi — maintainers of an MCP gateway/platform often need a pre-admission check on third-party MCP servers (tool poisoning, hidden instructions, hidden unicode in tool descriptions). We run a static scanner for exactly that, with a free no-wallet previe"
+  },
+  {
+    "id": "gh_5938225611",
+    "title": "Optional pre-admission scan for third-party MCP servers (free preview)",
+    "url": "https://github.com/basitalisandhu/mcp-egress/issues/19",
+    "repo": "basitalisandhu/mcp-egress",
+    "created_at": "2026-10-20T08:07:50Z",
+    "comments": 0,
+    "labels": [],
+    "platform": "Algora / GitHub PRs",
+    "free_tier": true,
+    "payment_verified": true,
+    "body_snippet": "Hi — maintainers of an MCP gateway/platform often need a pre-admission check on third-party MCP servers (tool poisoning, hidden instructions, hidden unicode in tool descriptions). We run a static scanner for exactly that, with a free no-wallet previe"
+  },
+  {
+    "id": "gh_5938225336",
+    "title": "Optional pre-admission scan for third-party MCP servers (free preview)",
+    "url": "https://github.com/cdf-eagles/mcp-allowlist-proxy/issues/2",
+    "repo": "cdf-eagles/mcp-allowlist-proxy",
+    "created_at": "2026-10-20T08:07:49Z",
+    "comments": 0,
+    "labels": [],
+    "platform": "Algora / GitHub PRs",
+    "free_tier": true,
+    "payment_verified": true,
+    "body_snippet": "Hi — maintainers of an MCP gateway/platform often need a pre-admission check on third-party MCP servers (tool poisoning, hidden instructions, hidden unicode in tool descriptions). We run a static scanner for exactly that, with a free no-wallet previe"
+  },
+  {
+    "id": "gh_5938225062",
+    "title": "Optional pre-admission scan for third-party MCP servers (free preview)",
+    "url": "https://github.com/TheNovaNodes/mcp-router/issues/22",
+    "repo": "TheNovaNodes/mcp-router",
+    "created_at": "2026-10-20T08:07:47Z",
+    "comments": 0,
+    "labels": [],
+    "platform": "Algora / GitHub PRs",
+    "free_tier": true,
+    "payment_verified": true,
+    "body_snippet": "Hi — maintainers of an MCP gateway/platform often need a pre-admission check on third-party MCP servers (tool poisoning, hidden instructions, hidden unicode in tool descriptions). We run a static scanner for exactly that, with a free no-wallet previe"
+  },
+  {
+    "id": "gh_5937830644",
+    "title": "[Season 5 Bounty HM-S5-06] Formal Lean 4 Proofs (Theorems 41-46) for TIES Consensus, Guild Synergy & Bisection (+2,500 $HIVE)",
+    "url": "https://github.com/xaviercallens/HiveMind/issues/48",
+    "repo": "xaviercallens/HiveMind",
+    "created_at": "2026-10-20T07:37:19Z",
+    "comments": 0,
     "labels": [
-      "Stellar Wave",
-      "api",
-      "area:stellar",
-      "priority:medium",
-      "stack:typescript",
-      "type:feature"
+      "enhancement",
+      "help wanted"
     ],
     "platform": "Algora / GitHub PRs",
     "free_tier": true,
     "payment_verified": true,
-    "body_snippet": "**Complexity:** Medium (≈ 250–350 LOC incl. tests)  ### Problem  `token` is an arbitrary free-text string defaulting to `'XLM'` ([`src/store.ts#L125`](https://github.com/Talenttrust/Talenttrust-Backend/blob/2e0a05616d248520b812f9c591d98672ad0a4374/sr"
+    "body_snippet": "## 📐 Season 5 / Wave 4 Bounty `HM-S5-06` — Track 6: Machine-Checked Lean 4 Proofs (`Theorems 41–46`)  - **Bounty Reward:** **`+2,500 $HIVE` + `5,000 PTS`** (`HF_OPEN_SOURCE_ARCHITECT` Badge) - **Target Modules:** `lean4/HiveMindSpec.lean`, `paper/aut"
   },
   {
-    "id": "gh_5919774052",
-    "title": "[P1] hy-check: HYB-E6002 misses const identifier overflows in assignments, float-constant expressions/identifiers assigned to integer types, and block-scoped local const initializers",
-    "url": "https://github.com/limitlessprojects/Go-Hybrid/issues/817",
-    "repo": "limitlessprojects/Go-Hybrid",
-    "created_at": "2026-10-19T07:33:18Z",
+    "id": "gh_5937830494",
+    "title": "[Season 5 Bounty HM-S5-05] Multi-Host WAN QUIC 0-RTT & RFC 5766 TURN Fault-Injection Benchmark (+2,000 $HIVE)",
+    "url": "https://github.com/xaviercallens/HiveMind/issues/47",
+    "repo": "xaviercallens/HiveMind",
+    "created_at": "2026-10-20T07:37:18Z",
     "comments": 0,
-    "labels": [],
-    "platform": "Algora / GitHub PRs",
-    "free_tier": true,
-    "payment_verified": true,
-    "body_snippet": "## Summary  `hy-check` (`compiler/crates/hy-check/src/const_overflow.rs`) enforces `HYB-E6002` (constant initializer / assignment overflow and float-to-integer truncation, issues `#148`, `#201-B`, `#300`, `#683`) so that accepted Hybrid programs do n"
-  },
-  {
-    "id": "gh_5919498237",
-    "title": "[P1] hy-emit: parallel declarations, identifier copies/moves, parenthesized make/struct literals, new(T), and type aliases drop BindingKind and struct/foreign receiver hints",
-    "url": "https://github.com/limitlessprojects/Go-Hybrid/issues/814",
-    "repo": "limitlessprojects/Go-Hybrid",
-    "created_at": "2026-10-19T07:10:37Z",
-    "comments": 0,
-    "labels": [],
-    "platform": "Algora / GitHub PRs",
-    "free_tier": true,
-    "payment_verified": true,
-    "body_snippet": "## Summary  **Severity:** P1 — accepted Hybrid programs (`hyb check` exits `0` with `0 diagnostics`) emit invalid Go that fails `go build` whenever `BindingKind` (`Chan`, `Set`, `Bytes`, `Foreign`, `ForeignTy`) or struct/foreign receiver typing (`var"
-  },
-  {
-    "id": "gh_5919398217",
-    "title": "[P1] hy-emit: SPEC X4 constant-conversion folding misses nested conversions, const identifiers, and type-alias/word targets, and Call emission drops parenthesized conversion/set callees",
-    "url": "https://github.com/limitlessprojects/Go-Hybrid/issues/808",
-    "repo": "limitlessprojects/Go-Hybrid",
-    "created_at": "2026-10-19T07:03:07Z",
-    "comments": 0,
-    "labels": [],
-    "platform": "Algora / GitHub PRs",
-    "free_tier": true,
-    "payment_verified": true,
-    "body_snippet": "## Summary  **Severity:** P1 — accepted Hybrid programs (`hyb check` exits `0` with `0 diagnostics`) emit invalid Go that fails `go build` across four closely related `hy-emit` conversion paths:  1. **Nested fixed-width & platform-word integer conver"
-  },
-  {
-    "id": "gh_5919189813",
-    "title": "haven_settle_mcp_tool says settled:true when an EIP-3009 merchant's paid tool call errors — funds stranded on the delegate, nextAction none",
-    "url": "https://github.com/d-hinders/Haven-AI/issues/4062",
-    "repo": "d-hinders/Haven-AI",
-    "created_at": "2026-10-19T06:46:07Z",
-    "comments": 2,
     "labels": [
-      "bug",
-      "money-path",
-      "area:sdk",
-      "area:mcp",
-      "area:docs"
+      "enhancement",
+      "help wanted"
     ],
     "platform": "Algora / GitHub PRs",
     "free_tier": true,
     "payment_verified": true,
-    "body_snippet": "Found in a live mainnet purchase run (2026-10-19, prod agent `1c92bc52`, hosted MCP `0.10.0-alpha.0`). The same code is on `origin/dev` @ `6a20b3aa`.  ## What happens  `haven_settle_mcp_tool` on the EIP-3009 (funding-leg) shape returned `settled: tru"
+    "body_snippet": "## 📡 Season 5 / Wave 4 Bounty `HM-S5-05` — Track 5: Multi-Host WAN QUIC 0-RTT & TURN Fault-Injection Suite  - **Bounty Reward:** **`+2,000 $HIVE` + `4,000 PTS`** - **Target Modules:** `src/hivemind/swarm/quic_link.py`, `src/hivemind/swarm/nat_travers"
   },
   {
-    "id": "gh_5917632046",
-    "title": "[BOUNTY #3] High-Throughput MoE KV-Cache Compression Benchmark",
-    "url": "https://github.com/patrickkellyyoung-ai/swarm-agora-mcp/issues/4",
-    "repo": "patrickkellyyoung-ai/swarm-agora-mcp",
-    "created_at": "2026-10-19T04:11:43Z",
+    "id": "gh_5937830337",
+    "title": "[Season 5 Bounty HM-S5-04] Guild Wars Co-Op Tournament, Missions 17-20 & 3D WebGL Raid Arcs (+2,500 $HIVE)",
+    "url": "https://github.com/xaviercallens/HiveMind/issues/46",
+    "repo": "xaviercallens/HiveMind",
+    "created_at": "2026-10-20T07:37:17Z",
+    "comments": 0,
+    "labels": [
+      "enhancement",
+      "help wanted"
+    ],
+    "platform": "Algora / GitHub PRs",
+    "free_tier": true,
+    "payment_verified": true,
+    "body_snippet": "## 🎮 Season 5 / Wave 4 Bounty `HM-S5-04` — Track 4: Guild Wars Tournament, Missions 17–20 & WebGL Raid Arcs  - **Bounty Reward:** **`+2,500 $HIVE` + `5,000 PTS`** (`HF_COOP_RAID_COMMANDER` Badge) - **Target Modules:** `src/hivemind/game/hf_hack_miner"
+  },
+  {
+    "id": "gh_5937830051",
+    "title": "[Season 5 Bounty HM-S5-02] 64-Expert Hierarchical Sparse MoE & FP8 Paged KV-Cache in <2.2 GB VRAM (+3,000 $HIVE)",
+    "url": "https://github.com/xaviercallens/HiveMind/issues/44",
+    "repo": "xaviercallens/HiveMind",
+    "created_at": "2026-10-20T07:37:16Z",
+    "comments": 0,
+    "labels": [
+      "enhancement",
+      "help wanted"
+    ],
+    "platform": "Algora / GitHub PRs",
+    "free_tier": true,
+    "payment_verified": true,
+    "body_snippet": "## 🧠 Season 5 / Wave 4 Bounty `HM-S5-02` — Track 2: 64-Expert Hierarchical MoE & FP8 KV-Paging  - **Bounty Reward:** **`+3,000 $HIVE` + `6,000 PTS`** (`HF_OPEN_SOURCE_ARCHITECT` Badge) - **Target Modules:** `src/hivemind/core/btm_moe.py`, `src/hivemi"
+  },
+  {
+    "id": "gh_5937830192",
+    "title": "[Season 5 Bounty HM-S5-03] O(log L) Interactive Bisection Fraud Game v3 & L2 Bond Slashing (+2,500 $HIVE)",
+    "url": "https://github.com/xaviercallens/HiveMind/issues/45",
+    "repo": "xaviercallens/HiveMind",
+    "created_at": "2026-10-20T07:37:16Z",
+    "comments": 0,
+    "labels": [
+      "enhancement",
+      "help wanted"
+    ],
+    "platform": "Algora / GitHub PRs",
+    "free_tier": true,
+    "payment_verified": true,
+    "body_snippet": "## 🛡️ Season 5 / Wave 4 Bounty `HM-S5-03` — Track 3: Interactive Bisection Fraud Game v3  - **Bounty Reward:** **`+2,500 $HIVE` + `5,000 PTS`** (`HF_SCIENTIFIC_VALIDATOR` Badge) - **Target Modules:** `src/hivemind/boinc/validator.py`, `src/hivemind/s"
+  },
+  {
+    "id": "gh_5937829906",
+    "title": "[Season 5 Bounty HM-S5-01] Live Hugging Face Hub Push/Pull Sync & Multi-Peer CAS Chunk Seeding (+2,500 $HIVE)",
+    "url": "https://github.com/xaviercallens/HiveMind/issues/43",
+    "repo": "xaviercallens/HiveMind",
+    "created_at": "2026-10-20T07:37:15Z",
+    "comments": 0,
+    "labels": [
+      "enhancement",
+      "help wanted"
+    ],
+    "platform": "Algora / GitHub PRs",
+    "free_tier": true,
+    "payment_verified": true,
+    "body_snippet": "## 🌐 Season 5 / Wave 4 Bounty `HM-S5-01` — Track 1: Live HF Hub Sync & Multi-Peer Seeding  - **Bounty Reward:** **`+2,500 $HIVE` + `5,000 PTS`** (`HF_SWARM_KNOWLEDGE_DONOR` Badge) - **Target Modules:** `src/hivemind/swarm/hf_community_hub.py`, `src/h"
+  },
+  {
+    "id": "gh_5933207768",
+    "title": "Good first issue: independently reproduce the newcomer quickstart",
+    "url": "https://github.com/nymrel/nymrel-swarm-studio/issues/35",
+    "repo": "nymrel/nymrel-swarm-studio",
+    "created_at": "2026-10-19T23:30:11Z",
+    "comments": 0,
+    "labels": [
+      "good first issue",
+      "help wanted"
+    ],
+    "platform": "Algora / GitHub PRs",
+    "free_tier": true,
+    "payment_verified": true,
+    "body_snippet": "## User outcome A developer outside the maintainer environment should be able to clone, install, validate and open the reference interface without accounts, private services or unstated setup.  ## Bounded contribution Use a fresh clone on your own su"
+  },
+  {
+    "id": "gh_5933204716",
+    "title": "Good first issue: cover income-score minimum and invalid numeric boundaries",
+    "url": "https://github.com/nymrel/nymrel-swarm-studio/issues/34",
+    "repo": "nymrel/nymrel-swarm-studio",
+    "created_at": "2026-10-19T23:29:52Z",
+    "comments": 0,
+    "labels": [
+      "good first issue",
+      "help wanted"
+    ],
+    "platform": "Algora / GitHub PRs",
+    "free_tier": true,
+    "payment_verified": true,
+    "body_snippet": "## User outcome Make the existing illustrative scoring function easier to maintain without accidentally accepting malformed values or changing the documented 12–60 range.  Refs #21. This is a small test contribution, not completion of the broader Inc"
+  },
+  {
+    "id": "gh_5933202234",
+    "title": "Good first issue: trim integrity-log searches and test real filtering behavior",
+    "url": "https://github.com/nymrel/nymrel-swarm-studio/issues/33",
+    "repo": "nymrel/nymrel-swarm-studio",
+    "created_at": "2026-10-19T23:29:36Z",
+    "comments": 0,
+    "labels": [
+      "good first issue",
+      "help wanted"
+    ],
+    "platform": "Algora / GitHub PRs",
+    "free_tier": true,
+    "payment_verified": true,
+    "body_snippet": "## User outcome Searching for ` example ` should return the same synthetic integrity records as `example`. Leading or trailing spaces should not silently hide valid results.  ## Observed source At main `d32b57699c2433f1a8201274a58d5c8c86735515`, `src"
+  },
+  {
+    "id": "gh_5874537137",
+    "title": "[Bounty] [Bounty: $105] Preserve burnTxHash when Stellar confirmation polling hits transi",
+    "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/1915",
+    "repo": "zhangjiayang6835-cyber/bounty-plaza",
+    "created_at": "2026-10-15T21:54:24Z",
+    "comments": 9,
+    "labels": [
+      "bounty",
+      "real"
+    ],
+    "platform": "Algora / GitHub PRs",
+    "free_tier": true,
+    "payment_verified": true,
+    "body_snippet": "### 赏金平台 / Platform GitHub  ### 原始链接 / Source URL https://github.com/Parabola-org/parabola/issues/1  ### 漏洞描述 / Description [Bounty: $105] Preserve burnTxHash when Stellar confirmation polling hits transient RPC errors  **Context** `pollTransactionSt"
+  },
+  {
+    "id": "gh_5874536863",
+    "title": "[Bounty] [Bounty: $105] checkStellarRecipientReady must not report RPC outages as missing",
+    "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/1912",
+    "repo": "zhangjiayang6835-cyber/bounty-plaza",
+    "created_at": "2026-10-15T21:54:22Z",
+    "comments": 5,
+    "labels": [
+      "bounty",
+      "real"
+    ],
+    "platform": "Algora / GitHub PRs",
+    "free_tier": true,
+    "payment_verified": true,
+    "body_snippet": "### 赏金平台 / Platform GitHub  ### 原始链接 / Source URL https://github.com/Parabola-org/parabola/issues/4  ### 漏洞描述 / Description [Bounty: $105] checkStellarRecipientReady must not report RPC outages as missing accounts  **Context** `checkStellarRecipientR"
+  },
+  {
+    "id": "gh_5165578898",
+    "title": "Etapa 5: flujo de propuesta y moderacion de mapas de usuario",
+    "url": "https://github.com/Bitcoindefi/OpenAO/issues/25",
+    "repo": "Bitcoindefi/OpenAO",
+    "created_at": "2026-08-16T17:49:36Z",
+    "comments": 16,
+    "labels": [
+      "enhancement",
+      "modo-construccion",
+      "bounty",
+      "grantfox",
+      "reward-100-usd",
+      "etapa-5-comunidad",
+      "Maybe Rewarded",
+      "GrantFox OSS",
+      "Third Campaign"
+    ],
+    "platform": "Algora / GitHub PRs",
+    "free_tier": true,
+    "payment_verified": true,
+    "body_snippet": "Parte de #2 (modo construcción). Depende del espacio de mapas de usuario.  ## El problema  Contenido subido por cualquiera necesita revisión antes de ser parte del mundo. Sin esto, el primer mapa con contenido ofensivo o con gráficos plagiados es un "
+  },
+  {
+    "id": "gh_5097319878",
+    "title": "[FEAT] Implement CSV export functionality for historical pool TVL data",
+    "url": "https://github.com/bodycount0/soroban-defi-analytics/issues/4",
+    "repo": "bodycount0/soroban-defi-analytics",
+    "created_at": "2026-08-08T11:36:45Z",
     "comments": 3,
     "labels": [
+      "enhancement",
       "help wanted",
-      "good first issue",
-      "bounty",
-      "bot-task"
+      "frontend",
+      "bounty"
     ],
     "platform": "Algora / GitHub PRs",
     "free_tier": true,
     "payment_verified": true,
-    "body_snippet": "### 🤖 Autonomous Model Architecture Bounty  **Reward:** 2 Swarm Query Credits   **Category:** Inference Acceleration   **Host:** WhisperAI Studio Swarm Agora  #### Objective: Evaluate 4-bit vs 8-bit KV unified cache degradation across 36-layer Qwen2M"
+    "body_snippet": "## Overview  Users want to download 30-day TVL and volume data as a CSV file.  ## Bounty  Comment tagging @bodycount0 before starting to claim the bounty.  ## Acceptance criteria  - [ ] Export CSV button alongside VolumeChart - [ ] Client-side downlo"
   },
   {
-    "id": "gh_5917631627",
-    "title": "[BOUNTY #2] Automated CVE & Threat Surface Detection on Windows Kernel Drivers",
-    "url": "https://github.com/patrickkellyyoung-ai/swarm-agora-mcp/issues/3",
-    "repo": "patrickkellyyoung-ai/swarm-agora-mcp",
-    "created_at": "2026-10-19T04:11:40Z",
+    "id": "gh_5097087729",
+    "title": "[FEAT] Implement on-chain subscription analytics and event history viewer",
+    "url": "https://github.com/AbleeGod/stellar-drips-protocol/issues/4",
+    "repo": "AbleeGod/stellar-drips-protocol",
+    "created_at": "2026-08-08T10:26:10Z",
+    "comments": 8,
+    "labels": [
+      "enhancement",
+      "help wanted",
+      "frontend",
+      "bounty"
+    ],
+    "platform": "Algora / GitHub PRs",
+    "free_tier": true,
+    "payment_verified": true,
+    "body_snippet": "## Overview  The Soroban subscription contract emits events for every lifecycle action (created, renewed, cancelled, expired) via `src/events.rs`. Currently no frontend surface exposes this data. This issue tracks building an event history viewer so "
+  },
+  {
+    "id": "gh_5097079100",
+    "title": "[FEAT] Implement CSV export functionality for historical pool TVL data",
+    "url": "https://github.com/AbleeGod/soroban-defi-analytics/issues/4",
+    "repo": "AbleeGod/soroban-defi-analytics",
+    "created_at": "2026-08-08T10:23:21Z",
+    "comments": 4,
+    "labels": [
+      "enhancement",
+      "help wanted",
+      "frontend",
+      "bounty"
+    ],
+    "platform": "Algora / GitHub PRs",
+    "free_tier": true,
+    "payment_verified": true,
+    "body_snippet": "## Overview  Users want to download the 30-day historical TVL and volume data shown in `<VolumeChart />` as a **CSV file** for offline analysis.  ## 💰 Bounty  Comment tagging `@AbleeGod` before starting work to claim the bounty.  ## Acceptance criter"
+  },
+  {
+    "id": "gh_5096964121",
+    "title": "[Bounty] [FEAT] Add wallet integration support for Freighter and Stellar Kit",
+    "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/807",
+    "repo": "zhangjiayang6835-cyber/bounty-plaza",
+    "created_at": "2026-08-08T09:46:21Z",
+    "comments": 4,
+    "labels": [
+      "bounty",
+      "real"
+    ],
+    "platform": "Algora / GitHub PRs",
+    "free_tier": true,
+    "payment_verified": true,
+    "body_snippet": "### 赏金平台 / Platform GitHub  ### 原始链接 / Source URL https://github.com/chukwuebukachineche/soroban-lite-sdk/issues/4  ### 漏洞描述 / Description [FEAT] Add wallet integration support for Freighter and Stellar Kit  ## Overview  `SorobanClient` handles simul"
+  },
+  {
+    "id": "gh_5096778319",
+    "title": "[FEAT] Implement CSV export functionality for historical pool TVL data",
+    "url": "https://github.com/Bigg770/soroban-defi-analytics/issues/4",
+    "repo": "Bigg770/soroban-defi-analytics",
+    "created_at": "2026-08-08T08:48:25Z",
+    "comments": 11,
+    "labels": [
+      "enhancement",
+      "help wanted",
+      "bounty",
+      "frontend"
+    ],
+    "platform": "Algora / GitHub PRs",
+    "free_tier": true,
+    "payment_verified": true,
+    "body_snippet": "## Overview  Users want to download the 30-day historical TVL and volume data shown in `<VolumeChart />` as a **CSV file** for offline analysis in spreadsheets or Python/pandas.  ## 💰 Bounty  This issue carries a **community bounty**. Comment tagging"
+  },
+  {
+    "id": "gh_4873404804",
+    "title": "[zhangjiayang6835-cyber/bounty-plaza] [Bounty] [NSPG13/agent-bounties] [1 USDC autonomous bounty] ",
+    "url": "https://github.com/Vikingr2023/awesome-agent-bounties/issues/324",
+    "repo": "Vikingr2023/awesome-agent-bounties",
+    "created_at": "2026-07-13T12:00:18Z",
     "comments": 3,
     "labels": [
-      "help wanted",
-      "good first issue",
+      "bounty-hunter",
+      "external-mirror",
       "bounty",
-      "bot-task"
+      "real"
     ],
     "platform": "Algora / GitHub PRs",
     "free_tier": true,
     "payment_verified": true,
-    "body_snippet": "### 🤖 Autonomous Security Agent Bounty  **Reward:** 3 Swarm Query Credits   **Category:** Systems Hardening / Security   **Host:** WhisperAI Studio Swarm Agora  #### Objective: Submit an autonomous diagnostic script or pattern scanner that identifies"
+    "body_snippet": "## 外部 Bounty 任务镜像  | 字段 | 值 | |---|---| | 源仓库 | zhangjiayang6835-cyber/bounty-plaza | | 原 issue | #492 | | 作者 | zhangjiayang6835-cyber | | 创建时间 | 2026-07-13T10:41:49 | | 标签 | bounty,real | | 评论 | 3 条 | | 赏金 | 1 USD | | 原 URL | https://github.com/zhan"
   },
   {
-    "id": "gh_5916992936",
-    "title": "[BOUNTY #1] MoE Routing Gate Normalization across High-Dimensional Token Projections",
-    "url": "https://github.com/patrickkellyyoung-ai/swarm-agora-mcp/issues/1",
-    "repo": "patrickkellyyoung-ai/swarm-agora-mcp",
-    "created_at": "2026-10-19T02:57:25Z",
-    "comments": 1,
+    "id": "gh_4873404530",
+    "title": "[zhangjiayang6835-cyber/bounty-plaza] [Bounty] [NSPG13/agent-bounties] [1 USDC autonomous bounty] ",
+    "url": "https://github.com/Vikingr2023/awesome-agent-bounties/issues/323",
+    "repo": "Vikingr2023/awesome-agent-bounties",
+    "created_at": "2026-07-13T12:00:16Z",
+    "comments": 3,
     "labels": [
-      "help wanted",
-      "good first issue",
+      "bounty-hunter",
+      "external-mirror",
       "bounty",
-      "bot-task"
+      "real"
     ],
     "platform": "Algora / GitHub PRs",
     "free_tier": true,
     "payment_verified": true,
-    "body_snippet": "### 🤖 Autonomous Agent Bounty  **Reward:** 2 Swarm Query Credits   **Category:** Model Architecture / Tensor Mathematics   **Host:** WhisperAI Studio Swarm Agora Council  #### Problem Statement: Analyze and verify unit-norm cheap_embed positive promp"
-  },
-  {
-    "id": "gh_5912120515",
-    "title": "[Swarm Fabric M3] HM-M3-01: Custom Triton float8_e4m3fn Quantization Kernel & Dynamic Eagle/Medusa Tree Mask gamma=6..8 (3,000  Bounty)",
-    "url": "https://github.com/xaviercallens/HiveMind/issues/3",
-    "repo": "xaviercallens/HiveMind",
-    "created_at": "2026-10-18T17:21:48Z",
-    "comments": 0,
-    "labels": [
-      "enhancement",
-      "help wanted"
-    ],
-    "platform": "Algora / GitHub PRs",
-    "free_tier": true,
-    "payment_verified": true,
-    "body_snippet": "See full specification in docs/CONTRIBUTOR_TASKS_AND_BOUNTIES.md (#HM-M3-01) and Lean 4 theorem speculative_tree_gamma6_rtt_reduction. Target branch prefix: \feat/m3-triton-fp8-tree."
-  },
-  {
-    "id": "gh_5912120291",
-    "title": "[Swarm Fabric M2] HM-M2-01: Double-Buffered CUDA Stream Lookahead Prefetcher for 3-Tier Pinned RAM DMA (3,000  Bounty)",
-    "url": "https://github.com/xaviercallens/HiveMind/issues/2",
-    "repo": "xaviercallens/HiveMind",
-    "created_at": "2026-10-18T17:21:47Z",
-    "comments": 0,
-    "labels": [
-      "enhancement",
-      "help wanted"
-    ],
-    "platform": "Algora / GitHub PRs",
-    "free_tier": true,
-    "payment_verified": true,
-    "body_snippet": "See full specification in docs/CONTRIBUTOR_TASKS_AND_BOUNTIES.md (#HM-M2-01) and Lean 4 theorem dma_double_buffer_zero_exposed_stall in lean4/HiveMindSpec.lean. Target branch prefix: \feat/m2-double-buffer-dma."
-  },
-  {
-    "id": "gh_5912120083",
-    "title": "[Swarm Fabric M1] HM-M1-01: Native aioquic HTTP/3 0-RTT & Libp2p WebSocket NAT Hole-Punching (2,500  Bounty)",
-    "url": "https://github.com/xaviercallens/HiveMind/issues/1",
-    "repo": "xaviercallens/HiveMind",
-    "created_at": "2026-10-18T17:21:45Z",
-    "comments": 0,
-    "labels": [
-      "enhancement",
-      "help wanted"
-    ],
-    "platform": "Algora / GitHub PRs",
-    "free_tier": true,
-    "payment_verified": true,
-    "body_snippet": "See full specification in docs/CONTRIBUTOR_TASKS_AND_BOUNTIES.md (#HM-M1-01). Target branch prefix: \feat/m1-quic-nat-traversal. Must preserve <20ms Regional Geo-Ring admission and pass pytest -v."
-  },
-  {
-    "id": "gh_5905706534",
-    "title": "Wanted: security researchers to try to break MonkeyITM",
-    "url": "https://github.com/o87enterprises-ai/MonkeyITM/issues/1",
-    "repo": "o87enterprises-ai/MonkeyITM",
-    "created_at": "2026-10-18T03:19:33Z",
-    "comments": 0,
-    "labels": [
-      "help wanted",
-      "security"
-    ],
-    "platform": "Algora / GitHub PRs",
-    "free_tier": true,
-    "payment_verified": true,
-    "body_snippet": "## Wanted: security researchers to try to break MonkeyITM  MonkeyITM puts a broker between an AI agent and everything it can touch. The agent holds no network, files or keys; every action is a request that the broker decides, performs itself, and rec"
-  },
-  {
-    "id": "gh_5903682535",
-    "title": "Security: Summarize published bug bounty and vulnerability disclosure programs",
-    "url": "https://github.com/Drago-Labs/golden-raccoon/issues/368",
-    "repo": "Drago-Labs/golden-raccoon",
-    "created_at": "2026-10-17T22:19:12Z",
-    "comments": 1,
-    "labels": [
-      "enhancement",
-      "help wanted",
-      "Stellar Wave",
-      "priority: p1",
-      "wave: pending 400",
-      "area: security",
-      "area: data"
-    ],
-    "platform": "Algora / GitHub PRs",
-    "free_tier": true,
-    "payment_verified": true,
-    "body_snippet": "**Contributor note:** Wait for maintainer assignment before starting. Follow [CONTRIBUTING.md](https://github.com/Drago-Labs/golden-raccoon/blob/main/CONTRIBUTING.md). Include reproducible verification evidence in the pull request.  ## Summary  Add a"
-  },
-  {
-    "id": "gh_5902318699",
-    "title": "Add missing incident-response-templates tree referenced by INCIDENT_RESPONSE.md",
-    "url": "https://github.com/OpenLedger-Foundation/Kora-Contract/issues/1028",
-    "repo": "OpenLedger-Foundation/Kora-Contract",
-    "created_at": "2026-10-17T19:36:15Z",
-    "comments": 0,
-    "labels": [
-      "documentation",
-      "help wanted",
-      "points: 200",
-      "complexity: high",
-      "wave",
-      "dx"
-    ],
-    "platform": "Algora / GitHub PRs",
-    "free_tier": true,
-    "payment_verified": true,
-    "body_snippet": "complexity: high points: 200 labels:   - documentation   - dx   - help wanted   - complexity: high   - points: 200   - wave repo: Kora-Contract category: Documentation ---  ## Description  Section 7 of `docs/INCIDENT_RESPONSE.md` points to `docs/inci"
-  },
-  {
-    "id": "gh_5902318320",
-    "title": "Add non-interactive bug bounty triage tooling CI smoke",
-    "url": "https://github.com/OpenLedger-Foundation/Kora-Contract/issues/1027",
-    "repo": "OpenLedger-Foundation/Kora-Contract",
-    "created_at": "2026-10-17T19:36:13Z",
-    "comments": 1,
-    "labels": [
-      "help wanted",
-      "points: 200",
-      "complexity: high",
-      "wave",
-      "testing",
-      "security"
-    ],
-    "platform": "Algora / GitHub PRs",
-    "free_tier": true,
-    "payment_verified": true,
-    "body_snippet": "complexity: high points: 200 labels:   - testing   - security   - help wanted   - complexity: high   - points: 200   - wave repo: Kora-Contract category: DevOps ---  ## Description  `scripts/triage_vulnerability.py` manages GPG-encrypted bounty repor"
+    "body_snippet": "## 外部 Bounty 任务镜像  | 字段 | 值 | |---|---| | 源仓库 | zhangjiayang6835-cyber/bounty-plaza | | 原 issue | #491 | | 作者 | zhangjiayang6835-cyber | | 创建时间 | 2026-07-13T10:41:49 | | 标签 | bounty,real | | 评论 | 3 条 | | 赏金 | 1 USD | | 原 URL | https://github.com/zhan"
   }
 ]
