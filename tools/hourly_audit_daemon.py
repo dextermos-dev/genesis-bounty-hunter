@@ -15,13 +15,18 @@ import json
 import urllib.request
 import urllib.error
 from datetime import datetime
-from dotenv import load_dotenv
 
 PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 if PROJECT_ROOT not in sys.path:
     sys.path.insert(0, PROJECT_ROOT)
 
-load_dotenv()
+env_file = os.path.join(PROJECT_ROOT, ".env")
+if os.path.exists(env_file):
+    with open(env_file, "r") as f:
+        for line in f:
+            if line.strip() and not line.startswith("#") and "=" in line:
+                k, v = line.strip().split("=", 1)
+                os.environ[k] = v.strip('"').strip("'")
 
 from tools.live_monitor import run_monitoring_cycle, log_live_event
 from dashboard.data_builder import update_dashboard_data_file

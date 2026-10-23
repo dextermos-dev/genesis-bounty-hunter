@@ -58,6 +58,17 @@
           <span>Exportar</span>
         </button>
 
+        <!-- Dossier Sprint 2026 Direct Link -->
+        <a href="./reports/sprint_october_2026.html" target="_blank" class="nav-btn" style="text-decoration: none; background: rgba(99, 102, 241, 0.15); border-color: rgba(99, 102, 241, 0.4); color: #a5b4fc;" title="Ver Dossier Ejecutivo y Auditoría de Tesorería del Sprint">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+            <polyline points="14 2 14 8 20 8"></polyline>
+            <line x1="16" y1="13" x2="8" y2="13"></line>
+            <line x1="16" y1="17" x2="8" y2="17"></line>
+          </svg>
+          <span>Dossier Sprint 2026</span>
+        </a>
+
         <!-- Dynamic Time Text -->
         <span id="lastSyncText" style="font-size: 0.75rem; color: var(--text-dim); font-family: var(--font-mono);">
           Auditado BaseScan: En vivo
@@ -103,13 +114,16 @@
           </div>
         </div>
         <div class="stat-value" id="kpiAdjudicated" style="color: var(--accent-emerald);">
-          $1,485.00 <span class="currency">USDC</span>
+          $1,800.00 <span class="currency">USDC</span>
         </div>
         <div class="stat-footer">
-          <span class="stat-badge badge-emerald">
-            <span class="pulse-dot"></span> 9 PRS MERGED (100% WIN)
+          <span class="stat-badge badge-emerald" id="kpiAdjudicatedBadge">
+            <span class="pulse-dot"></span> 14 PRS MERGED (100% WIN)
           </span>
-          <span>1 MallonePay + 7 Parabola + 1 SlipPay</span>
+          <span id="kpiAdjudicatedBreakdown" style="font-size: 0.72rem; text-align: right; line-height: 1.3;">1 MallonePay + 7 Parabola + 5 SlipPay + 1 Chain-Love</span>
+          <a href="./reports/sprint_october_2026.html" target="_blank" style="width: 100%; margin-top: 4px; display: inline-flex; align-items: center; gap: 4px; font-size: 0.72rem; color: #34d399; text-decoration: none; font-weight: 600;" title="Ver tabla cronológica de las 14 PRs">
+            <span>Ver auditoría completa de las 14 PRs &rarr;</span>
+          </a>
         </div>
       </div>
 
@@ -127,11 +141,11 @@
           </div>
         </div>
         <div class="stat-value" id="kpiInReview">
-          $1,490.00 <span class="currency">USDC</span>
+          $8,700.00 <span class="currency">USDC</span>
         </div>
         <div class="stat-footer">
-          <span class="stat-badge badge-cyan">21 PRs ACTIVAS</span>
-          <span>18 Prism + 3 SlipPay</span>
+          <span class="stat-badge badge-cyan" id="kpiInReviewBadge">24 PRs ACTIVAS</span>
+          <span id="kpiInReviewBreakdown">1 OriginTrail + 18 Prism + 5 Direct PRs</span>
         </div>
       </div>
 
@@ -146,11 +160,11 @@
           </div>
         </div>
         <div class="stat-value" id="kpiSprintTotal">
-          $2,175.00 <span class="currency">USDC</span>
+          $10,500.00 <span class="currency">USDC</span>
         </div>
         <div class="stat-footer">
-          <span class="stat-badge badge-purple">29 PRs EN TOTAL</span>
-          <span>Monopolio Activo</span>
+          <span class="stat-badge badge-purple" id="kpiSprintTotalBadge">38 PRs EN TOTAL</span>
+          <span id="kpiSprintTotalBreakdown">Monopolio Activo (14 Merged + 24 En Revisión)</span>
         </div>
       </div>
 
@@ -167,10 +181,10 @@
           </div>
         </div>
         <div class="stat-value" id="kpiPipelineTotal">
-          $35,575.00 <span class="currency">USDC</span>
+          $44,009.44 <span class="currency">USDC</span>
         </div>
         <div class="stat-footer">
-          <span class="stat-badge badge-amber">164 OPORTUNIDADES</span>
+          <span class="stat-badge badge-amber" id="kpiPipelineTotalBadge">207 OPORTUNIDADES</span>
           <span>Grants & Escrow</span>
         </div>
       </div>
@@ -183,17 +197,17 @@
       <div class="chart-card">
         <div class="chart-header">
           <div class="chart-title-group">
-            <h3>
+            <h3 id="chartAdjudicatedTitle">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#00F5A0" stroke-width="2.5">
                 <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
                 <polyline points="17 6 23 6 23 12"></polyline>
               </svg>
-              Curva de Recompensas Adjudicadas ($1,485 USDC) vs Saldo en Wallet ($0.00)
+              Curva de Recompensas Adjudicadas ($1,800.00 USDC) vs Saldo en Wallet ($0.00)
             </h3>
-            <p>9 PRs fusionadas en GitHub pendientes de dispersión on-chain por los mantenedores hacia 0x8366...9f20</p>
+            <p id="chartAdjudicatedDesc">14 PRs fusionadas en GitHub pendientes de dispersión on-chain por los mantenedores hacia 0x8366...9f20</p>
           </div>
-          <span class="stat-badge badge-amber" style="font-family: var(--font-mono); font-size: 0.85rem;">
-            Adjudicado: $1,485.00 · En Wallet: $0.00
+          <span class="stat-badge badge-amber" id="chartAdjudicatedBadge" style="font-family: var(--font-mono); font-size: 0.85rem;">
+            Adjudicado: $1,800.00 · En Wallet: $0.00
           </span>
         </div>
         <div class="chart-canvas-container">
@@ -225,15 +239,15 @@
     <nav class="tabs-nav-bar">
       <button class="tab-btn active" data-tab="wallet">
         <span>⏳ Adjudicado / Ganado</span>
-        <span class="tab-count">9 PRs ($1,485)</span>
+        <span class="tab-count" id="tabCountWallet">14 PRs ($1,800)</span>
       </button>
       <button class="tab-btn" data-tab="sprint">
         <span>🚀 Sprint en Revisión</span>
-        <span class="tab-count">21 PRs ($1,490)</span>
+        <span class="tab-count" id="tabCountSprint">24 PRs ($8,700)</span>
       </button>
       <button class="tab-btn" data-tab="pipeline">
         <span>🌐 Pipeline Global</span>
-        <span class="tab-count">164</span>
+        <span class="tab-count" id="tabCountPipeline">207</span>
       </button>
       <button class="tab-btn" data-tab="events">
         <span>📡 Feed de Eventos</span>
@@ -245,7 +259,7 @@
       </button>
       <button class="tab-btn" data-tab="diagnostics" id="tabBtnDiagnostics">
         <span>🔬 Diagnóstico Financiero</span>
-        <span class="tab-count" style="background: rgba(0, 245, 160, 0.15); color: #00F5A0; font-weight: 700;">$1,485 (100% OK)</span>
+        <span class="tab-count" id="tabCountDiagnostics" style="background: rgba(0, 245, 160, 0.15); color: #00F5A0; font-weight: 700;">$1,800 (100% OK)</span>
       </button>
     </nav>
 
@@ -258,10 +272,10 @@
               <circle cx="12" cy="12" r="10"></circle>
               <polyline points="12 6 12 12 16 14"></polyline>
             </svg>
-            9 PRs Aprobadas & Fusionadas en GitHub ($1,485.00 USDC)
+            14 PRs Aprobadas & Fusionadas en GitHub ($1,800.00 USDC)
           </h2>
           <p>
-            Los mantenedores de MallonePay (<code>@scarface-dev1</code>), Parabola (<code>@Abdul-dev-creator</code>) y SlipPay (<code>@Obaara293</code>) han aprobado y fusionado las 9 soluciones. 
+            Los mantenedores de MallonePay (<code>@scarface-dev1</code>), Parabola (<code>@Abdul-dev-creator</code>), SlipPay (<code>@Obaara293</code>) y Chain-Love (<code>@eugene17kotov</code>) han aprobado y fusionado las 14 soluciones. 
             <strong>Realismo Financiero:</strong> El saldo actual en MetaMask/BaseScan es de <code>$0.00 USDC</code> a la espera de que los organizadores emitan la dispersión on-chain a nuestra Settlement Wallet.
           </p>
         </div>
@@ -277,12 +291,12 @@
         <table class="bounty-table">
           <thead>
             <tr>
-              <th style="width: 130px;">Hito</th>
-              <th>Entregable & Repositorio</th>
-              <th style="width: 140px;">Pull Request</th>
-              <th style="width: 160px;">Importe Adjudicado</th>
-              <th style="width: 130px;">Fecha Merge</th>
-              <th style="width: 180px;">Estado Financiero</th>
+              <th class="sortable" data-table="wallet" data-sort="hito" style="width: 130px;">Hito <span class="sort-arrow">↕</span></th>
+              <th class="sortable" data-table="wallet" data-sort="entregable">Entregable & Repositorio <span class="sort-arrow">↕</span></th>
+              <th class="sortable" data-table="wallet" data-sort="pr" style="width: 140px;">Pull Request <span class="sort-arrow">↕</span></th>
+              <th class="sortable" data-table="wallet" data-sort="amount" style="width: 160px;">Importe Adjudicado <span class="sort-arrow">↕</span></th>
+              <th class="sortable" data-table="wallet" data-sort="date" style="width: 130px;">Fecha Merge <span class="sort-arrow">↕</span></th>
+              <th class="sortable" data-table="wallet" data-sort="status" style="width: 180px;">Estado Financiero <span class="sort-arrow">↕</span></th>
             </tr>
           </thead>
           <tbody id="walletTableBody">
@@ -292,28 +306,28 @@
       </div>
     </div>
 
-    <!-- TAB 2: Sprint en Revisión (21 PRs) -->
+    <!-- TAB 2: Sprint en Revisión (23 PRs) -->
     <div class="tab-panel" id="panel-sprint">
       <div class="table-wrapper">
         <div class="table-controls">
           <div>
-            <h3 style="font-size: 1.1rem; font-weight: 700; color: #fff;">Sprint Activo: 21 Pull Requests en Revisión</h3>
-            <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 2px;">
-              Monopolio 100% sin asignación ajena en DevNiola/Prism (18) y slippay-labs/slippay (3)
+            <h3 id="sprintTableTitle" style="font-size: 1.1rem; font-weight: 700; color: #fff;">Sprint Activo: 24 Pull Requests en Revisión</h3>
+            <p id="sprintTableDesc" style="font-size: 0.8rem; color: var(--text-muted); margin-top: 2px;">
+              1 OriginTrail + 18 Prism + 3 Paraloom + 1 SlipPay + 1 Chain-Love
             </p>
           </div>
-          <span class="stat-badge badge-cyan" style="font-family: var(--font-mono); font-size: 0.9rem;">
-            Valor en Juego: $1,490.00 USDC
+          <span class="stat-badge badge-cyan" id="sprintTableValueBadge" style="font-family: var(--font-mono); font-size: 0.9rem;">
+            Valor en Juego: $8,700.00 USDC
           </span>
         </div>
         <table class="bounty-table">
           <thead>
             <tr>
-              <th style="width: 110px;">Proyecto</th>
-              <th>Issue & Solución Entregada</th>
-              <th style="width: 140px;">Pull Request</th>
-              <th style="width: 160px;">Recompensa</th>
-              <th style="width: 180px;">Estado CI</th>
+              <th class="sortable" data-table="sprint" data-sort="project" style="width: 110px;">Proyecto <span class="sort-arrow">↕</span></th>
+              <th class="sortable" data-table="sprint" data-sort="title">Issue & Solución Entregada <span class="sort-arrow">↕</span></th>
+              <th class="sortable" data-table="sprint" data-sort="pr" style="width: 140px;">Pull Request <span class="sort-arrow">↕</span></th>
+              <th class="sortable" data-table="sprint" data-sort="reward" style="width: 160px;">Recompensa <span class="sort-arrow">↕</span></th>
+              <th class="sortable" data-table="sprint" data-sort="status" style="width: 180px;">Estado CI <span class="sort-arrow">↕</span></th>
             </tr>
           </thead>
           <tbody id="sprintTableBody">
@@ -323,7 +337,7 @@
       </div>
     </div>
 
-    <!-- TAB 3: Pipeline Global (164 Bounties) -->
+    <!-- TAB 3: Pipeline Global (206 Bounties) -->
     <div class="tab-panel" id="panel-pipeline">
       <div class="table-wrapper">
         <div class="table-controls">
@@ -336,7 +350,7 @@
           </div>
 
           <div class="filter-pills">
-            <button class="filter-pill active" data-platform="ALL">Todos (164)</button>
+            <button class="filter-pill active" data-platform="ALL" id="pillAllBounties">Todos (206)</button>
             <button class="filter-pill" data-platform="GITHUB">GitHub</button>
             <button class="filter-pill" data-platform="BASE">Base L2</button>
             <button class="filter-pill" data-platform="SOLANA">Solana</button>
@@ -348,9 +362,9 @@
         <table class="bounty-table">
           <thead>
             <tr>
-              <th style="width: 130px;">Estado</th>
-              <th>Título de la Oportunidad & Plataforma</th>
-              <th style="width: 160px;">Recompensa</th>
+              <th class="sortable" data-table="pipeline" data-sort="status" style="width: 130px;">Estado <span class="sort-arrow">↕</span></th>
+              <th class="sortable" data-table="pipeline" data-sort="title">Título de la Oportunidad & Plataforma <span class="sort-arrow">↕</span></th>
+              <th class="sortable" data-table="pipeline" data-sort="reward" style="width: 160px;">Recompensa <span class="sort-arrow">↕</span></th>
               <th style="width: 140px;">Acción</th>
             </tr>
           </thead>

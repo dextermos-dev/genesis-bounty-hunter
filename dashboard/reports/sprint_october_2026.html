@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Informe Ejecutivo Sprint Octubre 2026 — Genesis Bounty Hunter</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #090d16;
+      --card-bg: #111827;
+      --border: #1f2937;
+      --accent: #6366f1;
+      --accent-glow: rgba(99, 102, 241, 0.15);
+      --success: #10b981;
+      --warning: #f59e0b;
+      --text: #f3f4f6;
+      --text-muted: #9ca3af;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Inter', -apple-system, sans-serif;
+      line-height: 1.6;
+      padding: 32px 20px;
+    }
+    .container { max-width: 1200px; margin: 0 auto; }
+    header {
+      background: linear-gradient(135deg, rgba(31, 41, 55, 0.6) 0%, rgba(17, 24, 39, 0.8) 100%);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 32px;
+      margin-bottom: 32px;
+      position: relative;
+      overflow: hidden;
+    }
+    header::before {
+      content: '';
+      position: absolute;
+      top: -50px; right: -50px;
+      width: 200px; height: 200px;
+      background: radial-gradient(circle, var(--accent-glow) 0%, transparent 70%);
+      border-radius: 50%;
+    }
+    .badge {
+      display: inline-block;
+      padding: 4px 12px;
+      background: var(--accent-glow);
+      color: #818cf8;
+      border: 1px solid rgba(99, 102, 241, 0.3);
+      border-radius: 9999px;
+      font-size: 12px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 12px;
+    }
+    .back-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid var(--border);
+      color: var(--text-muted);
+      padding: 6px 14px;
+      border-radius: 8px;
+      font-size: 12px;
+      font-weight: 500;
+      text-decoration: none;
+      margin-bottom: 20px;
+      transition: all 0.2s ease;
+    }
+    .back-btn:hover {
+      background: rgba(255, 255, 255, 0.1);
+      color: #fff;
+    }
+    h1 { font-size: 28px; font-weight: 800; letter-spacing: -0.02em; margin-bottom: 8px; }
+    .subtitle { color: var(--text-muted); font-size: 14px; }
+    .wallet-pill {
+      margin-top: 16px;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(0, 0, 0, 0.4);
+      border: 1px solid var(--border);
+      padding: 8px 16px;
+      border-radius: 8px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 13px;
+      color: var(--text);
+    }
+    .wallet-pill span { color: var(--success); font-weight: 600; }
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+      margin-bottom: 32px;
+    }
+    .stat-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .stat-label { font-size: 13px; color: var(--text-muted); font-weight: 500; }
+    .stat-val { font-size: 28px; font-weight: 800; color: #fff; }
+    .stat-desc { font-size: 12px; color: var(--text-muted); }
+    .section-title {
+      font-size: 20px;
+      font-weight: 700;
+      margin: 32px 0 16px 0;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .table-container {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      overflow-x: auto;
+      margin-bottom: 32px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+      font-size: 14px;
+    }
+    th {
+      background: rgba(255, 255, 255, 0.02);
+      border-bottom: 1px solid var(--border);
+      padding: 14px 18px;
+      color: var(--text-muted);
+      font-weight: 600;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    td {
+      padding: 14px 18px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+    tr:last-child td { border-bottom: none; }
+    tr:hover td { background: rgba(255, 255, 255, 0.02); }
+    .status-tag {
+      display: inline-block;
+      padding: 3px 8px;
+      border-radius: 6px;
+      font-size: 11px;
+      font-weight: 600;
+    }
+    .status-merged { background: rgba(16, 185, 129, 0.15); color: #34d399; border: 1px solid rgba(16, 185, 129, 0.3); }
+    .status-review { background: rgba(245, 158, 11, 0.15); color: #fbbf24; border: 1px solid rgba(245, 158, 11, 0.3); }
+    a { color: #60a5fa; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .footer {
+      text-align: center;
+      font-size: 12px;
+      color: var(--text-muted);
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a href="../index.html" class="back-btn">&larr; Volver al Dashboard Principal</a>
+    <header>
+      <div class="badge">Auditoría Ejecutiva &middot; Sprint Octubre 2026</div>
+      <h1>Dossier de Rendimiento y Tesorería Web3</h1>
+      <div class="subtitle">Bounty Hunter AI &mdash; Sistema Autónomo de Resolución y Liquidación de Bounties</div>
+      <div class="wallet-pill">
+        <span>Settlement Wallet:</span> 0x8366bCe3a2D379Dec7656D7A67015789FaF999f20 (Base L2)
+      </div>
+    </header>
+
+    <div class="stats-grid">
+      <div class="stat-card">
+        <div class="stat-label">Adjudicado (En Dispersión)</div>
+        <div class="stat-val" style="color: var(--success);">$1,800.00</div>
+        <div class="stat-desc">14 PRs Mergeadas &middot; 100% Tasa Éxito</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">En Revisión (GitHub Sprint)</div>
+        <div class="stat-val" style="color: var(--warning);">$8,700.00</div>
+        <div class="stat-desc">24 PRs ($1,050 calientes + $7,650 Prism/OT)</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">Total Sprint Activo (38 PRs)</div>
+        <div class="stat-val" style="color: #38bdf8;">$10,500.00</div>
+        <div class="stat-desc">$1,800 adjudicados + $8,700 en revisión</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">Pipeline Global Monitoreado</div>
+        <div class="stat-val" style="color: #c084fc;">$44,009.44</div>
+        <div class="stat-desc">209 oportunidades Zero-KYC auditadas</div>
+      </div>
+    </div>
+
+    <div class="section-title">📦 14 Pull Requests Mergeadas (Cronológico)</div>
+    <div class="table-container">
+      <table>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Repositorio</th>
+            <th>PR / Issue</th>
+            <th>Título</th>
+            <th>Fecha Merge</th>
+            <th>Antigüedad</th>
+            <th>Estado</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td><strong>mallonepay/pay-per-token-llm-gateway</strong></td>
+            <td><a href="https://github.com/mallonepay/pay-per-token-llm-gateway/pull/127" target="_blank">PR #127</a></td>
+            <td>feat: Integrate Soroban credit-escrow contract</td>
+            <td>2026-09-09</td>
+            <td>43 días</td>
+            <td><span class="status-tag status-review">Recordatorio enviado</span></td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td><strong>Parabola-org/parabola</strong></td>
+            <td><a href="https://github.com/Parabola-org/parabola/pull/101" target="_blank">PR #101</a> (#1)</td>
+            <td>fix(stellar): preserve burnTxHash on transient RPC errors</td>
+            <td>2026-10-16</td>
+            <td>6 días</td>
+            <td><span class="status-tag status-merged">Mergeado / Ciclo semanal</span></td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td><strong>Parabola-org/parabola</strong></td>
+            <td><a href="https://github.com/Parabola-org/parabola/pull/100" target="_blank">PR #100</a> (#20)</td>
+            <td>feat(encoding): export convertPrecision and tests</td>
+            <td>2026-10-16</td>
+            <td>6 días</td>
+            <td><span class="status-tag status-merged">Mergeado / Ciclo semanal</span></td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td><strong>Parabola-org/parabola</strong></td>
+            <td><a href="https://github.com/Parabola-org/parabola/pull/99" target="_blank">PR #99</a> (#19)</td>
+            <td>fix(encoding): validate 32-byte hex input</td>
+            <td>2026-10-16</td>
+            <td>6 días</td>
+            <td><span class="status-tag status-merged">Mergeado / Ciclo semanal</span></td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td><strong>Parabola-org/parabola</strong></td>
+            <td><a href="https://github.com/Parabola-org/parabola/pull/104" target="_blank">PR #104</a></td>
+            <td>fix(iris): tolerate transient Iris failures</td>
+            <td>2026-10-16</td>
+            <td>6 días</td>
+            <td><span class="status-tag status-merged">Mergeado / Ciclo semanal</span></td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td><strong>Parabola-org/parabola</strong></td>
+            <td><a href="https://github.com/Parabola-org/parabola/pull/109" target="_blank">PR #109</a></td>
+            <td>feat(transfer): add structured progress callbacks</td>
+            <td>2026-10-16</td>
+            <td>6 días</td>
+            <td><span class="status-tag status-merged">Mergeado / Ciclo semanal</span></td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td><strong>Parabola-org/parabola</strong></td>
+            <td><a href="https://github.com/Parabola-org/parabola/pull/115" target="_blank">PR #115</a></td>
+            <td>chore(smoke): harden testnet-smoke with retries</td>
+            <td>2026-10-16</td>
+            <td>6 días</td>
+            <td><span class="status-tag status-merged">Mergeado / Ciclo semanal</span></td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td><strong>Parabola-org/parabola</strong></td>
+            <td><a href="https://github.com/Parabola-org/parabola/pull/116" target="_blank">PR #116</a></td>
+            <td>feat(transfer): add AbortSignal support</td>
+            <td>2026-10-16</td>
+            <td>6 días</td>
+            <td><span class="status-tag status-merged">Mergeado / Ciclo semanal</span></td>
+          </tr>
+          <tr>
+            <td>9</td>
+            <td><strong>slippay-labs/slippay</strong></td>
+            <td><a href="https://github.com/slippay-labs/slippay/pull/264" target="_blank">PR #264</a></td>
+            <td>docs(security): add SECURITY.md disclosure policy</td>
+            <td>2026-10-18</td>
+            <td>4 días</td>
+            <td><span class="status-tag status-merged">Mergeado</span></td>
+          </tr>
+          <tr>
+            <td>10</td>
+            <td><strong>Chain-Love/chain-love</strong></td>
+            <td><a href="https://github.com/Chain-Love/chain-love/pull/4728" target="_blank">PR #4728</a></td>
+            <td>data: retain official Docs links on Filecoin & Avax</td>
+            <td>2026-10-21</td>
+            <td>23 horas</td>
+            <td><span class="status-tag status-merged">Mergeado</span></td>
+          </tr>
+          <tr>
+            <td>11</td>
+            <td><strong>slippay-labs/slippay</strong></td>
+            <td><a href="https://github.com/slippay-labs/slippay/pull/228" target="_blank">PR #228</a></td>
+            <td>chore(repo): untrack committed __pycache__ bytecode</td>
+            <td>2026-10-21</td>
+            <td>23 horas</td>
+            <td><span class="status-tag status-merged">Mergeado</span></td>
+          </tr>
+          <tr>
+            <td>12</td>
+            <td><strong>slippay-labs/slippay</strong></td>
+            <td><a href="https://github.com/slippay-labs/slippay/pull/340" target="_blank">PR #340</a> (#238)</td>
+            <td>docs(fees): document canonical fee arithmetic</td>
+            <td>2026-10-21</td>
+            <td>23 horas</td>
+            <td><span class="status-tag status-merged">Mergeado</span></td>
+          </tr>
+          <tr>
+            <td>13</td>
+            <td><strong>slippay-labs/slippay</strong></td>
+            <td><a href="https://github.com/slippay-labs/slippay/pull/453" target="_blank">PR #453</a> (#315)</td>
+            <td>fix(txguard): compare amounts as integer stroops</td>
+            <td>2026-10-21</td>
+            <td>23 horas</td>
+            <td><span class="status-tag status-merged">Mergeado</span></td>
+          </tr>
+          <tr>
+            <td>14</td>
+            <td><strong>slippay-labs/slippay</strong></td>
+            <td><a href="https://github.com/slippay-labs/slippay/pull/435" target="_blank">PR #435</a> (#309)</td>
+            <td>docs(contracts): document checkout fee semantics</td>
+            <td>2026-10-21</td>
+            <td>23 horas</td>
+            <td><span class="status-tag status-merged">Mergeado</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="section-title">🔥 Pipeline Activo en Revisión (8 PRs Calientes)</div>
+    <div class="table-container">
+      <table>
+        <thead>
+          <tr>
+            <th>Repositorio</th>
+            <th>PR</th>
+            <th>Bounty / Issue</th>
+            <th>Recompensa</th>
+            <th>Estado Técnico</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>limitlessprojects/Go-Hybrid</strong></td>
+            <td><a href="https://github.com/limitlessprojects/Go-Hybrid/pull/1173" target="_blank">PR #1173</a></td>
+            <td>Issue #1168 (Hex fraction lexing LX6)</td>
+            <td><strong>$75.00 USDC</strong></td>
+            <td><span class="status-tag status-review">112 tests unitarios + 8 soundness OK</span></td>
+          </tr>
+          <tr>
+            <td><strong>limitlessprojects/Go-Hybrid</strong></td>
+            <td><a href="https://github.com/limitlessprojects/Go-Hybrid/pull/1169" target="_blank">PR #1169</a></td>
+            <td>Issue #1167 (Contextual default keyword LX14)</td>
+            <td><strong>$75.00 USDC</strong></td>
+            <td><span class="status-tag status-review">Verificado con go run</span></td>
+          </tr>
+          <tr>
+            <td><strong>Chain-Love/chain-love</strong></td>
+            <td><a href="https://github.com/Chain-Love/chain-love/pull/4746" target="_blank">PR #4746</a></td>
+            <td>Alta Oficial Al-Mizaan v3 & MCP Server</td>
+            <td>Directorio Web3</td>
+            <td><span class="status-tag status-merged" style="background: rgba(16, 185, 129, 0.2); color: #34d399;">✅ Aprobado por @USS-Supervisor (Pendiente Merge)</span></td>
+          </tr>
+          <tr>
+            <td><strong>paraloom-labs/paraloom-prover-wasm</strong></td>
+            <td><a href="https://github.com/paraloom-labs/paraloom-prover-wasm/pull/13" target="_blank">PR #13</a></td>
+            <td>Issue #12 (Merkle path empty leaves & bounds)</td>
+            <td><strong>$150.00 USDC</strong></td>
+            <td><span class="status-tag status-review">Tests nativos de Rust pasando</span></td>
+          </tr>
+          <tr>
+            <td><strong>paraloom-labs/paraloom-core</strong></td>
+            <td><a href="https://github.com/paraloom-labs/paraloom-core/pull/1176" target="_blank">PR #1176</a></td>
+            <td>Issue #1152 (Deposit fee checked subtraction)</td>
+            <td><strong>$150.00 USDC</strong></td>
+            <td><span class="status-tag status-review">En revisión oficial</span></td>
+          </tr>
+          <tr>
+            <td><strong>paraloom-labs/paraloom-core</strong></td>
+            <td><a href="https://github.com/paraloom-labs/paraloom-core/pull/1167" target="_blank">PR #1167</a></td>
+            <td>Issue #1160 (ZK Commitment schemes & HA tasks)</td>
+            <td><strong>$150.00 USDC</strong></td>
+            <td><span class="status-tag status-review">En revisión oficial</span></td>
+          </tr>
+          <tr>
+            <td><strong>paraloom-labs/paraloom-core</strong></td>
+            <td><a href="https://github.com/paraloom-labs/paraloom-core/pull/1165" target="_blank">PR #1165</a></td>
+            <td>Issue #1162 (Unbonded token account relaxation)</td>
+            <td><strong>$150.00 USDC</strong></td>
+            <td><span class="status-tag status-review">En revisión oficial</span></td>
+          </tr>
+          <tr>
+            <td><strong>paraloom-labs/paraloom-core</strong></td>
+            <td><a href="https://github.com/paraloom-labs/paraloom-core/pull/1159" target="_blank">PR #1159</a></td>
+            <td>Issue #1158 (CPI-first token order & telemetry)</td>
+            <td><strong>$150.00 USDC</strong></td>
+            <td><span class="status-tag status-review">En revisión oficial</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="footer">
+      Genesis Bounty Hunter AI &middot; Settlement Wallet: 0x8366bCe3a2D379Dec7656D7A67015789FaF999f20 &middot; Base L2 / EVM
+    </div>
+  </div>
+</body>
+</html>
