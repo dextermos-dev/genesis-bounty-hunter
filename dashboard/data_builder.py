@@ -304,6 +304,34 @@ def build_dashboard_dataset() -> dict:
     }
     existing_bounties["chainlove-providers-docs-batch4-pr4807"] = chainlove_pr4807_entry
 
+    # Chain-Love Official Providers Documentation Batch 5 (PR #4809)
+    chainlove_pr4809_entry = {
+        "id": "chainlove-providers-docs-batch5-pr4809",
+        "bounty_id": "chainlove-providers-docs-batch5-pr4809",
+        "title": "data(providers): add official aibtc, Blockaid, Crust Network, and EVM Toolkit documentation",
+        "url": "https://github.com/Chain-Love/chain-love/pull/4809",
+        "platform": "Chain-Love / GitHub",
+        "reward_amount": 100.00,
+        "reward_currency": "USDC",
+        "payment_network": "Base / Web3",
+        "final_score": 10.0,
+        "expected_value": 100.00,
+        "status": "SUBMITTED",
+        "payout_status": "EN_REVISION",
+        "payout_text": "🟡 EN REVISIÓN EN GITHUB (PR #4809 ABIERTA - $100 USDC)",
+        "pull_request_url": "https://github.com/Chain-Love/chain-love/pull/4809",
+        "pr_number": 4809,
+        "web3_wallet_address": "0x8366bce3a2d379de7656d7a67015789faf999f20",
+        "wallet": "0x8366bce3a2d379de7656d7a67015789faf999f20",
+        "red_team_score": 10.0,
+        "sandbox_status": "SUCCESS",
+        "is_complete": True,
+        "is_new": True,
+        "sprint": True,
+        "created_at": "2026-10-24"
+    }
+    existing_bounties["chainlove-providers-docs-batch5-pr4809"] = chainlove_pr4809_entry
+
     # Go-Hybrid Soundness Bug #1450 (PR #1465 - Deferido con cortesía al autor original @ryder777777 / PR #1470)
     gohybrid_pr1465_entry = {
         "id": "go_hybrid_issue_1450",
@@ -547,12 +575,12 @@ def build_dashboard_dataset() -> dict:
     # Cargar valores consolidados de sprint e ingresos
     # Liquidación On-Chain Directa Confirmada: 21,765 wDOOM = $696.48 USD (~654.69 €)
     # Adjudicado en Dispersión Pendiente: 14 PRs merged = $1,800.00 USDC
-    # Sprint en Revisión GitHub: 31 PRs = $9,417.00 USDC
+    # Sprint en Revisión GitHub: 32 PRs = $9,517.00 USDC
     liquid_onchain = 696.48
     liquid_onchain_doom = 21765.0
     liquid_onchain_eur = 654.69
     earned_onchain = 1800.00
-    sprint_in_review = 9417.00
+    sprint_in_review = 9517.00
     sprint_total = round(earned_onchain + sprint_in_review, 2)
     grand_total_pipeline = round(total_pipeline_val, 2)
 
