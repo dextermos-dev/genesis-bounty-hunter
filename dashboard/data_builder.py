@@ -388,6 +388,62 @@ def build_dashboard_dataset() -> dict:
     }
     existing_bounties["go_hybrid_issue_1168"] = gohybrid_pr1483_entry
 
+    # Go-Hybrid Soundness Bug #1481 (PR #1490) - $75 USDC
+    gohybrid_pr1490_entry = {
+        "id": "go_hybrid_issue_1481",
+        "bounty_id": "go_hybrid_issue_1481",
+        "title": "[Go-Hybrid $75 USDC] fix(hy-check): reject functions that can fall off the end without a return (fixes #1481)",
+        "url": "https://github.com/limitlessprojects/Go-Hybrid/issues/1481",
+        "platform": "GitHub Micro-Bounties (Go-Hybrid Soundness Track)",
+        "reward_amount": 75.00,
+        "reward_currency": "USDC",
+        "payment_network": "Base L2 / EVM",
+        "final_score": 10.0,
+        "expected_value": 75.00,
+        "status": "SUBMITTED",
+        "payout_status": "EN_REVISION",
+        "payout_text": "🟡 EN REVISIÓN EN GITHUB (PR #1490 ABIERTA - $75 USDC)",
+        "pull_request_url": "https://github.com/limitlessprojects/Go-Hybrid/pull/1490",
+        "pr_number": 1490,
+        "web3_wallet_address": "0x8366bce3a2d379de7656d7a67015789faf999f20",
+        "wallet": "0x8366bce3a2d379de7656d7a67015789faf999f20",
+        "red_team_score": 10.0,
+        "sandbox_status": "SUCCESS",
+        "is_complete": True,
+        "is_new": True,
+        "sprint": True,
+        "created_at": "2026-10-24"
+    }
+    existing_bounties["go_hybrid_issue_1481"] = gohybrid_pr1490_entry
+
+    # Doomsday Network Escrow Bounty Guard #5 - 1,500 wDOOM (~$48 USD)
+    doomsday_issue5_entry = {
+        "id": "doomsday-bounty-guard-issue5",
+        "bounty_id": "doomsday-bounty-guard-issue5",
+        "title": "[Doomsday 1,500 wDOOM] 🛡️ Classify 3 Public GitHub Bounties (#5)",
+        "url": "https://github.com/doomsday-network/bounty-guard/issues/5",
+        "platform": "Doomsday / GitHub",
+        "reward_amount": 48.00,
+        "reward_currency": "wDOOM",
+        "payment_network": "Base Mainnet",
+        "final_score": 10.0,
+        "expected_value": 48.00,
+        "status": "SUBMITTED",
+        "payout_status": "EN_REVISION_ONCHAIN",
+        "payout_text": "🟡 EN REVISIÓN ON-CHAIN (Informe 3-Row publicado en Issue #5)",
+        "pull_request_url": "https://github.com/doomsday-network/bounty-guard/issues/5#issuecomment-6385323693",
+        "pr_number": 5,
+        "web3_wallet_address": "0x8366bce3a2d379de7656d7a67015789faf999f20",
+        "wallet": "0x8366bce3a2d379de7656d7a67015789faf999f20",
+        "red_team_score": 10.0,
+        "sandbox_status": "SUCCESS",
+        "is_complete": True,
+        "is_new": True,
+        "sprint": True,
+        "created_at": "2026-10-24"
+    }
+    existing_bounties["doomsday-bounty-guard-issue5"] = doomsday_issue5_entry
+
     # Doomsday Official Proof-of-Escrow AutoGPT Block (PR #18) - MERGED & SETTLED
     doomsday_pr18_entry = {
         "id": "doomsday-autogpt-block-pr18",
@@ -491,12 +547,12 @@ def build_dashboard_dataset() -> dict:
     # Cargar valores consolidados de sprint e ingresos
     # Liquidación On-Chain Directa Confirmada: 21,765 wDOOM = $696.48 USD (~654.69 €)
     # Adjudicado en Dispersión Pendiente: 14 PRs merged = $1,800.00 USDC
-    # Sprint en Revisión GitHub: 30 PRs = $9,342.00 USDC
+    # Sprint en Revisión GitHub: 31 PRs = $9,417.00 USDC
     liquid_onchain = 696.48
     liquid_onchain_doom = 21765.0
     liquid_onchain_eur = 654.69
     earned_onchain = 1800.00
-    sprint_in_review = 9342.00
+    sprint_in_review = 9417.00
     sprint_total = round(earned_onchain + sprint_in_review, 2)
     grand_total_pipeline = round(total_pipeline_val, 2)
 
