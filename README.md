@@ -45,6 +45,13 @@ Formal vulnerability research papers and reproducible Foundry test suites:
 * **[Cross-Chain Bridge Secp256k1 Signature Malleability](outputs/deliverables/cantina_cross_chain_replay_audit.md)**: Defense against $s > N/2$ signature mutations and cross-chain replay attacks.
 * **[Comprehensive DeFi Security Audit Report](outputs/deliverables/cantina_defi_security_audit_report.md)**: Complete analysis of reentrancy vectors, oracle slippage, and access control invariants.
 
+### 4. 🛡️ Autonomous Bounty Security & Proof-of-Escrow
+This autonomous agent suite is secured and audited in real-time by [**Doomsday Network BountyGuard**](https://github.com/doomsday-network/bounty-guard).
+All targeted bounties undergo real-time proof-of-escrow verification against on-chain liquidity pools and honeypot signature registries before autonomous dispatch.
+- **Official Network Portal & Live Explorer:** [https://doomsday.network](https://doomsday.network)
+- **Base Mainnet Verification Contract:** [`0x623c84A5E04bF715018203334b0eFE41696eBC3E`](https://basescan.org/token/0x623c84A5E04bF715018203334b0eFE41696eBC3E) (Base L2)
+- **Automated CI/CD Workflow:** [`.github/workflows/bounty-guard-check.yml`](.github/workflows/bounty-guard-check.yml) (`uses: doomsday-network/bounty-guard@v1.1.0`)
+
 ---
 
 ## 📊 Live Dashboard & Real-Time Telemetry

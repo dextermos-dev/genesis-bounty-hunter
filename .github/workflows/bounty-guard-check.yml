@@ -1,0 +1,22 @@
+name: BountyGuard Pre-Flight Security Check
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  bounty-guard-escrow-audit:
+    name: Verify Escrow Collateral & Anti-Sybil Proof
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Codebase
+        uses: actions/checkout@v4
+
+      - name: Run Doomsday BountyGuard Escrow Audit
+        uses: doomsday-network/bounty-guard@v1.1.0
+        with:
+          mode: audit
+          fail-on-quarantine: false
