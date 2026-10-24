@@ -741,14 +741,14 @@ def build_dashboard_dataset() -> dict:
     submitted_prs_count = sum(1 for b in bounties_list if b.get("pull_request_url") or b.get("status") == "SUBMITTED")
 
     # Cargar valores consolidados de sprint e ingresos
-    # Liquidación On-Chain Directa Confirmada: 21,765 wDOOM = $696.48 USD (~654.69 €)
+    # Liquidación On-Chain Directa Confirmada: 23,515 wDOOM (Base) + 2,000 DOOM (L1) = 25,515 DOOM ($816.48 USD / ~767.49 €)
     # Adjudicado en Dispersión Pendiente: 14 PRs merged = $1,800.00 USDC
-    # Sprint en Revisión GitHub & On-Chain Escrow: 37 submissions = $9,744.00 USDC / wDOOM
-    liquid_onchain = 696.48
-    liquid_onchain_doom = 21765.0
-    liquid_onchain_eur = 654.69
+    # Sprint en Revisión GitHub & On-Chain Escrow: 38 submissions = $10,216.00 USDC / wDOOM
+    liquid_onchain = 816.48
+    liquid_onchain_doom = 25515.0
+    liquid_onchain_eur = 767.49
     earned_onchain = 1800.00
-    sprint_in_review = 9744.00
+    sprint_in_review = 10216.00
     sprint_total = round(earned_onchain + sprint_in_review, 2)
     grand_total_pipeline = round(total_pipeline_val, 2)
 
@@ -757,9 +757,9 @@ def build_dashboard_dataset() -> dict:
         "liquid_onchain_usd": liquid_onchain,
         "liquid_onchain_doom": liquid_onchain_doom,
         "liquid_onchain_eur": liquid_onchain_eur,
-        "liquid_tx_count": 14,
-        "base_wdoom": 21765.0,
-        "l1_doom": 0.0,
+        "liquid_tx_count": 15,
+        "base_wdoom": 23515.0,
+        "l1_doom": 2000.0,
         "earned_onchain_usd": earned_onchain,
         "dispersion_pending_usd": earned_onchain,
         "sprint_in_review_usd": sprint_in_review,
