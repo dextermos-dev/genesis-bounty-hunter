@@ -16,7 +16,6 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Run Doomsday BountyGuard Escrow Audit
-        uses: doomsday-network/bounty-guard@v1.1.0
+        uses: doomsday-network/bounty-guard@main
         with:
-          mode: audit
-          fail-on-quarantine: false
+          target: "--demo"
