@@ -192,7 +192,7 @@ def build_dashboard_dataset() -> dict:
     }
     existing_bounties["chainlove-align-columns-pr4773"] = chainlove_pr4773_entry
 
-    # Chain-Love Official Providers Documentation (PR #4780)
+    # Chain-Love Official Providers Documentation (PR #4780) - CERRADO EN FAVOR DE PRS ANTERIORES
     chainlove_pr4780_entry = {
         "id": "chainlove-providers-docs-pr4780",
         "bounty_id": "chainlove-providers-docs-pr4780",
@@ -203,10 +203,10 @@ def build_dashboard_dataset() -> dict:
         "reward_currency": "USDC",
         "payment_network": "Base / Web3",
         "final_score": 9.9,
-        "expected_value": 100.00,
-        "status": "SUBMITTED",
-        "payout_status": "EN_REVISION",
-        "payout_text": "🟡 EN REVISIÓN EN GITHUB (PR #4780 ABIERTA - $100 USDC)",
+        "expected_value": 0.00,
+        "status": "CLOSED",
+        "payout_status": "CERRADO_DUPLICADO",
+        "payout_text": "⚪ CERRADO EN FAVOR DE PRs ANTERIORES (#4704, #3865, #3326)",
         "pull_request_url": "https://github.com/Chain-Love/chain-love/pull/4780",
         "pr_number": 4780,
         "web3_wallet_address": "0x8366bce3a2d379de7656d7a67015789faf999f20",
@@ -214,8 +214,8 @@ def build_dashboard_dataset() -> dict:
         "red_team_score": 10.0,
         "sandbox_status": "SUCCESS",
         "is_complete": True,
-        "is_new": True,
-        "sprint": True,
+        "is_new": False,
+        "sprint": False,
         "created_at": "2026-10-23"
     }
     existing_bounties["chainlove-providers-docs-pr4780"] = chainlove_pr4780_entry
@@ -275,6 +275,34 @@ def build_dashboard_dataset() -> dict:
         "created_at": "2026-10-24"
     }
     existing_bounties["chainlove-providers-docs-batch3-pr4803"] = chainlove_pr4803_entry
+
+    # Chain-Love Official Providers Documentation Batch 4 (PR #4807)
+    chainlove_pr4807_entry = {
+        "id": "chainlove-providers-docs-batch4-pr4807",
+        "bounty_id": "chainlove-providers-docs-batch4-pr4807",
+        "title": "data(providers): add official Rivet, TryGhost, wevm, and xBull Wallet documentation",
+        "url": "https://github.com/Chain-Love/chain-love/pull/4807",
+        "platform": "Chain-Love / GitHub",
+        "reward_amount": 100.00,
+        "reward_currency": "USDC",
+        "payment_network": "Base / Web3",
+        "final_score": 10.0,
+        "expected_value": 100.00,
+        "status": "SUBMITTED",
+        "payout_status": "EN_REVISION",
+        "payout_text": "🟡 EN REVISIÓN EN GITHUB (PR #4807 ABIERTA - $100 USDC)",
+        "pull_request_url": "https://github.com/Chain-Love/chain-love/pull/4807",
+        "pr_number": 4807,
+        "web3_wallet_address": "0x8366bce3a2d379de7656d7a67015789faf999f20",
+        "wallet": "0x8366bce3a2d379de7656d7a67015789faf999f20",
+        "red_team_score": 10.0,
+        "sandbox_status": "SUCCESS",
+        "is_complete": True,
+        "is_new": True,
+        "sprint": True,
+        "created_at": "2026-10-24"
+    }
+    existing_bounties["chainlove-providers-docs-batch4-pr4807"] = chainlove_pr4807_entry
 
     # Doomsday Official Proof-of-Escrow AutoGPT Block (PR #18) - MERGED & SETTLED
     doomsday_pr18_entry = {

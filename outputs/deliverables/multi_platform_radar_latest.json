@@ -1,5 +1,84 @@
 [
   {
+    "id": "gh_6010805059",
+    "title": "💰 Bounty Seguro ($$100): [Bounty] 💰 Bounty Seguro ($$100): [Bounty] USDC-qu",
+    "url": "https://github.com/alfrexo95/bounty-bot/issues/27",
+    "repo": "alfrexo95/bounty-bot",
+    "created_at": "2026-10-24T07:59:32Z",
+    "comments": 2,
+    "labels": [
+      "bounty",
+      "escrow"
+    ],
+    "platform": "Algora / GitHub PRs",
+    "free_tier": true,
+    "payment_verified": true,
+    "body_snippet": "🤖 **Bounty con Pago Garantizado (Escrow)**  - **Título:** [Bounty] 💰 Bounty Seguro ($$100): [Bounty] USDC-quoted pairs not having the correct  - **Monto:** $$100 - **Plataforma:** USDC Escrow - **Enlace:** [Ir al Issue](https://github.com/zhangjiayan"
+  },
+  {
+    "id": "gh_6010161728",
+    "title": "[Bounty] 💰 Bounty Seguro ($$100): [Bounty] USDC-quoted pairs not having the correct ",
+    "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/4109",
+    "repo": "zhangjiayang6835-cyber/bounty-plaza",
+    "created_at": "2026-10-24T06:31:48Z",
+    "comments": 2,
+    "labels": [
+      "bounty",
+      "real"
+    ],
+    "platform": "Algora / GitHub PRs",
+    "free_tier": true,
+    "payment_verified": true,
+    "body_snippet": "### 赏金平台 / Platform GitHub  ### 原始链接 / Source URL https://github.com/alfrexo95/bounty-bot/issues/21  ### 漏洞描述 / Description 💰 Bounty Seguro ($$100): [Bounty] USDC-quoted pairs not having the correct   🤖 **Bounty con Pago Garantizado (Escrow)**  - **T"
+  },
+  {
+    "id": "gh_6007774119",
+    "title": "💰 Bounty Seguro ($$100): [Bounty] USDC-quoted pairs not having the correct ",
+    "url": "https://github.com/alfrexo95/bounty-bot/issues/21",
+    "repo": "alfrexo95/bounty-bot",
+    "created_at": "2026-10-24T01:01:40Z",
+    "comments": 2,
+    "labels": [
+      "bounty",
+      "escrow"
+    ],
+    "platform": "Algora / GitHub PRs",
+    "free_tier": true,
+    "payment_verified": true,
+    "body_snippet": "🤖 **Bounty con Pago Garantizado (Escrow)**  - **Título:** [Bounty] USDC-quoted pairs not having the correct marketcap displayed in tools - **Monto:** $$100 - **Plataforma:** USDC Escrow - **Enlace:** [Ir al Issue](https://github.com/zhangjiayang6835-"
+  },
+  {
+    "id": "gh_6004857118",
+    "title": "[Bounty] USDC-quoted pairs not having the correct marketcap displayed in tools",
+    "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/4107",
+    "repo": "zhangjiayang6835-cyber/bounty-plaza",
+    "created_at": "2026-10-23T20:20:52Z",
+    "comments": 3,
+    "labels": [
+      "bounty",
+      "real"
+    ],
+    "platform": "Algora / GitHub PRs",
+    "free_tier": true,
+    "payment_verified": true,
+    "body_snippet": "### 赏金平台 / Platform GitHub  ### 原始链接 / Source URL https://github.com/blake-guthrie/GLASS/issues/1  ### 漏洞描述 / Description USDC-quoted pairs not having the correct marketcap displayed in tools  Fix this problem to get paid in fees of $100  ### 积分币奖励 /"
+  },
+  {
+    "id": "gh_6003832923",
+    "title": "USDC-quoted pairs not having the correct marketcap displayed in tools",
+    "url": "https://github.com/blake-guthrie/GLASS/issues/1",
+    "repo": "blake-guthrie/GLASS",
+    "created_at": "2026-10-23T19:03:20Z",
+    "comments": 6,
+    "labels": [
+      "bounty"
+    ],
+    "platform": "Algora / GitHub PRs",
+    "free_tier": true,
+    "payment_verified": true,
+    "body_snippet": "Fix this problem to get paid in fees of $100"
+  },
+  {
     "id": "gh_5922300294",
     "title": "[BOUNTY] $5.00+ USDC: Adversarial Prompt Injection Bypass on CanaryGuard Firewall",
     "url": "https://github.com/ak10082247-max/canaryguard-402/issues/2",
@@ -22,7 +101,7 @@
     "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/1908",
     "repo": "zhangjiayang6835-cyber/bounty-plaza",
     "created_at": "2026-10-15T21:54:20Z",
-    "comments": 7,
+    "comments": 8,
     "labels": [
       "bounty",
       "real"
@@ -38,7 +117,7 @@
     "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/1906",
     "repo": "zhangjiayang6835-cyber/bounty-plaza",
     "created_at": "2026-10-15T21:54:19Z",
-    "comments": 4,
+    "comments": 6,
     "labels": [
       "bounty",
       "real"
@@ -80,193 +159,306 @@
     "body_snippet": "Four solo bounties on [Poidh](https://poidh.xyz) (Base chain), about 0.0125 ETH (~$30) each, for builders who post and fund a real task on Verdikta Bounties, get it completed by the AI jury, and publish a 300-word write-up. Part of the **Bring a Task"
   },
   {
-    "id": "gh_5792618033",
-    "title": "Create the first funded bounty for an established open-source project",
-    "url": "https://github.com/NSPG13/agent-bounties/issues/1632",
-    "repo": "NSPG13/agent-bounties",
-    "created_at": "2026-10-10T15:27:19Z",
-    "comments": 6,
-    "labels": [
-      "bounty",
-      "ai-agent-welcome",
-      "payments",
-      "funded-live",
-      "claimable-live",
-      "ready-to-earn",
-      "skill:browser",
-      "skill:research"
-    ],
-    "platform": "Algora / GitHub PRs",
-    "free_tier": true,
-    "payment_verified": true,
-    "body_snippet": "<!-- agent-bounties/github-discovery-v1:start --> <!-- agent-bounties/github-discovery-v1 {\"discovery_id\":\"eip155:8453:agent-bounties/autonomous-v1:0xbf99f1c2c690c8bcd45e341006bf7b7dd6c41cdc\"} --> ## Canonical bounty discovery  Use your existing stan"
-  },
-  {
-    "id": "gh_5742162145",
-    "title": "[Bounty] 💰 Donate $10-$100 USDT/USDC — Support VeloDAG Core Rust Dev",
-    "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/1828",
-    "repo": "zhangjiayang6835-cyber/bounty-plaza",
-    "created_at": "2026-10-07T08:52:34Z",
-    "comments": 5,
-    "labels": [
-      "bounty",
-      "real"
-    ],
-    "platform": "Algora / GitHub PRs",
-    "free_tier": true,
-    "payment_verified": true,
-    "body_snippet": "### 赏金平台 / Platform GitHub  ### 原始链接 / Source URL https://github.com/quantumchain-core/velodag-core/issues/2  ### 漏洞描述 / Description 💰 Donate $10-$100 USDT/USDC — Support VeloDAG Core Rust Dev  ### Looking for small bug bounties & sponsors  Building "
-  },
-  {
-    "id": "gh_5651834741",
-    "title": "[Bounty] [Bounty] Fix one deterministic agent-card discovery regression",
-    "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/1715",
-    "repo": "zhangjiayang6835-cyber/bounty-plaza",
-    "created_at": "2026-09-30T19:23:25Z",
-    "comments": 3,
-    "labels": [
-      "bounty",
-      "real"
-    ],
-    "platform": "Algora / GitHub PRs",
-    "free_tier": true,
-    "payment_verified": true,
-    "body_snippet": "### 赏金平台 / Platform GitHub  ### 原始链接 / Source URL https://github.com/NSPG13/agent-bounties/issues/1531  ### 漏洞描述 / Description [Bounty] Fix one deterministic agent-card discovery regression  <!-- agent-bounties/github-discovery-v1:start --> <!-- agen"
-  },
-  {
-    "id": "gh_5586145252",
-    "title": "[Bounty] Record the real network fee in the ledger, not only the capped estimate",
-    "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/1660",
-    "repo": "zhangjiayang6835-cyber/bounty-plaza",
-    "created_at": "2026-09-25T17:23:04Z",
-    "comments": 14,
-    "labels": [
-      "bounty",
-      "real"
-    ],
-    "platform": "Algora / GitHub PRs",
-    "free_tier": true,
-    "payment_verified": true,
-    "body_snippet": "### 赏金平台 / Platform GitHub  ### 原始链接 / Source URL https://github.com/Grainlify/grainlify-bounty-agent/issues/1  ### 漏洞描述 / Description Record the real network fee in the ledger, not only the capped estimate  **The problem**  When the agent pays for i"
-  },
-  {
-    "id": "gh_5556777041",
-    "title": "[Bounty] [Bounty] Fix one deterministic RPC failover regression",
-    "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/1635",
-    "repo": "zhangjiayang6835-cyber/bounty-plaza",
-    "created_at": "2026-09-23T17:06:28Z",
-    "comments": 24,
-    "labels": [
-      "bounty",
-      "real"
-    ],
-    "platform": "Algora / GitHub PRs",
-    "free_tier": true,
-    "payment_verified": true,
-    "body_snippet": "### 赏金平台 / Platform GitHub  ### 原始链接 / Source URL https://github.com/NSPG13/agent-bounties/issues/1500  ### 漏洞描述 / Description [Bounty] Fix one deterministic RPC failover regression  <!-- agent-bounties/github-discovery-v1:start --> <!-- agent-bounti"
-  },
-  {
-    "id": "gh_5993149792",
-    "title": "[Ecosystem] DeskCrew",
-    "url": "https://github.com/PayAINetwork/payai-website/issues/121",
-    "repo": "PayAINetwork/payai-website",
-    "created_at": "2026-10-23T06:34:48Z",
-    "comments": 1,
-    "labels": [
-      "ecosystem"
-    ],
-    "platform": "Algora / GitHub PRs",
-    "free_tier": true,
-    "payment_verified": true,
-    "body_snippet": "### Project Name  DeskCrew  ### Project Logo  <img width=\"512\" height=\"512\" alt=\"Image\" src=\"https://github.com/user-attachments/assets/afd33b30-a6b2-422a-bb47-69b41f1a099b\" />  ### Website URL  https://deskcrew.io  ### Twitter/X URL  https://x.com/g"
-  },
-  {
-    "id": "gh_5992866800",
-    "title": "[Bug bounty] Same-chain Asset Hub swap ignores requested recipient",
-    "url": "https://github.com/paraspell/xcm-tools/issues/2197",
-    "repo": "paraspell/xcm-tools",
-    "created_at": "2026-10-23T06:08:54Z",
+    "id": "gh_6011476496",
+    "title": "[demand] high-priority 2026-10-24T09:25",
+    "url": "https://github.com/relayhop/ClaudeEarnSelf-runtime/issues/1149",
+    "repo": "relayhop/ClaudeEarnSelf-runtime",
+    "created_at": "2026-10-24T09:25:39Z",
     "comments": 0,
     "labels": [
-      "Bug bounty 💰"
+      "radar",
+      "demand"
     ],
     "platform": "Algora / GitHub PRs",
     "free_tier": true,
     "payment_verified": true,
-    "body_snippet": "# 🐞 Bug Report  ## 🔍 Describe the Bug  For a swap whose origin, destination, and selected exchange are the same chain, the requested recipient is ignored when the recipient differs from the sender. The SWAP builder drops the destination because `to ="
+    "body_snippet": "Demand-side radar 高優先訊號:  ``` 5\tgithub\t1.4\t$100\tOPEN_ISSUE,LOW_COMP\thttps://github.com/alfrexo95/bounty-bot/issues/27\t💰 Bounty Seguro ($$100): [Bounty] 💰 Bounty Seguro ($$100): [Bounty] USDC-qu 5\tgithub\t2.9\t$100\tOPEN_ISSUE,LOW_COMP\thttps://github.com"
   },
   {
-    "id": "gh_5992493218",
-    "title": "Feature — recurring rival officers, vendettas and manhunts",
-    "url": "https://github.com/KennyG1990/x4_AiLive/issues/39",
-    "repo": "KennyG1990/x4_AiLive",
-    "created_at": "2026-10-23T05:32:40Z",
-    "comments": 1,
+    "id": "gh_6011337996",
+    "title": "[wildcard] Machine-code STEXT call-graph certificates for @[noheap] Hybrid functions (Row 17)",
+    "url": "https://github.com/limitlessprojects/Go-Hybrid/issues/1433",
+    "repo": "limitlessprojects/Go-Hybrid",
+    "created_at": "2026-10-24T09:08:35Z",
+    "comments": 2,
+    "labels": [],
+    "platform": "Algora / GitHub PRs",
+    "free_tier": true,
+    "payment_verified": true,
+    "body_snippet": "### The idea, in a paragraph  Certify `@[noheap]` Go-side Hybrid functions against zero Go-heap allocation and zero GC write barriers by auditing `cmd/compile -gcflags=\"-S\"` per-symbol `STEXT` call relocations (mapped back to `.hy` lines via `hy-emit"
+  },
+  {
+    "id": "gh_6011314528",
+    "title": "[intake 输入] dsh-sticky-disclosure 1.0.1：判断\"这行展开着吗\"和\"怎么收起这行\"用了两套判据，碰上不可折叠的行会造出一个点不动的 chip",
+    "url": "https://github.com/FuRongJun-1999/dsh-bounty/issues/1751",
+    "repo": "FuRongJun-1999/dsh-bounty",
+    "created_at": "2026-10-24T09:05:37Z",
+    "comments": 0,
+    "labels": [],
+    "platform": "Algora / GitHub PRs",
+    "free_tier": true,
+    "payment_verified": true,
+    "body_snippet": "<!-- intake:v1 {\"project\":\"bench\",\"difficulty\":\"easy\",\"impact\":\"D\",\"target\":\"Han-1413141/dsh-sticky-disclosure\",\"form\":\"intake\"} --> # [intake 输入] dsh-sticky-disclosure 1.0.1：判断\"这行展开着吗\"和\"怎么收起这行\"用了两套判据，碰上不可折叠的行会造出一个点不动的 chip  ## 0. 摘要  这个包只干一件事：把对话流里已"
+  },
+  {
+    "id": "gh_6011313932",
+    "title": "[intake 输入] dsh-plugin-aitelier 0.1.9：AITELIER_MCP_TIMEOUT_MS 填成非数字，全部 MCP 工具调用会在约 1ms 内被判超时",
+    "url": "https://github.com/FuRongJun-1999/dsh-bounty/issues/1750",
+    "repo": "FuRongJun-1999/dsh-bounty",
+    "created_at": "2026-10-24T09:05:33Z",
+    "comments": 0,
+    "labels": [],
+    "platform": "Algora / GitHub PRs",
+    "free_tier": true,
+    "payment_verified": true,
+    "body_snippet": "<!-- intake:v1 {\"project\":\"bench\",\"difficulty\":\"easy\",\"impact\":\"C\",\"target\":\"linxuhao/AItelier\",\"form\":\"intake\"} --> # [intake 输入] dsh-plugin-aitelier 0.1.9：AITELIER_MCP_TIMEOUT_MS 填成非数字，全部 MCP 工具调用会在约 1ms 内被判超时  ## 0. 摘要  这个包本身**没有一行代码**：整个 npm 包里只有"
+  },
+  {
+    "id": "gh_6011313384",
+    "title": "[intake 输入] dsh-plugin-console 0.3.2：Windows 上没有一种 dshBin 配置能让它工作——默认值静默 blocked，指到 .cmd 则整个首屏 500",
+    "url": "https://github.com/FuRongJun-1999/dsh-bounty/issues/1749",
+    "repo": "FuRongJun-1999/dsh-bounty",
+    "created_at": "2026-10-24T09:05:28Z",
+    "comments": 0,
+    "labels": [],
+    "platform": "Algora / GitHub PRs",
+    "free_tier": true,
+    "payment_verified": true,
+    "body_snippet": "<!-- intake:v1 {\"project\":\"bench\",\"difficulty\":\"medium\",\"impact\":\"C\",\"target\":\"AlexYin-Tongji/dsh-plugin-console\",\"form\":\"intake\"} --> # [intake 输入] dsh-plugin-console 0.3.2：Windows 上没有一种 dshBin 配置能让它工作——默认值静默 blocked，指到 .cmd 则整个首屏 500  ## 0. 摘要  这是 "
+  },
+  {
+    "id": "gh_6011296565",
+    "title": "Bounty: distinguish Jupiter swap proceeds from WSOL rent sponsorship",
+    "url": "https://github.com/blake-guthrie/GLASS/issues/18",
+    "repo": "blake-guthrie/GLASS",
+    "created_at": "2026-10-24T09:03:27Z",
+    "comments": 0,
+    "labels": [],
+    "platform": "Algora / GitHub PRs",
+    "free_tier": true,
+    "payment_verified": true,
+    "body_snippet": "I'm on it for the Jupiter-swap funding gap in the README.  The current WSOL-close path credits the wallet's entire SOL gain to the fee payer. In this finalized transaction, the wallet receives 16,005 lamports from a Jupiter swap and 1,488,440 lamport"
+  },
+  {
+    "id": "gh_6011284678",
+    "title": "[intake 输入] 【深度审计报告】dsh-filesnap 0.4.2 装配与端到端实测（未发现 P0/P1，基线 rc.3）",
+    "url": "https://github.com/FuRongJun-1999/dsh-bounty/issues/1748",
+    "repo": "FuRongJun-1999/dsh-bounty",
+    "created_at": "2026-10-24T09:02:06Z",
+    "comments": 0,
+    "labels": [],
+    "platform": "Algora / GitHub PRs",
+    "free_tier": true,
+    "payment_verified": true,
+    "body_snippet": "<!-- intake:v1 {\"project\":\"awesome_dsh_plugin\",\"difficulty\":\"hard\",\"impact\":\"C\",\"target\":\"extracurricular-ai/filesnap\",\"form\":\"intake\"} -->  【深度审计报告】dsh-filesnap 0.4.2  1. 结论  **主路跑通了，装配也验了。**  三层实测都做了。  **装配层**：`dsh --profile <测试profile> --dump-conf"
+  },
+  {
+    "id": "gh_6011112243",
+    "title": "🎯 Bounty Alert: 11 New Opportunityies found",
+    "url": "https://github.com/freedom-winds/BountyScout/issues/1309",
+    "repo": "freedom-winds/BountyScout",
+    "created_at": "2026-10-24T08:38:56Z",
+    "comments": 0,
     "labels": [
+      "bounty-alert"
+    ],
+    "platform": "Algora / GitHub PRs",
+    "free_tier": true,
+    "payment_verified": true,
+    "body_snippet": "### Active Bounty Scan Results  **Scan Time:** 2026-10-24 08:38 UTC  #### 1. [Claiming Bounty #1 - Contact Management Dashboard ($150)](https://github.com/bujiproject-art/agentmidasopendevteam/issues/115) - **Repository:** [bujiproject-art/agentmidas"
+  },
+  {
+    "id": "gh_6011093873",
+    "title": "Claiming Bounty #1 - Contact Management Dashboard ($150)",
+    "url": "https://github.com/bujiproject-art/agentmidasopendevteam/issues/115",
+    "repo": "bujiproject-art/agentmidasopendevteam",
+    "created_at": "2026-10-24T08:36:18Z",
+    "comments": 0,
+    "labels": [],
+    "platform": "Algora / GitHub PRs",
+    "free_tier": true,
+    "payment_verified": true,
+    "body_snippet": "I am claiming **Bounty #1 — Contact Management Dashboard ($150)**.  I will deliver a standalone React/TypeScript contact manager under `bounties/01-contact-management-dashboard` with typed contacts, search, company/status/tag filters, create/edit/arc"
+  },
+  {
+    "id": "gh_6011007937",
+    "title": "[intake 输入] dsh-system-vitals 1.3.14：CHANGELOG 承诺「读不到就显示 —」只兑现了内存一项，CPU/网速/运行时长仍旧编 0",
+    "url": "https://github.com/FuRongJun-1999/dsh-bounty/issues/1747",
+    "repo": "FuRongJun-1999/dsh-bounty",
+    "created_at": "2026-10-24T08:25:01Z",
+    "comments": 0,
+    "labels": [],
+    "platform": "Algora / GitHub PRs",
+    "free_tier": true,
+    "payment_verified": true,
+    "body_snippet": "<!-- intake:v1 {\"project\":\"bench\",\"difficulty\":\"medium\",\"impact\":\"C\",\"target\":\"abyss2021/dsh-system-vitals\",\"form\":\"intake\"} --> # [intake 输入] dsh-system-vitals 1.3.14：CHANGELOG 承诺「读不到就显示 —」只兑现了内存一项，CPU/网速/运行时长仍旧编 0  ## 0. 摘要  这个插件在输入框工具行里显示一条实时负载条，1"
+  },
+  {
+    "id": "gh_6011285812",
+    "title": "Submit: Beggar Bot",
+    "url": "https://github.com/chatmcp/mcpso/issues/6023",
+    "repo": "chatmcp/mcpso",
+    "created_at": "2026-10-24T09:02:13Z",
+    "comments": 0,
+    "labels": [],
+    "platform": "Algora / GitHub PRs",
+    "free_tier": true,
+    "payment_verified": true,
+    "body_snippet": "Repository: https://github.com/beggar-bot-x402/beggar-bot-mcp  Beggar Bot MCP server: x402 micropayment tools for AI agents on Base (USDC). Tools: verify_payment, risk_score, signed_receipt, verify_receipt. $0.01 per call via x402. Also listed in the"
+  },
+  {
+    "id": "gh_6011174948",
+    "title": "Per-network asset table, correct decimals and USD pricing, and explicit SDK spend controls",
+    "url": "https://github.com/dchu3/x402-agent-mcp/issues/62",
+    "repo": "dchu3/x402-agent-mcp",
+    "created_at": "2026-10-24T08:47:27Z",
+    "comments": 0,
+    "labels": [
+      "bug",
       "enhancement",
-      "spec"
+      "policy-engine"
     ],
     "platform": "Algora / GitHub PRs",
     "free_tier": true,
     "payment_verified": true,
-    "body_snippet": "Notion research: https://app.notion.com/p/4024618ed15b81f7bd86cc423a17d7a1?pvs=204  Related: #34 SPEC-626 officer careers, named battles and AI promotions.  ## Intent  Do not spawn a special \"nemesis NPC.\"  Let a **real enemy officer become a rival b"
+    "body_snippet": "<!-- source: grok-bot (Dev Bot) --> # Per-network asset table, correct decimals and USD pricing, and explicit SDK spend controls  **Suggested labels:** `bug`, `enhancement`, `policy-engine` **Priority:** Medium **Reviewed commit:** `d7bdce0`  ## Prob"
   },
   {
-    "id": "gh_5992389280",
-    "title": "bounties: optional `opensAt` so a poster can announce terms before entries are accepted",
-    "url": "https://github.com/aibtcdev/landing-page/issues/1113",
-    "repo": "aibtcdev/landing-page",
-    "created_at": "2026-10-23T05:21:58Z",
+    "id": "gh_6011171866",
+    "title": "Reserve spend before signing and count every signed-and-sent payment",
+    "url": "https://github.com/dchu3/x402-agent-mcp/issues/54",
+    "repo": "dchu3/x402-agent-mcp",
+    "created_at": "2026-10-24T08:47:01Z",
+    "comments": 1,
+    "labels": [
+      "bug",
+      "HUMAN-REVIEW-RECOMMENDED",
+      "policy-engine",
+      "security",
+      "needs:decision",
+      "source:grok-bot"
+    ],
+    "platform": "Algora / GitHub PRs",
+    "free_tier": true,
+    "payment_verified": true,
+    "body_snippet": "<!-- source: grok-bot (Dev Bot) --> # Reserve spend before signing and count every signed-and-sent payment  **Suggested labels:** `security`, `bug`, `policy-engine`, `HUMAN-REVIEW-RECOMMENDED`, `needs:decision` (accounting option, see Requirements 2-"
+  },
+  {
+    "id": "gh_6011171486",
+    "title": "Spend accounting must be derived only from the signed payment, never from response data",
+    "url": "https://github.com/dchu3/x402-agent-mcp/issues/53",
+    "repo": "dchu3/x402-agent-mcp",
+    "created_at": "2026-10-24T08:46:58Z",
+    "comments": 0,
+    "labels": [
+      "bug",
+      "HUMAN-REVIEW-RECOMMENDED",
+      "security",
+      "source:grok-bot"
+    ],
+    "platform": "Algora / GitHub PRs",
+    "free_tier": true,
+    "payment_verified": true,
+    "body_snippet": "<!-- source: grok-bot (Dev Bot) --> # Spend accounting must be derived only from the signed payment, never from response data  **Suggested labels:** `security`, `bug`, `HUMAN-REVIEW-RECOMMENDED` **Priority:** Critical **Reviewed commit:** `d7bdce0`  "
+  },
+  {
+    "id": "gh_6010545519",
+    "title": "Submit Remote MCP Server: KushBitx AgentProof (com.kushbitx/agentproof)",
+    "url": "https://github.com/chatmcp/mcpso/issues/6017",
+    "repo": "chatmcp/mcpso",
+    "created_at": "2026-10-24T07:23:55Z",
     "comments": 0,
     "labels": [],
     "platform": "Algora / GitHub PRs",
     "free_tier": true,
     "payment_verified": true,
-    "body_snippet": "## Problem  A listing accepts submissions from the moment it exists (`bountyStatus()` returns `open` for any `now < expiresAt`, `lib/bounty/types.ts`). For bounties with a mechanical, first-qualifying-wins pass condition, that means the race can be d"
+    "body_snippet": "- Name: KushBitx AgentProof - Type: Remote server - Remote connection: Streamable HTTP - URL: https://kushbitx.com/mcp - Authentication: none. Paid tools use x402 (USDC on Base) per call, in the Cloudflare Agents paidTool format: an unpaid call retur"
   },
   {
-    "id": "gh_5992279918",
-    "title": "SKILL.md and the ClaimBlocker tell agents to \"release\" an active claim, but no agent-side release surface exists",
-    "url": "https://github.com/auscaster/frantic-board/issues/554",
-    "repo": "auscaster/frantic-board",
-    "created_at": "2026-10-23T05:10:28Z",
+    "id": "gh_6009949428",
+    "title": "A Nano (XNO) settle rail beside the four stablecoin rails",
+    "url": "https://github.com/covenantx402/covenant/issues/5",
+    "repo": "covenantx402/covenant",
+    "created_at": "2026-10-24T06:03:10Z",
     "comments": 0,
     "labels": [],
     "platform": "Algora / GitHub PRs",
     "free_tier": true,
     "payment_verified": true,
-    "body_snippet": "Drafted by Izanami (agent-9d2ce7, an AI agent operated by @kumabear618) at the operator's direction, 2026-10-18, and filed by the operator.  ## Summary  SKILL.md tells an agent with `active_claim_exists` to \"finish or release the active claim\" — but "
+    "body_snippet": "# A Nano (XNO) settle rail beside the four stablecoin rails  **What.** COVENANT is a multi-chain x402 gateway: any endpoint → paid route, settled through x402 v1+v2, across four chains (Robinhood, Ethereum, Base, Arbitrum), with `GET /chains` returni"
   },
   {
-    "id": "gh_5992163047",
-    "title": "Security report: tari-ootle state sync commits a create/destroy pair no block committed — a serving peer plants permanent substate records and a poisoned `HeadIndex` (version `u64::MAX`) (GHSA-rxpr-jx2j-9x74)",
-    "url": "https://github.com/tari-project/special_contributions/issues/302",
-    "repo": "tari-project/special_contributions",
-    "created_at": "2026-10-23T04:58:29Z",
+    "id": "gh_6009914072",
+    "title": "Receipts for a Nano (XNO) settlement leg",
+    "url": "https://github.com/halfabillion/agent-receipts/issues/1",
+    "repo": "halfabillion/agent-receipts",
+    "created_at": "2026-10-24T05:58:03Z",
     "comments": 0,
+    "labels": [],
+    "platform": "Algora / GitHub PRs",
+    "free_tier": true,
+    "payment_verified": true,
+    "body_snippet": "# Receipts for a Nano (XNO) settlement leg  **What.** AgentReceipts turns an x402/USDC payment on Base into an evidence-grade receipt: parties from the on-chain `Transfer` log, terms pinned by SHA-256, fiat value from the Chainlink USDC/USD round at "
+  },
+  {
+    "id": "gh_6009701089",
+    "title": "Add server: 402post-mcp",
+    "url": "https://github.com/LuciferForge/mcp-directory/issues/96",
+    "repo": "LuciferForge/mcp-directory",
+    "created_at": "2026-10-24T05:25:03Z",
+    "comments": 0,
+    "labels": [],
+    "platform": "Algora / GitHub PRs",
+    "free_tier": true,
+    "payment_verified": true,
+    "body_snippet": "Repository URL: https://github.com/paranormalen2/402post-mcp  Category: Other  Brief description: Remote MCP server for 402post (https://402post.com) - a classifieds board for AI agents: search listings and open requests for free, publish a listing f"
+  },
+  {
+    "id": "gh_6006787724",
+    "title": "[security] serialize-javascript: Serialize JavaScript: Cross-site scripting (XSS) via unescaped </script at the end of a serialized function body (examples/byo/nitro/package-lock.json)",
+    "url": "https://github.com/flisk-sh/flisk/issues/2015",
+    "repo": "flisk-sh/flisk",
+    "created_at": "2026-10-23T23:09:52Z",
+    "comments": 2,
     "labels": [
-      "retro-bounty",
-      "bounty-M"
+      "help wanted",
+      "claimed",
+      "security",
+      "supply-chain",
+      "dependencies",
+      "vulnerability",
+      "security-alert",
+      "auto-generated",
+      "area: dependencies",
+      "source: dependabot",
+      "ecosystem: npm",
+      "severity: low",
+      "scope: development",
+      "cwe: 79",
+      "package: serialize-javascript"
     ],
     "platform": "Algora / GitHub PRs",
     "free_tier": true,
     "payment_verified": true,
-    "body_snippet": "Retro bounty for @m4r1m0 for reporting a security vulnerability in `tari-ootle` through GitHub Security Advisories: [GHSA-rxpr-jx2j-9x74](https://github.com/tari-project/tari-ootle/security/advisories/GHSA-rxpr-jx2j-9x74).  The report showed that sta"
+    "body_snippet": "<!-- flisk:security-alert:GHSA-m5mm-p8h7-m29v|examples/byo/nitro/package-lock.json -->  A published advisory affects **serialize-javascript** as resolved in `examples/byo/nitro/package-lock.json`. The fix is 7.1.3.  ## Advisory  - GHSA: [GHSA-m5mm-p8"
   },
   {
-    "id": "gh_5992117355",
-    "title": "bounty-watch 2026-10-23: 0 new, 0 resumed, 4 watchlist changes",
-    "url": "https://github.com/abdulsalam-create/bounty-watch/issues/158",
-    "repo": "abdulsalam-create/bounty-watch",
-    "created_at": "2026-10-23T04:53:28Z",
+    "id": "gh_5997206903",
+    "title": "docs: add SECURITY.md and CODE_OF_CONDUCT.md",
+    "url": "https://github.com/saajann/openuni/issues/88",
+    "repo": "saajann/openuni",
+    "created_at": "2026-10-23T11:49:48Z",
     "comments": 0,
     "labels": [
-      "bounty-watch"
+      "documentation",
+      "help wanted",
+      "good first issue",
+      "security"
     ],
     "platform": "Algora / GitHub PRs",
     "free_tier": true,
     "payment_verified": true,
-    "body_snippet": "# bounty-watch report 2026-10-23  ## Watchlist changes (4) - **Linktree** (`bc:linktree-mbb-og`) https://bugcrowd.com/engagements/linktree-mbb-og   - https://linktr.ee: new JS bundles: 1pb5w_dnsd36r.js; removed JS bundles: 1cpo-08lybt-5.js _[deploy]_"
+    "body_snippet": "`CONTRIBUTING.md` links to a Code of Conduct that does not exist, and there is no security disclosure policy. For an open-source project that invites external contributors, both are baseline community-health files.  ## Scope  - [ ] Add `CODE_OF_CONDU"
   },
   {
     "id": "gh_5991892196",
@@ -318,123 +510,6 @@
     "free_tier": true,
     "payment_verified": true,
     "body_snippet": "### Problem  The deploy script defaults FEE_RATE_BPS to zero but only applies marketplace set_fee_config when it is greater than zero. Marketplace initialization does not persist FeeRateBps, so its getter falls back to DEFAULT_FEE_RATE_BPS=300. A fre"
-  },
-  {
-    "id": "gh_5993025563",
-    "title": "Interop trial: external PayanAgent provider → SaSame GEC Bid lifecycle",
-    "url": "https://github.com/derNif/payanagent/issues/138",
-    "repo": "derNif/payanagent",
-    "created_at": "2026-10-23T06:23:34Z",
-    "comments": 0,
-    "labels": [],
-    "platform": "Algora / GitHub PRs",
-    "free_tier": true,
-    "payment_verified": true,
-    "body_snippet": "## Context  SaSame GEC is testing whether a genuinely independent external agent/provider can discover live work and enter its Production Bid lifecycle from another agent marketplace/runtime.  PayanAgent looks structurally relevant because its public"
-  },
-  {
-    "id": "gh_5992925444",
-    "title": "Adopt standard Supporter DNFT release workflows",
-    "url": "https://github.com/TheJollyLaMa/AsteRoid/issues/1",
-    "repo": "TheJollyLaMa/AsteRoid",
-    "created_at": "2026-10-23T06:14:20Z",
-    "comments": 0,
-    "labels": [],
-    "platform": "Algora / GitHub PRs",
-    "free_tier": true,
-    "payment_verified": true,
-    "body_snippet": "Bring AsteRoid onto the standard Decent Supporter DNFT release pipeline (the DecentHead product kit), so every version we ship is archived, minted and announced the same way across the pipeline.  **When:** when AsteRoid has a version worth supporting"
-  },
-  {
-    "id": "gh_5992924899",
-    "title": "Adopt standard Supporter DNFT release workflows",
-    "url": "https://github.com/TheJollyLaMa/BabelBet/issues/1",
-    "repo": "TheJollyLaMa/BabelBet",
-    "created_at": "2026-10-23T06:14:17Z",
-    "comments": 0,
-    "labels": [],
-    "platform": "Algora / GitHub PRs",
-    "free_tier": true,
-    "payment_verified": true,
-    "body_snippet": "Bring BabelBet onto the standard Decent Supporter DNFT release pipeline (the DecentHead product kit), so every version we ship is archived, minted and announced the same way across the pipeline.  **When:** when BabelBet has a version worth supporting"
-  },
-  {
-    "id": "gh_5992924524",
-    "title": "Adopt standard Supporter DNFT release workflows",
-    "url": "https://github.com/TheJollyLaMa/Decent_UCAN_Play/issues/2",
-    "repo": "TheJollyLaMa/Decent_UCAN_Play",
-    "created_at": "2026-10-23T06:14:15Z",
-    "comments": 0,
-    "labels": [],
-    "platform": "Algora / GitHub PRs",
-    "free_tier": true,
-    "payment_verified": true,
-    "body_snippet": "Bring Decent_UCAN_Play onto the standard Decent Supporter DNFT release pipeline (the DecentHead product kit), so every version we ship is archived, minted and announced the same way across the pipeline.  **When:** when Decent_UCAN_Play has a version "
-  },
-  {
-    "id": "gh_5992924339",
-    "title": "Adopt standard Supporter DNFT release workflows",
-    "url": "https://github.com/TheJollyLaMa/Decent_NDA/issues/1",
-    "repo": "TheJollyLaMa/Decent_NDA",
-    "created_at": "2026-10-23T06:14:14Z",
-    "comments": 0,
-    "labels": [],
-    "platform": "Algora / GitHub PRs",
-    "free_tier": true,
-    "payment_verified": true,
-    "body_snippet": "Bring Decent_NDA onto the standard Decent Supporter DNFT release pipeline (the DecentHead product kit), so every version we ship is archived, minted and announced the same way across the pipeline.  **When:** when Decent_NDA has a version worth suppor"
-  },
-  {
-    "id": "gh_5992923942",
-    "title": "Adopt standard Supporter DNFT release workflows",
-    "url": "https://github.com/TheJollyLaMa/DecentAirdrop/issues/3",
-    "repo": "TheJollyLaMa/DecentAirdrop",
-    "created_at": "2026-10-23T06:14:12Z",
-    "comments": 0,
-    "labels": [],
-    "platform": "Algora / GitHub PRs",
-    "free_tier": true,
-    "payment_verified": true,
-    "body_snippet": "Bring DecentAirdrop onto the standard Decent Supporter DNFT release pipeline (the DecentHead product kit), so every version we ship is archived, minted and announced the same way across the pipeline.  **When:** when DecentAirdrop has a version worth "
-  },
-  {
-    "id": "gh_5992923760",
-    "title": "Adopt standard Supporter DNFT release workflows",
-    "url": "https://github.com/TheJollyLaMa/DecentInvoice/issues/1",
-    "repo": "TheJollyLaMa/DecentInvoice",
-    "created_at": "2026-10-23T06:14:11Z",
-    "comments": 0,
-    "labels": [],
-    "platform": "Algora / GitHub PRs",
-    "free_tier": true,
-    "payment_verified": true,
-    "body_snippet": "Bring DecentInvoice onto the standard Decent Supporter DNFT release pipeline (the DecentHead product kit), so every version we ship is archived, minted and announced the same way across the pipeline.  **When:** when DecentInvoice has a version worth "
-  },
-  {
-    "id": "gh_5992923608",
-    "title": "Adopt standard Supporter DNFT release workflows",
-    "url": "https://github.com/TheJollyLaMa/DecentEscrow/issues/1",
-    "repo": "TheJollyLaMa/DecentEscrow",
-    "created_at": "2026-10-23T06:14:10Z",
-    "comments": 0,
-    "labels": [],
-    "platform": "Algora / GitHub PRs",
-    "free_tier": true,
-    "payment_verified": true,
-    "body_snippet": "Bring DecentEscrow onto the standard Decent Supporter DNFT release pipeline (the DecentHead product kit), so every version we ship is archived, minted and announced the same way across the pipeline.  **When:** when DecentEscrow has a version worth su"
-  },
-  {
-    "id": "gh_5992923181",
-    "title": "Adopt standard Supporter DNFT release workflows",
-    "url": "https://github.com/TheJollyLaMa/DecentPilgrimages/issues/1",
-    "repo": "TheJollyLaMa/DecentPilgrimages",
-    "created_at": "2026-10-23T06:14:07Z",
-    "comments": 0,
-    "labels": [],
-    "platform": "Algora / GitHub PRs",
-    "free_tier": true,
-    "payment_verified": true,
-    "body_snippet": "Bring DecentPilgrimages onto the standard Decent Supporter DNFT release pipeline (the DecentHead product kit), so every version we ship is archived, minted and announced the same way across the pipeline.  **When:** when DecentPilgrimages has a versio"
   },
   {
     "id": "gh_5991890878",
@@ -522,46 +597,12 @@
     "body_snippet": "### Problem  The deployment script never calls set_guardian or set_attester. It accepts an unset guardian during verification and then reports all contracts deployed and wired. The launch runbook requires those roles; production escrow also lacks the"
   },
   {
-    "id": "gh_5991888602",
-    "title": "[Regression][DevOps] Verify effective admin and guardian multisig before mainnet writes",
-    "url": "https://github.com/Cylo-Traders/Agrocylo-Global/issues/1283",
-    "repo": "Cylo-Traders/Agrocylo-Global",
-    "created_at": "2026-10-23T04:28:03Z",
-    "comments": 1,
-    "labels": [
-      "bug",
-      "help wanted",
-      "Contract"
-    ],
-    "platform": "Algora / GitHub PRs",
-    "free_tier": true,
-    "payment_verified": true,
-    "body_snippet": "### Problem  The custody and mainnet runbooks promise a pre-deployment check rejecting single-key privileged accounts, but the current script does not inspect signer weights/thresholds and defaults ADMIN to the deployer. Counting multiple signers alo"
-  },
-  {
-    "id": "gh_5991888071",
-    "title": "[Regression][DevOps] Replace WASM verification scaffolding with real build and hash checks",
-    "url": "https://github.com/Cylo-Traders/Agrocylo-Global/issues/1282",
-    "repo": "Cylo-Traders/Agrocylo-Global",
-    "created_at": "2026-10-23T04:28:00Z",
-    "comments": 0,
-    "labels": [
-      "bug",
-      "help wanted",
-      "Contract"
-    ],
-    "platform": "Algora / GitHub PRs",
-    "free_tier": true,
-    "payment_verified": true,
-    "body_snippet": "### Problem  `scripts/verify-wasm.sh` prints build/comparison instructions but never executes the Docker build, calculates a resulting artifact hash, or compares it to the expected on-chain hash. Its final messages can exit successfully without verif"
-  },
-  {
     "id": "gh_5874537137",
     "title": "[Bounty] [Bounty: $105] Preserve burnTxHash when Stellar confirmation polling hits transi",
     "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/1915",
     "repo": "zhangjiayang6835-cyber/bounty-plaza",
     "created_at": "2026-10-15T21:54:24Z",
-    "comments": 12,
+    "comments": 13,
     "labels": [
       "bounty",
       "real"
@@ -577,7 +618,7 @@
     "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/1912",
     "repo": "zhangjiayang6835-cyber/bounty-plaza",
     "created_at": "2026-10-15T21:54:22Z",
-    "comments": 11,
+    "comments": 12,
     "labels": [
       "bounty",
       "real"
@@ -733,5 +774,20 @@
     "free_tier": true,
     "payment_verified": true,
     "body_snippet": "## 外部 Bounty 任务镜像  | 字段 | 值 | |---|---| | 源仓库 | zhangjiayang6835-cyber/bounty-plaza | | 原 issue | #491 | | 作者 | zhangjiayang6835-cyber | | 创建时间 | 2026-07-13T10:41:49 | | 标签 | bounty,real | | 评论 | 3 条 | | 赏金 | 1 USD | | 原 URL | https://github.com/zhan"
+  },
+  {
+    "id": "gh_6011516904",
+    "title": "[Bug bounty] XCM API /x-transfers fails for a custom origin chain: provider lookup ignores options.customChains",
+    "url": "https://github.com/paraspell/xcm-tools/issues/2219",
+    "repo": "paraspell/xcm-tools",
+    "created_at": "2026-10-24T09:30:37Z",
+    "comments": 0,
+    "labels": [
+      "Bug bounty 💰"
+    ],
+    "platform": "Algora / GitHub PRs",
+    "free_tier": true,
+    "payment_verified": true,
+    "body_snippet": "# 🐞 Bug Report  ## 🔍 Describe the Bug  The XCM API accepts `options.customChains` in its [transfer DTO](https://github.com/paraspell/xcm-tools/blob/b7e9a6b05fe89686412c85be70f41792acbdd223/apps/xcm-api/src/x-transfer/dto/XTransferDto.ts#L75-L85), and"
   }
 ]

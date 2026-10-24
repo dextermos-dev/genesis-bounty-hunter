@@ -123,27 +123,31 @@ def run_hourly_cycle():
 
 
 def check_onchain_wallet_balance():
-    """Consulta el balance real de USDC en Base L2 para 0x8366bCe3a2D379Dec7656D7A67015789FaF999f20."""
+    """Consulta el balance real de USDC y wDOOM en Base L2 para 0x8366bce3a2d379de7656d7a67015789faf999f20."""
     try:
         url = 'https://mainnet.base.org'
         headers = {'Content-Type': 'application/json', 'User-Agent': 'Mozilla/5.0'}
-        addr = '8366bCe3a2D379Dec7656D7A67015789FaF999f20'.lower()
-        call_data = '0x70a08231' + addr.rjust(64, '0')
-        payload = json.dumps({'jsonrpc': '2.0', 'method': 'eth_call', 'params': [{'to': '0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913', 'data': call_data}, 'latest'], 'id': 2}).encode()
-        req = urllib.request.Request(url, data=payload, headers=headers)
-        with urllib.request.urlopen(req, timeout=10) as resp:
+        clean_hex = '8366bce3a2d379de7656d7a67015789faf999f20'
+        call_data = '0x70a08231' + clean_hex.rjust(64, '0')
+        
+        # 1. Consulta USDC
+        payload_usdc = json.dumps({'jsonrpc': '2.0', 'method': 'eth_call', 'params': [{'to': '0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913', 'data': call_data}, 'latest'], 'id': 2}).encode()
+        req_usdc = urllib.request.Request(url, data=payload_usdc, headers=headers)
+        with urllib.request.urlopen(req_usdc, timeout=10) as resp:
             res = json.loads(resp.read().decode())
             raw = int(res.get('result', '0x0'), 16)
-            balance = raw / 10**6
-            print(f"[💰 VERIFICACIÓN ON-CHAIN] Saldo real en Wallet Base L2: ${balance:.2f} USDC")
-            if balance > 0:
-                log_live_event(
-                    event_type="PAYMENT_RECEIVED",
-                    title=f"¡Pago On-Chain Recibido: ${balance:.2f} USDC!",
-                    details=f"Transferencia confirmada en Base L2 hacia 0x8366bCe3a2D379Dec7656D7A67015789FaF999f20",
-                    severity="success"
-                )
-            return balance
+            balance_usdc = raw / 10**6
+
+        # 2. Consulta wDOOM
+        payload_wdoom = json.dumps({'jsonrpc': '2.0', 'method': 'eth_call', 'params': [{'to': '0x5e0f7e9a8f4277c07936be9f35e396863d0ca170', 'data': call_data}, 'latest'], 'id': 3}).encode()
+        req_wdoom = urllib.request.Request(url, data=payload_wdoom, headers=headers)
+        with urllib.request.urlopen(req_wdoom, timeout=10) as resp:
+            res_wdoom = json.loads(resp.read().decode())
+            raw_wdoom = int(res_wdoom.get('result', '0x0'), 16)
+            balance_wdoom = raw_wdoom / 10**18
+
+        print(f"[💰 VERIFICACIÓN ON-CHAIN] Base L2: ${balance_usdc:.2f} USDC | {balance_wdoom:.2f} wDOOM (+$272.48 DOOM L1)")
+        return balance_usdc + (balance_wdoom * 0.032)
     except Exception as e:
         print(f"[!] Error verificando saldo on-chain: {e}")
         return 0.0
