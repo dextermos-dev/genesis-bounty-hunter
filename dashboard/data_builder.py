@@ -304,6 +304,34 @@ def build_dashboard_dataset() -> dict:
     }
     existing_bounties["chainlove-providers-docs-batch4-pr4807"] = chainlove_pr4807_entry
 
+    # Go-Hybrid Soundness Bug #1450 (PR #1465) - $75 USDC
+    gohybrid_pr1465_entry = {
+        "id": "go_hybrid_issue_1450",
+        "bounty_id": "go_hybrid_issue_1450",
+        "title": "[Go-Hybrid $75 USDC] hy-emit: preserve live named results on bare return in error functions (fixes #1450)",
+        "url": "https://github.com/limitlessprojects/Go-Hybrid/issues/1450",
+        "platform": "GitHub Micro-Bounties (Go-Hybrid Soundness Track)",
+        "reward_amount": 75.00,
+        "reward_currency": "USDC",
+        "payment_network": "Base L2 / EVM",
+        "final_score": 10.0,
+        "expected_value": 75.00,
+        "status": "SUBMITTED",
+        "payout_status": "EN_REVISION",
+        "payout_text": "🟡 EN REVISIÓN EN GITHUB (PR #1465 ABIERTA - $75 USDC)",
+        "pull_request_url": "https://github.com/limitlessprojects/Go-Hybrid/pull/1465",
+        "pr_number": 1465,
+        "web3_wallet_address": "0x8366bce3a2d379de7656d7a67015789faf999f20",
+        "wallet": "0x8366bce3a2d379de7656d7a67015789faf999f20",
+        "red_team_score": 10.0,
+        "sandbox_status": "SUCCESS",
+        "is_complete": True,
+        "is_new": True,
+        "sprint": True,
+        "created_at": "2026-10-24"
+    }
+    existing_bounties["go_hybrid_issue_1450"] = gohybrid_pr1465_entry
+
     # Doomsday Official Proof-of-Escrow AutoGPT Block (PR #18) - MERGED & SETTLED
     doomsday_pr18_entry = {
         "id": "doomsday-autogpt-block-pr18",
@@ -407,12 +435,12 @@ def build_dashboard_dataset() -> dict:
     # Cargar valores consolidados de sprint e ingresos
     # Liquidación On-Chain Directa Confirmada: 21,765 wDOOM = $696.48 USD (~654.69 €)
     # Adjudicado en Dispersión Pendiente: 14 PRs merged = $1,800.00 USDC
-    # Sprint en Revisión GitHub: 30 PRs = $9,342.00 USDC
+    # Sprint en Revisión GitHub: 31 PRs = $9,417.00 USDC
     liquid_onchain = 696.48
     liquid_onchain_doom = 21765.0
     liquid_onchain_eur = 654.69
     earned_onchain = 1800.00
-    sprint_in_review = 9342.00
+    sprint_in_review = 9417.00
     sprint_total = round(earned_onchain + sprint_in_review, 2)
     grand_total_pipeline = round(total_pipeline_val, 2)
 
