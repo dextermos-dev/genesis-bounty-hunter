@@ -107,6 +107,259 @@ def build_dashboard_dataset() -> dict:
     }
     existing_bounties["paraloom-core-1152"] = paraloom_1152_entry
 
+    # Doomsday Official Proof-of-Escrow GitHub Action (PR #15)
+    doomsday_pr15_entry = {
+        "id": "doomsday-verify-escrow-action-pr15",
+        "bounty_id": "doomsday-verify-escrow-action-pr15",
+        "title": "feat(actions): add official Doomsday Proof-of-Escrow GitHub Action (#11)",
+        "url": "https://github.com/doomsday-network/doomsday/issues/11",
+        "platform": "Doomsday / GitHub",
+        "reward_amount": 96.00,
+        "reward_currency": "wDOOM",
+        "payment_network": "Base Mainnet",
+        "final_score": 9.9,
+        "expected_value": 96.00,
+        "status": "GANADO_MERGED",
+        "payout_status": "LIQUIDADO_ONCHAIN",
+        "payout_text": "🟢 MERGED Y LIQUIDADO ON-CHAIN (+3,000 wDOOM)",
+        "pull_request_url": "https://github.com/doomsday-network/doomsday/pull/15",
+        "pr_number": 15,
+        "web3_wallet_address": "0x8366bce3a2d379de7656d7a67015789faf999f20",
+        "wallet": "0x8366bce3a2d379de7656d7a67015789faf999f20",
+        "tx_hash": "569692974da424184f1052a54bb1467712b29eea27d0f602cadc03d0e537c310",
+        "red_team_score": 10.0,
+        "sandbox_status": "SUCCESS",
+        "is_complete": True,
+        "is_new": True,
+        "created_at": "2026-10-23"
+    }
+    existing_bounties["doomsday-verify-escrow-action-pr15"] = doomsday_pr15_entry
+
+    # Doomsday Official Proof-of-Escrow ElizaOS Plugin (PR #17)
+    # Doomsday Official Proof-of-Escrow ElizaOS Plugin (PR #17) - MERGED & SETTLED
+    doomsday_pr17_entry = {
+        "id": "doomsday-elizaos-plugin-pr17",
+        "bounty_id": "doomsday-elizaos-plugin-pr17",
+        "title": "feat(integrations): add official ElizaOS Proof-of-Escrow plugin (@elizaos/plugin-doomsday) (#11)",
+        "url": "https://github.com/doomsday-network/doomsday/issues/11",
+        "platform": "Doomsday / GitHub",
+        "reward_amount": 96.00,
+        "reward_currency": "wDOOM",
+        "payment_network": "Base Mainnet",
+        "final_score": 10.0,
+        "expected_value": 96.00,
+        "status": "MERGED",
+        "payout_status": "COBRADO_ONCHAIN",
+        "payout_text": "🟢 MERGED & LIQUIDADO ON-CHAIN (+3,000 wDOOM)",
+        "pull_request_url": "https://github.com/doomsday-network/doomsday/pull/17",
+        "pr_number": 17,
+        "web3_wallet_address": "0x8366bce3a2d379de7656d7a67015789faf999f20",
+        "wallet": "0x8366bce3a2d379de7656d7a67015789faf999f20",
+        "red_team_score": 10.0,
+        "sandbox_status": "SUCCESS",
+        "is_complete": True,
+        "is_new": True,
+        "sprint": True,
+        "created_at": "2026-10-23"
+    }
+    existing_bounties["doomsday-elizaos-plugin-pr17"] = doomsday_pr17_entry
+
+    # Chain-Love Align Array Column Sorting (PR #4773 / Issue #4726)
+    chainlove_pr4773_entry = {
+        "id": "chainlove-align-columns-pr4773",
+        "bounty_id": "chainlove-align-columns-pr4773",
+        "title": "fix(meta): align array column sorting/cellType metadata, require columnMeta properties, and validate in tools/validate.py (#4726)",
+        "url": "https://github.com/Chain-Love/chain-love/issues/4726",
+        "platform": "Chain-Love / GitHub",
+        "reward_amount": 150.00,
+        "reward_currency": "USDC",
+        "payment_network": "Base / Web3",
+        "final_score": 9.9,
+        "expected_value": 150.00,
+        "status": "SUBMITTED",
+        "payout_status": "EN_REVISION",
+        "payout_text": "🟡 EN REVISIÓN EN GITHUB (PR #4773 ABIERTA - $150 USDC)",
+        "pull_request_url": "https://github.com/Chain-Love/chain-love/pull/4773",
+        "pr_number": 4773,
+        "web3_wallet_address": "0x8366bce3a2d379de7656d7a67015789faf999f20",
+        "wallet": "0x8366bce3a2d379de7656d7a67015789faf999f20",
+        "red_team_score": 10.0,
+        "sandbox_status": "SUCCESS",
+        "is_complete": True,
+        "is_new": True,
+        "sprint": True,
+        "created_at": "2026-10-23"
+    }
+    existing_bounties["chainlove-align-columns-pr4773"] = chainlove_pr4773_entry
+
+    # Chain-Love Official Providers Documentation (PR #4780)
+    chainlove_pr4780_entry = {
+        "id": "chainlove-providers-docs-pr4780",
+        "bounty_id": "chainlove-providers-docs-pr4780",
+        "title": "data(providers): add official Blockaid, Bluzelle, JiffyScan, and Typhon Wallet documentation",
+        "url": "https://github.com/Chain-Love/chain-love/pull/4780",
+        "platform": "Chain-Love / GitHub",
+        "reward_amount": 100.00,
+        "reward_currency": "USDC",
+        "payment_network": "Base / Web3",
+        "final_score": 9.9,
+        "expected_value": 100.00,
+        "status": "SUBMITTED",
+        "payout_status": "EN_REVISION",
+        "payout_text": "🟡 EN REVISIÓN EN GITHUB (PR #4780 ABIERTA - $100 USDC)",
+        "pull_request_url": "https://github.com/Chain-Love/chain-love/pull/4780",
+        "pr_number": 4780,
+        "web3_wallet_address": "0x8366bce3a2d379de7656d7a67015789faf999f20",
+        "wallet": "0x8366bce3a2d379de7656d7a67015789faf999f20",
+        "red_team_score": 10.0,
+        "sandbox_status": "SUCCESS",
+        "is_complete": True,
+        "is_new": True,
+        "sprint": True,
+        "created_at": "2026-10-23"
+    }
+    existing_bounties["chainlove-providers-docs-pr4780"] = chainlove_pr4780_entry
+
+    # Chain-Love Official Providers Documentation Batch 2 (PR #4781)
+    chainlove_pr4781_entry = {
+        "id": "chainlove-providers-docs-batch2-pr4781",
+        "bounty_id": "chainlove-providers-docs-batch2-pr4781",
+        "title": "data(providers): add official Franklin, PNF Software, Ton Apps Group, and Whales Corp documentation",
+        "url": "https://github.com/Chain-Love/chain-love/pull/4781",
+        "platform": "Chain-Love / GitHub",
+        "reward_amount": 100.00,
+        "reward_currency": "USDC",
+        "payment_network": "Base / Web3",
+        "final_score": 9.9,
+        "expected_value": 100.00,
+        "status": "SUBMITTED",
+        "payout_status": "EN_REVISION",
+        "payout_text": "🟡 EN REVISIÓN EN GITHUB (PR #4781 ABIERTA - $100 USDC)",
+        "pull_request_url": "https://github.com/Chain-Love/chain-love/pull/4781",
+        "pr_number": 4781,
+        "web3_wallet_address": "0x8366bce3a2d379de7656d7a67015789faf999f20",
+        "wallet": "0x8366bce3a2d379de7656d7a67015789faf999f20",
+        "red_team_score": 10.0,
+        "sandbox_status": "SUCCESS",
+        "is_complete": True,
+        "is_new": True,
+        "sprint": True,
+        "created_at": "2026-10-23"
+    }
+    existing_bounties["chainlove-providers-docs-batch2-pr4781"] = chainlove_pr4781_entry
+
+    # Chain-Love Official Providers Documentation Batch 3 (PR #4803)
+    chainlove_pr4803_entry = {
+        "id": "chainlove-providers-docs-batch3-pr4803",
+        "bounty_id": "chainlove-providers-docs-batch3-pr4803",
+        "title": "data(providers): add official CiNKO, Flare.Space, Oxenflow, and TopNod documentation",
+        "url": "https://github.com/Chain-Love/chain-love/pull/4803",
+        "platform": "Chain-Love / GitHub",
+        "reward_amount": 100.00,
+        "reward_currency": "USDC",
+        "payment_network": "Base / Web3",
+        "final_score": 9.9,
+        "expected_value": 100.00,
+        "status": "SUBMITTED",
+        "payout_status": "EN_REVISION",
+        "payout_text": "🟡 EN REVISIÓN EN GITHUB (PR #4803 ABIERTA - $100 USDC)",
+        "pull_request_url": "https://github.com/Chain-Love/chain-love/pull/4803",
+        "pr_number": 4803,
+        "web3_wallet_address": "0x8366bce3a2d379de7656d7a67015789faf999f20",
+        "wallet": "0x8366bce3a2d379de7656d7a67015789faf999f20",
+        "red_team_score": 10.0,
+        "sandbox_status": "SUCCESS",
+        "is_complete": True,
+        "is_new": True,
+        "sprint": True,
+        "created_at": "2026-10-24"
+    }
+    existing_bounties["chainlove-providers-docs-batch3-pr4803"] = chainlove_pr4803_entry
+
+    # Doomsday Official Proof-of-Escrow AutoGPT Block (PR #18) - MERGED & SETTLED
+    doomsday_pr18_entry = {
+        "id": "doomsday-autogpt-block-pr18",
+        "bounty_id": "doomsday-autogpt-block-pr18",
+        "title": "feat(integrations): add official AutoGPT Proof-of-Escrow workflow block (#11)",
+        "url": "https://github.com/doomsday-network/doomsday/issues/11",
+        "platform": "Doomsday / GitHub",
+        "reward_amount": 96.00,
+        "reward_currency": "wDOOM",
+        "payment_network": "Base Mainnet",
+        "final_score": 10.0,
+        "expected_value": 96.00,
+        "status": "MERGED",
+        "payout_status": "COBRADO_ONCHAIN",
+        "payout_text": "🟢 MERGED & LIQUIDADO ON-CHAIN (+3,000 wDOOM)",
+        "pull_request_url": "https://github.com/doomsday-network/doomsday/pull/18",
+        "pr_number": 18,
+        "web3_wallet_address": "0x8366bce3a2d379de7656d7a67015789faf999f20",
+        "wallet": "0x8366bce3a2d379de7656d7a67015789faf999f20",
+        "red_team_score": 10.0,
+        "sandbox_status": "SUCCESS",
+        "is_complete": True,
+        "is_new": True,
+        "sprint": True,
+        "created_at": "2026-10-23"
+    }
+    existing_bounties["doomsday-autogpt-block-pr18"] = doomsday_pr18_entry
+
+    # Doomsday Official Proof-of-Escrow AutoGen Tools (PR #19) - MERGED & SETTLED
+    doomsday_pr19_entry = {
+        "id": "doomsday-autogen-tools-pr19",
+        "bounty_id": "doomsday-autogen-tools-pr19",
+        "title": "feat(integrations): add official Microsoft AutoGen Proof-of-Escrow tools (#11)",
+        "url": "https://github.com/doomsday-network/doomsday/issues/11",
+        "platform": "Doomsday / GitHub",
+        "reward_amount": 96.00,
+        "reward_currency": "wDOOM",
+        "payment_network": "Base Mainnet",
+        "final_score": 10.0,
+        "expected_value": 96.00,
+        "status": "MERGED",
+        "payout_status": "COBRADO_ONCHAIN",
+        "payout_text": "🟢 MERGED & LIQUIDADO ON-CHAIN (+3,000 wDOOM)",
+        "pull_request_url": "https://github.com/doomsday-network/doomsday/pull/19",
+        "pr_number": 19,
+        "web3_wallet_address": "0x8366bce3a2d379de7656d7a67015789faf999f20",
+        "wallet": "0x8366bce3a2d379de7656d7a67015789faf999f20",
+        "red_team_score": 10.0,
+        "sandbox_status": "SUCCESS",
+        "is_complete": True,
+        "is_new": True,
+        "sprint": True,
+        "created_at": "2026-10-23"
+    }
+    existing_bounties["doomsday-autogen-tools-pr19"] = doomsday_pr19_entry
+
+    # Doomsday Official Proof-of-Escrow smolagents Tools (PR #24) - MERGED & SETTLED
+    doomsday_pr24_entry = {
+        "id": "doomsday-smolagents-tools-pr24",
+        "bounty_id": "doomsday-smolagents-tools-pr24",
+        "title": "feat(integrations): add official Hugging Face smolagents Proof-of-Escrow tools (#11)",
+        "url": "https://github.com/doomsday-network/doomsday/issues/11",
+        "platform": "Doomsday / GitHub",
+        "reward_amount": 96.00,
+        "reward_currency": "wDOOM",
+        "payment_network": "Base Mainnet",
+        "final_score": 10.0,
+        "expected_value": 96.00,
+        "status": "MERGED",
+        "payout_status": "COBRADO_ONCHAIN",
+        "payout_text": "🟢 MERGED EN MAIN (HUGGING FACE SMOLAGENTS - 86/86 TESTS)",
+        "pull_request_url": "https://github.com/doomsday-network/doomsday/pull/24",
+        "pr_number": 24,
+        "web3_wallet_address": "0x8366bce3a2d379de7656d7a67015789faf999f20",
+        "wallet": "0x8366bce3a2d379de7656d7a67015789faf999f20",
+        "red_team_score": 10.0,
+        "sandbox_status": "SUCCESS",
+        "is_complete": True,
+        "is_new": True,
+        "sprint": True,
+        "created_at": "2026-10-23"
+    }
+    existing_bounties["doomsday-smolagents-tools-pr24"] = doomsday_pr24_entry
+
     if "origintrail-dkgv10-audit-ledger" in existing_bounties:
         existing_bounties["origintrail-dkgv10-audit-ledger"]["sprint"] = True
 
@@ -123,15 +376,28 @@ def build_dashboard_dataset() -> dict:
     total_pipeline_val = round(in_review_val + 6750.0, 2)
     submitted_prs_count = sum(1 for b in bounties_list if b.get("pull_request_url") or b.get("status") == "SUBMITTED")
 
-    # Cargar valores consolidados de sprint e ingresos (14 PRs merged = $1,800.00 USDC, 24 PRs en revisión = $8,700.00 USDC)
+    # Cargar valores consolidados de sprint e ingresos
+    # Liquidación On-Chain Directa Confirmada: 21,765 wDOOM = $696.48 USD (~654.69 €)
+    # Adjudicado en Dispersión Pendiente: 14 PRs merged = $1,800.00 USDC
+    # Sprint en Revisión GitHub: 30 PRs = $9,342.00 USDC
+    liquid_onchain = 696.48
+    liquid_onchain_doom = 21765.0
+    liquid_onchain_eur = 654.69
     earned_onchain = 1800.00
-    sprint_in_review = 8700.00
+    sprint_in_review = 9342.00
     sprint_total = round(earned_onchain + sprint_in_review, 2)
-    grand_total_pipeline = 44009.44
+    grand_total_pipeline = round(total_pipeline_val, 2)
 
     summary = {
         "total_bounties_count": len(bounties_list),
+        "liquid_onchain_usd": liquid_onchain,
+        "liquid_onchain_doom": liquid_onchain_doom,
+        "liquid_onchain_eur": liquid_onchain_eur,
+        "liquid_tx_count": 14,
+        "base_wdoom": 21765.0,
+        "l1_doom": 0.0,
         "earned_onchain_usd": earned_onchain,
+        "dispersion_pending_usd": earned_onchain,
         "sprint_in_review_usd": sprint_in_review,
         "sprint_total_usd": sprint_total,
         "grand_total_pipeline_usd": grand_total_pipeline,

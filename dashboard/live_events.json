@@ -1,242 +1,242 @@
 [
   {
+    "timestamp": "23:59:19",
+    "date": "2026-10-23",
+    "type": "SANDBOX_STATUS",
+    "title": "Integridad del Sandbox",
+    "details": "22/22 Bounties con compilación y suite de pruebas 100% en verde.",
+    "severity": "success"
+  },
+  {
+    "timestamp": "23:59:19",
+    "date": "2026-10-23",
+    "type": "GITHUB_CI",
+    "title": "Integración Continua Vercel / Gitcoin",
+    "details": "PR #474 en gitcoinco/gitcoin_co_30 recibida correctamente por Allo Capital CI.",
+    "severity": "info"
+  },
+  {
+    "timestamp": "23:59:19",
+    "date": "2026-10-23",
+    "type": "SYSTEM_SYNC",
+    "title": "Sincronización Autónoma Nivel B",
+    "details": "Monitoreando 18 Pull Requests publicadas en GitHub y Wallet 0x8366bCe3...",
+    "severity": "success"
+  },
+  {
+    "timestamp": "18:26:34",
+    "date": "2026-10-23",
+    "type": "SANDBOX_STATUS",
+    "title": "Integridad del Sandbox",
+    "details": "22/22 Bounties con compilación y suite de pruebas 100% en verde.",
+    "severity": "success"
+  },
+  {
+    "timestamp": "18:26:34",
+    "date": "2026-10-23",
+    "type": "GITHUB_CI",
+    "title": "Integración Continua Vercel / Gitcoin",
+    "details": "PR #474 en gitcoinco/gitcoin_co_30 recibida correctamente por Allo Capital CI.",
+    "severity": "info"
+  },
+  {
+    "timestamp": "18:26:33",
+    "date": "2026-10-23",
+    "type": "SYSTEM_SYNC",
+    "title": "Sincronización Autónoma Nivel B",
+    "details": "Monitoreando 18 Pull Requests publicadas en GitHub y Wallet 0x8366bCe3...",
+    "severity": "success"
+  },
+  {
+    "timestamp": "14:50:00",
+    "date": "2026-10-23",
+    "type": "PR_SUBMITTED",
+    "title": "🚀 PR #18 PUBLICADO EN DOOMSDAY (AUTOGPT BLOCK)",
+    "details": "Bloque oficial de ejecución AutoGPT entregado para Issue #11. 5/5 tests pasando. Wallet de liquidación: 0x8366bce3... Recompensa esperada: +3,000 wDOOM.",
+    "severity": "info"
+  },
+  {
+    "timestamp": "14:49:00",
+    "date": "2026-10-23",
+    "type": "BOUNTY_REPORT",
+    "title": "🛡️ SEGUNDO INFORME ENVIADO A BOUNTY GUARD #5",
+    "details": "Auditoría empírica de 3 filas enviada: doomsday#11 (SAFE_WITH_ESCROW), chain-love#4726 (SAFE_NO_ESCROW), zhangjiayang6835-cyber/bounty-plaza (QUARANTINE). Recompensa esperada: +1,500 wDOOM.",
+    "severity": "info"
+  },
+  {
+    "timestamp": "14:48:00",
+    "date": "2026-10-23",
+    "type": "PR_SUBMITTED",
+    "title": "⚡ PR #4773 PUBLICADO EN CHAIN-LOVE ($150 USDC)",
+    "details": "Resolución de DBIP #4726: alineación de metadatos array, adición de group identity y validación schema/validate.py. Wallet de liquidación: 0x8366bce3...",
+    "severity": "info"
+  },
+  {
+    "timestamp": "14:38:24",
+    "date": "2026-10-23",
+    "type": "SANDBOX_STATUS",
+    "title": "Integridad del Sandbox",
+    "details": "22/22 Bounties con compilación y suite de pruebas 100% en verde.",
+    "severity": "success"
+  },
+  {
+    "timestamp": "14:38:24",
+    "date": "2026-10-23",
+    "type": "GITHUB_CI",
+    "title": "Integración Continua Vercel / Gitcoin",
+    "details": "PR #474 en gitcoinco/gitcoin_co_30 recibida correctamente por Allo Capital CI.",
+    "severity": "info"
+  },
+  {
+    "timestamp": "14:38:23",
+    "date": "2026-10-23",
+    "type": "SYSTEM_SYNC",
+    "title": "Sincronización Autónoma Nivel B",
+    "details": "Monitoreando 18 Pull Requests publicadas en GitHub y Wallet 0x8366bCe3...",
+    "severity": "success"
+  },
+  {
+    "timestamp": "14:37:00",
+    "date": "2026-10-23",
+    "type": "PR_SUBMITTED",
+    "title": "🚀 PR #17 PRESENTADO EN DOOMSDAY (ELIZAOS PLUGIN)",
+    "details": "Plugin oficial @elizaos/plugin-doomsday entregado para Issue #11. Acciones VERIFY_ESCROW, LIST_ESCROWS, CLAIM_FAUCET. Payout wallet: 0x8366bce3... Recompensa esperada: +3,000 wDOOM.",
+    "severity": "info"
+  },
+  {
+    "timestamp": "13:39:00",
+    "date": "2026-10-23",
+    "type": "ONCHAIN_PAYOUT",
+    "title": "🎉 PR #15 MERGED & LIQUIDADO ON-CHAIN (+3,000 wDOOM)",
+    "details": "Doomsday Proof-of-Escrow GitHub Action merged en main. TxID: 569692974da424184f1052a54bb1467712b29eea27d0f602cadc03d0e537c310 en Base Mainnet. Saldo total: 17,265 wDOOM (~519.33€).",
+    "severity": "success"
+  },
+  {
+    "timestamp": "13:38:17",
+    "date": "2026-10-23",
+    "type": "SANDBOX_STATUS",
+    "title": "Integridad del Sandbox",
+    "details": "22/22 Bounties con compilación y suite de pruebas 100% en verde.",
+    "severity": "success"
+  },
+  {
+    "timestamp": "13:38:17",
+    "date": "2026-10-23",
+    "type": "GITHUB_CI",
+    "title": "Integración Continua Vercel / Gitcoin",
+    "details": "PR #474 en gitcoinco/gitcoin_co_30 recibida correctamente por Allo Capital CI.",
+    "severity": "info"
+  },
+  {
+    "timestamp": "13:38:16",
+    "date": "2026-10-23",
+    "type": "SYSTEM_SYNC",
+    "title": "Sincronización Autónoma Nivel B",
+    "details": "Monitoreando 18 Pull Requests publicadas en GitHub y Wallet 0x8366bCe3...",
+    "severity": "success"
+  },
+  {
+    "timestamp": "12:38:10",
+    "date": "2026-10-23",
+    "type": "SANDBOX_STATUS",
+    "title": "Integridad del Sandbox",
+    "details": "22/22 Bounties con compilación y suite de pruebas 100% en verde.",
+    "severity": "success"
+  },
+  {
+    "timestamp": "12:38:10",
+    "date": "2026-10-23",
+    "type": "GITHUB_CI",
+    "title": "Integración Continua Vercel / Gitcoin",
+    "details": "PR #474 en gitcoinco/gitcoin_co_30 recibida correctamente por Allo Capital CI.",
+    "severity": "info"
+  },
+  {
+    "timestamp": "12:38:09",
+    "date": "2026-10-23",
+    "type": "SYSTEM_SYNC",
+    "title": "Sincronización Autónoma Nivel B",
+    "details": "Monitoreando 18 Pull Requests publicadas en GitHub y Wallet 0x8366bCe3...",
+    "severity": "success"
+  },
+  {
+    "timestamp": "11:38:02",
+    "date": "2026-10-23",
+    "type": "SANDBOX_STATUS",
+    "title": "Integridad del Sandbox",
+    "details": "22/22 Bounties con compilación y suite de pruebas 100% en verde.",
+    "severity": "success"
+  },
+  {
+    "timestamp": "11:38:02",
+    "date": "2026-10-23",
+    "type": "GITHUB_CI",
+    "title": "Integración Continua Vercel / Gitcoin",
+    "details": "PR #474 en gitcoinco/gitcoin_co_30 recibida correctamente por Allo Capital CI.",
+    "severity": "info"
+  },
+  {
+    "timestamp": "11:38:02",
+    "date": "2026-10-23",
+    "type": "SYSTEM_SYNC",
+    "title": "Sincronización Autónoma Nivel B",
+    "details": "Monitoreando 18 Pull Requests publicadas en GitHub y Wallet 0x8366bCe3...",
+    "severity": "success"
+  },
+  {
+    "timestamp": "10:37:55",
+    "date": "2026-10-23",
+    "type": "SANDBOX_STATUS",
+    "title": "Integridad del Sandbox",
+    "details": "22/22 Bounties con compilación y suite de pruebas 100% en verde.",
+    "severity": "success"
+  },
+  {
+    "timestamp": "10:37:55",
+    "date": "2026-10-23",
+    "type": "GITHUB_CI",
+    "title": "Integración Continua Vercel / Gitcoin",
+    "details": "PR #474 en gitcoinco/gitcoin_co_30 recibida correctamente por Allo Capital CI.",
+    "severity": "info"
+  },
+  {
+    "timestamp": "10:37:54",
+    "date": "2026-10-23",
+    "type": "SYSTEM_SYNC",
+    "title": "Sincronización Autónoma Nivel B",
+    "details": "Monitoreando 18 Pull Requests publicadas en GitHub y Wallet 0x8366bCe3...",
+    "severity": "success"
+  },
+  {
+    "timestamp": "09:37:47",
+    "date": "2026-10-23",
+    "type": "SANDBOX_STATUS",
+    "title": "Integridad del Sandbox",
+    "details": "22/22 Bounties con compilación y suite de pruebas 100% en verde.",
+    "severity": "success"
+  },
+  {
+    "timestamp": "09:37:47",
+    "date": "2026-10-23",
+    "type": "GITHUB_CI",
+    "title": "Integración Continua Vercel / Gitcoin",
+    "details": "PR #474 en gitcoinco/gitcoin_co_30 recibida correctamente por Allo Capital CI.",
+    "severity": "info"
+  },
+  {
+    "timestamp": "09:37:46",
+    "date": "2026-10-23",
+    "type": "SYSTEM_SYNC",
+    "title": "Sincronización Autónoma Nivel B",
+    "details": "Monitoreando 18 Pull Requests publicadas en GitHub y Wallet 0x8366bCe3...",
+    "severity": "success"
+  },
+  {
     "timestamp": "08:37:40",
     "date": "2026-10-23",
     "type": "SANDBOX_STATUS",
     "title": "Integridad del Sandbox",
     "details": "22/22 Bounties con compilación y suite de pruebas 100% en verde.",
-    "severity": "success"
-  },
-  {
-    "timestamp": "08:37:39",
-    "date": "2026-10-23",
-    "type": "GITHUB_CI",
-    "title": "Integración Continua Vercel / Gitcoin",
-    "details": "PR #474 en gitcoinco/gitcoin_co_30 recibida correctamente por Allo Capital CI.",
-    "severity": "info"
-  },
-  {
-    "timestamp": "08:37:39",
-    "date": "2026-10-23",
-    "type": "SYSTEM_SYNC",
-    "title": "Sincronización Autónoma Nivel B",
-    "details": "Monitoreando 18 Pull Requests publicadas en GitHub y Wallet 0x8366bCe3...",
-    "severity": "success"
-  },
-  {
-    "timestamp": "07:37:33",
-    "date": "2026-10-23",
-    "type": "SANDBOX_STATUS",
-    "title": "Integridad del Sandbox",
-    "details": "22/22 Bounties con compilación y suite de pruebas 100% en verde.",
-    "severity": "success"
-  },
-  {
-    "timestamp": "07:37:32",
-    "date": "2026-10-23",
-    "type": "GITHUB_CI",
-    "title": "Integración Continua Vercel / Gitcoin",
-    "details": "PR #474 en gitcoinco/gitcoin_co_30 recibida correctamente por Allo Capital CI.",
-    "severity": "info"
-  },
-  {
-    "timestamp": "07:37:32",
-    "date": "2026-10-23",
-    "type": "SYSTEM_SYNC",
-    "title": "Sincronización Autónoma Nivel B",
-    "details": "Monitoreando 18 Pull Requests publicadas en GitHub y Wallet 0x8366bCe3...",
-    "severity": "success"
-  },
-  {
-    "timestamp": "06:37:26",
-    "date": "2026-10-23",
-    "type": "SANDBOX_STATUS",
-    "title": "Integridad del Sandbox",
-    "details": "22/22 Bounties con compilación y suite de pruebas 100% en verde.",
-    "severity": "success"
-  },
-  {
-    "timestamp": "06:37:25",
-    "date": "2026-10-23",
-    "type": "GITHUB_CI",
-    "title": "Integración Continua Vercel / Gitcoin",
-    "details": "PR #474 en gitcoinco/gitcoin_co_30 recibida correctamente por Allo Capital CI.",
-    "severity": "info"
-  },
-  {
-    "timestamp": "06:37:25",
-    "date": "2026-10-23",
-    "type": "SYSTEM_SYNC",
-    "title": "Sincronización Autónoma Nivel B",
-    "details": "Monitoreando 18 Pull Requests publicadas en GitHub y Wallet 0x8366bCe3...",
-    "severity": "success"
-  },
-  {
-    "timestamp": "22:26:10",
-    "date": "2026-10-22",
-    "type": "SANDBOX_STATUS",
-    "title": "Integridad del Sandbox",
-    "details": "22/22 Bounties con compilación y suite de pruebas 100% en verde.",
-    "severity": "success"
-  },
-  {
-    "timestamp": "22:26:09",
-    "date": "2026-10-22",
-    "type": "GITHUB_CI",
-    "title": "Integración Continua Vercel / Gitcoin",
-    "details": "PR #474 en gitcoinco/gitcoin_co_30 recibida correctamente por Allo Capital CI.",
-    "severity": "info"
-  },
-  {
-    "timestamp": "22:26:09",
-    "date": "2026-10-22",
-    "type": "SYSTEM_SYNC",
-    "title": "Sincronización Autónoma Nivel B",
-    "details": "Monitoreando 18 Pull Requests publicadas en GitHub y Wallet 0x8366bCe3...",
-    "severity": "success"
-  },
-  {
-    "timestamp": "16:43:21",
-    "date": "2026-10-22",
-    "type": "SANDBOX_STATUS",
-    "title": "Integridad del Sandbox",
-    "details": "22/22 Bounties con compilación y suite de pruebas 100% en verde.",
-    "severity": "success"
-  },
-  {
-    "timestamp": "16:43:21",
-    "date": "2026-10-22",
-    "type": "GITHUB_CI",
-    "title": "Integración Continua Vercel / Gitcoin",
-    "details": "PR #474 en gitcoinco/gitcoin_co_30 recibida correctamente por Allo Capital CI.",
-    "severity": "info"
-  },
-  {
-    "timestamp": "16:43:20",
-    "date": "2026-10-22",
-    "type": "SYSTEM_SYNC",
-    "title": "Sincronización Autónoma Nivel B",
-    "details": "Monitoreando 18 Pull Requests publicadas en GitHub y Wallet 0x8366bCe3...",
-    "severity": "success"
-  },
-  {
-    "timestamp": "15:43:11",
-    "date": "2026-10-22",
-    "type": "SANDBOX_STATUS",
-    "title": "Integridad del Sandbox",
-    "details": "22/22 Bounties con compilación y suite de pruebas 100% en verde.",
-    "severity": "success"
-  },
-  {
-    "timestamp": "15:43:11",
-    "date": "2026-10-22",
-    "type": "GITHUB_CI",
-    "title": "Integración Continua Vercel / Gitcoin",
-    "details": "PR #474 en gitcoinco/gitcoin_co_30 recibida correctamente por Allo Capital CI.",
-    "severity": "info"
-  },
-  {
-    "timestamp": "15:43:10",
-    "date": "2026-10-22",
-    "type": "SYSTEM_SYNC",
-    "title": "Sincronización Autónoma Nivel B",
-    "details": "Monitoreando 18 Pull Requests publicadas en GitHub y Wallet 0x8366bCe3...",
-    "severity": "success"
-  },
-  {
-    "timestamp": "14:43:03",
-    "date": "2026-10-22",
-    "type": "SANDBOX_STATUS",
-    "title": "Integridad del Sandbox",
-    "details": "22/22 Bounties con compilación y suite de pruebas 100% en verde.",
-    "severity": "success"
-  },
-  {
-    "timestamp": "14:43:03",
-    "date": "2026-10-22",
-    "type": "GITHUB_CI",
-    "title": "Integración Continua Vercel / Gitcoin",
-    "details": "PR #474 en gitcoinco/gitcoin_co_30 recibida correctamente por Allo Capital CI.",
-    "severity": "info"
-  },
-  {
-    "timestamp": "14:43:02",
-    "date": "2026-10-22",
-    "type": "SYSTEM_SYNC",
-    "title": "Sincronización Autónoma Nivel B",
-    "details": "Monitoreando 18 Pull Requests publicadas en GitHub y Wallet 0x8366bCe3...",
-    "severity": "success"
-  },
-  {
-    "timestamp": "13:42:56",
-    "date": "2026-10-22",
-    "type": "SANDBOX_STATUS",
-    "title": "Integridad del Sandbox",
-    "details": "22/22 Bounties con compilación y suite de pruebas 100% en verde.",
-    "severity": "success"
-  },
-  {
-    "timestamp": "13:42:55",
-    "date": "2026-10-22",
-    "type": "GITHUB_CI",
-    "title": "Integración Continua Vercel / Gitcoin",
-    "details": "PR #474 en gitcoinco/gitcoin_co_30 recibida correctamente por Allo Capital CI.",
-    "severity": "info"
-  },
-  {
-    "timestamp": "13:42:55",
-    "date": "2026-10-22",
-    "type": "SYSTEM_SYNC",
-    "title": "Sincronización Autónoma Nivel B",
-    "details": "Monitoreando 18 Pull Requests publicadas en GitHub y Wallet 0x8366bCe3...",
-    "severity": "success"
-  },
-  {
-    "timestamp": "12:42:47",
-    "date": "2026-10-22",
-    "type": "SANDBOX_STATUS",
-    "title": "Integridad del Sandbox",
-    "details": "22/22 Bounties con compilación y suite de pruebas 100% en verde.",
-    "severity": "success"
-  },
-  {
-    "timestamp": "12:42:47",
-    "date": "2026-10-22",
-    "type": "GITHUB_CI",
-    "title": "Integración Continua Vercel / Gitcoin",
-    "details": "PR #474 en gitcoinco/gitcoin_co_30 recibida correctamente por Allo Capital CI.",
-    "severity": "info"
-  },
-  {
-    "timestamp": "12:42:46",
-    "date": "2026-10-22",
-    "type": "SYSTEM_SYNC",
-    "title": "Sincronización Autónoma Nivel B",
-    "details": "Monitoreando 18 Pull Requests publicadas en GitHub y Wallet 0x8366bCe3...",
-    "severity": "success"
-  },
-  {
-    "timestamp": "11:42:39",
-    "date": "2026-10-22",
-    "type": "SANDBOX_STATUS",
-    "title": "Integridad del Sandbox",
-    "details": "22/22 Bounties con compilación y suite de pruebas 100% en verde.",
-    "severity": "success"
-  },
-  {
-    "timestamp": "11:42:39",
-    "date": "2026-10-22",
-    "type": "GITHUB_CI",
-    "title": "Integración Continua Vercel / Gitcoin",
-    "details": "PR #474 en gitcoinco/gitcoin_co_30 recibida correctamente por Allo Capital CI.",
-    "severity": "info"
-  },
-  {
-    "timestamp": "11:42:38",
-    "date": "2026-10-22",
-    "type": "SYSTEM_SYNC",
-    "title": "Sincronización Autónoma Nivel B",
-    "details": "Monitoreando 18 Pull Requests publicadas en GitHub y Wallet 0x8366bCe3...",
     "severity": "success"
   }
 ]
