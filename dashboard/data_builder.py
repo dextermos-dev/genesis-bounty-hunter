@@ -528,6 +528,118 @@ def build_dashboard_dataset() -> dict:
     }
     existing_bounties["doomsday-bounty-guard-issue5"] = doomsday_issue5_entry
 
+    # Doomsday Bounty Guard #7 - 2,000 wDOOM (~$64 USD)
+    doomsday_issue7_entry = {
+        "id": "doomsday-bounty-guard-issue7",
+        "bounty_id": "doomsday-bounty-guard-issue7",
+        "title": "[Doomsday 2,000 wDOOM] 🔌 Integrate BountyGuard CI/CD Workflow & Proof-of-Escrow (#7)",
+        "url": "https://github.com/doomsday-network/bounty-guard/issues/7",
+        "platform": "Doomsday / GitHub",
+        "reward_amount": 64.00,
+        "reward_currency": "wDOOM",
+        "payment_network": "Base Mainnet",
+        "final_score": 10.0,
+        "expected_value": 64.00,
+        "status": "SUBMITTED",
+        "payout_status": "EN_REVISION_ONCHAIN",
+        "payout_text": "🟡 EN REVISIÓN ON-CHAIN (CI/CD Workflow integrado & link en README)",
+        "pull_request_url": "https://github.com/doomsday-network/bounty-guard/issues/7#issuecomment-6386463171",
+        "pr_number": 7,
+        "web3_wallet_address": "0x8366bce3a2d379de7656d7a67015789faf999f20",
+        "wallet": "0x8366bce3a2d379de7656d7a67015789faf999f20",
+        "red_team_score": 10.0,
+        "sandbox_status": "SUCCESS",
+        "is_complete": True,
+        "is_new": True,
+        "sprint": True,
+        "created_at": "2026-10-24"
+    }
+    existing_bounties["doomsday-bounty-guard-issue7"] = doomsday_issue7_entry
+
+    # Doomsday GitHub Bounty Scanner #1 - 1,000 wDOOM (~$32 USD)
+    doomsday_scanner1_entry = {
+        "id": "doomsday-github-bounty-scanner-issue1",
+        "bounty_id": "doomsday-github-bounty-scanner-issue1",
+        "title": "[Doomsday 1,000 wDOOM] 🛡️ Run scan_bounties.py & Mine 1 Pool Share (#1)",
+        "url": "https://github.com/doomsday-network/github-bounty-scanner/issues/1",
+        "platform": "Doomsday / GitHub",
+        "reward_amount": 32.00,
+        "reward_currency": "wDOOM",
+        "payment_network": "Base Mainnet",
+        "final_score": 10.0,
+        "expected_value": 32.00,
+        "status": "SUBMITTED",
+        "payout_status": "EN_REVISION_ONCHAIN",
+        "payout_text": "🟡 EN REVISIÓN ON-CHAIN (Audit Scan + Share #1 aceptado en Block #17421)",
+        "pull_request_url": "https://github.com/doomsday-network/github-bounty-scanner/issues/1#issuecomment-6386443886",
+        "pr_number": 1,
+        "web3_wallet_address": "0x8366bce3a2d379de7656d7a67015789faf999f20",
+        "wallet": "0x8366bce3a2d379de7656d7a67015789faf999f20",
+        "red_team_score": 10.0,
+        "sandbox_status": "SUCCESS",
+        "is_complete": True,
+        "is_new": True,
+        "sprint": True,
+        "created_at": "2026-10-24"
+    }
+    existing_bounties["doomsday-github-bounty-scanner-issue1"] = doomsday_scanner1_entry
+
+    # Doomsday Cuda GPU Miner #1 - 1,000 wDOOM (~$32 USD)
+    doomsday_cuda1_entry = {
+        "id": "doomsday-cuda-gpu-miner-issue1",
+        "bounty_id": "doomsday-cuda-gpu-miner-issue1",
+        "title": "[Doomsday 1,000 wDOOM] ⚡ Connect Worker to Live Mining Pool & Mine Share (#1)",
+        "url": "https://github.com/doomsday-network/cuda-gpu-miner/issues/1",
+        "platform": "Doomsday / GitHub",
+        "reward_amount": 32.00,
+        "reward_currency": "wDOOM",
+        "payment_network": "Base Mainnet",
+        "final_score": 10.0,
+        "expected_value": 32.00,
+        "status": "SUBMITTED",
+        "payout_status": "EN_REVISION_ONCHAIN",
+        "payout_text": "🟡 EN REVISIÓN ON-CHAIN (PoW Share #1 aceptado en Block #17421)",
+        "pull_request_url": "https://github.com/doomsday-network/cuda-gpu-miner/issues/1#issuecomment-6386446215",
+        "pr_number": 1,
+        "web3_wallet_address": "0x8366bce3a2d379de7656d7a67015789faf999f20",
+        "wallet": "0x8366bce3a2d379de7656d7a67015789faf999f20",
+        "red_team_score": 10.0,
+        "sandbox_status": "SUCCESS",
+        "is_complete": True,
+        "is_new": True,
+        "sprint": True,
+        "created_at": "2026-10-24"
+    }
+    existing_bounties["doomsday-cuda-gpu-miner-issue1"] = doomsday_cuda1_entry
+
+    # Doomsday Network Issue #30 - 750 wDOOM (~$24 USD)
+    doomsday_issue30_entry = {
+        "id": "doomsday-issue30-star-pool",
+        "bounty_id": "doomsday-issue30-star-pool",
+        "title": "[Doomsday 750 wDOOM] ⭐ Star All 4 Repos & Mine 1+ Live Pool Share (#30)",
+        "url": "https://github.com/doomsday-network/doomsday/issues/30",
+        "platform": "Doomsday / GitHub",
+        "reward_amount": 24.00,
+        "reward_currency": "wDOOM",
+        "payment_network": "Base Mainnet",
+        "final_score": 10.0,
+        "expected_value": 24.00,
+        "status": "SUBMITTED",
+        "payout_status": "EN_REVISION_ONCHAIN",
+        "payout_text": "🟡 EN REVISIÓN ON-CHAIN (4 Repos starred + PoW Share #1)",
+        "pull_request_url": "https://github.com/doomsday-network/doomsday/issues/30#issuecomment-6386452005",
+        "pr_number": 30,
+        "web3_wallet_address": "0x8366bce3a2d379de7656d7a67015789faf999f20",
+        "wallet": "0x8366bce3a2d379de7656d7a67015789faf999f20",
+        "red_team_score": 10.0,
+        "sandbox_status": "SUCCESS",
+        "is_complete": True,
+        "is_new": True,
+        "sprint": True,
+        "created_at": "2026-10-24"
+    }
+    existing_bounties["doomsday-issue30-star-pool"] = doomsday_issue30_entry
+
     # Doomsday Official Proof-of-Escrow AutoGPT Block (PR #18) - MERGED & SETTLED
     doomsday_pr18_entry = {
         "id": "doomsday-autogpt-block-pr18",
@@ -631,12 +743,12 @@ def build_dashboard_dataset() -> dict:
     # Cargar valores consolidados de sprint e ingresos
     # Liquidación On-Chain Directa Confirmada: 21,765 wDOOM = $696.48 USD (~654.69 €)
     # Adjudicado en Dispersión Pendiente: 14 PRs merged = $1,800.00 USDC
-    # Sprint en Revisión GitHub: 33 PRs = $9,592.00 USDC
+    # Sprint en Revisión GitHub & On-Chain Escrow: 37 submissions = $9,744.00 USDC / wDOOM
     liquid_onchain = 696.48
     liquid_onchain_doom = 21765.0
     liquid_onchain_eur = 654.69
     earned_onchain = 1800.00
-    sprint_in_review = 9592.00
+    sprint_in_review = 9744.00
     sprint_total = round(earned_onchain + sprint_in_review, 2)
     grand_total_pipeline = round(total_pipeline_val, 2)
 
