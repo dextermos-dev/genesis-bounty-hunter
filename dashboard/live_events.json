@@ -1,5 +1,13 @@
 [
   {
+    "timestamp": "22:21:36",
+    "date": "2026-10-25",
+    "type": "PR_SUBMITTED",
+    "title": "Wildcard Spike PR #1751 Enviada a Go-Hybrid",
+    "details": "Publicado spike ejecutable para Issue #1688 (Kill the .hy/.go split) con 3/3 tests pasando. Recompensa:  USDC a 0x8366...9f20.",
+    "severity": "success"
+  },
+  {
     "timestamp": "21:45:59",
     "date": "2026-10-25",
     "type": "SANDBOX_STATUS",
