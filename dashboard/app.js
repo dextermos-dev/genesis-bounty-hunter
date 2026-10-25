@@ -49,7 +49,10 @@ const WON_MILESTONES = [
   { id: "M21", label: "Doomsday #11 (PR #14)", pr: "PR #14", repo: "doomsday-network", amount: 96.0, total_adjudicated: 1800, in_dispersion: 1800, in_wallet: 456.48, date: "2026-10-23" },
   { id: "M22", label: "Doomsday #11 (PR #15)", pr: "PR #15", repo: "doomsday-network", amount: 96.0, total_adjudicated: 1800, in_dispersion: 1800, in_wallet: 552.48, date: "2026-10-23" },
   { id: "M23", label: "Bounty Guard #5 (Report #2)", pr: "Report #2", repo: "doomsday-network", amount: 48.0, total_adjudicated: 1800, in_dispersion: 1800, in_wallet: 600.48, date: "2026-10-23" },
-  { id: "M24", label: "Doomsday #11 (PR #17 & #18)", pr: "PRs #17, #18", repo: "doomsday-network", amount: 96.0, total_adjudicated: 1800, in_dispersion: 1800, in_wallet: 696.48, date: "2026-10-23" }
+  { id: "M24", label: "Doomsday #11 (PR #17 & #18)", pr: "PRs #17, #18", repo: "doomsday-network", amount: 96.0, total_adjudicated: 1800, in_dispersion: 1800, in_wallet: 696.48, date: "2026-10-23" },
+  { id: "M25", label: "Bounty Guard #7 (PR #7)", pr: "PR #7", repo: "doomsday-network", amount: 64.0, total_adjudicated: 1800, in_dispersion: 1800, in_wallet: 760.48, date: "2026-10-24" },
+  { id: "M26", label: "Cuda Miner & Web3 Skills", pr: "PR #19, #24", repo: "doomsday-network", amount: 64.0, total_adjudicated: 1800, in_dispersion: 1800, in_wallet: 824.48, date: "2026-10-24" },
+  { id: "M27", label: "PoW Mining & L1 Reserves", pr: "Rig Nodes", repo: "doomsday-network", amount: 24.0, total_adjudicated: 1800, in_dispersion: 1800, in_wallet: 848.48, date: "2026-10-25" }
 ];
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -106,11 +109,11 @@ async function loadDashboardData() {
 function renderKPIs() {
   // Real on-chain balance in wallet (Confirmed Base L2: 23,515 wDOOM + 2,000 DOOM L1 = 25,515 DOOM)
   const doomTokens = Number(globalData?.liquid_onchain_doom) || 26515;
-  const doomUsd = Number(globalData?.liquid_onchain_usd) || 816.48;
-  const doomEur = Number(globalData?.liquid_onchain_eur) || 767.49;
-  const baseWdoom = Number(globalData?.base_wdoom) || 23515;
+  const doomUsd = Number(globalData?.liquid_onchain_usd) || 848.48;
+  const doomEur = Number(globalData?.liquid_onchain_eur) || 797.57;
+  const baseWdoom = Number(globalData?.base_wdoom) || 24515;
   const l1Doom = Number(globalData?.l1_doom) || 2000;
-  const txCount = globalData?.liquid_tx_count || 15;
+  const txCount = globalData?.liquid_tx_count || 16;
   const inWalletUsdc = 0.00;
   // Adjudicated / merged by maintainers but awaiting on-chain transfer ($1,800.00 USDC Total across 14 merged PRs)
   const adjudicatedPending = Math.max(Number(globalData?.earned_onchain_usd) || 0, 1800.0);
@@ -126,6 +129,14 @@ function renderKPIs() {
   const elWallet = document.getElementById('kpiInWallet');
   if (elWallet) {
     elWallet.innerHTML = `${doomTokens.toLocaleString('en-US')} <span class="currency">DOOM</span> <span style="font-size: 0.82rem; color: #94A3B8; font-weight: 500;">(~${doomEur.toFixed(2)}€ / $${doomUsd.toFixed(2)})</span>`;
+    const elWalletFooter = document.querySelector('.wallet-star .stat-footer span[style*="text-align: right"]');
+    if (elWalletFooter) {
+      elWalletFooter.textContent = `${baseWdoom.toLocaleString('en-US')} wDOOM (Base Mainnet) · ${l1Doom.toLocaleString('en-US')} DOOM L1`;
+    }
+    const elWalletBadge = document.querySelector('.wallet-star .stat-footer .stat-badge');
+    if (elWalletBadge) {
+      elWalletBadge.innerHTML = `<span class="pulse-dot"></span> ${txCount} TXs ON-CHAIN CONFIRMADAS`;
+    }
   }
 
   const elAdjudicated = document.getElementById('kpiAdjudicated');
