@@ -109,8 +109,8 @@ async function loadDashboardData() {
 function renderKPIs() {
   // Real on-chain balance in wallet (Confirmed Base L2: 23,515 wDOOM + 2,000 DOOM L1 = 25,515 DOOM)
   const doomTokens = Number(globalData?.liquid_onchain_doom) || 26515;
-  const doomUsd = Number(globalData?.liquid_onchain_usd) || 848.48;
-  const doomEur = Number(globalData?.liquid_onchain_eur) || 797.57;
+  const doomUsd = Number(globalData?.liquid_onchain_usd) || 2.65;
+  const doomEur = Number(globalData?.liquid_onchain_eur) || 2.49;
   const baseWdoom = Number(globalData?.base_wdoom) || 24515;
   const l1Doom = Number(globalData?.l1_doom) || 2000;
   const txCount = globalData?.liquid_tx_count || 16;
@@ -131,7 +131,7 @@ function renderKPIs() {
     elWallet.innerHTML = `${doomTokens.toLocaleString('en-US')} <span class="currency">DOOM</span> <span style="font-size: 0.82rem; color: #94A3B8; font-weight: 500;">(~${doomEur.toFixed(2)}€ / $${doomUsd.toFixed(2)})</span>`;
     const elWalletFooter = document.querySelector('.wallet-star .stat-footer span[style*="text-align: right"]');
     if (elWalletFooter) {
-      elWalletFooter.textContent = `${baseWdoom.toLocaleString('en-US')} wDOOM (Base Mainnet) · ${l1Doom.toLocaleString('en-US')} DOOM L1`;
+      elWalletFooter.textContent = `${baseWdoom.toLocaleString('en-US')} wDOOM (Base) · ${l1Doom.toLocaleString('en-US')} DOOM L1 (Canje $0.00010)`;
     }
     const elWalletBadge = document.querySelector('.wallet-star .stat-footer .stat-badge');
     if (elWalletBadge) {

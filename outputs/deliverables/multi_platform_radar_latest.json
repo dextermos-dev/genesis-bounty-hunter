@@ -21,7 +21,7 @@
     "url": "https://github.com/alfrexo95/bounty-bot/issues/28",
     "repo": "alfrexo95/bounty-bot",
     "created_at": "2026-10-24T13:12:36Z",
-    "comments": 2,
+    "comments": 5,
     "labels": [
       "bounty",
       "escrow"
@@ -69,7 +69,7 @@
     "url": "https://github.com/alfrexo95/bounty-bot/issues/21",
     "repo": "alfrexo95/bounty-bot",
     "created_at": "2026-10-24T01:01:40Z",
-    "comments": 2,
+    "comments": 4,
     "labels": [
       "bounty",
       "escrow"
@@ -85,7 +85,7 @@
     "url": "https://github.com/zhangjiayang6835-cyber/bounty-plaza/issues/4107",
     "repo": "zhangjiayang6835-cyber/bounty-plaza",
     "created_at": "2026-10-23T20:20:52Z",
-    "comments": 3,
+    "comments": 4,
     "labels": [
       "bounty",
       "real"
@@ -101,7 +101,7 @@
     "url": "https://github.com/blake-guthrie/GLASS/issues/1",
     "repo": "blake-guthrie/GLASS",
     "created_at": "2026-10-23T19:03:20Z",
-    "comments": 12,
+    "comments": 13,
     "labels": [
       "bounty"
     ],
@@ -116,7 +116,7 @@
     "url": "https://github.com/ak10082247-max/canaryguard-402/issues/2",
     "repo": "ak10082247-max/canaryguard-402",
     "created_at": "2026-10-19T10:36:17Z",
-    "comments": 15,
+    "comments": 17,
     "labels": [
       "help wanted",
       "bounty",
@@ -160,125 +160,27 @@
     "body_snippet": "### 赏金平台 / Platform GitHub  ### 原始链接 / Source URL https://github.com/Parabola-org/parabola/issues/10  ### 漏洞描述 / Description [Bounty: $90] Reject amounts whose precision exceeds the destination chain's USDC decimals  **Context** Arc USDC has 6 decima"
   },
   {
-    "id": "gh_6022272725",
-    "title": "[wildcard] No `Unknown`: make the checker total, delete fail-open, and turn unproved shapes into a loud, measured obligation",
-    "url": "https://github.com/limitlessprojects/Go-Hybrid/issues/1665",
-    "repo": "limitlessprojects/Go-Hybrid",
-    "created_at": "2026-10-25T08:05:10Z",
-    "comments": 0,
-    "labels": [],
-    "platform": "Algora / GitHub PRs",
-    "free_tier": true,
-    "payment_verified": true,
-    "body_snippet": "### The idea, in a paragraph  Make the checker **total** over the accepted subset: delete `TypeShape::Unknown` (and `OpKind::Unknown`) as a silent escape. Today an unproven shape is a \"permission to proceed\": the boundary rules fail closed, but membe"
-  },
-  {
-    "id": "gh_6022224960",
-    "title": "[Bug bounty]Swap getBestAmountOut quotes on 100% of the input while execution swaps 99% (origin is never passed on the quote path)",
-    "url": "https://github.com/paraspell/xcm-tools/issues/2238",
-    "repo": "paraspell/xcm-tools",
-    "created_at": "2026-10-25T07:58:30Z",
-    "comments": 0,
+    "id": "gh_6027254989",
+    "title": "High Profile/4:4:4 support",
+    "url": "https://github.com/AOMediaCodec/SVT-AV1/issues/2815",
+    "repo": "AOMediaCodec/SVT-AV1",
+    "created_at": "2026-10-25T17:31:48Z",
+    "comments": 9,
     "labels": [
-      "Bug bounty 💰"
+      "external::AVIF",
+      "new feature"
     ],
     "platform": "Algora / GitHub PRs",
     "free_tier": true,
     "payment_verified": true,
-    "body_snippet": "# 🐞 Bug Report  ## 🔍 Describe the Bug  For swaps whose funds originate on a different chain than the exchange, the quoted `amountOut` is computed on 100% of the input, while the swap that is actually built swaps 99% of it. The quoted figure therefore"
+    "body_snippet": "_Originally created by **juliobbv** at 2024-09-22T05:53:04.514000Z (migrated from GitLab)._  Opened as [`#2211`](https://gitlab.com/AOMediaCodec/SVT-AV1/-/work_items/2211)  Currently, SVT-AV1 only supports Main Profile, which uses 4:2:0 chroma subsam"
   },
   {
-    "id": "gh_6022208037",
-    "title": "[Bug bounty] verifyEdOnDestination returns false when the recipient would end up at exactly the existential deposit",
-    "url": "https://github.com/paraspell/xcm-tools/issues/2237",
-    "repo": "paraspell/xcm-tools",
-    "created_at": "2026-10-25T07:56:06Z",
-    "comments": 0,
-    "labels": [
-      "Bug bounty 💰"
-    ],
-    "platform": "Algora / GitHub PRs",
-    "free_tier": true,
-    "payment_verified": true,
-    "body_snippet": "# 🐞 Bug Report  ## 🔍 Describe the Bug  `verifyEdOnDestination` reports that a transfer fails the existential deposit (ED) check in cases where the recipient account would in fact hold exactly the ED after the transfer and survive. This is an over-str"
-  },
-  {
-    "id": "gh_6022197885",
-    "title": "[Bug bounty] Plain-symbol \".e\" asset lookups skip the DuplicateAssetError guard and silently pick the first match",
-    "url": "https://github.com/paraspell/xcm-tools/issues/2236",
-    "repo": "paraspell/xcm-tools",
-    "created_at": "2026-10-25T07:54:42Z",
-    "comments": 0,
-    "labels": [
-      "Bug bounty 💰"
-    ],
-    "platform": "Algora / GitHub PRs",
-    "free_tier": true,
-    "payment_verified": true,
-    "body_snippet": "# 🐞 Bug Report  ## 🔍 Describe the Bug  In `packages/assets/src/assets/search/findAssetInfoBySymbol.ts`, one lookup branch resolves ambiguous symbol matches silently instead of throwing `DuplicateAssetError` like every sibling branch in the same funct"
-  },
-  {
-    "id": "gh_6022182635",
-    "title": "[Bug bounty] Fractional amounts are silently truncated (and small amounts raised to 2) when the resolved asset has no decimals",
-    "url": "https://github.com/paraspell/xcm-tools/issues/2235",
-    "repo": "paraspell/xcm-tools",
-    "created_at": "2026-10-25T07:52:34Z",
-    "comments": 0,
-    "labels": [
-      "Bug bounty 💰"
-    ],
-    "platform": "Algora / GitHub PRs",
-    "free_tier": true,
-    "payment_verified": true,
-    "body_snippet": "# 🐞 Bug Report  ## 🔍 Describe the Bug  When the asset resolved for a transfer has no `decimals` value, the SDK silently changes the transfer amount instead of failing.  In `packages/sdk-core/src/utils/transfer/abstractDecimals.ts`, `applyDecimalAbstr"
-  },
-  {
-    "id": "gh_6022114115",
-    "title": "探索を wide / deep / sweep の 3 mode に分ける",
-    "url": "https://github.com/momoponwork1415-lgtm/wordpress-bounty-harness/issues/518",
-    "repo": "momoponwork1415-lgtm/wordpress-bounty-harness",
-    "created_at": "2026-10-25T07:43:29Z",
-    "comments": 0,
-    "labels": [
-      "needs-triage"
-    ],
-    "platform": "Algora / GitHub PRs",
-    "free_tier": true,
-    "payment_verified": true,
-    "body_snippet": "## 振る舞い  探索を 3 つの mode に分ける。`wide`（短い Trial、下限なし、新規対象の既定）、`deep`（現行 `wp2shell-bounty-v8`、60 分 / 120 分、再訪列から）、`sweep`（判定器が確認した 1 件の後に操作者が回す skill）。mode は Trial の属性として台帳の `configuration` に残し、Trial の途中では変えない。切り替えは、選定の層の機械的な規則（Lead 件数、sweep の当たり、confirme"
-  },
-  {
-    "id": "gh_6022079323",
-    "title": "[intake 输入] 【深度审计报告】@restregular/dsh-memory 0.25.5（RestRegular/dsh-memory · source/memory-plugin）",
-    "url": "https://github.com/FuRongJun-1999/dsh-bounty/issues/1788",
-    "repo": "FuRongJun-1999/dsh-bounty",
-    "created_at": "2026-10-25T07:38:43Z",
-    "comments": 0,
-    "labels": [],
-    "platform": "Algora / GitHub PRs",
-    "free_tier": true,
-    "payment_verified": true,
-    "body_snippet": "<!-- intake:v1 {\"project\":\"awesome_dsh_plugin\",\"difficulty\":\"medium\",\"impact\":\"B\",\"target\":\"RestRegular/dsh-memory\",\"form\":\"intake\"} -->  【深度审计报告】@restregular/dsh-memory 0.25.5（RestRegular/dsh-memory · source/memory-plugin）  ## 性质声明  本件是给 **review.li"
-  },
-  {
-    "id": "gh_6021980271",
-    "title": "[BOUNTY] Medium: Missing SPL asset instruction builders (deposit_note_spl, init_asset_vault, set_asset_deposit_cap, set_min_token_stake) and derive_asset_config in bridge::solana::instructions, breaking off-chain client & CLI SPL integration",
-    "url": "https://github.com/paraloom-labs/paraloom-core/issues/1218",
-    "repo": "paraloom-labs/paraloom-core",
-    "created_at": "2026-10-25T07:23:45Z",
-    "comments": 1,
-    "labels": [],
-    "platform": "Algora / GitHub PRs",
-    "free_tier": true,
-    "payment_verified": true,
-    "body_snippet": "## Severity **Medium ($150 USDC – Stage 1 Solana Bridge & Client Toolchain Scope)**  ## Settlement Wallet (USDC Base / EVM – Mandatory Invariant) `0x3a5E08708dd1CF22AAe94f913Ab69b17b80a3dC5`  ## Affected Files - `src/bridge/solana/instructions.rs` - "
-  },
-  {
-    "id": "gh_6021979045",
+    "id": "gh_6027229120",
     "title": "🎯 Bounty Alert: 13 New Opportunityies found",
-    "url": "https://github.com/dev-kp-eloper/BountyScout/issues/1657",
+    "url": "https://github.com/dev-kp-eloper/BountyScout/issues/1663",
     "repo": "dev-kp-eloper/BountyScout",
-    "created_at": "2026-10-25T07:23:35Z",
+    "created_at": "2026-10-25T17:28:56Z",
     "comments": 0,
     "labels": [
       "bounty-alert"
@@ -286,125 +188,160 @@
     "platform": "Algora / GitHub PRs",
     "free_tier": true,
     "payment_verified": true,
-    "body_snippet": "### Active Bounty Scan Results  **Scan Time:** 2026-10-25 07:23 UTC  #### 1. [File the Hunter Exam characters and places](https://github.com/cosimochellini/zero-spoiler/issues/760) - **Repository:** [cosimochellini/zero-spoiler](https://github.com/co"
+    "body_snippet": "### Active Bounty Scan Results  **Scan Time:** 2026-10-25 17:28 UTC  #### 1. [[Candidate] doomsday-network/doomsday - doomsday-proof-of-escrow](https://github.com/ProSkillsMD/proskills/issues/10003) - **Repository:** [ProSkillsMD/proskills](https://g"
   },
   {
-    "id": "gh_6021972642",
-    "title": "[P1][Community] Publish reproducible contributor onboarding and review standards",
-    "url": "https://github.com/SoraForge/Soroban-AuthScope/issues/40",
-    "repo": "SoraForge/Soroban-AuthScope",
-    "created_at": "2026-10-25T07:22:39Z",
+    "id": "gh_6027156733",
+    "title": "Explore PvP twists that shift player priorities",
+    "url": "https://github.com/denzrs/slingshot-remake/issues/134",
+    "repo": "denzrs/slingshot-remake",
+    "created_at": "2026-10-25T17:21:01Z",
     "comments": 0,
+    "labels": [],
+    "platform": "Algora / GitHub PRs",
+    "free_tier": true,
+    "payment_verified": true,
+    "body_snippet": "## Goal  Explore PvP variants that give players objectives beyond eliminating opponents. Look for ideas that create new shot-by-shot decisions while making Slingshot’s gravity-based projectile gameplay central.  Classic, Event Horizon, and Solar Syst"
+  },
+  {
+    "id": "gh_6026926862",
+    "title": "[Bug bounty] Swap with AMOUNT_ALL ('ALL') crashes in normalizeAmountAll and SwapBuilder.amount() double-scales bigint amounts",
+    "url": "https://github.com/paraspell/xcm-tools/issues/2304",
+    "repo": "paraspell/xcm-tools",
+    "created_at": "2026-10-25T16:57:10Z",
+    "comments": 1,
     "labels": [
-      "enhancement"
+      "Bug bounty 💰"
     ],
     "platform": "Algora / GitHub PRs",
     "free_tier": true,
     "payment_verified": true,
-    "body_snippet": "## User value Give incoming Soroban AuthScope contributors an accurate local setup/test workflow, responsible disclosure channel and actionable PR requirements rather than relying on undocumented maintainer expectations.  **Priority:** P1 (planning o"
+    "body_snippet": "# 🐞 Bug Report  ## 🔍 Describe the Bug  Transferring or quoting with `AMOUNT_ALL` (`'ALL'`) when `.swap(...)` is enabled on `Builder` (as well as passing a `bigint` base-unit amount to `Builder(...).swap(...)` or `SwapBuilder.amount(...)`) fails due t"
   },
   {
-    "id": "gh_6021431546",
-    "title": "Task eligibility: draft-only research and private exchange-address settlement",
-    "url": "https://github.com/RinerNetwork/riner-sdk/issues/2",
-    "repo": "RinerNetwork/riner-sdk",
-    "created_at": "2026-10-25T06:02:28Z",
+    "id": "gh_6026859739",
+    "title": "Railway 赏金：有 3 条值得抢",
+    "url": "https://github.com/HCTDIP/corps-jobs/issues/122",
+    "repo": "HCTDIP/corps-jobs",
+    "created_at": "2026-10-25T16:49:53Z",
     "comments": 0,
     "labels": [],
     "platform": "Algora / GitHub PRs",
     "free_tier": true,
     "payment_verified": true,
-    "body_snippet": "Your docs direct support questions to this tracker. I am an AI assistant operating trueoneplusone with its holder's authorization, asking about task 26251f7e-6846-42ca-adb6-90fe2fa99384 (Riner Promotion, 2 USDC).  Before applying or starting work, co"
+    "body_snippet": "云端雷达发现可抢条目。  ``` [railway-radar] 2026-10-25 16:49Z total=30 hot=1 new=2   🆕 shifttracker-backend: recurring europe-west4-drams3a edge issue, possible regression of 2026-06-09 f   🆕 Edge intermittently refuses TCP connections (~12%) — affects both cus"
   },
   {
-    "id": "gh_6021197388",
-    "title": "A page headed by a sentence that starts with its name announces the name twice",
-    "url": "https://github.com/zhixuan312/zz-meridian/issues/88",
-    "repo": "zhixuan312/zz-meridian",
-    "created_at": "2026-10-25T05:24:09Z",
-    "comments": 0,
-    "labels": [
-      "bug"
-    ],
-    "platform": "Algora / GitHub PRs",
-    "free_tier": true,
-    "payment_verified": true,
-    "body_snippet": "Meridian 0.27.0 · Next 16 · Route create  ## What happened - `PageTitle` (`src/components/base/shell/index.tsx:383`) draws the `name` sr-only, then a sr-only `: `, then the sentence. That reads well when the sentence is about the figures (\"0 new for "
-  },
-  {
-    "id": "gh_6020990380",
-    "title": "[Add provider] Paidyun AI - paidyun.xyz (OpenAI + Anthropic compatible, $1 min top-up)",
-    "url": "https://github.com/deverzh/ai-api-proxy-list/issues/17",
-    "repo": "deverzh/ai-api-proxy-list",
-    "created_at": "2026-10-25T04:52:11Z",
-    "comments": 0,
-    "labels": [],
-    "platform": "Algora / GitHub PRs",
-    "free_tier": true,
-    "payment_verified": true,
-    "body_snippet": "Hi, submitting a provider for the list.  Name: Paidyun AI Base URL: https://paidyun.xyz/v1 Site: https://paidyun.xyz Docs: https://paidyun.xyz/docs Public pricing endpoint (no auth required): https://paidyun.xyz/api/pricing  Protocols: OpenAI /v1/cha"
-  },
-  {
-    "id": "gh_6020805218",
-    "title": "x402 service: web-research brief for $0.02 USDC",
-    "url": "https://github.com/Daisuke134/life-manager/issues/8942",
-    "repo": "Daisuke134/life-manager",
-    "created_at": "2026-10-25T04:25:23Z",
-    "comments": 0,
-    "labels": [],
-    "platform": "Algora / GitHub PRs",
-    "free_tier": true,
-    "payment_verified": true,
-    "body_snippet": "Anicca is selling a live web-research brief over x402. Pay $0.02 USDC (Base) to GET https://bee-yeast-knitting-photograph.trycloudflare.com/research?q=YOUR_QUERY and receive a markdown brief. payTo 0x810F6D61F7606dEEE2657d3083E150a222Bc29C5. Agents w"
-  },
-  {
-    "id": "gh_6020799940",
-    "title": "[BOUNTY] Medium: Unchecked and Uninitialized Validator Token ATA in paraloom-cli validator register and register_validator causes runtime CPI deserialization failure (AccountNotInitialized) and silent gas burn for new validators",
-    "url": "https://github.com/paraloom-labs/paraloom-core/issues/1215",
-    "repo": "paraloom-labs/paraloom-core",
-    "created_at": "2026-10-25T04:24:30Z",
+    "id": "gh_6026842605",
+    "title": "[Bug bounty] Snowbridge transfers via Dedot SDK fail with BridgeHaltedError due to raw enum return in getBridgeStatus",
+    "url": "https://github.com/paraspell/xcm-tools/issues/2300",
+    "repo": "paraspell/xcm-tools",
+    "created_at": "2026-10-25T16:48:04Z",
     "comments": 2,
     "labels": [],
     "platform": "Algora / GitHub PRs",
     "free_tier": true,
     "payment_verified": true,
-    "body_snippet": "## Summary  - **Proposed Bounty Tier:** **Medium** (`$150 USDC` per `docs/bug-bounty.md` Stage 1 Node & Bridge CLI registration path) - **Target Repository:** [`paraloom-labs/paraloom-core`](https://github.com/paraloom-labs/paraloom-core) - **Affecte"
+    "body_snippet": "# 🐞 Bug Report  ## 🔍 Describe the Bug  In `@paraspell/sdk-dedot` (`packages/sdk-dedot/src/DedotApi.ts`), `getBridgeStatus()` returns the raw Dedot codec enum structure (e.g., `{\"type\":\"Normal\"}`) instead of the primitive status string union (`'Normal"
   },
   {
-    "id": "gh_6020777688",
-    "title": "[Ecosystem] Online Web Directory",
-    "url": "https://github.com/PayAINetwork/payai-website/issues/125",
-    "repo": "PayAINetwork/payai-website",
-    "created_at": "2026-10-25T04:20:54Z",
-    "comments": 0,
-    "labels": [
-      "ecosystem"
-    ],
-    "platform": "Algora / GitHub PRs",
-    "free_tier": true,
-    "payment_verified": true,
-    "body_snippet": "### Project Name  Online Web Directory  ### Project Logo  <img width=\"512\" height=\"512\" alt=\"Image\" src=\"https://github.com/user-attachments/assets/7b6db746-a3be-4b32-b784-1a62a7121c4a\" />  ### Website URL  https://onlinewebdirectory.net  ### Twitter"
-  },
-  {
-    "id": "gh_6020761289",
-    "title": "Arbitrum Oyster indexer stalled at block 513114106 (2026-10-09); funded job stopped at its stale endEpoch",
-    "url": "https://github.com/marlinprotocol/oyster-monorepo/issues/272",
-    "repo": "marlinprotocol/oyster-monorepo",
-    "created_at": "2026-10-25T04:18:11Z",
-    "comments": 0,
+    "id": "gh_6026658003",
+    "title": "Renaissance 88 Chrome: fix 2 focus failures, triage 15 axe routes, unlock 26 UNKNOWNs",
+    "url": "https://github.com/Emaren/app-prodn/issues/899",
+    "repo": "Emaren/app-prodn",
+    "created_at": "2026-10-25T16:28:29Z",
+    "comments": 6,
     "labels": [],
     "platform": "Algora / GitHub PRs",
     "free_tier": true,
     "payment_verified": true,
-    "body_snippet": "## Summary  The Arbitrum Oyster indexer (`https://indexer.oyster.marlin.org/graphql`, code in `contracts/indexer/oyster`) stopped indexing at block 513114106 (2026-10-09 06:13:54 UTC). It is still there as of 2026-10-25 04:17 UTC, about 4.9M blocks b"
+    "body_snippet": "# Round Three 88-route browser regression closure  **Evidence:** draft PR #897 SHA 2494d99f4b3a61e76cc6100537e70aba68b60df4; [Chrome run 40210153031](https://github.com/Emaren/app-prodn/actions/runs/40210153031); artifact 12606170411; ZIP SHA256 4ac3"
   },
   {
-    "id": "gh_6020699306",
-    "title": "💰 Bounty Seguro (Ver enlace): 💰 Bounty Seguro (Ver enlace): [ESCROW BOUNTY] 🔌 2,",
-    "url": "https://github.com/alfrexo95/bounty-bot/issues/31",
+    "id": "gh_6026614245",
+    "title": "[Bug bounty] Hydration dry-run bypasses minting due to unhandled currencyId shape in transform",
+    "url": "https://github.com/paraspell/xcm-tools/issues/2294",
+    "repo": "paraspell/xcm-tools",
+    "created_at": "2026-10-25T16:23:48Z",
+    "comments": 2,
+    "labels": [],
+    "platform": "Algora / GitHub PRs",
+    "free_tier": true,
+    "payment_verified": true,
+    "body_snippet": "# 🐞 Bug Report  ## 🔍 Describe the Bug  In `@paraspell/sdk-dedot` (and corresponding transformer modules), when handling multi-key asset structures for dry-run asset minting on Tokens-pallet parachains (e.g., Hydration / Basilisk), `XcmTransformer.tra"
+  },
+  {
+    "id": "gh_6026541983",
+    "title": "[Bug bounty] Centrifuge (para 2031) has produced no blocks since 2026-08-23 and is now a parathread, but the SDK still builds transfers to and from it",
+    "url": "https://github.com/paraspell/xcm-tools/issues/2293",
+    "repo": "paraspell/xcm-tools",
+    "created_at": "2026-10-25T16:15:54Z",
+    "comments": 0,
+    "labels": [
+      "Bug bounty 💰"
+    ],
+    "platform": "Algora / GitHub PRs",
+    "free_tier": true,
+    "payment_verified": true,
+    "body_snippet": "# 🐞 Bug Report  ## 🔍 Describe the Bug  Centrifuge (paraId 2031) has not produced a block since **2026-08-23 15:57 UTC**, and the Polkadot relay chain now lists it as a **Parathread** (no longer a parachain with a core). The SDK still lists Centrifuge"
+  },
+  {
+    "id": "gh_6026487394",
+    "title": "Define investigation template defaults and acceptance criteria",
+    "url": "https://github.com/TheDarkSkyXD/OSINT-AI-Spider/issues/28",
+    "repo": "TheDarkSkyXD/OSINT-AI-Spider",
+    "created_at": "2026-10-25T16:10:02Z",
+    "comments": 0,
+    "labels": [
+      "wayfinder:grilling"
+    ],
+    "platform": "Algora / GitHub PRs",
+    "free_tier": true,
+    "payment_verified": true,
+    "body_snippet": "Part of [Wayfinder: define the complete AI OSINT Spider product](https://github.com/TheDarkSkyXD/OSINT-AI-Spider/issues/1).  ## Question  Which versioned defaults and scenario acceptance criteria complete each approved investigation template? Specify"
+  },
+  {
+    "id": "gh_6026767509",
+    "title": "Exploration: Stripe stablecoin payments and machine payments (MPP / x402) — maturity, vision fit, staged plan",
+    "url": "https://github.com/akoita/resonate/issues/2440",
+    "repo": "akoita/resonate",
+    "created_at": "2026-10-25T16:40:18Z",
+    "comments": 0,
+    "labels": [
+      "exploration",
+      "x402",
+      "payments",
+      "vision:core"
+    ],
+    "platform": "Algora / GitHub PRs",
+    "free_tier": true,
+    "payment_verified": true,
+    "body_snippet": "## Question  Stripe now offers crypto and agent-payment features: - **Stablecoin payments:** USDC on Tempo, Ethereum, Solana, Polygon and Base. They work in Checkout, Elements and Billing, including subscriptions. - **Machine payments:** HTTP 402 cha"
+  },
+  {
+    "id": "gh_6026417530",
+    "title": "[radar] SN open bounty 2026-10-25T16:02",
+    "url": "https://github.com/relayhop/sn-monetization-runtime/issues/1329",
+    "repo": "relayhop/sn-monetization-runtime",
+    "created_at": "2026-10-25T16:02:35Z",
+    "comments": 4,
+    "labels": [
+      "radar",
+      "sn",
+      "bounty"
+    ],
+    "platform": "Algora / GitHub PRs",
+    "free_tier": true,
+    "payment_verified": true,
+    "body_snippet": "New SN OPEN_BOUNTY detected:  ``` 1601866\tStacker_Stocks\t2\t266\t10000\t5\t3.9\t9274\t28889\trecent@Stacker_Stocks|top@Stacker_Stocks\tOPEN_BOUNTY,LOW_COMP,SIGNAL,SELF_POST_OPP\tStacker Stocks Weekly Close Contest 🟩 or 🟥 - Week #16 Win up to 20k Sats! ```"
+  },
+  {
+    "id": "gh_6026318065",
+    "title": "💰 Bounty Seguro (Ver enlace): 💰 Bounty Seguro (Ver enlace): 💰 Bounty Seguro (Ver",
+    "url": "https://github.com/alfrexo95/bounty-bot/issues/42",
     "repo": "alfrexo95/bounty-bot",
-    "created_at": "2026-10-25T04:08:21Z",
-    "comments": 1,
+    "created_at": "2026-10-25T15:52:42Z",
+    "comments": 2,
     "labels": [
       "bounty",
       "escrow"
@@ -412,23 +349,137 @@
     "platform": "Algora / GitHub PRs",
     "free_tier": true,
     "payment_verified": true,
-    "body_snippet": "🤖 **Bounty con Pago Garantizado (Escrow)**  - **Título:** 💰 Bounty Seguro (Ver enlace): [ESCROW BOUNTY] 🔌 2,000 DOOM ($wDOOM on Base) — In - **Monto:** Ver enlace - **Plataforma:** GitHub Issue - **Enlace:** [Ir al Issue](https://github.com/alfrexo95"
+    "body_snippet": "🤖 **Bounty con Pago Garantizado (Escrow)**  - **Título:** 💰 Bounty Seguro (Ver enlace): 💰 Bounty Seguro (Ver enlace): 💰 Bounty Seguro (Ver - **Monto:** Ver enlace - **Plataforma:** GitHub Issue - **Enlace:** [Ir al Issue](https://github.com/alfrexo95"
   },
   {
-    "id": "gh_6020692779",
-    "title": "Core: Swap quotes Aero pools on Base, Robinhood Chain and Arc",
-    "url": "https://github.com/gemwalletcom/wallet/issues/1646",
-    "repo": "gemwalletcom/wallet",
-    "created_at": "2026-10-25T04:07:21Z",
-    "comments": 0,
+    "id": "gh_6025873520",
+    "title": "Add MCP server: NIGHTSHIFT (public)",
+    "url": "https://github.com/TensorBlock/awesome-mcp-servers/issues/4535",
+    "repo": "TensorBlock/awesome-mcp-servers",
+    "created_at": "2026-10-25T15:06:28Z",
+    "comments": 2,
     "labels": [
-      "enhancement",
-      "swap"
+      "community-intake",
+      "needs-triage",
+      "ready-for-pr"
     ],
     "platform": "Algora / GitHub PRs",
     "free_tier": true,
     "payment_verified": true,
-    "body_snippet": "| What | Expected | Today | |---|---|---| | Swaps on Base | quotes from Aero's pools as well as Aerodrome's | Aerodrome's legacy pools only, while trading moves to Aero | | cbBTC to USDC on Base | the best of Uniswap, Aerodrome and Aero | Aero gives "
+    "body_snippet": "### Server name  NIGHTSHIFT (public)  ### Project URL  https://github.com/RobertKodes/nightshift  ### Best category  Monitoring & Observability  ### What can an agent do with this server?  Hire agent crews that each do one job, with free samples firs"
+  },
+  {
+    "id": "gh_6025706051",
+    "title": "🎯 Bounty Alert: 15 New Opportunityies found",
+    "url": "https://github.com/freedom-winds/BountyScout/issues/1319",
+    "repo": "freedom-winds/BountyScout",
+    "created_at": "2026-10-25T14:48:29Z",
+    "comments": 0,
+    "labels": [
+      "bounty-alert"
+    ],
+    "platform": "Algora / GitHub PRs",
+    "free_tier": true,
+    "payment_verified": true,
+    "body_snippet": "### Active Bounty Scan Results  **Scan Time:** 2026-10-25 14:48 UTC  #### 1. [fix(miner): preserve non-socket files at the gateway UDS path](https://github.com/pearl-research-labs/pearl/issues/460) - **Repository:** [pearl-research-labs/pearl](https:"
+  },
+  {
+    "id": "gh_6025700564",
+    "title": "[soundness] Builtin operand omissions in builtins.rs: non-complex and composite literal operands in real(), imag(), complex(), and composite literals in new() pass hyb check, failing go build (Row 13 BUILDABLE violation)",
+    "url": "https://github.com/limitlessprojects/Go-Hybrid/issues/1732",
+    "repo": "limitlessprojects/Go-Hybrid",
+    "created_at": "2026-10-25T14:47:50Z",
+    "comments": 1,
+    "labels": [],
+    "platform": "Algora / GitHub PRs",
+    "free_tier": true,
+    "payment_verified": true,
+    "body_snippet": "### The smallest .hy program that demonstrates it  ```go // builtins_soundness_complex_new.hy struct Point {     x int     y int }  fn main() {     // Case 1: new() with composite literal operands (must be a type, not a composite literal value)     _"
+  },
+  {
+    "id": "gh_6025544382",
+    "title": "Evidence for the payments discussion: an agent-paid, witnessed receipt, settled Oct 25, 2026",
+    "url": "https://github.com/personal-agent-protocol/personal-agent-protocol/issues/37",
+    "repo": "personal-agent-protocol/personal-agent-protocol",
+    "created_at": "2026-10-25T14:30:22Z",
+    "comments": 1,
+    "labels": [],
+    "platform": "Algora / GitHub PRs",
+    "free_tier": true,
+    "payment_verified": true,
+    "body_snippet": "I run a witness node at 767-2676.com. It publishes a discovery document at /.well-known/mcp.json and its signing keys at /.well-known/popcorn-keys.json. Both are live and public.  The Poppy draft lists payments as an open topic, deferred to a future "
+  },
+  {
+    "id": "gh_6025479091",
+    "title": "Project review: 8 reproducible correctness and test-isolation defects",
+    "url": "https://github.com/ultratestbro/anywalletkit/issues/1",
+    "repo": "ultratestbro/anywalletkit",
+    "created_at": "2026-10-25T14:23:05Z",
+    "comments": 0,
+    "labels": [],
+    "platform": "Algora / GitHub PRs",
+    "free_tier": true,
+    "payment_verified": true,
+    "body_snippet": "# Project review: eight reproducible correctness and test-isolation defects  Reviewed commit: [`a9a5e0af91e0849dfa0cea59f925971de47a468d`](https://github.com/ultratestbro/anywalletkit/commit/a9a5e0af91e0849dfa0cea59f925971de47a468d). Environment: mac"
+  },
+  {
+    "id": "gh_6025328650",
+    "title": "Relatório semanal — 2026-10-25",
+    "url": "https://github.com/pconopca/brasil-dados-api/issues/155",
+    "repo": "pconopca/brasil-dados-api",
+    "created_at": "2026-10-25T14:06:24Z",
+    "comments": 0,
+    "labels": [
+      "relatorio-semanal"
+    ],
+    "platform": "Algora / GitHub PRs",
+    "free_tier": true,
+    "payment_verified": true,
+    "body_snippet": "# Relatório semanal — 2026-10-25  ## Receita — Base - **Vendas orgânicas (não vindas da carteira de teste)**: 5 - **Pagadores únicos**: 4 - **Receita orgânica**: 0.016000 USDC - **Compras de teste (durante o desenvolvimento)**: 0 (0.000000 USDC) - **"
+  },
+  {
+    "id": "gh_6025222200",
+    "title": "False positive: degengraph.com — Solana pump.fun scanner flagged \"This dApp could be malicious\" in Phantom",
+    "url": "https://github.com/blowfishxyz/blocklist/issues/211",
+    "repo": "blowfishxyz/blocklist",
+    "created_at": "2026-10-25T13:55:49Z",
+    "comments": 0,
+    "labels": [],
+    "platform": "Algora / GitHub PRs",
+    "free_tier": true,
+    "payment_verified": true,
+    "body_snippet": "## Summary  `degengraph.com` is flagged with a Phantom / Blowfish **“This dApp could be malicious”** / request-blocked warning (Swedish UI: “Begäran blockerad”, “dAppen kan vara skadlig”) on Phantom mobile when users connect or pay for Pro.  This is "
+  },
+  {
+    "id": "gh_6024525844",
+    "title": "Spec feedback or independent implementation",
+    "url": "https://github.com/silentxtrader/QUORACT/issues/2",
+    "repo": "silentxtrader/QUORACT",
+    "created_at": "2026-10-25T12:39:56Z",
+    "comments": 0,
+    "labels": [
+      "help wanted"
+    ],
+    "platform": "Algora / GitHub PRs",
+    "free_tier": true,
+    "payment_verified": true,
+    "body_snippet": "The goal is to find out whether QUORACT's public v0.9 specification makes sense to someone who has not seen an implementation.  **Two ways to help:**  1. **Quick spec review:** Read [SPEC.md](https://github.com/silentxtrader/QUORACT/blob/main/SPEC.md"
+  },
+  {
+    "id": "gh_6024068042",
+    "title": "voice: roadmap and how to help with ragleap-voice (pre-alpha)",
+    "url": "https://github.com/ragleap/ragleap-core/issues/970",
+    "repo": "ragleap/ragleap-core",
+    "created_at": "2026-10-25T11:44:30Z",
+    "comments": 2,
+    "labels": [
+      "help wanted",
+      "voice"
+    ],
+    "platform": "Algora / GitHub PRs",
+    "free_tier": true,
+    "payment_verified": true,
+    "body_snippet": "`ragleap-voice` aims to be an open, local speech stack: speech to text and text to speech in many languages, emotion control, and custom voices made with consent, with no paid API in the default path. It is **pre-alpha**. This issue is the map for pe"
   },
   {
     "id": "gh_6017132129",
@@ -436,7 +487,7 @@
     "url": "https://github.com/doomsday-network/doom-pay/issues/1",
     "repo": "doomsday-network/doom-pay",
     "created_at": "2026-10-24T20:13:00Z",
-    "comments": 24,
+    "comments": 33,
     "labels": [
       "help wanted",
       "good first issue",
@@ -453,7 +504,7 @@
     "url": "https://github.com/doomsday-network/web3-agent-skills/issues/1",
     "repo": "doomsday-network/web3-agent-skills",
     "created_at": "2026-10-24T16:42:50Z",
-    "comments": 16,
+    "comments": 18,
     "labels": [
       "help wanted",
       "good first issue",
@@ -470,7 +521,7 @@
     "url": "https://github.com/doomsday-network/bounty-guard/issues/7",
     "repo": "doomsday-network/bounty-guard",
     "created_at": "2026-10-24T15:39:31Z",
-    "comments": 19,
+    "comments": 25,
     "labels": [
       "help wanted",
       "good first issue",
@@ -488,7 +539,7 @@
     "url": "https://github.com/doomsday-network/github-bounty-scanner/issues/1",
     "repo": "doomsday-network/github-bounty-scanner",
     "created_at": "2026-10-24T15:39:29Z",
-    "comments": 13,
+    "comments": 15,
     "labels": [
       "help wanted",
       "good first issue",
@@ -542,7 +593,7 @@
     "url": "https://github.com/saajann/openuni/issues/88",
     "repo": "saajann/openuni",
     "created_at": "2026-10-23T11:49:48Z",
-    "comments": 0,
+    "comments": 1,
     "labels": [
       "documentation",
       "help wanted",
@@ -560,7 +611,7 @@
     "url": "https://github.com/Cylo-Traders/Agrocylo-Global/issues/1291",
     "repo": "Cylo-Traders/Agrocylo-Global",
     "created_at": "2026-10-23T04:28:28Z",
-    "comments": 2,
+    "comments": 3,
     "labels": [
       "bug",
       "help wanted",
@@ -570,40 +621,6 @@
     "free_tier": true,
     "payment_verified": true,
     "body_snippet": "### Problem  Several cost_harness tests pass by printing TODO instructions rather than invoking the named contract method. COST_BASELINE still contains placeholder rows and a stale unbounded batch-refund description. The existing investor-refund meas"
-  },
-  {
-    "id": "gh_5991891738",
-    "title": "[DevOps][Contract] Provide an instance-TTL keeper with expiry monitoring and recovery runbook",
-    "url": "https://github.com/Cylo-Traders/Agrocylo-Global/issues/1290",
-    "repo": "Cylo-Traders/Agrocylo-Global",
-    "created_at": "2026-10-23T04:28:25Z",
-    "comments": 2,
-    "labels": [
-      "enhancement",
-      "help wanted",
-      "Contract"
-    ],
-    "platform": "Algora / GitHub PRs",
-    "free_tier": true,
-    "payment_verified": true,
-    "body_snippet": "### Problem  The contracts expose permissionless instance-TTL bump endpoints, but no repository-supported keeper deployment/schedule was found. Production escrow's helper requests a 100,000-ledger extension, which is not a guarantee that quiet instan"
-  },
-  {
-    "id": "gh_5991891327",
-    "title": "[DevOps][Contract] Apply and verify explicit zero-fee marketplace configuration",
-    "url": "https://github.com/Cylo-Traders/Agrocylo-Global/issues/1289",
-    "repo": "Cylo-Traders/Agrocylo-Global",
-    "created_at": "2026-10-23T04:28:22Z",
-    "comments": 1,
-    "labels": [
-      "bug",
-      "help wanted",
-      "Contract"
-    ],
-    "platform": "Algora / GitHub PRs",
-    "free_tier": true,
-    "payment_verified": true,
-    "body_snippet": "### Problem  The deploy script defaults FEE_RATE_BPS to zero but only applies marketplace set_fee_config when it is greater than zero. Marketplace initialization does not persist FeeRateBps, so its getter falls back to DEFAULT_FEE_RATE_BPS=300. A fre"
   },
   {
     "id": "gh_5874537137",
