@@ -1,19 +1,19 @@
 {
   "total_bounties_count": 247,
-  "liquid_onchain_usd": 696.48,
-  "liquid_onchain_doom": 21765.0,
-  "liquid_onchain_eur": 654.69,
-  "liquid_tx_count": 14,
-  "base_wdoom": 21765.0,
-  "l1_doom": 0.0,
+  "liquid_onchain_usd": 2.66,
+  "liquid_onchain_doom": 26662.3,
+  "liquid_onchain_eur": 2.5,
+  "liquid_tx_count": 16,
+  "base_wdoom": 24515.0,
+  "l1_doom": 2147.3,
   "earned_onchain_usd": 1800.0,
   "dispersion_pending_usd": 1800.0,
-  "sprint_in_review_usd": 8946.0,
-  "sprint_total_usd": 10746.0,
-  "grand_total_pipeline_usd": 44009.44,
+  "sprint_in_review_usd": 10216.0,
+  "sprint_total_usd": 12016.0,
+  "grand_total_pipeline_usd": 56719.6,
   "in_review_usd": 8946.0,
   "total_claimed_usd": 137273.1,
-  "total_pipeline_value_usd": 44009.44,
+  "total_pipeline_value_usd": 56719.6,
   "submitted_prs_count": 230,
   "bounties": [
     {
@@ -5751,5 +5751,9 @@
       "platform": "GitHub Direct PR",
       "settlement_wallet": "0x8366bCe3a2D379Dec7656D7A67015789FaF999f20"
     }
-  ]
+  ],
+  "base_wdoom_usd": 2.45,
+  "base_wdoom_eur": 2.3,
+  "l1_doom_usd": 0.21,
+  "l1_doom_eur": 0.2
 }

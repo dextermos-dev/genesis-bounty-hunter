@@ -906,3 +906,31 @@ th.sortable.sorted-desc .sort-arrow {
   color: var(--accent-emerald);
   font-weight: bold;
 }
+
+/* Page size selector */
+.page-size-box {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.page-size-select {
+  background: rgba(15, 23, 42, 0.8);
+  border: 1px solid var(--border-subtle);
+  color: var(--text-main);
+  padding: 4px 8px;
+  border-radius: var(--radius-sm);
+  font-size: 0.8rem;
+  font-family: var(--font-mono);
+  outline: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.page-size-select:focus,
+.page-size-select:hover {
+  border-color: var(--accent-cyan);
+}
+
