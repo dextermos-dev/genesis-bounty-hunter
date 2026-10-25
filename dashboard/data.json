@@ -5751,5 +5751,55 @@
       "platform": "GitHub Direct PR",
       "settlement_wallet": "0x8366bCe3a2D379Dec7656D7A67015789FaF999f20"
     }
-  ]
+  ],
+  "mining_cluster": {
+    "status": "ONLINE_ACTIVE",
+    "active_rigs_count": 2,
+    "total_hashrate_mhs": 7.7,
+    "global_rank": 4,
+    "worker_address": "doom162df6bb0c219de72343658ec04c1d9b1939c3c5c02f6b94f",
+    "settlement_wallet": "0x8366bCe3a2D379Dec7656D7A67015789FaF999f20",
+    "mined_pow_doom": 142.3,
+    "unpaid_doom": 0.27,
+    "top10_target_doom": 1039.32,
+    "top10_progress_pct": 13.69,
+    "remaining_to_top10_doom": 897.02,
+    "est_days_to_top10": 13.5,
+    "daily_doom": 65.0,
+    "weekly_doom": 455.0,
+    "monthly_doom": 1950.0,
+    "daily_usd_dex": 2.08,
+    "weekly_usd_dex": 14.56,
+    "monthly_usd_dex": 62.4,
+    "daily_usd_parity": 65.0,
+    "weekly_usd_parity": 455.0,
+    "monthly_usd_parity": 1950.0,
+    "top10_unlock_bounties_wdoom": 4000.0,
+    "top10_unlock_usd_dex": 128.0,
+    "top10_unlock_usd_parity": 4000.0,
+    "nodes": [
+      {
+        "name": "Dexter-Windows-VPS-Rig",
+        "host": "xstrategyq-t455.kademar.io:115",
+        "os": "Windows Server 64-bit",
+        "status": "ONLINE_24_7",
+        "threads": "8 / 8 cores (100% CPU)",
+        "hashrate_mhs": 7.55,
+        "role": "Nodo Primario de Alto Rendimiento",
+        "uptime": "24/7 Continuo",
+        "power": "Datacenter Cloud (Sin consumo local)"
+      },
+      {
+        "name": "Dexter-Eco-Silent-Rig",
+        "host": "Local Host (Mac)",
+        "os": "macOS Darwin x86_64",
+        "status": "ONLINE_ECO",
+        "threads": "1 core (Throttled 2.6% CPU)",
+        "hashrate_mhs": 0.15,
+        "role": "Nodo Centinela Auxiliar",
+        "uptime": "Modo Silencioso",
+        "power": "Bajo consumo (<3% CPU)"
+      }
+    ]
+  }
 }
