@@ -126,17 +126,49 @@ function renderKPIs() {
   const totalBounties = globalData?.total_bounties_count || 244;
 
   // Update DOM elements for Cards
+  // 1. Account 1 Card (Base Mainnet)
+  const elAcc1Tokens = document.getElementById('kpiAccount1Tokens');
+  if (elAcc1Tokens) {
+    const acc1Tokens = Number(globalData?.account_1?.token_balance) || 24515.0;
+    elAcc1Tokens.innerHTML = `${acc1Tokens.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })} <span class="currency">wDOOM</span>`;
+  }
+  const elAcc1Stable = document.getElementById('kpiAccount1Stable');
+  if (elAcc1Stable) {
+    const acc1Usdc = Number(globalData?.account_1?.value_usdc) || 2.45;
+    const acc1Eur = Number(globalData?.account_1?.value_eur) || 2.30;
+    elAcc1Stable.innerHTML = `≈ $${acc1Usdc.toFixed(2)} <span class="currency" style="font-size: 0.8rem; color: #94A3B8;">USDC (~${acc1Eur.toFixed(2)}€)</span>`;
+  }
+
+  // 2. Account 2 Card (Doomsday L1)
+  const elAcc2Tokens = document.getElementById('kpiAccount2Tokens');
+  if (elAcc2Tokens) {
+    const acc2Tokens = Number(globalData?.account_2?.total_balance) || 2147.30;
+    elAcc2Tokens.innerHTML = `${acc2Tokens.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })} <span class="currency">DOOM</span>`;
+  }
+  const elAcc2Stable = document.getElementById('kpiAccount2Stable');
+  if (elAcc2Stable) {
+    const acc2Usdc = Number(globalData?.account_2?.value_usdc) || 0.21;
+    const acc2Eur = Number(globalData?.account_2?.value_eur) || 0.20;
+    elAcc2Stable.innerHTML = `≈ $${acc2Usdc.toFixed(2)} <span class="currency" style="font-size: 0.8rem; color: #94A3B8;">USDC (~${acc2Eur.toFixed(2)}€)</span>`;
+  }
+
+  // 3. Consolidated Total Wallet Card
+  const elTotalStable = document.getElementById('kpiTotalWalletStable');
+  if (elTotalStable) {
+    const totalUsdc = Number(globalData?.wallet_consolidated?.stablecoin_usdc) || 2.66;
+    const totalEur = Number(globalData?.wallet_consolidated?.stablecoin_eur) || 2.50;
+    elTotalStable.innerHTML = `$${totalUsdc.toFixed(2)} <span class="currency">USDC</span> <span style="font-size: 0.85rem; color: #94A3B8; font-weight: 500;">(~${totalEur.toFixed(2)}€)</span>`;
+  }
+  const elTotalTokens = document.getElementById('kpiTotalWalletTokens');
+  if (elTotalTokens) {
+    const totalTokens = Number(globalData?.wallet_consolidated?.total_doom_tokens) || 26662.30;
+    elTotalTokens.innerHTML = `${totalTokens.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })} <span style="color: #94A3B8; font-size: 0.8rem;">DOOM / wDOOM Total</span>`;
+  }
+
+  // Fallback for legacy elWallet if present
   const elWallet = document.getElementById('kpiInWallet');
   if (elWallet) {
     elWallet.innerHTML = `${doomTokens.toLocaleString('en-US')} <span class="currency">DOOM</span> <span style="font-size: 0.82rem; color: #94A3B8; font-weight: 500;">(~${doomEur.toFixed(2)}€ / $${doomUsd.toFixed(2)})</span>`;
-    const elWalletFooter = document.querySelector('.wallet-star .stat-footer span[style*="text-align: right"]');
-    if (elWalletFooter) {
-      elWalletFooter.textContent = `${baseWdoom.toLocaleString('en-US')} wDOOM (Base) · ${l1Doom.toLocaleString('en-US')} DOOM L1 (Canje $0.00010)`;
-    }
-    const elWalletBadge = document.querySelector('.wallet-star .stat-footer .stat-badge');
-    if (elWalletBadge) {
-      elWalletBadge.innerHTML = `<span class="pulse-dot"></span> ${txCount} TXs ON-CHAIN CONFIRMADAS`;
-    }
   }
 
   const elAdjudicated = document.getElementById('kpiAdjudicated');
