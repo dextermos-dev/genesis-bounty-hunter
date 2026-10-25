@@ -1,5 +1,5 @@
 {
-  "total_bounties_count": 248,
+  "total_bounties_count": 247,
   "liquid_onchain_usd": 848.48,
   "liquid_onchain_doom": 26515.0,
   "liquid_onchain_eur": 797.57,
@@ -8,13 +8,13 @@
   "l1_doom": 2000.0,
   "earned_onchain_usd": 1800.0,
   "dispersion_pending_usd": 1800.0,
-  "sprint_in_review_usd": 11286.0,
-  "sprint_total_usd": 13086.0,
-  "grand_total_pipeline_usd": 145023.1,
-  "in_review_usd": 11286.0,
-  "total_claimed_usd": 138273.1,
-  "total_pipeline_value_usd": 145023.1,
-  "submitted_prs_count": 231,
+  "sprint_in_review_usd": 10286.0,
+  "sprint_total_usd": 12086.0,
+  "grand_total_pipeline_usd": 144023.1,
+  "in_review_usd": 10286.0,
+  "total_claimed_usd": 137273.1,
+  "total_pipeline_value_usd": 144023.1,
+  "submitted_prs_count": 230,
   "bounties": [
     {
       "bounty_id": "webacy_startup_accelerator_grant",
@@ -805,21 +805,6 @@
       "is_new": true,
       "submitted_at": "2026-10-23T08:41:14.462633+00:00",
       "tx_hash": "2420a912e4dcefe25d003706cdd1d74541c0f5eae7b95e76184dd81c297d9691"
-    },
-    {
-      "id": "doomsday-doom-pay-1",
-      "bounty_id": "doomsday-doom-pay-1",
-      "title": "[ESCROW BOUNTY] ⚡ 1,000 wDOOM — Test DoomPay Checkout Session & Pool Benchmark",
-      "repository": "doomsday-network/doom-pay",
-      "issue_url": "https://github.com/doomsday-network/doom-pay/issues/1",
-      "pull_request_url": "https://github.com/doomsday-network/doom-pay/issues/1#issuecomment-6394996584",
-      "reward_amount": 1000.0,
-      "currency": "wDOOM / USDC",
-      "status": "SUBMITTED",
-      "is_complete": true,
-      "is_new": true,
-      "sprint": true,
-      "created_at": "2026-10-25"
     },
     {
       "bounty_id": "doomsday_web3_skills_1",

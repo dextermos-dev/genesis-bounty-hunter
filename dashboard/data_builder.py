@@ -770,12 +770,12 @@ def build_dashboard_dataset() -> dict:
     # Cargar valores consolidados de sprint e ingresos
     # Liquidación On-Chain Directa Confirmada: 24,515 wDOOM (Base) + 2,000 DOOM (L1) = 26,515 DOOM ($848.48 USD / ~797.57 €)
     # Adjudicado en Dispersión Pendiente: 14 PRs merged = $1,800.00 USDC
-    # Sprint en Revisión GitHub & On-Chain Escrow: 40 submissions = $11,286.00 USDC / wDOOM
+    # Sprint en Revisión GitHub & On-Chain Escrow: 39 submissions = $10,286.00 USDC / wDOOM
     liquid_onchain = 848.48
     liquid_onchain_doom = 26515.0
     liquid_onchain_eur = 797.57
     earned_onchain = 1800.00
-    sprint_in_review = 11286.00
+    sprint_in_review = 10286.00
     sprint_total = round(earned_onchain + sprint_in_review, 2)
     grand_total_pipeline = round(total_pipeline_val, 2)
 
