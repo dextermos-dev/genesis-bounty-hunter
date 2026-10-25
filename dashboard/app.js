@@ -105,7 +105,7 @@ async function loadDashboardData() {
 // 2. Render KPIs (Hero Grid with 100% Realism)
 function renderKPIs() {
   // Real on-chain balance in wallet (Confirmed Base L2: 23,515 wDOOM + 2,000 DOOM L1 = 25,515 DOOM)
-  const doomTokens = Number(globalData?.liquid_onchain_doom) || 25515;
+  const doomTokens = Number(globalData?.liquid_onchain_doom) || 26515;
   const doomUsd = Number(globalData?.liquid_onchain_usd) || 816.48;
   const doomEur = Number(globalData?.liquid_onchain_eur) || 767.49;
   const baseWdoom = Number(globalData?.base_wdoom) || 23515;
