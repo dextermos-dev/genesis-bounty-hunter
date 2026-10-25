@@ -1,5 +1,29 @@
 [
   {
+    "timestamp": "09:17:54",
+    "date": "2026-10-25",
+    "type": "SANDBOX_STATUS",
+    "title": "Integridad del Sandbox",
+    "details": "22/22 Bounties con compilación y suite de pruebas 100% en verde.",
+    "severity": "success"
+  },
+  {
+    "timestamp": "09:17:53",
+    "date": "2026-10-25",
+    "type": "GITHUB_CI",
+    "title": "Integración Continua Vercel / Gitcoin",
+    "details": "PR #474 en gitcoinco/gitcoin_co_30 recibida correctamente por Allo Capital CI.",
+    "severity": "info"
+  },
+  {
+    "timestamp": "09:17:53",
+    "date": "2026-10-25",
+    "type": "SYSTEM_SYNC",
+    "title": "Sincronización Autónoma Nivel B",
+    "details": "Monitoreando 18 Pull Requests publicadas en GitHub y Wallet 0x8366bCe3...",
+    "severity": "success"
+  },
+  {
     "timestamp": "21:39:05",
     "date": "2026-10-24",
     "type": "SANDBOX_STATUS",
@@ -213,30 +237,6 @@
     "type": "SYSTEM_SYNC",
     "title": "Sincronización Autónoma Nivel B",
     "details": "Monitoreando 18 Pull Requests publicadas en GitHub y Wallet 0x8366bCe3...",
-    "severity": "success"
-  },
-  {
-    "timestamp": "14:37:00",
-    "date": "2026-10-23",
-    "type": "PR_SUBMITTED",
-    "title": "🚀 PR #17 PRESENTADO EN DOOMSDAY (ELIZAOS PLUGIN)",
-    "details": "Plugin oficial @elizaos/plugin-doomsday entregado para Issue #11. Acciones VERIFY_ESCROW, LIST_ESCROWS, CLAIM_FAUCET. Payout wallet: 0x8366bce3... Recompensa esperada: +3,000 wDOOM.",
-    "severity": "info"
-  },
-  {
-    "timestamp": "13:39:00",
-    "date": "2026-10-23",
-    "type": "ONCHAIN_PAYOUT",
-    "title": "🎉 PR #15 MERGED & LIQUIDADO ON-CHAIN (+3,000 wDOOM)",
-    "details": "Doomsday Proof-of-Escrow GitHub Action merged en main. TxID: 569692974da424184f1052a54bb1467712b29eea27d0f602cadc03d0e537c310 en Base Mainnet. Saldo total: 17,265 wDOOM (~519.33€).",
-    "severity": "success"
-  },
-  {
-    "timestamp": "13:38:17",
-    "date": "2026-10-23",
-    "type": "SANDBOX_STATUS",
-    "title": "Integridad del Sandbox",
-    "details": "22/22 Bounties con compilación y suite de pruebas 100% en verde.",
     "severity": "success"
   }
 ]

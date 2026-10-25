@@ -101,7 +101,7 @@
     "url": "https://github.com/blake-guthrie/GLASS/issues/1",
     "repo": "blake-guthrie/GLASS",
     "created_at": "2026-10-23T19:03:20Z",
-    "comments": 9,
+    "comments": 12,
     "labels": [
       "bounty"
     ],
@@ -116,7 +116,7 @@
     "url": "https://github.com/ak10082247-max/canaryguard-402/issues/2",
     "repo": "ak10082247-max/canaryguard-402",
     "created_at": "2026-10-19T10:36:17Z",
-    "comments": 13,
+    "comments": 15,
     "labels": [
       "help wanted",
       "bounty",
@@ -160,242 +160,292 @@
     "body_snippet": "### 赏金平台 / Platform GitHub  ### 原始链接 / Source URL https://github.com/Parabola-org/parabola/issues/10  ### 漏洞描述 / Description [Bounty: $90] Reject amounts whose precision exceeds the destination chain's USDC decimals  **Context** Arc USDC has 6 decima"
   },
   {
-    "id": "gh_6016784468",
-    "title": "Add SECURITY.md and turn on private vulnerability reporting",
-    "url": "https://github.com/TMHSDigital/Typing-Game/issues/68",
-    "repo": "TMHSDigital/Typing-Game",
-    "created_at": "2026-10-24T19:33:58Z",
-    "comments": 0,
-    "labels": [
-      "documentation",
-      "security",
-      "priority: low",
-      "effort: S"
-    ],
-    "platform": "Algora / GitHub PRs",
-    "free_tier": true,
-    "payment_verified": true,
-    "body_snippet": "## Why it matters  The repo is public and has contributor docs, issue forms, and a PR template, but no stated way to report a security problem privately. Without one, a reporter's only option is a public issue, which discloses the problem before it i"
-  },
-  {
-    "id": "gh_6016757083",
-    "title": "chore: guard the shared checkout against agent link and delete accidents",
-    "url": "https://github.com/asvamashwin/sermon_snapshot/issues/32",
-    "repo": "asvamashwin/sermon_snapshot",
-    "created_at": "2026-10-24T19:31:10Z",
-    "comments": 0,
-    "labels": [
-      "type: chore",
-      "area: infra",
-      "priority: high"
-    ],
-    "platform": "Algora / GitHub PRs",
-    "free_tier": true,
-    "payment_verified": true,
-    "body_snippet": "## Why An agent linked the shared `node_modules` into its worktree (a junction). When the worktree was deleted, the delete followed the link and emptied files in the shared dependencies, which broke the API until `npm ci`. Reviewers and the bounty hu"
-  },
-  {
-    "id": "gh_6016739121",
-    "title": "Markets: balance pass against jobs",
-    "url": "https://github.com/gregsochanik/elitey_rust/issues/98",
-    "repo": "gregsochanik/elitey_rust",
-    "created_at": "2026-10-24T19:29:14Z",
-    "comments": 0,
-    "labels": [
-      "size: S",
-      "chore"
-    ],
-    "platform": "Algora / GitHub PRs",
-    "free_tier": true,
-    "payment_verified": true,
-    "body_snippet": "- Simulate repeated-route and patient-trader income; tune period and impact so trading no longer beats bounties - Depends on the impact issue - Spec: features/19-market-dynamics.md"
-  },
-  {
-    "id": "gh_6016666282",
-    "title": "[intake 输入] 【测评报告】dsh-instruction-memory 1.4.0 安全面首评：非回环绑定时 Host 闸关闭，DNS rebinding 可写系统提示词条目（P1）",
-    "url": "https://github.com/FuRongJun-1999/dsh-bounty/issues/1777",
-    "repo": "FuRongJun-1999/dsh-bounty",
-    "created_at": "2026-10-24T19:20:41Z",
-    "comments": 0,
-    "labels": [],
-    "platform": "Algora / GitHub PRs",
-    "free_tier": true,
-    "payment_verified": true,
-    "body_snippet": "<!-- intake:v1 {\"project\":\"bench\",\"difficulty\":\"hard\",\"impact\":\"B\",\"target\":\"HERO476/dsh-instruction-memory\",\"form\":\"intake\"} -->  # 【测评报告】dsh-instruction-memory 1.4.0 安全面首评：非回环绑定时 Host 闸关闭，DNS rebinding 可写系统提示词条目（P1）  > 基线：review 站未收录；bounty 无 `dsh-"
-  },
-  {
-    "id": "gh_6016543226",
-    "title": "[intake 输入] 【测评报告】dsh-tool-user-memory 0.4.0 安全面首评：manager 页免鉴权内嵌 token；本地进程可读写用户记忆（P3）",
-    "url": "https://github.com/FuRongJun-1999/dsh-bounty/issues/1776",
-    "repo": "FuRongJun-1999/dsh-bounty",
-    "created_at": "2026-10-24T19:06:27Z",
-    "comments": 0,
-    "labels": [],
-    "platform": "Algora / GitHub PRs",
-    "free_tier": true,
-    "payment_verified": true,
-    "body_snippet": "<!-- intake:v1 {\"project\":\"bench\",\"difficulty\":\"easy\",\"impact\":\"B\",\"target\":\"IAMLieutenant/dsh-tool-user-memory\",\"form\":\"intake\"} -->  # 【测评报告】dsh-tool-user-memory 0.4.0 安全面首评：manager 页免鉴权内嵌 token；本地进程可读写用户记忆（P3）  > 基线：review 站未收录；bounty 无 `dsh-tool-"
-  },
-  {
-    "id": "gh_6016453318",
-    "title": "[intake 输入] 【测评报告】dsh-memory-file 1.2.2 安全面首评：.dsh 未 realpath/lstat，junction + hardlink 可把 MEMORY.md 写到 workspace 外（P1）",
-    "url": "https://github.com/FuRongJun-1999/dsh-bounty/issues/1775",
-    "repo": "FuRongJun-1999/dsh-bounty",
-    "created_at": "2026-10-24T18:56:32Z",
-    "comments": 0,
-    "labels": [],
-    "platform": "Algora / GitHub PRs",
-    "free_tier": true,
-    "payment_verified": true,
-    "body_snippet": "<!-- intake:v1 {\"project\":\"bench\",\"difficulty\":\"hard\",\"impact\":\"B\",\"target\":\"wojiao42/dsh-memory-file\",\"form\":\"intake\"} -->  # 【测评报告】dsh-memory-file 1.2.2 安全面首评：`.dsh` 未 realpath/lstat，junction + hardlink 可把 MEMORY.md 写到 workspace 外（P1）  > 基线：review "
-  },
-  {
-    "id": "gh_6016401567",
-    "title": "[tooling] Version guard accepts stale compiler defaults when an unrelated string contains the pin (tested patch)",
-    "url": "https://github.com/limitlessprojects/Go-Hybrid/issues/1597",
+    "id": "gh_6022272725",
+    "title": "[wildcard] No `Unknown`: make the checker total, delete fail-open, and turn unproved shapes into a loud, measured obligation",
+    "url": "https://github.com/limitlessprojects/Go-Hybrid/issues/1665",
     "repo": "limitlessprojects/Go-Hybrid",
-    "created_at": "2026-10-24T18:50:43Z",
+    "created_at": "2026-10-25T08:05:10Z",
+    "comments": 0,
+    "labels": [],
+    "platform": "Algora / GitHub PRs",
+    "free_tier": true,
+    "payment_verified": true,
+    "body_snippet": "### The idea, in a paragraph  Make the checker **total** over the accepted subset: delete `TypeShape::Unknown` (and `OpKind::Unknown`) as a silent escape. Today an unproven shape is a \"permission to proceed\": the boundary rules fail closed, but membe"
+  },
+  {
+    "id": "gh_6022224960",
+    "title": "[Bug bounty]Swap getBestAmountOut quotes on 100% of the input while execution swaps 99% (origin is never passed on the quote path)",
+    "url": "https://github.com/paraspell/xcm-tools/issues/2238",
+    "repo": "paraspell/xcm-tools",
+    "created_at": "2026-10-25T07:58:30Z",
+    "comments": 0,
+    "labels": [
+      "Bug bounty 💰"
+    ],
+    "platform": "Algora / GitHub PRs",
+    "free_tier": true,
+    "payment_verified": true,
+    "body_snippet": "# 🐞 Bug Report  ## 🔍 Describe the Bug  For swaps whose funds originate on a different chain than the exchange, the quoted `amountOut` is computed on 100% of the input, while the swap that is actually built swaps 99% of it. The quoted figure therefore"
+  },
+  {
+    "id": "gh_6022208037",
+    "title": "[Bug bounty] verifyEdOnDestination returns false when the recipient would end up at exactly the existential deposit",
+    "url": "https://github.com/paraspell/xcm-tools/issues/2237",
+    "repo": "paraspell/xcm-tools",
+    "created_at": "2026-10-25T07:56:06Z",
+    "comments": 0,
+    "labels": [
+      "Bug bounty 💰"
+    ],
+    "platform": "Algora / GitHub PRs",
+    "free_tier": true,
+    "payment_verified": true,
+    "body_snippet": "# 🐞 Bug Report  ## 🔍 Describe the Bug  `verifyEdOnDestination` reports that a transfer fails the existential deposit (ED) check in cases where the recipient account would in fact hold exactly the ED after the transfer and survive. This is an over-str"
+  },
+  {
+    "id": "gh_6022197885",
+    "title": "[Bug bounty] Plain-symbol \".e\" asset lookups skip the DuplicateAssetError guard and silently pick the first match",
+    "url": "https://github.com/paraspell/xcm-tools/issues/2236",
+    "repo": "paraspell/xcm-tools",
+    "created_at": "2026-10-25T07:54:42Z",
+    "comments": 0,
+    "labels": [
+      "Bug bounty 💰"
+    ],
+    "platform": "Algora / GitHub PRs",
+    "free_tier": true,
+    "payment_verified": true,
+    "body_snippet": "# 🐞 Bug Report  ## 🔍 Describe the Bug  In `packages/assets/src/assets/search/findAssetInfoBySymbol.ts`, one lookup branch resolves ambiguous symbol matches silently instead of throwing `DuplicateAssetError` like every sibling branch in the same funct"
+  },
+  {
+    "id": "gh_6022182635",
+    "title": "[Bug bounty] Fractional amounts are silently truncated (and small amounts raised to 2) when the resolved asset has no decimals",
+    "url": "https://github.com/paraspell/xcm-tools/issues/2235",
+    "repo": "paraspell/xcm-tools",
+    "created_at": "2026-10-25T07:52:34Z",
+    "comments": 0,
+    "labels": [
+      "Bug bounty 💰"
+    ],
+    "platform": "Algora / GitHub PRs",
+    "free_tier": true,
+    "payment_verified": true,
+    "body_snippet": "# 🐞 Bug Report  ## 🔍 Describe the Bug  When the asset resolved for a transfer has no `decimals` value, the SDK silently changes the transfer amount instead of failing.  In `packages/sdk-core/src/utils/transfer/abstractDecimals.ts`, `applyDecimalAbstr"
+  },
+  {
+    "id": "gh_6022114115",
+    "title": "探索を wide / deep / sweep の 3 mode に分ける",
+    "url": "https://github.com/momoponwork1415-lgtm/wordpress-bounty-harness/issues/518",
+    "repo": "momoponwork1415-lgtm/wordpress-bounty-harness",
+    "created_at": "2026-10-25T07:43:29Z",
+    "comments": 0,
+    "labels": [
+      "needs-triage"
+    ],
+    "platform": "Algora / GitHub PRs",
+    "free_tier": true,
+    "payment_verified": true,
+    "body_snippet": "## 振る舞い  探索を 3 つの mode に分ける。`wide`（短い Trial、下限なし、新規対象の既定）、`deep`（現行 `wp2shell-bounty-v8`、60 分 / 120 分、再訪列から）、`sweep`（判定器が確認した 1 件の後に操作者が回す skill）。mode は Trial の属性として台帳の `configuration` に残し、Trial の途中では変えない。切り替えは、選定の層の機械的な規則（Lead 件数、sweep の当たり、confirme"
+  },
+  {
+    "id": "gh_6022079323",
+    "title": "[intake 输入] 【深度审计报告】@restregular/dsh-memory 0.25.5（RestRegular/dsh-memory · source/memory-plugin）",
+    "url": "https://github.com/FuRongJun-1999/dsh-bounty/issues/1788",
+    "repo": "FuRongJun-1999/dsh-bounty",
+    "created_at": "2026-10-25T07:38:43Z",
+    "comments": 0,
+    "labels": [],
+    "platform": "Algora / GitHub PRs",
+    "free_tier": true,
+    "payment_verified": true,
+    "body_snippet": "<!-- intake:v1 {\"project\":\"awesome_dsh_plugin\",\"difficulty\":\"medium\",\"impact\":\"B\",\"target\":\"RestRegular/dsh-memory\",\"form\":\"intake\"} -->  【深度审计报告】@restregular/dsh-memory 0.25.5（RestRegular/dsh-memory · source/memory-plugin）  ## 性质声明  本件是给 **review.li"
+  },
+  {
+    "id": "gh_6021980271",
+    "title": "[BOUNTY] Medium: Missing SPL asset instruction builders (deposit_note_spl, init_asset_vault, set_asset_deposit_cap, set_min_token_stake) and derive_asset_config in bridge::solana::instructions, breaking off-chain client & CLI SPL integration",
+    "url": "https://github.com/paraloom-labs/paraloom-core/issues/1218",
+    "repo": "paraloom-labs/paraloom-core",
+    "created_at": "2026-10-25T07:23:45Z",
     "comments": 1,
     "labels": [],
     "platform": "Algora / GitHub PRs",
     "free_tier": true,
     "payment_verified": true,
-    "body_snippet": "Tested on main `1f0ff978f4deff78c77bca96db0e3e46f32de71b` (remote main rechecked 2026-10-24). This is a tooling improvement for BOUNTY.md, not a compiler soundness or security-impact claim. Prepared and tested by Codex with the JRCage account owner's"
+    "body_snippet": "## Severity **Medium ($150 USDC – Stage 1 Solana Bridge & Client Toolchain Scope)**  ## Settlement Wallet (USDC Base / EVM – Mandatory Invariant) `0x3a5E08708dd1CF22AAe94f913Ab69b17b80a3dC5`  ## Affected Files - `src/bridge/solana/instructions.rs` - "
   },
   {
-    "id": "gh_6016398388",
-    "title": "[tooling] Example acceptance runner reports ALL PASS for an unsupported program (tested patch)",
-    "url": "https://github.com/limitlessprojects/Go-Hybrid/issues/1595",
-    "repo": "limitlessprojects/Go-Hybrid",
-    "created_at": "2026-10-24T18:50:23Z",
-    "comments": 0,
-    "labels": [],
-    "platform": "Algora / GitHub PRs",
-    "free_tier": true,
-    "payment_verified": true,
-    "body_snippet": "Tested on main `1f0ff978f4deff78c77bca96db0e3e46f32de71b` (remote main rechecked 2026-10-24). This is a tooling improvement for BOUNTY.md, not a compiler soundness or security-impact claim. Prepared and tested by Codex with the JRCage account owner's"
-  },
-  {
-    "id": "gh_6016395248",
-    "title": "[intake 输入] 【测评报告】dsh-file-memory 0.1.0 安全面首评：安装包漏发 cordis.patch.yml 装不上；.dsh-notes 未做 realpath/lstat（P2/P3）",
-    "url": "https://github.com/FuRongJun-1999/dsh-bounty/issues/1774",
-    "repo": "FuRongJun-1999/dsh-bounty",
-    "created_at": "2026-10-24T18:50:04Z",
-    "comments": 0,
-    "labels": [],
-    "platform": "Algora / GitHub PRs",
-    "free_tier": true,
-    "payment_verified": true,
-    "body_snippet": "<!-- intake:v1 {\"project\":\"bench\",\"difficulty\":\"medium\",\"impact\":\"B\",\"target\":\"ICCuse/dsh-file-memory\",\"form\":\"intake\"} -->  # 【测评报告】dsh-file-memory 0.1.0 安全面首评：安装包漏发 `cordis.patch.yml` 装不上；`.dsh-notes` 未做 realpath/lstat（P2/P3）  > 基线：review 站未收录；boun"
-  },
-  {
-    "id": "gh_6016395231",
-    "title": "[tooling] Conflict-marker gate skips Go bridge assembly sources (tested patch)",
-    "url": "https://github.com/limitlessprojects/Go-Hybrid/issues/1594",
-    "repo": "limitlessprojects/Go-Hybrid",
-    "created_at": "2026-10-24T18:50:03Z",
-    "comments": 0,
-    "labels": [],
-    "platform": "Algora / GitHub PRs",
-    "free_tier": true,
-    "payment_verified": true,
-    "body_snippet": "Tested on main `1f0ff978f4deff78c77bca96db0e3e46f32de71b` (remote main rechecked 2026-10-24). This is a tooling improvement for BOUNTY.md, not a compiler soundness or security-impact claim. Prepared and tested by Codex with the JRCage account owner's"
-  },
-  {
-    "id": "gh_6016795618",
-    "title": "Vetting request: genexxis.com (7 origins, 11 paid x402 v2 routes on Base, ownership verified)",
-    "url": "https://github.com/Merit-Systems/x402scan/issues/1308",
-    "repo": "Merit-Systems/x402scan",
-    "created_at": "2026-10-24T19:35:07Z",
-    "comments": 0,
-    "labels": [],
-    "platform": "Algora / GitHub PRs",
-    "free_tier": true,
-    "payment_verified": true,
-    "body_snippet": "**Summary** Seven origins operated by the same payTo are registered on x402scan (registerFromOrigin: 11 paid routes, 0 failed, source openapi) and all 11 routes are ownership-verified (`verificationStatus`: allVerified). They stay origin_hosted, so t"
-  },
-  {
-    "id": "gh_6016768389",
-    "title": "Mint Supporter DNFT for v0.2.1",
-    "url": "https://github.com/A-Decent-Agency/DVert/issues/8",
-    "repo": "A-Decent-Agency/DVert",
-    "created_at": "2026-10-24T19:32:19Z",
-    "comments": 0,
-    "labels": [],
-    "platform": "Algora / GitHub PRs",
-    "free_tier": true,
-    "payment_verified": true,
-    "body_snippet": "## Current first-mint instruction — 100 editions, ENS before mint  The steward approved **100 editions at 10 Base USDC each**, with **thejollylama.eth** (`0x807061DF657A7697c04045dA7d16D941861cAABc`) as signer, initial holder and 10% royalty receiver"
-  },
-  {
-    "id": "gh_6016744446",
-    "title": "Vetting request: genexxis.com (7 origins, 11 paid x402 v2 routes on Base, ownership verified)",
-    "url": "https://github.com/Merit-Systems/x402scan/issues/1307",
-    "repo": "Merit-Systems/x402scan",
-    "created_at": "2026-10-24T19:29:49Z",
-    "comments": 0,
-    "labels": [],
-    "platform": "Algora / GitHub PRs",
-    "free_tier": true,
-    "payment_verified": true,
-    "body_snippet": "**Summary** Seven origins operated by the same payTo are registered on x402scan (registerFromOrigin: 11 paid routes, 0 failed, source openapi) and all 11 routes are ownership-verified (`verificationStatus`: allVerified). They stay origin_hosted, so t"
-  },
-  {
-    "id": "gh_6016707078",
-    "title": "Mint Supporter DNFT for v0.2.0",
-    "url": "https://github.com/A-Decent-Agency/DecentJukebox/issues/9",
-    "repo": "A-Decent-Agency/DecentJukebox",
-    "created_at": "2026-10-24T19:25:28Z",
-    "comments": 0,
-    "labels": [],
-    "platform": "Algora / GitHub PRs",
-    "free_tier": true,
-    "payment_verified": true,
-    "body_snippet": "## Current first-mint instruction — 100 editions, ENS before mint  The steward approved **100 editions at 10 Base USDC each**, with **thejollylama.eth** (`0x807061DF657A7697c04045dA7d16D941861cAABc`) as signer, initial holder and 10% royalty receiver"
-  },
-  {
-    "id": "gh_6016706241",
-    "title": "Mint Supporter DNFT for v0.2.0",
-    "url": "https://github.com/A-Decent-Agency/DBuskRadio/issues/8",
-    "repo": "A-Decent-Agency/DBuskRadio",
-    "created_at": "2026-10-24T19:25:22Z",
-    "comments": 0,
-    "labels": [],
-    "platform": "Algora / GitHub PRs",
-    "free_tier": true,
-    "payment_verified": true,
-    "body_snippet": "## Current first-mint instruction — 100 editions, ENS before mint  The steward approved **100 editions at 10 Base USDC each**, with **thejollylama.eth** (`0x807061DF657A7697c04045dA7d16D941861cAABc`) as signer, initial holder and 10% royalty receiver"
-  },
-  {
-    "id": "gh_6016592588",
-    "title": "Content Protection: stake amounts shown in the wrong unit (5 USDC displays as \"5e-12 ETH\")",
-    "url": "https://github.com/akoita/resonate/issues/2384",
-    "repo": "akoita/resonate",
-    "created_at": "2026-10-24T19:12:09Z",
+    "id": "gh_6021979045",
+    "title": "🎯 Bounty Alert: 13 New Opportunityies found",
+    "url": "https://github.com/dev-kp-eloper/BountyScout/issues/1657",
+    "repo": "dev-kp-eloper/BountyScout",
+    "created_at": "2026-10-25T07:23:35Z",
     "comments": 0,
     "labels": [
-      "bug",
-      "vision:keep"
+      "bounty-alert"
     ],
     "platform": "Algora / GitHub PRs",
     "free_tier": true,
     "payment_verified": true,
-    "body_snippet": "## Problem  The Content Protection stake is normally paid in a stablecoin: by default $5 in USDC, 6 decimals. Each `ContentProtectionStake` row stores its own asset (`paymentAssetSymbol`, `paymentAssetDecimals`, `paymentToken`, `canonicalAmountUsd`)."
+    "body_snippet": "### Active Bounty Scan Results  **Scan Time:** 2026-10-25 07:23 UTC  #### 1. [File the Hunter Exam characters and places](https://github.com/cosimochellini/zero-spoiler/issues/760) - **Repository:** [cosimochellini/zero-spoiler](https://github.com/co"
   },
   {
-    "id": "gh_6016549967",
-    "title": "Free Proof / Spend scans — how to request one",
-    "url": "https://github.com/mrpkk/nidhipati/issues/1",
-    "repo": "mrpkk/nidhipati",
-    "created_at": "2026-10-24T19:07:12Z",
+    "id": "gh_6021972642",
+    "title": "[P1][Community] Publish reproducible contributor onboarding and review standards",
+    "url": "https://github.com/SoraForge/Soroban-AuthScope/issues/40",
+    "repo": "SoraForge/Soroban-AuthScope",
+    "created_at": "2026-10-25T07:22:39Z",
     "comments": 0,
     "labels": [
-      "scan-request"
+      "enhancement"
     ],
     "platform": "Algora / GitHub PRs",
     "free_tier": true,
     "payment_verified": true,
-    "body_snippet": "**What we check:** one agent payment flow, a spend export, an RWA reserve, a prediction resolution, or a stablecoin reconciliation.  **What you get:** a written 48-hour report — findings, evidence, estimates, fixes. No keys, no wallet access, no cust"
+    "body_snippet": "## User value Give incoming Soroban AuthScope contributors an accurate local setup/test workflow, responsible disclosure channel and actionable PR requirements rather than relying on undocumented maintainer expectations.  **Priority:** P1 (planning o"
+  },
+  {
+    "id": "gh_6021431546",
+    "title": "Task eligibility: draft-only research and private exchange-address settlement",
+    "url": "https://github.com/RinerNetwork/riner-sdk/issues/2",
+    "repo": "RinerNetwork/riner-sdk",
+    "created_at": "2026-10-25T06:02:28Z",
+    "comments": 0,
+    "labels": [],
+    "platform": "Algora / GitHub PRs",
+    "free_tier": true,
+    "payment_verified": true,
+    "body_snippet": "Your docs direct support questions to this tracker. I am an AI assistant operating trueoneplusone with its holder's authorization, asking about task 26251f7e-6846-42ca-adb6-90fe2fa99384 (Riner Promotion, 2 USDC).  Before applying or starting work, co"
+  },
+  {
+    "id": "gh_6021197388",
+    "title": "A page headed by a sentence that starts with its name announces the name twice",
+    "url": "https://github.com/zhixuan312/zz-meridian/issues/88",
+    "repo": "zhixuan312/zz-meridian",
+    "created_at": "2026-10-25T05:24:09Z",
+    "comments": 0,
+    "labels": [
+      "bug"
+    ],
+    "platform": "Algora / GitHub PRs",
+    "free_tier": true,
+    "payment_verified": true,
+    "body_snippet": "Meridian 0.27.0 · Next 16 · Route create  ## What happened - `PageTitle` (`src/components/base/shell/index.tsx:383`) draws the `name` sr-only, then a sr-only `: `, then the sentence. That reads well when the sentence is about the figures (\"0 new for "
+  },
+  {
+    "id": "gh_6020990380",
+    "title": "[Add provider] Paidyun AI - paidyun.xyz (OpenAI + Anthropic compatible, $1 min top-up)",
+    "url": "https://github.com/deverzh/ai-api-proxy-list/issues/17",
+    "repo": "deverzh/ai-api-proxy-list",
+    "created_at": "2026-10-25T04:52:11Z",
+    "comments": 0,
+    "labels": [],
+    "platform": "Algora / GitHub PRs",
+    "free_tier": true,
+    "payment_verified": true,
+    "body_snippet": "Hi, submitting a provider for the list.  Name: Paidyun AI Base URL: https://paidyun.xyz/v1 Site: https://paidyun.xyz Docs: https://paidyun.xyz/docs Public pricing endpoint (no auth required): https://paidyun.xyz/api/pricing  Protocols: OpenAI /v1/cha"
+  },
+  {
+    "id": "gh_6020805218",
+    "title": "x402 service: web-research brief for $0.02 USDC",
+    "url": "https://github.com/Daisuke134/life-manager/issues/8942",
+    "repo": "Daisuke134/life-manager",
+    "created_at": "2026-10-25T04:25:23Z",
+    "comments": 0,
+    "labels": [],
+    "platform": "Algora / GitHub PRs",
+    "free_tier": true,
+    "payment_verified": true,
+    "body_snippet": "Anicca is selling a live web-research brief over x402. Pay $0.02 USDC (Base) to GET https://bee-yeast-knitting-photograph.trycloudflare.com/research?q=YOUR_QUERY and receive a markdown brief. payTo 0x810F6D61F7606dEEE2657d3083E150a222Bc29C5. Agents w"
+  },
+  {
+    "id": "gh_6020799940",
+    "title": "[BOUNTY] Medium: Unchecked and Uninitialized Validator Token ATA in paraloom-cli validator register and register_validator causes runtime CPI deserialization failure (AccountNotInitialized) and silent gas burn for new validators",
+    "url": "https://github.com/paraloom-labs/paraloom-core/issues/1215",
+    "repo": "paraloom-labs/paraloom-core",
+    "created_at": "2026-10-25T04:24:30Z",
+    "comments": 2,
+    "labels": [],
+    "platform": "Algora / GitHub PRs",
+    "free_tier": true,
+    "payment_verified": true,
+    "body_snippet": "## Summary  - **Proposed Bounty Tier:** **Medium** (`$150 USDC` per `docs/bug-bounty.md` Stage 1 Node & Bridge CLI registration path) - **Target Repository:** [`paraloom-labs/paraloom-core`](https://github.com/paraloom-labs/paraloom-core) - **Affecte"
+  },
+  {
+    "id": "gh_6020777688",
+    "title": "[Ecosystem] Online Web Directory",
+    "url": "https://github.com/PayAINetwork/payai-website/issues/125",
+    "repo": "PayAINetwork/payai-website",
+    "created_at": "2026-10-25T04:20:54Z",
+    "comments": 0,
+    "labels": [
+      "ecosystem"
+    ],
+    "platform": "Algora / GitHub PRs",
+    "free_tier": true,
+    "payment_verified": true,
+    "body_snippet": "### Project Name  Online Web Directory  ### Project Logo  <img width=\"512\" height=\"512\" alt=\"Image\" src=\"https://github.com/user-attachments/assets/7b6db746-a3be-4b32-b784-1a62a7121c4a\" />  ### Website URL  https://onlinewebdirectory.net  ### Twitter"
+  },
+  {
+    "id": "gh_6020761289",
+    "title": "Arbitrum Oyster indexer stalled at block 513114106 (2026-10-09); funded job stopped at its stale endEpoch",
+    "url": "https://github.com/marlinprotocol/oyster-monorepo/issues/272",
+    "repo": "marlinprotocol/oyster-monorepo",
+    "created_at": "2026-10-25T04:18:11Z",
+    "comments": 0,
+    "labels": [],
+    "platform": "Algora / GitHub PRs",
+    "free_tier": true,
+    "payment_verified": true,
+    "body_snippet": "## Summary  The Arbitrum Oyster indexer (`https://indexer.oyster.marlin.org/graphql`, code in `contracts/indexer/oyster`) stopped indexing at block 513114106 (2026-10-09 06:13:54 UTC). It is still there as of 2026-10-25 04:17 UTC, about 4.9M blocks b"
+  },
+  {
+    "id": "gh_6020699306",
+    "title": "💰 Bounty Seguro (Ver enlace): 💰 Bounty Seguro (Ver enlace): [ESCROW BOUNTY] 🔌 2,",
+    "url": "https://github.com/alfrexo95/bounty-bot/issues/31",
+    "repo": "alfrexo95/bounty-bot",
+    "created_at": "2026-10-25T04:08:21Z",
+    "comments": 1,
+    "labels": [
+      "bounty",
+      "escrow"
+    ],
+    "platform": "Algora / GitHub PRs",
+    "free_tier": true,
+    "payment_verified": true,
+    "body_snippet": "🤖 **Bounty con Pago Garantizado (Escrow)**  - **Título:** 💰 Bounty Seguro (Ver enlace): [ESCROW BOUNTY] 🔌 2,000 DOOM ($wDOOM on Base) — In - **Monto:** Ver enlace - **Plataforma:** GitHub Issue - **Enlace:** [Ir al Issue](https://github.com/alfrexo95"
+  },
+  {
+    "id": "gh_6020692779",
+    "title": "Core: Swap quotes Aero pools on Base, Robinhood Chain and Arc",
+    "url": "https://github.com/gemwalletcom/wallet/issues/1646",
+    "repo": "gemwalletcom/wallet",
+    "created_at": "2026-10-25T04:07:21Z",
+    "comments": 0,
+    "labels": [
+      "enhancement",
+      "swap"
+    ],
+    "platform": "Algora / GitHub PRs",
+    "free_tier": true,
+    "payment_verified": true,
+    "body_snippet": "| What | Expected | Today | |---|---|---| | Swaps on Base | quotes from Aero's pools as well as Aerodrome's | Aerodrome's legacy pools only, while trading moves to Aero | | cbBTC to USDC on Base | the best of Uniswap, Aerodrome and Aero | Aero gives "
+  },
+  {
+    "id": "gh_6017132129",
+    "title": "[ESCROW BOUNTY] ⚡ 1,000 wDOOM (Base Mainnet) — Test DoomPay 3-Line Checkout Session & Benchmark a Mining Share",
+    "url": "https://github.com/doomsday-network/doom-pay/issues/1",
+    "repo": "doomsday-network/doom-pay",
+    "created_at": "2026-10-24T20:13:00Z",
+    "comments": 24,
+    "labels": [
+      "help wanted",
+      "good first issue",
+      "bounty"
+    ],
+    "platform": "Algora / GitHub PRs",
+    "free_tier": true,
+    "payment_verified": true,
+    "body_snippet": "### ⚡ `1,000.0 wDOOM` (Base Mainnet ERC-20) — DoomPay Integration & Pool Benchmark Bounty  **Reward:** **`1,000.0 wDOOM`** (Base Mainnet `0x623c84A5E04bF715018203334b0eFE41696eBC3E`) or **`1,000.0 DOOM`** (Layer-1) **Escrow Status:** `LOCKED` (`100%`"
   },
   {
     "id": "gh_6015218291",
@@ -403,7 +453,7 @@
     "url": "https://github.com/doomsday-network/web3-agent-skills/issues/1",
     "repo": "doomsday-network/web3-agent-skills",
     "created_at": "2026-10-24T16:42:50Z",
-    "comments": 14,
+    "comments": 16,
     "labels": [
       "help wanted",
       "good first issue",
@@ -420,7 +470,7 @@
     "url": "https://github.com/doomsday-network/bounty-guard/issues/7",
     "repo": "doomsday-network/bounty-guard",
     "created_at": "2026-10-24T15:39:31Z",
-    "comments": 13,
+    "comments": 19,
     "labels": [
       "help wanted",
       "good first issue",
@@ -438,7 +488,7 @@
     "url": "https://github.com/doomsday-network/github-bounty-scanner/issues/1",
     "repo": "doomsday-network/github-bounty-scanner",
     "created_at": "2026-10-24T15:39:29Z",
-    "comments": 10,
+    "comments": 13,
     "labels": [
       "help wanted",
       "good first issue",
@@ -456,7 +506,7 @@
     "url": "https://github.com/doomsday-network/cuda-gpu-miner/issues/1",
     "repo": "doomsday-network/cuda-gpu-miner",
     "created_at": "2026-10-24T15:39:27Z",
-    "comments": 7,
+    "comments": 8,
     "labels": [
       "help wanted",
       "good first issue",
@@ -474,7 +524,7 @@
     "url": "https://github.com/doomsday-network/doomsday/issues/30",
     "repo": "doomsday-network/doomsday",
     "created_at": "2026-10-24T15:39:25Z",
-    "comments": 6,
+    "comments": 14,
     "labels": [
       "help wanted",
       "good first issue",
@@ -554,23 +604,6 @@
     "free_tier": true,
     "payment_verified": true,
     "body_snippet": "### Problem  The deploy script defaults FEE_RATE_BPS to zero but only applies marketplace set_fee_config when it is greater than zero. Marketplace initialization does not persist FeeRateBps, so its getter falls back to DEFAULT_FEE_RATE_BPS=300. A fre"
-  },
-  {
-    "id": "gh_5991890878",
-    "title": "[Regression][DevOps] Make atomic mainnet initialization mandatory and honor testnet opt-in",
-    "url": "https://github.com/Cylo-Traders/Agrocylo-Global/issues/1288",
-    "repo": "Cylo-Traders/Agrocylo-Global",
-    "created_at": "2026-10-23T04:28:19Z",
-    "comments": 1,
-    "labels": [
-      "bug",
-      "help wanted",
-      "Contract"
-    ],
-    "platform": "Algora / GitHub PRs",
-    "free_tier": true,
-    "payment_verified": true,
-    "body_snippet": "### Problem  The script resets ATOMIC_INIT=false before reading the caller's opt-in, so documented ATOMIC_INIT=true testnet behavior is lost. ATOMIC_INIT_DISABLE=true can also disable the supposedly mandatory mainnet atomic path. Fresh-versus-existin"
   },
   {
     "id": "gh_5874537137",

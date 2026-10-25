@@ -724,6 +724,33 @@ def build_dashboard_dataset() -> dict:
     }
     existing_bounties["doomsday-smolagents-tools-pr24"] = doomsday_pr24_entry
 
+    # Go-Hybrid Issue #1649 PR #1666 ($70.00 USDC en Base L2)
+    go_hybrid_issue1649_entry = {
+        "bounty_id": "go-hybrid-issue1649-pr1666",
+        "title": "[Go-Hybrid #1649] Support Buildable Enum Emission & Unit Variant Sendability",
+        "url": "https://github.com/limitlessprojects/Go-Hybrid/issues/1649",
+        "platform": "Go-Hybrid Open Source Bounty / Base L2",
+        "reward_amount": 70.0,
+        "reward_currency": "USDC",
+        "payment_network": "Base (EVM)",
+        "final_score": 9.8,
+        "expected_value": 70.0,
+        "status": "SUBMITTED",
+        "payout_status": "EN_REVISION_GITHUB",
+        "payout_text": "⚡ PR #1666 SUBMITTED - RESOLUCIÓN #1649 ENUM EMISSION & SENDABILITY ($70.00 USDC)",
+        "pull_request_url": "https://github.com/limitlessprojects/Go-Hybrid/pull/1666",
+        "pr_number": 1666,
+        "web3_wallet_address": "0x8366bCe3a2D379Dec7656D7A67015789FaF999f20",
+        "red_team_score": 9.8,
+        "sandbox_status": "SUCCESS",
+        "is_complete": True,
+        "is_new": True,
+        "sprint": True,
+        "in_review": True,
+        "created_at": "2026-10-25"
+    }
+    existing_bounties["go-hybrid-issue1649-pr1666"] = go_hybrid_issue1649_entry
+
     if "origintrail-dkgv10-audit-ledger" in existing_bounties:
         existing_bounties["origintrail-dkgv10-audit-ledger"]["sprint"] = True
 
@@ -743,12 +770,12 @@ def build_dashboard_dataset() -> dict:
     # Cargar valores consolidados de sprint e ingresos
     # Liquidación On-Chain Directa Confirmada: 24,515 wDOOM (Base) + 2,000 DOOM (L1) = 26,515 DOOM ($848.48 USD / ~797.57 €)
     # Adjudicado en Dispersión Pendiente: 14 PRs merged = $1,800.00 USDC
-    # Sprint en Revisión GitHub & On-Chain Escrow: 38 submissions = $10,216.00 USDC / wDOOM
+    # Sprint en Revisión GitHub & On-Chain Escrow: 40 submissions = $11,286.00 USDC / wDOOM
     liquid_onchain = 848.48
     liquid_onchain_doom = 26515.0
     liquid_onchain_eur = 797.57
     earned_onchain = 1800.00
-    sprint_in_review = 10216.00
+    sprint_in_review = 11286.00
     sprint_total = round(earned_onchain + sprint_in_review, 2)
     grand_total_pipeline = round(total_pipeline_val, 2)
 
