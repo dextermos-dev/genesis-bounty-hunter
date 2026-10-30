@@ -174,9 +174,9 @@ const RECONCILIATION_DATA = [
     type: "REVIEW",
     category: "En Revisión",
     badgeClass: "info",
-    concept: "Go-Hybrid Soundness & Buildable Fixes (8 PRs #2332-#2339)",
+    concept: "Go-Hybrid Soundness & Buildable Fixes (7 PRs #2332-#2336, #2338-#2339, PR #2337 Merged)",
     wallet: "0x8366...9f20 (Base L2 USDC)",
-    amount: "$600.00 USDC",
+    amount: "$525.00 USDC",
     status: "Rebasadas en main f0fc243 / En revisión activa",
     urlText: "PR #2332 ↗",
     url: "https://github.com/limitlessprojects/Go-Hybrid/pull/2332"
