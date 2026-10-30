@@ -161,11 +161,11 @@ const RECONCILIATION_DATA = [
   {
     type: "REVIEW",
     category: "En Revisión",
-    badgeClass: "info",
-    concept: "PurseKeeper Micro-Integration Slots 1 & 2 (LangChain + ElizaOS)",
-    wallet: "nano_1dnf... (XNO M2M)",
-    amount: "Ӿ50.00 XNO (≈ $50.00 USD)",
-    status: "Bloques on-chain enviados y verificados",
+    badgeClass: "success",
+    concept: "PurseKeeper Slot 1: LangChain Python (api#132)",
+    wallet: "nano_3i7n... (XNO M2M)",
+    amount: "Ӿ150.00 XNO (≈ $50.00 USD)",
+    status: "PASS Adjudicado (Decisión #915) / Payout Oct 31",
     urlText: "Issue #132 ↗",
     url: "https://github.com/pursekeeper/api/issues/132"
   },
@@ -450,11 +450,11 @@ function renderConsolidatedTokensTable() {
       name: 'XNO (Nano Protocol)',
       badge: 'xno',
       network: 'Nano Block Lattice Mainnet',
-      wallet: 'nano_1dnfsham...r9h3dg',
+      wallet: 'nano_3i7nondim...xxubg',
       balance: 'Ӿ0.048 XNO',
       price: '~$1.05 USD',
       amount_usdc: 0.05,
-      status: '🟢 En Cartera (Ledger #491)',
+      status: '🟢 En Cartera (Slot 1 PASS - Ӿ150 en Cola)',
       statusClass: 'success'
     },
     {

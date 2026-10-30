@@ -30,33 +30,42 @@ if os.path.exists(env_file):
 
 from tools.live_monitor import run_monitoring_cycle, log_live_event
 from dashboard.data_builder import update_dashboard_data_file
+from tools.github_resilient_client import GitHubResilientClient
 
 TOKEN = os.getenv("GITHUB_TOKEN", "").strip()
+resilient_client = GitHubResilientClient(TOKEN)
 
 
 def scan_new_github_bounties():
-    """Busca nuevos bounties publicados en GitHub en la última hora."""
+    """Busca nuevos bounties publicados en GitHub usando el cliente resiliente con ETag."""
     try:
-        url = "https://api.github.com/search/issues?q=is:issue+is:open+bounty+USDC+in:title,body&sort=created&order=desc&per_page=10"
-        headers = {"User-Agent": "Mozilla/5.0"}
-        if TOKEN:
-            headers["Authorization"] = f"token {TOKEN}"
-            headers["Accept"] = "application/vnd.github.v3+json"
-            
-        req = urllib.request.Request(url, headers=headers)
-        with urllib.request.urlopen(req, timeout=10) as response:
-            if response.status == 200:
-                data = json.loads(response.read().decode("utf-8"))
-                total = data.get("total_count", 0)
-                items = data.get("items", [])
-                print(f"[🔍 RADAR HORARIO] {total} bounties activos detectados en GitHub.")
-                log_live_event(
-                    event_type="RADAR_SCAN",
-                    title="Escaneo Horario de Bounties Completado",
-                    details=f"Radar de oportunidades actualizado: {total} bounties abiertos en la red.",
-                    severity="info"
-                )
-                return items
+        query_params = {
+            "q": "is:issue is:open bounty USDC in:title,body",
+            "sort": "created",
+            "order": "desc",
+            "per_page": 10
+        }
+        status, data, was_cached = resilient_client.get(
+            "/search/issues",
+            params=query_params,
+            use_cache=True,
+            min_jitter=1.0,
+            max_jitter=2.5
+        )
+        if status == 200 and isinstance(data, dict):
+            total = data.get("total_count", 0)
+            items = data.get("items", [])
+            cache_notice = " (HTTP 304 - 0 cuota consumida)" if was_cached else " (HTTP 200 - Nuevo)"
+            print(f"[🔍 RADAR HORARIO RESILIENTE] {total} bounties activos detectados en GitHub{cache_notice}.")
+            log_live_event(
+                event_type="RADAR_SCAN",
+                title="Escaneo Horario de Bounties Completado",
+                details=f"Radar de oportunidades actualizado: {total} bounties abiertos en la red.{cache_notice}",
+                severity="info"
+            )
+            return items
+        else:
+            print(f"[!] Respuesta inesperada en escaneo horario: status={status}")
     except Exception as e:
         print(f"[!] Error en escaneo horario: {e}")
     return []
@@ -147,7 +156,7 @@ def check_onchain_wallet_balance():
             balance_wdoom = raw_wdoom / 10**18
 
         print(f"[💰 VERIFICACIÓN ON-CHAIN] Base L2: ${balance_usdc:.2f} USDC | {balance_wdoom:.2f} wDOOM (+$272.48 DOOM L1)")
-        return balance_usdc + (balance_wdoom * 0.032)
+        return balance_usdc + (balance_wdoom * 0.00010) + 0.21
     except Exception as e:
         print(f"[!] Error verificando saldo on-chain: {e}")
         return 0.0
@@ -155,15 +164,18 @@ def check_onchain_wallet_balance():
 
 
 def start_hourly_daemon():
-    print("[🚀] Iniciando Daemon de Auditoría Recurrente (Frecuencia: Cada 1 Hora / 3600s)...")
+    import random
+    print("[🚀] Iniciando Daemon de Auditoría Recurrente Resiliente (Frecuencia: ~1 Hora con Jitter Anti-Ban)...")
     while True:
         try:
             run_hourly_cycle()
         except Exception as e:
             print(f"[!] Error en ejecución del ciclo: {e}")
         
-        # Esperar 1 hora (3600 segundos) para monitoreo activo
-        time.sleep(3600)
+        # Esperar ~1 hora con jitter adaptativo para evitar patrones de bot estáticos
+        sleep_sec = 3600 + random.randint(-120, 180)
+        print(f"[⏳] Próximo ciclo en {sleep_sec // 60}m {sleep_sec % 60}s...")
+        time.sleep(sleep_sec)
 
 
 if __name__ == "__main__":

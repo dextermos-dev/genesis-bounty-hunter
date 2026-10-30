@@ -1,21 +1,112 @@
 {
-  "total_bounties_count": 279,
-  "liquid_onchain_usd": 2.72,
-  "liquid_onchain_doom": 27664.05,
-  "liquid_onchain_eur": 2.56,
+  "total_bounties_count": 280,
+  "liquid_onchain_usd": 2.67,
+  "liquid_onchain_doom": 26717.81,
+  "liquid_onchain_eur": 2.51,
   "liquid_tx_count": 16,
   "base_wdoom": 24515.0,
-  "l1_doom": 3149.05,
+  "l1_doom": 2202.81,
   "earned_onchain_usd": 1800.0,
   "dispersion_pending_usd": 1800.0,
-  "sprint_in_review_usd": 2175.0,
-  "sprint_total_usd": 3975.0,
+  "sprint_in_review_usd": 10286.0,
+  "sprint_total_usd": 12086.0,
   "grand_total_pipeline_usd": 144673.1,
   "in_review_usd": 10286.0,
   "total_claimed_usd": 137923.1,
   "total_pipeline_value_usd": 144673.1,
   "submitted_prs_count": 244,
   "bounties": [
+    {
+      "id": "gh-pr-2338",
+      "title": "check: resolve named types in declarations (PR #2338)",
+      "project": "limitlessprojects/Go-Hybrid",
+      "pr_number": 2338,
+      "issue_numbers": [
+        1583
+      ],
+      "status": "IN_REVIEW",
+      "amount_usd": 75.0,
+      "pr_url": "https://github.com/limitlessprojects/Go-Hybrid/pull/2338",
+      "settlement_wallet": "0x8366bCe3a2D379Dec7656D7A67015789FaF999f20"
+    },
+    {
+      "id": "gh-pr-2337",
+      "title": "fix(hy-syntax): reject prefixed base literals with fractional part (PR #2337)",
+      "project": "limitlessprojects/Go-Hybrid",
+      "pr_number": 2337,
+      "issue_numbers": [
+        1168
+      ],
+      "status": "IN_REVIEW",
+      "amount_usd": 75.0,
+      "pr_url": "https://github.com/limitlessprojects/Go-Hybrid/pull/2337",
+      "settlement_wallet": "0x8366bCe3a2D379Dec7656D7A67015789FaF999f20"
+    },
+    {
+      "id": "gh-pr-2336",
+      "title": "check: reject non-variable assignment targets (PR #2336)",
+      "project": "limitlessprojects/Go-Hybrid",
+      "pr_number": 2336,
+      "issue_numbers": [
+        1574
+      ],
+      "status": "IN_REVIEW",
+      "amount_usd": 75.0,
+      "pr_url": "https://github.com/limitlessprojects/Go-Hybrid/pull/2336",
+      "settlement_wallet": "0x8366bCe3a2D379Dec7656D7A67015789FaF999f20"
+    },
+    {
+      "id": "gh-pr-2335",
+      "title": "fix(hy-emit): propagate channel element BindingKind, pointer_vars, and var_ty (PR #2335)",
+      "project": "limitlessprojects/Go-Hybrid",
+      "pr_number": 2335,
+      "issue_numbers": [
+        1456
+      ],
+      "status": "IN_REVIEW",
+      "amount_usd": 75.0,
+      "pr_url": "https://github.com/limitlessprojects/Go-Hybrid/pull/2335",
+      "settlement_wallet": "0x8366bCe3a2D379Dec7656D7A67015789FaF999f20"
+    },
+    {
+      "id": "gh-pr-2334",
+      "title": "fix(tools): enforce VALID_MODULE_NAME, top-level-dir boundary, and direct invocation (PR #2334)",
+      "project": "limitlessprojects/Go-Hybrid",
+      "pr_number": 2334,
+      "issue_numbers": [
+        1484
+      ],
+      "status": "IN_REVIEW",
+      "amount_usd": 75.0,
+      "pr_url": "https://github.com/limitlessprojects/Go-Hybrid/pull/2334",
+      "settlement_wallet": "0x8366bCe3a2D379Dec7656D7A67015789FaF999f20"
+    },
+    {
+      "id": "gh-pr-2333",
+      "title": "fix(hy-check): reject functions that can fall off the end without return (PR #2333)",
+      "project": "limitlessprojects/Go-Hybrid",
+      "pr_number": 2333,
+      "issue_numbers": [
+        1481
+      ],
+      "status": "IN_REVIEW",
+      "amount_usd": 75.0,
+      "pr_url": "https://github.com/limitlessprojects/Go-Hybrid/pull/2333",
+      "settlement_wallet": "0x8366bCe3a2D379Dec7656D7A67015789FaF999f20"
+    },
+    {
+      "id": "gh-pr-2332",
+      "title": "fix(hy-emit): mangle identifier default colliding with Go keyword (PR #2332)",
+      "project": "limitlessprojects/Go-Hybrid",
+      "pr_number": 2332,
+      "issue_numbers": [
+        1167
+      ],
+      "status": "IN_REVIEW",
+      "amount_usd": 75.0,
+      "pr_url": "https://github.com/limitlessprojects/Go-Hybrid/pull/2332",
+      "settlement_wallet": "0x8366bCe3a2D379Dec7656D7A67015789FaF999f20"
+    },
     {
       "bounty_id": "webacy_startup_accelerator_grant",
       "title": "[Webacy / DD.xyz Up to $10,000 USDC] Startup Accelerator Grant - Genesis AI Agent Shield",
@@ -5993,13 +6084,15 @@
       "title": "[wildcard] Zero-allocation heap freedom proofs: static escape closures (flipping GUARANTEES row 14 / \u00a79.2)",
       "repo": "limitlessprojects/Go-Hybrid",
       "issue_url": "https://github.com/limitlessprojects/Go-Hybrid/issues/2189",
-      "pr_url": null,
+      "pr_url": "https://github.com/limitlessprojects/Go-Hybrid/pull/2259",
       "reward_usd": 500.0,
-      "status": "triaged_wildcard",
+      "status": "INTAKE_PR_OPEN (#2259)",
       "network": "Base L2",
       "settlement_wallet": "0x8366bCe3a2D379Dec7656D7A67015789FaF999f20",
       "submitted_at": "2026-10-29T05:54:05Z",
-      "notes": "Wildcard Track Nov 1 cycle: $250 M1 acceptance + $250 M2 learning published. Zero-KYC confirmed."
+      "notes": "Wildcard Track Nov 1 cycle: $250 M1 acceptance + $250 M2 learning published. Zero-KYC confirmed.",
+      "pr_number": 2259,
+      "note": "Intake PR #2259 opened by core maintainer Dimank92. Official settlement wallet 0x8366bCe3a2D379Dec7656D7A67015789FaF999f20 confirmed on thread."
     },
     {
       "id": "mallonepay-132",
@@ -6040,6 +6133,23 @@
       "pr_link": "https://github.com/paraloom-labs/paraloom-core/pull/1232",
       "settlement_wallet": "0x8366bCe3a2D379Dec7656D7A67015789FaF999f20",
       "notes": "12/12 tests pass, solves settlement liveness aborts in Solana Anchor program."
+    },
+    {
+      "id": "prism-issue-140",
+      "title": "chore(devops): add dependabot configuration for dependency updates (PR #150)",
+      "project": "DevNiola/Prism",
+      "issue_numbers": [
+        140
+      ],
+      "pr_number": 150,
+      "pr_url": "https://github.com/DevNiola/Prism/pull/150",
+      "status": "MERGED (Won)",
+      "reward_usd": 150.0,
+      "amount_usd": 150.0,
+      "settlement_wallet": "0x8366bCe3a2D379Dec7656D7A67015789FaF999f20",
+      "submitted_at": "2026-10-22T10:00:00Z",
+      "merged_at": "2026-10-23T12:00:00Z",
+      "description": "Merged Dependabot v2 configuration for Cargo, npm, and GitHub Actions dependencies."
     },
     {
       "id": "prism-issue-20",
@@ -6231,6 +6341,5 @@
       "platform": "GitHub Direct PR",
       "settlement_wallet": "0x8366bCe3a2D379Dec7656D7A67015789FaF999f20"
     }
-  ],
-  "sprint_prs_count": 18
+  ]
 }

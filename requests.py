@@ -57,8 +57,19 @@ def post(url: str, data: Any = None, json: Any = None, params: Optional[dict] = 
 def put(url: str, data: Any = None, json: Any = None, params: Optional[dict] = None, headers: Optional[dict] = None, timeout: float = 10.0, **kwargs) -> Response:
     return _request("PUT", url, params=params, data=data, json_data=json, headers=headers, timeout=timeout)
 
+def patch(url: str, data: Any = None, json: Any = None, params: Optional[dict] = None, headers: Optional[dict] = None, timeout: float = 10.0, **kwargs) -> Response:
+    return _request("PATCH", url, params=params, data=data, json_data=json, headers=headers, timeout=timeout)
+
 def delete(url: str, params: Optional[dict] = None, headers: Optional[dict] = None, timeout: float = 10.0, **kwargs) -> Response:
     return _request("DELETE", url, params=params, headers=headers, timeout=timeout)
+
+def request(method: str, url: str, **kwargs) -> Response:
+    data = kwargs.get("data")
+    json_data = kwargs.get("json")
+    params = kwargs.get("params")
+    headers = kwargs.get("headers")
+    timeout = kwargs.get("timeout", 10.0)
+    return _request(method.upper(), url, params=params, data=data, json_data=json_data, headers=headers, timeout=timeout)
 
 class Session:
     def __init__(self):
