@@ -27,7 +27,8 @@ const WON_PRS = [
   { id: "PR-13", repo: "slippay-labs/slippay", pr: "PR #228", title: "Fix decimal truncation on micro-payment streams", amount: 70, date: "2026-10-21", url: "https://github.com/slippay-labs/slippay/pull/228" },
   { id: "PR-14", repo: "slippay-labs/slippay", pr: "PR #453", title: "Add idempotent receipt verification for off-chain relays", amount: 35, date: "2026-10-21", url: "https://github.com/slippay-labs/slippay/pull/453" },
   { id: "PR-15", repo: "slippay-labs/slippay", pr: "PR #435", title: "Enforce non-zero destination check in multi-send", amount: 35, date: "2026-10-21", url: "https://github.com/slippay-labs/slippay/pull/435" },
-  { id: "PR-16", repo: "slippay-labs/slippay", pr: "PR #340", title: "Fix timeout retry loop on Soroban RPC network congestion", amount: 35, date: "2026-10-21", url: "https://github.com/slippay-labs/slippay/pull/340" }
+  { id: "PR-16", repo: "slippay-labs/slippay", pr: "PR #340", title: "Fix timeout retry loop on Soroban RPC network congestion", amount: 35, date: "2026-10-21", url: "https://github.com/slippay-labs/slippay/pull/340" },
+  { id: "PR-17", repo: "DevNiola/Prism", pr: "PR #150", title: "Add Dependabot configuration for dependency updates (closes #140)", amount: 150, date: "2026-10-30", url: "https://github.com/DevNiola/Prism/pull/150" }
 ];
 
 // Master Reconciliation Ledger (Lo que está en Wallet vs Lo Pendiente)
@@ -60,14 +61,25 @@ const RECONCILIATION_DATA = [
     category: "Líquido en Wallet",
     badgeClass: "info",
     concept: "Nano Mainnet M2M Balance",
-    wallet: "nano_1dnf... (Block Lattice)",
+    wallet: "nano_3i7n... (Block Lattice)",
     amount: "Ӿ0.048 XNO (≈ $0.05 USD)",
     status: "Ledger #491 Verificado",
     urlText: "BlockLattice ↗",
-    url: "https://blocklattice.io/account/nano_1dnfshamzo9g4waa4req3jferqkphejshh8ogxscnnp519iijgqhg9r9h3dg"
+    url: "https://blocklattice.io/account/nano_3i7nondimxz8zbqn6kkoffoqydi61ektguf6sq8n7m7k77iznhn7y9mxxubg"
   },
 
   // ADJUDICADO PENDIENTE DE COBRO
+  {
+    type: "PENDING",
+    category: "Ganado Pendiente",
+    badgeClass: "warning",
+    concept: "DevNiola/Prism PR #150 (Dependabot v2 Config #140)",
+    wallet: "0x8366...9f20 (Base L2 USDC)",
+    amount: "$150.00 USDC",
+    status: "Mergeado en main por DevNiola (v1.1.0)",
+    urlText: "PR #150 ↗",
+    url: "https://github.com/DevNiola/Prism/pull/150"
+  },
   {
     type: "PENDING",
     category: "Ganado Pendiente",
@@ -151,12 +163,23 @@ const RECONCILIATION_DATA = [
     type: "REVIEW",
     category: "En Revisión",
     badgeClass: "info",
-    concept: "Go-Hybrid Wildcard Track (Issue #2189 / PR #2186)",
+    concept: "Go-Hybrid Wildcard Track (Issue #2189 / PR #2259)",
     wallet: "0x8366...9f20 (Base L2 USDC)",
     amount: "$500.00 USDC",
-    status: "Ventana de Revisión abre Nov 1",
-    urlText: "Issue #2189 ↗",
-    url: "https://github.com/limitlessprojects/Go-Hybrid/issues/2189"
+    status: "Intake PR #2259 abierto por Dimank92 / Ventana Nov 1",
+    urlText: "PR #2259 ↗",
+    url: "https://github.com/limitlessprojects/Go-Hybrid/pull/2259"
+  },
+  {
+    type: "REVIEW",
+    category: "En Revisión",
+    badgeClass: "info",
+    concept: "Go-Hybrid Soundness & Buildable Fixes (7 PRs #2332-#2338)",
+    wallet: "0x8366...9f20 (Base L2 USDC)",
+    amount: "$525.00 USDC",
+    status: "Rebasadas en main f0fc243 / En revisión activa",
+    urlText: "PR #2332 ↗",
+    url: "https://github.com/limitlessprojects/Go-Hybrid/pull/2332"
   },
   {
     type: "REVIEW",
