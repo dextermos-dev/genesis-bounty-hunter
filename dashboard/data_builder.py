@@ -771,9 +771,9 @@ def build_dashboard_dataset() -> dict:
     # Liquidación On-Chain Directa Confirmada: 24,515 wDOOM (Base) + 2,000 DOOM (L1) = 26,515 DOOM ($848.48 USD / ~797.57 €)
     # Adjudicado en Dispersión Pendiente: 14 PRs merged = $1,800.00 USDC
     # Sprint en Revisión GitHub & On-Chain Escrow: 39 submissions = $10,286.00 USDC / wDOOM
-    liquid_onchain = 848.48
-    liquid_onchain_doom = 26515.0
-    liquid_onchain_eur = 797.57
+    liquid_onchain = 2.67
+    liquid_onchain_doom = 26717.81
+    liquid_onchain_eur = 2.51
     earned_onchain = 1800.00
     sprint_in_review = 10286.00
     sprint_total = round(earned_onchain + sprint_in_review, 2)
@@ -786,7 +786,7 @@ def build_dashboard_dataset() -> dict:
         "liquid_onchain_eur": liquid_onchain_eur,
         "liquid_tx_count": 16,
         "base_wdoom": 24515.0,
-        "l1_doom": 2000.0,
+        "l1_doom": 2202.81,
         "earned_onchain_usd": earned_onchain,
         "dispersion_pending_usd": earned_onchain,
         "sprint_in_review_usd": sprint_in_review,
