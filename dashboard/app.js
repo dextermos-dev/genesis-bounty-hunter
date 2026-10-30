@@ -152,9 +152,9 @@ const RECONCILIATION_DATA = [
     type: "REVIEW",
     category: "En Revisión",
     badgeClass: "info",
-    concept: "DevNiola/Prism PR #378 & #379 (Optimistic UI & CI/CD)",
+    concept: "DevNiola/Prism PRs #378, #379 & #380 (Optimistic UI, CI/CD & Taxonomy Guide)",
     wallet: "0x8366...9f20 (Base L2 USDC)",
-    amount: "$650.00 USDC",
+    amount: "$750.00 USDC",
     status: "CI Verde / En revisión por mantenedor",
     urlText: "PR #378 ↗",
     url: "https://github.com/DevNiola/Prism/pull/378"
@@ -174,9 +174,9 @@ const RECONCILIATION_DATA = [
     type: "REVIEW",
     category: "En Revisión",
     badgeClass: "info",
-    concept: "Go-Hybrid Soundness & Buildable Fixes (7 PRs #2332-#2338)",
+    concept: "Go-Hybrid Soundness & Buildable Fixes (8 PRs #2332-#2339)",
     wallet: "0x8366...9f20 (Base L2 USDC)",
-    amount: "$525.00 USDC",
+    amount: "$600.00 USDC",
     status: "Rebasadas en main f0fc243 / En revisión activa",
     urlText: "PR #2332 ↗",
     url: "https://github.com/limitlessprojects/Go-Hybrid/pull/2332"
