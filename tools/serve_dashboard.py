@@ -176,7 +176,7 @@ def fetch_live_telemetry():
         "total_approved_pending_sweep_usd": earned_val,
         "total_active_sprint_in_review_usd": in_review,
         "grand_total_pipeline_usd": round(earned_val + in_review, 2),
-        "approved_prs_count": 22,
+        "approved_prs_count": 23,
         "total_bounties_tracked": tracked_count,
         "active_mining_nodes": 4
     }

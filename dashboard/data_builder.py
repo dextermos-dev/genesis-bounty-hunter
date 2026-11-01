@@ -232,9 +232,9 @@ def build_dashboard_dataset() -> dict:
         "payment_network": "Base / Web3",
         "final_score": 9.9,
         "expected_value": 100.00,
-        "status": "SUBMITTED",
-        "payout_status": "EN_REVISION",
-        "payout_text": "🟡 EN REVISIÓN EN GITHUB (PR #4781 ABIERTA - $100 USDC)",
+        "status": "MERGED (Won)",
+        "payout_status": "GANADO_EN_MAIN",
+        "payout_text": "🟡 GANADO EN MAIN (MERGED) - PR #4781 ($100.00 USDC)",
         "pull_request_url": "https://github.com/Chain-Love/chain-love/pull/4781",
         "pr_number": 4781,
         "web3_wallet_address": "0x8366bce3a2d379de7656d7a67015789faf999f20",
@@ -940,8 +940,8 @@ def build_dashboard_dataset() -> dict:
     liquid_onchain = 3.70
     liquid_onchain_doom = 36226.10
     liquid_onchain_eur = 3.42
-    earned_onchain = 2940.00
-    sprint_in_review = 10736.00
+    earned_onchain = 3040.00
+    sprint_in_review = 10636.00
     sprint_total = round(earned_onchain + sprint_in_review, 2)
     grand_total_pipeline = round(total_pipeline_val, 2)
 

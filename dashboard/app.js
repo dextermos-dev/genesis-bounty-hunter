@@ -33,7 +33,8 @@ const WON_PRS = [
   { id: "PR-19", repo: "limitlessprojects/Go-Hybrid", pr: "PR #2492", title: "Reject equality comparisons between non-nilable types and nil (fixes #2471)", amount: 75, date: "2026-10-31", url: "https://github.com/limitlessprojects/Go-Hybrid/pull/2492" },
   { id: "PR-20", repo: "limitlessprojects/Go-Hybrid", pr: "PR #2549", title: "Reject octal multi-iteration and induction variable mutation in loop backedge bypass (fixes #2512)", amount: 75, date: "2026-11-01", url: "https://github.com/limitlessprojects/Go-Hybrid/pull/2549" },
   { id: "PR-21", repo: "limitlessprojects/Go-Hybrid", pr: "PR #2747", title: "Reject mismatched slice and string elements in variadic append (fixes #2738)", amount: 75, date: "2026-11-01", url: "https://github.com/limitlessprojects/Go-Hybrid/pull/2747" },
-  { id: "PR-22", repo: "Chain-Love/chain-love", pr: "PR #4767", title: "Add official Circle USDC and Wrapped SOMI (WSOMI) contracts", amount: 140, date: "2026-11-01", url: "https://github.com/Chain-Love/chain-love/pull/4767" }
+  { id: "PR-22", repo: "Chain-Love/chain-love", pr: "PR #4767", title: "Add official Circle USDC and Wrapped SOMI (WSOMI) contracts", amount: 140, date: "2026-11-01", url: "https://github.com/Chain-Love/chain-love/pull/4767" },
+  { id: "PR-23", repo: "Chain-Love/chain-love", pr: "PR #4781", title: "Add official Franklin, PNF Software, Ton Apps Group, and Whales Corp documentation", amount: 100, date: "2026-11-01", url: "https://github.com/Chain-Love/chain-love/pull/4781" }
 ];
 
 // Master Reconciliation Ledger (Lo que está en Wallet vs Lo Pendiente)
@@ -206,6 +207,17 @@ const RECONCILIATION_DATA = [
     urlText: "PR #4767 ↗",
     url: "https://github.com/Chain-Love/chain-love/pull/4767"
   },
+  {
+    type: "PENDING",
+    category: "Ganado Pendiente",
+    badgeClass: "warning",
+    concept: "Chain-Love PR #4781 (Official Providers Documentation)",
+    wallet: "0x8366...9f20 (Base L2 USDC)",
+    amount: "$100.00 USDC",
+    status: "Mergeada en main por harunsulaiman (Won)",
+    urlText: "PR #4781 ↗",
+    url: "https://github.com/Chain-Love/chain-love/pull/4781"
+  },
 
   // EN REVISIÓN ACTIVA (SPRINT)
   {
@@ -267,9 +279,9 @@ const RECONCILIATION_DATA = [
     type: "REVIEW",
     category: "En Revisión",
     badgeClass: "info",
-    concept: "Susu-Labs & Chain-Love PRs (#167, #4773, #4781)",
+    concept: "Susu-Labs & Chain-Love PRs (#167, #4773)",
     wallet: "0x8366...9f20 (Base L2 USDC)",
-    amount: "$190.00 USDC",
+    amount: "$90.00 USDC",
     status: "En revisión activa por jurado",
     urlText: "PR #167 ↗",
     url: "https://github.com/susu-labs/susu-web/pull/167"
