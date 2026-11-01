@@ -863,6 +863,34 @@ def build_dashboard_dataset() -> dict:
     }
     existing_bounties["gh-2996"] = go_hybrid_issue2975_entry
 
+    go_hybrid_issue3007_entry = {
+        "id": "gh-3013",
+        "bounty_id": "gh-3013",
+        "title": "fix(hy-syntax): lexer escape quote desync, 4-digit \\u rune escapes, and UTF-8 BOM trivia (fixes #3007)",
+        "repo": "limitlessprojects/Go-Hybrid",
+        "repository": "limitlessprojects/Go-Hybrid",
+        "url": "https://github.com/limitlessprojects/Go-Hybrid/pull/3013",
+        "pull_request_url": "https://github.com/limitlessprojects/Go-Hybrid/pull/3013",
+        "pr_url": "https://github.com/limitlessprojects/Go-Hybrid/pull/3013",
+        "pr_number": 3013,
+        "issue_number": 3007,
+        "issue_url": "https://github.com/limitlessprojects/Go-Hybrid/issues/3007",
+        "status": "In Review",
+        "reward_usd": 150.0,
+        "reward_amount": 150.0,
+        "reward_currency": "USDC",
+        "payment_network": "Base L2 / EVM",
+        "platform": "GitHub / Direct PR",
+        "settlement_wallet": "0x8366bCe3a2D379Dec7656D7A67015789FaF999f20",
+        "web3_wallet_address": "0x8366bCe3a2D379Dec7656D7A67015789FaF999f20",
+        "payout_status": "EN_REVISION_CI_GREEN",
+        "payout_text": "🟢 EN REVISIÓN (CI 100% GREEN) - PR #3013 ($150.00 USDC)",
+        "sprint": True,
+        "in_review": True,
+        "created_at": "2026-11-01"
+    }
+    existing_bounties["gh-3013"] = go_hybrid_issue3007_entry
+
     chain_love_4767_entry = {
         "id": "chain-love-4767",
         "bounty_id": "chain-love-4767",
@@ -908,12 +936,12 @@ def build_dashboard_dataset() -> dict:
     # Cargar valores consolidados de sprint e ingresos
     # Liquidación On-Chain Directa Confirmada: 24,515 wDOOM (Base) + 2,000 DOOM (L1) = 26,515 DOOM ($848.48 USD / ~797.57 €)
     # Adjudicado en Dispersión Pendiente: 14 PRs merged = $1,800.00 USDC
-    # Sprint en Revisión GitHub & On-Chain Escrow: 41 submissions = $10,586.00 USDC / wDOOM (incl. PR #2964, #2986, #2996; purgado PR #2950 cerrado)
-    liquid_onchain = 2.67
-    liquid_onchain_doom = 26717.81
-    liquid_onchain_eur = 2.51
+    # Sprint en Revisión GitHub & On-Chain Escrow: 42 submissions = $10,736.00 USDC / wDOOM (incl. PR #2964, #2986, #2996, #3013; purgado PR #2950 cerrado)
+    liquid_onchain = 3.70
+    liquid_onchain_doom = 36226.10
+    liquid_onchain_eur = 3.42
     earned_onchain = 2940.00
-    sprint_in_review = 10586.00
+    sprint_in_review = 10736.00
     sprint_total = round(earned_onchain + sprint_in_review, 2)
     grand_total_pipeline = round(total_pipeline_val, 2)
 
