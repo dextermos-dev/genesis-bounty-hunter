@@ -342,7 +342,7 @@ function updateTelemetryUI(telem) {
   if (elNano && n.confirmed_balance_xno !== undefined) elNano.textContent = `Ӿ${n.confirmed_balance_xno.toFixed(3)}`;
 
   // Live Capital Hero & Liquid In-Wallet Sync
-  const totalLiquid = ((b.wdoom_usd || 2.49) + (d.doom_usd || 1.13) + (n.balance_usd || 0.05)).toFixed(2);
+  const totalLiquid = (telem.summary?.total_liquid_in_wallets_usd || ((b.wdoom_usd || 2.49) + (d.doom_usd || 1.16) + (n.balance_usd || 0.05))).toFixed(2);
   const elHero = document.getElementById('heroTotalCapital');
   if (elHero) elHero.textContent = `$${totalLiquid}`;
 
