@@ -751,6 +751,88 @@ def build_dashboard_dataset() -> dict:
     }
     existing_bounties["go-hybrid-issue1649-pr1666"] = go_hybrid_issue1649_entry
 
+    go_hybrid_issue2945_entry = {
+        "id": "gh-2950",
+        "bounty_id": "gh-2950",
+        "title": "fix(hy-check, hy-emit): bind and emit map keys for single-variable range iteration (LX13, fixes #2945)",
+        "repo": "limitlessprojects/Go-Hybrid",
+        "repository": "limitlessprojects/Go-Hybrid",
+        "url": "https://github.com/limitlessprojects/Go-Hybrid/pull/2950",
+        "pull_request_url": "https://github.com/limitlessprojects/Go-Hybrid/pull/2950",
+        "pr_url": "https://github.com/limitlessprojects/Go-Hybrid/pull/2950",
+        "pr_number": 2950,
+        "issue_number": 2945,
+        "status": "IN_REVIEW",
+        "reward_amount": 150.0,
+        "bounty_usd": 150.0,
+        "reward_usd": 150.0,
+        "reward_currency": "USDC",
+        "payment_network": "Base L2 / EVM",
+        "platform": "GitHub / Direct PR",
+        "settlement_wallet": "0x8366bCe3a2D379Dec7656D7A67015789FaF999f20",
+        "web3_wallet_address": "0x8366bCe3a2D379Dec7656D7A67015789FaF999f20",
+        "payout_status": "EN_REVISION_CI_GREEN",
+        "payout_text": "🟢 EN REVISIÓN (CI 100% GREEN) - PR #2950 ($150.00 USDC)",
+        "sprint": True,
+        "in_review": True,
+        "created_at": "2026-11-01"
+    }
+    existing_bounties["gh-2950"] = go_hybrid_issue2945_entry
+
+    go_hybrid_issue2946_entry = {
+        "id": "gh-2964",
+        "bounty_id": "gh-2964",
+        "title": "fix(hy-check): enforce T24 HYB-E3104 on O8 field loans, map projections, and loan rebinds (fixes #2946)",
+        "repo": "limitlessprojects/Go-Hybrid",
+        "repository": "limitlessprojects/Go-Hybrid",
+        "url": "https://github.com/limitlessprojects/Go-Hybrid/pull/2964",
+        "pull_request_url": "https://github.com/limitlessprojects/Go-Hybrid/pull/2964",
+        "pr_url": "https://github.com/limitlessprojects/Go-Hybrid/pull/2964",
+        "pr_number": 2964,
+        "issue_number": 2946,
+        "issue_url": "https://github.com/limitlessprojects/Go-Hybrid/issues/2946",
+        "status": "In Review",
+        "reward_usd": 150.0,
+        "reward_amount": 150.0,
+        "reward_currency": "USDC",
+        "payment_network": "Base L2 / EVM",
+        "platform": "GitHub / Direct PR",
+        "settlement_wallet": "0x8366bCe3a2D379Dec7656D7A67015789FaF999f20",
+        "web3_wallet_address": "0x8366bCe3a2D379Dec7656D7A67015789FaF999f20",
+        "payout_status": "EN_REVISION_CI_GREEN",
+        "payout_text": "🟢 EN REVISIÓN (CI 100% GREEN) - PR #2964 ($150.00 USDC)",
+        "sprint": True,
+        "in_review": True,
+        "created_at": "2026-11-01"
+    }
+    existing_bounties["gh-2964"] = go_hybrid_issue2946_entry
+
+    chain_love_4767_entry = {
+        "id": "chain-love-4767",
+        "bounty_id": "chain-love-4767",
+        "title": "data(avalanche,somnia): add official Circle USDC and Wrapped SOMI (WSOMI) contracts",
+        "repo": "Chain-Love/chain-love",
+        "repository": "Chain-Love/chain-love",
+        "url": "https://github.com/Chain-Love/chain-love/pull/4767",
+        "pull_request_url": "https://github.com/Chain-Love/chain-love/pull/4767",
+        "pr_url": "https://github.com/Chain-Love/chain-love/pull/4767",
+        "pr_number": 4767,
+        "status": "MERGED (Won)",
+        "reward_usd": 140.0,
+        "reward_amount": 140.0,
+        "reward_currency": "USDC",
+        "payment_network": "Base L2 / EVM",
+        "platform": "GitHub / Direct PR",
+        "settlement_wallet": "0x8366bCe3a2D379Dec7656D7A67015789FaF999f20",
+        "web3_wallet_address": "0x8366bCe3a2D379Dec7656D7A67015789FaF999f20",
+        "payout_status": "GANADO_EN_MAIN",
+        "payout_text": "🟡 GANADO EN MAIN (MERGED) - PR #4767 ($140.00 USDC)",
+        "sprint": True,
+        "in_review": False,
+        "created_at": "2026-11-01"
+    }
+    existing_bounties["chain-love-4767"] = chain_love_4767_entry
+
     if "origintrail-dkgv10-audit-ledger" in existing_bounties:
         existing_bounties["origintrail-dkgv10-audit-ledger"]["sprint"] = True
 
@@ -770,12 +852,12 @@ def build_dashboard_dataset() -> dict:
     # Cargar valores consolidados de sprint e ingresos
     # Liquidación On-Chain Directa Confirmada: 24,515 wDOOM (Base) + 2,000 DOOM (L1) = 26,515 DOOM ($848.48 USD / ~797.57 €)
     # Adjudicado en Dispersión Pendiente: 14 PRs merged = $1,800.00 USDC
-    # Sprint en Revisión GitHub & On-Chain Escrow: 39 submissions = $10,286.00 USDC / wDOOM
+    # Sprint en Revisión GitHub & On-Chain Escrow: 40 submissions = $10,436.00 USDC / wDOOM (incl. PR #2950 +$150 USDC)
     liquid_onchain = 2.67
     liquid_onchain_doom = 26717.81
     liquid_onchain_eur = 2.51
-    earned_onchain = 1800.00
-    sprint_in_review = 10286.00
+    earned_onchain = 2940.00
+    sprint_in_review = 10436.00
     sprint_total = round(earned_onchain + sprint_in_review, 2)
     grand_total_pipeline = round(total_pipeline_val, 2)
 

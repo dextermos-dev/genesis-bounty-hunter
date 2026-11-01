@@ -28,7 +28,12 @@ const WON_PRS = [
   { id: "PR-14", repo: "slippay-labs/slippay", pr: "PR #453", title: "Add idempotent receipt verification for off-chain relays", amount: 35, date: "2026-10-21", url: "https://github.com/slippay-labs/slippay/pull/453" },
   { id: "PR-15", repo: "slippay-labs/slippay", pr: "PR #435", title: "Enforce non-zero destination check in multi-send", amount: 35, date: "2026-10-21", url: "https://github.com/slippay-labs/slippay/pull/435" },
   { id: "PR-16", repo: "slippay-labs/slippay", pr: "PR #340", title: "Fix timeout retry loop on Soroban RPC network congestion", amount: 35, date: "2026-10-21", url: "https://github.com/slippay-labs/slippay/pull/340" },
-  { id: "PR-17", repo: "DevNiola/Prism", pr: "PR #150", title: "Add Dependabot configuration for dependency updates (closes #140)", amount: 150, date: "2026-10-30", url: "https://github.com/DevNiola/Prism/pull/150" }
+  { id: "PR-17", repo: "DevNiola/Prism", pr: "PR #150", title: "Add Dependabot configuration for dependency updates (closes #140)", amount: 150, date: "2026-10-30", url: "https://github.com/DevNiola/Prism/pull/150" },
+  { id: "PR-18", repo: "limitlessprojects/Go-Hybrid", pr: "PR #2339", title: "Preserve return-slot indices on mixed named/unnamed results (fixes #2323)", amount: 75, date: "2026-10-30", url: "https://github.com/limitlessprojects/Go-Hybrid/pull/2339" },
+  { id: "PR-19", repo: "limitlessprojects/Go-Hybrid", pr: "PR #2492", title: "Reject equality comparisons between non-nilable types and nil (fixes #2471)", amount: 75, date: "2026-10-31", url: "https://github.com/limitlessprojects/Go-Hybrid/pull/2492" },
+  { id: "PR-20", repo: "limitlessprojects/Go-Hybrid", pr: "PR #2549", title: "Reject octal multi-iteration and induction variable mutation in loop backedge bypass (fixes #2512)", amount: 75, date: "2026-11-01", url: "https://github.com/limitlessprojects/Go-Hybrid/pull/2549" },
+  { id: "PR-21", repo: "limitlessprojects/Go-Hybrid", pr: "PR #2747", title: "Reject mismatched slice and string elements in variadic append (fixes #2738)", amount: 75, date: "2026-11-01", url: "https://github.com/limitlessprojects/Go-Hybrid/pull/2747" },
+  { id: "PR-22", repo: "Chain-Love/chain-love", pr: "PR #4767", title: "Add official Circle USDC and Wrapped SOMI (WSOMI) contracts", amount: 140, date: "2026-11-01", url: "https://github.com/Chain-Love/chain-love/pull/4767" }
 ];
 
 // Master Reconciliation Ledger (Lo que está en Wallet vs Lo Pendiente)
@@ -51,8 +56,8 @@ const RECONCILIATION_DATA = [
     badgeClass: "purple",
     concept: "Doomsday L1 DOOM Mined (Pool + Génesis)",
     wallet: "doom162df... (PoW L1)",
-    amount: "8,382.81 DOOM (≈ $0.84 USD)",
-    status: "Top #9 Mundial (49.74 MH/s 24/7)",
+    amount: "11,338.60 DOOM (≈ $1.13 USD)",
+    status: "Top #8 Mundial (49.74 MH/s 24/7)",
     urlText: "Pool Worker ↗",
     url: "https://doomsday.network/pool/worker/doom162df6bb0c219de72343658ec04c1d9b1939c3c5c02f6b94f"
   },
@@ -69,6 +74,50 @@ const RECONCILIATION_DATA = [
   },
 
   // ADJUDICADO PENDIENTE DE COBRO
+  {
+    type: "PENDING",
+    category: "Ganado Pendiente",
+    badgeClass: "warning",
+    concept: "Go-Hybrid PR #2747 (Issue #2738 - Variadic append elements)",
+    wallet: "0x8366...9f20 (Base L2 USDC)",
+    amount: "$75.00 USDC",
+    status: "Landed on main 319cbdd / Payout Rail en Disc #295",
+    urlText: "PR #2747 ↗",
+    url: "https://github.com/limitlessprojects/Go-Hybrid/pull/2747"
+  },
+  {
+    type: "PENDING",
+    category: "Ganado Pendiente",
+    badgeClass: "warning",
+    concept: "Go-Hybrid PR #2549 (Issue #2512 - Octal loop backedge)",
+    wallet: "0x8366...9f20 (Base L2 USDC)",
+    amount: "$75.00 USDC",
+    status: "Landed on main 752bca1 / Payout Rail en Disc #295",
+    urlText: "PR #2549 ↗",
+    url: "https://github.com/limitlessprojects/Go-Hybrid/pull/2549"
+  },
+  {
+    type: "PENDING",
+    category: "Ganado Pendiente",
+    badgeClass: "warning",
+    concept: "Go-Hybrid PR #2492 (Issue #2471 - Non-nilable nil compare)",
+    wallet: "0x8366...9f20 (Base L2 USDC)",
+    amount: "$75.00 USDC",
+    status: "Landed on main 3bc44e5 / Payout Rail en Disc #295",
+    urlText: "PR #2492 ↗",
+    url: "https://github.com/limitlessprojects/Go-Hybrid/pull/2492"
+  },
+  {
+    type: "PENDING",
+    category: "Ganado Pendiente",
+    badgeClass: "warning",
+    concept: "Go-Hybrid PR #2339 (Issue #2323 - Return-slot indices)",
+    wallet: "0x8366...9f20 (Base L2 USDC)",
+    amount: "$75.00 USDC",
+    status: "Landed on main 014a445 / Payout Rail en Disc #295",
+    urlText: "PR #2339 ↗",
+    url: "https://github.com/limitlessprojects/Go-Hybrid/pull/2339"
+  },
   {
     type: "PENDING",
     category: "Ganado Pendiente",
@@ -240,6 +289,15 @@ async function loadData() {
 
     if (dataRes && dataRes.ok) {
       globalData = await dataRes.json();
+      const elReview = document.getElementById('boxReviewUsd');
+      if (elReview && globalData.in_review_usd) {
+        elReview.innerHTML = `$${globalData.in_review_usd.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })} <span style="font-size: 0.85rem; color: var(--text-secondary);">USDC</span>`;
+      }
+    }
+    const wonTotal = WON_PRS.reduce((acc, p) => acc + p.amount, 0);
+    const elApproved = document.getElementById('boxApprovedUsd');
+    if (elApproved) {
+      elApproved.innerHTML = `$${wonTotal.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })} <span style="font-size: 0.85rem; color: var(--text-secondary);">USDC</span>`;
     }
     if (telemRes && telemRes.ok) {
       const telem = await telemRes.json();
@@ -271,6 +329,17 @@ function updateTelemetryUI(telem) {
 
   const elNano = document.getElementById('headerNanoStatus');
   if (elNano && n.confirmed_balance_xno !== undefined) elNano.textContent = `Ӿ${n.confirmed_balance_xno.toFixed(3)}`;
+
+  // Live Capital Hero & Liquid In-Wallet Sync
+  const totalLiquid = ((b.wdoom_usd || 2.49) + (d.doom_usd || 1.13) + (n.balance_usd || 0.05)).toFixed(2);
+  const elHero = document.getElementById('heroTotalCapital');
+  if (elHero) elHero.textContent = `$${totalLiquid}`;
+
+  const elBox = document.getElementById('boxLiquidUsd');
+  if (elBox) elBox.innerHTML = `$${totalLiquid} <span style="font-size: 0.85rem; color: var(--text-secondary);">USD</span>`;
+
+  const elTokenCard = document.getElementById('tokenCardLiquidTotal');
+  if (elTokenCard) elTokenCard.textContent = `$${totalLiquid} USDC`;
 }
 
 // Tab Switching
@@ -463,10 +532,10 @@ function renderConsolidatedTokensTable() {
       badge: 'doom',
       network: 'Doomsday Layer-1 PoW',
       wallet: 'doom162df6bb...6b94f',
-      balance: '8,382.81 DOOM',
+      balance: '11,338.60 DOOM',
       price: '$0.00010 USD',
-      amount_usdc: 0.84,
-      status: '🟢 En Cartera (Minado L1 - Top #9)',
+      amount_usdc: 1.13,
+      status: '🟢 En Cartera (Minado L1 - Top #8)',
       statusClass: 'purple'
     },
     {
@@ -504,6 +573,8 @@ function renderConsolidatedTokensTable() {
     }
   ];
 
+  const sumAmount = realTokensInWallet.reduce((acc, t) => acc + t.amount_usdc, 0);
+
   tbody.innerHTML = realTokensInWallet.map(t => `
     <tr>
       <td class="cell-primary">
@@ -535,7 +606,7 @@ function renderConsolidatedTokensTable() {
         TOTAL REAL EN CARTERAS (CERO SALDOS ESTIMADOS):
       </td>
       <td class="cell-mono" style="color: var(--accent-emerald); font-weight: 900; font-size: 1rem;">
-        $3.38 USDC
+        $${sumAmount.toFixed(2)} USDC
       </td>
       <td>
         <span class="badge-status success">100% EN POSESIÓN</span>
