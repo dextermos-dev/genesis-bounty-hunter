@@ -56,7 +56,7 @@ const RECONCILIATION_DATA = [
     badgeClass: "purple",
     concept: "Doomsday L1 DOOM Mined (Pool + Génesis)",
     wallet: "doom162df... (PoW L1)",
-    amount: "11,338.60 DOOM (≈ $1.13 USD)",
+    amount: "11,614.26 DOOM (≈ $1.16 USD)",
     status: "Top #8 Mundial (49.74 MH/s 24/7)",
     urlText: "Pool Worker ↗",
     url: "https://doomsday.network/pool/worker/doom162df6bb0c219de72343658ec04c1d9b1939c3c5c02f6b94f"
@@ -168,7 +168,7 @@ const RECONCILIATION_DATA = [
     badgeClass: "warning",
     concept: "Parabola-org Protocol (7 PRs Aprobadas)",
     wallet: "0x8366...9f20 (Base L2 USDC)",
-    amount: "$545.00 USDC",
+    amount: "$610.00 USDC",
     status: "Mergeadas en main / Batch 1-7 Nov",
     urlText: "Ver Lote ↗",
     url: "https://github.com/Parabola-org/parabola/pulls"
@@ -179,7 +179,7 @@ const RECONCILIATION_DATA = [
     badgeClass: "warning",
     concept: "SlipPay Labs Protocol (5 PRs Aprobadas)",
     wallet: "0x8366...9f20 (Base L2 USDC)",
-    amount: "$215.00 USDC",
+    amount: "$250.00 USDC",
     status: "Mergeadas en main / Batch 5-12 Nov",
     urlText: "Ver Lote ↗",
     url: "https://github.com/slippay-labs/slippay/pulls"
@@ -194,6 +194,17 @@ const RECONCILIATION_DATA = [
     status: "Mergeada en main / Sweep Nov 10",
     urlText: "PR #4728 ↗",
     url: "https://github.com/Chain-Love/chain-love/pull/4728"
+  },
+  {
+    type: "PENDING",
+    category: "Ganado Pendiente",
+    badgeClass: "warning",
+    concept: "Chain-Love PR #4767 (Circle USDC & WSOMI contracts)",
+    wallet: "0x8366...9f20 (Base L2 USDC)",
+    amount: "$140.00 USDC",
+    status: "Mergeada en main por mantenedor (Won)",
+    urlText: "PR #4767 ↗",
+    url: "https://github.com/Chain-Love/chain-love/pull/4767"
   },
 
   // EN REVISIÓN ACTIVA (SPRINT)
@@ -532,9 +543,9 @@ function renderConsolidatedTokensTable() {
       badge: 'doom',
       network: 'Doomsday Layer-1 PoW',
       wallet: 'doom162df6bb...6b94f',
-      balance: '11,338.60 DOOM',
+      balance: '11,614.26 DOOM',
       price: '$0.00010 USD',
-      amount_usdc: 1.13,
+      amount_usdc: 1.16,
       status: '🟢 En Cartera (Minado L1 - Top #8)',
       statusClass: 'purple'
     },
@@ -613,4 +624,9 @@ function renderConsolidatedTokensTable() {
       </td>
     </tr>
   `;
+
+  const elCardTotal = document.getElementById('tokenCardLiquidTotal');
+  if (elCardTotal) {
+    elCardTotal.textContent = `$${sumAmount.toFixed(2)} USDC`;
+  }
 }

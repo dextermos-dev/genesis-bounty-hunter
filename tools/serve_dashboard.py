@@ -44,7 +44,7 @@ def fetch_live_telemetry():
             "wdoom_balance": 24887.50,
             "wdoom_usd": 2.49,
             "usdc_balance": 0.0,
-            "pending_usdc": 2350.00,
+            "pending_usdc": 2800.00,
             "confirmed_txs": 16,
             "ping_ms": 120
         },
@@ -56,13 +56,13 @@ def fetch_live_telemetry():
             "status": "ONLINE",
             "active_rigs": 4,
             "hashrate_mhs": 49.74,
-            "total_mined_doom": 6382.81,
+            "total_mined_doom": 9338.60,
             "genesis_doom": 2000.0,
-            "total_l1_doom": 8382.81,
-            "doom_usd": 0.84,
-            "rank": 9,
-            "rank_title": "Puesto #9 Mundial (Top-10 Consolidado)",
-            "next_target_doom": 8515.02,
+            "total_l1_doom": 11338.60,
+            "doom_usd": 1.13,
+            "rank": 8,
+            "rank_title": "Puesto #8 Mundial (Top-8 Consolidado)",
+            "next_target_doom": 11039.11,
             "remaining_to_rank8": 132.21,
             "progress_to_rank8_pct": 98.45,
             "pending_claim_bounty_usd": 80.00,
@@ -82,12 +82,12 @@ def fetch_live_telemetry():
             "ping_ms": 180
         },
         "summary": {
-            "total_liquid_in_wallets_usd": 3.38,
-            "total_approved_pending_sweep_usd": 2350.00,
-            "total_active_sprint_in_review_usd": 1830.00,
-            "grand_total_pipeline_usd": 4183.38,
-            "approved_prs_count": 16,
-            "total_bounties_tracked": 257,
+            "total_liquid_in_wallets_usd": 3.67,
+            "total_approved_pending_sweep_usd": 2800.00,
+            "total_active_sprint_in_review_usd": 10991.00,
+            "grand_total_pipeline_usd": 13791.00,
+            "approved_prs_count": 21,
+            "total_bounties_tracked": 310,
             "active_mining_nodes": 4
         }
     }
@@ -121,15 +121,65 @@ def fetch_live_telemetry():
         with urllib.request.urlopen(req_d, timeout=4, context=ctx) as r:
             d = json.loads(r.read().decode())
             telemetry["doomsday_l1"]["ping_ms"] = int((time.time() - t0) * 1000)
-            paid = float(d.get("total_paid_doom", 6382.81))
+            paid = float(d.get("total_paid_doom", 9338.60))
             telemetry["doomsday_l1"]["total_mined_doom"] = round(paid, 2)
             telemetry["doomsday_l1"]["total_l1_doom"] = round(paid + 2000.0, 2)
             telemetry["doomsday_l1"]["doom_usd"] = round((paid + 2000.0) * 0.00010, 2)
-            rem = max(0.0, 8515.02 - (paid + 2000.0))
-            telemetry["doomsday_l1"]["remaining_to_rank8"] = round(rem, 2)
-            telemetry["doomsday_l1"]["progress_to_rank8_pct"] = round(min(100.0, ((paid + 2000.0) / 8515.02) * 100.0), 2)
+            # Query leaderboard to get exact rank & next target
+            try:
+                req_lb = urllib.request.Request("https://doomsday.network/pool/leaderboard", headers={'User-Agent': 'Mozilla/5.0'})
+                with urllib.request.urlopen(req_lb, timeout=4, context=ctx) as r_lb:
+                    lb_data = json.loads(r_lb.read().decode())
+                    leaders = lb_data.get("leaders", [])
+                    my_idx = -1
+                    for idx, l in enumerate(leaders):
+                        if l.get("address") == DOOM_WORKER:
+                            my_idx = idx
+                            break
+                    if my_idx >= 0:
+                        telemetry["doomsday_l1"]["rank"] = my_idx + 1
+                        telemetry["doomsday_l1"]["rank_title"] = f"Puesto #{my_idx + 1} Mundial (Top-{my_idx + 1} Consolidado)"
+                        if my_idx > 0:
+                            next_target = leaders[my_idx - 1].get("total_mined_doom", 11039.11)
+                            telemetry["doomsday_l1"]["next_target_doom"] = next_target
+                            rem = max(0.0, next_target - paid)
+                            telemetry["doomsday_l1"]["remaining_to_rank7"] = round(rem, 2)
+                            telemetry["doomsday_l1"]["progress_to_rank7_pct"] = round(min(100.0, (paid / next_target) * 100.0), 2)
+            except Exception:
+                pass
     except Exception as e:
         telemetry["doomsday_l1"]["api_error"] = str(e)
+
+    w_usd = telemetry["base_l2"]["wdoom_usd"]
+    d_usd = telemetry["doomsday_l1"]["doom_usd"]
+    n_usd = telemetry["nano_mainnet"]["balance_usd"]
+    total_liq = round(w_usd + d_usd + n_usd, 2)
+
+    # Load current data from data.json if available
+    in_review = 10736.00
+    earned_val = 2940.00
+    tracked_count = 321
+    try:
+        data_json_path = os.path.join(DIRECTORY, "data.json")
+        if os.path.exists(data_json_path):
+            with open(data_json_path, 'r', encoding='utf-8') as f:
+                dj = json.load(f)
+                in_review = dj.get("in_review_usd", in_review)
+                earned_val = dj.get("earned_onchain_usd", earned_val)
+                tracked_count = dj.get("total_bounties_count", tracked_count)
+    except Exception:
+        pass
+
+    telemetry["base_l2"]["pending_usdc"] = earned_val
+    telemetry["summary"] = {
+        "total_liquid_in_wallets_usd": total_liq,
+        "total_approved_pending_sweep_usd": earned_val,
+        "total_active_sprint_in_review_usd": in_review,
+        "grand_total_pipeline_usd": round(earned_val + in_review, 2),
+        "approved_prs_count": 22,
+        "total_bounties_tracked": tracked_count,
+        "active_mining_nodes": 4
+    }
 
     return telemetry
 
