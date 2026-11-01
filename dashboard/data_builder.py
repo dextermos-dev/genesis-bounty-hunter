@@ -762,19 +762,19 @@ def build_dashboard_dataset() -> dict:
         "pr_url": "https://github.com/limitlessprojects/Go-Hybrid/pull/2950",
         "pr_number": 2950,
         "issue_number": 2945,
-        "status": "IN_REVIEW",
-        "reward_amount": 150.0,
+        "status": "SUPERSEDED (Closed in favor of PR #2951)",
+        "reward_amount": 0.0,
         "bounty_usd": 150.0,
-        "reward_usd": 150.0,
+        "reward_usd": 0.0,
         "reward_currency": "USDC",
         "payment_network": "Base L2 / EVM",
         "platform": "GitHub / Direct PR",
         "settlement_wallet": "0x8366bCe3a2D379Dec7656D7A67015789FaF999f20",
         "web3_wallet_address": "0x8366bCe3a2D379Dec7656D7A67015789FaF999f20",
-        "payout_status": "EN_REVISION_CI_GREEN",
-        "payout_text": "🟢 EN REVISIÓN (CI 100% GREEN) - PR #2950 ($150.00 USDC)",
-        "sprint": True,
-        "in_review": True,
+        "payout_status": "SUPERSEDED_CLOSED",
+        "payout_text": "⚪ CERRADO (Resuelto por PR #2951 vía commit 9a2b6f2)",
+        "sprint": False,
+        "in_review": False,
         "created_at": "2026-11-01"
     }
     existing_bounties["gh-2950"] = go_hybrid_issue2945_entry
@@ -908,12 +908,12 @@ def build_dashboard_dataset() -> dict:
     # Cargar valores consolidados de sprint e ingresos
     # Liquidación On-Chain Directa Confirmada: 24,515 wDOOM (Base) + 2,000 DOOM (L1) = 26,515 DOOM ($848.48 USD / ~797.57 €)
     # Adjudicado en Dispersión Pendiente: 14 PRs merged = $1,800.00 USDC
-    # Sprint en Revisión GitHub & On-Chain Escrow: 42 submissions = $10,736.00 USDC / wDOOM (incl. PR #2950, #2964, #2986, #2996)
+    # Sprint en Revisión GitHub & On-Chain Escrow: 41 submissions = $10,586.00 USDC / wDOOM (incl. PR #2964, #2986, #2996; purgado PR #2950 cerrado)
     liquid_onchain = 2.67
     liquid_onchain_doom = 26717.81
     liquid_onchain_eur = 2.51
     earned_onchain = 2940.00
-    sprint_in_review = 10736.00
+    sprint_in_review = 10586.00
     sprint_total = round(earned_onchain + sprint_in_review, 2)
     grand_total_pipeline = round(total_pipeline_val, 2)
 
