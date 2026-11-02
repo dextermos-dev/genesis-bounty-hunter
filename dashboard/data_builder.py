@@ -917,6 +917,32 @@ def build_dashboard_dataset() -> dict:
     }
     existing_bounties["gh-3219"] = go_hybrid_issue3209_entry
 
+    go_hybrid_issue3264_entry = {
+        "id": "gh-3271",
+        "bounty_id": "gh-3271",
+        "title": "hy-check: enforce slice element scalar width soundness in call arguments and returns (fixes #3264)",
+        "repo": "limitlessprojects/Go-Hybrid",
+        "repository": "limitlessprojects/Go-Hybrid",
+        "url": "https://github.com/limitlessprojects/Go-Hybrid/pull/3271",
+        "pull_request_url": "https://github.com/limitlessprojects/Go-Hybrid/pull/3271",
+        "pr_url": "https://github.com/limitlessprojects/Go-Hybrid/pull/3271",
+        "pr_number": 3271,
+        "status": "SUBMITTED",
+        "reward_usd": 150.0,
+        "reward_amount": 150.0,
+        "reward_currency": "USDC",
+        "payment_network": "Base L2 / EVM",
+        "platform": "GitHub / Direct PR",
+        "settlement_wallet": "0x8366bCe3a2D379Dec7656D7A67015789FaF999f20",
+        "web3_wallet_address": "0x8366bCe3a2D379Dec7656D7A67015789FaF999f20",
+        "payout_status": "EN_REVISION_CI_GREEN",
+        "payout_text": "🟢 EN REVISIÓN (CI SUBMITTED) - PR #3271 ($150.00 USDC)",
+        "sprint": True,
+        "in_review": True,
+        "created_at": "2026-11-02"
+    }
+    existing_bounties["gh-3271"] = go_hybrid_issue3264_entry
+
     chain_love_4767_entry = {
         "id": "chain-love-4767",
         "bounty_id": "chain-love-4767",
@@ -967,7 +993,7 @@ def build_dashboard_dataset() -> dict:
     liquid_onchain_doom = 36226.10
     liquid_onchain_eur = 3.42
     earned_onchain = 3040.00
-    sprint_in_review = 10636.00
+    sprint_in_review = 10786.00
     sprint_total = round(earned_onchain + sprint_in_review, 2)
     grand_total_pipeline = round(total_pipeline_val, 2)
 
