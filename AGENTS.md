@@ -85,6 +85,15 @@ Para CADA bounty u oportunidad analizada, debes ejecutar sin excepción:
    - **Priorización y Ejecución Inmediata de Requerimientos Adicionales:** Ante cualquier respuesta o solicitud de un mantenedor, el sistema DEBE priorizar de inmediato la atención a dicho requerimiento, implementando y verificando los cambios solicitados con máxima celeridad para desbloquear el merge y la liquidación de la recompensa.
    - **Trazabilidad y Notificación al Usuario:** Cada respuesta o solicitud adicional detectada debe ser reportada de inmediato al usuario, reflejada en el dashboard y gestionada con cortesía intachable y actitud de servicio.
 
+10. **REGISTRO FORMAL, ÉTICO Y RIGUROSO DE ENTREGAS Y SETTLEMENT (FORMAL REGISTRATION & STRICT ETIQUETTE INVARIANT):**
+    - **Formalidad y Respeto Absoluto de Límites (Zero Spam, Maximum Formality):**
+      * Toda entrega, actualización de cola de candidatas o registro de liquidación debe realizarse formalmente a través de los canales oficiales habilitados por el proyecto (ej. discusiones de ciclo como #295, PR templates oficiales, issue trackers).
+      * Queda terminantemente prohibido sobrepasar límites de comportamiento, insistir agresivamente, enviar mensajes redundantes o generar spam. Cada interacción debe ser concisa, altamente profesional, humilde y respaldada por hechos técnicos objetivos y verificables (código testeado, CI en verde, commits de rebase).
+      * Respetar rigurosamente la etiqueta y los estándares comunitarios: presentar tablas estructuradas con enlaces a PRs e issues, suites de tests ejecutadas, confirmación de rail (`USDC on Base`, sin requerimiento de fiat/KYC) y la Settlement Wallet oficial no truncada:
+        `0x8366bCe3a2D379Dec7656D7A67015789FaF999f20`
+    - **Sincronización Periódica Post-Landing:**
+      * Tras cada avance de sesión o merge upstream, rebasar inmediatamente las ramas abiertas (`behind_by = 0`), validar suites de tests y actualizar el registro formal de la cola para garantizar que los mantenedores dispongan siempre de la lista consolidada y libre de fricción.
+
 ────────────────────────────────────────────────────────
 1.2. MOTOR DE MONETIZACIÓN DIVERSIFICADA (5 SIMULTANEOUS REVENUE ENGINES)
 ────────────────────────────────────────────────────────
