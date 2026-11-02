@@ -891,6 +891,32 @@ def build_dashboard_dataset() -> dict:
     }
     existing_bounties["gh-3013"] = go_hybrid_issue3007_entry
 
+    go_hybrid_issue3209_entry = {
+        "id": "gh-3219",
+        "bounty_id": "gh-3219",
+        "title": "fix(hy-emit): defer store-back when slot loan is captured by deferred closure (fixes #3209)",
+        "repo": "limitlessprojects/Go-Hybrid",
+        "repository": "limitlessprojects/Go-Hybrid",
+        "url": "https://github.com/limitlessprojects/Go-Hybrid/pull/3219",
+        "pull_request_url": "https://github.com/limitlessprojects/Go-Hybrid/pull/3219",
+        "pr_url": "https://github.com/limitlessprojects/Go-Hybrid/pull/3219",
+        "pr_number": 3219,
+        "status": "SUBMITTED",
+        "reward_usd": 150.0,
+        "reward_amount": 150.0,
+        "reward_currency": "USDC",
+        "payment_network": "Base L2 / EVM",
+        "platform": "GitHub / Direct PR",
+        "settlement_wallet": "0x8366bCe3a2D379Dec7656D7A67015789FaF999f20",
+        "web3_wallet_address": "0x8366bCe3a2D379Dec7656D7A67015789FaF999f20",
+        "payout_status": "EN_REVISION_CI_GREEN",
+        "payout_text": "🟢 EN REVISIÓN (CI 100% GREEN) - PR #3219 ($150.00 USDC)",
+        "sprint": True,
+        "in_review": True,
+        "created_at": "2026-11-02"
+    }
+    existing_bounties["gh-3219"] = go_hybrid_issue3209_entry
+
     chain_love_4767_entry = {
         "id": "chain-love-4767",
         "bounty_id": "chain-love-4767",

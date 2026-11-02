@@ -1,5 +1,5 @@
 {
-  "total_bounties_count": 321,
+  "total_bounties_count": 322,
   "liquid_onchain_usd": 3.7,
   "liquid_onchain_doom": 36226.1,
   "liquid_onchain_eur": 3.42,
@@ -10,11 +10,11 @@
   "dispersion_pending_usd": 3040.0,
   "sprint_in_review_usd": 10636.0,
   "sprint_total_usd": 13676.0,
-  "grand_total_pipeline_usd": 147898.1,
+  "grand_total_pipeline_usd": 148048.1,
   "in_review_usd": 10636.0,
-  "total_claimed_usd": 141148.1,
-  "total_pipeline_value_usd": 147898.1,
-  "submitted_prs_count": 278,
+  "total_claimed_usd": 141298.1,
+  "total_pipeline_value_usd": 148048.1,
+  "submitted_prs_count": 279,
   "bounties": [
     {
       "bounty_id": "webacy_startup_accelerator_grant",
@@ -3006,6 +3006,30 @@
       "sprint": true,
       "in_review": true,
       "created_at": "2026-11-01"
+    },
+    {
+      "id": "gh-3219",
+      "bounty_id": "gh-3219",
+      "title": "fix(hy-emit): defer store-back when slot loan is captured by deferred closure (fixes #3209)",
+      "repo": "limitlessprojects/Go-Hybrid",
+      "repository": "limitlessprojects/Go-Hybrid",
+      "url": "https://github.com/limitlessprojects/Go-Hybrid/pull/3219",
+      "pull_request_url": "https://github.com/limitlessprojects/Go-Hybrid/pull/3219",
+      "pr_url": "https://github.com/limitlessprojects/Go-Hybrid/pull/3219",
+      "pr_number": 3219,
+      "status": "SUBMITTED",
+      "reward_usd": 150.0,
+      "reward_amount": 150.0,
+      "reward_currency": "USDC",
+      "payment_network": "Base L2 / EVM",
+      "platform": "GitHub / Direct PR",
+      "settlement_wallet": "0x8366bCe3a2D379Dec7656D7A67015789FaF999f20",
+      "web3_wallet_address": "0x8366bCe3a2D379Dec7656D7A67015789FaF999f20",
+      "payout_status": "EN_REVISION_CI_GREEN",
+      "payout_text": "🟢 EN REVISIÓN (CI 100% GREEN) - PR #3219 ($150.00 USDC)",
+      "sprint": true,
+      "in_review": true,
+      "created_at": "2026-11-02"
     },
     {
       "bounty_id": "gh_1138539043",
