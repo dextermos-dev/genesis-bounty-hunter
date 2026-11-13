@@ -1,5 +1,5 @@
 {
-  "total_bounties_count": 359,
+  "total_bounties_count": 360,
   "liquid_onchain_usd": 61.53,
   "liquid_onchain_doom": 33270.31,
   "liquid_onchain_eur": 54.22,
@@ -10,13 +10,13 @@
   "dispersion_pending_usd": 6265.0,
   "confirmed_scheduled_monday_usd": 1.6,
   "approved_pending_payout_usd": 6265.0,
-  "sprint_in_review_usd": 16666.0,
+  "sprint_in_review_usd": 16766.0,
   "sprint_total_usd": 21981.0,
-  "grand_total_pipeline_usd": 149648.1,
-  "in_review_usd": 15816.0,
+  "grand_total_pipeline_usd": 149748.1,
+  "in_review_usd": 15916.0,
   "total_claimed_usd": 141448.1,
-  "total_pipeline_value_usd": 148798.1,
-  "submitted_prs_count": 294,
+  "total_pipeline_value_usd": 148898.1,
+  "submitted_prs_count": 295,
   "approved_prs_count": 35,
   "wallet_audit": {
     "total_liquid_usd": 61.53,
@@ -57,6 +57,33 @@
     }
   },
   "bounties": [
+    {
+      "id": "chain-love-pr-5310",
+      "bounty_id": "chain-love-pr-5310",
+      "title": "data(base): add ZeroDev modular smart account SDK for Base",
+      "repository": "Chain-Love/chain-love",
+      "repo": "Chain-Love/chain-love",
+      "url": "https://github.com/Chain-Love/chain-love/pull/5310",
+      "pull_request_url": "https://github.com/Chain-Love/chain-love/pull/5310",
+      "pr_url": "https://github.com/Chain-Love/chain-love/pull/5310",
+      "pr_number": 5310,
+      "platform": "GitHub (Chain-Love)",
+      "reward_amount": 100.0,
+      "reward_usd": 100.0,
+      "reward_currency": "USDC",
+      "payment_network": "Base L2",
+      "status": "IN_REVIEW",
+      "payout_status": "EN_REVISION",
+      "payout_text": "\ud83d\udfe1 EN REVISI\u00d3N EN GITHUB (PR #5310 ABIERTA -  USDC)",
+      "web3_wallet_address": "0x8366bCe3a2D379De7656D7A67015789FaF999f20",
+      "settlement_wallet": "0x8366bCe3a2D379De7656D7A67015789FaF999f20",
+      "commit_sha": "2feadb3",
+      "sprint": true,
+      "is_complete": true,
+      "is_new": true,
+      "is_in_review": true,
+      "notes": "PR #5310 opened on Chain-Love. CI 100% SUCCESS. Settlement wallet: 0x8366bCe3a2D379De7656D7A67015789FaF999f20"
+    },
     {
       "id": "chain-love-pr-5309",
       "bounty_id": "chain-love-pr-5309",
@@ -8176,5 +8203,5 @@
     "chain_love_dbip_4773": 150.0
   },
   "global_in_review_usd": 60618.0,
-  "last_updated": "2026-11-13T08:28:45.157023+00:00"
+  "last_updated": "2026-11-13T08:48:41.389837+00:00"
 }
