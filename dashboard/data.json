@@ -10,10 +10,10 @@
   "dispersion_pending_usd": 6265.0,
   "confirmed_scheduled_monday_usd": 1.6,
   "approved_pending_payout_usd": 6265.0,
-  "sprint_in_review_usd": 16766.0,
+  "sprint_in_review_usd": 22462.0,
   "sprint_total_usd": 21981.0,
   "grand_total_pipeline_usd": 149748.1,
-  "in_review_usd": 15916.0,
+  "in_review_usd": 22462.0,
   "total_claimed_usd": 141448.1,
   "total_pipeline_value_usd": 148898.1,
   "submitted_prs_count": 295,
@@ -1635,9 +1635,9 @@
       "payment_network": "Solana / Base",
       "final_score": 9.2,
       "expected_value": 270.0,
-      "status": "SUBMITTED",
-      "payout_status": "EN_EVALUACION_ACTIVA",
-      "payout_text": "\u26a1 PULL REQUEST OFICIAL ABIERTA EN GITHUB (#208) - EN REVISI\u00d3N",
+      "status": "ARCHIVADO",
+      "payout_status": "CERRADO_POR_MANTENEDOR",
+      "payout_text": "\u26aa CERRADO POR MANTENEDOR (PR #208 CERRADA EN TRIAGE GIBWORK)",
       "pull_request_url": "https://github.com/gibwork/gibwork-website/pull/208",
       "pr_number": 208,
       "web3_wallet_address": "0x8366bCe3a2D379De7656D7A67015789FaF999f20",
@@ -1647,7 +1647,9 @@
       "is_new": false,
       "cycle": "OCTUBRE_2026_ACTIVO",
       "in_review": true,
-      "reward_usd": 300.0
+      "reward_usd": 300.0,
+      "is_in_review": false,
+      "is_archived": true
     },
     {
       "bounty_id": "openbuild_gallery_seeding_300",
@@ -8203,5 +8205,5 @@
     "chain_love_dbip_4773": 150.0
   },
   "global_in_review_usd": 60618.0,
-  "last_updated": "2026-11-13T08:48:41.389837+00:00"
+  "last_updated": "2026-11-13T13:54:21.309435+00:00"
 }
