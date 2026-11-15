@@ -58,6 +58,30 @@
   },
   "bounties": [
     {
+      "id": "chain_love_5357",
+      "title": "data(base): add Alloy modular Rust SDK for Base",
+      "platform": "Chain-Love",
+      "repository": "Chain-Love/chain-love",
+      "pull_request_url": "https://github.com/Chain-Love/chain-love/pull/5357",
+      "status": "EN_EVALUACION",
+      "reward_amount": 100.0,
+      "currency": "USDC",
+      "branch": "data/base-alloy-sdk",
+      "ci_status": "SUCCESS"
+    },
+    {
+      "id": "chain_love_5356",
+      "title": "data(base): add Privy React Auth and Embedded Wallet SDK for Base",
+      "platform": "Chain-Love",
+      "repository": "Chain-Love/chain-love",
+      "pull_request_url": "https://github.com/Chain-Love/chain-love/pull/5356",
+      "status": "EN_EVALUACION",
+      "reward_amount": 100.0,
+      "currency": "USDC",
+      "branch": "data/base-privy-sdk",
+      "ci_status": "SUCCESS"
+    },
+    {
       "id": "chain_love_5354",
       "title": "data(base): add RainbowKit wallet connection SDK for Base",
       "platform": "Chain-Love",
