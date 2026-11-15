@@ -58,6 +58,30 @@
   },
   "bounties": [
     {
+      "id": "chain_love_5354",
+      "title": "data(base): add RainbowKit wallet connection SDK for Base",
+      "platform": "Chain-Love",
+      "repository": "Chain-Love/chain-love",
+      "pull_request_url": "https://github.com/Chain-Love/chain-love/pull/5354",
+      "status": "EN_EVALUACION",
+      "reward_amount": 100.0,
+      "currency": "USDC",
+      "branch": "data/base-rainbowkit-sdk",
+      "ci_status": "SUCCESS"
+    },
+    {
+      "id": "chain_love_5353",
+      "title": "data(base): add Viem modular TypeScript SDK for Base",
+      "platform": "Chain-Love",
+      "repository": "Chain-Love/chain-love",
+      "pull_request_url": "https://github.com/Chain-Love/chain-love/pull/5353",
+      "status": "EN_EVALUACION",
+      "reward_amount": 100.0,
+      "currency": "USDC",
+      "branch": "data/base-viem-sdk",
+      "ci_status": "SUCCESS"
+    },
+    {
       "id": "chain-love-pr-5310",
       "bounty_id": "chain-love-pr-5310",
       "title": "data(base): add ZeroDev modular smart account SDK for Base",
