@@ -58,6 +58,30 @@
   },
   "bounties": [
     {
+      "id": "gohybrid_4508",
+      "title": "fix(shepherd): bind job-status in if: always() session-log steps (fixes #4499)",
+      "platform": "Go-Hybrid",
+      "repository": "limitlessprojects/Go-Hybrid",
+      "pull_request_url": "https://github.com/limitlessprojects/Go-Hybrid/pull/4508",
+      "status": "EN_EVALUACION",
+      "reward_amount": 300.0,
+      "currency": "USDC",
+      "branch": "fix/issue-4499-shepherd-job-status-session-log",
+      "ci_status": "IN_PROGRESS"
+    },
+    {
+      "id": "gohybrid_4507",
+      "title": "fix(build): pass resolved Cargo target directory to examples runner (fixes #4506)",
+      "platform": "Go-Hybrid",
+      "repository": "limitlessprojects/Go-Hybrid",
+      "pull_request_url": "https://github.com/limitlessprojects/Go-Hybrid/pull/4507",
+      "status": "EN_EVALUACION",
+      "reward_amount": 250.0,
+      "currency": "USDC",
+      "branch": "fix/issue-4506-make-examples-target-dir",
+      "ci_status": "IN_PROGRESS"
+    },
+    {
       "id": "chain_love_5357",
       "title": "data(base): add Alloy modular Rust SDK for Base",
       "platform": "Chain-Love",
