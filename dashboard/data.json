@@ -13,10 +13,10 @@
   "sprint_in_review_usd": 22462.0,
   "sprint_total_usd": 21981.0,
   "grand_total_pipeline_usd": 149748.1,
-  "in_review_usd": 22462.0,
+  "in_review_usd": 22612.0,
   "total_claimed_usd": 141448.1,
-  "total_pipeline_value_usd": 148898.1,
-  "submitted_prs_count": 298,
+  "total_pipeline_value_usd": 149048.1,
+  "submitted_prs_count": 299,
   "approved_prs_count": 35,
   "wallet_audit": {
     "total_liquid_usd": 61.53,
@@ -57,6 +57,19 @@
     }
   },
   "bounties": [
+    {
+      "id": "gh-4535",
+      "title": "fix(hy-check): reject prelude-private fields of set[T] and option[T] (fixes #4532)",
+      "repo": "limitlessprojects/Go-Hybrid",
+      "status": "IN_REVIEW",
+      "pr_url": "https://github.com/limitlessprojects/Go-Hybrid/pull/4535",
+      "issue_url": "https://github.com/limitlessprojects/Go-Hybrid/issues/4532",
+      "estimated_reward_usd": 150.0,
+      "reward_amount": 150.0,
+      "reward_token": "USDC",
+      "settlement_wallet": "0x8366bCe3a2D379De7656D7A67015789FaF999f20",
+      "submitted_at": "2026-11-17T12:53:43.328704+00:00"
+    },
     {
       "id": "chain-love-5382",
       "title": "data(base): list official Artemis fundamental analytics dashboard for Base (PR #5382)",
@@ -8313,6 +8326,6 @@
     "chain_love_dbip_4773": 150.0
   },
   "global_in_review_usd": 60618.0,
-  "last_updated": "2026-11-17T05:40:37.982722+00:00",
+  "last_updated": "2026-11-17T12:53:43.328987+00:00",
   "settlement_wallet_balance_usdc": 47.810608
 }
