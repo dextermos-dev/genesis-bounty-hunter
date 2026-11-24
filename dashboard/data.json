@@ -15103,7 +15103,7 @@
     "in_review_usd": 63543.0,
     "total_bounties": 445
   },
-  "last_updated": "2026-11-24T20:29:50.980895Z",
+  "last_updated": "2026-11-24T20:51:25.158560Z",
   "open_prs": [
     {
       "pr_number": 36,
@@ -16470,7 +16470,10 @@
     "fieldatlas_pr": 36,
     "fieldatlas_claim_id": 4567,
     "snowmoon_claim_id": 4570,
-    "sentinel_iteration": 4
+    "sentinel_iteration": 4,
+    "solana_bounties_active": 2,
+    "solana_bounties_sol": 0.2,
+    "solana_bounties_usd": 46.0
   },
   "balances": {
     "base_l2_usdc": 47.810608,

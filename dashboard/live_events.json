@@ -1,5 +1,24 @@
 [
   {
+    "timestamp": "2026-11-24T20:56:30.187859Z",
+    "type": "SOLANA_BOUNTY_SUBMITTED",
+    "issue": "incidere/solana-agent-bounties#1",
+    "title": "SPL Rug Radar Scorer (t=18)",
+    "amount": "0.12 SOL (~.00 USD)",
+    "wallet": "GLKpgANMTt8tJpTDVuzqi3ESuYivrgciKvwqSX5Hvb7K"
+  },
+  {
+    "timestamp": "2026-11-24T20:47:29.808908Z",
+    "type": "POIDH_CLAIM_MINED",
+    "bounty": "Snowmoon Character Backstory: Lord Ephelion",
+    "claim_id": 4570,
+    "bounty_id": 560,
+    "amount": "0.033 ETH (~.30 USD)",
+    "network": "Base L2",
+    "block": 61813992,
+    "wallet": "0x8366bCe3a2D379De7656D7A67015789FaF999f20"
+  },
+  {
     "timestamp": "2026-11-24T20:29:24.238619Z",
     "type": "PR_SUBMITTED",
     "repo": "0x94t3z/fieldatlas",
