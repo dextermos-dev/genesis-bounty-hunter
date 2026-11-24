@@ -1,0 +1,16 @@
+[
+  { "name": "Uniswap V3", "category": "Dexes", "chains": ["Ethereum", "Arbitrum"], "tvl_usd": 3200000000, "fees_30d_usd": 45000000, "symbol": "UNI" },
+  { "name": "Aave V3", "category": "Lending", "chains": ["Ethereum", "Polygon", "Base"], "tvl_usd": 8500000000, "fees_30d_usd": 28000000, "symbol": "AAVE" },
+  { "name": "Wrapped stETH", "category": "Liquid Staking", "chains": ["Ethereum"], "tvl_usd": 12000000000, "symbol": "wstETH" },
+  { "name": "Coinbase Wrapped BTC", "category": "Wrapped", "chains": ["Base"], "tvl_usd": 450000000, "symbol": "cbBTC" },
+  { "name": "EtherFi Restaked", "category": "Restaked", "chains": ["Ethereum"], "tvl_usd": 6000000000, "symbol": "eETH" },
+  { "name": "HyperSwap Base", "category": "Dexes", "chains": ["Base"], "tvl_usd": 120000000, "fees_30d_usd": 1800000, "symbol": null },
+  { "name": "SolLend Prime", "category": "Lending", "chains": ["Solana"], "tvl_usd": 85000000, "fees_30d_usd": 920000, "symbol": "none" },
+  { "name": "NovaPerps", "category": "Perpetuals", "chains": ["Arbitrum"], "tvl_usd": 95000000, "fees_30d_usd": 2400000, "symbol": "N/A" },
+  { "name": "MonadAMM Native", "category": "Dexes", "chains": ["Monad"], "tvl_usd": 45000000, "fees_30d_usd": 650000, "symbol": null },
+  { "name": "BeraLend Core", "category": "Lending", "chains": ["Berachain"], "tvl_usd": 65000000, "fees_30d_usd": 810000, "symbol": null },
+  { "name": "Nexus Messaging Bridge", "category": "Cross Chain", "chains": ["Base", "Arbitrum", "Optimism"], "tvl_usd": 110000000, "fees_30d_usd": 1400000, "symbol": null },
+  { "name": "Apex Options Protocol", "category": "Derivatives", "chains": ["Base"], "tvl_usd": 38000000, "fees_30d_usd": 950000, "symbol": null },
+  { "name": "Prime Vault Yield", "category": "Yield", "chains": ["Arbitrum"], "tvl_usd": 29000000, "fees_30d_usd": 310000, "symbol": "SHARES" },
+  { "name": "HyperSwap Sub-Vault", "category": "Dexes", "chains": ["Base"], "tvl_usd": 15000000, "fees_30d_usd": 200000, "symbol": null, "parent_protocol": "HyperSwap Base" }
+]

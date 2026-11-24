@@ -16799,11 +16799,31 @@
       "status": "En Revisi\u00f3n Humana",
       "target": "Delivery 828223f9... Enviada",
       "url": "https://gofrantic.com/v1/deliveries/828223f9-31c9-4a79-b494-46751d8f183f"
+    },
+    {
+      "id": "solana-6",
+      "name": "Grounded Citation Verifier & DPO Synthesizer (t=21)",
+      "platform": "Solana Mainnet",
+      "amount": "$22.00",
+      "crypto": "0.1000 SOL",
+      "status": "Entregado en GitHub Issue #6",
+      "target": "Escrow Vault 6cXR7EkU...XN",
+      "url": "https://github.com/incidere/solana-agent-bounties/issues/6"
+    },
+    {
+      "id": "solana-7",
+      "name": "DeFi Derivative Stripper & Implied-FDV Ranker (t=22)",
+      "platform": "Solana Mainnet",
+      "amount": "$26.40",
+      "crypto": "0.1200 SOL",
+      "status": "Entregado en GitHub Issue #7",
+      "target": "Escrow Vault 6cXR7EkU...XN",
+      "url": "https://github.com/incidere/solana-agent-bounties/issues/7"
     }
   ],
   "kpis": {
     "liquid_in_hand_usd": 66.13,
-    "fast_bounties_today_usd": 238.4,
+    "fast_bounties_today_usd": 286.8,
     "won_pending_dispersion_usd": 6715.0,
     "settled_effective_usd": 46.03
   },

@@ -1,0 +1,168 @@
+{
+  "version": "2.2.0-deterministic",
+  "timestamp": "2026-11-24T00:00:00Z",
+  "total_ingested": 14,
+  "total_qualified": 8,
+  "protocols": [
+    {
+      "rank": 1,
+      "name": "NovaPerps",
+      "category": "Perpetuals",
+      "chains": [
+        "Arbitrum"
+      ],
+      "tvl_usd": 95000000,
+      "implied_fdv_low": 277158000,
+      "implied_fdv_mid": 395940000,
+      "implied_fdv_high": 574113000,
+      "capital_efficiency_ratio": 0.3032,
+      "playbook_steps": [
+        "Deposit margin collateral into clearing house contract on Arbitrum",
+        "Open hedged delta-neutral position across low-spread market",
+        "Execute limit orders to provide non-toxic maker liquidity",
+        "Maintain active collateral state for >= 21 calendar days",
+        "Withdraw fractional margin to test settlement pipeline"
+      ]
+    },
+    {
+      "rank": 2,
+      "name": "HyperSwap Base",
+      "category": "Dexes",
+      "chains": [
+        "Base"
+      ],
+      "tvl_usd": 120000000,
+      "implied_fdv_low": 199584000,
+      "implied_fdv_mid": 285120000,
+      "implied_fdv_high": 413424000,
+      "capital_efficiency_ratio": 0.18,
+      "playbook_steps": [
+        "Deposit initial liquidity into standard two-asset pool on Base",
+        "Execute recurring micro-swaps across supported paired tokens to build routing volume",
+        "Maintain continuous LP position for >= 14 epoch days",
+        "Stake LP receipt into gauge contract if fee-sharing is enabled",
+        "Participate in snapshot community gauge signaling"
+      ]
+    },
+    {
+      "rank": 3,
+      "name": "Nexus Messaging Bridge",
+      "category": "Cross Chain",
+      "chains": [
+        "Arbitrum",
+        "Base",
+        "Optimism"
+      ],
+      "tvl_usd": 110000000,
+      "implied_fdv_low": 144564000,
+      "implied_fdv_mid": 206520000,
+      "implied_fdv_high": 299454000,
+      "capital_efficiency_ratio": 0.1527,
+      "playbook_steps": [
+        "Connect verified smart wallet to core contract interface on Base",
+        "Execute baseline interaction transaction meeting protocol minimum tier",
+        "Retain continuous position across multi-epoch monitoring duration",
+        "Claim accrued utility rewards where applicable"
+      ]
+    },
+    {
+      "rank": 4,
+      "name": "Apex Options Protocol",
+      "category": "Derivatives",
+      "chains": [
+        "Base"
+      ],
+      "tvl_usd": 38000000,
+      "implied_fdv_low": 98952000,
+      "implied_fdv_mid": 141360000,
+      "implied_fdv_high": 204972000,
+      "capital_efficiency_ratio": 0.3,
+      "playbook_steps": [
+        "Deposit margin collateral into clearing house contract on Base",
+        "Open hedged delta-neutral position across low-spread market",
+        "Execute limit orders to provide non-toxic maker liquidity",
+        "Maintain active collateral state for >= 21 calendar days",
+        "Withdraw fractional margin to test settlement pipeline"
+      ]
+    },
+    {
+      "rank": 5,
+      "name": "SolLend Prime",
+      "category": "Lending",
+      "chains": [
+        "Solana"
+      ],
+      "tvl_usd": 85000000,
+      "implied_fdv_low": 86116800,
+      "implied_fdv_mid": 123024000,
+      "implied_fdv_high": 178384800,
+      "capital_efficiency_ratio": 0.1299,
+      "playbook_steps": [
+        "Supply core blue-chip collateral into isolated market on Solana",
+        "Borrow low-volatility asset within conservative health factor >= 1.75",
+        "Accrue interest across continuous multi-week accounting window",
+        "Repay borrowed balance to demonstrate lifecycle solvency",
+        "Participate in risk parameter governance discussions"
+      ]
+    },
+    {
+      "rank": 6,
+      "name": "MonadAMM Native",
+      "category": "Dexes",
+      "chains": [
+        "Monad"
+      ],
+      "tvl_usd": 45000000,
+      "implied_fdv_low": 73332000,
+      "implied_fdv_mid": 104760000,
+      "implied_fdv_high": 151902000,
+      "capital_efficiency_ratio": 0.1733,
+      "playbook_steps": [
+        "Deposit initial liquidity into standard two-asset pool on Monad",
+        "Execute recurring micro-swaps across supported paired tokens to build routing volume",
+        "Maintain continuous LP position for >= 14 epoch days",
+        "Stake LP receipt into gauge contract if fee-sharing is enabled",
+        "Participate in snapshot community gauge signaling"
+      ]
+    },
+    {
+      "rank": 7,
+      "name": "BeraLend Core",
+      "category": "Lending",
+      "chains": [
+        "Berachain"
+      ],
+      "tvl_usd": 65000000,
+      "implied_fdv_low": 70862400,
+      "implied_fdv_mid": 101232000,
+      "implied_fdv_high": 146786400,
+      "capital_efficiency_ratio": 0.1495,
+      "playbook_steps": [
+        "Supply core blue-chip collateral into isolated market on Berachain",
+        "Borrow low-volatility asset within conservative health factor >= 1.75",
+        "Accrue interest across continuous multi-week accounting window",
+        "Repay borrowed balance to demonstrate lifecycle solvency",
+        "Participate in risk parameter governance discussions"
+      ]
+    },
+    {
+      "rank": 8,
+      "name": "Prime Vault Yield",
+      "category": "Yield",
+      "chains": [
+        "Arbitrum"
+      ],
+      "tvl_usd": 29000000,
+      "implied_fdv_low": 20160000,
+      "implied_fdv_mid": 28800000,
+      "implied_fdv_high": 41760000,
+      "capital_efficiency_ratio": 0.1283,
+      "playbook_steps": [
+        "Connect verified smart wallet to core contract interface on Arbitrum",
+        "Execute baseline interaction transaction meeting protocol minimum tier",
+        "Retain continuous position across multi-epoch monitoring duration",
+        "Claim accrued utility rewards where applicable"
+      ]
+    }
+  ]
+}

@@ -14,6 +14,34 @@ let currentTxFilter = 'ALL';
 // 7 Bounties de Cobro Inmediato (Entregados y Activos Hoy)
 const ACTIVE_FAST_BOUNTIES = [
   {
+    id: "solana-6",
+    platform: "Solana Mainnet",
+    platformClass: "solana",
+    title: "Grounded Citation Verifier & DPO Synthesizer (t=21)",
+    rewardUsd: "$22.00",
+    rewardCrypto: "0.1000 SOL",
+    statusText: "Entregado (32 Tests)",
+    highlightText: "🛡️ 4 Hard Gates + DPO Mode Synthesizer",
+    blockInfo: "Escrow: 6cXR7EkU...XN",
+    rail: "Solana Mainnet (Zero-Gas)",
+    url: "https://github.com/incidere/solana-agent-bounties/issues/6",
+    linkText: "Ver Entrega GitHub ↗"
+  },
+  {
+    id: "solana-7",
+    platform: "Solana Mainnet",
+    platformClass: "solana",
+    title: "DeFi Derivative Stripper & Implied-FDV Ranker (t=22)",
+    rewardUsd: "$26.40",
+    rewardCrypto: "0.1200 SOL",
+    statusText: "Entregado (42 Tests)",
+    highlightText: "⚡ Zero-Network Node 22+ CLI (Byte-Identical)",
+    blockInfo: "Escrow: 6cXR7EkU...XN",
+    rail: "Solana Mainnet (Zero-Gas)",
+    url: "https://github.com/incidere/solana-agent-bounties/issues/7",
+    linkText: "Ver Entrega GitHub ↗"
+  },
+  {
     id: "poidh-560",
     platform: "POIDH (Base L2)",
     platformClass: "poidh",
