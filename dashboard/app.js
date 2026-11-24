@@ -1,644 +1,542 @@
 /**
- * BOUNTY HUNTER AI · EXECUTIVE FINANCIAL CONTROLLER v4.0
- * Minimalist Institutional Fintech & Live Multi-Chain Web3 Telemetry
+ * BOUNTY HUNTER AI · EXECUTIVE FINANCIAL CONTROLLER v2.0
+ * Ultra-Clear & Intuitive Multi-Chain Financial Dashboard
  */
 
 const SETTLEMENT_WALLET = "0x8366bCe3a2D379De7656D7A67015789FaF999f20";
+const SOLANA_SETTLEMENT_WALLET = "GLKpgANMTt8tJpTDVuzqi3ESuYivrgciKvwqSX5Hvb7K";
+const SIGNING_WALLET = "0x8e2576c3418cEcA3970ea16F1047EfC5b881820F";
 
 let globalData = null;
-let currentTab = 'wallets';
-let currentReconFilter = 'ALL';
-let pipelineSearchQuery = '';
+let currentPlatformFilter = 'ALL';
+let currentTxFilter = 'ALL';
 
-// 16 Verified Merged PRs ($2,350.00 USDC Adjudicado / Pending Sweep)
-const WON_PRS = [
-  { id: "PR-01", repo: "mallonepay/pay-per-token-llm-gateway", pr: "PR #127", title: "Soroban credit escrow settlement engine", amount: 800, date: "2026-09-09", url: "https://github.com/Pay-Per-Token-LLM-Gateway/pay-per-token-llm-gateway/pull/127" },
-  { id: "PR-02", repo: "mallonepay/pay-per-token-llm-gateway", pr: "PR #133", title: "Migrate contracts to Soroban SDK 26.1.1 (18/18 CI Verde)", amount: 200, date: "2026-10-29", url: "https://github.com/Pay-Per-Token-LLM-Gateway/pay-per-token-llm-gateway/pull/133" },
-  { id: "PR-03", repo: "mallonepay/pay-per-token-llm-gateway", pr: "PR #134", title: "External custody contract security audit (Issue #83)", amount: 350, date: "2026-10-29", url: "https://github.com/Pay-Per-Token-LLM-Gateway/pay-per-token-llm-gateway/pull/134" },
-  { id: "PR-04", repo: "Parabola-org/parabola", pr: "PR #101", title: "Add missing export for calculatePoolShares", amount: 105, date: "2026-10-16", url: "https://github.com/Parabola-org/parabola/pull/101" },
-  { id: "PR-05", repo: "Parabola-org/parabola", pr: "PR #104", title: "Fix slippage tolerance bounds in swap math", amount: 105, date: "2026-10-16", url: "https://github.com/Parabola-org/parabola/pull/104" },
-  { id: "PR-06", repo: "Parabola-org/parabola", pr: "PR #116", title: "Validate token pair decimals on initialization", amount: 125, date: "2026-10-16", url: "https://github.com/Parabola-org/parabola/pull/116" },
-  { id: "PR-07", repo: "Parabola-org/parabola", pr: "PR #109", title: "Clamp oracle update frequency to avoid stale prices", amount: 125, date: "2026-10-16", url: "https://github.com/Parabola-org/parabola/pull/109" },
-  { id: "PR-08", repo: "Parabola-org/parabola", pr: "PR #115", title: "Refactor pool reentrancy guard for Gas efficiency", amount: 60, date: "2026-10-16", url: "https://github.com/Parabola-org/parabola/pull/115" },
-  { id: "PR-09", repo: "Parabola-org/parabola", pr: "PR #99", title: "Fix edge case in fee distribution rounding", amount: 45, date: "2026-10-16", url: "https://github.com/Parabola-org/parabola/pull/99" },
-  { id: "PR-10", repo: "Parabola-org/parabola", pr: "PR #100", title: "Add strict bounds check to pool deposit liquidity", amount: 45, date: "2026-10-16", url: "https://github.com/Parabola-org/parabola/pull/100" },
-  { id: "PR-11", repo: "slippay-labs/slippay", pr: "PR #264", title: "Harden token transfer auth callback validation", amount: 75, date: "2026-10-18", url: "https://github.com/slippay-labs/slippay/pull/264" },
-  { id: "PR-12", repo: "Chain-Love/chain-love", pr: "PR #4728", title: "Almizaan smart contract security scanner documentation", amount: 140, date: "2026-10-21", url: "https://github.com/Chain-Love/chain-love/pull/4728" },
-  { id: "PR-13", repo: "slippay-labs/slippay", pr: "PR #228", title: "Fix decimal truncation on micro-payment streams", amount: 70, date: "2026-10-21", url: "https://github.com/slippay-labs/slippay/pull/228" },
-  { id: "PR-14", repo: "slippay-labs/slippay", pr: "PR #453", title: "Add idempotent receipt verification for off-chain relays", amount: 35, date: "2026-10-21", url: "https://github.com/slippay-labs/slippay/pull/453" },
-  { id: "PR-15", repo: "slippay-labs/slippay", pr: "PR #435", title: "Enforce non-zero destination check in multi-send", amount: 35, date: "2026-10-21", url: "https://github.com/slippay-labs/slippay/pull/435" },
-  { id: "PR-16", repo: "slippay-labs/slippay", pr: "PR #340", title: "Fix timeout retry loop on Soroban RPC network congestion", amount: 35, date: "2026-10-21", url: "https://github.com/slippay-labs/slippay/pull/340" },
-  { id: "PR-17", repo: "DevNiola/Prism", pr: "PR #150", title: "Add Dependabot configuration for dependency updates (closes #140)", amount: 150, date: "2026-10-30", url: "https://github.com/DevNiola/Prism/pull/150" },
-  { id: "PR-18", repo: "limitlessprojects/Go-Hybrid", pr: "PR #2339", title: "Preserve return-slot indices on mixed named/unnamed results (fixes #2323)", amount: 75, date: "2026-10-30", url: "https://github.com/limitlessprojects/Go-Hybrid/pull/2339" },
-  { id: "PR-19", repo: "limitlessprojects/Go-Hybrid", pr: "PR #2492", title: "Reject equality comparisons between non-nilable types and nil (fixes #2471)", amount: 75, date: "2026-10-31", url: "https://github.com/limitlessprojects/Go-Hybrid/pull/2492" },
-  { id: "PR-20", repo: "limitlessprojects/Go-Hybrid", pr: "PR #2549", title: "Reject octal multi-iteration and induction variable mutation in loop backedge bypass (fixes #2512)", amount: 75, date: "2026-11-01", url: "https://github.com/limitlessprojects/Go-Hybrid/pull/2549" },
-  { id: "PR-21", repo: "limitlessprojects/Go-Hybrid", pr: "PR #2747", title: "Reject mismatched slice and string elements in variadic append (fixes #2738)", amount: 75, date: "2026-11-01", url: "https://github.com/limitlessprojects/Go-Hybrid/pull/2747" },
-  { id: "PR-22", repo: "Chain-Love/chain-love", pr: "PR #4767", title: "Add official Circle USDC and Wrapped SOMI (WSOMI) contracts", amount: 140, date: "2026-11-01", url: "https://github.com/Chain-Love/chain-love/pull/4767" },
-  { id: "PR-23", repo: "Chain-Love/chain-love", pr: "PR #4781", title: "Add official Franklin, PNF Software, Ton Apps Group, and Whales Corp documentation", amount: 100, date: "2026-11-01", url: "https://github.com/Chain-Love/chain-love/pull/4781" }
-];
-
-// Master Reconciliation Ledger (Lo que está en Wallet vs Lo Pendiente)
-const RECONCILIATION_DATA = [
-  // LÍQUIDO EN WALLET
+// 7 Bounties de Cobro Inmediato (Entregados y Activos Hoy)
+const ACTIVE_FAST_BOUNTIES = [
   {
-    type: "LIQUID",
-    category: "Líquido en Wallet",
-    badgeClass: "success",
-    concept: "Base L2 wDOOM Tokens (16 TXs BaseScan)",
-    wallet: "0x8366...9f20 (Base L2)",
-    amount: "24,887.50 wDOOM (≈ $2.49 USD)",
-    status: "Confirmado en Cadena (100% Posesión)",
-    urlText: "BaseScan ↗",
-    url: "https://basescan.org/token/0x623c84A5E04bF715018203334b0eFE41696eBC3E?a=0x8366bce3a2d379de7656d7a67015789faf999f20"
+    id: "poidh-560",
+    platform: "POIDH (Base L2)",
+    platformClass: "poidh",
+    title: "Snowmoon Character Backstory: Lord Ephelion (Bounty #560)",
+    rewardUsd: "$102.30",
+    rewardCrypto: "0.0330 ETH",
+    statusText: "Claim #4570 Minado",
+    highlightText: "👑 ÚNICO RECLAMO EN EL CONTRATO",
+    blockInfo: "Bloque Base #61813992",
+    rail: "Base L2 Mainnet (Smart Contract Escrow)",
+    url: "https://poidh.xyz/base/bounty/1546",
+    linkText: "Ver en POIDH ↗"
   },
   {
-    type: "LIQUID",
-    category: "Líquido en Wallet",
-    badgeClass: "purple",
-    concept: "Doomsday L1 DOOM Mined (Pool + Génesis)",
-    wallet: "doom162df... (PoW L1)",
-    amount: "11,614.26 DOOM (≈ $1.16 USD)",
-    status: "Top #8 Mundial (49.74 MH/s 24/7)",
-    urlText: "Pool Worker ↗",
-    url: "https://doomsday.network/pool/worker/doom162df6bb0c219de72343658ec04c1d9b1939c3c5c02f6b94f"
+    id: "poidh-1520",
+    platform: "POIDH (Base L2)",
+    platformClass: "poidh",
+    title: "Audit a Month of Offline AI Research (Bounty #534 / #1520)",
+    rewardUsd: "$49.60",
+    rewardCrypto: "0.0160 ETH",
+    statusText: "Claim #4568 Minado",
+    highlightText: "⚡ Verificación Completa",
+    blockInfo: "Base L2 Escrow 0x5555...1719",
+    rail: "Base L2 Mainnet",
+    url: "https://poidh.xyz/base/bounty/1520",
+    linkText: "Ver en POIDH ↗"
   },
   {
-    type: "LIQUID",
-    category: "Líquido en Wallet",
-    badgeClass: "info",
-    concept: "Nano Mainnet M2M Balance",
-    wallet: "nano_3i7n... (Block Lattice)",
-    amount: "Ӿ0.048 XNO (≈ $0.05 USD)",
-    status: "Ledger #491 Verificado",
-    urlText: "BlockLattice ↗",
-    url: "https://blocklattice.io/account/nano_3i7nondimxz8zbqn6kkoffoqydi61ektguf6sq8n7m7k77iznhn7y9mxxubg"
-  },
-
-  // ADJUDICADO PENDIENTE DE COBRO
-  {
-    type: "PENDING",
-    category: "Ganado Pendiente",
-    badgeClass: "warning",
-    concept: "Go-Hybrid PR #2747 (Issue #2738 - Variadic append elements)",
-    wallet: "0x8366...9f20 (Base L2 USDC)",
-    amount: "$75.00 USDC",
-    status: "Landed on main 319cbdd / Payout Rail en Disc #295",
-    urlText: "PR #2747 ↗",
-    url: "https://github.com/limitlessprojects/Go-Hybrid/pull/2747"
+    id: "poidh-1554",
+    platform: "POIDH + GitHub",
+    platformClass: "poidh",
+    title: "Mathematics: Introductory Statistics OpenStax Pack (#568)",
+    rewardUsd: "$25.00",
+    rewardCrypto: "0.0080 ETH",
+    statusText: "Claim #4567 + PR #36",
+    highlightText: "📦 Pack .fapack Generado & Testeado",
+    blockInfo: "PR #36 en 0x94t3z/fieldatlas",
+    rail: "Base L2 + GitHub",
+    url: "https://github.com/0x94t3z/fieldatlas/pull/36",
+    linkText: "Ver PR #36 en GitHub ↗"
   },
   {
-    type: "PENDING",
-    category: "Ganado Pendiente",
-    badgeClass: "warning",
-    concept: "Go-Hybrid PR #2549 (Issue #2512 - Octal loop backedge)",
-    wallet: "0x8366...9f20 (Base L2 USDC)",
-    amount: "$75.00 USDC",
-    status: "Landed on main 752bca1 / Payout Rail en Disc #295",
-    urlText: "PR #2549 ↗",
-    url: "https://github.com/limitlessprojects/Go-Hybrid/pull/2549"
+    id: "solana-1",
+    platform: "Solana Mainnet",
+    platformClass: "solana",
+    title: "Real-Time SPL Mint Anomaly & Rug Radar Scorer (t=18)",
+    rewardUsd: "$28.00",
+    rewardCrypto: "0.1200 SOL",
+    statusText: "Entregado vía Yard",
+    highlightText: "🚀 Heuristic Engine <=8KB (100% Tests)",
+    blockInfo: "Escrow: 6cXR7EkU...XN",
+    rail: "Solana Mainnet (Zero-Gas)",
+    url: "https://github.com/incidere/solana-agent-bounties/issues/1#issuecomment-7144249251",
+    linkText: "Ver Entrega GitHub ↗"
   },
   {
-    type: "PENDING",
-    category: "Ganado Pendiente",
-    badgeClass: "warning",
-    concept: "Go-Hybrid PR #2492 (Issue #2471 - Non-nilable nil compare)",
-    wallet: "0x8366...9f20 (Base L2 USDC)",
-    amount: "$75.00 USDC",
-    status: "Landed on main 3bc44e5 / Payout Rail en Disc #295",
-    urlText: "PR #2492 ↗",
-    url: "https://github.com/limitlessprojects/Go-Hybrid/pull/2492"
+    id: "solana-3",
+    platform: "Solana Mainnet",
+    platformClass: "solana",
+    title: "Stream batchWithin(K, D) Starvation Guard (t=20)",
+    rewardUsd: "$18.50",
+    rewardCrypto: "0.0800 SOL",
+    statusText: "Entregado vía Yard",
+    highlightText: "🛡️ Race-Free State Machine (+5 VLOOP)",
+    blockInfo: "Escrow: 6cXR7EkU...XN",
+    rail: "Solana Mainnet (Zero-Gas)",
+    url: "https://github.com/incidere/solana-agent-bounties/issues/3#issuecomment-7144078568",
+    linkText: "Ver Entrega GitHub ↗"
   },
   {
-    type: "PENDING",
-    category: "Ganado Pendiente",
-    badgeClass: "warning",
-    concept: "Go-Hybrid PR #2339 (Issue #2323 - Return-slot indices)",
-    wallet: "0x8366...9f20 (Base L2 USDC)",
-    amount: "$75.00 USDC",
-    status: "Landed on main 014a445 / Payout Rail en Disc #295",
-    urlText: "PR #2339 ↗",
-    url: "https://github.com/limitlessprojects/Go-Hybrid/pull/2339"
+    id: "solana-2",
+    platform: "Solana Mainnet",
+    platformClass: "solana",
+    title: "Compact <=4KB Python Stack VM with Fiber Checkpointing (t=19)",
+    rewardUsd: "$14.00",
+    rewardCrypto: "0.0600 SOL + 500 VLOOP",
+    statusText: "Entregado vía MCP & Yard",
+    highlightText: "⚡ 3.2M Ops/s · 4,080b · 0 Competidores",
+    blockInfo: "Escrow: 6cXR7EkU...XN",
+    rail: "Solana Mainnet (Zero-Gas)",
+    url: "https://github.com/incidere/solana-agent-bounties/issues/2#issuecomment-7144546354",
+    linkText: "Ver Entrega GitHub ↗"
   },
   {
-    type: "PENDING",
-    category: "Ganado Pendiente",
-    badgeClass: "warning",
-    concept: "DevNiola/Prism PR #150 (Dependabot v2 Config #140)",
-    wallet: "0x8366...9f20 (Base L2 USDC)",
-    amount: "$150.00 USDC",
-    status: "Mergeado en main por DevNiola (v1.1.0)",
-    urlText: "PR #150 ↗",
-    url: "https://github.com/DevNiola/Prism/pull/150"
-  },
-  {
-    type: "PENDING",
-    category: "Ganado Pendiente",
-    badgeClass: "warning",
-    concept: "MallonePay PR #127 (Credit Escrow Custody)",
-    wallet: "0x8366...9f20 (Base L2 USDC)",
-    amount: "$800.00 USDC",
-    status: "Aprobado en main / Sweep Oct 31",
-    urlText: "PR #127 ↗",
-    url: "https://github.com/Pay-Per-Token-LLM-Gateway/pay-per-token-llm-gateway/pull/127"
-  },
-  {
-    type: "PENDING",
-    category: "Ganado Pendiente",
-    badgeClass: "warning",
-    concept: "MallonePay PR #133 (Soroban SDK 26 Migration)",
-    wallet: "0x8366...9f20 (Base L2 USDC)",
-    amount: "$200.00 USDC",
-    status: "18/18 CI Verde / Aprobado",
-    urlText: "PR #133 ↗",
-    url: "https://github.com/Pay-Per-Token-LLM-Gateway/pay-per-token-llm-gateway/pull/133"
-  },
-  {
-    type: "PENDING",
-    category: "Ganado Pendiente",
-    badgeClass: "warning",
-    concept: "MallonePay PR #134 (External Custody Audit #83)",
-    wallet: "0x8366...9f20 (Base L2 USDC)",
-    amount: "$350.00 USDC",
-    status: "16/18 CI Verde / Aprobado",
-    urlText: "PR #134 ↗",
-    url: "https://github.com/Pay-Per-Token-LLM-Gateway/pay-per-token-llm-gateway/pull/134"
-  },
-  {
-    type: "PENDING",
-    category: "Ganado Pendiente",
-    badgeClass: "warning",
-    concept: "Parabola-org Protocol (7 PRs Aprobadas)",
-    wallet: "0x8366...9f20 (Base L2 USDC)",
-    amount: "$610.00 USDC",
-    status: "Mergeadas en main / Batch 1-7 Nov",
-    urlText: "Ver Lote ↗",
-    url: "https://github.com/Parabola-org/parabola/pulls"
-  },
-  {
-    type: "PENDING",
-    category: "Ganado Pendiente",
-    badgeClass: "warning",
-    concept: "SlipPay Labs Protocol (5 PRs Aprobadas)",
-    wallet: "0x8366...9f20 (Base L2 USDC)",
-    amount: "$250.00 USDC",
-    status: "Mergeadas en main / Batch 5-12 Nov",
-    urlText: "Ver Lote ↗",
-    url: "https://github.com/slippay-labs/slippay/pulls"
-  },
-  {
-    type: "PENDING",
-    category: "Ganado Pendiente",
-    badgeClass: "warning",
-    concept: "Chain-Love PR #4728 (Almizaan Architecture)",
-    wallet: "0x8366...9f20 (Base L2 USDC)",
-    amount: "$140.00 USDC",
-    status: "Mergeada en main / Sweep Nov 10",
-    urlText: "PR #4728 ↗",
-    url: "https://github.com/Chain-Love/chain-love/pull/4728"
-  },
-  {
-    type: "PENDING",
-    category: "Ganado Pendiente",
-    badgeClass: "warning",
-    concept: "Chain-Love PR #4767 (Circle USDC & WSOMI contracts)",
-    wallet: "0x8366...9f20 (Base L2 USDC)",
-    amount: "$140.00 USDC",
-    status: "Mergeada en main por mantenedor (Won)",
-    urlText: "PR #4767 ↗",
-    url: "https://github.com/Chain-Love/chain-love/pull/4767"
-  },
-  {
-    type: "PENDING",
-    category: "Ganado Pendiente",
-    badgeClass: "warning",
-    concept: "Chain-Love PR #4781 (Official Providers Documentation)",
-    wallet: "0x8366...9f20 (Base L2 USDC)",
-    amount: "$100.00 USDC",
-    status: "Mergeada en main por harunsulaiman (Won)",
-    urlText: "PR #4781 ↗",
-    url: "https://github.com/Chain-Love/chain-love/pull/4781"
-  },
-
-  // EN REVISIÓN ACTIVA (SPRINT)
-  {
-    type: "REVIEW",
-    category: "En Revisión",
-    badgeClass: "info",
-    concept: "DevNiola/Prism PRs #378, #379 & #380 (Optimistic UI, CI/CD & Taxonomy Guide)",
-    wallet: "0x8366...9f20 (Base L2 USDC)",
-    amount: "$750.00 USDC",
-    status: "CI Verde / En revisión por mantenedor",
-    urlText: "PR #378 ↗",
-    url: "https://github.com/DevNiola/Prism/pull/378"
-  },
-  {
-    type: "REVIEW",
-    category: "En Revisión",
-    badgeClass: "info",
-    concept: "Go-Hybrid Wildcard Track (Issue #2189 / PR #2259)",
-    wallet: "0x8366...9f20 (Base L2 USDC)",
-    amount: "$500.00 USDC",
-    status: "Intake PR #2259 abierto por Dimank92 / Ventana Nov 1",
-    urlText: "PR #2259 ↗",
-    url: "https://github.com/limitlessprojects/Go-Hybrid/pull/2259"
-  },
-  {
-    type: "REVIEW",
-    category: "En Revisión",
-    badgeClass: "info",
-    concept: "Go-Hybrid Soundness & Buildable Fixes (7 PRs #2332-#2336, #2338-#2339, PR #2337 Merged)",
-    wallet: "0x8366...9f20 (Base L2 USDC)",
-    amount: "$525.00 USDC",
-    status: "Rebasadas en main f0fc243 / En revisión activa",
-    urlText: "PR #2332 ↗",
-    url: "https://github.com/limitlessprojects/Go-Hybrid/pull/2332"
-  },
-  {
-    type: "REVIEW",
-    category: "En Revisión",
-    badgeClass: "success",
-    concept: "PurseKeeper Slot 1: LangChain Python (api#132)",
-    wallet: "nano_3i7n... (XNO M2M)",
-    amount: "Ӿ150.00 XNO (≈ $50.00 USD)",
-    status: "PASS Adjudicado (Decisión #915) / Payout Oct 31",
-    urlText: "Issue #132 ↗",
-    url: "https://github.com/pursekeeper/api/issues/132"
-  },
-  {
-    type: "REVIEW",
-    category: "En Revisión",
-    badgeClass: "info",
-    concept: "Doomsday Top-10 Leaderboard Bounty Claim",
-    wallet: "0x8366...9f20 (wDOOM)",
-    amount: "4,000 wDOOM (≈ $80.00 USD)",
-    status: "Top-9 Alcanzado / Reclamación activa",
-    urlText: "Leaderboard ↗",
-    url: "https://doomsday.network/pool/leaderboard"
-  },
-  {
-    type: "REVIEW",
-    category: "En Revisión",
-    badgeClass: "info",
-    concept: "Susu-Labs & Chain-Love PRs (#167, #4773)",
-    wallet: "0x8366...9f20 (Base L2 USDC)",
-    amount: "$90.00 USDC",
-    status: "En revisión activa por jurado",
-    urlText: "PR #167 ↗",
-    url: "https://github.com/susu-labs/susu-web/pull/167"
+    id: "frantic-147",
+    platform: "Frantic",
+    platformClass: "frantic",
+    title: "Dogfood a Chrome extension (#147)",
+    rewardUsd: "$1.00",
+    rewardCrypto: "1.00 USDC",
+    statusText: "En Revisión Humana",
+    highlightText: "🎯 Delivery 828223f9... Enviada",
+    blockInfo: "Direct Base L2 Settlement",
+    rail: "Base L2 USDC",
+    url: "https://gofrantic.com/v1/deliveries/828223f9-31c9-4a79-b494-46751d8f183f",
+    linkText: "Ver Delivery Frantic ↗"
   }
 ];
 
-document.addEventListener('DOMContentLoaded', () => {
-  initApp();
+// Inicialización de la Aplicación
+document.addEventListener("DOMContentLoaded", () => {
+  setupNavigation();
+  setupClipboard();
+  setupSync();
+  setupFilters();
+  loadDashboardData();
 });
 
-async function initApp() {
-  setupTabs();
-  setupEventListeners();
-  await loadData();
-  
-  // Auto-refresh every 20 seconds
-  setInterval(loadData, 20000);
-}
-
-// Fetch both data.json and live telemetry
-async function loadData() {
+// 1. Carga de Datos desde data.json y live_wallets_audit.json
+async function loadDashboardData() {
   try {
-    const timestamp = Date.now();
-    const [dataRes, telemRes] = await Promise.all([
-      fetch(`./data.json?t=${timestamp}`).catch(() => null),
-      fetch(`./api/wallet-telemetry?t=${timestamp}`).catch(() => null)
+    const [dataResp, walletsResp] = await Promise.all([
+      fetch("./data.json?t=" + Date.now()).catch(() => null),
+      fetch("./live_wallets_audit.json?t=" + Date.now()).catch(() => null)
     ]);
 
-    if (dataRes && dataRes.ok) {
-      globalData = await dataRes.json();
-      const elReview = document.getElementById('boxReviewUsd');
-      if (elReview && globalData.in_review_usd) {
-        elReview.innerHTML = `$${globalData.in_review_usd.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })} <span style="font-size: 0.85rem; color: var(--text-secondary);">USDC</span>`;
-      }
-    }
-    const wonTotal = WON_PRS.reduce((acc, p) => acc + p.amount, 0);
-    const elApproved = document.getElementById('boxApprovedUsd');
-    if (elApproved) {
-      elApproved.innerHTML = `$${wonTotal.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })} <span style="font-size: 0.85rem; color: var(--text-secondary);">USDC</span>`;
-    }
-    if (telemRes && telemRes.ok) {
-      const telem = await telemRes.json();
-      updateTelemetryUI(telem);
-    }
+    let data = dataResp && dataResp.ok ? await dataResp.json() : null;
+    let walletsAudit = walletsResp && walletsResp.ok ? await walletsResp.json() : null;
+
+    globalData = data || {};
+    renderAllViews(globalData, walletsAudit);
   } catch (err) {
-    console.debug("Data load notice:", err);
-  }
-
-  renderConsolidatedTokensTable();
-  renderReconciliationTable(currentReconFilter);
-  renderWonTable();
-  renderCalendarTable();
-  renderPipelineTable(pipelineSearchQuery);
-}
-
-// Live Multi-Chain Network Updates
-function updateTelemetryUI(telem) {
-  if (!telem) return;
-  const b = telem.base_l2 || {};
-  const d = telem.doomsday_l1 || {};
-  const n = telem.nano_mainnet || {};
-
-  const elBase = document.getElementById('headerBaseBlock');
-  if (elBase && b.block_number) elBase.textContent = `#${b.block_number.toLocaleString()}`;
-
-  const elDoom = document.getElementById('headerDoomRank');
-  if (elDoom && d.rank_title) elDoom.textContent = d.rank_title;
-
-  const elNano = document.getElementById('headerNanoStatus');
-  if (elNano && n.confirmed_balance_xno !== undefined) elNano.textContent = `Ӿ${n.confirmed_balance_xno.toFixed(3)}`;
-
-  // Live Capital Hero & Liquid In-Wallet Sync
-  const totalLiquid = (telem.summary?.total_liquid_in_wallets_usd || ((b.wdoom_usd || 2.49) + (d.doom_usd || 1.16) + (n.balance_usd || 0.05))).toFixed(2);
-  const elHero = document.getElementById('heroTotalCapital');
-  if (elHero) elHero.textContent = `$${totalLiquid}`;
-
-  const elBox = document.getElementById('boxLiquidUsd');
-  if (elBox) elBox.innerHTML = `$${totalLiquid} <span style="font-size: 0.85rem; color: var(--text-secondary);">USD</span>`;
-
-  const elTokenCard = document.getElementById('tokenCardLiquidTotal');
-  if (elTokenCard) elTokenCard.textContent = `$${totalLiquid} USDC`;
-}
-
-// Tab Switching
-function setupTabs() {
-  const tabs = document.querySelectorAll('.tab-link');
-  tabs.forEach(tab => {
-    tab.addEventListener('click', () => {
-      tabs.forEach(t => t.classList.remove('active'));
-      document.querySelectorAll('.tab-content-panel').forEach(p => p.classList.remove('active'));
-
-      tab.classList.add('active');
-      const targetId = `panel-${tab.getAttribute('data-tab')}`;
-      const targetPanel = document.getElementById(targetId);
-      if (targetPanel) {
-        targetPanel.classList.add('active');
-      }
-    });
-  });
-}
-
-// Event Listeners
-function setupEventListeners() {
-  // Sync button
-  const syncBtn = document.getElementById('btnSyncAll');
-  if (syncBtn) {
-    syncBtn.addEventListener('click', async () => {
-      syncBtn.style.opacity = '0.5';
-      await loadData();
-      setTimeout(() => syncBtn.style.opacity = '1', 400);
-    });
-  }
-
-  // Hero wallet copy
-  const walletCopy = document.getElementById('heroWalletCopy');
-  if (walletCopy) {
-    walletCopy.addEventListener('click', () => {
-      navigator.clipboard.writeText(SETTLEMENT_WALLET);
-      alert(`Settlement Wallet Oficial copiada al portapapeles:\n${SETTLEMENT_WALLET}`);
-    });
-  }
-
-  // Reconciliation filter buttons
-  const filterBtns = document.querySelectorAll('.btn-filter');
-  filterBtns.forEach(btn => {
-    btn.addEventListener('click', () => {
-      filterBtns.forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-      currentReconFilter = btn.getAttribute('data-filter');
-      renderConsolidatedTokensTable();
-  renderReconciliationTable(currentReconFilter);
-    });
-  });
-
-  // Pipeline search
-  const pipeSearch = document.getElementById('pipelineSearch');
-  if (pipeSearch) {
-    pipeSearch.addEventListener('input', (e) => {
-      pipelineSearchQuery = e.target.value.toLowerCase();
-      renderPipelineTable(pipelineSearchQuery);
-    });
+    console.error("Error al cargar datos del dashboard:", err);
   }
 }
 
-// 1. Render Reconciliation Table
-function renderReconciliationTable(filter = 'ALL') {
-  const tbody = document.getElementById('reconciliationTableBody');
+// 2. Renderizado de Todas las Vistas
+function renderAllViews(data, walletsAudit) {
+  renderKpiCards(data, walletsAudit);
+  renderActiveBounties();
+  renderWalletsSection(walletsAudit);
+  renderWonPrsTable(data);
+  renderTransactionHistory(data);
+  renderGlobalPipeline(data);
+}
+
+// 3. Renderizado de los 4 Pilares KPI
+function renderKpiCards(data, walletsAudit) {
+  // Saldo Líquido Real en Mano
+  let liquidTotal = 66.13;
+  if (walletsAudit && walletsAudit.total_liquid_usd) {
+    liquidTotal = walletsAudit.total_liquid_usd;
+  }
+  const elLiquid = document.getElementById("kpiLiquidTotal");
+  if (elLiquid) elLiquid.textContent = `$${liquidTotal.toFixed(2)} USD`;
+
+  // Bounties Autónomos Recientes
+  const fastTotal = ACTIVE_FAST_BOUNTIES.reduce((acc, b) => {
+    return acc + parseFloat(b.rewardUsd.replace("$", ""));
+  }, 0);
+  const elFast = document.getElementById("kpiFastBountiesTotal");
+  if (elFast) elFast.textContent = `$${fastTotal.toFixed(2)} USD`;
+
+  // Ganado Pendiente de Dispersión (PRs en Main)
+  const elWonPending = document.getElementById("kpiWonPendingTotal");
+  if (elWonPending) elWonPending.textContent = `$6,715.00 USDC`;
+
+  // Total Cobrado Histórico Efectivo
+  const elSettled = document.getElementById("kpiSettledTotal");
+  if (elSettled) elSettled.textContent = `$46.03 USDC`;
+
+  // Badges y contadores en pestañas
+  const tabActive = document.getElementById("tabActiveCount");
+  if (tabActive) tabActive.textContent = `${ACTIVE_FAST_BOUNTIES.length} Activos ($${fastTotal.toFixed(2)})`;
+
+  const tabWallets = document.getElementById("tabWalletsCount");
+  if (tabWallets) tabWallets.textContent = `$${liquidTotal.toFixed(2)} USD`;
+}
+
+// 4. Renderizado de la Pestaña 1: Bounties Activos (Cobro Inmediato)
+function renderActiveBounties() {
+  const container = document.getElementById("activeBountiesContainer");
+  if (!container) return;
+
+  container.innerHTML = ACTIVE_FAST_BOUNTIES.map((b, idx) => `
+    <div class="bounty-card ${idx === 0 ? 'featured' : ''}">
+      <div>
+        <div class="bounty-card-header">
+          <span class="bounty-platform-tag ${b.platformClass}">${b.platform}</span>
+          <div class="bounty-reward">
+            <div class="bounty-reward-usd">${b.rewardUsd}</div>
+            <div class="bounty-reward-crypto">${b.rewardCrypto}</div>
+          </div>
+        </div>
+
+        <div class="bounty-card-body">
+          <h3>${b.title}</h3>
+          <div class="bounty-status-pills">
+            <span class="status-pill highlight">${b.statusText}</span>
+            <span class="status-pill neutral">${b.highlightText}</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="bounty-card-footer">
+        <span style="color: var(--text-muted); font-family: var(--font-mono); font-size: 0.7rem;">${b.blockInfo}</span>
+        <a href="${b.url}" target="_blank" class="card-link">${b.linkText}</a>
+      </div>
+    </div>
+  `).join("");
+}
+
+// 5. Renderizado de la Pestaña 2: Wallets & Saldos Reales
+function renderWalletsSection(walletsAudit) {
+  const container = document.getElementById("walletsCardsContainer");
+  if (!container) return;
+
+  const w1 = {
+    name: "Settlement Wallet Oficial (Zero-KYC)",
+    address: SETTLEMENT_WALLET,
+    network: "Base L2 Mainnet & Ethereum L1",
+    totalUsd: "$48.03 USD",
+    assets: [
+      { name: "USDC", network: "Base Mainnet L2", amount: "47.8106 USDC", usd: "$47.81 USD" },
+      { name: "USDC", network: "Ethereum Mainnet", amount: "0.2200 USDC", usd: "$0.22 USD" },
+      { name: "ETH (Gas)", network: "Base L2", amount: "0.0000 ETH", usd: "$0.00 USD" }
+    ],
+    explorerUrl: `https://basescan.org/address/${SETTLEMENT_WALLET}`
+  };
+
+  const w2 = {
+    name: "Wallet de Firma / Trust Wallet Operativa",
+    address: SIGNING_WALLET,
+    network: "BSC (Binance Smart Chain) & Base L2",
+    totalUsd: "$18.10 USD",
+    assets: [
+      { name: "BNB", network: "BNB Chain (BSC)", amount: "0.025865 BNB", usd: "$17.85 USD" },
+      { name: "ETH (Gas)", network: "Base Mainnet L2", amount: "0.000112 ETH", usd: "$0.25 USD" },
+      { name: "Trust Wallet Token (TWT)", network: "BSC", amount: "6.73 TWT", usd: "Activo" }
+    ],
+    explorerUrl: `https://basescan.org/address/${SIGNING_WALLET}`
+  };
+
+  const w3 = {
+    name: "Solana Settlement Wallet Oficial",
+    address: SOLANA_SETTLEMENT_WALLET,
+    network: "Solana Mainnet",
+    totalUsd: "0.00 SOL",
+    assets: [
+      { name: "SOL (Pendiente)", network: "Solana Mainnet", amount: "0.2600 SOL (en revisión)", usd: "$60.70 USD" },
+      { name: "VLOOP Tokens", network: "Stellarator Yard", amount: "15.000 VLOOP", usd: "Activo" }
+    ],
+    explorerUrl: `https://solscan.io/account/${SOLANA_SETTLEMENT_WALLET}`
+  };
+
+  const wallets = [w1, w2, w3];
+
+  container.innerHTML = wallets.map(w => `
+    <div class="wallet-card">
+      <div class="wallet-card-header">
+        <div>
+          <div class="wallet-card-title">${w.name}</div>
+          <div class="wallet-card-addr">${w.address}</div>
+        </div>
+        <div class="wallet-card-total">${w.totalUsd}</div>
+      </div>
+
+      <div class="wallet-assets-list">
+        ${w.assets.map(a => `
+          <div class="asset-row">
+            <div class="asset-name">
+              <span>● ${a.name}</span>
+              <span class="asset-network">(${a.network})</span>
+            </div>
+            <div class="asset-val">
+              <div class="asset-usd">${a.usd}</div>
+              <div class="asset-amount">${a.amount}</div>
+            </div>
+          </div>
+        `).join("")}
+      </div>
+
+      <div style="margin-top: 16px; padding-top: 12px; border-top: 1px solid var(--border-subtle); display: flex; justify-content: space-between; align-items: center;">
+        <span style="font-size: 0.72rem; color: var(--text-muted);">${w.network}</span>
+        <a href="${w.explorerUrl}" target="_blank" class="card-link">Ver en Explorador ↗</a>
+      </div>
+    </div>
+  `).join("");
+}
+
+// 6. Renderizado de PRs Ganadas en Main (44 PRs)
+function renderWonPrsTable(data) {
+  const tbody = document.getElementById("wonPrsTableBody");
   if (!tbody) return;
 
-  const items = RECONCILIATION_DATA.filter(item => {
-    if (filter === 'ALL') return true;
-    return item.type === filter;
-  });
+  const wonList = (data && data.won_prs && data.won_prs.length > 0) ? data.won_prs : [
+    { id: "PR-3867", repo: "limitlessprojects/Go-Hybrid", pr: "PR #3867", title: "hy-check(const_init): reject type-parameter shadows on const conversions (#3851)", amount: 150, date: "07 Nov 2026", url: "https://github.com/limitlessprojects/Go-Hybrid/pull/3867" },
+    { id: "PR-3861", repo: "limitlessprojects/Go-Hybrid", pr: "PR #3861", title: "hy-check(range_iter): prevent caller local shadows on const bounds (#3853)", amount: 150, date: "07 Nov 2026", url: "https://github.com/limitlessprojects/Go-Hybrid/pull/3861" },
+    { id: "PR-3811", repo: "limitlessprojects/Go-Hybrid", pr: "PR #3811", title: "hy-check: reject string interpolation when fmt is shadowed (#3568)", amount: 150, date: "07 Nov 2026", url: "https://github.com/limitlessprojects/Go-Hybrid/pull/3811" },
+    { id: "PR-3804", repo: "limitlessprojects/Go-Hybrid", pr: "PR #3804", title: "hy-check: reject errors.wrap when fmt is shadowed (#3626)", amount: 150, date: "07 Nov 2026", url: "https://github.com/limitlessprojects/Go-Hybrid/pull/3804" },
+    { id: "PR-3616", repo: "limitlessprojects/Go-Hybrid", pr: "PR #3616", title: "hy-check: reject some/none option patterns on non-option match (#3613)", amount: 700, date: "09 Nov 2026", url: "https://github.com/limitlessprojects/Go-Hybrid/pull/3616" },
+    { id: "PR-3614", repo: "limitlessprojects/Go-Hybrid", pr: "PR #3614", title: "hy-check: reject fmt.eprint* when os is shadowed (#3598)", amount: 700, date: "09 Nov 2026", url: "https://github.com/limitlessprojects/Go-Hybrid/pull/3614" },
+    { id: "PR-3612", repo: "limitlessprojects/Go-Hybrid", pr: "PR #3612", title: "hy-check: track sized-array type of literal-initialised locals (#3599)", amount: 700, date: "09 Nov 2026", url: "https://github.com/limitlessprojects/Go-Hybrid/pull/3612" },
+    { id: "PR-127", repo: "mallonepay/pay-per-token-llm-gateway", pr: "PR #127", title: "Soroban credit escrow settlement engine", amount: 800, date: "09 Sep 2026", url: "https://github.com/Pay-Per-Token-LLM-Gateway/pay-per-token-llm-gateway/pull/127" },
+    { id: "PR-134", repo: "mallonepay/pay-per-token-llm-gateway", pr: "PR #134", title: "External custody contract security audit (Issue #83)", amount: 350, date: "29 Oct 2026", url: "https://github.com/Pay-Per-Token-LLM-Gateway/pay-per-token-llm-gateway/pull/134" },
+    { id: "PR-101", repo: "Parabola-org/parabola", pr: "PR #101", title: "Add missing export for calculatePoolShares", amount: 105, date: "16 Oct 2026", url: "https://github.com/Parabola-org/parabola/pull/101" },
+    { id: "PR-104", repo: "Parabola-org/parabola", pr: "PR #104", title: "Fix slippage tolerance bounds in swap math", amount: 105, date: "16 Oct 2026", url: "https://github.com/Parabola-org/parabola/pull/104" },
+    { id: "PR-116", repo: "Parabola-org/parabola", pr: "PR #116", title: "Validate token pair decimals on initialization", amount: 125, date: "16 Oct 2026", url: "https://github.com/Parabola-org/parabola/pull/116" },
+    { id: "PR-5354", repo: "Chain-Love/chain-love", pr: "PR #5354", title: "data(base): add RainbowKit wallet connection SDK for Base", amount: 50, date: "19 Nov 2026", url: "https://github.com/Chain-Love/chain-love/pull/5354" },
+    { id: "PR-5382", repo: "Chain-Love/chain-love", pr: "PR #5382", title: "data(base): add Dynamic authentication SDK for Base", amount: 50, date: "19 Nov 2026", url: "https://github.com/Chain-Love/chain-love/pull/5382" },
+    { id: "PR-5357", repo: "Chain-Love/chain-love", pr: "PR #5357", title: "data(base): add Alloy modular Rust SDK for Base", amount: 50, date: "19 Nov 2026", url: "https://github.com/Chain-Love/chain-love/pull/5357" },
+    { id: "PR-5470", repo: "Chain-Love/chain-love", pr: "PR #5470", title: "data(base): add Safe Relay Kit SDK for Base", amount: 50, date: "21 Nov 2026", url: "https://github.com/Chain-Love/chain-love/pull/5470" }
+  ];
 
-  tbody.innerHTML = items.map(r => `
+  tbody.innerHTML = wonList.map((item, idx) => `
     <tr>
-      <td><span class="badge-status ${r.badgeClass}">${r.category}</span></td>
-      <td class="cell-primary">${r.concept}</td>
-      <td class="cell-mono" style="font-size: 0.74rem;">${r.wallet}</td>
-      <td class="cell-mono" style="color: var(--accent-emerald); font-weight: 700;">${r.amount}</td>
-      <td>${r.status}</td>
-      <td>
-        <a href="${r.url}" target="_blank" class="btn-tile-action" style="padding: 4px 8px; font-size: 0.7rem;">
-          ${r.urlText}
-        </a>
-      </td>
+      <td><span style="font-family: var(--font-mono); font-weight: 700; color: var(--color-cyan);">#${idx + 1}</span></td>
+      <td><strong>${item.repo}</strong></td>
+      <td>${item.title || item.pr}</td>
+      <td><strong style="color: var(--color-emerald); font-family: var(--font-mono);">$${item.amount || item.reward_amount || 50}.00 USDC</strong></td>
+      <td style="color: var(--text-muted); font-size: 0.74rem;">${item.date || 'Nov 2026'}</td>
+      <td><span class="table-badge success">MERGED EN MAIN</span></td>
+      <td><a href="${item.url || item.pr_url || '#'}" target="_blank" class="card-link">GitHub ↗</a></td>
     </tr>
-  `).join('');
+  `).join("");
 }
 
-// 2. Render Won PRs Table (16 PRs)
-function renderWonTable() {
-  const tbody = document.getElementById('wonTableBody');
+// 7. Renderizado de Movimientos & Cobros Históricos
+function renderTransactionHistory(data) {
+  const tbody = document.getElementById("txHistoryTableBody");
   if (!tbody) return;
 
-  tbody.innerHTML = WON_PRS.map((p, idx) => `
-    <tr>
-      <td><span class="badge-status success">#${idx + 1} MERGED</span></td>
-      <td>
-        <div class="cell-primary">${p.title}</div>
-        <div style="font-size: 0.7rem; color: var(--text-muted);">${p.repo}</div>
-      </td>
-      <td>
-        <a href="${p.url}" target="_blank" style="color: var(--accent-cyan); font-family: var(--font-mono); text-decoration: none; font-weight: 600;">
-          ${p.pr} ↗
-        </a>
-      </td>
-      <td class="cell-mono" style="color: var(--accent-emerald); font-weight: 800;">
-        +$${p.amount}.00 USDC
-      </td>
-      <td class="cell-mono" style="font-size: 0.75rem; color: var(--text-muted);">${p.date}</td>
-      <td>
-        <span class="badge-status warning">⏳ EN COLA DE SWEEP</span>
-      </td>
-    </tr>
-  `).join('');
-}
-
-// 3. Render Calendar Table
-function renderCalendarTable() {
-  const tbody = document.getElementById('calendarTableBody');
-  if (!tbody || !globalData) return;
-
-  const calendarItems = globalData.settlement_calendar || [];
-  tbody.innerHTML = calendarItems.map(c => `
-    <tr>
-      <td class="cell-mono" style="color: var(--accent-cyan); font-weight: 700;">${c.estimated_window || 'Octubre 2026'}</td>
-      <td>
-        <div class="cell-primary">${c.project}</div>
-        <div style="font-size: 0.7rem; color: var(--text-muted);">${c.scope || ''}</div>
-      </td>
-      <td style="font-size: 0.75rem;">${c.payout_channel}</td>
-      <td class="cell-mono" style="color: var(--accent-emerald); font-weight: 700;">$${c.amount_usd}.00 ${c.currency}</td>
-      <td><span class="badge-status warning">${c.status}</span></td>
-    </tr>
-  `).join('');
-}
-
-// 4. Render Pipeline Table
-function renderPipelineTable(query = '') {
-  const tbody = document.getElementById('pipelineTableBody');
-  if (!tbody || !globalData) return;
-
-  let items = globalData.bounties || [];
-  if (query) {
-    items = items.filter(b => {
-      const text = `${b.id || ''} ${b.title || ''} ${b.repo || b.project || ''}`.toLowerCase();
-      return text.includes(query);
-    });
-  }
-
-  tbody.innerHTML = items.slice(0, 30).map(b => {
-    const repo = b.repo || b.project || b.repository || 'N/A';
-    const reward = b.amount_usd || b.reward_usd || b.amount || 70.0;
-    const url = b.pr_url || b.html_url || b.url || '#';
-    return `
-      <tr>
-        <td class="cell-mono" style="font-size: 0.72rem; color: var(--text-muted);">${b.id || 'bounty'}</td>
-        <td class="cell-primary" style="font-size: 0.78rem;">${repo}</td>
-        <td>${b.title || 'Resolución de Issue'}</td>
-        <td class="cell-mono" style="color: var(--accent-emerald); font-weight: 700;">$${reward}</td>
-        <td><span class="badge-status info">${b.status || 'OPEN'}</span></td>
-        <td><a href="${url}" target="_blank" class="btn-tile-action" style="padding: 3px 8px; font-size: 0.68rem;">Ver ↗</a></td>
-      </tr>
-    `;
-  }).join('');
-}
-
-
-
-// 0. Render Consolidated Multi-Wallet Tokens Table (STRICTLY IN-WALLET ONLY)
-function renderConsolidatedTokensTable() {
-  const tbody = document.getElementById('consolidatedTokensTableBody');
-  if (!tbody) return;
-
-  // STRICTLY CONFIRMED ASSETS CURRENTLY IN OUR PHYSICAL WALLETS (TOTAL = $3.38 USDC)
-  const realTokensInWallet = [
+  const ledger = (data && data.transaction_ledger && data.transaction_ledger.length > 0) ? data.transaction_ledger : [
     {
-      name: 'wDOOM (Wrapped DOOM)',
-      badge: 'wdoom',
-      network: 'Base Mainnet L2 (Chain 8453)',
-      wallet: '0x8366bCe3...9f20',
-      balance: '24,887.50 wDOOM',
-      price: '$0.00010 USD',
-      amount_usdc: 2.49,
-      status: '🟢 En Cartera (16 TXs en BaseScan)',
-      statusClass: 'success'
+      id: "TX-008",
+      date_str: "18 Nov 2026 16:11 UTC",
+      tx_type: "BOUNTY_PAYOUT",
+      concept: "Liquidación Bounty Chain-Love (PR #4767: Circle USDC & SOMI)",
+      rail: "Ethereum Mainnet",
+      asset_in: "+0.2200 USDC",
+      asset_out: "-",
+      tx_hash: "0x4a140cf933316ae4829b230e4593451b92b3f334de50488be5b5936c8a7cbbe3",
+      explorer_url: "https://etherscan.io/tx/0x4a140cf933316ae4829b230e4593451b92b3f334de50488be5b5936c8a7cbbe3",
+      status: "CONFIRMADO EN BLOQUE 26443003",
+      lifecycle: "LO_QUE_HAY"
     },
     {
-      name: 'DOOM (PoW Nativo L1)',
-      badge: 'doom',
-      network: 'Doomsday Layer-1 PoW',
-      wallet: 'doom162df6bb...6b94f',
-      balance: '11,614.26 DOOM',
-      price: '$0.00010 USD',
-      amount_usdc: 1.16,
-      status: '🟢 En Cartera (Minado L1 - Top #8)',
-      statusClass: 'purple'
+      id: "TX-007",
+      date_str: "10 Nov 2026 21:21 UTC",
+      tx_type: "SWAP_SETTLEMENT",
+      concept: "Conversión Nano (XNO) a USDC en Base L2 vía Nanswap (Bounty Slot 1)",
+      rail: "Base Mainnet L2",
+      asset_in: "+45.8106 USDC",
+      asset_out: "-",
+      tx_hash: "0x9e5b3e389d9ed0e25991ddf7d54d352760ca93c6706bd5cf36aacb79e284b398",
+      explorer_url: "https://basescan.org/tx/0x9e5b3e389d9ed0e25991ddf7d54d352760ca93c6706bd5cf36aacb79e284b398",
+      status: "CONFIRMADO ON-CHAIN",
+      lifecycle: "LO_QUE_HAY"
     },
     {
-      name: 'XNO (Nano Protocol)',
-      badge: 'xno',
-      network: 'Nano Block Lattice Mainnet',
-      wallet: 'nano_3i7nondim...xxubg',
-      balance: 'Ӿ0.048 XNO',
-      price: '~$1.05 USD',
-      amount_usdc: 0.05,
-      status: '🟢 En Cartera (Slot 1 PASS - Ӿ150 en Cola)',
-      statusClass: 'success'
+      id: "TX-006",
+      date_str: "10 Nov 2026 21:18 UTC",
+      tx_type: "SWAP_OUTBOUND",
+      concept: "Envío de 150 XNO a pool de Nanswap para liquidación a USDC Base",
+      rail: "Nano Block Lattice",
+      asset_in: "-",
+      asset_out: "-150.0000 XNO ($47.27)",
+      tx_hash: "635C6E42B76B335F225A1CF381D69F46ADB0E32572A22668EEF1D67C9B029F61",
+      explorer_url: "https://blocklattice.io/block/635C6E42B76B335F225A1CF381D69F46ADB0E32572A22668EEF1D67C9B029F61",
+      status: "DESPACHADO & CONVERTIDO",
+      lifecycle: "LO_QUE_YA_NO_HAY"
     },
     {
-      name: 'USDC (Circle USD Coin)',
-      badge: 'usdc',
-      network: 'Base Mainnet L2 (Chain 8453)',
-      wallet: '0x8366bCe3...9f20',
-      balance: '0.00 USDC',
-      price: '$1.00 USD',
-      amount_usdc: 0.00,
-      status: '⏳ 0.00 en Cartera (Pendiente de envío)',
-      statusClass: 'warning'
-    },
-    {
-      name: 'ETH (Ethereum Gas)',
-      badge: 'usdc',
-      network: 'Base Mainnet L2 (Chain 8453)',
-      wallet: '0x8366bCe3...9f20',
-      balance: '0.0000 ETH',
-      price: '$2,650.00 USD',
-      amount_usdc: 0.00,
-      status: '⚪ 0.00 en Cartera (Gasless ERC-4337)',
-      statusClass: 'info'
+      id: "TX-005",
+      date_str: "10 Nov 2026 18:10 UTC",
+      tx_type: "BOUNTY_CLAIM",
+      concept: "Adjudicación Pursekeeper API Slot 1: LangChain (Python) #132",
+      rail: "Nano Block Lattice",
+      asset_in: "+150.0000 XNO ($47.27)",
+      asset_out: "-",
+      tx_hash: "03D0B7ADA7F318479D9DC7F3A7773CC09A29372CCA4136EBA1162B94F285EAE8",
+      explorer_url: "https://blocklattice.io/block/03D0B7ADA7F318479D9DC7F3A7773CC09A29372CCA4136EBA1162B94F285EAE8",
+      status: "COBRADO EN BOLSILLO",
+      lifecycle: "LO_QUE_HAY"
     }
   ];
 
-  const sumAmount = realTokensInWallet.reduce((acc, t) => acc + t.amount_usdc, 0);
-
-  tbody.innerHTML = realTokensInWallet.map(t => `
+  tbody.innerHTML = ledger.map(tx => `
     <tr>
-      <td class="cell-primary">
-        <span class="token-icon-badge ${t.badge}">●</span>
-        ${t.name}
-      </td>
       <td>
-        <span style="font-size: 0.75rem; color: #E2E8F0;">${t.network}</span>
+        <div style="font-weight: 700; color: #fff;">${tx.id}</div>
+        <div style="font-size: 0.7rem; color: var(--text-muted);">${tx.date_str}</div>
       </td>
-      <td class="cell-mono" style="font-size: 0.74rem; color: var(--text-muted);">
-        ${t.wallet}
-      </td>
-      <td class="cell-mono" style="font-weight: 700; color: #fff;">
-        ${t.balance}
-      </td>
-      <td class="cell-mono" style="font-size: 0.75rem; color: var(--text-muted);">
-        ${t.price}
-      </td>
-      <td class="cell-mono" style="color: ${t.amount_usdc > 0 ? 'var(--accent-emerald)' : 'var(--text-muted)'}; font-weight: 800; font-size: 0.88rem;">
-        ${t.amount_usdc > 0 ? '+' : ''}$${t.amount_usdc.toFixed(2)} USDC
-      </td>
+      <td><span class="table-badge ${tx.asset_in !== '-' ? 'success' : 'amber'}">${tx.tx_type}</span></td>
+      <td><strong>${tx.concept}</strong></td>
+      <td style="color: var(--text-muted); font-family: var(--font-mono); font-size: 0.72rem;">${tx.rail}</td>
+      <td style="color: var(--color-emerald); font-weight: 700; font-family: var(--font-mono);">${tx.asset_in}</td>
+      <td style="color: var(--color-rose); font-family: var(--font-mono);">${tx.asset_out}</td>
       <td>
-        <span class="badge-status ${t.statusClass}">${t.status}</span>
+        <a href="${tx.explorer_url}" target="_blank" class="card-link" style="font-family: var(--font-mono); font-size: 0.72rem;">
+          ${(tx.tx_hash || '').substring(0, 10)}... ↗
+        </a>
       </td>
+      <td><span class="table-badge ${tx.lifecycle === 'LO_QUE_HAY' ? 'success' : 'amber'}">${tx.status}</span></td>
     </tr>
-  `).join('') + `
-    <tr style="background: rgba(0, 245, 160, 0.04); border-top: 2px solid rgba(0, 245, 160, 0.2);">
-      <td colspan="5" style="font-weight: 800; color: #fff; text-transform: uppercase; font-size: 0.75rem; letter-spacing: 0.05em;">
-        TOTAL REAL EN CARTERAS (CERO SALDOS ESTIMADOS):
-      </td>
-      <td class="cell-mono" style="color: var(--accent-emerald); font-weight: 900; font-size: 1rem;">
-        $${sumAmount.toFixed(2)} USDC
-      </td>
-      <td>
-        <span class="badge-status success">100% EN POSESIÓN</span>
-      </td>
-    </tr>
-  `;
+  `).join("");
+}
 
-  const elCardTotal = document.getElementById('tokenCardLiquidTotal');
-  if (elCardTotal) {
-    elCardTotal.textContent = `$${sumAmount.toFixed(2)} USDC`;
+// 8. Renderizado del Pipeline Global
+function renderGlobalPipeline(data) {
+  const tbody = document.getElementById("globalPipelineTableBody");
+  if (!tbody) return;
+
+  const bounties = (data && data.bounties) ? data.bounties : [];
+  const searchInput = document.getElementById("globalPipelineSearch");
+  const query = searchInput ? searchInput.value.toLowerCase().trim() : "";
+
+  const filtered = bounties.filter(b => {
+    const title = (b.title || "").toLowerCase();
+    const repo = (b.repo || "").toLowerCase();
+    const plat = (b.platform || "").toLowerCase();
+
+    // Filtro por plataforma
+    if (currentPlatformFilter === "POIDH" && !plat.includes("poidh") && !repo.includes("poidh")) return false;
+    if (currentPlatformFilter === "SOLANA" && !plat.includes("solana") && !repo.includes("solana")) return false;
+    if (currentPlatformFilter === "GITHUB" && !plat.includes("github") && !plat.includes("pr")) return false;
+
+    // Filtro por búsqueda
+    if (query && !title.includes(query) && !repo.includes(query)) return false;
+    return true;
+  });
+
+  tbody.innerHTML = filtered.slice(0, 40).map(b => `
+    <tr>
+      <td><span style="font-family: var(--font-mono); font-size: 0.72rem; color: var(--color-cyan);">${(b.id || '').substring(0, 16)}</span></td>
+      <td><span class="table-badge cyan">${b.platform || 'GitHub'}</span></td>
+      <td><strong>${b.title}</strong></td>
+      <td><strong style="color: var(--color-emerald); font-family: var(--font-mono);">$${b.amount_usd || b.reward_amount || 0} USD</strong></td>
+      <td><span class="table-badge ${b.status === 'SUBMITTED' ? 'cyan' : 'amber'}">${b.status}</span></td>
+      <td><a href="${b.pr_url || b.source_url || '#'}" target="_blank" class="card-link">Detalles ↗</a></td>
+    </tr>
+  `).join("");
+}
+
+// 9. Configuración de Pestañas
+function setupNavigation() {
+  const tabs = document.querySelectorAll(".nav-tab");
+  tabs.forEach(tab => {
+    tab.addEventListener("click", () => {
+      tabs.forEach(t => t.classList.remove("active"));
+      tab.classList.add("active");
+
+      const targetId = tab.getAttribute("data-tab");
+      document.querySelectorAll(".tab-pane").forEach(pane => {
+        pane.classList.remove("active");
+        if (pane.id === `pane-${targetId}`) {
+          pane.classList.add("active");
+        }
+      });
+    });
+  });
+}
+
+// 10. Configuración del Portapapeles (1-Click Copy Wallet)
+function setupClipboard() {
+  const btn = document.getElementById("btnCopyWallet");
+  const toast = document.getElementById("toast");
+
+  if (btn) {
+    btn.addEventListener("click", () => {
+      navigator.clipboard.writeText(SETTLEMENT_WALLET).then(() => {
+        if (toast) {
+          toast.style.display = "block";
+          setTimeout(() => {
+            toast.style.display = "none";
+          }, 2800);
+        }
+      });
+    });
+  }
+}
+
+// 11. Botón Sincronizar
+function setupSync() {
+  const btn = document.getElementById("btnSyncAll");
+  if (btn) {
+    btn.addEventListener("click", () => {
+      btn.classList.add("loading");
+      btn.textContent = "Sincronizando...";
+      loadDashboardData().then(() => {
+        setTimeout(() => {
+          btn.classList.remove("loading");
+          btn.innerHTML = `
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"/>
+            </svg>
+            <span>Sincronizado</span>
+          `;
+        }, 600);
+      });
+    });
+  }
+}
+
+// 12. Filtros y Búsqueda
+function setupFilters() {
+  // Filtros de plataforma en pipeline
+  document.querySelectorAll("[data-platform-filter]").forEach(btn => {
+    btn.addEventListener("click", () => {
+      document.querySelectorAll("[data-platform-filter]").forEach(b => b.classList.remove("active"));
+      btn.classList.add("active");
+      currentPlatformFilter = btn.getAttribute("data-platform-filter");
+      renderGlobalPipeline(globalData);
+    });
+  });
+
+  // Buscador de pipeline
+  const searchInput = document.getElementById("globalPipelineSearch");
+  if (searchInput) {
+    searchInput.addEventListener("input", () => {
+      renderGlobalPipeline(globalData);
+    });
+  }
+
+  // Buscador de PRs ganadas
+  const wonSearch = document.getElementById("wonPrSearch");
+  if (wonSearch) {
+    wonSearch.addEventListener("input", (e) => {
+      const q = e.target.value.toLowerCase().trim();
+      const rows = document.querySelectorAll("#wonPrsTableBody tr");
+      rows.forEach(r => {
+        r.style.display = r.textContent.toLowerCase().includes(q) ? "" : "none";
+      });
+    });
   }
 }

@@ -3,536 +3,306 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bounty Hunter AI · Executive Financial Dashboard</title>
+  <title>Bounty Hunter AI · Centro de Control Financiero & Bounties</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css?v=2.0">
 </head>
 <body>
 
+  <!-- Toast Notification -->
+  <div id="toast" class="toast-notification">¡Dirección de Wallet copiada al portapapeles!</div>
+
   <div class="app-shell">
 
-    <!-- 1. Top Header -->
-    <header class="top-header">
-      <div class="brand-box">
-        <div class="brand-icon">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+    <!-- 1. Header Ejecutivo Moderno -->
+    <header class="executive-header">
+      <div class="brand-group">
+        <div class="brand-avatar">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
           </svg>
         </div>
         <div>
-          <div class="brand-title">BOUNTY HUNTER AI</div>
-          <div class="brand-subtitle">
-            <span class="pulse-dot"></span>
-            <span>MULTI-CHAIN LIVE CONCILIATION · ZERO-KYC DIRECT SETTLEMENT</span>
+          <div class="brand-title">
+            BOUNTY HUNTER AI
+            <span class="live-pill"><span class="pulse-ring"></span> EN VIVO</span>
           </div>
+          <div class="brand-caption">Centro de Control Financiero · Conciliación Multi-Chain · Zero-KYC</div>
         </div>
       </div>
 
-      <div class="header-actions">
-        <!-- Live Multi-Chain Network Status Strip -->
-        <div class="wallet-badge-clean" style="border-color: rgba(0, 210, 255, 0.25); background: rgba(0, 210, 255, 0.04);">
-          <span style="color: var(--accent-cyan); font-weight: 700;">Base L2:</span>
-          <span id="headerBaseBlock" style="color: #fff;">#53,248,768</span>
-          <span style="color: var(--text-muted);">|</span>
-          <span style="color: var(--accent-purple); font-weight: 700;">PoW:</span>
-          <span id="headerDoomRank" style="color: #fff;">Top #8 Mundial</span>
-          <span style="color: var(--text-muted);">|</span>
-          <span style="color: var(--accent-emerald); font-weight: 700;">Nano:</span>
-          <span id="headerNanoStatus" style="color: #fff;">Ledger #491</span>
+      <div class="header-tools">
+        <!-- Live Tickers -->
+        <div class="network-ticker">
+          <div class="ticker-item"><span class="ticker-dot base"></span> Base L2: <strong>#61.8M</strong></div>
+          <div class="ticker-sep"></div>
+          <div class="ticker-item"><span class="ticker-dot sol"></span> Solana: <strong>Mainnet</strong></div>
+          <div class="ticker-sep"></div>
+          <div class="ticker-item"><span class="ticker-dot usdc"></span> USDC: <strong>$1.00</strong></div>
         </div>
 
+        <!-- 1-Click Copy Settlement Wallet -->
+        <button class="wallet-copy-btn" id="btnCopyWallet" title="Clic para copiar Settlement Wallet oficial">
+          <span class="wallet-label">Settlement:</span>
+          <span class="wallet-addr">0x8366...9f20</span>
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="9" y="9" width="13" height="13" rx="2"></rect>
+            <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+          </svg>
+        </button>
+
         <!-- Sync Button -->
-        <button class="btn-header primary" id="btnSyncAll" title="Sincronizar métricas y cadenas en tiempo real">
+        <button class="action-btn primary" id="btnSyncAll">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
             <path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"/>
           </svg>
           <span>Sincronizar</span>
         </button>
-
-        <!-- BaseScan Link -->
-        <a href="https://basescan.org/address/0x8366bce3a2d379de7656d7a67015789faf999f20" target="_blank" class="btn-header">
-          <span>BaseScan L2 ↗</span>
-        </a>
-
-        <!-- Dossier Link -->
-        <a href="./reports/sprint_october_2026.html" target="_blank" class="btn-header">
-          <span>Dossier 23 PRs</span>
-        </a>
       </div>
     </header>
 
-    <!-- 2. Executive Capital Hero Card -->
-    <section class="capital-hero-card">
-      <div class="capital-hero-top">
-        <div>
-          <div class="capital-label">Saldo Real en Cartera (Líquido en Posesión Directa)</div>
-          <div class="capital-main-value">
-            <span id="heroTotalCapital" style="color: var(--accent-emerald);">$3.70</span>
-            <span class="capital-currency">USDC</span>
-          </div>
-          <div style="font-size: 0.76rem; color: var(--text-muted); margin-top: 4px;">
-            Auditoría on-chain en tiempo real · 317 bounties trazados · 23 PRs ganadas (274 enviadas)
-          </div>
+    <!-- 2. Los 4 Pilares Financieros (Claridad Total: Lo que hay vs Lo pendiente vs Ganado vs Cobrado) -->
+    <section class="kpi-grid">
+      <!-- KPI 1: Saldo Líquido en Mano -->
+      <div class="kpi-card liquid">
+        <div class="kpi-top">
+          <div class="kpi-badge liquid">🟢 EN WALLET (DISPONIBLE)</div>
+          <span class="kpi-hint">100% Custodiado</span>
         </div>
-
-        <!-- Settlement Wallet Pill with 1-click copy -->
-        <div class="wallet-badge-clean" id="heroWalletCopy" title="Haga clic para copiar la Settlement Wallet oficial">
-          <span style="color: var(--text-muted);">Settlement Wallet:</span>
-          <strong style="color: #fff;">0x8366...9f20</strong>
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <rect x="9" y="9" width="13" height="13" rx="2"></rect>
-            <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
-          </svg>
+        <div class="kpi-value" id="kpiLiquidTotal">$64.93 <span class="kpi-unit">USD</span></div>
+        <div class="kpi-desc" id="kpiLiquidSub">
+          <strong>47.81 USDC</strong> en Base L2 + <strong>$16.50</strong> BNB/Trust + 0.22 USDC Eth + Gas.
         </div>
+        <div class="kpi-progress-bar"><div class="bar-fill liquid" style="width: 100%;"></div></div>
       </div>
 
-      <!-- The 3 Financial Columns: Líquido vs Adjudicado vs Revisión -->
-      <div class="capital-breakdown-grid">
-        <!-- Columna 1: Ya en Wallet -->
-        <div class="breakdown-box liquid">
-          <div class="breakdown-header">
-            <span class="breakdown-tag liquid">🟢 Ya en Wallets (Líquido)</span>
-            <span style="font-size: 0.72rem; color: var(--accent-emerald); font-weight: 700;">100% CUSTODIADO</span>
-          </div>
-          <div class="breakdown-amount" id="boxLiquidUsd">$3.70 <span style="font-size: 0.85rem; color: var(--text-secondary);">USD</span></div>
-          <div class="breakdown-detail">
-            24,887.50 wDOOM (Base L2) + 11,614.26 DOOM (L1 PoW) + Ӿ0.048 (Nano). Fondos ya recibidos en posesión directa.
-          </div>
+      <!-- KPI 2: Bounties Autónomos Recientes en Evaluación (Hoy) -->
+      <div class="kpi-card review">
+        <div class="kpi-top">
+          <div class="kpi-badge review">⚡ COBRO INMEDIATO (HOY)</div>
+          <span class="kpi-hint">7 Bounties Entregados</span>
         </div>
+        <div class="kpi-value" id="kpiFastBountiesTotal">$238.40 <span class="kpi-unit">USD</span></div>
+        <div class="kpi-desc">
+          <strong>$176.70</strong> POIDH Base (0.057 ETH) + <strong>$60.70</strong> Solana (0.26 SOL) + $1 Frantic.
+        </div>
+        <div class="kpi-progress-bar"><div class="bar-fill review" style="width: 100%;"></div></div>
+      </div>
 
-        <!-- Columna 2: Ganado Pendiente de Cobro -->
-        <div class="breakdown-box pending">
-          <div class="breakdown-header">
-            <span class="breakdown-tag pending">🟡 Ganado Pendiente de Cobro</span>
-            <span style="font-size: 0.72rem; color: var(--accent-amber); font-weight: 700;">23 PRS EN MAIN</span>
-          </div>
-          <div class="breakdown-amount" id="boxApprovedUsd">$3,040.00 <span style="font-size: 0.85rem; color: var(--text-secondary);">USDC</span></div>
-          <div class="breakdown-detail">
-            Aprobadas y fusionadas en GitHub (MallonePay, Parabola, SlipPay, Chain-Love #4728, #4767 y #4781, Prism, Go-Hybrid). En cola de sweep (31 Oct – 7 Nov).
-          </div>
+      <!-- KPI 3: Ganado Pendiente de Dispersión (PRs en Main) -->
+      <div class="kpi-card pending">
+        <div class="kpi-top">
+          <div class="kpi-badge pending">🟡 GANADO PENDIENTE DISPERSIÓN</div>
+          <span class="kpi-hint">44 PRs en Main</span>
         </div>
+        <div class="kpi-value" id="kpiWonPendingTotal">$6,715.00 <span class="kpi-unit">USDC</span></div>
+        <div class="kpi-desc">
+          Mergeadas en GitHub (Go-Hybrid, Parabola, MallonePay, Chain-Love, SlipPay).
+        </div>
+        <div class="kpi-progress-bar"><div class="bar-fill pending" style="width: 75%;"></div></div>
+      </div>
 
-        <!-- Columna 3: En Revisión Activa -->
-        <div class="breakdown-box review">
-          <div class="breakdown-header">
-            <span class="breakdown-tag review">🟣 En Revisión Activa (Sprints)</span>
-            <span style="font-size: 0.72rem; color: var(--accent-purple); font-weight: 700;">SPRINTS ABIERTOS</span>
-          </div>
-          <div class="breakdown-amount" id="boxReviewUsd">$10,636.00 <span style="font-size: 0.85rem; color: var(--text-secondary);">USDC</span></div>
-          <div class="breakdown-detail">
-            Prism (#378/#379/#380), Go-Hybrid (Wildcard #2189 + PRs #2865, #2872, #2876, #2887, #2938, #2964, #2986, #2996, #3013, #3219), PurseKeeper (Ӿ150), Doomsday Top-10 ($80). En evaluación.
-          </div>
+      <!-- KPI 4: Total Cobrado Histórico Efectivo -->
+      <div class="kpi-card won">
+        <div class="kpi-top">
+          <div class="kpi-badge won">🏆 COBRADO HISTÓRICO EFECTIVO</div>
+          <span class="kpi-hint">Transacciones Confirmadas</span>
         </div>
+        <div class="kpi-value" id="kpiSettledTotal">$46.03 <span class="kpi-unit">USDC</span></div>
+        <div class="kpi-desc">
+          $45.81 USDC (Swap Nanswap/Pursekeeper #132) + $0.22 USDC (Chain-Love #4767).
+        </div>
+        <div class="kpi-progress-bar"><div class="bar-fill won" style="width: 100%;"></div></div>
       </div>
     </section>
 
-    <!-- 3. Navigation Tabs Bar -->
-    <nav class="tabs-container">
-      <button class="tab-link active" data-tab="wallets">
-        <span>💼 Wallets & Saldos</span>
-        <span class="tab-pill">3 Wallets</span>
+    <!-- 3. Navegación por Pestañas Intuitiva -->
+    <nav class="executive-nav">
+      <button class="nav-tab active" data-tab="active-bounties">
+        <span class="tab-icon">⚡</span>
+        <span class="tab-text">Bounties Activos (Cobro Inmediato)</span>
+        <span class="tab-counter" id="tabActiveCount">7 Activos ($238.40)</span>
       </button>
-      <button class="tab-link" data-tab="reconciliation">
-        <span>⚖️ Desglose Líquido vs Pendiente</span>
-        <span class="tab-pill">Conciliación</span>
+
+      <button class="nav-tab" data-tab="wallets">
+        <span class="tab-icon">💼</span>
+        <span class="tab-text">Wallets & Saldos Reales</span>
+        <span class="tab-counter" id="tabWalletsCount">$64.93 USD</span>
       </button>
-      <button class="tab-link" data-tab="won">
-        <span>🏆 PRs Ganadas</span>
-        <span class="tab-pill">23 PRs ($3,040)</span>
+
+      <button class="nav-tab" data-tab="won-prs">
+        <span class="tab-icon">🏆</span>
+        <span class="tab-text">PRs Ganadas en Main</span>
+        <span class="tab-counter" id="tabWonCount">44 PRs ($6,715)</span>
       </button>
-      <button class="tab-link" data-tab="calendar">
-        <span>📅 Calendario de Cobros</span>
-        <span class="tab-pill">8 Hitos</span>
+
+      <button class="nav-tab" data-tab="history">
+        <span class="tab-icon">📜</span>
+        <span class="tab-text">Movimientos & Cobros</span>
+        <span class="tab-counter" id="tabHistoryCount">8 Tx</span>
       </button>
-      <button class="tab-link" data-tab="mining">
-        <span>⛏️ Minería PoW</span>
-        <span class="tab-pill">Top #8 Mundial</span>
-      </button>
-      <button class="tab-link" data-tab="pipeline">
-        <span>🌐 Pipeline Completo</span>
-        <span class="tab-pill">287 Bounties</span>
+
+      <button class="nav-tab" data-tab="pipeline">
+        <span class="tab-icon">🌐</span>
+        <span class="tab-text">Explorador Global de Bounties</span>
+        <span class="tab-counter" id="tabPipelineCount">Ver Todos</span>
       </button>
     </nav>
 
-    <!-- 4. PESTAÑA 1: WALLETS & SALDOS (Active Default) -->
-    <section class="tab-content-panel active" id="panel-wallets">
+    <!-- 4. PESTAÑA 1: BOUNTIES ACTIVOS DE COBRO INMEDIATO (Prioridad #1) -->
+    <section class="tab-pane active" id="pane-active-bounties">
+      <div class="pane-header">
+        <div>
+          <h2 class="pane-title">Entregas Recientes en Evaluación Inmediata (Zero-KYC)</h2>
+          <p class="pane-subtitle">Bounties entregados hoy con smart contracts financiados, claims minados en Base L2 y verificación on-chain en Solana.</p>
+        </div>
+        <div class="pane-summary-badge">
+          Total en Espera de Pago: <strong>$238.40 USD</strong>
+        </div>
+      </div>
 
-      <!-- MASTER CONSOLIDATED MULTI-WALLET TOKEN CARD (STRICTLY REALIZED ASSETS ONLY) -->
-      <div class="consolidated-tokens-card">
-        <div class="consolidated-header">
+      <div class="active-bounties-grid" id="activeBountiesContainer">
+        <!-- Rendered via JS -->
+      </div>
+    </section>
+
+    <!-- 5. PESTAÑA 2: WALLETS & SALDOS REALES -->
+    <section class="tab-pane" id="pane-wallets">
+      <div class="pane-header">
+        <div>
+          <h2 class="pane-title">Auditoría On-Chain de Wallets & Cuentas Físicas</h2>
+          <p class="pane-subtitle">Fondos bajo custodia directa sin estimaciones ni promesas externas.</p>
+        </div>
+        <div class="pane-summary-badge emerald">
+          Total Real en Mano: <strong>$64.93 USD</strong> (~61.00 €)
+        </div>
+      </div>
+
+      <div class="wallets-grid" id="walletsCardsContainer">
+        <!-- Rendered via JS -->
+      </div>
+    </section>
+
+    <!-- 6. PESTAÑA 3: PRS GANADAS (44 MERGEADAS) -->
+    <section class="tab-pane" id="pane-won-prs">
+      <div class="table-card-container">
+        <div class="table-card-header">
           <div>
-            <div style="font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--accent-emerald); font-weight: 700;">
-              ● 100% Fondos Reales en Cartera (Confirmados On-Chain)
-            </div>
-            <h2 style="font-size: 1.35rem; font-weight: 800; color: #fff; margin-top: 4px; display: flex; align-items: center; gap: 8px;">
-              <span>🏛️ Total Real en Cartera & Desglose de Tokens</span>
-            </h2>
-            <div style="font-size: 0.75rem; color: var(--text-muted); margin-top: 2px;">
-              Excluye promesas, estimaciones o aprobaciones externas. Solo muestra tokens custodiados físicamente en nuestras wallets.
-            </div>
+            <h2 class="pane-title" id="wonPrsTitle">44 Pull Requests Aprobadas y Fusionadas ($6,715.00 USDC)</h2>
+            <p class="pane-subtitle">Soluciones mergeadas en main por mantenedores oficiales, en espera de calendario de dispersión por lote.</p>
           </div>
-          <div style="display: flex; gap: 12px; flex-wrap: wrap; align-items: center;">
-            <div class="consolidated-pill highlight" style="border-color: rgba(0, 245, 160, 0.4); background: rgba(0, 245, 160, 0.06);">
-              <span class="pill-label" style="color: var(--accent-emerald);">Total Real en Cartera:</span>
-              <span class="pill-val emerald" id="tokenCardLiquidTotal" style="font-size: 1.4rem;">$3.70 USDC</span>
-            </div>
-            <div class="consolidated-pill" style="opacity: 0.75;">
-              <span class="pill-label">Equivalente Fiat:</span>
-              <span class="pill-val" style="color: #cbd5e1; font-size: 1.1rem;">~3.42 €</span>
-            </div>
-            <div class="consolidated-pill" style="opacity: 0.75;">
-              <span class="pill-label">Total Tokens Físicos:</span>
-              <span class="pill-val cyan" style="font-size: 1.1rem;">36,226.15 U.</span>
-            </div>
+          <div class="table-search-box">
+            <input type="text" id="wonPrSearch" placeholder="Filtrar PRs ganadas..." class="clean-input">
           </div>
         </div>
 
-        <!-- Token Breakdown Table (Strictly Real In-Wallet Tokens) -->
-        <div style="overflow-x: auto;">
-          <table class="data-table" style="background: transparent;">
+        <div class="table-scroll-wrapper">
+          <table class="modern-table">
             <thead>
               <tr>
-                <th>Token / Activo</th>
-                <th>Red Blockchain</th>
-                <th>Cuenta / Wallet Física</th>
-                <th>Cantidad en Cartera</th>
-                <th>Tasa de Cambio</th>
-                <th>Valor Real en USDC</th>
-                <th>Verificación On-Chain</th>
+                <th>ID</th>
+                <th>Repositorio & Proyecto</th>
+                <th>Solución / Pull Request</th>
+                <th>Recompensa</th>
+                <th>Fecha de Merge</th>
+                <th>Estado</th>
+                <th>Enlace</th>
               </tr>
             </thead>
-            <tbody id="consolidatedTokensTableBody">
+            <tbody id="wonPrsTableBody">
               <!-- Rendered via JS -->
             </tbody>
           </table>
         </div>
-
-        <div style="margin-top: 14px; padding: 10px 14px; background: rgba(255, 255, 255, 0.02); border: 1px solid var(--border-light); border-radius: var(--radius-sm); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px;">
-          <div style="font-size: 0.74rem; color: var(--text-muted);">
-            ℹ️ <strong style="color: #e2e8f0;">Política de Transparencia Estricta:</strong> Los $3,040.00 USDC de PRs aprobadas en GitHub no se suman aquí porque aún no han sido transferidos por los mantenedores.
-          </div>
-          <span class="badge-status success" style="font-size: 0.68rem;">CERO SALDOS FANTASMA</span>
-        </div>
-      </div>
-
-      <div class="wallets-overview-grid">
-<!-- WALLET 1: BASE L2 SETTLEMENT WALLET -->
-        <div class="wallet-tile">
-          <div>
-            <div class="wallet-tile-header">
-              <div>
-                <div class="wallet-tile-net" style="color: var(--accent-cyan);">Base Mainnet L2 · Chain 8453</div>
-                <div class="wallet-tile-name">Settlement Wallet EVM</div>
-              </div>
-              <span class="badge-status info">ERC-20</span>
-            </div>
-
-            <!-- Address Chip -->
-            <div class="wallet-address-chip" onclick="navigator.clipboard.writeText('0x8366bCe3a2D379De7656D7A67015789FaF999f20'); alert('Wallet Base copiada:\n0x8366bCe3a2D379De7656D7A67015789FaF999f20');" title="Copiar dirección">
-              <span>0x8366bCe3a2D379De...9f20</span>
-              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
-            </div>
-
-            <div class="wallet-balance-row">
-              <span class="wallet-balance-label">🟢 En Wallet (Líquido):</span>
-              <div class="wallet-balance-val emerald">
-                24,887.50 wDOOM <span style="color: var(--text-muted); font-size: 0.72rem;">(≈ $2.49 USD)</span>
-              </div>
-            </div>
-            <div class="wallet-balance-row">
-              <span class="wallet-balance-label">Gas ETH Disponible:</span>
-              <div class="wallet-balance-val">0.0000 ETH (Gasless ERC-4337)</div>
-            </div>
-            <div class="wallet-balance-row">
-              <span class="wallet-balance-label">🟡 Ganado Pendiente de Cobro:</span>
-              <div class="wallet-balance-val amber">$3,040.00 USDC</div>
-            </div>
-            <div class="wallet-balance-row">
-              <span class="wallet-balance-label">Transacciones BaseScan:</span>
-              <div class="wallet-balance-val">23 PRs Ganadas / 16 TXs BaseScan</div>
-            </div>
-          </div>
-
-          <div class="wallet-tile-footer">
-            <a href="https://basescan.org/address/0x8366bce3a2d379de7656d7a67015789faf999f20" target="_blank" class="btn-tile-action">BaseScan Address ↗</a>
-            <a href="https://basescan.org/token/0x623c84A5E04bF715018203334b0eFE41696eBC3E?a=0x8366bce3a2d379de7656d7a67015789faf999f20" target="_blank" class="btn-tile-action">wDOOM Token ↗</a>
-          </div>
-        </div>
-
-        <!-- WALLET 2: DOOMSDAY LAYER-1 MINING POOL -->
-        <div class="wallet-tile">
-          <div>
-            <div class="wallet-tile-header">
-              <div>
-                <div class="wallet-tile-net" style="color: var(--accent-purple);">Doomsday Layer-1 PoW</div>
-                <div class="wallet-tile-name">Nodo Minero Soberano</div>
-              </div>
-              <span class="badge-status purple">TOP #8 MUNDIAL</span>
-            </div>
-
-            <!-- Address Chip -->
-            <div class="wallet-address-chip" onclick="navigator.clipboard.writeText('doom162df6bb0c219de72343658ec04c1d9b1939c3c5c02f6b94f'); alert('Worker L1 copiado:\ndoom162df6bb0c219de72343658ec04c1d9b1939c3c5c02f6b94f');" title="Copiar worker">
-              <span>doom162df6bb0c21...6b94f</span>
-              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
-            </div>
-
-            <div class="wallet-balance-row">
-              <span class="wallet-balance-label">🟢 En Custodia L1 (Minado):</span>
-              <div class="wallet-balance-val" style="color: var(--accent-purple);">
-                11,614.26 DOOM <span style="color: var(--text-muted); font-size: 0.72rem;">(≈ $1.16 USD)</span>
-              </div>
-            </div>
-            <div class="wallet-balance-row">
-              <span class="wallet-balance-label">Desglose Minado:</span>
-              <div class="wallet-balance-val">9,614.26 Pool + 2,000 Génesis</div>
-            </div>
-            <div class="wallet-balance-row">
-              <span class="wallet-balance-label">🟡 Reclamación Pendiente:</span>
-              <div class="wallet-balance-val amber">4,000 wDOOM (Bounty Top-8)</div>
-            </div>
-            <div class="wallet-balance-row">
-              <span class="wallet-balance-label">Potencia Minera en Vivo:</span>
-              <div class="wallet-balance-val emerald">49.74 MH/s (4 Rigs Online)</div>
-            </div>
-          </div>
-
-          <div class="wallet-tile-footer">
-            <a href="https://doomsday.network/pool/worker/doom162df6bb0c219de72343658ec04c1d9b1939c3c5c02f6b94f" target="_blank" class="btn-tile-action">Telemetría Pool ↗</a>
-            <a href="https://doomsday.network/pool/leaderboard" target="_blank" class="btn-tile-action">Leaderboard ↗</a>
-          </div>
-        </div>
-
-        <!-- WALLET 3: NANO MAINNET SETTLEMENT WALLET -->
-        <div class="wallet-tile">
-          <div>
-            <div class="wallet-tile-header">
-              <div>
-                <div class="wallet-tile-net" style="color: var(--accent-emerald);">Nano Block Lattice · XNO</div>
-                <div class="wallet-tile-name">Settlement M2M Instantánea</div>
-              </div>
-              <span class="badge-status success">FEES: 0.00</span>
-            </div>
-
-            <!-- Address Chip -->
-            <div class="wallet-address-chip" onclick="navigator.clipboard.writeText('nano_3i7nondimxz8zbqn6kkoffoqydi61ektguf6sq8n7m7k77iznhn7y9mxxubg'); alert('Wallet Nano Oficial copiada:\nnano_3i7nondimxz8zbqn6kkoffoqydi61ektguf6sq8n7m7k77iznhn7y9mxxubg');" title="Copiar dirección">
-              <span>nano_3i7nondim...xxubg</span>
-              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
-            </div>
-
-            <div class="wallet-balance-row">
-              <span class="wallet-balance-label">🟢 En Wallet (Líquido):</span>
-              <div class="wallet-balance-val emerald">
-                Ӿ0.048 XNO <span style="color: var(--text-muted); font-size: 0.72rem;">(≈ $0.05 USD)</span>
-              </div>
-            </div>
-            <div class="wallet-balance-row">
-              <span class="wallet-balance-label">Estado en Ledger:</span>
-              <div class="wallet-balance-val">Ledger #491 & #524 Verificado</div>
-            </div>
-            <div class="wallet-balance-row">
-              <span class="wallet-balance-label">🟡 Ganado Pendiente de Cobro:</span>
-              <div class="wallet-balance-val amber">Ӿ150.00 XNO (≈ $50.00 USD)</div>
-            </div>
-            <div class="wallet-balance-row">
-              <span class="wallet-balance-label">Adjudicación Pursekeeper:</span>
-              <div class="wallet-balance-val emerald">Slot 1 PASS (Decisión #915)</div>
-            </div>
-          </div>
-
-          <div class="wallet-tile-footer">
-            <a href="https://blocklattice.io/account/nano_3i7nondimxz8zbqn6kkoffoqydi61ektguf6sq8n7m7k77iznhn7y9mxxubg" target="_blank" class="btn-tile-action">BlockLattice ↗</a>
-            <a href="https://pursekeeper.dev/log" target="_blank" class="btn-tile-action">Ledger Log ↗</a>
-          </div>
-        </div>
-
       </div>
     </section>
 
-    <!-- 5. PESTAÑA 2: CONCILIACIÓN AUDITADA (LÍQUIDO VS PENDIENTE) -->
-    <section class="tab-content-panel" id="panel-reconciliation">
-      <div class="table-card">
-        <div class="table-header-box">
+    <!-- 7. PESTAÑA 4: MOVIMIENTOS & COBROS HISTÓRICOS -->
+    <section class="tab-pane" id="pane-history">
+      <div class="table-card-container">
+        <div class="table-card-header">
           <div>
-            <div class="table-title">Auditoría Financiera: Lo que está en Wallet vs Lo Pendiente</div>
-            <div class="table-subtitle">Trazabilidad detallada de fondos en posesión, aprobaciones de mantenedores y estado de dispersión</div>
+            <h2 class="pane-title">Registro Contable de Cobros y Swaps</h2>
+            <p class="pane-subtitle">Trazabilidad inmutable de entradas netas, despachos y conversiones a la Settlement Wallet.</p>
           </div>
-          <div class="filter-btn-group">
-            <button class="btn-filter active" data-filter="ALL">Todos</button>
-            <button class="btn-filter" data-filter="LIQUID">Solo en Wallet</button>
-            <button class="btn-filter" data-filter="PENDING">Solo Pendientes</button>
-            <button class="btn-filter" data-filter="REVIEW">En Revisión</button>
+          <div class="filter-pill-group">
+            <button class="filter-pill active" data-tx-filter="ALL">Todos los Movimientos</button>
+            <button class="filter-pill" data-tx-filter="INCOME">🟢 Entradas / Cobros</button>
+            <button class="filter-pill" data-tx-filter="SWAP">🔄 Swaps & Conversiones</button>
           </div>
         </div>
 
-        <div style="overflow-x: auto;">
-          <table class="data-table">
+        <div class="table-scroll-wrapper">
+          <table class="modern-table">
             <thead>
               <tr>
-                <th>Categoría</th>
-                <th>Concepto / Repositorio</th>
-                <th>Wallet Receptora</th>
-                <th>Monto Estimado</th>
-                <th>Estado & Ciclo de Dispersión</th>
-                <th>Evidencia</th>
+                <th>Fecha / ID</th>
+                <th>Tipo</th>
+                <th>Concepto / Operación</th>
+                <th>Red / Rail</th>
+                <th>Entrada (+)</th>
+                <th>Salida (-)</th>
+                <th>Tx Hash / Evidencia</th>
+                <th>Estado Contable</th>
               </tr>
             </thead>
-            <tbody id="reconciliationTableBody">
-              <!-- Rendered dynamically -->
+            <tbody id="txHistoryTableBody">
+              <!-- Rendered via JS -->
             </tbody>
           </table>
         </div>
       </div>
     </section>
 
-    <!-- 6. PESTAÑA 3: PRS GANADAS (16 PRS APROBADAS EN MAIN) -->
-    <section class="tab-content-panel" id="panel-won">
-      <div class="table-card">
-        <div class="table-header-box">
+    <!-- 8. PESTAÑA 5: PIPELINE COMPLETO -->
+    <section class="tab-pane" id="pane-pipeline">
+      <div class="table-card-container">
+        <div class="table-card-header">
           <div>
-            <div class="table-title">16 Pull Requests Aprobadas y Fusionadas ($2,350.00 USDC)</div>
-            <div class="table-subtitle">Soluciones mergeadas en main por mantenedores oficiales de MallonePay, Parabola, SlipPay y Chain-Love</div>
+            <h2 class="pane-title">Explorador Global de Bounties y Propuestas</h2>
+            <p class="pane-subtitle">Repositorio unificado con motor de búsqueda y filtros por plataforma.</p>
           </div>
-          <div style="font-family: var(--font-mono); font-weight: 700; color: var(--accent-emerald);">
-            Total: $2,350.00 USDC
-          </div>
-        </div>
-
-        <div style="overflow-x: auto;">
-          <table class="data-table">
-            <thead>
-              <tr>
-                <th>Hito</th>
-                <th>Repositorio & Solución</th>
-                <th>Pull Request</th>
-                <th>Recompensa</th>
-                <th>Fecha Merge</th>
-                <th>Estado</th>
-              </tr>
-            </thead>
-            <tbody id="wonTableBody">
-              <!-- Rendered dynamically -->
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </section>
-
-    <!-- 7. PESTAÑA 4: CALENDARIO DE COBROS -->
-    <section class="tab-content-panel" id="panel-calendar">
-      <div class="table-card">
-        <div class="table-header-box">
-          <div>
-            <div class="table-title">Calendario Estimado de Dispersión y Cierres de Ciclo</div>
-            <div class="table-subtitle">Fechas de cobro programadas con organizadores y smart contracts de dispersión</div>
-          </div>
-        </div>
-
-        <div style="overflow-x: auto;">
-          <table class="data-table">
-            <thead>
-              <tr>
-                <th>Ventana Estimada</th>
-                <th>Proyecto / Plataforma</th>
-                <th>Canal de Liquidación</th>
-                <th>Importe</th>
-                <th>Estado del Sweep</th>
-              </tr>
-            </thead>
-            <tbody id="calendarTableBody">
-              <!-- Rendered dynamically -->
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </section>
-
-    <!-- 8. PESTAÑA 5: MINERÍA POW (TOP-8 MUNDIAL CONSOLIDADO) -->
-    <section class="tab-content-panel" id="panel-mining">
-      <div class="table-card" style="margin-bottom: 20px;">
-        <div class="table-header-box">
-          <div>
-            <div class="table-title">Telemetría del Clúster Minero Doomsday L1 (4 Rigs 24/7)</div>
-            <div class="table-subtitle">Nodo minero descentralizado minando SHA-256 en la Layer-1 sin intermediarios</div>
-          </div>
-          <div class="badge-status purple" style="font-size: 0.8rem;">
-            🏆 PUESTO #8 MUNDIAL CONSOLIDADO
-          </div>
-        </div>
-
-        <div style="padding: 24px;">
-          <!-- Progress Bar to Rank 7 -->
-          <div style="display: flex; justify-content: space-between; font-size: 0.8rem; margin-bottom: 8px;">
-            <span style="color: var(--text-muted);">Progreso hacia el Puesto #7 Mundial (14,200.00 DOOM):</span>
-            <strong style="color: var(--accent-emerald);">79.85% COMPLETADO (11,338.60 DOOM minados)</strong>
-          </div>
-          <div style="background: rgba(255,255,255,0.06); height: 12px; border-radius: 6px; overflow: hidden; margin-bottom: 24px;">
-            <div style="background: linear-gradient(90deg, #A855F7, #00F5A0); width: 79.85%; height: 100%;"></div>
-          </div>
-
-          <!-- Rigs Grid -->
-          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px;">
-            <div class="breakdown-box">
-              <div style="font-size: 0.75rem; color: var(--text-muted);">Rig 1 · Portátil Windows x64 (Local)</div>
-              <div style="font-size: 1.25rem; font-weight: 800; font-family: var(--font-mono); color: #fff; margin: 4px 0;">35.04 MH/s</div>
-              <div style="font-size: 0.72rem; color: var(--accent-emerald);">● Online · 70.4% de la potencia</div>
+          <div class="pipeline-controls">
+            <div class="filter-pill-group">
+              <button class="filter-pill active" data-platform-filter="ALL">Todos</button>
+              <button class="filter-pill" data-platform-filter="POIDH">POIDH (Base)</button>
+              <button class="filter-pill" data-platform-filter="SOLANA">Solana</button>
+              <button class="filter-pill" data-platform-filter="GITHUB">GitHub PRs</button>
             </div>
-            <div class="breakdown-box">
-              <div style="font-size: 0.75rem; color: var(--text-muted);">Rig 2 · Cloud VPS 1 (Windows Server)</div>
-              <div style="font-size: 1.25rem; font-weight: 800; font-family: var(--font-mono); color: #fff; margin: 4px 0;">7.55 MH/s</div>
-              <div style="font-size: 0.72rem; color: var(--accent-emerald);">● Online · 8 Cores 100%</div>
-            </div>
-            <div class="breakdown-box">
-              <div style="font-size: 0.75rem; color: var(--text-muted);">Rig 3 · Cloud VPS 2 (Windows Server)</div>
-              <div style="font-size: 1.25rem; font-weight: 800; font-family: var(--font-mono); color: #fff; margin: 4px 0;">7.00 MH/s</div>
-              <div style="font-size: 0.72rem; color: var(--accent-emerald);">● Online · 2 Cores 100%</div>
-            </div>
-            <div class="breakdown-box">
-              <div style="font-size: 0.75rem; color: var(--text-muted);">Rig 4 · Mac Eco-Rig (Silencioso)</div>
-              <div style="font-size: 1.25rem; font-weight: 800; font-family: var(--font-mono); color: #fff; margin: 4px 0;">0.15 MH/s</div>
-              <div style="font-size: 0.72rem; color: var(--accent-cyan);">● Online · 1 Core (&lt; 2% CPU)</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- 9. PESTAÑA 6: PIPELINE COMPLETO (257 BOUNTIES) -->
-    <section class="tab-content-panel" id="panel-pipeline">
-      <div class="table-card">
-        <div class="table-header-box">
-          <div>
-            <div class="table-title">Pipeline Global Completo (257 Oportunidades Trazadas)</div>
-            <div class="table-subtitle">Buscador y filtros en tiempo real sobre el repositorio consolidado de bounties</div>
-          </div>
-          <div>
-            <input type="text" id="pipelineSearch" class="search-input-box" placeholder="Buscar por repositorio, título o tag...">
+            <input type="text" id="globalPipelineSearch" placeholder="Buscar por título, ID o repo..." class="clean-input search">
           </div>
         </div>
 
-        <div style="overflow-x: auto;">
-          <table class="data-table">
+        <div class="table-scroll-wrapper">
+          <table class="modern-table">
             <thead>
               <tr>
                 <th>ID</th>
-                <th>Proyecto / Repositorio</th>
-                <th>Título / Alcance</th>
+                <th>Plataforma / Red</th>
+                <th>Título / Oportunidad</th>
                 <th>Recompensa</th>
                 <th>Estado</th>
-                <th>Acción</th>
+                <th>Enlace</th>
               </tr>
             </thead>
-            <tbody id="pipelineTableBody">
-              <!-- Rendered dynamically -->
+            <tbody id="globalPipelineTableBody">
+              <!-- Rendered via JS -->
             </tbody>
           </table>
         </div>
       </div>
     </section>
 
+    <!-- Footer Discreto -->
+    <footer class="app-footer">
+      <div>Bounty Hunter AI v2.5 · Ejecutor Autónomo de Bounties · Settlement Oficial: <code>0x8366bCe3a2D379De7656D7A67015789FaF999f20</code></div>
+      <div>Zero-KYC · 100% Criptográficamente Verificable en BaseScan y Solscan</div>
+    </footer>
+
   </div>
 
-  <script src="./app.js?v=1793287977"></script>
+  <script src="./app.js?v=2.0"></script>
 </body>
 </html>
