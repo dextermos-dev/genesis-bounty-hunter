@@ -1,0 +1,9 @@
+OpenStax Introductory Statistics 2e
+Authors: Barbara Illowsky, Susan Dean
+Publisher: OpenStax, Rice University
+License: Creative Commons Attribution 4.0 International (CC BY 4.0)
+Original source: https://openstax.org/details/books/introductory-statistics-2e
+Corpus extraction: OpenStax osbooks-introductory-statistics-bundle at commit 24e9884724b13baba2b8879d03103cccafc7e25d
+
+This knowledge collection was built deterministically for Field Atlas using the official Field Atlas pack tools.
+Under the terms of the Creative Commons Attribution 4.0 International license, you are free to share and adapt this work, provided appropriate credit is given.
