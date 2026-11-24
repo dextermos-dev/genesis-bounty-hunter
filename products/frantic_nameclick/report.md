@@ -1,0 +1,5 @@
+# Nameclick Dogfooding & Evaluation Report
+
+- **Installation & Setup**: Installed the official Nameclick extension (ID `hnknkbjoidfdjocmdjjfchiggmgmcojl`) directly from the official Chrome Web Store in Brave browser. The installation completed smoothly and the web store interface immediately reflected the installed state with the "Desinstalar de Brave" control.
+- **Execution & Lookup**: Opened the Nameclick toolbar popup and performed a live person lookup for "David García" at "Comercial Industrial García SA". The extension presented a clear candidate disambiguation list, allowed selecting the commercial representative entry, and initiated contact resolution without UI lag.
+- **Outcome & Observation**: The lookup completed with a definitive, cleanly styled no-match result card ("No email found for David García") confirming that no search credits were consumed ("Nothing was used"). The interactive prompt offering domain correction provides intuitive UX guidance for sales and research workflows.
