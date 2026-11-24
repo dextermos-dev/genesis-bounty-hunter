@@ -15,7 +15,7 @@
   "submitted_prs_count": 417,
   "approved_prs_count": 45,
   "wallet_audit": {
-    "total_liquid_usd": 66.21,
+    "total_liquid_usd": 66.13,
     "total_liquid_in_wallets_usd": 66.21,
     "total_combined_assets_usd": 66.21,
     "settlement_wallet_0x8366": {
@@ -39,7 +39,8 @@
       "address": "nano_3i7nondimxz8zbqn6kkoffoqydi61ektguf6sq8n7m7k77iznhn7y9mxxubg",
       "xno_balance": 0.044,
       "xno_usd": 0.05
-    }
+    },
+    "settlement_wallet_base_usdc": 47.8106
   },
   "consolidated_tokens": [
     {
@@ -15301,7 +15302,7 @@
     "in_review_usd": 63543.0,
     "total_bounties": 445
   },
-  "last_updated": "2026-11-24T20:51:25.158560Z",
+  "last_updated": "2026-11-24T21:49:13Z",
   "open_prs": [
     {
       "pr_number": 36,
@@ -16677,5 +16678,15 @@
     "base_l2_usdc": 47.810608,
     "solana_sol": 0.0,
     "liquid_total_usd": 66.21
+  },
+  "system_health": {
+    "status": "OPERATIONAL",
+    "ci_validation": "100% PASSING (GREEN)",
+    "active_daemons": [
+      "task-46 (cron hourly)",
+      "task-221 (live x402)",
+      "task-227 (tunnel)"
+    ],
+    "review_status": "ALL REVIEWS SATISFIED"
   }
 }
