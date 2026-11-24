@@ -15,7 +15,10 @@
     - `activity_query`: `{"name":"David García","company":"Comercial Industrial García SA","occurred_near":"2026-11-24T15:50:00Z"}`.
   - **Rail de Liquidación:** `x402` hacia `0x8366bCe3a2D379De7656D7A67015789FaF999f20`.
 - **Field Atlas / POIDH Bounty #1554 (0.008 ETH en Escrow Base L2 / ~$25 USD):**
-  - **Estado:** Paquete `.fapack` (OpenStax Introductory Statistics 2e, 82 secciones, 3.6 MB) compilado determinísticamente con `packtool`, testeado en FTS5 (5/5 respuestas exactas) y publicado en GitHub (commit `a92086c`).
+  - **Estado:** **CLAIM #4567 MINADO Y CONFIRMADO ON-CHAIN EN BASE L2**.
+  - **Transacción On-Chain:** `0xe11e74dd0dfc2d353d652d39857216ff4b69a61e09bd8b80cf7e6a7b69f1be6e`
+  - **Claimer:** `0x8e2576c3418cEcA3970ea16F1047EfC5b881820F`
+  - **Paquete .fapack:** (OpenStax Introductory Statistics 2e, 82 secciones, 3.6 MB) compilado determinísticamente con `packtool`, testeado en FTS5 (5/5 respuestas exactas) y publicado en GitHub (commit `a92086c`).
   - **Entregable Oficial:** `outputs/deliverables/poidh_bounty_1554_field_atlas_intro_stats.md`
   - **Descarga Directa:** `products/fieldatlas_intro_statistics/openstax-introductory-statistics-2026.11.24.fapack`
   - **On-chain ID:** `568` en `0x5555Fa783936C260f77385b4E153B9725feF1719`.
