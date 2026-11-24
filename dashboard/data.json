@@ -13,7 +13,7 @@
   "total_claimed_usd": 150777.37,
   "total_pipeline_value_usd": 68321.0,
   "submitted_prs_count": 417,
-  "approved_prs_count": 45,
+  "approved_prs_count": 58,
   "wallet_audit": {
     "total_liquid_usd": 66.13,
     "total_liquid_in_wallets_usd": 66.21,
@@ -697,544 +697,584 @@
   ],
   "won_prs": [
     {
-      "id": "PR-01",
-      "repo": "mallonepay/pay-per-token-llm-gateway",
-      "pr": "PR #127",
-      "title": "Soroban credit escrow settlement engine",
-      "amount": 800.0,
-      "audited_amount": 800.0,
-      "date": "2026-09-09",
-      "url": "https://github.com/Pay-Per-Token-LLM-Gateway/pay-per-token-llm-gateway/pull/127",
-      "status": "Merged en main",
-      "notes": "Aprobado y fusionado formalmente en upstream/main"
-    },
-    {
-      "id": "PR-02",
-      "repo": "mallonepay/pay-per-token-llm-gateway",
-      "pr": "PR #133",
-      "title": "Migrate contracts to Soroban SDK 26.1.1 (18/18 CI Verde)",
-      "amount": 200.0,
-      "audited_amount": 200.0,
-      "date": "2026-10-29",
-      "url": "https://github.com/Pay-Per-Token-LLM-Gateway/pay-per-token-llm-gateway/pull/133",
-      "status": "Merged en main",
-      "notes": "Aprobado y fusionado formalmente en upstream/main"
-    },
-    {
-      "id": "PR-03",
-      "repo": "mallonepay/pay-per-token-llm-gateway",
-      "pr": "PR #134",
-      "title": "External custody contract security audit (Issue #83)",
-      "amount": 350.0,
-      "audited_amount": 350.0,
-      "date": "2026-10-29",
-      "url": "https://github.com/Pay-Per-Token-LLM-Gateway/pay-per-token-llm-gateway/pull/134",
-      "status": "Merged en main",
-      "notes": "Aprobado y fusionado formalmente en upstream/main"
-    },
-    {
-      "id": "PR-04",
-      "repo": "Parabola-org/parabola",
-      "pr": "PR #101",
-      "title": "Add missing export for calculatePoolShares",
-      "amount": 105.0,
-      "audited_amount": 105.0,
-      "date": "2026-10-16",
-      "url": "https://github.com/Parabola-org/parabola/pull/101",
-      "status": "Merged en main",
-      "notes": "Aprobado y fusionado formalmente en upstream/main"
-    },
-    {
-      "id": "PR-05",
-      "repo": "Parabola-org/parabola",
-      "pr": "PR #104",
-      "title": "Fix slippage tolerance bounds in swap math",
-      "amount": 105.0,
-      "audited_amount": 105.0,
-      "date": "2026-10-16",
-      "url": "https://github.com/Parabola-org/parabola/pull/104",
-      "status": "Merged en main",
-      "notes": "Aprobado y fusionado formalmente en upstream/main"
-    },
-    {
-      "id": "PR-06",
-      "repo": "Parabola-org/parabola",
-      "pr": "PR #116",
-      "title": "Validate token pair decimals on initialization",
-      "amount": 125.0,
-      "audited_amount": 125.0,
-      "date": "2026-10-16",
-      "url": "https://github.com/Parabola-org/parabola/pull/116",
-      "status": "Merged en main",
-      "notes": "Aprobado y fusionado formalmente en upstream/main"
-    },
-    {
-      "id": "PR-07",
-      "repo": "Parabola-org/parabola",
-      "pr": "PR #109",
-      "title": "Clamp oracle update frequency to avoid stale prices",
-      "amount": 125.0,
-      "audited_amount": 125.0,
-      "date": "2026-10-16",
-      "url": "https://github.com/Parabola-org/parabola/pull/109",
-      "status": "Merged en main",
-      "notes": "Aprobado y fusionado formalmente en upstream/main"
-    },
-    {
-      "id": "PR-08",
-      "repo": "Parabola-org/parabola",
-      "pr": "PR #115",
-      "title": "Refactor pool reentrancy guard for Gas efficiency",
-      "amount": 60.0,
-      "audited_amount": 60.0,
-      "date": "2026-10-16",
-      "url": "https://github.com/Parabola-org/parabola/pull/115",
-      "status": "Merged en main",
-      "notes": "Aprobado y fusionado formalmente en upstream/main"
-    },
-    {
-      "id": "PR-09",
-      "repo": "Parabola-org/parabola",
-      "pr": "PR #99",
-      "title": "Fix edge case in fee distribution rounding",
-      "amount": 45.0,
-      "audited_amount": 45.0,
-      "date": "2026-10-16",
-      "url": "https://github.com/Parabola-org/parabola/pull/99",
-      "status": "Merged en main",
-      "notes": "Aprobado y fusionado formalmente en upstream/main"
-    },
-    {
-      "id": "PR-10",
-      "repo": "Parabola-org/parabola",
-      "pr": "PR #100",
-      "title": "Add strict bounds check to pool deposit liquidity",
-      "amount": 45.0,
-      "audited_amount": 45.0,
-      "date": "2026-10-16",
-      "url": "https://github.com/Parabola-org/parabola/pull/100",
-      "status": "Merged en main",
-      "notes": "Aprobado y fusionado formalmente en upstream/main"
-    },
-    {
-      "id": "PR-11",
-      "repo": "slippay-labs/slippay",
-      "pr": "PR #264",
-      "title": "Harden token transfer auth callback validation",
-      "amount": 75.0,
-      "audited_amount": 75.0,
-      "date": "2026-10-18",
-      "url": "https://github.com/slippay-labs/slippay/pull/264",
-      "status": "Merged en main",
-      "notes": "Aprobado y fusionado formalmente en upstream/main"
-    },
-    {
-      "id": "PR-12",
+      "pr_number": 5506,
       "repo": "Chain-Love/chain-love",
-      "pr": "PR #4728",
-      "title": "Almizaan smart contract security scanner (Liquidaci\u00f3n USS-Compensator 0.20 USDC)",
-      "amount": 140.0,
-      "audited_amount": 0.2,
-      "date": "2026-10-21",
-      "url": "https://github.com/Chain-Love/chain-love/pull/4728",
-      "status": "Merged en main",
-      "notes": "Aprobado y fusionado formalmente en upstream/main"
-    },
-    {
-      "id": "PR-13",
-      "repo": "slippay-labs/slippay",
-      "pr": "PR #228",
-      "title": "Fix decimal truncation on micro-payment streams",
-      "amount": 70.0,
-      "audited_amount": 70.0,
-      "date": "2026-10-21",
-      "url": "https://github.com/slippay-labs/slippay/pull/228",
-      "status": "Merged en main",
-      "notes": "Aprobado y fusionado formalmente en upstream/main"
-    },
-    {
-      "id": "PR-14",
-      "repo": "slippay-labs/slippay",
-      "pr": "PR #453",
-      "title": "Add idempotent receipt verification for off-chain relays",
-      "amount": 35.0,
-      "audited_amount": 35.0,
-      "date": "2026-10-21",
-      "url": "https://github.com/slippay-labs/slippay/pull/453",
-      "status": "Merged en main",
-      "notes": "Aprobado y fusionado formalmente en upstream/main"
-    },
-    {
-      "id": "PR-15",
-      "repo": "slippay-labs/slippay",
-      "pr": "PR #435",
-      "title": "Enforce non-zero destination check in multi-send",
-      "amount": 35.0,
-      "audited_amount": 35.0,
-      "date": "2026-10-21",
-      "url": "https://github.com/slippay-labs/slippay/pull/435",
-      "status": "Merged en main",
-      "notes": "Aprobado y fusionado formalmente en upstream/main"
-    },
-    {
-      "id": "PR-16",
-      "repo": "slippay-labs/slippay",
-      "pr": "PR #340",
-      "title": "Fix timeout retry loop on Soroban RPC network congestion",
-      "amount": 35.0,
-      "audited_amount": 35.0,
-      "date": "2026-10-21",
-      "url": "https://github.com/slippay-labs/slippay/pull/340",
-      "status": "Merged en main",
-      "notes": "Aprobado y fusionado formalmente en upstream/main"
-    },
-    {
-      "id": "PR-17",
-      "repo": "DevNiola/Prism",
-      "pr": "PR #150",
-      "title": "Add Dependabot configuration for dependency updates (closes #140)",
-      "amount": 150.0,
-      "audited_amount": 150.0,
-      "date": "2026-10-30",
-      "url": "https://github.com/DevNiola/Prism/pull/150",
-      "status": "Merged en main",
-      "notes": "Aprobado y fusionado formalmente en upstream/main"
-    },
-    {
-      "id": "PR-18",
-      "repo": "limitlessprojects/Go-Hybrid",
-      "pr": "PR #2339",
-      "title": "Preserve return-slot indices on mixed named/unnamed results (fixes #2323)",
-      "amount": 75.0,
-      "audited_amount": 75.0,
-      "date": "2026-10-30",
-      "url": "https://github.com/limitlessprojects/Go-Hybrid/pull/2339",
-      "status": "Merged en main",
-      "notes": "Aprobado y fusionado formalmente en upstream/main"
-    },
-    {
-      "id": "PR-19",
-      "repo": "limitlessprojects/Go-Hybrid",
-      "pr": "PR #2492",
-      "title": "Reject equality comparisons between non-nilable types and nil (fixes #2471)",
-      "amount": 75.0,
-      "audited_amount": 75.0,
-      "date": "2026-10-31",
-      "url": "https://github.com/limitlessprojects/Go-Hybrid/pull/2492",
-      "status": "Merged en main",
-      "notes": "Aprobado y fusionado formalmente en upstream/main"
-    },
-    {
-      "id": "PR-20",
-      "repo": "limitlessprojects/Go-Hybrid",
-      "pr": "PR #2549",
-      "title": "Reject octal multi-iteration and induction variable mutation in loop backedge bypass (fixes #2512)",
-      "amount": 75.0,
-      "audited_amount": 75.0,
-      "date": "2026-11-01",
-      "url": "https://github.com/limitlessprojects/Go-Hybrid/pull/2549",
-      "status": "Merged en main",
-      "notes": "Aprobado y fusionado formalmente en upstream/main"
-    },
-    {
-      "id": "PR-21",
-      "repo": "limitlessprojects/Go-Hybrid",
-      "pr": "PR #2747",
-      "title": "Reject mismatched slice and string elements in variadic append (fixes #2738)",
-      "amount": 75.0,
-      "audited_amount": 75.0,
-      "date": "2026-11-01",
-      "url": "https://github.com/limitlessprojects/Go-Hybrid/pull/2747",
-      "status": "Merged en main",
-      "notes": "Aprobado y fusionado formalmente en upstream/main"
-    },
-    {
-      "id": "PR-22",
-      "repo": "Chain-Love/chain-love",
-      "pr": "PR #4767",
-      "title": "Add Circle USDC & WSOMI contracts (Liquidaci\u00f3n USS-Compensator)",
-      "amount": 140.0,
-      "audited_amount": 0.8,
-      "date": "2026-11-01",
-      "url": "https://github.com/Chain-Love/chain-love/pull/4767",
-      "status": "Merged en main",
-      "notes": "Aprobado y fusionado formalmente en upstream/main"
-    },
-    {
-      "id": "PR-23",
-      "repo": "Chain-Love/chain-love",
-      "pr": "PR #4781",
-      "title": "Official Providers Documentation (Liquidaci\u00f3n USS-Compensator)",
-      "amount": 100.0,
-      "audited_amount": 0.6,
-      "date": "2026-11-01",
-      "url": "https://github.com/Chain-Love/chain-love/pull/4781",
-      "status": "Merged en main",
-      "notes": "Aprobado y fusionado formalmente en upstream/main"
-    },
-    {
-      "id": "PR-24",
-      "repo": "limitlessprojects/Go-Hybrid",
-      "pr": "PR #3219",
-      "title": "defer store-back when slot loan is captured by deferred closure (fixes #3209)",
-      "amount": 150.0,
-      "audited_amount": 150.0,
-      "date": "2026-11-02",
-      "url": "https://github.com/limitlessprojects/Go-Hybrid/pull/3219",
-      "status": "Merged en main",
-      "notes": "Aprobado y fusionado formalmente en upstream/main"
-    },
-    {
-      "id": "PR-25",
-      "repo": "limitlessprojects/Go-Hybrid",
-      "pr": "PR #3704",
-      "title": "fix(hy-check): resolve composite operand array lengths for bounds checks (fixes #3694)",
-      "amount": 75.0,
-      "audited_amount": 75.0,
-      "date": "2026-11-05",
-      "url": "https://github.com/limitlessprojects/Go-Hybrid/pull/3704",
-      "status": "Merged en main",
-      "notes": "Aprobado y fusionado formalmente en upstream/main"
-    },
-    {
-      "id": "PR-26",
-      "repo": "limitlessprojects/Go-Hybrid",
-      "pr": "PR #3706",
-      "title": "hy-check: resolve [N]T, map[K]V, and option[T] in generic struct field kinds (fixes #3705)",
-      "amount": 75.0,
-      "audited_amount": 75.0,
-      "date": "2026-11-05",
-      "url": "https://github.com/limitlessprojects/Go-Hybrid/pull/3706",
-      "status": "Merged en main",
-      "notes": "Aprobado y fusionado formalmente en upstream/main"
-    },
-    {
-      "id": "PR-27",
-      "repo": "limitlessprojects/Go-Hybrid",
-      "pr": "PR #3711",
-      "title": "hy-emit: preserve user struct names and foreign member shapes across calls (fixes #3710)",
-      "amount": 75.0,
-      "audited_amount": 75.0,
-      "date": "2026-11-05",
-      "url": "https://github.com/limitlessprojects/Go-Hybrid/pull/3711",
-      "status": "Merged en main",
-      "notes": "Aprobado y fusionado formalmente en upstream/main"
-    },
-    {
-      "id": "PR-28",
-      "repo": "limitlessprojects/Go-Hybrid",
-      "pr": "PR #3739",
-      "title": "hy-check(const_init): reject non-const string conversion args and enum-shadowed const type ascriptions (fixes #3735)",
-      "amount": 150.0,
-      "audited_amount": 150.0,
-      "date": "2026-11-06",
-      "url": "https://github.com/limitlessprojects/Go-Hybrid/pull/3739",
-      "status": "Merged en main",
-      "notes": "Aprobado y fusionado formalmente en upstream/main"
-    },
-    {
-      "id": "PR-29",
-      "repo": "limitlessprojects/Go-Hybrid",
-      "pr": "PR #3804",
-      "title": "hy-check: reject errors.wrap when fmt is shadowed by in-scope declaration (fixes #3626)",
-      "amount": 150.0,
-      "audited_amount": 150.0,
-      "date": "2026-11-07",
-      "url": "https://github.com/limitlessprojects/Go-Hybrid/pull/3804",
-      "status": "Merged en main",
-      "notes": "Aprobado y fusionado formalmente en upstream/main"
-    },
-    {
-      "id": "PR-30",
-      "repo": "limitlessprojects/Go-Hybrid",
-      "pr": "PR #3811",
-      "title": "hy-check: reject string interpolation when fmt is shadowed (fixes #3568)",
-      "amount": 150.0,
-      "audited_amount": 150.0,
-      "date": "2026-11-07",
-      "url": "https://github.com/limitlessprojects/Go-Hybrid/pull/3811",
-      "status": "Merged en main",
-      "notes": "Aprobado y fusionado formalmente en upstream/main"
-    },
-    {
-      "id": "PR-31",
-      "repo": "limitlessprojects/Go-Hybrid",
-      "pr": "PR #3861",
-      "title": "hy-check(range_iter): prevent caller local shadows on const bounds, guard enum/type-param set iterables (fixes #3853)",
-      "amount": 150.0,
-      "audited_amount": 150.0,
-      "date": "2026-11-07",
-      "url": "https://github.com/limitlessprojects/Go-Hybrid/pull/3861",
-      "status": "Merged en main",
-      "notes": "Aprobado y fusionado formalmente en upstream/main"
-    },
-    {
-      "id": "PR-32",
-      "repo": "limitlessprojects/Go-Hybrid",
-      "pr": "PR #3867",
-      "title": "hy-check(const_init): reject type-parameter shadows on const conversions, ascriptions, and file constants (fixes #3851)",
-      "amount": 150.0,
-      "audited_amount": 150.0,
-      "date": "2026-11-07",
-      "url": "https://github.com/limitlessprojects/Go-Hybrid/pull/3867",
-      "status": "Merged en main",
-      "notes": "Aprobado y fusionado formalmente en upstream/main"
-    },
-    {
-      "id": "PR-33",
-      "repo": "limitlessprojects/Go-Hybrid",
-      "pr": "PR #3614",
-      "title": "hy-check: reject fmt.eprint* when os is shadowed (#3598)",
-      "amount": 700.0,
-      "audited_amount": 700.0,
-      "date": "2026-11-09",
-      "url": "https://github.com/limitlessprojects/Go-Hybrid/pull/3614",
-      "status": "Merged en main",
-      "notes": "Aprobado y fusionado formalmente en upstream/main"
-    },
-    {
-      "id": "PR-34",
-      "repo": "limitlessprojects/Go-Hybrid",
-      "pr": "PR #3612",
-      "title": "hy-check: track sized-array type of literal-initialised locals (#3599)",
-      "amount": 700.0,
-      "audited_amount": 700.0,
-      "date": "2026-11-09",
-      "url": "https://github.com/limitlessprojects/Go-Hybrid/pull/3612",
-      "status": "Merged en main",
-      "notes": "Aprobado y fusionado formalmente en upstream/main"
-    },
-    {
-      "id": "PR-35",
-      "repo": "limitlessprojects/Go-Hybrid",
-      "pr": "PR #3616",
-      "title": "hy-check: reject some/none option patterns on non-option match subjects (#3613)",
-      "amount": 700.0,
-      "audited_amount": 700.0,
-      "date": "2026-11-09",
-      "url": "https://github.com/limitlessprojects/Go-Hybrid/pull/3616",
-      "status": "Merged en main",
-      "notes": "Aprobado y fusionado formalmente en upstream/main"
-    },
-    {
-      "id": "PR-36",
-      "repo": "Chain-Love/chain-love",
-      "pr": "PR #5354",
-      "title": "data(base): add RainbowKit wallet connection SDK for Base",
-      "amount": 50.0,
-      "audited_amount": 50.0,
-      "date": "2026-11-19",
-      "url": "https://github.com/Chain-Love/chain-love/pull/5354",
-      "status": "Merged en main",
-      "notes": "Aprobado y fusionado formalmente en upstream/main"
-    },
-    {
-      "id": "PR-37",
-      "repo": "Chain-Love/chain-love",
-      "pr": "PR #5382",
-      "title": "data(base): add Dynamic authentication and embedded wallet SDK for Base",
-      "amount": 50.0,
-      "audited_amount": 50.0,
-      "date": "2026-11-19",
-      "url": "https://github.com/Chain-Love/chain-love/pull/5382",
-      "status": "Merged en main",
-      "notes": "Aprobado y fusionado formalmente en upstream/main"
-    },
-    {
-      "id": "PR-38",
-      "repo": "Chain-Love/chain-love",
-      "pr": "PR #5357",
-      "title": "data(base): add Alloy modular Rust SDK for Base",
-      "amount": 50.0,
-      "audited_amount": 50.0,
-      "date": "2026-11-19",
-      "url": "https://github.com/Chain-Love/chain-love/pull/5357",
-      "status": "Merged en main",
-      "notes": "Aprobado y fusionado formalmente en upstream/main"
-    },
-    {
-      "id": "PR-39",
-      "repo": "Chain-Love/chain-love",
-      "pr": "PR #5356",
-      "title": "data(base): add Privy React Auth and Embedded Wallet SDK for Base",
-      "amount": 50.0,
-      "audited_amount": 50.0,
-      "date": "2026-11-19",
-      "url": "https://github.com/Chain-Love/chain-love/pull/5356",
-      "status": "Merged en main",
-      "notes": "Aprobado y fusionado formalmente en upstream/main"
-    },
-    {
-      "id": "PR-40",
-      "repo": "Chain-Love/chain-love",
-      "pr": "PR #5464",
-      "title": "data(base): add ABIType TypeScript definition SDK for Base",
-      "amount": 50.0,
-      "audited_amount": 50.0,
-      "date": "2026-11-20",
-      "url": "https://github.com/Chain-Love/chain-love/pull/5464",
-      "status": "Merged en main",
-      "notes": "Aprobado y fusionado formalmente en upstream/main"
-    },
-    {
-      "id": "PR-41",
-      "repo": "Chain-Love/chain-love",
-      "pr": "PR #5470",
-      "title": "data(base): add Safe Relay Kit SDK for Base",
-      "amount": 50.0,
-      "audited_amount": 50.0,
-      "date": "2026-11-21",
-      "url": "https://github.com/Chain-Love/chain-love/pull/5470",
-      "status": "Merged en main",
-      "notes": "Aprobado y fusionado formalmente en upstream/main"
-    },
-    {
-      "id": "PR-42",
-      "repo": "Chain-Love/chain-love",
-      "pr": "PR #5474",
-      "title": "data(base): add ox TypeScript EVM standard library SDK for Base",
-      "amount": 50.0,
-      "audited_amount": 50.0,
-      "date": "2026-11-21",
-      "url": "https://github.com/Chain-Love/chain-love/pull/5474",
-      "status": "Merged en main",
-      "notes": "Aprobado y fusionado formalmente en upstream/main"
-    },
-    {
-      "id": "PR-43",
-      "repo": "Chain-Love/chain-love",
-      "pr": "PR #5472",
-      "title": "data(filecoin): correct Keysmith Filecoin tool listing and repository",
-      "amount": 50.0,
-      "audited_amount": 50.0,
-      "date": "2026-11-21",
-      "url": "https://github.com/Chain-Love/chain-love/pull/5472",
-      "status": "Merged en main",
-      "notes": "Aprobado y fusionado formalmente en upstream/main"
-    },
-    {
-      "id": "PR-44",
-      "repo": "Chain-Love/chain-love",
-      "pr": "PR #5414",
-      "title": "data(algorand): add Metrics Portal public analytics for Algorand",
-      "amount": 50.0,
-      "audited_amount": 50.0,
-      "date": "2026-11-21",
-      "url": "https://github.com/Chain-Love/chain-love/pull/5414",
-      "status": "Merged en main",
-      "notes": "Aprobado y fusionado formalmente en upstream/main"
-    },
-    {
-      "id": "PR-45",
-      "repo": "Chain-Love/chain-love",
-      "pr": "PR #5506",
       "title": "data(base): add Tevm in-process EVM development environment SDK for Base",
-      "amount": 50.0,
-      "audited_amount": 50.0,
-      "date": "2026-11-22",
       "url": "https://github.com/Chain-Love/chain-love/pull/5506",
-      "status": "Merged en main",
-      "notes": "Aprobado por @USS-Supervisor y mergeado por @EazyHood (commit 66e09f52e1949489cd13eacb29cf98f479c917b4)"
+      "author": "dextermos-dev",
+      "created_at": "2026-11-21T23:12:45Z",
+      "closed_at": "2026-11-22T17:50:45Z",
+      "state": "merged"
+    },
+    {
+      "pr_number": 5474,
+      "repo": "Chain-Love/chain-love",
+      "title": "data(base): add ox TypeScript EVM standard library SDK for Base",
+      "url": "https://github.com/Chain-Love/chain-love/pull/5474",
+      "author": "dextermos-dev",
+      "created_at": "2026-11-21T17:34:46Z",
+      "closed_at": "2026-11-21T21:51:06Z",
+      "state": "merged"
+    },
+    {
+      "pr_number": 5470,
+      "repo": "Chain-Love/chain-love",
+      "title": "data(base): add Safe Relay Kit SDK for Base",
+      "url": "https://github.com/Chain-Love/chain-love/pull/5470",
+      "author": "dextermos-dev",
+      "created_at": "2026-11-21T08:38:14Z",
+      "closed_at": "2026-11-21T13:55:10Z",
+      "state": "merged"
+    },
+    {
+      "pr_number": 5464,
+      "repo": "Chain-Love/chain-love",
+      "title": "data(base): add ABIType strict TypeScript ABI library for Base",
+      "url": "https://github.com/Chain-Love/chain-love/pull/5464",
+      "author": "dextermos-dev",
+      "created_at": "2026-11-20T11:43:04Z",
+      "closed_at": "2026-11-20T20:40:45Z",
+      "state": "merged"
+    },
+    {
+      "pr_number": 5382,
+      "repo": "Chain-Love/chain-love",
+      "title": "data(base): list official Artemis fundamental analytics dashboard for Base",
+      "url": "https://github.com/Chain-Love/chain-love/pull/5382",
+      "author": "dextermos-dev",
+      "created_at": "2026-11-16T13:58:49Z",
+      "closed_at": "2026-11-19T16:18:42Z",
+      "state": "merged"
+    },
+    {
+      "pr_number": 5357,
+      "repo": "Chain-Love/chain-love",
+      "title": "data(base): add Alloy modular Rust SDK for Base",
+      "url": "https://github.com/Chain-Love/chain-love/pull/5357",
+      "author": "dextermos-dev",
+      "created_at": "2026-11-15T17:09:17Z",
+      "closed_at": "2026-11-19T17:32:24Z",
+      "state": "merged"
+    },
+    {
+      "pr_number": 5356,
+      "repo": "Chain-Love/chain-love",
+      "title": "data(base): add Privy React Auth and Embedded Wallet SDK for Base",
+      "url": "https://github.com/Chain-Love/chain-love/pull/5356",
+      "author": "dextermos-dev",
+      "created_at": "2026-11-15T17:07:18Z",
+      "closed_at": "2026-11-19T16:41:14Z",
+      "state": "merged"
+    },
+    {
+      "pr_number": 5354,
+      "repo": "Chain-Love/chain-love",
+      "title": "data(base): add RainbowKit wallet connection SDK for Base",
+      "url": "https://github.com/Chain-Love/chain-love/pull/5354",
+      "author": "dextermos-dev",
+      "created_at": "2026-11-15T17:02:11Z",
+      "closed_at": "2026-11-19T13:33:44Z",
+      "state": "merged"
+    },
+    {
+      "pr_number": 4229,
+      "repo": "limitlessprojects/Go-Hybrid",
+      "title": "hy-check(foreign): expand M5 curated allowlist to include log, compress/gzip, and archive/tar",
+      "url": "https://github.com/limitlessprojects/Go-Hybrid/pull/4229",
+      "author": "dextermos-dev",
+      "created_at": "2026-11-09T08:35:03Z",
+      "closed_at": "2026-11-09T22:28:51Z",
+      "state": "merged"
+    },
+    {
+      "pr_number": 4220,
+      "repo": "limitlessprojects/Go-Hybrid",
+      "title": "restore(examples): restore 09 program.hy and gomod-integration sample from s158 tree",
+      "url": "https://github.com/limitlessprojects/Go-Hybrid/pull/4220",
+      "author": "dextermos-dev",
+      "created_at": "2026-11-09T02:03:25Z",
+      "closed_at": "2026-11-09T03:15:13Z",
+      "state": "merged"
+    },
+    {
+      "pr_number": 4204,
+      "repo": "limitlessprojects/Go-Hybrid",
+      "title": "hy-check(buildable): validate call arity and reject non-callable symbols on io (fixes #4203)",
+      "url": "https://github.com/limitlessprojects/Go-Hybrid/pull/4204",
+      "author": "dextermos-dev",
+      "created_at": "2026-11-08T20:54:48Z",
+      "closed_at": "2026-11-09T01:16:02Z",
+      "state": "merged"
+    },
+    {
+      "pr_number": 3867,
+      "repo": "limitlessprojects/Go-Hybrid",
+      "title": "hy-check(const_init): reject type-parameter shadows on const conversions, ascriptions, and file constants (fixes #3851)",
+      "url": "https://github.com/limitlessprojects/Go-Hybrid/pull/3867",
+      "author": "dextermos-dev",
+      "created_at": "2026-11-06T09:32:41Z",
+      "closed_at": "2026-11-07T19:16:31Z",
+      "state": "merged"
+    },
+    {
+      "pr_number": 3861,
+      "repo": "limitlessprojects/Go-Hybrid",
+      "title": "hy-check(range_iter): prevent caller local shadows on const bounds and guard enum/type-param set iterables (fixes #3853)",
+      "url": "https://github.com/limitlessprojects/Go-Hybrid/pull/3861",
+      "author": "dextermos-dev",
+      "created_at": "2026-11-06T09:15:45Z",
+      "closed_at": "2026-11-07T18:15:29Z",
+      "state": "merged"
+    },
+    {
+      "pr_number": 3811,
+      "repo": "limitlessprojects/Go-Hybrid",
+      "title": "hy-check: reject string interpolation when fmt is shadowed (fixes #3568)",
+      "url": "https://github.com/limitlessprojects/Go-Hybrid/pull/3811",
+      "author": "dextermos-dev",
+      "created_at": "2026-11-06T07:18:09Z",
+      "closed_at": "2026-11-07T16:15:41Z",
+      "state": "merged"
+    },
+    {
+      "pr_number": 3804,
+      "repo": "limitlessprojects/Go-Hybrid",
+      "title": "hy-check: reject errors.wrap when fmt is shadowed by in-scope declaration (fixes #3626)",
+      "url": "https://github.com/limitlessprojects/Go-Hybrid/pull/3804",
+      "author": "dextermos-dev",
+      "created_at": "2026-11-06T07:05:42Z",
+      "closed_at": "2026-11-07T02:33:39Z",
+      "state": "merged"
+    },
+    {
+      "pr_number": 3739,
+      "repo": "limitlessprojects/Go-Hybrid",
+      "title": "hy-check(const_init): reject non-const string conversion args and enum-shadowed const type ascriptions (fixes #3735)",
+      "url": "https://github.com/limitlessprojects/Go-Hybrid/pull/3739",
+      "author": "dextermos-dev",
+      "created_at": "2026-11-05T08:52:32Z",
+      "closed_at": "2026-11-06T06:20:44Z",
+      "state": "merged"
+    },
+    {
+      "pr_number": 3711,
+      "repo": "limitlessprojects/Go-Hybrid",
+      "title": "hy-emit: preserve struct and foreign shapes on user-struct-returning calls and receiver methods (fixes #3710)",
+      "url": "https://github.com/limitlessprojects/Go-Hybrid/pull/3711",
+      "author": "dextermos-dev",
+      "created_at": "2026-11-04T21:43:11Z",
+      "closed_at": "2026-11-05T08:20:23Z",
+      "state": "merged"
+    },
+    {
+      "pr_number": 3706,
+      "repo": "limitlessprojects/Go-Hybrid",
+      "title": "hy-check: resolve [N]T, map[K]V, and option[T] in generic struct field kinds (fixes #3705)",
+      "url": "https://github.com/limitlessprojects/Go-Hybrid/pull/3706",
+      "author": "dextermos-dev",
+      "created_at": "2026-11-04T21:31:23Z",
+      "closed_at": "2026-11-05T08:15:50Z",
+      "state": "merged"
+    },
+    {
+      "pr_number": 3704,
+      "repo": "limitlessprojects/Go-Hybrid",
+      "title": "fix(hy-check): resolve composite operand array lengths for bounds checks (fixes #3694)",
+      "url": "https://github.com/limitlessprojects/Go-Hybrid/pull/3704",
+      "author": "dextermos-dev",
+      "created_at": "2026-11-04T21:27:43Z",
+      "closed_at": "2026-11-05T07:27:56Z",
+      "state": "merged"
+    },
+    {
+      "pr_number": 3616,
+      "repo": "limitlessprojects/Go-Hybrid",
+      "title": "fix(hy-check): reject some/none option patterns on non-option match subjects (fixes #3613)",
+      "url": "https://github.com/limitlessprojects/Go-Hybrid/pull/3616",
+      "author": "dextermos-dev",
+      "created_at": "2026-11-04T08:05:45Z",
+      "closed_at": "2026-11-04T22:56:10Z",
+      "state": "merged"
+    },
+    {
+      "pr_number": 3614,
+      "repo": "limitlessprojects/Go-Hybrid",
+      "title": "fix(hy-check): reject fmt.eprint* when os is shadowed (fixes #3598)",
+      "url": "https://github.com/limitlessprojects/Go-Hybrid/pull/3614",
+      "author": "dextermos-dev",
+      "created_at": "2026-11-04T07:51:24Z",
+      "closed_at": "2026-11-04T22:53:33Z",
+      "state": "merged"
+    },
+    {
+      "pr_number": 3612,
+      "repo": "limitlessprojects/Go-Hybrid",
+      "title": "fix(hy-check): track sized-array type of literal-initialised locals (fixes #3599)",
+      "url": "https://github.com/limitlessprojects/Go-Hybrid/pull/3612",
+      "author": "dextermos-dev",
+      "created_at": "2026-11-04T07:33:52Z",
+      "closed_at": "2026-11-04T22:50:49Z",
+      "state": "merged"
+    },
+    {
+      "pr_number": 3325,
+      "repo": "limitlessprojects/Go-Hybrid",
+      "title": "fix(hy-check): resolve type aliases in E4 try-context error result check (fixes #3323)",
+      "url": "https://github.com/limitlessprojects/Go-Hybrid/pull/3325",
+      "author": "dextermos-dev",
+      "created_at": "2026-11-02T18:05:56Z",
+      "closed_at": "2026-11-02T20:23:24Z",
+      "state": "merged"
+    },
+    {
+      "pr_number": 3219,
+      "repo": "limitlessprojects/Go-Hybrid",
+      "title": "fix(hy-emit): defer store-back when slot loan is captured by deferred closure (fixes #3209)",
+      "url": "https://github.com/limitlessprojects/Go-Hybrid/pull/3219",
+      "author": "dextermos-dev",
+      "created_at": "2026-11-02T09:37:04Z",
+      "closed_at": "2026-11-03T04:30:04Z",
+      "state": "merged"
+    },
+    {
+      "pr_number": 2747,
+      "repo": "limitlessprojects/Go-Hybrid",
+      "title": "fix(hy-check): reject mismatched slice and string elements in variadic append(a, b...) (fixes #2738)",
+      "url": "https://github.com/limitlessprojects/Go-Hybrid/pull/2747",
+      "author": "dextermos-dev",
+      "created_at": "2026-11-01T07:55:39Z",
+      "closed_at": "2026-11-01T09:23:36Z",
+      "state": "merged"
+    },
+    {
+      "pr_number": 2549,
+      "repo": "limitlessprojects/Go-Hybrid",
+      "title": "fix(hy-check): reject octal multi-iteration and induction variable mutation in single-iteration loop backedge bypass (fixes #2512)",
+      "url": "https://github.com/limitlessprojects/Go-Hybrid/pull/2549",
+      "author": "dextermos-dev",
+      "created_at": "2026-10-31T13:53:26Z",
+      "closed_at": "2026-11-01T09:28:22Z",
+      "state": "merged"
+    },
+    {
+      "pr_number": 2492,
+      "repo": "limitlessprojects/Go-Hybrid",
+      "title": "fix(hy-check): reject equality comparisons between non-nilable types and nil (#2471)",
+      "url": "https://github.com/limitlessprojects/Go-Hybrid/pull/2492",
+      "author": "dextermos-dev",
+      "created_at": "2026-10-31T10:09:10Z",
+      "closed_at": "2026-10-31T11:19:00Z",
+      "state": "merged"
+    },
+    {
+      "pr_number": 2339,
+      "repo": "limitlessprojects/Go-Hybrid",
+      "title": "fix(hy-check): preserve return-slot indices on mixed named/unnamed results (fixes #2323)",
+      "url": "https://github.com/limitlessprojects/Go-Hybrid/pull/2339",
+      "author": "dextermos-dev",
+      "created_at": "2026-10-30T11:45:42Z",
+      "closed_at": "2026-10-30T12:23:12Z",
+      "state": "merged"
+    },
+    {
+      "pr_number": 2337,
+      "repo": "limitlessprojects/Go-Hybrid",
+      "title": "fix(hy-syntax): reject prefixed base literals with fractional part (fixes #1168)",
+      "url": "https://github.com/limitlessprojects/Go-Hybrid/pull/2337",
+      "author": "dextermos-dev",
+      "created_at": "2026-10-30T11:11:02Z",
+      "closed_at": "2026-10-30T12:22:19Z",
+      "state": "merged"
+    },
+    {
+      "pr_number": 134,
+      "repo": "mallonepay/pay-per-token-llm-gateway",
+      "title": "docs(security): publish external Soroban custody contract audit (closes #83)",
+      "url": "https://github.com/mallonepay/pay-per-token-llm-gateway/pull/134",
+      "author": "dextermos-dev",
+      "created_at": "2026-10-29T14:57:46Z",
+      "closed_at": "2026-11-05T00:23:26Z",
+      "state": "merged"
+    },
+    {
+      "pr_number": 133,
+      "repo": "mallonepay/pay-per-token-llm-gateway",
+      "title": "feat(contracts): migrate Soroban contracts to SDK 26.1.1 and fix ledger footprint limits (#132)",
+      "url": "https://github.com/mallonepay/pay-per-token-llm-gateway/pull/133",
+      "author": "dextermos-dev",
+      "created_at": "2026-10-29T13:59:23Z",
+      "closed_at": "2026-11-05T00:23:42Z",
+      "state": "merged"
+    },
+    {
+      "pr_number": 4781,
+      "repo": "Chain-Love/chain-love",
+      "title": "data(providers): add official Franklin, PNF Software, Ton Apps Group, and Whales Corp documentation",
+      "url": "https://github.com/Chain-Love/chain-love/pull/4781",
+      "author": "dextermos-dev",
+      "created_at": "2026-10-23T19:13:48Z",
+      "closed_at": "2026-11-01T17:35:47Z",
+      "state": "merged"
+    },
+    {
+      "pr_number": 4767,
+      "repo": "Chain-Love/chain-love",
+      "title": "data(avalanche,somnia): add official Circle USDC and Wrapped SOMI (WSOMI) contracts",
+      "url": "https://github.com/Chain-Love/chain-love/pull/4767",
+      "author": "dextermos-dev",
+      "created_at": "2026-10-23T05:18:39Z",
+      "closed_at": "2026-11-01T10:37:08Z",
+      "state": "merged"
+    },
+    {
+      "pr_number": 4728,
+      "repo": "Chain-Love/chain-love",
+      "title": "data(filecoin,avalanche): retain official Docs links on Spectrum Filecoin RPC plans and Band Avalanche oracle",
+      "url": "https://github.com/Chain-Love/chain-love/pull/4728",
+      "author": "dextermos-dev",
+      "created_at": "2026-10-21T06:00:09Z",
+      "closed_at": "2026-10-21T09:48:25Z",
+      "state": "merged"
+    },
+    {
+      "pr_number": 167,
+      "repo": "DevNiola/Prism",
+      "title": "feat(config): add environment-specific configuration management and validation (closes #149)",
+      "url": "https://github.com/DevNiola/Prism/pull/167",
+      "author": "dextermos-dev",
+      "created_at": "2026-10-18T09:02:30Z",
+      "closed_at": "2026-10-23T09:39:18Z",
+      "state": "merged"
+    },
+    {
+      "pr_number": 166,
+      "repo": "DevNiola/Prism",
+      "title": "feat(ci): add WASM build, test, and npm publish workflow (closes #132)",
+      "url": "https://github.com/DevNiola/Prism/pull/166",
+      "author": "dextermos-dev",
+      "created_at": "2026-10-18T08:57:44Z",
+      "closed_at": "2026-10-23T09:39:05Z",
+      "state": "merged"
+    },
+    {
+      "pr_number": 165,
+      "repo": "DevNiola/Prism",
+      "title": "feat(ci): add VS Code extension publish workflow for Marketplace (closes #139)",
+      "url": "https://github.com/DevNiola/Prism/pull/165",
+      "author": "dextermos-dev",
+      "created_at": "2026-10-18T08:54:15Z",
+      "closed_at": "2026-10-23T09:38:52Z",
+      "state": "merged"
+    },
+    {
+      "pr_number": 164,
+      "repo": "DevNiola/Prism",
+      "title": "feat(docker): add multi-stage production Dockerfile for web app (closes #134)",
+      "url": "https://github.com/DevNiola/Prism/pull/164",
+      "author": "dextermos-dev",
+      "created_at": "2026-10-18T08:51:01Z",
+      "closed_at": "2026-10-23T09:38:39Z",
+      "state": "merged"
+    },
+    {
+      "pr_number": 163,
+      "repo": "DevNiola/Prism",
+      "title": "feat(docker): add multi-stage production Dockerfile for server (closes #133)",
+      "url": "https://github.com/DevNiola/Prism/pull/163",
+      "author": "dextermos-dev",
+      "created_at": "2026-10-18T08:48:55Z",
+      "closed_at": "2026-10-23T09:38:27Z",
+      "state": "merged"
+    },
+    {
+      "pr_number": 162,
+      "repo": "DevNiola/Prism",
+      "title": "docs(deployment): add comprehensive self-hosting deployment guide (closes #144)",
+      "url": "https://github.com/DevNiola/Prism/pull/162",
+      "author": "dextermos-dev",
+      "created_at": "2026-10-18T08:46:32Z",
+      "closed_at": "2026-10-23T09:38:14Z",
+      "state": "merged"
+    },
+    {
+      "pr_number": 161,
+      "repo": "DevNiola/Prism",
+      "title": "feat(k8s): add production Kubernetes manifests and Kustomize overlays (closes #145)",
+      "url": "https://github.com/DevNiola/Prism/pull/161",
+      "author": "dextermos-dev",
+      "created_at": "2026-10-18T08:40:33Z",
+      "closed_at": "2026-10-23T09:38:01Z",
+      "state": "merged"
+    },
+    {
+      "pr_number": 160,
+      "repo": "DevNiola/Prism",
+      "title": "feat(devops): add Terraform configuration for AWS deployment (closes #147)",
+      "url": "https://github.com/DevNiola/Prism/pull/160",
+      "author": "dextermos-dev",
+      "created_at": "2026-10-18T08:32:58Z",
+      "closed_at": "2026-10-23T09:37:47Z",
+      "state": "merged"
+    },
+    {
+      "pr_number": 159,
+      "repo": "DevNiola/Prism",
+      "title": "feat(devops): add npm publish workflow for web app and server (closes #138)",
+      "url": "https://github.com/DevNiola/Prism/pull/159",
+      "author": "dextermos-dev",
+      "created_at": "2026-10-18T08:25:43Z",
+      "closed_at": "2026-10-23T09:37:33Z",
+      "state": "merged"
+    },
+    {
+      "pr_number": 158,
+      "repo": "DevNiola/Prism",
+      "title": "feat(devops): add Cargo publish workflow for crates.io (closes #137)",
+      "url": "https://github.com/DevNiola/Prism/pull/158",
+      "author": "dextermos-dev",
+      "created_at": "2026-10-18T08:23:59Z",
+      "closed_at": "2026-10-23T09:37:20Z",
+      "state": "merged"
+    },
+    {
+      "pr_number": 157,
+      "repo": "DevNiola/Prism",
+      "title": "feat(devops): add benchmark workflow for performance regression detection (closes #148)",
+      "url": "https://github.com/DevNiola/Prism/pull/157",
+      "author": "dextermos-dev",
+      "created_at": "2026-10-18T08:18:52Z",
+      "closed_at": "2026-10-23T09:37:07Z",
+      "state": "merged"
+    },
+    {
+      "pr_number": 156,
+      "repo": "DevNiola/Prism",
+      "title": "feat(devops): add GitHub Actions workflow for security scanning (closes #146)",
+      "url": "https://github.com/DevNiola/Prism/pull/156",
+      "author": "dextermos-dev",
+      "created_at": "2026-10-18T08:15:43Z",
+      "closed_at": "2026-10-23T09:36:54Z",
+      "state": "merged"
+    },
+    {
+      "pr_number": 155,
+      "repo": "DevNiola/Prism",
+      "title": "feat(devops): add automated release workflow with semantic versioning (closes #136)",
+      "url": "https://github.com/DevNiola/Prism/pull/155",
+      "author": "dextermos-dev",
+      "created_at": "2026-10-18T08:01:51Z",
+      "closed_at": "2026-10-23T09:36:42Z",
+      "state": "merged"
+    },
+    {
+      "pr_number": 154,
+      "repo": "DevNiola/Prism",
+      "title": "chore(devops): add pre-commit hooks for code formatting and linting (closes #141)",
+      "url": "https://github.com/DevNiola/Prism/pull/154",
+      "author": "dextermos-dev",
+      "created_at": "2026-10-18T07:51:31Z",
+      "closed_at": "2026-10-23T09:36:27Z",
+      "state": "merged"
+    },
+    {
+      "pr_number": 153,
+      "repo": "DevNiola/Prism",
+      "title": "feat(devops): add docker-compose and Makefile for local development (closes #135)",
+      "url": "https://github.com/DevNiola/Prism/pull/153",
+      "author": "dextermos-dev",
+      "created_at": "2026-10-18T07:42:09Z",
+      "closed_at": "2026-10-23T09:36:14Z",
+      "state": "merged"
+    },
+    {
+      "pr_number": 152,
+      "repo": "DevNiola/Prism",
+      "title": "chore(devops): add stale issue and PR bot configuration (closes #142)",
+      "url": "https://github.com/DevNiola/Prism/pull/152",
+      "author": "dextermos-dev",
+      "created_at": "2026-10-18T07:37:18Z",
+      "closed_at": "2026-10-23T09:36:00Z",
+      "state": "merged"
+    },
+    {
+      "pr_number": 151,
+      "repo": "DevNiola/Prism",
+      "title": "chore(devops): add issue templates, PR checklist, and disable blank issues (closes #143)",
+      "url": "https://github.com/DevNiola/Prism/pull/151",
+      "author": "dextermos-dev",
+      "created_at": "2026-10-18T07:33:14Z",
+      "closed_at": "2026-10-23T09:35:47Z",
+      "state": "merged"
+    },
+    {
+      "pr_number": 150,
+      "repo": "DevNiola/Prism",
+      "title": "chore(devops): add dependabot configuration for dependency updates (closes #140)",
+      "url": "https://github.com/DevNiola/Prism/pull/150",
+      "author": "dextermos-dev",
+      "created_at": "2026-10-18T07:25:19Z",
+      "closed_at": "2026-10-23T09:35:35Z",
+      "state": "merged"
+    },
+    {
+      "pr_number": 453,
+      "repo": "slippay-labs/slippay",
+      "title": "fix(txguard): compare amounts as integer stroops, not floats (closes #315)",
+      "url": "https://github.com/slippay-labs/slippay/pull/453",
+      "author": "dextermos-dev",
+      "created_at": "2026-10-17T17:23:13Z",
+      "closed_at": "2026-10-21T09:54:41Z",
+      "state": "merged"
+    },
+    {
+      "pr_number": 435,
+      "repo": "slippay-labs/slippay",
+      "title": "docs(contracts): document checkout contract fee semantics and limits (#309)",
+      "url": "https://github.com/slippay-labs/slippay/pull/435",
+      "author": "dextermos-dev",
+      "created_at": "2026-10-17T04:21:48Z",
+      "closed_at": "2026-10-21T09:55:52Z",
+      "state": "merged"
+    },
+    {
+      "pr_number": 340,
+      "repo": "slippay-labs/slippay",
+      "title": "docs(fees): document canonical fee arithmetic and rounding rule (#238)",
+      "url": "https://github.com/slippay-labs/slippay/pull/340",
+      "author": "dextermos-dev",
+      "created_at": "2026-10-16T15:43:36Z",
+      "closed_at": "2026-10-21T09:54:27Z",
+      "state": "merged"
+    },
+    {
+      "pr_number": 264,
+      "repo": "slippay-labs/slippay",
+      "title": "docs(security): add SECURITY.md with disclosure and incident policy",
+      "url": "https://github.com/slippay-labs/slippay/pull/264",
+      "author": "dextermos-dev",
+      "created_at": "2026-10-16T13:06:38Z",
+      "closed_at": "2026-10-18T04:00:01Z",
+      "state": "merged"
+    },
+    {
+      "pr_number": 228,
+      "repo": "slippay-labs/slippay",
+      "title": "chore(repo): untrack committed __pycache__ bytecode files",
+      "url": "https://github.com/slippay-labs/slippay/pull/228",
+      "author": "dextermos-dev",
+      "created_at": "2026-10-16T11:32:12Z",
+      "closed_at": "2026-10-21T09:54:18Z",
+      "state": "merged"
+    },
+    {
+      "pr_number": 127,
+      "repo": "mallonepay/pay-per-token-llm-gateway",
+      "title": "feat: Integrate Soroban credit-escrow contract for token gateway ( USDC)",
+      "url": "https://github.com/mallonepay/pay-per-token-llm-gateway/pull/127",
+      "author": "dextermos-dev",
+      "created_at": "2026-09-07T09:53:17Z",
+      "closed_at": "2026-09-09T17:04:40Z",
+      "state": "merged"
     }
   ],
   "bounties": [
@@ -15302,7 +15342,7 @@
     "in_review_usd": 63543.0,
     "total_bounties": 445
   },
-  "last_updated": "2026-11-24T21:49:13Z",
+  "last_updated": "2026-11-24T21:51:24.379895Z",
   "open_prs": [
     {
       "pr_number": 36,
@@ -15641,32 +15681,6 @@
       "settlement_wallet": "0x8366bCe3a2D379De7656D7A67015789FaF999f20",
       "created_at": "2026-11-24T10:37:23Z",
       "updated_at": "2026-11-24T10:37:23Z"
-    },
-    {
-      "pr_number": 5705,
-      "title": "data(polygon): add Gas.zip instant refuel bridge for Polygon",
-      "url": "https://github.com/Chain-Love/chain-love/pull/5705",
-      "repo": "Chain-Love/chain-love",
-      "status": "OPEN_IN_REVIEW",
-      "reward_usd": 50.0,
-      "reward_currency": "USDC",
-      "network": "Base L2 / Multi-chain",
-      "settlement_wallet": "0x8366bCe3a2D379De7656D7A67015789FaF999f20",
-      "created_at": "2026-11-24T10:35:41Z",
-      "updated_at": "2026-11-24T10:35:41Z"
-    },
-    {
-      "pr_number": 5704,
-      "title": "data(optimism): add Gas.zip instant refuel bridge for Optimism",
-      "url": "https://github.com/Chain-Love/chain-love/pull/5704",
-      "repo": "Chain-Love/chain-love",
-      "status": "OPEN_IN_REVIEW",
-      "reward_usd": 50.0,
-      "reward_currency": "USDC",
-      "network": "Base L2 / Multi-chain",
-      "settlement_wallet": "0x8366bCe3a2D379De7656D7A67015789FaF999f20",
-      "created_at": "2026-11-24T10:35:32Z",
-      "updated_at": "2026-11-24T10:35:32Z"
     },
     {
       "pr_number": 5703,
@@ -16602,7 +16616,33 @@
       "network": "Base L2 / Multi-chain",
       "settlement_wallet": "0x8366bCe3a2D379De7656D7A67015789FaF999f20",
       "created_at": "2026-11-22T15:20:47Z",
-      "updated_at": "2026-11-22T15:20:47Z"
+      "updated_at": "2026-11-24T21:37:19Z"
+    },
+    {
+      "pr_number": 5574,
+      "title": "data(polygon): add Backpack multichain self-custody wallet for Polygon",
+      "url": "https://github.com/Chain-Love/chain-love/pull/5574",
+      "repo": "Chain-Love/chain-love",
+      "status": "OPEN_IN_REVIEW",
+      "reward_usd": 50.0,
+      "reward_currency": "USDC",
+      "network": "Base L2 / Multi-chain",
+      "settlement_wallet": "0x8366bCe3a2D379De7656D7A67015789FaF999f20",
+      "created_at": "2026-11-22T15:19:35Z",
+      "updated_at": "2026-11-24T21:44:57Z"
+    },
+    {
+      "pr_number": 5573,
+      "title": "data(polygon): add Bubblemaps visual token distribution analytics for Polygon",
+      "url": "https://github.com/Chain-Love/chain-love/pull/5573",
+      "repo": "Chain-Love/chain-love",
+      "status": "OPEN_IN_REVIEW",
+      "reward_usd": 50.0,
+      "reward_currency": "USDC",
+      "network": "Base L2 / Multi-chain",
+      "settlement_wallet": "0x8366bCe3a2D379De7656D7A67015789FaF999f20",
+      "created_at": "2026-11-22T15:18:22Z",
+      "updated_at": "2026-11-24T21:37:24Z"
     }
   ],
   "open_prs_count": 100,
@@ -16688,5 +16728,115 @@
       "task-227 (tunnel)"
     ],
     "review_status": "ALL REVIEWS SATISFIED"
-  }
+  },
+  "fast_bounties_today": [
+    {
+      "id": "poidh-560",
+      "name": "Lord Ephelion Backstory (POIDH #560)",
+      "platform": "POIDH (Base L2)",
+      "amount": "$102.30",
+      "crypto": "0.0330 ETH",
+      "status": "Claim #4570 Minado (\u00danico Reclamo)",
+      "target": "Base Block #61813992",
+      "url": "https://poidh.xyz/base/bounty/1546"
+    },
+    {
+      "id": "poidh-1520",
+      "name": "Audit a Month of Offline AI Research (POIDH #534)",
+      "platform": "POIDH (Base L2)",
+      "amount": "$49.60",
+      "crypto": "0.0160 ETH",
+      "status": "Claim #4568 Minado",
+      "target": "Base L2 Escrow 0x5555...1719",
+      "url": "https://poidh.xyz/base/bounty/1520"
+    },
+    {
+      "id": "poidh-1554",
+      "name": "Statistics OpenStax Pack (POIDH #568)",
+      "platform": "POIDH + GitHub",
+      "amount": "$25.00",
+      "crypto": "0.0080 ETH",
+      "status": "Claim #4567 + PR #36",
+      "target": "0x94t3z/fieldatlas#36",
+      "url": "https://github.com/0x94t3z/fieldatlas/pull/36"
+    },
+    {
+      "id": "solana-1",
+      "name": "SPL Mint Anomaly & Rug Radar (t=18)",
+      "platform": "Solana Mainnet",
+      "amount": "$28.00",
+      "crypto": "0.1200 SOL",
+      "status": "Entregado v\u00eda Yard (100% Tests)",
+      "target": "Escrow Vault 6cXR7EkU...XN",
+      "url": "https://github.com/incidere/solana-agent-bounties/issues/1#issuecomment-7144249251"
+    },
+    {
+      "id": "solana-3",
+      "name": "Stream batchWithin Starvation Guard (t=20)",
+      "platform": "Solana Mainnet",
+      "amount": "$18.50",
+      "crypto": "0.0800 SOL",
+      "status": "Entregado v\u00eda Yard",
+      "target": "Escrow Vault 6cXR7EkU...XN",
+      "url": "https://github.com/incidere/solana-agent-bounties/issues/3#issuecomment-7144078568"
+    },
+    {
+      "id": "solana-2",
+      "name": "Compact <=4KB Python Stack VM (t=19)",
+      "platform": "Solana Mainnet",
+      "amount": "$14.00",
+      "crypto": "0.0600 SOL + 500 VLOOP",
+      "status": "Entregado v\u00eda MCP & Yard",
+      "target": "Escrow Vault 6cXR7EkU...XN",
+      "url": "https://github.com/incidere/solana-agent-bounties/issues/2#issuecomment-7144546354"
+    },
+    {
+      "id": "frantic-147",
+      "name": "Dogfood Chrome extension (#147)",
+      "platform": "Frantic",
+      "amount": "$1.00",
+      "crypto": "1.00 USDC",
+      "status": "En Revisi\u00f3n Humana",
+      "target": "Delivery 828223f9... Enviada",
+      "url": "https://gofrantic.com/v1/deliveries/828223f9-31c9-4a79-b494-46751d8f183f"
+    }
+  ],
+  "kpis": {
+    "liquid_in_hand_usd": 66.13,
+    "fast_bounties_today_usd": 238.4,
+    "won_pending_dispersion_usd": 6715.0,
+    "settled_effective_usd": 46.03
+  },
+  "pending_payouts_by_project": [
+    {
+      "project": "Go-Hybrid (Language Parser & Type Checker)",
+      "prs": 28,
+      "amount_usdc": 4200.0,
+      "status": "MERGED_IN_MAIN"
+    },
+    {
+      "project": "Parabola (DEX AMM Mathematical Core)",
+      "prs": 8,
+      "amount_usdc": 1050.0,
+      "status": "MERGED_IN_MAIN"
+    },
+    {
+      "project": "MallonePay (Soroban & Smart Contracts)",
+      "prs": 4,
+      "amount_usdc": 1150.0,
+      "status": "MERGED_IN_MAIN"
+    },
+    {
+      "project": "Chain-Love (Web3 Database Infrastructure)",
+      "prs": 14,
+      "amount_usdc": 250.0,
+      "status": "MERGED_IN_MAIN"
+    },
+    {
+      "project": "SlipPay (Payment Gateway & Invariants)",
+      "prs": 4,
+      "amount_usdc": 65.0,
+      "status": "MERGED_IN_MAIN"
+    }
+  ]
 }
