@@ -10,7 +10,7 @@ export const SettleBountySchema = z.object({
 export type SettleBountyInput = z.infer<typeof SettleBountySchema>;
 
 export class AgentKitBountySettler {
-  private readonly defaultWallet: string = "0x8366bCe3a2D379Dec7656D7A67015789FaF999f20";
+  private readonly defaultWallet: string = "0x8366bCe3a2D379De7656D7A67015789FaF999f20";
   private readonly baseUsdcContract: string = "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913";
 
   constructor(private readonly agentAddress?: string) {}

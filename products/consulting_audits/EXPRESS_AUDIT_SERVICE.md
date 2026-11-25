@@ -50,5 +50,5 @@ We deliver actionable, mathematical vulnerability reports with reproducible Foun
 1. **DM on X:** [@dextermostard](https://x.com/dextermostard) or open a private security advisory on GitHub ([`@dextermos`](https://github.com/dextermos)).
 2. **Provide:** Repository URL, commit hash, and in-scope files.
 3. **Escrow / Payment:** Transfer USDC to the verified settlement address:
-   `0x8366bCe3a2D379Dec7656D7A67015789FaF999f20`
+   `0x8366bCe3a2D379De7656D7A67015789FaF999f20`
 4. **Delivery:** Receive markdown & PDF formal audit report with diff patches within 48h.

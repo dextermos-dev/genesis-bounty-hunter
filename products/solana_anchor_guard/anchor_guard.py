@@ -1,7 +1,7 @@
 """
 Anchor Guard CLI & Static Vulnerability Auditor for Solana Programs (Anchor 0.30+)
 Solana Ecosystem / Superteam Earn Track
-Settlement Wallet: 0x8366bCe3a2D379Dec7656D7A67015789FaF999f20
+Settlement Wallet: 0x8366bCe3a2D379De7656D7A67015789FaF999f20
 """
 
 import re
@@ -17,7 +17,7 @@ class AnchorGuardAuditor:
     4. Integer Overflow in Token Calculation Logic
     """
 
-    OFFICIAL_SETTLEMENT_WALLET = "0x8366bCe3a2D379Dec7656D7A67015789FaF999f20"
+    OFFICIAL_SETTLEMENT_WALLET = "0x8366bCe3a2D379De7656D7A67015789FaF999f20"
 
     def __init__(self):
         self.rules = [

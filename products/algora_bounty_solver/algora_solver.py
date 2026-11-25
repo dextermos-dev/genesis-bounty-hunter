@@ -2,7 +2,7 @@
 Algora Bounty Solver & Rapid Settlement Engine (products/algora_bounty_solver/algora_solver.py)
 Automates evaluation, claim generation, and submission packaging for Algora-powered open source issues.
 
-Settlement Wallet: 0x8366bCe3a2D379Dec7656D7A67015789FaF999f20
+Settlement Wallet: 0x8366bCe3a2D379De7656D7A67015789FaF999f20
 """
 
 import json
@@ -14,7 +14,7 @@ class AlgoraBountySolver:
     Automated workflow engine for claiming, solving, and verifying Algora.io bounties.
     """
 
-    OFFICIAL_SETTLEMENT_WALLET = "0x8366bCe3a2D379Dec7656D7A67015789FaF999f20"
+    OFFICIAL_SETTLEMENT_WALLET = "0x8366bCe3a2D379De7656D7A67015789FaF999f20"
 
     def __init__(self):
         self.verified_orgs = ["coolify", "twentyhq", "calcom", "spacedriveapp", "formbricks"]

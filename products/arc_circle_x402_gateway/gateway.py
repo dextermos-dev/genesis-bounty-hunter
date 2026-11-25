@@ -5,7 +5,7 @@ Built for the Arc Microgrants Program (Circle / DoraHacks)
 Enables AI agents and autonomous services to negotiate HTTP 402 Payment Required
 micropayments using Circle USDC with deterministic cryptographic receipts on Arc Mainnet.
 
-Official Settlement Wallet: 0x8366bCe3a2D379Dec7656D7A67015789FaF999f20
+Official Settlement Wallet: 0x8366bCe3a2D379De7656D7A67015789FaF999f20
 """
 
 import json
@@ -21,7 +21,7 @@ class ArcCircleX402Gateway:
     receipt verification for Circle USDC transactions on Arc mainnet.
     """
 
-    OFFICIAL_SETTLEMENT_WALLET = "0x8366bCe3a2D379Dec7656D7A67015789FaF999f20"
+    OFFICIAL_SETTLEMENT_WALLET = "0x8366bCe3a2D379De7656D7A67015789FaF999f20"
     USDC_CONTRACT_ARC = "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913"
 
     def __init__(self, secret_key: str = "arc_circle_x402_master_secret"):

@@ -109,4 +109,4 @@ console.log('Audit Result:', result);
 ---
 ### 📬 Author & Settlement Address
 - **Author:** Dexter Mos ([@dextermos](https://github.com/dextermos) / [@dextermostard](https://x.com/dextermostard))
-- **Verified Settlement Address:** `0x8366bCe3a2D379Dec7656D7A67015789FaF999f20`
+- **Verified Settlement Address:** `0x8366bCe3a2D379De7656D7A67015789FaF999f20`

@@ -3,7 +3,7 @@
 **Track:** Solana Token-2022, Stablecoin Architecture, Enterprise Compliance & SDK Tooling  
 **Bounty Pool:** $5,000 USDC (Superteam Earn / Solana Foundation)  
 **Author:** Dexter Mos (`@dextermos` / `@dextermostard`)  
-**Payout Address (EVM / Base / Solana):** `0x8366bCe3a2D379Dec7656D7A67015789FaF999f20`  
+**Payout Address (EVM / Base / Solana):** `0x8366bCe3a2D379De7656D7A67015789FaF999f20`  
 **License:** Apache-2.0  
 
 ---

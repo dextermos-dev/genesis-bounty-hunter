@@ -38,13 +38,13 @@ function runSuite() {
     id: "msg_9981",
     sender: "billing@defi-nodes.io",
     subject: "Invoice #INV-2026-09 - RPC Infrastructure",
-    body: "Please remit payment for $1,250 USDC to Base wallet: 0x8366bCe3a2D379Dec7656D7A67015789FaF999f20. Terms net 7.",
+    body: "Please remit payment for $1,250 USDC to Base wallet: 0x8366bCe3a2D379De7656D7A67015789FaF999f20. Terms net 7.",
     dkimValid: true
   };
   const auditRes = skill.auditInvoicePayload(validInvoice);
   assert(auditRes.isValid === true, "Valid invoice with verified DKIM and wallet is APPROVED");
   assert(auditRes.totalDueUsdc === 1250, "Correctly extracted $1,250 USDC amount");
-  assert(auditRes.recipientWallet === "0x8366bCe3a2D379Dec7656D7A67015789FaF999f20", "Correctly extracted EVM payout wallet");
+  assert(auditRes.recipientWallet === "0x8366bCe3a2D379De7656D7A67015789FaF999f20", "Correctly extracted EVM payout wallet");
 
   // Test 3: Untrusted DKIM Rejection
   const maliciousInvoice = {

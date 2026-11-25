@@ -10,7 +10,7 @@ Fully tested autonomous agent plugin for ElizaOS:
 4. EIP-712 typed signature verification
 
 Author: @dextermos / @dextermos-dev
-Settlement Address: 0x8366bCe3a2D379Dec7656D7A67015789FaF999f20
+Settlement Address: 0x8366bCe3a2D379De7656D7A67015789FaF999f20
 """
 
 import time
@@ -19,7 +19,7 @@ import hashlib
 from typing import Dict, Any, Optional
 
 BASE_USDC_CONTRACT = "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913"
-MANDATORY_WALLET = "0x8366bCe3a2D379Dec7656D7A67015789FaF999f20"
+MANDATORY_WALLET = "0x8366bCe3a2D379De7656D7A67015789FaF999f20"
 
 class ElizaZeroGasM2MPayments:
     def __init__(self, paymaster_url: str = "https://api.developer.coinbase.com/rpc/v1/base", sponsor_gas: bool = True):

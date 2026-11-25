@@ -10,7 +10,7 @@ Fully tested, typed implementation of:
 4. Agent-to-Agent (A2A) Micro-transaction Validator
 
 Author: @dextermos / @dextermos-dev
-Settlement Address: 0x8366bCe3a2D379Dec7656D7A67015789FaF999f20
+Settlement Address: 0x8366bCe3a2D379De7656D7A67015789FaF999f20
 """
 
 import time
@@ -51,7 +51,7 @@ class RustChainMiningCalculator:
             "monthly_rtc": round(user_monthly_rtc, 4),
             "monthly_usd": round(user_monthly_rtc * RTC_REFERENCE_USD, 4),
             "reference_rate_usd": RTC_REFERENCE_USD,
-            "settlement_wallet": "0x8366bCe3a2D379Dec7656D7A67015789FaF999f20"
+            "settlement_wallet": "0x8366bCe3a2D379De7656D7A67015789FaF999f20"
         }
 
 class RustChainNetworkStatus:
@@ -83,7 +83,7 @@ class RustChainNetworkStatus:
             "avg_latency_ms": round(avg_lat, 2),
             "max_block_height": max_height,
             "network_health_score": round((healthy_count / len(self.nodes)) * 100, 2),
-            "settlement_wallet": "0x8366bCe3a2D379Dec7656D7A67015789FaF999f20"
+            "settlement_wallet": "0x8366bCe3a2D379De7656D7A67015789FaF999f20"
         }
 
 if __name__ == '__main__':

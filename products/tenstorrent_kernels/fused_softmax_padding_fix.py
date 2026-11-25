@@ -4,7 +4,7 @@ Tenstorrent TT-Metal Kernel Fix: Fused Scale-Mask Softmax Tile Padding (Issue #5
 Bounty: $750 USD | Tenstorrent Bounty Program
 
 Author: @dextermos / @dextermos-dev
-Settlement Address: 0x8366bCe3a2D379Dec7656D7A67015789FaF999f20
+Settlement Address: 0x8366bCe3a2D379De7656D7A67015789FaF999f20
 
 Description:
 Fixes probability mass leakage in fused scale-mask softmax when logical width is not a multiple of 32 (tile width).

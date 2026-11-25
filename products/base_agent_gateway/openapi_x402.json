@@ -1,0 +1,106 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Genesis Autonomous M2M Security & Audit API (RFC-x402)",
+    "version": "2.0.0",
+    "description": "Autonomous machine-to-machine pay-per-request microservice API on Base L2. Compliant with RFC-x402 and Coinbase x402 v2.0.",
+    "contact": {
+      "name": "Bounty Hunter AI - Security Research",
+      "url": "https://basescan.org/address/0x8366bCe3a2D379De7656D7A67015789FaF999f20"
+    }
+  },
+  "servers": [
+    {
+      "url": "http://127.0.0.1:8402",
+      "description": "Local/Private Gateway Daemon"
+    }
+  ],
+  "x-settlement": {
+    "network": "Base L2 (EIP-155:8453)",
+    "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "asset_name": "USD Coin (USDC)",
+    "recipient": "0x8366bCe3a2D379De7656D7A67015789FaF999f20",
+    "standard": "RFC-x402 / Coinbase x402 v2.0",
+    "kyc_required": false
+  },
+  "paths": {
+    "/api/v1/audit/anchor": {
+      "post": {
+        "summary": "Solana / Rust Smart Contract Static Audit",
+        "description": "Performs static AST vulnerability analysis on Anchor/Solana smart contract source code.",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "code": { "type": "string", "description": "Solana/Anchor Rust contract source code" }
+                },
+                "required": ["code"]
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Audit Report with detected vulnerabilities and severities",
+            "content": { "application/json": {} }
+          },
+          "402": {
+            "description": "Payment Required (Cost: $5.00 USDC on Base L2)",
+            "content": { "application/json": {} }
+          }
+        }
+      }
+    },
+    "/api/v1/shield/threat": {
+      "post": {
+        "summary": "Web3 Counterparty Threat Check",
+        "description": "Checks an EVM/Solana address against active drainer lists and high-risk clusters.",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "address": { "type": "string", "description": "Counterparty wallet address" }
+                },
+                "required": ["address"]
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": { "description": "Threat classification report" },
+          "402": { "description": "Payment Required (Cost: $1.00 USDC on Base L2)" }
+        }
+      }
+    },
+    "/api/v1/shield/url": {
+      "post": {
+        "summary": "Malicious Web3 URL Scanner",
+        "description": "Scans domains for phishing, fake dApps, and wallet-drainer signatures.",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "url": { "type": "string", "description": "URL to inspect" }
+                },
+                "required": ["url"]
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": { "description": "Domain security verdict" },
+          "402": { "description": "Payment Required (Cost: $0.50 USDC on Base L2)" }
+        }
+      }
+    }
+  }
+}

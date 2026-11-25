@@ -1,7 +1,7 @@
 """
 Base L2 Agent Micropayment Gateway & Sub-Bounty Settlement Module (RFC-x402 + ERC-4337)
 genesis-bounty-hunter / Base L2 Ecosystem
-Settlement Wallet: 0x8366bCe3a2D379Dec7656D7A67015789FaF999f20
+Settlement Wallet: 0x8366bCe3a2D379De7656D7A67015789FaF999f20
 """
 
 import hashlib
@@ -17,7 +17,7 @@ class BaseAgentGateway:
     Integrates RFC-x402 HTTP status codes with ERC-4337 gasless paymasters.
     """
 
-    OFFICIAL_SETTLEMENT_WALLET = "0x8366bCe3a2D379Dec7656D7A67015789FaF999f20"
+    OFFICIAL_SETTLEMENT_WALLET = "0x8366bCe3a2D379De7656D7A67015789FaF999f20"
     BASE_CHAIN_ID = 8453
     BASE_USDC_CONTRACT = "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913"
 

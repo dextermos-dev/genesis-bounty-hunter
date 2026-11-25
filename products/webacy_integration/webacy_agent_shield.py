@@ -1,7 +1,7 @@
 """
 Webacy Risk Engine & DD.xyz Due Diligence Client for Genesis AI Agents
 Integrates Webacy Threat, Contract, URL, and Holder Analysis APIs (Solana, Base, EVM)
-Settlement Wallet: 0x8366bCe3a2D379Dec7656D7A67015789FaF999f20
+Settlement Wallet: 0x8366bCe3a2D379De7656D7A67015789FaF999f20
 """
 
 import json
@@ -16,7 +16,7 @@ class WebacyAgentShield:
     submitting bounties, or transferring tokens.
     """
 
-    OFFICIAL_SETTLEMENT_WALLET = "0x8366bCe3a2D379Dec7656D7A67015789FaF999f20"
+    OFFICIAL_SETTLEMENT_WALLET = "0x8366bCe3a2D379De7656D7A67015789FaF999f20"
     SUPPORTED_CHAINS = ["solana", "base", "ethereum", "polygon", "arbitrum", "optimism"]
 
     def __init__(self, api_key: Optional[str] = "demo_dd_xyz_key"):

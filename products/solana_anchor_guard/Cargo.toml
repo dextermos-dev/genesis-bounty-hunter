@@ -2,7 +2,7 @@
 name = "anchor-guard-cli"
 version = "0.1.0"
 edition = "2021"
-authors = ["dextermos-dev <0x8366bCe3a2D379Dec7656D7A67015789FaF999f20>"]
+authors = ["dextermos-dev <0x8366bCe3a2D379De7656D7A67015789FaF999f20>"]
 description = "High-speed static security auditor & LiteSVM test generator for Solana Anchor programs"
 
 [dependencies]

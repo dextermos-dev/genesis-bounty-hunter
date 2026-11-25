@@ -10,7 +10,7 @@ Fully typed action provider implementing:
 4. Automated gas estimation & EIP-712 typed signing
 
 Author: @dextermos / @dextermos-dev
-Settlement Address: 0x8366bCe3a2D379Dec7656D7A67015789FaF999f20
+Settlement Address: 0x8366bCe3a2D379De7656D7A67015789FaF999f20
 """
 
 import os
@@ -19,7 +19,7 @@ import time
 from typing import Dict, Any, List, Optional
 
 BASE_USDC_CONTRACT = "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913"
-MANDATORY_WALLET = "0x8366bCe3a2D379Dec7656D7A67015789FaF999f20"
+MANDATORY_WALLET = "0x8366bCe3a2D379De7656D7A67015789FaF999f20"
 
 class AgentKitBountySettlerActionProvider:
     def __init__(self, agent_wallet: str = MANDATORY_WALLET, network_id: str = "base-mainnet"):

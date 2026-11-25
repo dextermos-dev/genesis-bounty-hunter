@@ -2,7 +2,7 @@
 
 **Bounty Target:** Superteam Earn — *Build and Demo a Mermail Agent Skill* ($500 USDC)  
 **Author:** Dexter Mos (@dextermos)  
-**Wallet Payout:** `0x8366bCe3a2D379Dec7656D7A67015789FaF999f20`  
+**Wallet Payout:** `0x8366bCe3a2D379De7656D7A67015789FaF999f20`  
 
 ---
 
@@ -14,7 +14,7 @@
   "id": "msg_invoice_8821",
   "sender": "finance@chain-analytics-nodes.io",
   "subject": "Invoice #NODE-2026-09 - Indexing Cluster",
-  "body": "Hi Treasury Team,\n\nPlease remit payment for $1,250 USDC for dedicated Solana and Base RPC indexing node operations.\n\nPayout Wallet: 0x8366bCe3a2D379Dec7656D7A67015789FaF999f20\n\nThank you,\nFinance Team",
+  "body": "Hi Treasury Team,\n\nPlease remit payment for $1,250 USDC for dedicated Solana and Base RPC indexing node operations.\n\nPayout Wallet: 0x8366bCe3a2D379De7656D7A67015789FaF999f20\n\nThank you,\nFinance Team",
   "dkimValid": true
 }
 ```
@@ -29,7 +29,7 @@ node tests/validator.js
 {
   "messageId": "msg_invoice_8821",
   "vendorDomain": "chain-analytics-nodes.io",
-  "recipientWallet": "0x8366bCe3a2D379Dec7656D7A67015789FaF999f20",
+  "recipientWallet": "0x8366bCe3a2D379De7656D7A67015789FaF999f20",
   "totalDueUsdc": 1250.00,
   "lineItems": [
     {

@@ -1,7 +1,7 @@
 /**
  * Solana Stablecoin Standard (SSS) Enterprise SDK & Compliance Framework
  * Author: Dexter Mos (@dextermos)
- * Recipient Wallet: 0x8366bCe3a2D379Dec7656D7A67015789FaF999f20
+ * Recipient Wallet: 0x8366bCe3a2D379De7656D7A67015789FaF999f20
  * License: Apache-2.0
  */
 

@@ -1,6 +1,6 @@
 /**
  * Base L2 Agent Micropayment Gateway (TypeScript Client)
- * Settlement Wallet: 0x8366bCe3a2D379Dec7656D7A67015789FaF999f20
+ * Settlement Wallet: 0x8366bCe3a2D379De7656D7A67015789FaF999f20
  */
 
 export interface RFCx402Quote {
@@ -25,5 +25,5 @@ export interface SettlementResult {
   proofHash: string;
 }
 
-export const OFFICIAL_SETTLEMENT_WALLET = "0x8366bCe3a2D379Dec7656D7A67015789FaF999f20";
+export const OFFICIAL_SETTLEMENT_WALLET = "0x8366bCe3a2D379De7656D7A67015789FaF999f20";
 export const BASE_USDC_CONTRACT = "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913";
