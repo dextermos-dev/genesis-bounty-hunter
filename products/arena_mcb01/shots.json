@@ -1,0 +1,63 @@
+{
+  "benchmark_id": "ARENA-MCB-01",
+  "reference_sheet": {
+    "file": "ref_kestrel.jpg",
+    "resolution": "1280x720",
+    "sha256": "f81d8b34c4645b4273e82c4fd742c8d75feabe79c4e965b62135ed05b4c24469",
+    "palette_hex": [
+      "#DCE2E6",
+      "#4E5242",
+      "#DC8229",
+      "#1E5659"
+    ]
+  },
+  "dialogue_track": {
+    "file": "mcb01_dialogue.mp3",
+    "sha256": "8c0563448d66dede1083efaf6664eac146871bcb875960df51ad017459c35de1",
+    "total_duration_s": 17.39
+  },
+  "tiers": {
+    "A_KEYFRAME_STRIP": {
+      "reward": "600 VLOOP + Arena Elo Badge",
+      "deliverable": "4 distinct 16:9 (>=1280x720) PNG/JPG/WebP panels preserving Kestrel face, hair streak, olive/amber flight jacket, and brass astrolabe across all 4 camera angles"
+    },
+    "B_MOTION_COMIC_I2V": {
+      "reward": "0.08 SOL (Zero-Gas Manual Finalist Award) + 1000 VLOOP",
+      "deliverable": "4 distinct 16:9 (>=960x540, 24+ fps) H.264 MP4 clips (or 1 synced episode muxed with mcb01_dialogue.mp3) passing verify_mcb01.py non-static motion delta >= 3.5"
+    }
+  },
+  "shots": [
+    {
+      "id": "shot_01",
+      "start_s": 0.0,
+      "duration_s": 5.8,
+      "speaker": "KESTREL",
+      "line": "Control said the relay tower went dark at midnight. Somebody forgot to tell the beacon.",
+      "camera": "Wide rooftop 3/4 profile in neon rain; Kestrel holds glowing brass astrolabe toward blinking harbor beacon."
+    },
+    {
+      "id": "shot_02",
+      "start_s": 5.8,
+      "duration_s": 4.62,
+      "speaker": "DISPATCH_RADIO",
+      "line": "Kestrel, drop the brass compass and clear the roof. That signal isn't ours.",
+      "camera": "Macro OTS insert on gloved hand, #DC8229 amber jacket cuff, and brass astrolabe needle spinning wildly under rain."
+    },
+    {
+      "id": "shot_03",
+      "start_s": 10.42,
+      "duration_s": 3.22,
+      "speaker": "KESTREL",
+      "line": "Too late. The needle already locked onto the harbor.",
+      "camera": "Medium close-up reaction over shoulder under cyan/magenta neon rain reflection; asymmetric silver-white hair with dark teal streak."
+    },
+    {
+      "id": "shot_04",
+      "start_s": 13.64,
+      "duration_s": 3.75,
+      "speaker": "KESTREL",
+      "line": "Keep the line open. I'm going down to read it myself.",
+      "camera": "Low-angle dynamic action frame at rooftop ledge stepping into harbor searchlight mist."
+    }
+  ]
+}

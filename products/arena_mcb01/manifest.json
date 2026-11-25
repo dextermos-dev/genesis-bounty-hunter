@@ -1,0 +1,40 @@
+{
+  "benchmark_id": "ARENA-MCB-01",
+  "tier": "A",
+  "contributor": "Dexter-Hunter",
+  "solana_wallet": "GLKpgANMTt8tJpTDVuzqi3ESuYivrgciKvwqSX5Hvb7K",
+  "character": "KESTREL",
+  "palette": [
+    "#DCE2E6",
+    "#4E5242",
+    "#DC8229",
+    "#1E5659"
+  ],
+  "shots": {
+    "shot_01": {
+      "file": "shot_01.jpg",
+      "sha256": "22606b30b68a3a2e5dadc5dd4c818c3f503121f091abcb9899c77a3701014179",
+      "aspect": "16:9",
+      "resolution": "1280x720"
+    },
+    "shot_02": {
+      "file": "shot_02.jpg",
+      "sha256": "460f5905404263949c9bb7ff9c065ad5eeb0b3053159e35e0ce1ca459c6cf91c",
+      "aspect": "16:9",
+      "resolution": "1280x720"
+    },
+    "shot_03": {
+      "file": "shot_03.jpg",
+      "sha256": "3740cc0a046c84efeece4d0567c6ae2e3dfe1c06d97e15047f86e07a430bccf4",
+      "aspect": "16:9",
+      "resolution": "1280x720"
+    },
+    "shot_04": {
+      "file": "shot_04.jpg",
+      "sha256": "0b3a1b15f4cae7deebb87aaf47e7fd52285d72da3337bc29b6c8ad7de8644d4a",
+      "aspect": "16:9",
+      "resolution": "1280x720"
+    }
+  },
+  "submission_note": "Clean-room 4-shot anime consistency strip meeting all color invariants, astrolabe tracking, and camera angles."
+}
