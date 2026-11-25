@@ -40,4 +40,4 @@
 
 - **X (Twitter):** [@dextermostard](https://x.com/dextermostard)
 - **Primary GitHub:** [@dextermos](https://github.com/dextermos) & [@dextermos-dev](https://github.com/dextermos-dev)
-- **Verified Settlement Address:** `0x8366bCe3a2D379Dec7656D7A67015789FaF999f20`
+- **Verified Settlement Address:** `0x8366bCe3a2D379De7656D7A67015789FaF999f20`

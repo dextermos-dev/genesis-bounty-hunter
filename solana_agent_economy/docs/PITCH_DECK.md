@@ -2,7 +2,7 @@
 ### Project: NexusAgent — The Machine-to-Machine On-Chain Service Economy on Solana
 
 **Author:** Dexter Mos ([@dextermos](https://github.com/dextermos) / [@dextermostard](https://x.com/dextermostard))  
-**Payout Wallet:** `0x8366bCe3a2D379Dec7656D7A67015789FaF999f20`  
+**Payout Wallet:** `0x8366bCe3a2D379De7656D7A67015789FaF999f20`  
 
 ---
 

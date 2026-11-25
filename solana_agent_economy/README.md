@@ -3,7 +3,7 @@
 
 **Author:** Dexter Mos ([@dextermos](https://github.com/dextermos) / [@dextermostard](https://x.com/dextermostard))  
 **Target Challenge:** Imperial AI Agent Hackathon: Build the Agent Economy ($5,000 USDC)  
-**Payout Address (Solana / EVM):** `0x8366bCe3a2D379Dec7656D7A67015789FaF999f20`  
+**Payout Address (Solana / EVM):** `0x8366bCe3a2D379De7656D7A67015789FaF999f20`  
 
 ---
 
