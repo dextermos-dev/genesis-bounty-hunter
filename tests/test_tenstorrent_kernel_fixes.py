@@ -2,7 +2,7 @@
 """
 Unit test suite for Tenstorrent TT-Metal Kernel Fixes (Issues #58495 & #58986)
 Author: @dextermos / @dextermos-dev
-Settlement Address: 0x8366bCe3a2D379Dec7656D7A67015789FaF999f20
+Settlement Address: 0x8366bCe3a2D379De7656D7A67015789FaF999f20
 """
 
 import unittest

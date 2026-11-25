@@ -8,7 +8,7 @@ class TestRustChainEcosystem(unittest.TestCase):
         res = calc.calculate_daily_earnings(100.0)
         self.assertGreater(res["daily_rtc"], 0)
         self.assertGreater(res["daily_usd"], 0)
-        self.assertEqual(res["settlement_wallet"], "0x8366bCe3a2D379Dec7656D7A67015789FaF999f20")
+        self.assertEqual(res["settlement_wallet"], "0x8366bCe3a2D379De7656D7A67015789FaF999f20")
 
     def test_network_telemetry(self):
         telemetry = RustChainNetworkStatus()
@@ -18,7 +18,7 @@ class TestRustChainEcosystem(unittest.TestCase):
         self.assertEqual(summary["total_nodes"], 2)
         self.assertEqual(summary["healthy_nodes"], 2)
         self.assertEqual(summary["max_block_height"], 10242)
-        self.assertEqual(summary["settlement_wallet"], "0x8366bCe3a2D379Dec7656D7A67015789FaF999f20")
+        self.assertEqual(summary["settlement_wallet"], "0x8366bCe3a2D379De7656D7A67015789FaF999f20")
 
 if __name__ == "__main__":
     unittest.main()

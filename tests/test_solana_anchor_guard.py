@@ -24,7 +24,7 @@ class TestAnchorGuardAuditor(unittest.TestCase):
         audit_res = self.auditor.audit_source_code(vulnerable_code)
         self.assertFalse(audit_res["is_secure"])
         self.assertTrue(audit_res["total_findings"] >= 2)
-        self.assertEqual(audit_res["settlement_wallet"], "0x8366bCe3a2D379Dec7656D7A67015789FaF999f20")
+        self.assertEqual(audit_res["settlement_wallet"], "0x8366bCe3a2D379De7656D7A67015789FaF999f20")
 
     def test_02_secure_code_passes(self):
         secure_code = """
@@ -45,7 +45,7 @@ class TestAnchorGuardAuditor(unittest.TestCase):
     def test_03_litesvm_generation(self):
         test_code = self.auditor.generate_litesvm_test("EscrowProgram", ["Maker", "Taker", "Vault"])
         self.assertIn("EscrowProgram", test_code)
-        self.assertIn("0x8366bCe3a2D379Dec7656D7A67015789FaF999f20", test_code)
+        self.assertIn("0x8366bCe3a2D379De7656D7A67015789FaF999f20", test_code)
         self.assertIn("LiteSVM", test_code)
 
 

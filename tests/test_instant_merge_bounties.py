@@ -25,7 +25,7 @@ class TestInstantMergeBounties(unittest.TestCase):
         self.assertEqual(res["status"], "VALID_METADATA")
         self.assertEqual(res["name"], name)
         self.assertEqual(res["symbol"], symbol)
-        self.assertEqual(res["payout_address"], "0x8366bCe3a2D379Dec7656D7A67015789FaF999f20")
+        self.assertEqual(res["payout_address"], "0x8366bCe3a2D379De7656D7A67015789FaF999f20")
 
 if __name__ == "__main__":
     unittest.main()

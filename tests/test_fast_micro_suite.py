@@ -19,11 +19,11 @@ class TestFastMicroSuite(unittest.TestCase):
         res = estimate_userop_gas_limits(call_data_len=128, verification_complexity=1)
         self.assertEqual(res["status"], "ESTIMATION_VALID")
         self.assertEqual(res["preVerificationGas"], 21000 + (128 * 16))
-        self.assertEqual(res["payout_address"], "0x8366bCe3a2D379Dec7656D7A67015789FaF999f20")
+        self.assertEqual(res["payout_address"], "0x8366bCe3a2D379De7656D7A67015789FaF999f20")
 
     def test_transfer_hook_reentrancy_protection(self):
         guard = TransferHookReentrancyGuard()
-        res = guard.execute_hook("0xSrc", "0x8366bCe3a2D379Dec7656D7A67015789FaF999f20", 50.0)
+        res = guard.execute_hook("0xSrc", "0x8366bCe3a2D379De7656D7A67015789FaF999f20", 50.0)
         self.assertEqual(res["status"], "HOOK_EXECUTED_SAFE")
         self.assertTrue(res["reentrancy_safe"])
 

@@ -33,7 +33,7 @@ class TestFastMonetizationEngines(unittest.TestCase):
             summary_text="Implemented ERC-7579 Session Key Module."
         )
         self.assertTrue(cast["is_valid_length"])
-        self.assertIn("0x8366bCe3a2D379Dec7656D7A67015789FaF999f20", cast["cast_text"])
+        self.assertIn("0x8366bCe3a2D379De7656D7A67015789FaF999f20", cast["cast_text"])
 
     def test_solana_arbitrage_harvester(self):
         harvester = SolanaArbitrageHarvester()

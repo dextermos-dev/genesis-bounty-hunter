@@ -22,7 +22,7 @@ class TestWebacyAgentShield(unittest.TestCase):
         self.assertEqual(res_bad["category"], "MALICIOUS_DRAINER")
 
     def test_02_address_threat_evaluation(self):
-        safe_wallet = "0x8366bCe3a2D379Dec7656D7A67015789FaF999f20"
+        safe_wallet = "0x8366bCe3a2D379De7656D7A67015789FaF999f20"
         res = self.shield.evaluate_address_threat(safe_wallet, chain="base")
         self.assertEqual(res["action"], "ALLOW")
         self.assertEqual(res["exposure_level"], "LOW_RISK_SAFE")

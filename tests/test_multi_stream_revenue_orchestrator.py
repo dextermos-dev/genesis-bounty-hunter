@@ -13,7 +13,7 @@ class TestMultiStreamRevenueOrchestrator(unittest.TestCase):
     def test_01_summary_structure(self):
         summary = self.orchestrator.get_orchestrator_summary()
         self.assertEqual(summary["total_streams_active"], 5)
-        self.assertEqual(summary["settlement_wallet"], "0x8366bCe3a2D379Dec7656D7A67015789FaF999f20")
+        self.assertEqual(summary["settlement_wallet"], "0x8366bCe3a2D379De7656D7A67015789FaF999f20")
         self.assertIn("Base L2", summary["supported_settlement_chains"])
 
     def test_02_stream_readiness(self):

@@ -18,7 +18,7 @@ class TestExpressServicesEngine(unittest.TestCase):
             repo_url="https://github.com/defi/contracts"
         )
         self.assertTrue(res["success"])
-        self.assertEqual(res["order"]["settlement_wallet"], "0x8366bCe3a2D379Dec7656D7A67015789FaF999f20")
+        self.assertEqual(res["order"]["settlement_wallet"], "0x8366bCe3a2D379De7656D7A67015789FaF999f20")
         self.assertEqual(res["order"]["price_usdc"], 500.0)
 
     def test_02_order_fulfillment(self):
@@ -30,7 +30,7 @@ class TestExpressServicesEngine(unittest.TestCase):
         order_id = res["order"]["order_id"]
         fulfill = self.engine.fulfill_service_order(order_id, "outputs/deliverables/sample_audit.md")
         self.assertTrue(fulfill["success"])
-        self.assertEqual(fulfill["beneficiary"], "0x8366bCe3a2D379Dec7656D7A67015789FaF999f20")
+        self.assertEqual(fulfill["beneficiary"], "0x8366bCe3a2D379De7656D7A67015789FaF999f20")
         self.assertEqual(fulfill["status"], "DELIVERED_RELEASE_ESCROW")
 
 

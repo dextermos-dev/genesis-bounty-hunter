@@ -18,8 +18,8 @@ class TestAlgoraBountySolver(unittest.TestCase):
             "Added mutex lock and deterministic nonce verification."
         )
         self.assertEqual(payload["title"], "fix(core): resolve #42 - Fix race condition in session key manager")
-        self.assertIn("/claim 0x8366bCe3a2D379Dec7656D7A67015789FaF999f20", payload["body"])
-        self.assertEqual(payload["settlement_wallet"], "0x8366bCe3a2D379Dec7656D7A67015789FaF999f20")
+        self.assertIn("/claim 0x8366bCe3a2D379De7656D7A67015789FaF999f20", payload["body"])
+        self.assertEqual(payload["settlement_wallet"], "0x8366bCe3a2D379De7656D7A67015789FaF999f20")
         self.assertTrue(payload["ready_for_review"])
 
 

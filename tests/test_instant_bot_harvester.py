@@ -22,12 +22,12 @@ class TestInstantBotHarvester(unittest.TestCase):
         res = self.harvester.evaluate_issue_bot_compatibility(issue_data)
         self.assertTrue(res["is_instant_payout"])
         self.assertEqual(res["bot_detected"], "algora-bot")
-        self.assertEqual(res["settlement_wallet"], "0x8366bCe3a2D379Dec7656D7A67015789FaF999f20")
+        self.assertEqual(res["settlement_wallet"], "0x8366bCe3a2D379De7656D7A67015789FaF999f20")
 
     def test_02_generate_claim_comment(self):
         comment = self.harvester.prepare_instant_claim_comment("algora-bot", "https://github.com/example/repo/pull/43")
         self.assertIn("/claim", comment)
-        self.assertIn("0x8366bCe3a2D379Dec7656D7A67015789FaF999f20", comment)
+        self.assertIn("0x8366bCe3a2D379De7656D7A67015789FaF999f20", comment)
 
     def test_03_non_instant_issue(self):
         issue_data = {

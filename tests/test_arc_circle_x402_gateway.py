@@ -11,21 +11,21 @@ class TestArcCircleX402Gateway(unittest.TestCase):
         self.assertEqual(challenge["status"], 402)
         self.assertEqual(challenge["price_usdc"], 1.00)
         self.assertEqual(challenge["currency"], "USDC")
-        self.assertEqual(challenge["settlement_wallet"], "0x8366bCe3a2D379Dec7656D7A67015789FaF999f20")
+        self.assertEqual(challenge["settlement_wallet"], "0x8366bCe3a2D379De7656D7A67015789FaF999f20")
         self.assertTrue("nonce" in challenge)
 
     def test_verify_valid_receipt_and_service_execution(self):
         receipt = {
             "tx_hash": "0x4a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b",
             "amount_usdc": 1.00,
-            "recipient_wallet": "0x8366bCe3a2D379Dec7656D7A67015789FaF999f20",
+            "recipient_wallet": "0x8366bCe3a2D379De7656D7A67015789FaF999f20",
             "nonce": "test_nonce_123",
             "endpoint": "/api/v1/wallet/reputation"
         }
         res = self.gateway.verify_payment_receipt(receipt)
         self.assertTrue(res["valid"])
         self.assertTrue(res["settlement_confirmed"])
-        self.assertEqual(res["settlement_wallet"], "0x8366bCe3a2D379Dec7656D7A67015789FaF999f20")
+        self.assertEqual(res["settlement_wallet"], "0x8366bCe3a2D379De7656D7A67015789FaF999f20")
 
         # Execute service with received token
         token = res["access_token"]
@@ -39,7 +39,7 @@ class TestArcCircleX402Gateway(unittest.TestCase):
         receipt = {
             "tx_hash": "0x999999994e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b",
             "amount_usdc": 2.50,
-            "recipient_wallet": "0x8366bCe3a2D379Dec7656D7A67015789FaF999f20",
+            "recipient_wallet": "0x8366bCe3a2D379De7656D7A67015789FaF999f20",
             "nonce": "nonce_replay_1",
             "endpoint": "/api/v1/security/contract-audit"
         }

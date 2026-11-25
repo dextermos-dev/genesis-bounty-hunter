@@ -2,7 +2,7 @@
 """
 Unit tests for Coinbase AgentKit Action Provider (Base L2 x402 Micropayments)
 Author: @dextermos / @dextermos-dev
-Settlement Address: 0x8366bCe3a2D379Dec7656D7A67015789FaF999f20
+Settlement Address: 0x8366bCe3a2D379De7656D7A67015789FaF999f20
 """
 
 import unittest

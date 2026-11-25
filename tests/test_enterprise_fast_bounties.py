@@ -13,7 +13,7 @@ if PROJECT_ROOT not in sys.path:
 from tools.solana_fee_harvester import simulate_fee_scan, harvest_withheld_fees
 
 class MockArgs:
-    def __init__(self, mint="TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb", authority="0x8366bCe3a2D379Dec7656D7A67015789FaF999f20", dry_run=True, batch_size=10, priority_micro_lamports=50000):
+    def __init__(self, mint="TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb", authority="0x8366bCe3a2D379De7656D7A67015789FaF999f20", dry_run=True, batch_size=10, priority_micro_lamports=50000):
         self.mint = mint
         self.authority = authority
         self.dry_run = dry_run

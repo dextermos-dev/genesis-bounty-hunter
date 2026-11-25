@@ -14,7 +14,7 @@ class TestLiveX402MicroServiceServer(unittest.TestCase):
         res = self.server.handle_request("/api/v1/shield/url", {"url": "https://example.com"})
         self.assertEqual(res["status"], 402)
         self.assertIn("x402_quote", res)
-        self.assertEqual(res["x402_quote"]["recipient_wallet"], "0x8366bCe3a2D379Dec7656D7A67015789FaF999f20")
+        self.assertEqual(res["x402_quote"]["recipient_wallet"], "0x8366bCe3a2D379De7656D7A67015789FaF999f20")
         self.assertEqual(res["x402_quote"]["cost_usdc"], 0.50)
 
     def test_02_paid_request_execution(self):
@@ -26,7 +26,7 @@ class TestLiveX402MicroServiceServer(unittest.TestCase):
         )
         self.assertEqual(res["status"], 200)
         self.assertTrue(res["data"]["is_safe"])
-        self.assertEqual(res["receipt"]["beneficiary"], "0x8366bCe3a2D379Dec7656D7A67015789FaF999f20")
+        self.assertEqual(res["receipt"]["beneficiary"], "0x8366bCe3a2D379De7656D7A67015789FaF999f20")
         self.assertEqual(res["receipt"]["cost_usdc"], 0.50)
         self.assertEqual(self.server.total_revenue_collected, 0.50)
 

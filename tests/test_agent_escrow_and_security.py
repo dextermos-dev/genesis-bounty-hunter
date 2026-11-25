@@ -11,7 +11,7 @@ class TestAgentEscrowAndSecurity(unittest.TestCase):
     def test_escrow_timeout_and_release(self):
         escrow_amount = 500.0
         creator = "0xCreator"
-        agent = "0x8366bCe3a2D379Dec7656D7A67015789FaF999f20"
+        agent = "0x8366bCe3a2D379De7656D7A67015789FaF999f20"
         
         # Test simulated timeout release
         expiry = time.time() - 10

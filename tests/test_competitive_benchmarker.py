@@ -7,7 +7,7 @@ class TestCompetitiveBenchmarker(unittest.TestCase):
         self.benchmarker = CompetitiveBenchmarker()
 
     def test_initialization(self):
-        self.assertEqual(self.benchmarker.OFFICIAL_SETTLEMENT_WALLET, "0x8366bCe3a2D379Dec7656D7A67015789FaF999f20")
+        self.assertEqual(self.benchmarker.OFFICIAL_SETTLEMENT_WALLET, "0x8366bCe3a2D379De7656D7A67015789FaF999f20")
         self.assertTrue(self.benchmarker.benchmark_metrics["zero_flaky_tests"])
 
     def test_analyze_flawed_competitor(self):
@@ -32,7 +32,7 @@ class TestCompetitiveBenchmarker(unittest.TestCase):
         matrix = self.benchmarker.generate_superiority_matrix("bounty_test_1", rivals)
         self.assertEqual(matrix["competitors_evaluated"], 2)
         self.assertGreaterEqual(matrix["total_competitor_flaws_exploited"], 2)
-        self.assertEqual(matrix["our_standards"]["settlement_wallet"], "0x8366bCe3a2D379Dec7656D7A67015789FaF999f20")
+        self.assertEqual(matrix["our_standards"]["settlement_wallet"], "0x8366bCe3a2D379De7656D7A67015789FaF999f20")
 
 
 if __name__ == "__main__":
