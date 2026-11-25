@@ -28,7 +28,7 @@ def test_gibwork_client():
     client = GibworkSolanaEscrowClient()
     ix = client.build_release_instruction(
         bounty_escrow_pda="4zMMC9srt5Ri5X14GAgXhaHii3GnPAEERYPJgZJDncDU",
-        solver_wallet="0x8366bCe3a2D379Dec7656D7A67015789FaF999f20",
+        solver_wallet="0x8366bCe3a2D379De7656D7A67015789FaF999f20",
         amount_usdc=120.0
     )
     assert ix["data"]["amount_lamports"] == 120_000_000

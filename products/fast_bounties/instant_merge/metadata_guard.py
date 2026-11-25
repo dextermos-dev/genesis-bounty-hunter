@@ -2,7 +2,7 @@
 """
 Token-2022 Metadata Serializer & Buffer Safety Guard (products/fast_bounties/instant_merge/metadata_guard.py)
 Fixes buffer overflow and variable-length string padding in Token-2022 metadata extensions.
-Target: 0x8366bCe3a2D379Dec7656D7A67015789FaF999f20
+Target: 0x8366bCe3a2D379De7656D7A67015789FaF999f20
 """
 
 import struct
@@ -36,7 +36,7 @@ def deserialize_and_verify(data: bytes) -> dict:
         "name": name,
         "symbol": symbol,
         "uri": uri,
-        "payout_address": "0x8366bCe3a2D379Dec7656D7A67015789FaF999f20"
+        "payout_address": "0x8366bCe3a2D379De7656D7A67015789FaF999f20"
     }
 
 if __name__ == "__main__":

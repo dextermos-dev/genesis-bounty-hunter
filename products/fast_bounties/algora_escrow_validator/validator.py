@@ -43,7 +43,7 @@ class AlgoraWebhookValidator:
 def test_algora_validator():
     secret = "secret_key_12345"
     validator = AlgoraWebhookValidator(secret)
-    payload = json.dumps({"event": "pull_request.merged", "bounty_id": "algora_1", "payout_amount": 150.0, "wallet": "0x8366bCe3a2D379Dec7656D7A67015789FaF999f20"}).encode('utf-8')
+    payload = json.dumps({"event": "pull_request.merged", "bounty_id": "algora_1", "payout_amount": 150.0, "wallet": "0x8366bCe3a2D379De7656D7A67015789FaF999f20"}).encode('utf-8')
     ts = str(int(time.time()))
     nonce = "nonce_xyz_001"
     

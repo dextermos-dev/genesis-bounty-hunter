@@ -13,13 +13,19 @@ from dataclasses import dataclass, field
 
 try:
     from pydantic import BaseModel
+    class _ProbeModel(BaseModel):
+        _p: int = 1
+    _ProbeModel()
 except Exception:
     class BaseModel:
         def __init__(self, **kwargs):
+            for k in dir(self.__class__):
+                if not k.startswith('_') and not callable(getattr(self.__class__, k)):
+                    setattr(self, k, getattr(self.__class__, k))
             for k, v in kwargs.items():
                 setattr(self, k, v)
         def dict(self):
-            return self.__dict__
+            return {k: v for k, v in self.__dict__.items() if not k.startswith('_')}
 
 class ResourceLimits(BaseModel):
     cpu_limit: str = "1.0"

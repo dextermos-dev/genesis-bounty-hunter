@@ -8,7 +8,7 @@ import "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
 /**
  * @title EnterpriseRevenueSplitterBase
  * @notice Production-Grade Multi-Token & Native ETH Yield Splitter for Base L2.
- * Target Settlement Wallet: 0x8366bCe3a2D379Dec7656D7A67015789FaF999f20
+ * Target Settlement Wallet: 0x8366bCe3a2D379De7656D7A67015789FaF999f20
  * 
  * Key Advantages over Competitors:
  * 1. SafeERC20 integration protecting against non-standard ERC-20 return values (USDT/USDC).

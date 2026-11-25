@@ -13,7 +13,7 @@ export const elizaBaseMicropayAction = {
   name: "EXECUTE_BASE_MICROPAYMENT",
   description: "Executes an instant micro-payment in USDC on Base L2 or claims an open binary bounty.",
   config: {
-    settlementAddress: "0x8366bCe3a2D379Dec7656D7A67015789FaF999f20",
+    settlementAddress: "0x8366bCe3a2D379De7656D7A67015789FaF999f20",
     defaultNetwork: "base",
     maxAutoTipUsdc: 25.0
   },
@@ -29,7 +29,7 @@ export const elizaBaseMicropayAction = {
       network: "base-mainnet",
       amount_usdc: amount,
       recipient: recipient,
-      beneficiary: "0x8366bCe3a2D379Dec7656D7A67015789FaF999f20",
+      beneficiary: "0x8366bCe3a2D379De7656D7A67015789FaF999f20",
       timestamp: Date.now()
     };
 

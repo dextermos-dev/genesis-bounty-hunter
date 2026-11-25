@@ -37,13 +37,13 @@ class OpireClaimParser:
 """
 
 def test_opire_parser():
-    sample_pr = "Fixing the bug reported in the issue.\n\n/claim #42\n\nWallet: 0x8366bCe3a2D379Dec7656D7A67015789FaF999f20"
+    sample_pr = "Fixing the bug reported in the issue.\n\n/claim #42\n\nWallet: 0x8366bCe3a2D379De7656D7A67015789FaF999f20"
     issue = OpireClaimParser.extract_claim_issue(sample_pr)
     assert issue == 42, f"Expected issue 42, got {issue}"
     
-    formatted = OpireClaimParser.format_pr_submission(42, "0x8366bCe3a2D379Dec7656D7A67015789FaF999f20", "Implementado módulo seguro")
+    formatted = OpireClaimParser.format_pr_submission(42, "0x8366bCe3a2D379De7656D7A67015789FaF999f20", "Implementado módulo seguro")
     assert "/claim #42" in formatted
-    assert "0x8366bCe3a2D379Dec7656D7A67015789FaF999f20" in formatted
+    assert "0x8366bCe3a2D379De7656D7A67015789FaF999f20" in formatted
     print("[PASS] Opire Claim Parser: Syntax and Formatter Verified.")
 
 if __name__ == "__main__":

@@ -5,7 +5,7 @@ color 0a
 echo ========================================================
 echo   DOOMSDAY 24/7 MINER FOR WINDOWS VPS
 echo   Account Worker: doom162df6bb0c219de72343658ec04c1d9b1939c3c5c02f6b94f
-echo   Settlement Wallet: 0x8366bCe3a2D379Dec7656D7A67015789FaF999f20
+echo   Settlement Wallet: 0x8366bCe3a2D379De7656D7A67015789FaF999f20
 echo ========================================================
 echo.
 

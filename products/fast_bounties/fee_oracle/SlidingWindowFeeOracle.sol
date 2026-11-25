@@ -4,7 +4,7 @@ pragma solidity ^0.8.20;
 /**
  * @title SlidingWindowFeeOracle
  * @notice Real-Time Gas Price & Priority Fee Oracle with Sliding Window Median for Base L2.
- * Target Wallet: 0x8366bCe3a2D379Dec7656D7A67015789FaF999f20
+ * Target Wallet: 0x8366bCe3a2D379De7656D7A67015789FaF999f20
  */
 
 contract SlidingWindowFeeOracle {

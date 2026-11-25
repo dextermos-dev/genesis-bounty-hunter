@@ -4,7 +4,7 @@ pragma solidity ^0.8.20;
 /**
  * @title AgentSessionKeyManager
  * @notice Modular Session Key Validator for Autonomous AI Agents on Base L2 (ERC-7579 / ERC-4337).
- * Target Settlement: 0x8366bCe3a2D379Dec7656D7A67015789FaF999f20
+ * Target Settlement: 0x8366bCe3a2D379De7656D7A67015789FaF999f20
  */
 
 contract AgentSessionKeyManager {

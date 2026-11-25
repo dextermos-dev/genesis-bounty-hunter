@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Solana SPL Token-2022 Transfer Hook Non-Reentrancy Guard Middleware
-Target: 0x8366bCe3a2D379Dec7656D7A67015789FaF999f20
+Target: 0x8366bCe3a2D379De7656D7A67015789FaF999f20
 """
 
 import json
@@ -22,11 +22,11 @@ class TransferHookReentrancyGuard:
                 "status": "HOOK_EXECUTED_SAFE",
                 "reentrancy_safe": True,
                 "amount_usdc": amount_usdc,
-                "payout_address": "0x8366bCe3a2D379Dec7656D7A67015789FaF999f20"
+                "payout_address": "0x8366bCe3a2D379De7656D7A67015789FaF999f20"
             }
         finally:
             self._executing = False
 
 if __name__ == "__main__":
     guard = TransferHookReentrancyGuard()
-    print(json.dumps(guard.execute_hook("0xSource", "0x8366bCe3a2D379Dec7656D7A67015789FaF999f20", 80.0), indent=2))
+    print(json.dumps(guard.execute_hook("0xSource", "0x8366bCe3a2D379De7656D7A67015789FaF999f20", 80.0), indent=2))

@@ -4,7 +4,7 @@ pragma solidity ^0.8.20;
 /**
  * @title IntentSettlerEIP7683
  * @notice Cross-Chain Intent Settlement Engine for Base L2 (EIP-7683 Standard).
- * Beneficiary Settlement: 0x8366bCe3a2D379Dec7656D7A67015789FaF999f20
+ * Beneficiary Settlement: 0x8366bCe3a2D379De7656D7A67015789FaF999f20
  */
 
 interface IERC20 {
