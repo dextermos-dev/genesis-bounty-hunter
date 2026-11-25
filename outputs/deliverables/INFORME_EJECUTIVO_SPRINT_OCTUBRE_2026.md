@@ -84,7 +84,7 @@ Estas 8 entregas representan el frente de conversión de ingresos inmediato. Tod
 flowchart LR
     A["rezearcher (Grey Ridge Signals)"] <-->|"Referencia Cruzada x402"| B["Bug Bounty Intelligence (Al-Mizaan v3)"]
     B --> C["Base L2 (EVM)"]
-    C --> D["Settlement: 0x8366bCe...99f20"]
+    C --> D["Settlement: 0x8366bCe3a2D379De7656D7A67015789FaF999f20"]
     E["Chain-Love Directory (#4746)"] -->|"Tráfico Compradores x402"| B
 ```
 

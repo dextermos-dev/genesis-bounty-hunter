@@ -43,7 +43,7 @@ While traditional SPL token implementations lack granular compliance hooks and r
 │                       [ Solana Blockchain Runtime ]                              │
 │                       - SPL Token-2022 Extensions                                │
 │                       - Pyth / Switchboard Low-Latency Oracles                   │
-│                       - Target Settlement: 0x8366bCe3...9f20                     │
+│                       - Target Settlement: 0x8366bCe3a2D379De7656D7A67015789FaF999f20                     │
 └──────────────────────────────────────────────────────────────────────────────────┘
 ```
 

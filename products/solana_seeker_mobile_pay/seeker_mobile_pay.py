@@ -28,7 +28,7 @@ class SolanaSeekerMobilePay:
         self.authorized_wallet = "Seeker8366bCe3a2D379Dec7656D7A67015789FaF999f20"
         return {
             "status": "CONNECTED",
-            "session_id": "mwa_session_0x8366bce",
+            "session_id": "mwa_session_canonical_base",
             "authorized_pubkey": self.authorized_wallet,
             "app_name": name
         }

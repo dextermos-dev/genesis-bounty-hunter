@@ -132,7 +132,7 @@ def run_hourly_cycle():
 
 
 def check_onchain_wallet_balance():
-    """Consulta el balance real de USDC y wDOOM en Base L2 para 0x8366bce3a2d379de7656d7a67015789faf999f20."""
+    """Consulta el balance real de USDC y wDOOM en Base L2 para 0x8366bCe3a2D379De7656D7A67015789FaF999f20."""
     try:
         url = 'https://mainnet.base.org'
         headers = {'Content-Type': 'application/json', 'User-Agent': 'Mozilla/5.0'}

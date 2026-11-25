@@ -7,10 +7,7 @@ the valid settlement address: 0x8366bCe3a2D379De7656D7A67015789FaF999f20
 
 import os
 import unittest
-
-OFFICIAL_WALLET = "0x8366bCe3a2D379De7656D7A67015789FaF999f20"
-raw_env = os.environ.get("WEB3_WALLET_ADDRESS", OFFICIAL_WALLET).strip()
-WALLET = OFFICIAL_WALLET if "0x8366bCe3a2D379" in raw_env else raw_env
+from constants.wallets import BASE_SETTLEMENT_WALLET as WALLET
 
 class TestMandatoryWalletRule(unittest.TestCase):
     def test_wallet_present_in_agents_md(self):

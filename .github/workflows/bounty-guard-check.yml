@@ -24,8 +24,13 @@ jobs:
         run: |
           python3 -c "
           import os
-          wallet = os.environ.get('WEB3_WALLET_ADDRESS', '0x8366bCe3a2D379De7656D7A67015789FaF999f20')
-          assert wallet.startswith('0x') and len(wallet) in (42, 43), f'Invalid EVM Settlement Wallet: {wallet}'
+          wallet = os.environ.get('WEB3_WALLET_ADDRESS', '0x8366bCe3a2D379De7656D7A67015789FaF999f20').strip()
+          assert wallet == '0x8366bCe3a2D379De7656D7A67015789FaF999f20', f'Invalid or non-canonical Settlement Wallet: {wallet}'
+          assert len(wallet) == 42, f'EVM Wallet must be exactly 42 characters, got {len(wallet)}'
           print(f'[+] Settlement Wallet Invariant Verified: {wallet}')
           print('[+] Pre-flight Security and Anti-Sybil Invariants: PASSED')
           "
+
+      - name: Run WalletGuard Repository Integrity Sentinel
+        run: |
+          python3 tools/wallet_guard.py

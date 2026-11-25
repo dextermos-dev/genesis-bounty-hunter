@@ -35,7 +35,7 @@ As AI agents and autonomous micro-services proliferate across Web3, traditional 
            │  4. Submit Payment Receipt (tx_hash)    │                                      │
            ├────────────────────────────────────────►│                                      │
            │                                         │  5. Verify Nonce & Settlement        │
-           │                                         │     0x8366bCe3...9f20                │
+           │                                         │     0x8366bCe3a2D379De7656D7A67015789FaF999f20                │
            │                                         │──────────────────────────────────────┤
            │  6. HTTP 200 OK + JWT Access Token      │                                      │
            │     + Executed Service Payload          │                                      │
