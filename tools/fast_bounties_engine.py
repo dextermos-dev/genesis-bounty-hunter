@@ -8,7 +8,7 @@ Diseñado específicamente para capturar y resolver bounties de alta rotación y
 4. Gibwork (Escrow instantáneo en Solana)
 5. Dework (Micro-tareas Web3 para DAOs)
 
-Wallet Receptora Oficial: 0x8366bCe3a2D379Dec7656D7A67015789FaF999f20
+Wallet Receptora Oficial: 0x8366bCe3a2D379De7656D7A67015789FaF999f20
 """
 
 import os
@@ -156,7 +156,7 @@ class AlgoraWebhookValidator:
 def test_algora_validator():
     secret = "secret_key_12345"
     validator = AlgoraWebhookValidator(secret)
-    payload = json.dumps({"event": "pull_request.merged", "bounty_id": "algora_1", "payout_amount": 150.0, "wallet": "0x8366bCe3a2D379Dec7656D7A67015789FaF999f20"}).encode('utf-8')
+    payload = json.dumps({"event": "pull_request.merged", "bounty_id": "algora_1", "payout_amount": 150.0, "wallet": "0x8366bCe3a2D379De7656D7A67015789FaF999f20"}).encode('utf-8')
     ts = str(int(time.time()))
     nonce = "nonce_xyz_001"
     
@@ -220,13 +220,13 @@ class OpireClaimParser:
 """
 
 def test_opire_parser():
-    sample_pr = "Fixing the bug reported in the issue.\\n\\n/claim #42\\n\\nWallet: 0x8366bCe3a2D379Dec7656D7A67015789FaF999f20"
+    sample_pr = "Fixing the bug reported in the issue.\\n\\n/claim #42\\n\\nWallet: 0x8366bCe3a2D379De7656D7A67015789FaF999f20"
     issue = OpireClaimParser.extract_claim_issue(sample_pr)
     assert issue == 42, f"Expected issue 42, got {issue}"
     
-    formatted = OpireClaimParser.format_pr_submission(42, "0x8366bCe3a2D379Dec7656D7A67015789FaF999f20", "Implementado módulo seguro")
+    formatted = OpireClaimParser.format_pr_submission(42, "0x8366bCe3a2D379De7656D7A67015789FaF999f20", "Implementado módulo seguro")
     assert "/claim #42" in formatted
-    assert "0x8366bCe3a2D379Dec7656D7A67015789FaF999f20" in formatted
+    assert "0x8366bCe3a2D379De7656D7A67015789FaF999f20" in formatted
     print("[PASS] Opire Claim Parser: Syntax and Formatter Verified.")
 
 if __name__ == "__main__":
@@ -324,7 +324,7 @@ def test_gibwork_client():
     client = GibworkSolanaEscrowClient()
     ix = client.build_release_instruction(
         bounty_escrow_pda="4zMMC9srt5Ri5X14GAgXhaHii3GnPAEERYPJgZJDncDU",
-        solver_wallet="0x8366bCe3a2D379Dec7656D7A67015789FaF999f20",
+        solver_wallet="0x8366bCe3a2D379De7656D7A67015789FaF999f20",
         amount_usdc=120.0
     )
     assert ix["data"]["amount_lamports"] == 120_000_000

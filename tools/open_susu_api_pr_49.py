@@ -40,7 +40,7 @@ Previously, `claimUse` in `src/routes/invites.ts` called `store.redeem` prior to
 - `npx vitest run`: 402 tests passed across 30 test suites (0 failed).
 
 ---
-Settlement Wallet: `0x8366bCe3a2D379Dec7656D7A67015789FaF999f20`
+Settlement Wallet: `0x8366bCe3a2D379De7656D7A67015789FaF999f20`
 """
 
 payload = {
@@ -77,7 +77,7 @@ We have resolved issue #49 in PR #{pr_number}: {pr_url}
 
 We remain at your service if you would like any adjustments to code style, typing, or additional test coverage!
 
-Settlement Wallet: `0x8366bCe3a2D379Dec7656D7A67015789FaF999f20`"""
+Settlement Wallet: `0x8366bCe3a2D379De7656D7A67015789FaF999f20`"""
 
         comment_payload = {"body": issue_comment}
         comment_req = urllib.request.Request(

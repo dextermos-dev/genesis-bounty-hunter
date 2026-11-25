@@ -39,7 +39,7 @@ Previously, `POST /groups/:contractId/invites` lacked any route-specific or per-
 
 ---
 **Settlement Wallet (USDC / Base L2 / EVM):**
-`0x8366bCe3a2D379Dec7656D7A67015789FaF999f20`
+`0x8366bCe3a2D379De7656D7A67015789FaF999f20`
 """
 
 payload = {
@@ -75,7 +75,7 @@ We have resolved issue #61 in PR #{pr_number}: {pr_url}
 - Added 3 comprehensive route tests in `tests/invites.test.ts` verifying the 429 refusal, IP decoupling / anti-evasion, and multi-user budget isolation.
 
 **Settlement Wallet (USDC / Base L2 / EVM):**
-`0x8366bCe3a2D379Dec7656D7A67015789FaF999f20`
+`0x8366bCe3a2D379De7656D7A67015789FaF999f20`
 
 We remain fully at your service if you would like any parameter adjustments or additional test cases. Thank you! 🙌"""
 

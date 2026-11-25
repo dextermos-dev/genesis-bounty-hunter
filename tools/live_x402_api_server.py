@@ -1,7 +1,7 @@
 """
 Live RFC-x402 M2M Monetization Micro-Service API Server
 Genesis Bounty Hunter AI - Route 3: Pay-Per-Request Micro-Settlements on Base L2
-Settlement Wallet: 0x8366bCe3a2D379Dec7656D7A67015789FaF999f20
+Settlement Wallet: 0x8366bCe3a2D379De7656D7A67015789FaF999f20
 """
 
 import os
@@ -28,7 +28,7 @@ class LiveX402MicroServiceServer:
     3. /api/v1/shield/threat-> $1.00 USDC per counterparty wallet threat check
     """
 
-    OFFICIAL_SETTLEMENT_WALLET = "0x8366bCe3a2D379Dec7656D7A67015789FaF999f20"
+    OFFICIAL_SETTLEMENT_WALLET = "0x8366bCe3a2D379De7656D7A67015789FaF999f20"
 
     ENDPOINT_PRICING = {
         "/api/v1/audit/anchor": 5.00,
@@ -162,9 +162,25 @@ def run_http_server(port: int = 8402):
             self.send_response(status_code)
             self._send_cors()
             if status_code == 402:
+                import base64
+                cost = server_instance.ENDPOINT_PRICING.get(self.path, 1.00)
+                challenge_spec = {
+                    "x402Version": "2.0",
+                    "accepts": [{
+                        "scheme": "exact",
+                        "network": "eip155:8453",
+                        "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+                        "payTo": server_instance.OFFICIAL_SETTLEMENT_WALLET,
+                        "amount": str(int(cost * 1_000_000)),
+                        "maxTimeoutSeconds": 300
+                    }]
+                }
+                b64_spec = base64.b64encode(json.dumps(challenge_spec).encode()).decode()
+                self.send_header("PAYMENT-REQUIRED", b64_spec)
                 self.send_header("X-Payment-Required", "true")
                 self.send_header("X-Payment-Beneficiary", server_instance.OFFICIAL_SETTLEMENT_WALLET)
                 self.send_header("X-Payment-Network", "Base L2")
+                response_data.update(challenge_spec)
             self.send_header("Content-Type", "application/json")
             self.end_headers()
             self.wfile.write(json.dumps(response_data, indent=2).encode())

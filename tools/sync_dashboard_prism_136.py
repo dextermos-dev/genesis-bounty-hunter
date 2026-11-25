@@ -23,7 +23,7 @@ if 'prism-issue-136' not in existing_ids:
         'status': 'In Review',
         'pr_url': 'https://github.com/DevNiola/Prism/pull/155',
         'issue_url': 'https://github.com/DevNiola/Prism/issues/136',
-        'settlement_wallet': '0x8366bCe3a2D379Dec7656D7A67015789FaF999f20',
+        'settlement_wallet': '0x8366bCe3a2D379De7656D7A67015789FaF999f20',
         'created_at': datetime.now(timezone.utc).isoformat(),
         'notes': 'PR #155 opened. Monopolio absoluto en DevNiola/Prism (6/6 PRs del repo). Semantic versioning con conventional commits, changelog generation (.releaserc.json), vX.Y.Z tags y automated GitHub Actions release workflow (.github/workflows/release.yml).'
     }
@@ -56,7 +56,7 @@ new_event = {
     'timestamp': datetime.now().strftime('%H:%M:%S'),
     'type': 'GITHUB_PR',
     'title': 'PR #155 Abierto en DevNiola/Prism (Issue #136)',
-    'details': 'Workflow de releases automatizadas y versionado semántico implementado (.github/workflows/release.yml, .releaserc.json, CHANGELOG.md). Monopolio total 6/6 PRs en Prism. Settlement Wallet: 0x8366bCe3a2D379Dec7656D7A67015789FaF999f20.',
+    'details': 'Workflow de releases automatizadas y versionado semántico implementado (.github/workflows/release.yml, .releaserc.json, CHANGELOG.md). Monopolio total 6/6 PRs en Prism. Settlement Wallet: 0x8366bCe3a2D379De7656D7A67015789FaF999f20.',
     'severity': 'success'
 }
 
@@ -80,7 +80,7 @@ if tg_token and tg_chat_id:
         "📊 *Cartera Total:* $1,400.00 USDC (18 Soluciones)\n"
         "   • Ganado On-Chain: $685.00 USDC (8 PRs)\n"
         "   • En Revisión: $715.00 USDC (10 PRs)\n"
-        "💳 *Wallet:* `0x8366bCe3a2D379Dec7656D7A67015789FaF999f20`"
+        "💳 *Wallet:* `0x8366bCe3a2D379De7656D7A67015789FaF999f20`"
     )
     try:
         res = requests.post(

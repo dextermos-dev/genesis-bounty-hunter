@@ -20,7 +20,7 @@ if 'prism-issue-143' not in existing_ids:
         'status': 'In Review',
         'pr_url': 'https://github.com/DevNiola/Prism/pull/151',
         'issue_url': 'https://github.com/DevNiola/Prism/issues/143',
-        'settlement_wallet': '0x8366bCe3a2D379Dec7656D7A67015789FaF999f20',
+        'settlement_wallet': '0x8366bCe3a2D379De7656D7A67015789FaF999f20',
         'created_at': datetime.now(timezone.utc).isoformat(),
         'notes': 'PR #151 opened. Monopolio absoluto en DevNiola/Prism. Implementa bug_report.md con contexto Soroban, feature_request.md con selector de componentes, config.yml deshabilitando blank issues y PULL_REQUEST_TEMPLATE.md con checklist de calidad de 8 puntos.'
     }
@@ -53,7 +53,7 @@ new_event = {
     'timestamp': datetime.now().strftime('%H:%M:%S'),
     'type': 'GITHUB_PR',
     'title': 'PR #151 Abierto en DevNiola/Prism (Issue #143)',
-    'details': 'Plantillas de Issue (Bug Report con contexto Soroban, Feature Request), config.yml (blank issues deshabilitados) y PR Checklist estandarizados en PR #151. Settlement Wallet vinculada: 0x8366bCe3a2D379Dec7656D7A67015789FaF999f20.',
+    'details': 'Plantillas de Issue (Bug Report con contexto Soroban, Feature Request), config.yml (blank issues deshabilitados) y PR Checklist estandarizados en PR #151. Settlement Wallet vinculada: 0x8366bCe3a2D379De7656D7A67015789FaF999f20.',
     'severity': 'success'
 }
 

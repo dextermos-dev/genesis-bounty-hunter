@@ -37,7 +37,7 @@ Previously, `src/db/registrations.ts` computed `expires_at` using the host's `Da
 - `npx vitest run tests/registrations.test.ts`: 12 tests passed (0 failed).
 
 ---
-Settlement Wallet: `0x8366bCe3a2D379Dec7656D7A67015789FaF999f20`
+Settlement Wallet: `0x8366bCe3a2D379De7656D7A67015789FaF999f20`
 """
 
 payload = {
@@ -74,7 +74,7 @@ We have resolved issue #58 in PR #{pr_number}: {pr_url}
 
 We remain at your service if you would like any adjustments to the SQL expression, types, or tests!
 
-Settlement Wallet: `0x8366bCe3a2D379Dec7656D7A67015789FaF999f20`"""
+Settlement Wallet: `0x8366bCe3a2D379De7656D7A67015789FaF999f20`"""
 
         comment_payload = {"body": issue_comment}
         comment_req = urllib.request.Request(

@@ -37,7 +37,7 @@ Previously in `supabase/migrations/20260914000000_indexer_alerts.sql:200` and `2
 
 ---
 **Settlement Wallet (USDC / Base L2 / EVM):**
-`0x8366bCe3a2D379Dec7656D7A67015789FaF999f20`
+`0x8366bCe3a2D379De7656D7A67015789FaF999f20`
 """
 
 payload = {
@@ -71,7 +71,7 @@ We have resolved issue #42 in PR #{pr_number}: {pr_url}
 - Added comprehensive PGlite integration tests in `tests/inflight_cron_test.ts` verifying that `running` jobs do not open false-positive `failed_schedule` alerts, while terminal `failed` runs open alerts with their return message.
 
 **Settlement Wallet (USDC / Base L2 / EVM):**
-`0x8366bCe3a2D379Dec7656D7A67015789FaF999f20`
+`0x8366bCe3a2D379De7656D7A67015789FaF999f20`
 
 We remain fully at your service for any adjustments or additional test cases you may desire. Thank you! 🙌"""
 

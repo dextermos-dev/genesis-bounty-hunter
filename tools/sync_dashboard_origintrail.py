@@ -31,7 +31,7 @@ new_entry = {
     "reward_asset": "TRAC / USDC",
     "reward_usd": 7000.0,
     "status": "IN_REVIEW",
-    "settlement_wallet": "0x8366bCe3a2D379Dec7656D7A67015789FaF999f20",
+    "settlement_wallet": "0x8366bCe3a2D379De7656D7A67015789FaF999f20",
     "submitted_at": now_iso,
     "updated_at": now_iso,
     "description": "Autonomous code audit and security verification memory for AI agents in OriginTrail DKG V10. Tested with 5/5 passing unit tests, zero external egress, zero-dependency Node.js standard libraries, and stdio MCP server for Cursor and Claude Code."
@@ -66,7 +66,7 @@ event = {
     "date": datetime.now(timezone.utc).strftime("%Y-%m-%d"),
     "type": "NEW_SUBMISSION",
     "title": "OriginTrail DKG V10: PR #37 Enviada",
-    "details": "Integration dkg-audit-ledger submitted to OriginTrail/dkg-integrations (PR #37). 5/5 tests passing, zero-dependency Node.js, Apache-2.0. Wallet: 0x8366bCe3a2D379Dec7656D7A67015789FaF999f20",
+    "details": "Integration dkg-audit-ledger submitted to OriginTrail/dkg-integrations (PR #37). 5/5 tests passing, zero-dependency Node.js, Apache-2.0. Wallet: 0x8366bCe3a2D379De7656D7A67015789FaF999f20",
     "severity": "success"
 }
 

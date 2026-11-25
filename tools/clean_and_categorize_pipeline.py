@@ -2,7 +2,7 @@
 """
 Pipeline Cleaner & Realistic Categorizer
 Classifies active October 2026 submissions vs archived past cycle bounties (August/September 2026).
-Settlement Wallet: 0x8366bCe3a2D379Dec7656D7A67015789FaF999f20
+Settlement Wallet: 0x8366bCe3a2D379De7656D7A67015789FaF999f20
 """
 
 import json

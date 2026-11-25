@@ -57,7 +57,7 @@ Previously, module unlocking in `Dashboard` and `ModuleCard` relied solely on `u
 ---
 
 ### Settlement Wallet (Mandatory Invariant)
-* **Settlement Wallet**: `0x8366bCe3a2D379Dec7656D7A67015789FaF999f20`
+* **Settlement Wallet**: `0x8366bCe3a2D379De7656D7A67015789FaF999f20`
 
 Thank you for reviewing! Always happy to adapt any styling, thresholds, or copy to match the team's roadmap.
 

@@ -39,7 +39,7 @@ Thank you so much for the clear guidance and security notification. We have comp
 - **Security Check**: Verified that `apps/web/postcss.config.cjs` is untouched and contains strictly the clean one-line `module.exports`.
 - **Mergeability**: Branch is fully mergeable with zero conflicts (`mergeable: true`).
 
-**Settlement Wallet (Base USDC)**: `0x8366bCe3a2D379Dec7656D7A67015789FaF999f20`
+**Settlement Wallet (Base USDC)**: `0x8366bCe3a2D379De7656D7A67015789FaF999f20`
 
 We remain at your entire disposal if you need any adjustments or additional test cases! 🚀"""
 

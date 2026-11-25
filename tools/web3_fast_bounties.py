@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
 """
 División 2: Bounties Rápidos Web3 con Ramas de Código Publicadas en GitHub
-Wallet Beneficiaria: 0x8366bCe3a2D379Dec7656D7A67015789FaF999f20
+Wallet Beneficiaria: 0x8366bCe3a2D379De7656D7A67015789FaF999f20
 """
 
 from typing import List, Dict, Any
 
-RECEIVER_WALLET = "0x8366bCe3a2D379Dec7656D7A67015789FaF999f20"
+RECEIVER_WALLET = "0x8366bCe3a2D379De7656D7A67015789FaF999f20"
 TWITTER_PROFILE = "https://x.com/dextermostard"
 
 def fetch_fast_web3_bounties() -> List[Dict[str, Any]]:
@@ -30,7 +30,7 @@ def fetch_fast_web3_bounties() -> List[Dict[str, Any]]:
 export const LandingPageModern: React.FC = () => (
   <div className="min-h-screen bg-slate-950 text-white p-8">
     <h1 className="text-4xl font-black text-cyan-400">Gibwork Web3 Bounties</h1>
-    <p className="mt-2 text-slate-300">Automated settlement on Solana / Base to 0x8366bCe3a2D379Dec7656D7A67015789FaF999f20</p>
+    <p className="mt-2 text-slate-300">Automated settlement on Solana / Base to 0x8366bCe3a2D379De7656D7A67015789FaF999f20</p>
   </div>
 );"""
         },
@@ -108,7 +108,7 @@ pub struct CreditEscrow;
             "wallet": RECEIVER_WALLET,
             "proposal_text": "Growth & Content strategy for Banana Zone: Viral Solana meme/degen content thread generation, automated engagement metrics tracker, and community onboarding pipeline.",
             "deliverable_code": """# Banana Zone - Social Degen Growth & Content Campaign Plan
-Payout Wallet: 0x8366bCe3a2D379Dec7656D7A67015789FaF999f20"""
+Payout Wallet: 0x8366bCe3a2D379De7656D7A67015789FaF999f20"""
         },
         {
             "job_id": "superteam_apyx_credit",
@@ -126,7 +126,7 @@ Payout Wallet: 0x8366bCe3a2D379Dec7656D7A67015789FaF999f20"""
             "proposal_text": "Comprehensive Research Paper & Macro-Economics Essay on Why Digital Credit Matters, Preferred Equity Cash-Flows, and Apyx Dual-Token Architecture on Solana.",
             "deliverable_code": """# Deliverable Paper: outputs/deliverables/why_digital_credit_matters_apyx_essay.md
 Public Link: https://telegra.ph/Why-Digital-Credit-Matters-Apyx-Protocol--Solana-Architecture-08-25
-Payout Wallet: 0x8366bCe3a2D379Dec7656D7A67015789FaF999f20"""
+Payout Wallet: 0x8366bCe3a2D379De7656D7A67015789FaF999f20"""
         },
         {
             "job_id": "superteam_flint_prop_amm",
@@ -144,7 +144,7 @@ Payout Wallet: 0x8366bCe3a2D379Dec7656D7A67015789FaF999f20"""
             "proposal_text": "Technical Paper on Institutional Market Making on Solana, Multi-Maker Pro-Rata Matching, and why Flint Beats In-House Prop AMM Engineering.",
             "deliverable_code": """# Deliverable Paper: outputs/deliverables/why_flint_beats_prop_amm_essay.md
 Public Link: https://telegra.ph/Why-Flint-Beats-Building-Your-Own-Prop-AMM-Institutional-Market-Making-on-Solana-09-07
-Payout Wallet: 0x8366bCe3a2D379Dec7656D7A67015789FaF999f20"""
+Payout Wallet: 0x8366bCe3a2D379De7656D7A67015789FaF999f20"""
         },
         {
             "job_id": "superteam_aeonian_perps",
@@ -162,7 +162,7 @@ Payout Wallet: 0x8366bCe3a2D379Dec7656D7A67015789FaF999f20"""
             "proposal_text": "Comprehensive 10-part research paper and thread explaining Aeonian Social Perps, verified on-chain trader profiles, and upcoming interactive Livestreams.",
             "deliverable_code": """# Deliverable Paper: outputs/deliverables/aeonian_trade_social_perps_essay.md
 Public Link: https://telegra.ph/The-Social-Layer-for-Solana-Perps-Aeonian-Trade--Upcoming-Livestreams-09-09
-Payout Wallet: 0x8366bCe3a2D379Dec7656D7A67015789FaF999f20"""
+Payout Wallet: 0x8366bCe3a2D379De7656D7A67015789FaF999f20"""
         },
         {
             "job_id": "spectral_auth_77",
@@ -216,7 +216,7 @@ Payout Wallet: 0x8366bCe3a2D379Dec7656D7A67015789FaF999f20"""
             "proposal_text": "Production-grade Enterprise Financial Telemetry & Execution Agent built on Terminal Network SDK with DID cryptographic signatures and audit logging.",
             "deliverable_code": """# Deliverable Paper: outputs/deliverables/t3n_enterprise_agent_walkthrough.md
 Public Link: https://telegra.ph/Building-Enterprise-Grade-Trusted-Autonomous-Agents-with-Terminal-Network-T3N-09-11
-Payout Wallet: 0x8366bCe3a2D379Dec7656D7A67015789FaF999f20"""
+Payout Wallet: 0x8366bCe3a2D379De7656D7A67015789FaF999f20"""
         },
         {
             "job_id": "superteam_kriptok_league",
@@ -234,7 +234,7 @@ Payout Wallet: 0x8366bCe3a2D379Dec7656D7A67015789FaF999f20"""
             "proposal_text": "Comprehensive quantitative trading strategy journal, % ROI ranking mechanics breakdown, and multi-chain self-custodial wallet analysis for KriptoK League.",
             "deliverable_code": """# Deliverable Paper: outputs/deliverables/kriptok_league_trading_strategy_essay.md
 Public Link: https://telegra.ph/Mastering-the-KriptoK-League-Quantitative-Perp-Trading--ROI-Mechanics--Multi-Chain-Self-Custody-09-11
-Payout Wallet: 0x8366bCe3a2D379Dec7656D7A67015789FaF999f20"""
+Payout Wallet: 0x8366bCe3a2D379De7656D7A67015789FaF999f20"""
         },
         {
             "job_id": "superteam_solana_rust_backend",
@@ -253,7 +253,7 @@ Payout Wallet: 0x8366bCe3a2D379Dec7656D7A67015789FaF999f20"""
             "deliverable_code": """// Solana On-Chain Subscription & Metered Usage Engine (Rust / Anchor)
 // Directory: solana_backend_programs/subscription_metered_engine/
 // Author: Dexter Mos (@dextermos)
-// Payout: 0x8366bCe3a2D379Dec7656D7A67015789FaF999f20"""
+// Payout: 0x8366bCe3a2D379De7656D7A67015789FaF999f20"""
         },
         {
             "job_id": "superteam_road_to_colosseum_1k",
@@ -270,7 +270,7 @@ Payout Wallet: 0x8366bCe3a2D379Dec7656D7A67015789FaF999f20"""
             "wallet": RECEIVER_WALLET,
             "proposal_text": "Weekly architectural proof-of-build reflections on Solana development, Anchor smart contracts, and agentic workflows.",
             "deliverable_code": """# Road to Colosseum Content Track ($1,000 USDC)
-Payout Wallet: 0x8366bCe3a2D379Dec7656D7A67015789FaF999f20"""
+Payout Wallet: 0x8366bCe3a2D379De7656D7A67015789FaF999f20"""
         },
         {
             "job_id": "superteam_imperial_ai_agent_5k",
@@ -289,7 +289,7 @@ Payout Wallet: 0x8366bCe3a2D379Dec7656D7A67015789FaF999f20"""
             "deliverable_code": """// NexusAgent Autonomous Agent Economy on Solana
 // Directory: solana_agent_economy/
 // Author: Dexter Mos (@dextermos)
-// Payout: 0x8366bCe3a2D379Dec7656D7A67015789FaF999f20"""
+// Payout: 0x8366bCe3a2D379De7656D7A67015789FaF999f20"""
         },
         {
             "job_id": "superteam_mermail_agent_skill_500",
@@ -308,7 +308,7 @@ Payout Wallet: 0x8366bCe3a2D379Dec7656D7A67015789FaF999f20"""
             "deliverable_code": """// Mermail Autonomous Treasury & Procurement Skill
 // Directory: products/mermail_autonomous_skill/
 // Author: Dexter Mos (@dextermos)
-// Payout: 0x8366bCe3a2D379Dec7656D7A67015789FaF999f20"""
+// Payout: 0x8366bCe3a2D379De7656D7A67015789FaF999f20"""
         },
         {
             "job_id": "superteam_spout_finance_1k",
@@ -327,7 +327,7 @@ Payout Wallet: 0x8366bCe3a2D379Dec7656D7A67015789FaF999f20"""
             "deliverable_code": """// Spout Finance Beta Intelligence Report & Public Piece
 // Directory: outputs/deliverables/spout_finance_beta_intelligence_report.md
 // Author: Dexter Mos (@dextermos)
-// Payout: 0x8366bCe3a2D379Dec7656D7A67015789FaF999f20"""
+// Payout: 0x8366bCe3a2D379De7656D7A67015789FaF999f20"""
         },
         {
             "job_id": "openbuild_gallery_seeding_300",
@@ -346,7 +346,7 @@ Payout Wallet: 0x8366bCe3a2D379Dec7656D7A67015789FaF999f20"""
             "deliverable_code": """// OpenBuild Gallery Preview-DB Seeding Middleware
 // Directory: products/openbuild_seeding_middleware/
 // Author: Dexter Mos (@dextermos)
-// Payout: 0x8366bCe3a2D379Dec7656D7A67015789FaF999f20"""
+// Payout: 0x8366bCe3a2D379De7656D7A67015789FaF999f20"""
         },
         {
             "job_id": "mergeos_plantguide_sdk_250",
@@ -365,7 +365,7 @@ Payout Wallet: 0x8366bCe3a2D379Dec7656D7A67015789FaF999f20"""
             "deliverable_code": """// PlantGuide TypeScript SDK & Contract Schemas
 // Directory: products/plantguide_sdk/
 // Author: Dexter Mos (@dextermos)
-// Payout: 0x8366bCe3a2D379Dec7656D7A67015789FaF999f20"""
+// Payout: 0x8366bCe3a2D379De7656D7A67015789FaF999f20"""
         },
         {
             "job_id": "mergeos_beear_sessions_500",
@@ -384,7 +384,7 @@ Payout Wallet: 0x8366bCe3a2D379Dec7656D7A67015789FaF999f20"""
             "deliverable_code": """// BeeAR Session & Frame Selection API
 // Directory: products/beear_session_api/
 // Author: Dexter Mos (@dextermos)
-// Payout: 0x8366bCe3a2D379Dec7656D7A67015789FaF999f20"""
+// Payout: 0x8366bCe3a2D379De7656D7A67015789FaF999f20"""
         },
         {
             "job_id": "algora_escrow_validator_1",
@@ -402,7 +402,7 @@ Payout Wallet: 0x8366bCe3a2D379Dec7656D7A67015789FaF999f20"""
             "proposal_text": "Cryptographically secure HMAC-SHA256 webhook validator with nonce replay attack protection and zero external dependencies.",
             "deliverable_code": """// Algora Webhook & Escrow Validator
 // Directory: products/fast_bounties/algora_escrow_validator/
-// Payout Wallet: 0x8366bCe3a2D379Dec7656D7A67015789FaF999f20"""
+// Payout Wallet: 0x8366bCe3a2D379De7656D7A67015789FaF999f20"""
         },
         {
             "job_id": "opire_webhook_verifier_2",
@@ -420,7 +420,7 @@ Payout Wallet: 0x8366bCe3a2D379Dec7656D7A67015789FaF999f20"""
             "proposal_text": "Native Python /claim command parser, regex extractor, and standardized PR submission generator for Opire bounties.",
             "deliverable_code": """// Opire Claim Handler
 // Directory: products/fast_bounties/opire_claim_handler/
-// Payout Wallet: 0x8366bCe3a2D379Dec7656D7A67015789FaF999f20"""
+// Payout Wallet: 0x8366bCe3a2D379De7656D7A67015789FaF999f20"""
         },
         {
             "job_id": "bountycaster_base_tipper_3",
@@ -438,7 +438,7 @@ Payout Wallet: 0x8366bCe3a2D379Dec7656D7A67015789FaF999f20"""
             "proposal_text": "Gas-optimized ERC-20 batch tipping contract on Base with Farcaster Frame interactive action support.",
             "deliverable_code": """// Bountycaster Base Tipper Contract
 // Directory: products/fast_bounties/bountycaster_base_tipper/
-// Payout Wallet: 0x8366bCe3a2D379Dec7656D7A67015789FaF999f20"""
+// Payout Wallet: 0x8366bCe3a2D379De7656D7A67015789FaF999f20"""
         },
         {
             "job_id": "gibwork_spl_escrow_4",
@@ -456,7 +456,7 @@ Payout Wallet: 0x8366bCe3a2D379Dec7656D7A67015789FaF999f20"""
             "proposal_text": "Instruction builder for Solana Token-2022 escrow payouts with SPL Token program account validation.",
             "deliverable_code": """// Gibwork SPL Escrow Client
 // Directory: products/fast_bounties/gibwork_spl_escrow/
-// Payout Wallet: 0x8366bCe3a2D379Dec7656D7A67015789FaF999f20"""
+// Payout Wallet: 0x8366bCe3a2D379De7656D7A67015789FaF999f20"""
         },
         {
             "job_id": "solana_stablecoin_standard_5000",
@@ -475,7 +475,7 @@ Payout Wallet: 0x8366bCe3a2D379Dec7656D7A67015789FaF999f20"""
             "deliverable_code": """// Solana Stablecoin Standard (SSS) Enterprise SDK
 // Directory: products/solana_stablecoin_standard/
 // Author: Dexter Mos (@dextermos)
-// Payout Wallet: 0x8366bCe3a2D379Dec7656D7A67015789FaF999f20"""
+// Payout Wallet: 0x8366bCe3a2D379De7656D7A67015789FaF999f20"""
         },
         {
             "job_id": "cantina_defi_audit_2500",
@@ -494,7 +494,7 @@ Payout Wallet: 0x8366bCe3a2D379Dec7656D7A67015789FaF999f20"""
             "deliverable_code": """// Cantina Competitive Security Audit Suite
 // Report: outputs/deliverables/cantina_defi_security_audit_report.md
 // Author: Dexter Mos (@dextermos)
-// Payout: 0x8366bCe3a2D379Dec7656D7A67015789FaF999f20"""
+// Payout: 0x8366bCe3a2D379De7656D7A67015789FaF999f20"""
         },
         {
             "job_id": "bountycaster_frame_v2_300",
@@ -512,7 +512,7 @@ Payout Wallet: 0x8366bCe3a2D379Dec7656D7A67015789FaF999f20"""
             "proposal_text": "Interactive Farcaster Frame v2 React interface with cast actions for 1-click batch tipping in USDC on Base.",
             "deliverable_code": """// Farcaster Frame v2 Tipper Component
 // Directory: products/fast_bounties/bountycaster_base_tipper/
-// Payout: 0x8366bCe3a2D379Dec7656D7A67015789FaF999f20"""
+// Payout: 0x8366bCe3a2D379De7656D7A67015789FaF999f20"""
         },
         {
             "job_id": "superteam_rwa_breakpoint_5500",
@@ -531,7 +531,7 @@ Payout Wallet: 0x8366bCe3a2D379Dec7656D7A67015789FaF999f20"""
             "deliverable_code": """// Solana Breakpoint RWA Tokenization Architecture
 // Deliverable: outputs/deliverables/solana_rwa_tokenization_breakpoint_essay.md
 // Author: Dexter Mos (@dextermos)
-// Payout Wallet: 0x8366bCe3a2D379Dec7656D7A67015789FaF999f20"""
+// Payout Wallet: 0x8366bCe3a2D379De7656D7A67015789FaF999f20"""
         }
     ]
 

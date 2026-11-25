@@ -8,7 +8,7 @@ import json
 from typing import Dict, Any, List
 
 class BountycasterFastResolver:
-    def __init__(self, settlement_wallet: str = "0x8366bCe3a2D379Dec7656D7A67015789FaF999f20"):
+    def __init__(self, settlement_wallet: str = "0x8366bCe3a2D379De7656D7A67015789FaF999f20"):
         self.settlement_wallet = settlement_wallet
         self.active_submissions: List[Dict[str, Any]] = []
 

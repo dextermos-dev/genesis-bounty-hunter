@@ -23,7 +23,7 @@ if 'prism-issue-137' not in existing_ids:
         'status': 'In Review',
         'pr_url': 'https://github.com/DevNiola/Prism/pull/158',
         'issue_url': 'https://github.com/DevNiola/Prism/issues/137',
-        'settlement_wallet': '0x8366bCe3a2D379Dec7656D7A67015789FaF999f20',
+        'settlement_wallet': '0x8366bCe3a2D379De7656D7A67015789FaF999f20',
         'created_at': datetime.now(timezone.utc).isoformat(),
         'notes': 'PR #158 opened. Automated publishing to crates.io for grat-core, grat-wasm, and grat CLI with topological dependency order and crates.io API verification.'
     })
@@ -43,7 +43,7 @@ if 'prism-issue-138' not in existing_ids:
         'status': 'In Review',
         'pr_url': 'https://github.com/DevNiola/Prism/pull/159',
         'issue_url': 'https://github.com/DevNiola/Prism/issues/138',
-        'settlement_wallet': '0x8366bCe3a2D379Dec7656D7A67015789FaF999f20',
+        'settlement_wallet': '0x8366bCe3a2D379De7656D7A67015789FaF999f20',
         'created_at': datetime.now(timezone.utc).isoformat(),
         'notes': 'PR #159 opened. Automated packaging and publication to npm registry for grat-server on release with provenance and NPM_TOKEN.'
     })
@@ -84,7 +84,7 @@ events.insert(0, {
     'timestamp': datetime.now().strftime('%H:%M:%S'),
     'type': 'GITHUB_PR',
     'title': 'PR #159 Abierto en DevNiola/Prism (Issue #138 - $70 USDC)',
-    'details': 'Workflow de publicación en NPM automatizado (.github/workflows/publish-npm.yml) para grat-server con provenance. 10/10 PRs en Prism. Wallet: 0x8366bCe3a2D379Dec7656D7A67015789FaF999f20.',
+    'details': 'Workflow de publicación en NPM automatizado (.github/workflows/publish-npm.yml) para grat-server con provenance. 10/10 PRs en Prism. Wallet: 0x8366bCe3a2D379De7656D7A67015789FaF999f20.',
     'severity': 'success'
 })
 
@@ -92,7 +92,7 @@ events.insert(0, {
     'timestamp': datetime.now().strftime('%H:%M:%S'),
     'type': 'GITHUB_PR',
     'title': 'PR #158 Abierto en DevNiola/Prism (Issue #137 - $70 USDC)',
-    'details': 'Workflow de publicación en crates.io (.github/workflows/publish-crates.yml) para grat-core, grat-wasm y grat CLI con verificación API. Wallet: 0x8366bCe3a2D379Dec7656D7A67015789FaF999f20.',
+    'details': 'Workflow de publicación en crates.io (.github/workflows/publish-crates.yml) para grat-core, grat-wasm y grat CLI con verificación API. Wallet: 0x8366bCe3a2D379De7656D7A67015789FaF999f20.',
     'severity': 'success'
 })
 
@@ -117,7 +117,7 @@ if tg_token and tg_chat_id:
         "     - En Revisión: $1,010.00 USDC (14 PRs)\n"
         "   • Grants & Hackathons: $30,400.00 USDC (19 submissions)\n"
         "   • Gran Total Presentado: $35,095.00 USDC\n"
-        "💳 *Settlement Wallet:* `0x8366bCe3a2D379Dec7656D7A67015789FaF999f20`"
+        "💳 *Settlement Wallet:* `0x8366bCe3a2D379De7656D7A67015789FaF999f20`"
     )
     try:
         requests.post(

@@ -3,7 +3,7 @@
 Solana Stablecoin Standard (SSS) Enterprise CLI Tool
 Command-line operator interface for SSS-1 and SSS-2 token administration on Solana.
 Author: Dexter Mos (@dextermos)
-Payout: 0x8366bCe3a2D379Dec7656D7A67015789FaF999f20
+Payout: 0x8366bCe3a2D379De7656D7A67015789FaF999f20
 """
 
 import sys
@@ -40,7 +40,7 @@ class SolanaStablecoinCLI:
             "compliance_preset": "SSS-2",
             "blacklist": ["0xSanctionedActor_001", "0xMaliciousDrainer_002"],
             "balances": {
-                "0x8366bCe3a2D379Dec7656D7A67015789FaF999f20": 5000000.0,
+                "0x8366bCe3a2D379De7656D7A67015789FaF999f20": 5000000.0,
                 "0xEnterpriseTreasury": 5000000.0
             },
             "audit_trail": [
@@ -106,5 +106,5 @@ class SolanaStablecoinCLI:
 if __name__ == "__main__":
     cli = SolanaStablecoinCLI()
     cli.status()
-    cli.mint("0x8366bCe3a2D379Dec7656D7A67015789FaF999f20", 250000.0)
-    cli.transfer("0x8366bCe3a2D379Dec7656D7A67015789FaF999f20", "0xMerchantPartner", 50000.0)
+    cli.mint("0x8366bCe3a2D379De7656D7A67015789FaF999f20", 250000.0)
+    cli.transfer("0x8366bCe3a2D379De7656D7A67015789FaF999f20", "0xMerchantPartner", 50000.0)

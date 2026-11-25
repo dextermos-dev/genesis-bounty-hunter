@@ -10,7 +10,7 @@ Escanea de forma autónoma:
 Criterios Estrictos:
 - 100% Gratuito (Cero cuotas de inscripción, cero créditos).
 - 100% Remoto (Cero requisitos presenciales).
-- Pago Verificado en USDC, SOL, ETH a 0x8366bCe3a2D379Dec7656D7A67015789FaF999f20.
+- Pago Verificado en USDC, SOL, ETH a 0x8366bCe3a2D379De7656D7A67015789FaF999f20.
 """
 
 import os
@@ -27,7 +27,7 @@ load_dotenv(os.path.join(PROJECT_ROOT, ".env"))
 from tools.github_resilient_client import GitHubResilientClient
 
 TOKEN = os.getenv("GITHUB_TOKEN", "").strip()
-WALLET = os.getenv("WEB3_WALLET_ADDRESS", "0x8366bCe3a2D379Dec7656D7A67015789FaF999f20")
+WALLET = os.getenv("WEB3_WALLET_ADDRESS", "0x8366bCe3a2D379De7656D7A67015789FaF999f20")
 resilient_client = GitHubResilientClient(TOKEN)
 
 

@@ -72,7 +72,7 @@ This PR adds an opt-in `timeoutMs` option to `RequestOptions` and the central `s
 We are deeply grateful to the maintainers for their time, dedication, and open-source guidance. If any adjustments, alternative defaults, or additional test cases are desired, please let us know and we will promptly refine it!
 
 - **Settlement Wallet (USDC / EVM / Stellar)**:
-  `0x8366bCe3a2D379Dec7656D7A67015789FaF999f20`"""
+  `0x8366bCe3a2D379De7656D7A67015789FaF999f20`"""
 }
 
 def main():

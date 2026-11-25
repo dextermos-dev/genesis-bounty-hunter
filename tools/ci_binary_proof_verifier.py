@@ -9,7 +9,7 @@ import hashlib
 from typing import Dict, Any, List
 
 class CiBinaryProofVerifier:
-    def __init__(self, beneficiary_wallet: str = "0x8366bCe3a2D379Dec7656D7A67015789FaF999f20"):
+    def __init__(self, beneficiary_wallet: str = "0x8366bCe3a2D379De7656D7A67015789FaF999f20"):
         self.beneficiary_wallet = beneficiary_wallet
 
     def generate_binary_proof(

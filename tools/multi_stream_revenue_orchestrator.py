@@ -7,7 +7,7 @@ Coordinates 5 simultaneous revenue streams for recurring on-chain USDC cashflow:
 4. Pay-Per-Request RFC-x402 M2M API on Base L2 ($0.50 - $5.00 USDC)
 5. Gasless Fee Relaying & Telemetry Subtasks ($20 - $150 USDC)
 
-Settlement Wallet: 0x8366bCe3a2D379Dec7656D7A67015789FaF999f20
+Settlement Wallet: 0x8366bCe3a2D379De7656D7A67015789FaF999f20
 """
 
 import json
@@ -29,7 +29,7 @@ class MultiStreamRevenueOrchestrator:
     competitive benchmarking and self-improving market intelligence.
     """
 
-    OFFICIAL_SETTLEMENT_WALLET = "0x8366bCe3a2D379Dec7656D7A67015789FaF999f20"
+    OFFICIAL_SETTLEMENT_WALLET = "0x8366bCe3a2D379De7656D7A67015789FaF999f20"
 
     def __init__(self):
         self.bot_harvester = InstantBotHarvester()

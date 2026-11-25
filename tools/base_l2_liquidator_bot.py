@@ -11,7 +11,7 @@ from typing import Dict, Any, List, Optional
 class BaseL2LiquidatorBot:
     def __init__(self, rpc_url: str = "https://mainnet.base.org"):
         self.rpc_url = rpc_url
-        self.settlement_wallet = "0x8366bCe3a2D379Dec7656D7A67015789FaF999f20"
+        self.settlement_wallet = "0x8366bCe3a2D379De7656D7A67015789FaF999f20"
         self._monitored_positions: List[Dict[str, Any]] = []
 
     def calculate_health_factor(

@@ -66,7 +66,7 @@ This PR serializes connection attempts using an in-flight promise ref, ensuring 
 We are deeply grateful to the maintainers for their time, stewardship, and feedback. If any stylistic preferences or additional test cases are desired, please let us know and we will promptly refine it!
 
 - **Settlement Wallet (USDC / EVM / Stellar)**:
-  `0x8366bCe3a2D379Dec7656D7A67015789FaF999f20`"""
+  `0x8366bCe3a2D379De7656D7A67015789FaF999f20`"""
 }
 
 def main():

@@ -7,7 +7,7 @@ Calculates net profit after Jito MEV tips and transaction priority fees.
 from typing import Dict, Any, List
 
 class SolanaArbitrageHarvester:
-    def __init__(self, settlement_address: str = "0x8366bCe3a2D379Dec7656D7A67015789FaF999f20"):
+    def __init__(self, settlement_address: str = "0x8366bCe3a2D379De7656D7A67015789FaF999f20"):
         self.settlement_address = settlement_address
         self.detected_spreads: List[Dict[str, Any]] = []
 

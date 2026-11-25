@@ -18,7 +18,7 @@ We wanted to touch base gently regarding PR #127 (*"Integrate Soroban credit-esc
 
 We are re-verifying our official settlement details to make disbursement as straightforward and seamless as possible for your team:
 
-- **Settlement Wallet (USDC / Base L2 / EVM / Stellar):** `0x8366bCe3a2D379Dec7656D7A67015789FaF999f20`
+- **Settlement Wallet (USDC / Base L2 / EVM / Stellar):** `0x8366bCe3a2D379De7656D7A67015789FaF999f20`
 - **Resolved Delivery:** Issue #5 / PR #127 ($1,000.00 USDC)
 
 Please let us know if you require any additional information, testing, or verification steps from our side. We greatly appreciate your time and dedication to the gateway, and remain at your disposal for upcoming features and integrations! 🙏✨"""

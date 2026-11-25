@@ -2,7 +2,7 @@
 """
 Solana Priority Fee Dynamic Estimator SDK (tools/solana_priority_estimator.py)
 Calculates optimal compute unit pricing using recent prioritization fee percentiles.
-Target Beneficiary: 0x8366bCe3a2D379Dec7656D7A67015789FaF999f20
+Target Beneficiary: 0x8366bCe3a2D379De7656D7A67015789FaF999f20
 """
 
 import json
@@ -27,7 +27,7 @@ def estimate_priority_fee(recent_fees: list, percentile: int = 75) -> dict:
         "recommended_micro_lamports": max(recommended_fee, 1000),
         "mean_fee": int(statistics.mean(recent_fees)),
         "median_fee": int(statistics.median(recent_fees)),
-        "destination_wallet": "0x8366bCe3a2D379Dec7656D7A67015789FaF999f20"
+        "destination_wallet": "0x8366bCe3a2D379De7656D7A67015789FaF999f20"
     }
 
 if __name__ == "__main__":

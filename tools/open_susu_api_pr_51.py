@@ -39,7 +39,7 @@ Previously, `closeDb()` in `src/db/client.ts` was exported but never imported or
 - `npx vitest run tests/server.test.ts`: 16 tests passed (0 failed).
 
 ---
-Settlement Wallet: `0x8366bCe3a2D379Dec7656D7A67015789FaF999f20`
+Settlement Wallet: `0x8366bCe3a2D379De7656D7A67015789FaF999f20`
 """
 
 payload = {
@@ -76,7 +76,7 @@ We have resolved issue #51 in PR #{pr_number}: {pr_url}
 
 We remain at your service if you would like any adjustments to the lifecycle hook or tests!
 
-Settlement Wallet: `0x8366bCe3a2D379Dec7656D7A67015789FaF999f20`"""
+Settlement Wallet: `0x8366bCe3a2D379De7656D7A67015789FaF999f20`"""
 
         comment_payload = {"body": issue_comment}
         comment_req = urllib.request.Request(

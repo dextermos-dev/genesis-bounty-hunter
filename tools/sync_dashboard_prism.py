@@ -19,7 +19,7 @@ if 'prism-issue-140' not in existing_ids:
         'status': 'In Review',
         'pr_url': 'https://github.com/DevNiola/Prism/pull/150',
         'issue_url': 'https://github.com/DevNiola/Prism/issues/140',
-        'settlement_wallet': '0x8366bCe3a2D379Dec7656D7A67015789FaF999f20',
+        'settlement_wallet': '0x8366bCe3a2D379De7656D7A67015789FaF999f20',
         'created_at': datetime.now(timezone.utc).isoformat(),
         'notes': 'PR #150 opened. Primer PR en la historia del repositorio DevNiola/Prism (monopolio 100%). Añade .github/dependabot.yml con actualización semanal y agrupación de dependencias menores/parche en Cargo, npm y GitHub Actions. Validación schema official exitosa.'
     }

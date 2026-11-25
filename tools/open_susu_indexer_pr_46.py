@@ -36,7 +36,7 @@ Previously, `STELLAR_NETWORK_PASSPHRASE` was required and parsed into `config.ne
 - `deno test tests/config_test.ts`: 16 tests passed (0 failed).
 
 ---
-Settlement Wallet: `0x8366bCe3a2D379Dec7656D7A67015789FaF999f20`
+Settlement Wallet: `0x8366bCe3a2D379De7656D7A67015789FaF999f20`
 """
 
 payload = {
@@ -73,7 +73,7 @@ We have resolved issue #46 in PR #{pr_number}: {pr_url}
 
 We remain at your service if you would like any adjustments to code style or tests!
 
-Settlement Wallet: `0x8366bCe3a2D379Dec7656D7A67015789FaF999f20`"""
+Settlement Wallet: `0x8366bCe3a2D379De7656D7A67015789FaF999f20`"""
 
         comment_payload = {"body": issue_comment}
         comment_req = urllib.request.Request(

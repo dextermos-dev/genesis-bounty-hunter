@@ -10,7 +10,7 @@ HEADERS = {
     "Accept": "application/vnd.github.v3+json",
     "User-Agent": "BountyHunterAI-Dexter"
 }
-WALLET = "0x8366bCe3a2D379Dec7656D7A67015789FaF999f20"
+WALLET = "0x8366bCe3a2D379De7656D7A67015789FaF999f20"
 
 # 1. Update PR #1495 on SuperteamDAO
 body_1495 = f"""## 🚀 Production Bugfix: Agent Listings Date Filter & Winner State Verification

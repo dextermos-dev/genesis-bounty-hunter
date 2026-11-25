@@ -13,7 +13,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 TOKEN = os.getenv("GITHUB_TOKEN", "").strip()
-WALLET = "0x8366bCe3a2D379Dec7656D7A67015789FaF999f20"
+WALLET = "0x8366bCe3a2D379De7656D7A67015789FaF999f20"
 HEADERS = {
     "Authorization": f"token {TOKEN}",
     "Accept": "application/vnd.github.v3+json",
@@ -180,7 +180,7 @@ end
     test "formats standard EIP-4361 message correctly" do
       msg = %SIWE{
         domain: "spectral.finance",
-        address: "0x8366bCe3a2D379Dec7656D7A67015789FaF999f20",
+        address: "0x8366bCe3a2D379De7656D7A67015789FaF999f20",
         statement: "Sign in to Lux Autonomous Agent Hub",
         uri: "https://spectral.finance",
         version: "1",
@@ -191,7 +191,7 @@ end
 
       formatted = SIWE.format_message(msg)
       assert formatted =~ "spectral.finance wants you to sign in"
-      assert formatted =~ "0x8366bCe3a2D379Dec7656D7A67015789FaF999f20"
+      assert formatted =~ "0x8366bCe3a2D379De7656D7A67015789FaF999f20"
       assert formatted =~ "Nonce: abcdef1234567890"
     end
   end

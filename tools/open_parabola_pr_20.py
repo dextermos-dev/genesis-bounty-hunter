@@ -2,7 +2,7 @@
 """
 Open Pull Request for Parabola Issue #20:
 [Bounty: $45] Export convertPrecision and add 6↔7 decimal round-trip tests
-Settlement Wallet: 0x8366bCe3a2D379Dec7656D7A67015789FaF999f20
+Settlement Wallet: 0x8366bCe3a2D379De7656D7A67015789FaF999f20
 """
 
 import os
@@ -18,7 +18,7 @@ if PROJECT_ROOT not in sys.path:
 
 load_dotenv()
 TOKEN = os.getenv("GITHUB_TOKEN", "").strip()
-WALLET = "0x8366bCe3a2D379Dec7656D7A67015789FaF999f20"
+WALLET = "0x8366bCe3a2D379De7656D7A67015789FaF999f20"
 REPO = "Parabola-org/parabola"
 AUTH_USER = "dextermos-dev"
 BRANCH = "feat/20-export-convert-precision"

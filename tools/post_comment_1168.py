@@ -35,7 +35,7 @@ https://github.com/limitlessprojects/Go-Hybrid/pull/1173
 
 We are at your disposal if you would like any formatting adjustments, additional test cases, or commit reorganizations. Thank you very much for your time and guidance!
 
-**Settlement Wallet (USDC / Base L2):** `0x8366bCe3a2D379Dec7656D7A67015789FaF999f20`
+**Settlement Wallet (USDC / Base L2):** `0x8366bCe3a2D379De7656D7A67015789FaF999f20`
 """
 
 payload = {'body': body}

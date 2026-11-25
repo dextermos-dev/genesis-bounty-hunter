@@ -21,7 +21,7 @@ if not has_2964:
         'bounty_usd': 150.0,
         'currency': 'USDC',
         'network': 'Base L2 / EVM',
-        'settlement_wallet': '0x8366bCe3a2D379Dec7656D7A67015789FaF999f20',
+        'settlement_wallet': '0x8366bCe3a2D379De7656D7A67015789FaF999f20',
         'submitted_at': datetime.datetime.now(datetime.timezone.utc).isoformat()
     }
     existing_prs.insert(0, pr_entry)
@@ -43,7 +43,7 @@ events.insert(0, {
     "timestamp": datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%d %H:%M:%S UTC"),
     "type": "pr_submitted",
     "title": "PR #2964 Enviado en Go-Hybrid ($150 USDC)",
-    "description": "Fix T24 HYB-E3104 en O8 field loans, unaddressable map projections y loan rebinds (fixes #2946). Todos los tests pasaron 100%. Settlement Wallet registrada: 0x8366bCe3a2D379Dec7656D7A67015789FaF999f20.",
+    "description": "Fix T24 HYB-E3104 en O8 field loans, unaddressable map projections y loan rebinds (fixes #2946). Todos los tests pasaron 100%. Settlement Wallet registrada: 0x8366bCe3a2D379De7656D7A67015789FaF999f20.",
     "url": "https://github.com/limitlessprojects/Go-Hybrid/pull/2964"
 })
 

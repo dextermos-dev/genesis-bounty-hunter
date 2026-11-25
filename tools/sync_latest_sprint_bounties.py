@@ -29,7 +29,7 @@ new_items = [
         "reward_usd": 150.0,
         "status": "IN_REVIEW",
         "payout_status": "EN_EVALUACION_ACTIVA",
-        "settlement_wallet": "0x8366bCe3a2D379Dec7656D7A67015789FaF999f20",
+        "settlement_wallet": "0x8366bCe3a2D379De7656D7A67015789FaF999f20",
         "submitted_at": now_iso,
         "updated_at": now_iso,
         "description": "Introduced validateBillingWindow before DB execution: enforces date syntax, prevents reversed windows, restricts span to 366 days max, and verified with 10 passing unit tests."
@@ -48,7 +48,7 @@ new_items = [
         "reward_usd": 150.0,
         "status": "IN_REVIEW",
         "payout_status": "EN_EVALUACION_ACTIVA",
-        "settlement_wallet": "0x8366bCe3a2D379Dec7656D7A67015789FaF999f20",
+        "settlement_wallet": "0x8366bCe3a2D379De7656D7A67015789FaF999f20",
         "submitted_at": now_iso,
         "updated_at": now_iso,
         "description": "Hardened private swap flow against transient RPC drops, isolated stale swap resolutions with startedAt filtering, added bounds checks to fetchV3Leaves, and fixed v0 LUT note recovery."
@@ -67,7 +67,7 @@ new_items = [
         "reward_usd": 150.0,
         "status": "IN_REVIEW",
         "payout_status": "EN_EVALUACION_ACTIVA",
-        "settlement_wallet": "0x8366bCe3a2D379Dec7656D7A67015789FaF999f20",
+        "settlement_wallet": "0x8366bCe3a2D379De7656D7A67015789FaF999f20",
         "submitted_at": now_iso,
         "updated_at": now_iso,
         "description": "Unified commitment schemes, enforced zero-trailing bytes in proof deserialization, fixed big-endian field encoding, added non-zero nullifier validation, and unstranded coordinator failover tasks."
@@ -86,7 +86,7 @@ new_items = [
         "reward_usd": 20.0,
         "status": "IN_REVIEW",
         "payout_status": "EN_EVALUACION_ACTIVA",
-        "settlement_wallet": "0x8366bCe3a2D379Dec7656D7A67015789FaF999f20",
+        "settlement_wallet": "0x8366bCe3a2D379De7656D7A67015789FaF999f20",
         "submitted_at": now_iso,
         "updated_at": now_iso,
         "description": "Added possessionProofMechanisms (PDP, PoRep, PoSt) column definitions, JSON schema definitions, CSV validation, and test suite with 7 passing tests."

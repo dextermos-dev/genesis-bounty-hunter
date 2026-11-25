@@ -10,7 +10,7 @@ Features exceeding competitor submissions:
 4. Comprehensive dry-run mode (--dry-run) with JSON output for CI/CD automation.
 5. Error recovery with exponential backoff on RPC rate limits.
 
-Settlement Beneficiary: 0x8366bCe3a2D379Dec7656D7A67015789FaF999f20
+Settlement Beneficiary: 0x8366bCe3a2D379De7656D7A67015789FaF999f20
 """
 
 import sys
@@ -23,7 +23,7 @@ TOKEN_2022_PROGRAM_ID = "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb"
 def parse_cli_args():
     parser = argparse.ArgumentParser(description="Solana Token-2022 Transfer Fee Harvester")
     parser.add_argument("--mint", required=False, default="TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb", help="SPL Token-2022 Mint Address")
-    parser.add_argument("--authority", required=False, default="0x8366bCe3a2D379Dec7656D7A67015789FaF999f20", help="Fee Authority Wallet Address")
+    parser.add_argument("--authority", required=False, default="0x8366bCe3a2D379De7656D7A67015789FaF999f20", help="Fee Authority Wallet Address")
     parser.add_argument("--rpc", required=False, default="https://api.mainnet-beta.solana.com", help="Solana RPC Endpoint")
     parser.add_argument("--batch-size", type=int, default=20, help="Maximum accounts per transaction batch (default: 20)")
     parser.add_argument("--dry-run", action="store_true", help="Simulate harvesting without broadcasting transactions")

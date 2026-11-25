@@ -42,7 +42,7 @@ In `hy-check` (`compiler/crates/hy-check/src/addr_loan.rs`), three T24 / O8 slot
 
 We remain at the maintainers' complete service to adapt styles, split commits, or provide additional tests if desired. Thank you very much for your time and guidance!
 
-**Settlement Wallet (USDC on Base L2):** `0x8366bCe3a2D379Dec7656D7A67015789FaF999f20`
+**Settlement Wallet (USDC on Base L2):** `0x8366bCe3a2D379De7656D7A67015789FaF999f20`
 """
 
 data = {

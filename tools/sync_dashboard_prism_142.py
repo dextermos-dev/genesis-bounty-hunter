@@ -20,7 +20,7 @@ if 'prism-issue-142' not in existing_ids:
         'status': 'In Review',
         'pr_url': 'https://github.com/DevNiola/Prism/pull/152',
         'issue_url': 'https://github.com/DevNiola/Prism/issues/142',
-        'settlement_wallet': '0x8366bCe3a2D379Dec7656D7A67015789FaF999f20',
+        'settlement_wallet': '0x8366bCe3a2D379De7656D7A67015789FaF999f20',
         'created_at': datetime.now(timezone.utc).isoformat(),
         'notes': 'PR #152 opened. Monopolio absoluto en DevNiola/Prism. Implementa .github/stale.yml y workflow nativo .github/workflows/stale.yml (actions/stale@v9) con 30 días de inactividad, 7 días de ventana de cierre, exenciones para pinned y security, y mensajes amigables para colaboradores.'
     }
@@ -53,7 +53,7 @@ new_event = {
     'timestamp': datetime.now().strftime('%H:%M:%S'),
     'type': 'GITHUB_PR',
     'title': 'PR #152 Abierto en DevNiola/Prism (Issue #142)',
-    'details': 'Stale Bot configurado con .github/stale.yml y workflow .github/workflows/stale.yml (actions/stale@v9, cron diario, exenciones pinned/security). Monopolio de 3/3 PRs en el repositorio. Settlement Wallet: 0x8366bCe3a2D379Dec7656D7A67015789FaF999f20.',
+    'details': 'Stale Bot configurado con .github/stale.yml y workflow .github/workflows/stale.yml (actions/stale@v9, cron diario, exenciones pinned/security). Monopolio de 3/3 PRs en el repositorio. Settlement Wallet: 0x8366bCe3a2D379De7656D7A67015789FaF999f20.',
     'severity': 'success'
 }
 

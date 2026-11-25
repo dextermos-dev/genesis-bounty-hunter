@@ -72,7 +72,7 @@ This PR adds production-grade HTTPS enforcement while preserving local developer
 We are deeply grateful to the maintainers for their time, stewardship, and feedback. If any stylistic preferences, additional tests, or modifications are needed, please let us know and we will be delighted to adapt immediately!
 
 - **Settlement Wallet (USDC / EVM / Stellar)**:
-  `0x8366bCe3a2D379Dec7656D7A67015789FaF999f20`"""
+  `0x8366bCe3a2D379De7656D7A67015789FaF999f20`"""
 }
 
 def main():

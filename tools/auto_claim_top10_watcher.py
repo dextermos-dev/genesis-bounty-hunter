@@ -14,7 +14,7 @@ import os
 
 WALLET_DOOM = "doom162df6bb0c219de72343658ec04c1d9b1939c3c5c02f6b94f"
 SETTLEMENT_WALLET = "0x8366bCe3a2D379De7656D7A67015789FaF999f20"
-THRESHOLD = 414.64
+THRESHOLD = 1039.32
 
 def get_token():
     if os.path.exists(".env"):

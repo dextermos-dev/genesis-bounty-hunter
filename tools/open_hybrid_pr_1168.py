@@ -40,7 +40,7 @@ Prior to this fix, when a prefixed base integer literal (`0x`, `0b`, `0o`) was f
 
 We remain completely at the maintainers' disposal to adjust diagnostics, split commits, or adapt any formatting preferences as needed. Thank you very much for your time and guidance!
 
-**Settlement Wallet (USDC / Base L2):** `0x8366bCe3a2D379Dec7656D7A67015789FaF999f20`
+**Settlement Wallet (USDC / Base L2):** `0x8366bCe3a2D379De7656D7A67015789FaF999f20`
 """
 
 payload = {

@@ -40,7 +40,7 @@ Previously, notification derivation depended entirely on `pg_cron` scheduling (`
 
 ---
 **Settlement Wallet (USDC / Base L2 / EVM):**
-`0x8366bCe3a2D379Dec7656D7A67015789FaF999f20`
+`0x8366bCe3a2D379De7656D7A67015789FaF999f20`
 """
 
 payload = {
@@ -76,7 +76,7 @@ We have resolved issue #57 in PR #{pr_number}: {pr_url}
 - Added 4 comprehensive unit and lifecycle tests in `tests/server.test.ts` verifying scheduling, resilience, logging, and timer cleanup on `app.close()`.
 
 **Settlement Wallet (USDC / Base L2 / EVM):**
-`0x8366bCe3a2D379Dec7656D7A67015789FaF999f20`
+`0x8366bCe3a2D379De7656D7A67015789FaF999f20`
 
 We remain fully at your disposal for any adjustments or additional test cases you may need. Thank you! 🙌"""
 

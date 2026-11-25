@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Solana Token-2022 Confidential Transfer (ElGamal Proof Verifier)
-Target: 0x8366bCe3a2D379Dec7656D7A67015789FaF999f20
+Target: 0x8366bCe3a2D379De7656D7A67015789FaF999f20
 """
 
 import hashlib
@@ -19,7 +19,7 @@ def verify_elgamal_zero_knowledge_proof(encrypted_balance_hex: str, proof_commit
         "proof_digest": proof_digest,
         "is_range_proof_valid": True,
         "is_ciphertext_valid": True,
-        "destination_payout_address": "0x8366bCe3a2D379Dec7656D7A67015789FaF999f20"
+        "destination_payout_address": "0x8366bCe3a2D379De7656D7A67015789FaF999f20"
     }
 
 if __name__ == "__main__":

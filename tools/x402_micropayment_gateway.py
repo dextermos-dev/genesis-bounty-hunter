@@ -10,7 +10,7 @@ import hashlib
 from typing import Dict, Any, Optional
 
 class X402MicropaymentGateway:
-    def __init__(self, settlement_wallet: str = "0x8366bCe3a2D379Dec7656D7A67015789FaF999f20"):
+    def __init__(self, settlement_wallet: str = "0x8366bCe3a2D379De7656D7A67015789FaF999f20"):
         self.settlement_wallet = settlement_wallet
         self.price_per_request_usdc = 0.05
         self.processed_settlements: Dict[str, Dict[str, Any]] = {}

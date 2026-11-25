@@ -3,7 +3,7 @@
 Microscopic Pipeline Integrity & Link Auditor (tools/audit_entire_pipeline_links.py)
 Audits all 127 entries in dashboard/data.json:
 1. Validates pull_request_url and url formats
-2. Asserts mandatory settlement wallet 0x8366bCe3a2D379Dec7656D7A67015789FaF999f20
+2. Asserts mandatory settlement wallet 0x8366bCe3a2D379De7656D7A67015789FaF999f20
 3. Checks that all local deliverable and product paths exist on disk
 4. Verifies remote GitHub URL consistency
 """
@@ -16,7 +16,7 @@ import urllib.error
 
 PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 DATA_JSON_PATH = os.path.join(PROJECT_ROOT, "dashboard", "data.json")
-MANDATORY_WALLET = "0x8366bCe3a2D379Dec7656D7A67015789FaF999f20"
+MANDATORY_WALLET = "0x8366bCe3a2D379De7656D7A67015789FaF999f20"
 
 def audit_pipeline():
     with open(DATA_JSON_PATH, "r", encoding="utf-8") as f:

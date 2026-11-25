@@ -55,7 +55,7 @@ We remain at your service for any adjustments or review requests. Thank you very
 
 ---
 **Settlement Wallet (USDC / Base / Stellar / EVM):**
-`0x8366bCe3a2D379Dec7656D7A67015789FaF999f20`
+`0x8366bCe3a2D379De7656D7A67015789FaF999f20`
 """
 
 pr_data = {

@@ -59,7 +59,7 @@ We remain at your service for any questions or desired adjustments. Thank you!
 
 ---
 **Settlement Wallet (USDC / Base / Stellar / EVM):**
-`0x8366bCe3a2D379Dec7656D7A67015789FaF999f20`
+`0x8366bCe3a2D379De7656D7A67015789FaF999f20`
 """
 
 req = urllib.request.Request(
@@ -72,4 +72,4 @@ req = urllib.request.Request(
 with urllib.request.urlopen(req) as resp:
     res = json.loads(resp.read().decode("utf-8"))
     print("PR #167 body updated successfully!")
-    print("Wallet present:", "0x8366bCe3a2D379Dec7656D7A67015789FaF999f20" in res.get("body", ""))
+    print("Wallet present:", "0x8366bCe3a2D379De7656D7A67015789FaF999f20" in res.get("body", ""))

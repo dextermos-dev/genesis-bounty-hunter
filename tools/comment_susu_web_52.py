@@ -34,7 +34,7 @@ We have prepared and submitted a clean, thorough resolution for this issue in PR
 We remain at your disposal for any feedback or adjustments. Thank you very much for your time and guidance!
 
 - **Settlement Wallet (USDC / EVM / Stellar)**:
-  `0x8366bCe3a2D379Dec7656D7A67015789FaF999f20`"""
+  `0x8366bCe3a2D379De7656D7A67015789FaF999f20`"""
 }
 
 req = urllib.request.Request(

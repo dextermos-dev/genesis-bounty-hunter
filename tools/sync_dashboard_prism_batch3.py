@@ -23,7 +23,7 @@ if 'prism-issue-147' not in existing_ids:
         'status': 'In Review',
         'pr_url': 'https://github.com/DevNiola/Prism/pull/160',
         'issue_url': 'https://github.com/DevNiola/Prism/issues/147',
-        'settlement_wallet': '0x8366bCe3a2D379Dec7656D7A67015789FaF999f20',
+        'settlement_wallet': '0x8366bCe3a2D379De7656D7A67015789FaF999f20',
         'created_at': datetime.now(timezone.utc).isoformat(),
         'notes': 'PR #160 opened. AWS Terraform configuration with multi-AZ VPC, ALB dual target groups, ElastiCache Redis, ECS Fargate services for server and web, and Route53/ACM support.'
     })
@@ -64,7 +64,7 @@ events.insert(0, {
     'timestamp': datetime.now().strftime('%H:%M:%S'),
     'type': 'GITHUB_PR',
     'title': 'PR #160 Abierto en DevNiola/Prism (Issue #147 - $70 USDC)',
-    'details': 'Infraestructura Terraform para AWS implementada (deploy/terraform/) con VPC, ALB, ElastiCache Redis y ECS Fargate. 11/11 PRs en Prism. Wallet: 0x8366bCe3a2D379Dec7656D7A67015789FaF999f20.',
+    'details': 'Infraestructura Terraform para AWS implementada (deploy/terraform/) con VPC, ALB, ElastiCache Redis y ECS Fargate. 11/11 PRs en Prism. Wallet: 0x8366bCe3a2D379De7656D7A67015789FaF999f20.',
     'severity': 'success'
 })
 
@@ -72,7 +72,7 @@ events.insert(0, {
     'timestamp': datetime.now().strftime('%H:%M:%S'),
     'type': 'APPLICATION',
     'title': 'Postulación Formal Enviada a MindVault Mobile (Batch 3 #191)',
-    'details': 'Dossier de postulación técnica y 5 PRs mergeadas en Stellar enviado a mindvault_mobile #191. Esperando asignación oficial de mantenedor. Wallet: 0x8366bCe3a2D379Dec7656D7A67015789FaF999f20.',
+    'details': 'Dossier de postulación técnica y 5 PRs mergeadas en Stellar enviado a mindvault_mobile #191. Esperando asignación oficial de mantenedor. Wallet: 0x8366bCe3a2D379De7656D7A67015789FaF999f20.',
     'severity': 'info'
 })
 
@@ -97,7 +97,7 @@ if tg_token and tg_chat_id:
         "     - En Revisión: $1,070.00 USDC (15 PRs)\n"
         "   • Grants & Hackathons: $30,400.00 USDC (19 submissions)\n"
         "   • Gran Total Presentado: $35,155.00 USDC\n"
-        "💳 *Settlement Wallet:* `0x8366bCe3a2D379Dec7656D7A67015789FaF999f20`"
+        "💳 *Settlement Wallet:* `0x8366bCe3a2D379De7656D7A67015789FaF999f20`"
     )
     try:
         requests.post(

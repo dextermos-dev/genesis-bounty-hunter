@@ -23,7 +23,7 @@ if 'prism-issue-146' not in existing_ids:
         'status': 'In Review',
         'pr_url': 'https://github.com/DevNiola/Prism/pull/156',
         'issue_url': 'https://github.com/DevNiola/Prism/issues/146',
-        'settlement_wallet': '0x8366bCe3a2D379Dec7656D7A67015789FaF999f20',
+        'settlement_wallet': '0x8366bCe3a2D379De7656D7A67015789FaF999f20',
         'created_at': datetime.now(timezone.utc).isoformat(),
         'notes': 'PR #156 opened. Automated security scanning with cargo-audit, pnpm audit, CodeQL SAST, and Trivy container/filesystem scanner. Monopolio en Prism.'
     })
@@ -43,7 +43,7 @@ if 'prism-issue-148' not in existing_ids:
         'status': 'In Review',
         'pr_url': 'https://github.com/DevNiola/Prism/pull/157',
         'issue_url': 'https://github.com/DevNiola/Prism/issues/148',
-        'settlement_wallet': '0x8366bCe3a2D379Dec7656D7A67015789FaF999f20',
+        'settlement_wallet': '0x8366bCe3a2D379De7656D7A67015789FaF999f20',
         'created_at': datetime.now(timezone.utc).isoformat(),
         'notes': 'PR #157 opened. Criterion benchmark suite for decode pipeline (crates/core/benches/decode_benchmarks.rs) with github-action-benchmark comparison against main and 10% regression failure gate.'
     })
@@ -84,7 +84,7 @@ events.insert(0, {
     'timestamp': datetime.now().strftime('%H:%M:%S'),
     'type': 'GITHUB_PR',
     'title': 'PR #157 Abierto en DevNiola/Prism (Issue #148 - $75 USDC)',
-    'details': 'Workflow de benchmark con Criterion y detección de regresiones de rendimiento implementado (.github/workflows/benchmark.yml, decode_benchmarks.rs). Monopolio total 8/8 PRs en Prism. Wallet: 0x8366bCe3a2D379Dec7656D7A67015789FaF999f20.',
+    'details': 'Workflow de benchmark con Criterion y detección de regresiones de rendimiento implementado (.github/workflows/benchmark.yml, decode_benchmarks.rs). Monopolio total 8/8 PRs en Prism. Wallet: 0x8366bCe3a2D379De7656D7A67015789FaF999f20.',
     'severity': 'success'
 })
 
@@ -92,7 +92,7 @@ events.insert(0, {
     'timestamp': datetime.now().strftime('%H:%M:%S'),
     'type': 'GITHUB_PR',
     'title': 'PR #156 Abierto en DevNiola/Prism (Issue #146 - $70 USDC)',
-    'details': 'Workflow de seguridad automatizado implementado (.github/workflows/security.yml) con cargo-audit, pnpm audit, CodeQL y Trivy. Wallet: 0x8366bCe3a2D379Dec7656D7A67015789FaF999f20.',
+    'details': 'Workflow de seguridad automatizado implementado (.github/workflows/security.yml) con cargo-audit, pnpm audit, CodeQL y Trivy. Wallet: 0x8366bCe3a2D379De7656D7A67015789FaF999f20.',
     'severity': 'success'
 })
 
@@ -117,7 +117,7 @@ if tg_token and tg_chat_id:
         "     - En Revisión: $860.00 USDC (12 PRs)\n"
         "   • Grants & Hackathons: $30,400.00 USDC (19 submissions)\n"
         "   • Gran Total Presentado: $34,945.00 USDC\n"
-        "💳 *Settlement Wallet:* `0x8366bCe3a2D379Dec7656D7A67015789FaF999f20`"
+        "💳 *Settlement Wallet:* `0x8366bCe3a2D379De7656D7A67015789FaF999f20`"
     )
     try:
         requests.post(

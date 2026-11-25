@@ -7,7 +7,7 @@ WORKER_NAME="${1:-Dexter-Linux-VPS-Rig-2}"
 echo "========================================================"
 echo "  DOOMSDAY 24/7 MINER FOR LINUX VPS"
 echo "  Worker Address: doom162df6bb0c219de72343658ec04c1d9b1939c3c5c02f6b94f"
-echo "  Settlement: 0x8366bCe3a2D379Dec7656D7A67015789FaF999f20"
+echo "  Settlement: 0x8366bCe3a2D379De7656D7A67015789FaF999f20"
 echo "  Rig Tag: ${WORKER_NAME}"
 echo "========================================================"
 

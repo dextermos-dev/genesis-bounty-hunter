@@ -44,7 +44,7 @@ Previously in `supabase/migrations/20260914000000_indexer_alerts.sql:253-270` an
 
 ---
 **Settlement Wallet (USDC / Base L2 / EVM):**
-`0x8366bCe3a2D379Dec7656D7A67015789FaF999f20`
+`0x8366bCe3a2D379De7656D7A67015789FaF999f20`
 """
 
 payload = {
@@ -79,7 +79,7 @@ We have resolved issue #43 in PR #{pr_number}: {pr_url}
 - Added comprehensive PGlite integration tests in `tests/webhook_delivery_test.ts` asserting in-flight NULL state, retry on non-2xx failure, single confirmed notification on 2xx, and absence of duplicate dispatches on subsequent passes.
 
 **Settlement Wallet (USDC / Base L2 / EVM):**
-`0x8366bCe3a2D379Dec7656D7A67015789FaF999f20`
+`0x8366bCe3a2D379De7656D7A67015789FaF999f20`
 
 We remain completely at your service if you would like any further adjustments or additional tests. Thank you! 🙌"""
 

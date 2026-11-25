@@ -20,7 +20,7 @@ if 'prism-issue-141' not in existing_ids:
         'status': 'In Review',
         'pr_url': 'https://github.com/DevNiola/Prism/pull/154',
         'issue_url': 'https://github.com/DevNiola/Prism/issues/141',
-        'settlement_wallet': '0x8366bCe3a2D379Dec7656D7A67015789FaF999f20',
+        'settlement_wallet': '0x8366bCe3a2D379De7656D7A67015789FaF999f20',
         'created_at': datetime.now(timezone.utc).isoformat(),
         'notes': 'PR #154 opened. Monopolio absoluto en DevNiola/Prism (5/5 PRs del repo). .pre-commit-config.yaml con rustfmt, clippy, prettier y eslint. Scripts en package.json (format:check, format:write, hooks:install, hooks:run), prettier devDependency y documentación en CONTRIBUTING.md.'
     }
@@ -53,7 +53,7 @@ new_event = {
     'timestamp': datetime.now().strftime('%H:%M:%S'),
     'type': 'GITHUB_PR',
     'title': 'PR #154 Abierto en DevNiola/Prism (Issue #141)',
-    'details': 'Pre-commit hooks implementados (.pre-commit-config.yaml) con rustfmt, clippy, prettier y eslint. 5/5 PRs monopólicas en el repositorio. Settlement Wallet: 0x8366bCe3a2D379Dec7656D7A67015789FaF999f20.',
+    'details': 'Pre-commit hooks implementados (.pre-commit-config.yaml) con rustfmt, clippy, prettier y eslint. 5/5 PRs monopólicas en el repositorio. Settlement Wallet: 0x8366bCe3a2D379De7656D7A67015789FaF999f20.',
     'severity': 'success'
 }
 

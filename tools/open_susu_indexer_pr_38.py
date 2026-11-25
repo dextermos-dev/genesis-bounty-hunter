@@ -43,7 +43,7 @@ Previously in `supabase/functions/indexer/index.ts` and `_shared/db.ts:109-119,2
 
 ---
 **Settlement Wallet (USDC / Base L2 / EVM):**
-`0x8366bCe3a2D379Dec7656D7A67015789FaF999f20`
+`0x8366bCe3a2D379De7656D7A67015789FaF999f20`
 """
 
 payload = {
@@ -79,7 +79,7 @@ We have resolved issue #38 in PR #{pr_number}: {pr_url}
 - Added comprehensive unit tests in `tests/batch_writes_test.ts` verifying chunk boundaries, row identity preservation, and middle-batch failure handling.
 
 **Settlement Wallet (USDC / Base L2 / EVM):**
-`0x8366bCe3a2D379Dec7656D7A67015789FaF999f20`
+`0x8366bCe3a2D379De7656D7A67015789FaF999f20`
 
 We remain gladly at your disposal for any further reviews or tweaks you may need. Thank you! 🙌"""
 

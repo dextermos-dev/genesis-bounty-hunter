@@ -49,7 +49,7 @@ Previously, `withRetry` defaulted `isRetryable` to `true`, and neither `scan.ts`
 
 ---
 **Settlement Wallet (USDC / Base L2 / EVM):**
-`0x8366bCe3a2D379Dec7656D7A67015789FaF999f20`
+`0x8366bCe3a2D379De7656D7A67015789FaF999f20`
 """
 
 payload = {
@@ -86,7 +86,7 @@ We have resolved issue #36 in PR #{pr_number}: {pr_url}
 - Added automated test cases in `tests/retry_test.ts` asserting exact attempt counts for both classifications.
 
 **Settlement Wallet (USDC / Base L2 / EVM):**
-`0x8366bCe3a2D379Dec7656D7A67015789FaF999f20`
+`0x8366bCe3a2D379De7656D7A67015789FaF999f20`
 
 We are delighted to make any further adjustments or address any questions you might have. Thank you! 🙌"""
 

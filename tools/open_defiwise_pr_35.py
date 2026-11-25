@@ -52,7 +52,7 @@ This PR resolves issue #35 by replacing the mock `setTimeout(2000)` stub in `use
 ---
 
 ### Settlement Wallet (Mandatory Invariant)
-* **Settlement Wallet**: `0x8366bCe3a2D379Dec7656D7A67015789FaF999f20`
+* **Settlement Wallet**: `0x8366bCe3a2D379De7656D7A67015789FaF999f20`
 
 Thank you for reviewing! Always happy to adjust naming, styling, or modularization to match the team's preferences.
 

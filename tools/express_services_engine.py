@@ -1,7 +1,7 @@
 """
 Express Services Engine (On-Demand Escrow-Backed Technical Deliverables)
 Genesis Bounty Hunter AI - Route 2: Immediate Closed Services
-Settlement Wallet: 0x8366bCe3a2D379Dec7656D7A67015789FaF999f20
+Settlement Wallet: 0x8366bCe3a2D379De7656D7A67015789FaF999f20
 """
 
 import hashlib
@@ -18,7 +18,7 @@ class ExpressServicesEngine:
     3. High-Speed LiteSVM Test Suite Synthesis - $200 - $500 USDC
     """
 
-    OFFICIAL_SETTLEMENT_WALLET = "0x8366bCe3a2D379Dec7656D7A67015789FaF999f20"
+    OFFICIAL_SETTLEMENT_WALLET = "0x8366bCe3a2D379De7656D7A67015789FaF999f20"
 
     SERVICES_CATALOG = [
         {

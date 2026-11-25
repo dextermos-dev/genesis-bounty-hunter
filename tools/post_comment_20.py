@@ -6,7 +6,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 token = os.getenv("GITHUB_TOKEN", "").strip()
-wallet = "0x8366bCe3a2D379Dec7656D7A67015789FaF999f20"
+wallet = "0x8366bCe3a2D379De7656D7A67015789FaF999f20"
 headers = {
     "Authorization": f"token {token}",
     "Accept": "application/vnd.github.v3+json",

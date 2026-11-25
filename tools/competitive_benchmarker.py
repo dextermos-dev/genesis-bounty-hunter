@@ -4,7 +4,7 @@ Competitive Benchmarker & Continuous Market Intelligence Engine (tools/competiti
 Audits competitors' submissions across GitHub, Superteam, and Web3 bounty platforms
 to ensure our deliverables maintain 100% technical and structural superiority.
 
-Settlement Wallet: 0x8366bCe3a2D379Dec7656D7A67015789FaF999f20
+Settlement Wallet: 0x8366bCe3a2D379De7656D7A67015789FaF999f20
 """
 
 import json
@@ -18,7 +18,7 @@ class CompetitiveBenchmarker:
     Analyzes competitor submissions and synthesizes superior counter-strategies.
     """
 
-    OFFICIAL_SETTLEMENT_WALLET = "0x8366bCe3a2D379Dec7656D7A67015789FaF999f20"
+    OFFICIAL_SETTLEMENT_WALLET = "0x8366bCe3a2D379De7656D7A67015789FaF999f20"
 
     def __init__(self):
         self.benchmark_metrics = {

@@ -44,7 +44,7 @@ Previously in `supabase/functions/_shared/db.ts:442-463`, `upsertGroupState` loo
 
 ---
 **Settlement Wallet (USDC / Base L2 / EVM):**
-`0x8366bCe3a2D379Dec7656D7A67015789FaF999f20`
+`0x8366bCe3a2D379De7656D7A67015789FaF999f20`
 """
 
 payload = {
@@ -80,7 +80,7 @@ We have resolved issue #40 in PR #{pr_number}: {pr_url}
 - Added comprehensive tests against PGlite (`tests/bulk_update_group_state_test.ts`) and test stubs verifying bulk updates and 39-digit precision.
 
 **Settlement Wallet (USDC / Base L2 / EVM):**
-`0x8366bCe3a2D379Dec7656D7A67015789FaF999f20`
+`0x8366bCe3a2D379De7656D7A67015789FaF999f20`
 
 We are entirely at your disposal should you require any adjustments or additional coverage. Thank you! 🙌"""
 

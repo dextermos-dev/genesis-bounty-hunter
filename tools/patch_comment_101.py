@@ -18,7 +18,7 @@ First of all, thank you once again for your review and for merging our contribut
 
 We noticed the community follow-ups on the upcoming batch settlement, so we wanted to gently consolidate our settlement information to make disbursement as easy and frictionless as possible on your end:
 
-- **Settlement Wallet (USDC / Base L2 / EVM):** `0x8366bCe3a2D379Dec7656D7A67015789FaF999f20`
+- **Settlement Wallet (USDC / Base L2 / EVM):** `0x8366bCe3a2D379De7656D7A67015789FaF999f20`
 - **Consolidated PR Batch:**
   - #99 ($45 USDC) — Validate 32-byte hex input
   - #100 ($45 USDC) — Decimal precision conversion

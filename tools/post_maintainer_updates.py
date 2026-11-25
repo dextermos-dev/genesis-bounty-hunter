@@ -21,7 +21,7 @@ def load_env():
 
 env_vars = load_env()
 TOKEN = env_vars.get("GITHUB_TOKEN", "").strip()
-WALLET = "0x8366bCe3a2D379Dec7656D7A67015789FaF999f20"
+WALLET = "0x8366bCe3a2D379De7656D7A67015789FaF999f20"
 
 def post_comment(repo: str, issue_number: int, body: str):
     if not TOKEN:
