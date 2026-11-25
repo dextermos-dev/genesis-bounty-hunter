@@ -39,6 +39,7 @@ from agents import (
     AuditorAgent
 )
 from agents.auto_refinement import AutoRefinementAgent
+from constants.wallets import BASE_SETTLEMENT_WALLET
 from tools.telegram_notifier import notify_event
 
 
@@ -60,7 +61,7 @@ class BountyHunterOrchestrator:
             "tavily": os.getenv("TAVILY_API_KEY", "")
         }
 
-        self.wallet_address = os.getenv("WEB3_WALLET_ADDRESS") or "0x8366bCe3a2D379Dec7656D7A67015789FaF999f20"
+        self.wallet_address = os.getenv("WEB3_WALLET_ADDRESS") or BASE_SETTLEMENT_WALLET
 
         self.radar = RadarAgent(config=self.config)
         self.verificador = VerificadorAgent(config=self.config)
