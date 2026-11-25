@@ -3,7 +3,7 @@
 **Target Protocol:** Multi-Chain Decentralized Lending & Margin Borrowing Protocol  
 **Bounty Pool:** $2,400 USDC (Cantina Open Scope)  
 **Author:** Dexter Mos (`@dextermos-dev` / `@dextermos`)  
-**Payout Address (EVM / Base L2 / Arbitrum):** `0x8366bCe3a2D379Dec7656D7A67015789FaF999f20`  
+**Payout Address (EVM / Base L2 / Arbitrum):** `0x8366bCe3a2D379De7656D7A67015789FaF999f20`  
 **Date:** October 3, 2026  
 **Severity:** HIGH (Unfair Liquidation of Solvent Positions & Bad Debt Accrual)
 

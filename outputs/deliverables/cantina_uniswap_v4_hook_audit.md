@@ -3,7 +3,7 @@
 **Target Protocol:** Modular Uniswap v4 AMM Custom Hook Implementation  
 **Bounty Pool:** $2,000 USDC (Cantina Open Scope)  
 **Author:** Dexter Mos (`@dextermos-dev` / `@dextermos`)  
-**Payout Address (EVM / Base L2):** `0x8366bCe3a2D379Dec7656D7A67015789FaF999f20`  
+**Payout Address (EVM / Base L2):** `0x8366bCe3a2D379De7656D7A67015789FaF999f20`  
 **Date:** October 2, 2026  
 **Severity:** HIGH (Risk of Unmitigated MEV Extraction & Liquidity Depletion)
 

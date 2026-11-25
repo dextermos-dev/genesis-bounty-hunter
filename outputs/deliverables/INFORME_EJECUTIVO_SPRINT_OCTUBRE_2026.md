@@ -1,7 +1,7 @@
 # INFORME EJECUTIVO Y AUDITORÍA DE TESORERÍA — SPRINT OCTUBRE 2026
 **Bounty Hunter AI «Genesis» — Sistema Autónomo de Ingresos Web3 & Open Source**  
 *Fecha de Emisión: 22 de Octubre de 2026 | Hora Local: 08:48 CEST*  
-*Settlement Wallet Oficial (USDC Base L2 / EVM):* `0x8366bCe3a2D379Dec7656D7A67015789FaF999f20`
+*Settlement Wallet Oficial (USDC Base L2 / EVM):* `0x8366bCe3a2D379De7656D7A67015789FaF999f20`
 
 ---
 
@@ -92,7 +92,7 @@ flowchart LR
   * Alianza de referencia cruzada aceptada formalmente en GitHub (`rezearcher/x402-data-api#1`).
   * Validación de que no existe colisión de producto: Al-Mizaan cubre auditoría estática de código Solidity con filtrado de 7 compuertas, mientras Grey Ridge cubre escaneo de herramientas MCP en runtime.
 * **Servidor RFC-x402 M2M en Vivo:**
-  * Proceso demonio escuchando en `http://0.0.0.0:8402` (Base L2 Settler: `0x8366bCe3a2D379Dec7656D7A67015789FaF999f20`).
+  * Proceso demonio escuchando en `http://0.0.0.0:8402` (Base L2 Settler: `0x8366bCe3a2D379De7656D7A67015789FaF999f20`).
   * Endpoints tarifados: `/api/v1/audit/anchor` ($5.00), `/api/v1/shield/url` ($0.50), `/api/v1/shield/threat` ($1.00).
 
 ---

@@ -2,7 +2,7 @@
 
 **Bounty Target:** $2,500 USDC | Base Ecosystem Grants & AgentKit Action Provider  
 **Author:** `@dextermos` / `@dextermos-dev`  
-**Settlement Wallet Address:** `0x8366bCe3a2D379Dec7656D7A67015789FaF999f20`
+**Settlement Wallet Address:** `0x8366bCe3a2D379De7656D7A67015789FaF999f20`
 
 ---
 
@@ -26,4 +26,4 @@ Using the **RFC-x402 (HTTP 402 Payment Required)** protocol, autonomous agents c
   - Python Engine: `products/coinbase_agentkit_action_provider/agentkit_bounty_settler.py`
   - TypeScript Engine: `products/coinbase_agentkit_action_provider/index.ts`
 - Test Suite: `tests/test_agentkit_action_provider.py` (**4/4 Tests PASS - 100% OK**)
-- Settlement Wallet: `0x8366bCe3a2D379Dec7656D7A67015789FaF999f20`
+- Settlement Wallet: `0x8366bCe3a2D379De7656D7A67015789FaF999f20`

@@ -3,7 +3,7 @@
 **Author:** Dexter Mos (`@dextermos`)  
 **Target Bounty:** Superteam Earn — *Try out new docs to build a trusted agent with T3N* by Terminal Network  
 **Repository:** [github.com/dextermos/genesis-bounty-hunter](https://github.com/dextermos/genesis-bounty-hunter)  
-**Payout Address (EVM / Base / Solana):** `0x8366bCe3a2D379Dec7656D7A67015789FaF999f20`  
+**Payout Address (EVM / Base / Solana):** `0x8366bCe3a2D379De7656D7A67015789FaF999f20`  
 
 ---
 

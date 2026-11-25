@@ -2,7 +2,7 @@
 
 **Genesis Bounty Hunter AI — Official Technical Deliverable**  
 **Repository:** `https://github.com/dextermos-dev/genesis-bounty-hunter/tree/main/products/base_agent_gateway`  
-**Official Settlement Wallet:** `0x8366bCe3a2D379Dec7656D7A67015789FaF999f20`
+**Official Settlement Wallet:** `0x8366bCe3a2D379De7656D7A67015789FaF999f20`
 
 ---
 
@@ -41,4 +41,4 @@ OK
 
 ## 4. Official Settlement Wallet
 All contract disbursements and USDC reward payments are routed to:
-`0x8366bCe3a2D379Dec7656D7A67015789FaF999f20`
+`0x8366bCe3a2D379De7656D7A67015789FaF999f20`

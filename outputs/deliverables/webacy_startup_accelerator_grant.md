@@ -2,7 +2,7 @@
 
 **Genesis Bounty Hunter AI & Webacy Risk Engine Integration**  
 **Repository:** `https://github.com/dextermos-dev/genesis-bounty-hunter/tree/main/products/webacy_integration`  
-**Settlement / Grant Disbursement Wallet:** `0x8366bCe3a2D379Dec7656D7A67015789FaF999f20`  
+**Settlement / Grant Disbursement Wallet:** `0x8366bCe3a2D379De7656D7A67015789FaF999f20`  
 **Application Form:** `https://83chy35k9ea.typeform.com/to/Mgl4epqX`
 
 ---
@@ -38,4 +38,4 @@ OK
 | **Execution** | 100% executable by team | Complete Python & TypeScript SDK with automated CI/CD. |
 | **Differentiation** | Unique use case | First autonomous AI agent due diligence layer natively integrating Webacy. |
 | **Ecosystems** | Solana & EVM / Base | Fully multi-chain (Solana, Base L2, Ethereum, Polygon, Arbitrum). |
-| **Settlement** | Official Disbursement | `0x8366bCe3a2D379Dec7656D7A67015789FaF999f20` |
+| **Settlement** | Official Disbursement | `0x8366bCe3a2D379De7656D7A67015789FaF999f20` |

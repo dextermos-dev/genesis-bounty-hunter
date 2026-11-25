@@ -3,7 +3,7 @@
 - **Target Repository:** [`Cyfrin/security-and-auditing-full-course-s23`](https://github.com/Cyfrin/security-and-auditing-full-course-s23)
 - **Issue Reference:** [Issue #442: Tool for auditors: 27K accepted Sherlock/C4 findings as MCP patterns + automated scanning](https://github.com/Cyfrin/security-and-auditing-full-course-s23/issues/442)
 - **Author & Security Lead:** Dexter Mos ([`@dextermos`](https://github.com/dextermos) / [`@dextermos-dev`](https://github.com/dextermos-dev) / [`@dextermostard`](https://x.com/dextermostard))
-- **Settlement Wallet:** `0x8366bCe3a2D379Dec7656D7A67015789FaF999f20`
+- **Settlement Wallet:** `0x8366bCe3a2D379De7656D7A67015789FaF999f20`
 - **Track & Scope:** Smart Contract Security Tooling & Model Context Protocol (MCP)
 
 ---
@@ -48,4 +48,4 @@ python3 -m unittest tests/test_cyfrin_mcp_auditor.py
 
 - **GitHub Author:** [@dextermos](https://github.com/dextermos) & [@dextermos-dev](https://github.com/dextermos-dev)
 - **X Profile:** [@dextermostard](https://x.com/dextermostard)
-- **Verified Settlement Address:** `0x8366bCe3a2D379Dec7656D7A67015789FaF999f20`
+- **Verified Settlement Address:** `0x8366bCe3a2D379De7656D7A67015789FaF999f20`

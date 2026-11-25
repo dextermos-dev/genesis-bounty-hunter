@@ -2,7 +2,7 @@
 
 **Author:** Dexter Mos (@dextermostard / @dextermos)  
 **Target:** Superteam Earn Spout Finance Challenge ($1,000 USDC)  
-**Payout Wallet:** `0x8366bCe3a2D379Dec7656D7A67015789FaF999f20`  
+**Payout Wallet:** `0x8366bCe3a2D379De7656D7A67015789FaF999f20`  
 
 ---
 
@@ -33,5 +33,5 @@ The collected option premiums fund guaranteed Senior Tranche yields and protocol
 https://telegra.ph/Spout-Finance-Beta-Intelligence-Deep-DeFi-Teardown--0-Equity-Borrowing-Mechanics-09-21
 
 6/6 Built by @dextermostard for @SuperteamDAO #SuperteamEarn #Solana #DeFi #RWA
-Wallet: 0x8366bCe3a2D379Dec7656D7A67015789FaF999f20
+Wallet: 0x8366bCe3a2D379De7656D7A67015789FaF999f20
 ```

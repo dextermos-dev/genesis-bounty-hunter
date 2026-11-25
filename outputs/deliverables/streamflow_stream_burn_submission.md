@@ -35,4 +35,4 @@ This radical move fundamentally recalibrates the token's circulating and fully d
 
 ## 📜 Official Settlement Details
 - **Participant / Author:** `@dextermostard` / `@dextermos`
-- **Settlement Wallet Address:** `0x8366bCe3a2D379Dec7656D7A67015789FaF999f20`
+- **Settlement Wallet Address:** `0x8366bCe3a2D379De7656D7A67015789FaF999f20`

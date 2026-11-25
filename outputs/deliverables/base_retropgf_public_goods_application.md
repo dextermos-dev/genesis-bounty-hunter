@@ -4,7 +4,7 @@
 - **Track:** Base Ecosystem Developer Tooling & Public Goods (Account Abstraction & AI Rails)
 - **Author & Lead Engineer:** Dexter Mos ([`@dextermos`](https://github.com/dextermos) / [`@dextermos-dev`](https://github.com/dextermos-dev) / [`@dextermostard`](https://x.com/dextermostard))
 - **Requested Grant Amount:** $5,000 USDC
-- **Verified Settlement Address (Base L2):** `0x8366bCe3a2D379Dec7656D7A67015789FaF999f20`
+- **Verified Settlement Address (Base L2):** `0x8366bCe3a2D379De7656D7A67015789FaF999f20`
 - **Open-Source Repository:** [`https://github.com/dextermos/genesis-bounty-hunter`](https://github.com/dextermos/genesis-bounty-hunter)
 
 ---
@@ -54,4 +54,4 @@ We have engineered and open-sourced a two-pillar infrastructure framework design
 - **Phase 2 ($1,500 USDC):** Multi-chain SDK packaging and Viem/Ethers plugin adapters.
 - **Phase 3 ($1,500 USDC):** Comprehensive developer documentation, interactive CLI, and free public RPC dashboard.
 
-**Total Requested Funding:** `$5,000 USDC` payable directly on Base L2 to `0x8366bCe3a2D379Dec7656D7A67015789FaF999f20`.
+**Total Requested Funding:** `$5,000 USDC` payable directly on Base L2 to `0x8366bCe3a2D379De7656D7A67015789FaF999f20`.

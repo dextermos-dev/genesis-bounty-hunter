@@ -3,7 +3,7 @@
 **Target Protocol:** Modular Lending & Perpetual Vault Engine (EVM / Base L2 & Solana)  
 **Contest Track:** Cantina Open Competitive Audit ($2,500 USDC Pool)  
 **Auditor:** Dexter Mos (`@dextermos` / `@dextermostard`)  
-**Payout Address (EVM / Base / Solana):** `0x8366bCe3a2D379Dec7656D7A67015789FaF999f20`  
+**Payout Address (EVM / Base / Solana):** `0x8366bCe3a2D379De7656D7A67015789FaF999f20`  
 **Date:** September 2026  
 **Status:** VALIDATED WITH FORMAL PROOF OF CONCEPT (PoC)  
 

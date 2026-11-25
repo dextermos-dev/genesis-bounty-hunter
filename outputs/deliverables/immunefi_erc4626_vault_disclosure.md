@@ -4,7 +4,7 @@
 - **Target Category:** Smart Contract / DeFi Yield Vaults
 - **Severity Rating:** HIGH (Loss of Depositor Funds / Value Dilution)
 - **Author & Security Researcher:** Dexter Mos ([`@dextermos`](https://github.com/dextermos) / [`@dextermostard`](https://x.com/dextermostard))
-- **Settlement Wallet (USDC / ETH):** `0x8366bCe3a2D379Dec7656D7A67015789FaF999f20`
+- **Settlement Wallet (USDC / ETH):** `0x8366bCe3a2D379De7656D7A67015789FaF999f20`
 - **Recommended Remediation Module:** [`products/fast_bounties/vault_guard/ERC4626InflationGuard.sol`](../../products/fast_bounties/vault_guard/ERC4626InflationGuard.sol)
 
 ---

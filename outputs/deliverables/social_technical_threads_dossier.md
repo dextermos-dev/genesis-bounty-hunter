@@ -146,4 +146,4 @@ By @dextermostard (@dextermos on GH) 🛡️
 
 ---
 ### 📬 Verified Settlement Address
-- **Settlement Wallet (EVM / Base / Solana):** `0x8366bCe3a2D379Dec7656D7A67015789FaF999f20`
+- **Settlement Wallet (EVM / Base / Solana):** `0x8366bCe3a2D379De7656D7A67015789FaF999f20`

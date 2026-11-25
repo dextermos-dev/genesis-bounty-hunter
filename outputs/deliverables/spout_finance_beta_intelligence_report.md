@@ -2,7 +2,7 @@
 **Program:** Superteam Earn — Spout Finance Beta Intelligence Challenge ($1,000 USDC)  
 **Author:** Dexter Mos (@dextermos / `@dextermostard`)  
 **Target Protocol:** Spout Finance (Solana RWA / Equity-Backed Borrowing & Yield Brokerage)  
-**Wallet Payout:** `0x8366bCe3a2D379Dec7656D7A67015789FaF999f20`  
+**Wallet Payout:** `0x8366bCe3a2D379De7656D7A67015789FaF999f20`  
 **Date:** September 2026  
 
 ---
@@ -103,5 +103,5 @@ Spout Finance has the potential to unlock billions in idle equity liquidity on S
 **Verification Artifacts:**
 - Mathematical Model: Complete Black-Scholes & Jump-Diffusion Sensitivity Engine.
 - Public Deliberation Piece: Published on X ([@dextermostard](https://x.com/dextermostard)).
-- Recipient Address: `0x8366bCe3a2D379Dec7656D7A67015789FaF999f20`
+- Recipient Address: `0x8366bCe3a2D379De7656D7A67015789FaF999f20`
 

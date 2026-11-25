@@ -4,7 +4,7 @@
 - **Project Title:** Genesis Seeker Mobile Pay: High-Throughput Token-2022 Micro-Payment Engine
 - **Lead Architect:** Dexter Mos ([`@dextermos`](https://github.com/dextermos) / [`@dextermos-dev`](https://github.com/dextermos-dev) / [`@dextermostard`](https://x.com/dextermostard))
 - **Open-Source Repository:** [`https://github.com/dextermos/genesis-bounty-hunter/tree/main/products/solana_seeker_mobile_pay`](https://github.com/dextermos/genesis-bounty-hunter/tree/main/products/solana_seeker_mobile_pay)
-- **Settlement Wallet (USDC / SOL):** `0x8366bCe3a2D379Dec7656D7A67015789FaF999f20`
+- **Settlement Wallet (USDC / SOL):** `0x8366bCe3a2D379De7656D7A67015789FaF999f20`
 - **Prize Target:** $5,000 USDC (Mobile DeFi & Payments Track)
 
 ---
@@ -68,4 +68,4 @@ python3 -m unittest tests/test_solana_seeker_mobile.py
 ## 5. Contact & Formal Submission Details
 
 - **Author Profile:** [@dextermos](https://github.com/dextermos) & [@dextermostard](https://x.com/dextermostard)
-- **Settlement Address:** `0x8366bCe3a2D379Dec7656D7A67015789FaF999f20`
+- **Settlement Address:** `0x8366bCe3a2D379De7656D7A67015789FaF999f20`

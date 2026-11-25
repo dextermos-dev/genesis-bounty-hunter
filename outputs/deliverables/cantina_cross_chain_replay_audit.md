@@ -3,7 +3,7 @@
 **Target Protocol:** Modular Cross-Chain EVM Bridge & Validator Relay  
 **Bounty Pool:** $2,200 USDC (Cantina Open Scope)  
 **Author:** Dexter Mos (`@dextermos-dev` / `@dextermos`)  
-**Payout Address (EVM / Base L2):** `0x8366bCe3a2D379Dec7656D7A67015789FaF999f20`  
+**Payout Address (EVM / Base L2):** `0x8366bCe3a2D379De7656D7A67015789FaF999f20`  
 **Date:** September 30, 2026  
 **Severity:** HIGH (Critical Fund Drainage Risk)
 
@@ -41,7 +41,7 @@ contract SignatureMalleabilityPoC is Test {
     uint256 constant SECP256K1_N = 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEBAAEDCE6AF48A03BBFD25E8CD0364141;
 
     function test_SignatureMalleabilityExploit() public pure {
-        bytes32 messageHash = keccak256(abi.encodePacked("WITHDRAW_100000_USDC", address(0x8366bCe3a2D379Dec7656D7A67015789FaF999f20)));
+        bytes32 messageHash = keccak256(abi.encodePacked("WITHDRAW_100000_USDC", address(0x8366bCe3a2D379De7656D7A67015789FaF999f20)));
         
         // Original signer key
         uint256 privateKey = 0xA11CE;

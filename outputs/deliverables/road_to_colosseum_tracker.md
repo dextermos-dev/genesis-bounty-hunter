@@ -2,7 +2,7 @@
 
 **Author:** Dexter Mos ([@dextermostard](https://x.com/dextermostard) / [@dextermos](https://github.com/dextermos))  
 **Target Bounty:** Superteam Vietnam — *Road to Colosseum: Builders Reflect & Share* ($1,000 USDC)  
-**Payout Address (Solana / EVM):** `0x8366bCe3a2D379Dec7656D7A67015789FaF999f20`  
+**Payout Address (Solana / EVM):** `0x8366bCe3a2D379De7656D7A67015789FaF999f20`  
 **Tags:** `@superteamvn` `@solana` `#RoadToColosseum` `#ProofOfBuild`  
 
 ---

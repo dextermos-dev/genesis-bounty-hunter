@@ -10,7 +10,7 @@
     "0xMaliciousDrainer_002"
   ],
   "balances": {
-    "0x8366bCe3a2D379Dec7656D7A67015789FaF999f20": 5200000.0,
+    "0x8366bCe3a2D379De7656D7A67015789FaF999f20": 5200000.0,
     "0xEnterpriseTreasury": 5000000.0,
     "0xMerchantPartner": 50000.0
   },
@@ -23,13 +23,13 @@
     },
     {
       "action": "MINT",
-      "recipient": "0x8366bCe3a2D379Dec7656D7A67015789FaF999f20",
+      "recipient": "0x8366bCe3a2D379De7656D7A67015789FaF999f20",
       "amount": 250000.0,
       "timestamp": "2026-09-29T07:37:02.489075"
     },
     {
       "action": "TRANSFER_HOOK_PASSED",
-      "sender": "0x8366bCe3a2D379Dec7656D7A67015789FaF999f20",
+      "sender": "0x8366bCe3a2D379De7656D7A67015789FaF999f20",
       "recipient": "0xMerchantPartner",
       "amount": 50000.0,
       "fee": 0.0,

@@ -3,7 +3,7 @@
 - **Target Protocol:** EVM / Base L2 ERC-4626 Tokenized Vault Implementations
 - **Severity:** HIGH / CRITICAL (Fund Drainage / Loss of User Principle)
 - **Author & Security Researcher:** Dexter Mos ([`@dextermos`](https://github.com/dextermos) / [`@dextermos-dev`](https://github.com/dextermos-dev))
-- **Settlement Wallet:** `0x8366bCe3a2D379Dec7656D7A67015789FaF999f20`
+- **Settlement Wallet:** `0x8366bCe3a2D379De7656D7A67015789FaF999f20`
 - **Target Platform:** Cantina / Code4rena / Immunefi Bounty Programs ($2,500 USDC Scope)
 
 ---
@@ -146,4 +146,4 @@ The vulnerability is eliminated by deploying **`ERC4626InflationGuard`**:
 ## 5. References & Verification
 
 - **Code Implementation:** [`products/fast_bounties/vault_guard/ERC4626InflationGuard.sol`](../../products/fast_bounties/vault_guard/ERC4626InflationGuard.sol)
-- **Settlement Account:** `0x8366bCe3a2D379Dec7656D7A67015789FaF999f20`
+- **Settlement Account:** `0x8366bCe3a2D379De7656D7A67015789FaF999f20`

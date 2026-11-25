@@ -4,7 +4,7 @@
 **Track:** Developer Infrastructure, Tooling & Circle USDC Micropayments  
 **Grant Amount Requested:** $500 - $2,500 USDC  
 **Submission Deadline:** October 14, 2026  
-**Official Settlement Wallet:** `0x8366bCe3a2D379Dec7656D7A67015789FaF999f20`  
+**Official Settlement Wallet:** `0x8366bCe3a2D379De7656D7A67015789FaF999f20`  
 **Live Repository:** `https://github.com/dextermos-dev/genesis-bounty-hunter/tree/main/products/arc_circle_x402_gateway`  
 
 ---
@@ -47,7 +47,7 @@ As AI agents and autonomous micro-services proliferate across Web3, traditional 
 ## 3. Key Differentiators & Invariants
 
 1. **Circle USDC Native Settlement:**
-   * Direct settlement to beneficiary address `0x8366bCe3a2D379Dec7656D7A67015789FaF999f20` on Arc mainnet without custodial intermediaries.
+   * Direct settlement to beneficiary address `0x8366bCe3a2D379De7656D7A67015789FaF999f20` on Arc mainnet without custodial intermediaries.
 2. **Replay Attack Immunity:**
    * Uses cryptographically bound nonces (`client_id:timestamp:endpoint`) and transaction hash tracking to prevent reused transaction proofs.
 3. **100% Test Coverage & Deterministic Verification:**
@@ -72,6 +72,6 @@ OK
 
 ## 5. Settlement Invariant Verification
 
-* **Beneficiary Address:** `0x8366bCe3a2D379Dec7656D7A67015789FaF999f20`
+* **Beneficiary Address:** `0x8366bCe3a2D379De7656D7A67015789FaF999f20`
 * **Network:** Arc Mainnet / Base L2 / EVM
 * **Asset:** USDC (Circle Native 1:1 USD)

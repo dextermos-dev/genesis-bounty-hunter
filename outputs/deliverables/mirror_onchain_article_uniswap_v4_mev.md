@@ -1,7 +1,7 @@
 ---
 title: "The Math Behind Uniswap v4 Dynamic Fee Hooks & Sandwich MEV"
 author: "Dexter Mos (@dextermostard)"
-address: "0x8366bCe3a2D379Dec7656D7A67015789FaF999f20"
+address: "0x8366bCe3a2D379De7656D7A67015789FaF999f20"
 published: "Mirror.xyz / Web3 Publishing"
 category: "Smart Contract Security & MEV"
 ---
@@ -71,4 +71,4 @@ To eliminate this vulnerability, dynamic fee hooks must adhere to three non-nego
 
 ### Verifiable Code & Deliverables
 - **Open Source Repository:** [`https://github.com/dextermos/genesis-bounty-hunter`](https://github.com/dextermos/genesis-bounty-hunter)
-- **Settlement Wallet:** `0x8366bCe3a2D379Dec7656D7A67015789FaF999f20`
+- **Settlement Wallet:** `0x8366bCe3a2D379De7656D7A67015789FaF999f20`

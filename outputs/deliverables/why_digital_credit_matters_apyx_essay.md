@@ -3,7 +3,7 @@
 **Author:** Dexter Mos (`@dextermos`)  
 **Target Bounty:** Superteam Earn — *Why Digital Credit Matters* by Apyx  
 **Track:** Research, Macro-Economics & DeFi Architecture  
-**Payout Address (EVM / Base / Solana):** `0x8366bCe3a2D379Dec7656D7A67015789FaF999f20`  
+**Payout Address (EVM / Base / Solana):** `0x8366bCe3a2D379De7656D7A67015789FaF999f20`  
 
 ---
 

@@ -2,7 +2,7 @@
 
 **Superteam Earn & Solana Ecosystem — Official Technical Deliverable**  
 **Repository:** `https://github.com/dextermos-dev/genesis-bounty-hunter/tree/main/products/solana_anchor_guard`  
-**Official Settlement Wallet:** `0x8366bCe3a2D379Dec7656D7A67015789FaF999f20`
+**Official Settlement Wallet:** `0x8366bCe3a2D379De7656D7A67015789FaF999f20`
 
 ---
 
@@ -43,4 +43,4 @@ OK
 ---
 
 ## 5. Official Settlement & Payout Address
-`0x8366bCe3a2D379Dec7656D7A67015789FaF999f20`
+`0x8366bCe3a2D379De7656D7A67015789FaF999f20`

@@ -1,7 +1,7 @@
 # Official Submission Dossier: October 2 High-Yield Technical Bounties
 
 **Lead Engineer & Contributor:** Dexter Mos (`@dextermos-dev` / `@dextermos`)  
-**Designated Settlement Address (Base L2 / EVM / Solana):** `0x8366bCe3a2D379Dec7656D7A67015789FaF999f20`  
+**Designated Settlement Address (Base L2 / EVM / Solana):** `0x8366bCe3a2D379De7656D7A67015789FaF999f20`  
 **Date of Submission:** October 2, 2026  
 **Total Value of Presented Bounties:** $3,650.00 USDC  
 **Verification Status:** 100% UNIT TESTS PASSING

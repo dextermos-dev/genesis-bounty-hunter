@@ -3,7 +3,7 @@
 - **Target Repository:** [`Scottcjn/Rustchain`](https://github.com/Scottcjn/Rustchain)
 - **Issue Reference:** [Issue #8033: Comparison: RustChain vs Bitcoin](https://github.com/Scottcjn/Rustchain/issues/8033)
 - **Author & Protocol Architect:** Dexter Mos ([`@dextermos`](https://github.com/dextermos) / [`@dextermos-dev`](https://github.com/dextermos-dev) / [`@dextermostard`](https://x.com/dextermostard))
-- **Settlement Wallet:** `0x8366bCe3a2D379Dec7656D7A67015789FaF999f20`
+- **Settlement Wallet:** `0x8366bCe3a2D379De7656D7A67015789FaF999f20`
 
 ---
 
@@ -50,4 +50,4 @@ RustChain is not designed to replace Bitcoin as a hard monetary base layer, but 
 
 ### Verification & Submission Metadata
 - **Open-Source Repository:** [`https://github.com/dextermos/genesis-bounty-hunter`](https://github.com/dextermos/genesis-bounty-hunter)
-- **Verified Settlement Address:** `0x8366bCe3a2D379Dec7656D7A67015789FaF999f20`
+- **Verified Settlement Address:** `0x8366bCe3a2D379De7656D7A67015789FaF999f20`

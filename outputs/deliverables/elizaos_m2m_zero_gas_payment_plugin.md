@@ -3,7 +3,7 @@
 **Bounty Target:** $500 USDC | ElizaOS & Base AI Agent Grants  
 **Issue Reference:** [elizaOS/eliza#17201](https://github.com/elizaOS/eliza/issues/17201)  
 **Author:** `@dextermos` / `@dextermos-dev`  
-**Settlement Wallet Address:** `0x8366bCe3a2D379Dec7656D7A67015789FaF999f20`
+**Settlement Wallet Address:** `0x8366bCe3a2D379De7656D7A67015789FaF999f20`
 
 ---
 
@@ -25,4 +25,4 @@ By combining the **RFC-x402 (HTTP 402 Payment Required)** protocol with **ERC-43
 ## 🧪 Verification & References
 - Code Implementation: `products/elizaos_m2m_plugin/eliza_zero_gas_m2m.py`
 - Test Suite: `tests/test_elizaos_m2m_plugin.py` (**4/4 PASS - 100% OK**)
-- Settlement Wallet: `0x8366bCe3a2D379Dec7656D7A67015789FaF999f20`
+- Settlement Wallet: `0x8366bCe3a2D379De7656D7A67015789FaF999f20`

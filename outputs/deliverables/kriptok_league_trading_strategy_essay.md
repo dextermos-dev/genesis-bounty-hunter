@@ -3,7 +3,7 @@
 **Author:** Dexter Mos (`@dextermos` / `@dextermostard`)  
 **Target Bounty:** Superteam Earn — *Trade on KriptoK League and Share Your Round Experience* ($2,000 USDC)  
 **Platform Links:** [kriptok.io](https://kriptok.io/) | [league.kriptok.io](https://league.kriptok.io/) | X: [@KriptoKGlobal](https://x.com/KriptoKGlobal)  
-**Payout Address (EVM / Base / Solana):** `0x8366bCe3a2D379Dec7656D7A67015789FaF999f20`  
+**Payout Address (EVM / Base / Solana):** `0x8366bCe3a2D379De7656D7A67015789FaF999f20`  
 
 ---
 

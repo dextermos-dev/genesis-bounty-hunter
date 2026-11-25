@@ -3,7 +3,7 @@
 - **Target Architecture:** Solana Token-2022 Yield Vaults & Institutional Infrastructure (DAWN USD.infra / Kamino Standard)
 - **Severity Classification:** HIGH / CRITICAL (State Desynchronization & Vault Drainage)
 - **Author & Security Lead:** Dexter Mos ([`@dextermos`](https://github.com/dextermos) / [`@dextermostard`](https://x.com/dextermostard))
-- **Settlement Wallet:** `0x8366bCe3a2D379Dec7656D7A67015789FaF999f20`
+- **Settlement Wallet:** `0x8366bCe3a2D379De7656D7A67015789FaF999f20`
 - **Scope & Bounty Value:** $3,000 USDC (Immunefi / Cantina Token-2022 Bounty Scope)
 
 ---
@@ -65,4 +65,4 @@ Integrate the batch fee harvester ([`tools/solana_fee_harvester.py`](../../tools
 
 - **Harvester Implementation:** [`tools/solana_fee_harvester.py`](../../tools/solana_fee_harvester.py)
 - **Metadata Resolver:** [`tools/solana_metadata_extractor.py`](../../tools/solana_metadata_extractor.py)
-- **Settlement Wallet:** `0x8366bCe3a2D379Dec7656D7A67015789FaF999f20`
+- **Settlement Wallet:** `0x8366bCe3a2D379De7656D7A67015789FaF999f20`

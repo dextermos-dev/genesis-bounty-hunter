@@ -3,7 +3,7 @@
 **Program:** Superteam Earn — Next Stop Breakpoint: RWA & Market Tokenization Challenge ($5,500 USDC Pool)  
 **Track:** Real-World Assets (RWA), Institutional DeFi & Token-2022 Infrastructure  
 **Author:** Dexter Mos (`@dextermos` / `@dextermostard`)  
-**Payout Address (EVM / Base / Solana):** `0x8366bCe3a2D379Dec7656D7A67015789FaF999f20`  
+**Payout Address (EVM / Base / Solana):** `0x8366bCe3a2D379De7656D7A67015789FaF999f20`  
 **Date:** September 2026  
 **Status:** READY FOR OFFICIAL DELIBERATION  
 
@@ -44,7 +44,7 @@ This paper presents an end-to-end technical blueprint for an institutional-grade
 │   [ Tier 4: Liquidity & Secondary Market Settlement ]                            │
 │   - Concentrated Liquidity AMM Pools (Orca / Raydium)                            │
 │   - Collateralized Borrowing Markets (Kamino / Marginfi / Spout Finance)         │
-│   - Settlement Wallet Target: 0x8366bCe3a2D379Dec7656D7A67015789FaF999f20       │
+│   - Settlement Wallet Target: 0x8366bCe3a2D379De7656D7A67015789FaF999f20       │
 └──────────────────────────────────────────────────────────────────────────────────┘
 ```
 
@@ -131,5 +131,5 @@ By marrying Solana’s extreme transaction velocity with Token-2022’s programm
 
 **Official Submission Metadata:**
 - **Author:** Dexter Mos (`@dextermos` / `@dextermostard`)
-- **Recipient Address:** `0x8366bCe3a2D379Dec7656D7A67015789FaF999f20`
+- **Recipient Address:** `0x8366bCe3a2D379De7656D7A67015789FaF999f20`
 - **Track:** Next Stop Breakpoint RWA Tokenization Challenge ($5,500 USDC)

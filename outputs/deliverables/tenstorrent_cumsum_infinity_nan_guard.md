@@ -3,7 +3,7 @@
 **Bounty Target:** $1,000 USD | Tenstorrent Bounty Program  
 **Issue Reference:** [tenstorrent/tt-metal#58986](https://github.com/tenstorrent/tt-metal/issues/58986)  
 **Author:** `@dextermos` / `@dextermos-dev`  
-**Settlement Wallet Address:** `0x8366bCe3a2D379Dec7656D7A67015789FaF999f20`
+**Settlement Wallet Address:** `0x8366bCe3a2D379De7656D7A67015789FaF999f20`
 
 ---
 
